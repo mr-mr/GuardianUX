@@ -1,0 +1,181 @@
+.clear-fix:before,
+.clear-fix:after {
+  content: "";
+  display: table;
+}
+.clear-fix:after {
+  clear: both;
+}
+.clear-clear-fix:before,
+.clear-clear-fix:after {
+  clear: none;
+  content: none;
+  display: none;
+}
+.no-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+.reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/* general
+--------------------------------------------------*/
+.top-stories {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #cccccc;
+}
+#fixtures,
+#results,
+#scores {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  border-bottom: 1px dotted #cccccc;
+}
+#fixtures h2,
+#results h2,
+#scores h2 {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+#fixtures div.show-hide,
+#results div.show-hide,
+#scores div.show-hide {
+  display: none;
+}
+#fixtures table:first-of-type,
+#results table:first-of-type,
+#scores table:first-of-type {
+  margin-bottom: -2px;
+}
+#fixtures ul:last-child,
+#results ul:last-child,
+#scores ul:last-child {
+  margin-top: 10px;
+  margin-top: 1rem;
+  padding-top: 0;
+  border: none;
+}
+#fixtures ul:last-child li,
+#results ul:last-child li,
+#scores ul:last-child li {
+  display: inline-block;
+}
+#fixtures ul:last-child li:first-child,
+#results ul:last-child li:first-child,
+#scores ul:last-child li:first-child {
+  margin-right: 1%;
+  padding-right: 2%;
+  border-right: 1px solid #cccccc;
+}
+#section-front.club #fixtures table:first-of-type {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+#section-front.club #fixtures ul li:first-child,
+#section-front.club #results ul li:first-child {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.club #tables h2,
+.premier-league #tables h2 {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+.club #tables h3,
+.premier-league #tables h3 {
+  margin-bottom: 0;
+}
+blockquote {
+  min-height: 60px;
+  min-height: 6rem;
+  margin-bottom: 12px;
+  margin-bottom: 1.2000000000000002rem;
+  padding: 6px 70px 6px 6px;
+  padding: 0.6000000000000001rem 70px 0.6000000000000001rem 6px;
+  background: url("/img/headshot.svg") bottom right no-repeat #eeeeee;
+  background-size: 70px 70px;
+}
+blockquote:hover {
+  background-color: #d5d5d5;
+  cursor: pointer;
+}
+blockquote p,
+blockquote cite {
+  margin: 0;
+}
+#section-front #more-statistics h3 {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+#section-front #more-statistics ul {
+  border-bottom: none;
+}
+#section-front #more-statistics ul li:nth-child(n+3) {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+#section-front.football #more-statistics ul:last-child li:first-child,
+#section-front.premier-league #more-statistics ul:last-child li:first-child {
+  margin-right: 3.333333333%;
+}
+#section-front.sport #more-statistics ul:last-child li,
+#section-front.club #more-statistics ul:last-child li,
+#section-front.sport #more-statistics ul:only-child li,
+#section-front.club #more-statistics ul:only-child li {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  padding-bottom: 9px;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px dotted #cccccc;
+}
+#section-front.sport #more-statistics ul:last-child li:nth-child(odd),
+#section-front.club #more-statistics ul:last-child li:nth-child(odd),
+#section-front.sport #more-statistics ul:only-child li:nth-child(odd),
+#section-front.club #more-statistics ul:only-child li:nth-child(odd) {
+  margin-right: 3.333333333%;
+}
+#section-front.sport #more-statistics ul:last-child li:nth-child(n+3),
+#section-front.club #more-statistics ul:last-child li:nth-child(n+3),
+#section-front.sport #more-statistics ul:only-child li:nth-child(n+3),
+#section-front.club #more-statistics ul:only-child li:nth-child(n+3) {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+/* typography
+--------------------------------------------------*/
+blockquote p {
+  font-family: "guardian-regular", georgia, serif;
+  font-weight: normal;
+  font-size: 17px;
+  font-size: 1.7000000000000002rem;
+  line-height: 20px;
+  line-height: 2rem;
+  font-style: italic;
+  color: #666666;
+}
+blockquote cite {
+  font-family: "guardian-regular", georgia, serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 20px;
+  line-height: 2rem;
+  font-family: "guardian-bold";
+  font-style: normal;
+  color: #333333;
+}
+#more-statistics h3 {
+  font-family: "guardian-bold";
+  font-weight: normal;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 20px;
+  line-height: 2rem;
+}

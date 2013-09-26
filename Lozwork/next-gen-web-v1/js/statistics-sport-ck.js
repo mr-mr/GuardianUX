@@ -1,0 +1,1 @@
+$(function(){var e=$("#show-hide"),t=$(".fixtures .hide");e.toggle(function(){t.removeClass("hide").addClass("show");$(this).html("Less fixtures")},function(){t.removeClass("show").addClass("hide");$(this).html("More fixtures")})});

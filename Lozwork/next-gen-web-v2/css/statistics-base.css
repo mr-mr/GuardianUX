@@ -1,0 +1,1271 @@
+.clear-fix:before,
+.clear-fix:after {
+  content: "";
+  display: table;
+}
+.clear-fix:after {
+  clear: both;
+}
+.clear-clear-fix:before,
+.clear-clear-fix:after {
+  clear: none;
+  content: none;
+  display: none;
+}
+.no-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+.reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/* general
+--------------------------------------------------*/
+.primary-detail,
+.secondary-detail,
+.full-detail,
+#filters-form,
+.filter-two,
+.number-updates,
+#table-lists #filters-form ul:nth-of-type(4) li:first-child {
+  display: none;
+}
+#content > hgroup > h2 {
+  margin: 0;
+  padding: 0;
+}
+#filters,
+#filters-too {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  padding: 10px 3.333333333% 10px 3.333333333%;
+  padding: 1rem 3.333333333% 1rem 3.333333333%;
+  background: #eeeeee;
+}
+#filters h2,
+#filters-too h2 {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+#filters .popular-competitions {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+#filters .popular-competitions li {
+  display: inline-block;
+}
+#filters .popular-competitions li:after {
+  content: ',';
+}
+#filters .popular-competitions li:last-child:after {
+  content: none;
+}
+#filters-too h2,
+#filters-too h3,
+#filters-too p:last-child {
+  clear: both;
+}
+#filters-too h3 {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+#filters-too ul {
+  list-style: none;
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+#filters-too ul:before,
+#filters-too ul:after {
+  content: "";
+  display: table;
+}
+#filters-too ul:after {
+  clear: both;
+}
+#filters-too ul:last-of-type {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  padding-bottom: 9px;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px dotted #cccccc;
+}
+#filters-too ul li {
+  float: left;
+  width: 48.33333335%;
+  margin-top: 9px;
+  margin-top: 0.9rem;
+  padding-top: 10px;
+  padding-top: 1rem;
+  border-top: 1px dotted #cccccc;
+}
+#filters-too ul li:nth-child(-n+2) {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+#filters-too ul li:nth-child(odd) {
+  clear: both;
+  margin-right: 3.333333333%;
+}
+#statistics dl {
+  clear: both;
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  padding-bottom: 9px;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px dotted #cccccc;
+}
+#statistics dl:before,
+#statistics dl:after {
+  content: "";
+  display: table;
+}
+#statistics dl:after {
+  clear: both;
+}
+#statistics dl:last-child {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  padding: 0;
+  border: none;
+}
+#statistics dl:last-child dd:first-of-type {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+#statistics dl dt {
+  clear: both;
+}
+#statistics dl ul {
+  width: 48%;
+  margin-bottom: 0;
+}
+#statistics dl ul:first-child {
+  float: left;
+}
+#statistics dl ul:last-child {
+  float: right;
+}
+#statistics dl ul:only-child {
+  float: none;
+  width: 100%;
+}
+#statistics dl ul:only-child li {
+  float: left;
+  width: 50%;
+  padding: 5px 3.333333333% 5px 3.333333333%;
+  padding: 0.5rem 3.333333333% 0.5rem 3.333333333%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#statistics dl ul:only-child li:first-child {
+  text-align: right;
+  background: #cccccc;
+}
+#statistics dl ul:only-child li:last-child {
+  text-align: left;
+  background: #eeeeee;
+}
+#table table,
+#tables table {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+#table table.league tbody tr:first-child td,
+#tables table.league tbody tr:first-child td,
+#table table.league tbody tr:nth-child(4) td,
+#tables table.league tbody tr:nth-child(4) td,
+#table table.league tbody tr:nth-last-child(4) td,
+#tables table.league tbody tr:nth-last-child(4) td {
+  border-collapse: collapse;
+  border-bottom: 2px solid #cccccc;
+}
+#table tr,
+#tables tr {
+  background: #eeeeee;
+}
+#table tr[data-is-link="true"],
+#tables tr[data-is-link="true"] {
+  cursor: pointer;
+}
+#table tr[data-is-link="true"]:hover,
+#tables tr[data-is-link="true"]:hover {
+  background: #cccccc;
+}
+#table thead tr:nth-child(n),
+#tables thead tr:nth-child(n) {
+  background: transparent;
+}
+#table thead tr:first-child th,
+#tables thead tr:first-child th {
+  text-align: center;
+}
+#table th,
+#tables th,
+#table td,
+#tables td {
+  text-align: right;
+  vertical-align: top;
+  padding: 5px 1.666666667% 5px 1.666666667%;
+  padding: 0.5rem 1.666666667% 0.5rem 1.666666667%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#table th:nth-child(2),
+#tables th:nth-child(2),
+#table td:nth-child(2),
+#tables td:nth-child(2) {
+  text-align: left;
+}
+#table th:first-child,
+#tables th:first-child,
+#table td:first-child,
+#tables td:first-child {
+  width: 7%;
+}
+#table th:nth-child(n+3),
+#tables th:nth-child(n+3),
+#table td:nth-child(n+3),
+#tables td:nth-child(n+3) {
+  width: 8%;
+}
+#table tbody tr:nth-child(4),
+#tables tbody tr:nth-child(4) {
+  border-bottom: 1px dotted #cccccc;
+}
+#tables {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  padding-bottom: 9px;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid #cccccc;
+}
+#tables h2 {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+#tables table:last-of-type {
+  margin-bottom: 0;
+}
+#tables table tr:last-child {
+  background: transparent;
+}
+#tables table tr:last-child td {
+  padding: 10px 0px 0px 0px;
+  padding: 1rem 0px 0rem 0px;
+}
+#tables table.club tbody tr:last-child,
+#tables table.uefa tbody tr:last-child {
+  background: #eeeeee;
+}
+#tables table.club tbody tr:last-child td,
+#tables table.uefa tbody tr:last-child td {
+  padding: 5px 1.666666667% 5px 1.666666667%;
+  padding: 0.5rem 1.666666667% 0.5rem 1.666666667%;
+}
+#tables table.uefa {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+#tables table.uefa thead tr:last-child th:first-child {
+  text-align: left;
+  padding-left: 0;
+}
+#tables table.uefa.last {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+#tables table.uefa.last tr:last-child {
+  background: transparent;
+}
+#tables table.uefa.last tr:last-child td {
+  padding: 10px 0px 0px 0px;
+  padding: 1rem 0px 0rem 0px;
+}
+#tables .scorers,
+#tables .assists,
+#tables .yellow-cards,
+#tables .red-cards {
+  margin-top: 20px;
+  margin-top: 2rem;
+}
+#tables .scorers h3,
+#tables .assists h3,
+#tables .yellow-cards h3,
+#tables .red-cards h3 {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+#tables > p:last-child {
+  margin-top: 20px;
+  margin-top: 2rem;
+  padding-top: 9px;
+  padding-top: 0.9rem;
+  border-top: 1px dotted #cccccc;
+}
+#fixtures,
+#results,
+#scores {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  padding-bottom: 9px;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid #cccccc;
+}
+#fixtures h2,
+#results h2,
+#scores h2 {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+#fixtures h3,
+#results h3,
+#scores h3 {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+#fixtures table,
+#results table,
+#scores table {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  /*		.padding-bottom(9);
+		border-bottom:1px dotted @light-grey;*/
+
+}
+#fixtures table:last-of-type,
+#results table:last-of-type,
+#scores table:last-of-type {
+  margin-bottom: 0;
+}
+#fixtures table tr,
+#results table tr,
+#scores table tr {
+  background: #eeeeee;
+}
+#fixtures table tr[data-is-link="true"],
+#results table tr[data-is-link="true"],
+#scores table tr[data-is-link="true"] {
+  color: #005689;
+  cursor: pointer;
+}
+#fixtures table tr[data-is-link="true"]:hover,
+#results table tr[data-is-link="true"]:hover,
+#scores table tr[data-is-link="true"]:hover {
+  color: #003656;
+  background: #cccccc;
+}
+#fixtures table tr[data-is-link="true"]:visited,
+#results table tr[data-is-link="true"]:visited,
+#scores table tr[data-is-link="true"]:visited {
+  color: #0076bc;
+}
+#fixtures table th,
+#results table th,
+#scores table th,
+#fixtures table td,
+#results table td,
+#scores table td {
+  vertical-align: top;
+  padding: 5px 1.666666667% 5px 1.666666667%;
+  padding: 0.5rem 1.666666667% 0.5rem 1.666666667%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#fixtures table td:first-child,
+#results table td:first-child,
+#scores table td:first-child,
+#fixtures table td:nth-child(3),
+#results table td:nth-child(3),
+#scores table td:nth-child(3) {
+  width: 34%;
+}
+#fixtures table td:nth-child(2),
+#results table td:nth-child(2),
+#scores table td:nth-child(2) {
+  width: 15%;
+}
+#fixtures table td:last-child,
+#results table td:last-child,
+#scores table td:last-child {
+  width: 18%;
+}
+#fixtures > p:last-child,
+#results > p:last-child,
+#scores > p:last-child {
+  margin-top: 20px;
+  margin-top: 2rem;
+  padding-top: 9px;
+  padding-top: 0.9rem;
+  border-top: 1px dotted #cccccc;
+}
+#fixtures.club tr[data-is-link="true"] th:first-child,
+#results.club tr[data-is-link="true"] th:first-child,
+#scores.club tr[data-is-link="true"] th:first-child,
+#fixtures.club tr[data-is-link="true"] td:first-child,
+#results.club tr[data-is-link="true"] td:first-child,
+#scores.club tr[data-is-link="true"] td:first-child,
+#fixtures.club tr[data-is-link="true"] th:last-child,
+#results.club tr[data-is-link="true"] th:last-child,
+#scores.club tr[data-is-link="true"] th:last-child,
+#fixtures.club tr[data-is-link="true"] td:last-child,
+#results.club tr[data-is-link="true"] td:last-child,
+#scores.club tr[data-is-link="true"] td:last-child {
+  color: #333333;
+}
+#fixtures.club tr[data-is-link="true"] th:first-child:hover,
+#results.club tr[data-is-link="true"] th:first-child:hover,
+#scores.club tr[data-is-link="true"] th:first-child:hover,
+#fixtures.club tr[data-is-link="true"] td:first-child:hover,
+#results.club tr[data-is-link="true"] td:first-child:hover,
+#scores.club tr[data-is-link="true"] td:first-child:hover,
+#fixtures.club tr[data-is-link="true"] th:last-child:hover,
+#results.club tr[data-is-link="true"] th:last-child:hover,
+#scores.club tr[data-is-link="true"] th:last-child:hover,
+#fixtures.club tr[data-is-link="true"] td:last-child:hover,
+#results.club tr[data-is-link="true"] td:last-child:hover,
+#scores.club tr[data-is-link="true"] td:last-child:hover,
+#fixtures.club tr[data-is-link="true"] th:first-child:visited,
+#results.club tr[data-is-link="true"] th:first-child:visited,
+#scores.club tr[data-is-link="true"] th:first-child:visited,
+#fixtures.club tr[data-is-link="true"] td:first-child:visited,
+#results.club tr[data-is-link="true"] td:first-child:visited,
+#scores.club tr[data-is-link="true"] td:first-child:visited,
+#fixtures.club tr[data-is-link="true"] th:last-child:visited,
+#results.club tr[data-is-link="true"] th:last-child:visited,
+#scores.club tr[data-is-link="true"] th:last-child:visited,
+#fixtures.club tr[data-is-link="true"] td:last-child:visited,
+#results.club tr[data-is-link="true"] td:last-child:visited,
+#scores.club tr[data-is-link="true"] td:last-child:visited {
+  color: #333333;
+}
+#fixtures.club th:nth-child(even),
+#results.club th:nth-child(even),
+#scores.club th:nth-child(even),
+#fixtures.club td:nth-child(even),
+#results.club td:nth-child(even),
+#scores.club td:nth-child(even) {
+  width: 35%;
+}
+#fixtures.club th:nth-child(odd),
+#results.club th:nth-child(odd),
+#scores.club th:nth-child(odd),
+#fixtures.club td:nth-child(odd),
+#results.club td:nth-child(odd),
+#scores.club td:nth-child(odd) {
+  width: 5%;
+}
+#fixtures.club th:nth-child(-n+2),
+#results.club th:nth-child(-n+2),
+#scores.club th:nth-child(-n+2),
+#fixtures.club td:nth-child(-n+2),
+#results.club td:nth-child(-n+2),
+#scores.club td:nth-child(-n+2) {
+  text-align: right;
+}
+#fixtures.club th:nth-child(3),
+#results.club th:nth-child(3),
+#scores.club th:nth-child(3),
+#fixtures.club td:nth-child(3),
+#results.club td:nth-child(3),
+#scores.club td:nth-child(3) {
+  width: 15%;
+  text-align: center;
+}
+#fixtures.club th:nth-child(n+4),
+#results.club th:nth-child(n+4),
+#scores.club th:nth-child(n+4),
+#fixtures.club td:nth-child(n+4),
+#results.club td:nth-child(n+4),
+#scores.club td:nth-child(n+4) {
+  text-align: left;
+}
+#fixtures article,
+#results article,
+#scores article {
+  margin-top: 10px;
+  margin-top: 1rem;
+  padding-top: 9px;
+  padding-top: 0.9rem;
+  border-top: 1px dotted #cccccc;
+}
+#fixtures article:before,
+#results article:before,
+#scores article:before,
+#fixtures article:after,
+#results article:after,
+#scores article:after {
+  content: "";
+  display: table;
+}
+#fixtures article:after,
+#results article:after,
+#scores article:after {
+  clear: both;
+}
+#fixtures article h3,
+#results article h3,
+#scores article h3 {
+  margin-bottom: 0;
+}
+#fixtures article p:last-child,
+#results article p:last-child,
+#scores article p:last-child {
+  display: none;
+}
+#more-statistics {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  padding: 10px 3.333333333% 10px 3.333333333%;
+  padding: 1rem 3.333333333% 1rem 3.333333333%;
+  background: #eeeeee;
+}
+#more-statistics h2 {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+#more-statistics ul {
+  list-style: none;
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  padding-bottom: 9px;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px dotted #cccccc;
+}
+#more-statistics ul:before,
+#more-statistics ul:after {
+  content: "";
+  display: table;
+}
+#more-statistics ul:after {
+  clear: both;
+}
+#more-statistics ul li {
+  float: left;
+  width: 48.33333335%;
+  margin-bottom: 9px;
+  margin-bottom: 0.9rem;
+  padding-bottom: 10px;
+  padding-bottom: 1rem;
+  border-bottom: 1px dotted #cccccc;
+}
+#more-statistics ul li:nth-child(odd) {
+  clear: both;
+  margin-right: 3.333333333%;
+}
+#more-statistics ul li:last-child {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+#more-statistics ul:last-child,
+#more-statistics ul:only-child {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+#more-statistics ul:last-child li,
+#more-statistics ul:only-child li {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+#teams-list h2,
+#competitions-list h2 {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+#teams-list #teams,
+#competitions-list #teams,
+#teams-list #competitions,
+#competitions-list #competitions {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  padding-bottom: 9px;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid #cccccc;
+}
+#teams-list #teams ul,
+#competitions-list #teams ul,
+#teams-list #competitions ul,
+#competitions-list #competitions ul {
+  list-style: none;
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  /*			border-bottom:1px solid @light-grey;*/
+
+}
+#teams-list #teams ul:before,
+#competitions-list #teams ul:before,
+#teams-list #competitions ul:before,
+#competitions-list #competitions ul:before,
+#teams-list #teams ul:after,
+#competitions-list #teams ul:after,
+#teams-list #competitions ul:after,
+#competitions-list #competitions ul:after {
+  content: "";
+  display: table;
+}
+#teams-list #teams ul:after,
+#competitions-list #teams ul:after,
+#teams-list #competitions ul:after,
+#competitions-list #competitions ul:after {
+  clear: both;
+}
+#teams-list #teams ul li,
+#competitions-list #teams ul li,
+#teams-list #competitions ul li,
+#competitions-list #competitions ul li {
+  float: left;
+  width: 48.33333335%;
+  margin-bottom: 9px;
+  margin-bottom: 0.9rem;
+  padding-bottom: 10px;
+  padding-bottom: 1rem;
+  border-bottom: 1px dotted #cccccc;
+}
+#teams-list #teams ul li:nth-child(odd),
+#competitions-list #teams ul li:nth-child(odd),
+#teams-list #competitions ul li:nth-child(odd),
+#competitions-list #competitions ul li:nth-child(odd) {
+  clear: both;
+  margin-right: 3.333333333%;
+}
+#teams-list #teams ul li:nth-last-child(-n+2),
+#competitions-list #teams ul li:nth-last-child(-n+2),
+#teams-list #competitions ul li:nth-last-child(-n+2),
+#competitions-list #competitions ul li:nth-last-child(-n+2) {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+#teams-list #teams ul:last-of-type li:nth-last-child(2),
+#competitions-list #teams ul:last-of-type li:nth-last-child(2),
+#teams-list #competitions ul:last-of-type li:nth-last-child(2),
+#competitions-list #competitions ul:last-of-type li:nth-last-child(2) {
+  margin-bottom: 9px;
+  margin-bottom: 0.9rem;
+  padding-bottom: 10px;
+  padding-bottom: 1rem;
+  border-bottom: 1px dotted #cccccc;
+}
+#teams-list #more-statistics ul:first-of-type li:nth-child(n+3),
+#competitions-list #more-statistics ul:first-of-type li:nth-child(n+3) {
+  margin-bottom: 0;
+  padding: 0;
+  border: none;
+}
+#teams-list #more-statistics ul:first-of-type li:last-child,
+#competitions-list #more-statistics ul:first-of-type li:last-child {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+#teams-list #more-statistics ul:last-of-type li,
+#competitions-list #more-statistics ul:last-of-type li {
+  width: 100%;
+}
+#scores-table #scores,
+#scores-table #table {
+  border-bottom: none;
+}
+#scores.tennis table thead tr {
+  background: none;
+}
+#scores.tennis table thead tr th:first-child {
+  padding-left: 0;
+}
+#scores.tennis table th:first-child,
+#scores.tennis table td:first-child {
+  width: 2%;
+}
+#scores.tennis table th:nth-child(2),
+#scores.tennis table td:nth-child(2) {
+  min-width: 76%;
+  max-width: 91%;
+}
+#scores.tennis table th:nth-child(n+3),
+#scores.tennis table td:nth-child(n+3),
+#scores.tennis table th:last-child,
+#scores.tennis table td:last-child {
+  width: 7%;
+}
+#scores.tennis table.singles tbody tr:nth-child(even) td,
+#scores.tennis table.doubles tbody tr:nth-child(even) td {
+  border-collapse: separate;
+  border-bottom: 5px solid #fff;
+}
+#scores.cricket .scorecard thead tr,
+#scores.cricket .bowlers thead tr,
+#scores.cricket .fall-of-wickets thead tr {
+  background: none;
+}
+#scores.cricket .scorecard:last-of-type {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+#scores.cricket .scorecard tbody tr:nth-last-child(3) td,
+#scores.cricket .scorecard tbody tr:nth-last-child(2) td {
+  border-collapse: separate;
+  border-bottom: 5px solid #fff;
+}
+#scores.cricket .scorecard tbody tr:last-child {
+  background: #cccccc;
+}
+#scores.cricket .scorecard th:nth-child(n+3),
+#scores.cricket .scorecard td:nth-child(n+3) {
+  width: 7%;
+}
+#scores.cricket .bowlers,
+#scores.cricket .fall-of-wickets {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+#scores.cricket .bowlers thead th:first-child,
+#scores.cricket .fall-of-wickets thead th:first-child {
+  padding-left: 0;
+}
+#scores.cricket .bowlers th:nth-child(n+2),
+#scores.cricket .bowlers td:nth-child(n+2) {
+  width: 7%;
+}
+#scores.cricket .fall-of-wickets:last-of-type {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+#scores.cricket .fall-of-wickets th:nth-child(odd),
+#scores.cricket .fall-of-wickets td:nth-child(odd) {
+  width: 7%;
+}
+#scores.cricket .fall-of-wickets th:nth-child(even),
+#scores.cricket .fall-of-wickets td:nth-child(even) {
+  width: 86%;
+}
+#scores.cricket .details {
+  clear: both;
+}
+#scores.cricket .details dd {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+#scores.cricket .details dd:last-child {
+  margin-bottom: 0;
+}
+#scores.cricket .match-summary tbody tr:nth-child(n+3) {
+  background: none;
+}
+#scores.cricket .match-summary tbody tr:nth-child(n+3) td {
+  padding-left: 0;
+  padding-bottom: 0;
+}
+#scores.cricket .match-summary tbody th:first-child,
+#scores.cricket .match-summary tbody td:first-child {
+  width: 52%;
+}
+#scores.cricket .match-summary tbody th:nth-child(n+2),
+#scores.cricket .match-summary tbody td:nth-child(n+2) {
+  width: 24%;
+}
+#results.cricket table tr:nth-child(n+3) {
+  background: none;
+}
+#results.cricket table tr:nth-child(n+3) td {
+  padding-left: 0;
+  padding-bottom: 0;
+}
+#results.cricket table th:first-child,
+#results.cricket table td:first-child {
+  width: 52%;
+}
+#results.cricket table th:nth-child(n+2),
+#results.cricket table td:nth-child(n+2) {
+  width: 24%;
+}
+/* typography
+--------------------------------------------------*/
+#content > hgroup h2 {
+  font-family: "guardian-bold";
+  font-weight: normal;
+  font-size: 12px;
+  font-size: 1.2000000000000002rem;
+  line-height: 20px;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+#filters h2,
+#filters-too h2 {
+  font-family: "guardian-bold";
+  font-weight: normal;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 20px;
+  line-height: 2rem;
+  color: #000;
+}
+#statistics dt {
+  font-family: "guardian-bold";
+}
+#statistics ul {
+  list-style: none;
+}
+#statistics ul:first-child {
+  text-align: right;
+}
+#statistics ul:last-child {
+  text-align: left;
+}
+#fixtures h2,
+#results h2,
+#scores h2,
+#tables h2,
+#teams h2,
+#competitions h2 {
+  font-family: "guardian-bold";
+  font-weight: normal;
+  font-size: 17px;
+  font-size: 1.7000000000000002rem;
+  line-height: 20px;
+  line-height: 2rem;
+  color: #000;
+}
+#fixtures h3,
+#results h3,
+#scores h3,
+#tables h3,
+#teams h3,
+#competitions h3 {
+  font-family: "guardian-bold";
+  font-weight: normal;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 20px;
+  line-height: 2rem;
+  color: #000;
+}
+#fixtures table td:first-child,
+#results table td:first-child,
+#scores table td:first-child,
+#tables table td:first-child,
+#teams table td:first-child,
+#competitions table td:first-child {
+  text-align: right;
+}
+#fixtures table td:nth-child(3),
+#results table td:nth-child(3),
+#scores table td:nth-child(3),
+#tables table td:nth-child(3),
+#teams table td:nth-child(3),
+#competitions table td:nth-child(3),
+#fixtures table td:last-child,
+#results table td:last-child,
+#scores table td:last-child,
+#tables table td:last-child,
+#teams table td:last-child,
+#competitions table td:last-child {
+  text-align: left;
+}
+#fixtures table td:nth-child(2),
+#results table td:nth-child(2),
+#scores table td:nth-child(2),
+#tables table td:nth-child(2),
+#teams table td:nth-child(2),
+#competitions table td:nth-child(2) {
+  text-align: center;
+}
+#tables table tr[data-is-link="true"] td,
+#table table tr[data-is-link="true"] td {
+  color: #333333;
+}
+#tables table tr[data-is-link="true"] td:nth-child(2),
+#table table tr[data-is-link="true"] td:nth-child(2) {
+  color: #005689;
+}
+#tables table tr[data-is-link="true"] td:nth-child(2):hover,
+#table table tr[data-is-link="true"] td:nth-child(2):hover {
+  color: #003656;
+}
+#tables table tr[data-is-link="true"] td:nth-child(2):visited,
+#table table tr[data-is-link="true"] td:nth-child(2):visited {
+  color: #0076bc;
+}
+#tables table td:nth-child(2),
+#table table td:nth-child(2) {
+  text-align: left;
+}
+#tables table td:nth-child(n+3),
+#table table td:nth-child(n+3) {
+  text-align: right;
+}
+#scores.tennis table thead tr th:first-child {
+  text-align: left;
+}
+#scores.tennis table thead tr th:nth-child(2) {
+  text-align: right;
+}
+#scores.tennis table tr.winners td {
+  font-family: "guardian-bold";
+  font-weight: normal;
+}
+#scores.tennis table tr.winners td:first-child {
+  text-align: left;
+}
+#scores.tennis table tr.winners td:nth-child(2) {
+  text-align: right;
+}
+#scores.tennis table th,
+#scores.tennis table td {
+  text-align: right;
+}
+#scores.tennis table th:first-child,
+#scores.tennis table td:first-child {
+  text-align: center;
+}
+#scores.tennis table th:nth-child(2),
+#scores.tennis table td:nth-child(2) {
+  text-align: left;
+}
+#scores.tennis table th:nth-child(n+3),
+#scores.tennis table td:nth-child(n+3),
+#scores.tennis table th:last-child,
+#scores.tennis table td:last-child {
+  text-align: right;
+}
+#scores.cricket h3 {
+  margin-bottom: 0;
+}
+#scores.cricket > p:first-of-type {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+#scores.cricket .scorecard tbody tr:last-child {
+  font-family: "guardian-bold";
+  font-weight: normal;
+}
+#scores.cricket .scorecard th:nth-child(-n+2),
+#scores.cricket .scorecard td:nth-child(-n+2) {
+  text-align: left;
+}
+#scores.cricket .scorecard th:nth-child(n+3),
+#scores.cricket .scorecard td:nth-child(n+3) {
+  text-align: right;
+}
+#scores.cricket .scorecard th span,
+#scores.cricket .scorecard td span {
+  font-family: "guardian-italic";
+}
+#scores.cricket .bowlers th:first-child,
+#scores.cricket .bowlers td:first-child {
+  text-align: left;
+}
+#scores.cricket .bowlers th:nth-child(n+2),
+#scores.cricket .bowlers td:nth-child(n+2) {
+  text-align: right;
+}
+#scores.cricket .fall-of-wickets thead th:first-child {
+  text-align: left;
+}
+#scores.cricket .fall-of-wickets th:nth-child(odd),
+#scores.cricket .fall-of-wickets td:nth-child(odd) {
+  text-align: right;
+}
+#scores.cricket .fall-of-wickets th:nth-child(even),
+#scores.cricket .fall-of-wickets td:nth-child(even) {
+  text-align: left;
+}
+#scores.cricket .match-summary tbody tr:nth-child(3) {
+  font-family: "guardian-bold";
+}
+#scores.cricket .match-summary tbody th:first-child,
+#scores.cricket .match-summary tbody td:first-child {
+  text-align: left;
+}
+#scores.cricket .match-summary tbody th:nth-child(n+2),
+#scores.cricket .match-summary tbody td:nth-child(n+2) {
+  text-align: right;
+}
+#results.cricket table tr:nth-child(3) {
+  font-family: "guardian-bold";
+}
+#results.cricket table th:first-child,
+#results.cricket table td:first-child {
+  text-align: left;
+}
+#results.cricket table th:nth-child(n+2),
+#results.cricket table td:nth-child(n+2) {
+  text-align: right;
+}
+#results.cricket ul {
+  list-style: none;
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+#results.cricket ul:last-of-type {
+  margin-bottom: 0;
+}
+#results.cricket ul li:nth-child(3) {
+  font-family: "guardian-bold";
+}
+#more-statistics h2 {
+  font-family: "guardian-bold";
+  font-weight: normal;
+  font-size: 17px;
+  font-size: 1.7000000000000002rem;
+  line-height: 20px;
+  line-height: 2rem;
+  color: #000;
+}
+/* breakpoints
+--------------------------------------------------*/
+@media only screen and (min-width: 480px) {
+  .primary-detail {
+    display: table-cell;
+  }
+  #table th,
+  #tables th,
+  #table td,
+  #tables td {
+    padding: 5px 1.041666667% 5px 1.041666667%;
+    padding: 0.5rem 1.041666667% 0.5rem 1.041666667%;
+  }
+  #table th:first-child,
+  #tables th:first-child,
+  #table td:first-child,
+  #tables td:first-child {
+    width: 5%;
+  }
+  #table th:nth-child(n+3),
+  #tables th:nth-child(n+3),
+  #table td:nth-child(n+3),
+  #tables td:nth-child(n+3) {
+    width: 6%;
+  }
+  #tables:before,
+  #tables:after {
+    content: "";
+    display: table;
+  }
+  #tables:after {
+    clear: both;
+  }
+  #tables .scorers,
+  #tables .assists,
+  #tables .yellow-cards,
+  #tables .red-cards {
+    float: left;
+    display: block;
+    width: 47.91666666666667%;
+    margin-top: 20px;
+    margin-top: 2rem;
+  }
+  #tables .scorers th,
+  #tables .assists th,
+  #tables .yellow-cards th,
+  #tables .red-cards th,
+  #tables .scorers td,
+  #tables .assists td,
+  #tables .yellow-cards td,
+  #tables .red-cards td {
+    padding: 5px 2.173913043% 5px 2.173913043%;
+    padding: 0.5rem 2.173913043% 0.5rem 2.173913043%;
+  }
+  #tables .scorers th:first-child,
+  #tables .assists th:first-child,
+  #tables .yellow-cards th:first-child,
+  #tables .red-cards th:first-child,
+  #tables .scorers td:first-child,
+  #tables .assists td:first-child,
+  #tables .yellow-cards td:first-child,
+  #tables .red-cards td:first-child {
+    width: 10%;
+  }
+  #tables .scorers th:nth-child(n+3),
+  #tables .assists th:nth-child(n+3),
+  #tables .yellow-cards th:nth-child(n+3),
+  #tables .red-cards th:nth-child(n+3),
+  #tables .scorers td:nth-child(n+3),
+  #tables .assists td:nth-child(n+3),
+  #tables .yellow-cards td:nth-child(n+3),
+  #tables .red-cards td:nth-child(n+3) {
+    width: 12%;
+  }
+  #tables .scorers,
+  #tables .yellow-cards {
+    clear: both;
+    margin-right: 4.166666666666667%;
+  }
+  #scores.tennis table th:first-child,
+  #scores.tennis table td:first-child {
+    width: 1%;
+  }
+  #scores.tennis table th:nth-child(n+3),
+  #scores.tennis table td:nth-child(n+3),
+  #scores.tennis table th:last-child,
+  #scores.tennis table td:last-child {
+    width: 3%;
+  }
+  #scores.tennis table th.secondary,
+  #scores.tennis table td.secondary {
+    display: table-block;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .secondary-detail {
+    display: table-cell;
+  }
+  #table th,
+  #tables th,
+  #table td,
+  #tables td {
+    padding: 5px 0.78125% 5px 0.78125%;
+    padding: 0.5rem 0.78125% 0.5rem 0.78125%;
+  }
+  #table th:first-child,
+  #tables th:first-child,
+  #table td:first-child,
+  #tables td:first-child {
+    width: 3%;
+  }
+  #table th:nth-child(n+3),
+  #tables th:nth-child(n+3),
+  #table td:nth-child(n+3),
+  #tables td:nth-child(n+3) {
+    width: 4%;
+  }
+  #scores.cricket:before,
+  #scores.cricket:after {
+    content: "";
+    display: table;
+  }
+  #scores.cricket:after {
+    clear: both;
+  }
+  #scores.cricket th:nth-child(-n+2),
+  #scores.cricket td:nth-child(-n+2) {
+    width: 44%;
+  }
+  #scores.cricket th:nth-child(n+3),
+  #scores.cricket td:nth-child(n+3) {
+    width: 3%;
+  }
+  #scores.cricket th span,
+  #scores.cricket td span {
+    display: none;
+  }
+  #scores.cricket .bowlers,
+  #scores.cricket .fall-of-wickets {
+    float: left;
+    display: block;
+    width: 47.91666666666667%;
+    /*				.margin-top(20);*/
+  
+  }
+  #scores.cricket .bowlers th,
+  #scores.cricket .fall-of-wickets th,
+  #scores.cricket .bowlers td,
+  #scores.cricket .fall-of-wickets td {
+    padding: 5px 2.173913043% 5px 2.173913043%;
+    padding: 0.5rem 2.173913043% 0.5rem 2.173913043%;
+  }
+  #scores.cricket .bowlers {
+    clear: both;
+    margin-right: 4.166666666666667%;
+  }
+  #scores.cricket .bowlers th:first-child,
+  #scores.cricket .bowlers td:first-child {
+    width: 52%;
+  }
+  #scores.cricket .bowlers th:nth-child(n+2),
+  #scores.cricket .bowlers td:nth-child(n+2) {
+    width: 12%;
+  }
+  #scores.cricket .fall-of-wickets th:nth-child(odd),
+  #scores.cricket .fall-of-wickets td:nth-child(odd) {
+    width: 12%;
+  }
+  #scores.cricket .fall-of-wickets th:nth-child(even),
+  #scores.cricket .fall-of-wickets td:nth-child(even) {
+    width: 76%;
+  }
+}
+@media only screen and (min-width: 900px) {
+  /* arbitary break point - thinking all table detail might be able to be displayed by here */
+  th.full-detail,
+  td.full-detail {
+    display: table-cell;
+  }
+  tr.full-detail {
+    display: table-row;
+  }
+  .primary-detail,
+  .secondary-detail {
+    display: none;
+  }
+  #table th,
+  #tables th,
+  #table td,
+  #tables td {
+    padding: 5px 0.555555556% 5px 0.555555556%;
+    padding: 0.5rem 0.555555556% 0.5rem 0.555555556%;
+  }
+  #table th:first-child,
+  #tables th:first-child,
+  #table td:first-child,
+  #tables td:first-child {
+    width: 3%;
+  }
+  #table th:nth-child(n+3),
+  #tables th:nth-child(n+3),
+  #table td:nth-child(n+3),
+  #tables td:nth-child(n+3) {
+    width: 4%;
+  }
+  #scores.tennis table th:first-child,
+  #scores.tennis table td:first-child {
+    width: 1%;
+  }
+  #scores.tennis table th:nth-child(n+3),
+  #scores.tennis table td:nth-child(n+3),
+  #scores.tennis table th:last-child,
+  #scores.tennis table td:last-child {
+    width: 2%;
+  }
+  #scores.tennis table th.secondary-detail,
+  #scores.tennis table td.secondary-detail {
+    display: table-cell;
+  }
+  #scores.cricket th.secondary-detail,
+  #scores.cricket td.secondary-detail,
+  #scores.cricket th.primary-detail,
+  #scores.cricket td.primary-detail {
+    display: table-cell;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .primary-detail,
+  .secondary-detail {
+    display: table-cell;
+  }
+  #table th:first-child,
+  #tables th:first-child,
+  #table td:first-child,
+  #tables td:first-child {
+    width: 2.5%;
+  }
+  #table th:nth-child(n+3),
+  #tables th:nth-child(n+3),
+  #table td:nth-child(n+3),
+  #tables td:nth-child(n+3) {
+    width: 3.5%;
+  }
+}

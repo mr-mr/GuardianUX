@@ -1,0 +1,17 @@
+.clear-fix:before,.clear-fix:after{content:"";display:table}
+.clear-fix:after{clear:both}
+.clear-clear-fix:before,.clear-clear-fix:after{clear:none;content:none;display:none}
+br:last-child{clear:both}
+@font-face{font-family:"guardian-regular";src:url('../fnt/Guardian-Egyp-Web-Regular.woff') format('woff');font-weight:normal;font-style:normal}@font-face{font-family:"guardian-italic";src:url('../fnt/Guardian-Egyp-Web-Regular It.woff') format('woff');font-weight:normal;font-style:normal}@font-face{font-family:"guardian-bold";src:url('../fnt/Guardian-Egyp-Web-Semibold.woff') format('woff');font-weight:normal;font-style:normal}@font-face{font-family:"guardian-bold-italic";src:url('../fnt/Guardian-Egyp-Web-Semibold It.woff') format('woff');font-weight:normal;font-style:normal}.pagination-pages{margin:0;text-align:center}.pagination-pages li{display:inline-block;width:10px;height:10px;margin-right:10px}.pagination-pages li:last-child{margin:0}
+.pagination-pages li a{display:block;text-indent:-9999em;overflow:hidden;width:100%;height:100%;background:#e5e5e5}.pagination-pages li a:hover{background:#d2d2d2}
+.carousel .medium,.carousel .medium-large{display:none}
+@media (min-width:640px){.carousel .medium{display:block}}@media (min-width:960px){.carousel .medium-large{display:block}}
+.carousel h3{font-size:17px;font-size:1.7000000000000002rem;line-height:20px;line-height:2rem;font-family:"guardian-bold"}
+.carousel-current{text-align:center}
+.carousel{position:relative}.carousel button{margin-left:auto;margin-right:auto;width:30%}
+.carousel .pagination-controls li{position:absolute;top:40%;width:45px;height:54px;margin-top:-27px}
+.carousel .pagination-controls a{text-indent:-9999em;display:block;width:100%;height:100%;opacity:.5;background-size:contain;background-position:left top;background-repeat:no-repeat}.carousel .pagination-controls a:hover{opacity:1}
+.carousel .pagination-next{right:0}.carousel .pagination-next a{background-image:url('../img/in-body-next.svg')}
+.carousel .pagination-previous{left:0}.carousel .pagination-previous a{background-image:url('../img/in-body-prev.svg')}
+.commercial-books .carousel-image{width:50%;max-width:50%;margin:0 auto}
+@media (min-width:640px){}@media (min-width:960px){.carousel-current{float:left;width:32%;margin-right:2%}.carousel-current:last-of-type{margin-right:0}}

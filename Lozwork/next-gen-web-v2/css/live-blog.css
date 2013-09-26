@@ -1,0 +1,225 @@
+.clear-fix:before,
+.clear-fix:after {
+  content: "";
+  display: table;
+}
+.clear-fix:after {
+  clear: both;
+}
+.clear-clear-fix:before,
+.clear-clear-fix:after {
+  clear: none;
+  content: none;
+  display: none;
+}
+.no-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+.reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/* general
+--------------------------------------------------*/
+.score {
+  display: none;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  background: #fff;
+}
+.score tr:nth-of-type(odd) {
+  background: #cccccc;
+}
+.score tr:nth-of-type(even) {
+  background: #eeeeee;
+}
+.score td {
+  vertical-align: top;
+  padding: 5px 5px 5px 5px;
+  padding: 0.5rem 5px 0.5rem 5px;
+}
+.score th,
+.score td {
+  width: 40%;
+}
+.score th:first-of-type,
+.score td:first-of-type {
+  text-align: right;
+}
+.score th:nth-of-type(2),
+.score td:nth-of-type(2) {
+  width: 20%;
+  text-align: center;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0px 3.333333333% 20px 3.333333333%;
+  padding: 0rem 3.333333333% 2rem 3.333333333%;
+}
+.active-left .fixed {
+  left: 100%;
+}
+.active-right .fixed {
+  left: -100%;
+}
+.update-control {
+  width: 100%;
+  background: #eeeeee;
+}
+.update-control dt,
+.update-control dd {
+  display: inline-block;
+  vertical-align: top;
+}
+.update-control dt,
+.update-control li a {
+  padding: 5px 5px 5px 5px;
+  padding: 0.5rem 5px 0.5rem 5px;
+}
+.update-control dt {
+  font-family: "guardian-regular", georgia, serif;
+}
+.update-control dd {
+  float: right;
+  width: 50%;
+}
+.update-control li {
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+  border-left: 1px solid #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.update-control li a {
+  display: block;
+  color: #333333;
+  background: #eeeeee;
+}
+.update-control li a:hover,
+.update-control li a:visited:hover,
+.update-control li a.selected {
+  color: #fff;
+  background: #003656;
+}
+.update-control li a.selected {
+  font-family: "guardian-bold";
+  cursor: default;
+}
+#live,
+#statistics,
+#live-gallery,
+#table {
+  border-bottom: 1px solid #cccccc;
+}
+#live .number-updates {
+  display: none;
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+#live dl {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+#live dl dd {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+#live dl dd:last-of-type {
+  margin-bottom: 0;
+}
+#live p:last-child {
+  padding: 9px 0px 9px 0px;
+  padding: 0.9rem 0px 0.9rem 0px;
+  border-top: 1px dotted #cccccc;
+}
+#statistics dl {
+  clear: both;
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  padding-bottom: 9px;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px dotted #cccccc;
+}
+#statistics dl:before,
+#statistics dl:after {
+  content: "";
+  display: table;
+}
+#statistics dl:after {
+  clear: both;
+}
+#statistics dl:last-child {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  padding: 0;
+  border: none;
+}
+#statistics dl:last-child dd:first-of-type {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+#statistics dl ul {
+  width: 48%;
+  margin-bottom: 0;
+}
+#statistics dl ul:first-child {
+  float: left;
+}
+#statistics dl ul:last-child {
+  float: right;
+}
+#statistics dl ul:only-child {
+  float: none;
+  width: 100%;
+}
+#statistics dl ul:only-child li {
+  float: left;
+  width: 50%;
+  padding: 5px 3.333333333% 5px 3.333333333%;
+  padding: 0.5rem 3.333333333% 0.5rem 3.333333333%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#statistics dl ul:only-child li:first-child {
+  text-align: right;
+  background: #cccccc;
+}
+#statistics dl ul:only-child li:last-child {
+  text-align: left;
+  background: #eeeeee;
+}
+#scores ul:last-child,
+#table ul:last-child {
+  list-style: none;
+}
+/* typeography
+--------------------------------------------------*/
+.update-control dt {
+  font-family: "guardian-regular", georgia, serif;
+}
+.update-control li a {
+  color: #333333;
+}
+.update-control li a:hover,
+.update-control li a:visited:hover,
+.update-control li a.selected {
+  color: #fff;
+}
+.update-control li a.selected {
+  font-family: "guardian-bold";
+}
+#live dt {
+  font-family: "guardian-bold";
+}

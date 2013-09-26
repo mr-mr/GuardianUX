@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+		
+	<title>Contact us</title>
+
+ 	<link rel="stylesheet" href="/css/fonts.css" media="screen" />
+
+ 	<link rel="stylesheet/less" href="/css/base.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/article.less" media="screen" /> 
+ 	<link rel="stylesheet/less" href="/css/article-promos.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/filters.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/contact-us.less" media="screen" />
+			
+	<script src="/js/hide-address-bar.js"></script>
+
+	<script src="/js/jquery-1.7.2.min.js"></script>
+	<script src="/js/jquery.event.move.js"></script>	
+	<script src="/js/jquery.event.swipe.js"></script>
+	
+	
+	<script src="/js/navigation.js"></script>
+	<script src="/js/show-hide.js"></script>
+	<script src="/js/contact-us.js"></script>
+		
+	<script src="/js/less-1.3.0.min.js"></script>
+	
+</head>
+
+<body id="article" class="contact-us">
+	<div class="wrapper">
+		<!--#include virtual="/inc/primary-navigation.inc" -->
+
+		<section id="content" role="presentation">
+			<!--#include virtual="/inc/header.inc" -->
+			
+			<article class="article-body">	
+				<h1>Contact us</h1>	
+
+				<section id="filters">
+					<div id="filters-form" class="show-hide">		
+						<ul>
+							<li><a href="#website">Website help</a></li>
+							<li><a href="#mail">Mail &amp; telephone</a></li>
+							<li><a href="#staff">Staff members</a></li>
+							<li><a href="#letters">Letters to the editor</a></li>
+							<li><a href="#readers">Corrections <!-- &amp; clarifications --></a></li>
+							<li><a href="#legal">Legal complaints</a></li>
+							<li><a href="#moderation">Moderation</a></li>
+							<li><a href="#advertising">Advertising <!-- &amp; sponsorship --></a></li>
+							<li><a href="#press">Press office</a></li>
+							<li><a href="#freelance">Freelancers</a></li>
+							<li><a href="#employment">Employment &amp; work experience</a></li>
+							<li><a href="#subscriptions">Subscriptions &amp; back issues</a></li>
+							<!-- <li><a href="#abroad">Getting the Guardian abroad</a></li> -->
+							<li><a href="#distribution">Distribution <!-- &amp; syndication --></a></li>
+							<li><a href="#offers">Reader offers</a></li>
+							<li><a href="#guardian-departmental">Guardian departmental emails</a></li>
+							<li><a href="#observer-departmental">Observer departmental emails</a></li>
+							<!-- <li><a href="#weekly">Guardian Weekly</a></li> -->
+						</ul>
+					</div>
+					<p><a href="#filters-form" class="show-hide"><span>Show</span> contact us sections</a></p>
+				</section>
+				<!-- end #filters -->	
+				
+				<section id="website">
+					<h3>Website help</h3>
+					<p>For any problems using the website, our mobile apps and their links, or general questions and feedback about the Guardian network, please email <a href="#">userhelp@guardian.co.uk</a></p>
+					<p>If your query relates to the Guardian iPad edition, please email <a href="#">ipad@guardian.co.uk</a></p>
+					<p><a href="#top">^ Back to top</a></p>	
+				</section>
+				<section id="mail">
+					<h3>Mail &amp; telephone</h3>
+					<p>Please address any correspondence to:</p>
+					<address>
+						Kings Place, 90 York Way<br />
+						London N1 9GU
+					</address>
+					<p>The switchboard number for the Guardian, the Observer and guardian.co.uk is <a href="tel:0203353200">020 3353 2000</a> or, if dialling from overseas, <a href="tel:0044203532000">+44 20 3353 2000</a></p>
+					<p><a href="#top">^ Back to top</a></p>	
+				</section>
+				<section id="staff">
+					<h3>Staff members</h3>
+					<p>To contact any member of staff, whether editorial or commercial use this email format:</p>
+					<ul>
+						<li>firstname.lastname@guardian.co.uk</li>
+						<li>firstname.lastname@observer.co.uk</li>
+					</ul>
+					<p><a href="#top">^ Back to top</a></p>	
+				</section>
+				<section id="letters">
+					<h3>Letters to the editors</h3>
+					<p>Letters for publication should be sent to these addresses. The sender's full postal address and phone number are required, for verification only:</p>
+					<ul>
+						<li>Guardian <a href="#">letters@guardian.co.uk</a></li>
+						<li>Observer <a href="#">letters@observer.co.uk</a></li>
+					</ul>
+					<p><a href="#top">^ Back to top</a></p>	
+				</section>
+				<section id="readers">
+					<h3>Corrections &amp; clarifications</h3>
+					<p>It is the policy of the Guardian and the Observer to correct significant editorial errors and handle editorial complaints as soon as possible. The readers' editors are independent internal ombudsmen and can be contacted as follows:</p>
+					<ul>
+						<li><a href="#">Chris Elliott</a> - Guardian readers' editor</li>
+						<li><a href="#">Stephen Pritchard</a> - Observer readers' editor</li>
+					</ul>
+					<p><a href="#top">^ Back to top</a></p>	
+				</section>
+				<section id="legal">
+					<h3>Legal complaints</h3>
+					<p>Legal complaints should be addressed to our editorial legal services department at:</p>
+					<address>
+						Kings Place, 90 York Way<br />
+						London N1 9GU
+					</address>
+					<p><a href="#top">^ Back to top</a></p>	
+				</section>
+				<section id="moderation">
+					<h3>Moderation</h3>
+					<p>For more information about moderation and to contact the moderation team, please see this our <a href="http://www.guardian.co.uk/community-standards">community standards</a></p>					
+					<p><a href="#top">^ Back to top</a></p>	
+				</section>				
+				<section id="advertising">
+					<h3>Advertising, sponsorship and e-commerce</h3>
+					<p>To find out more about all advertising and sponsorship opportunities on guardian.co.uk, in the Guardian and in the Observer, visit our <a href="#">advertising section</a>.</p>
+					<p><a href="#top">^ Back to top</a></p>	
+				</section>
+				<section id="press">
+					<h3>Press office</h3>
+					<p>If you are a journalist with a media inquiry, please visit the <a href="#">press office page</a> for the relevant contact information.</p>
+					<p><a href="#top">^ Back to top</a></p>	
+				</section>
+				<section id="freelance">
+					<h3>Freelance contributors</h3>
+					<p>If you would like to contribute freelance content, please ensure you have read our <a href="#">contributors' guide</a>.</p>
+					<p>Story pitches should be sent to relevant editorial department, as listed below.</p>
+					<p>Any queries you have relating to the Freelance Charter or Rights/permissions should be directed to our Rights Department at <a href="#">rights@guardian.co.uk</a></p>
+					<p><a href="#top">^ Back to top</a></p>	
+				</section>
+				<section id="employment">
+					<h3>Employment &amp; work experience</h3>
+					<p>If you are interested in working for Guardian News and Media, please see <a href="#">our dedicated careers site</a>. All current work experience and internship schemes are detailed on this site under the <a href="#">"Other opportunities"</a> heading.</p>
+					<p><a href="#top">^ Back to top</a></p>	
+				</section>
+				<section id="subscriptions">
+					<h3>Subscriptions &amp; back issues</h3>
+					<p>For information on ordering a back issue of the Guardian, click here.</p>
+					<p>If your query concerns a subscription please email <a href="#">guardian.pub.subs@quadrantsubs.com</a> or call <a href="tel:08451204733">0845 120 4733</a></p>
+					<p>If a section of your Guardian or Observer is missing please telephone <a href="tel:0800839100">0800 839 100</a>. This is a 24-hour freephone number.</p>	
+					<h4>Getting the Guardian abroad</h4>
+					<p>The availability of The Guardian and Observer in newsagents is now very limited outside of the UK. However, you can still purchase these publications in a small selection of countries and cities or you can subscribe and have your copy delivered to your door.</p>
+					<p>For more information on purchasing copies of the Guardian abroad, please contact the international publishing team on <a href="tel:00448445438005">+44 (0) 844 543 8005</a>, or email <a href="#">internationaledition@guardian.co.uk</a>. You can also write to them at:</p>
+					<address>
+						Guardian and Observer International<br />
+						Sales and Marketing<br />
+						Kings Place, 90 York Way<br />
+						London N1 9GU<br />
+						UK
+					</address>
+					<p>You can subscribe to the Guardian and Observer abroad via Quadrant subscriptions:</p>
+					<ul>
+						<li><a href="#">Guardian subscriptions</a></li>
+						<li><a href="#">Observer subscriptions</a></li>
+					</ul>						
+					<p>You can ontact our customer service department at Quadrant Subscription Services by calling <a href="tel:00448445438005">+44 (0) 844 543 8005</a>, emailing <a href="#">guardian.subs@quadrantsubs.com</a> or faxing +44 (0) 208 261 8433. You can also write to them at:</p>
+					<address>
+						The Guardian and Observer<br />
+						Quadrant Subscription Services<br />
+						Rockwood House, 9-17 Perrymount Rd<br />
+						Hayward Heath RH16 3DH<br />
+						UK
+					</address>
+					<p><a href="#top">^ Back to top</a></p>	
+				</section>
+				<section id="distribution">
+					<h3>Distribution &amp; syndication</h3>
+					<p>If your query concerns UK distribution please contact <a href="#">roger.clapham@guardian.co.uk</a></p>
+					<p>If your query relates to retail supplies please contact <a href="#">business.information@guardian.co.uk</a></p>
+					<p>If you wish to re-publish Guardian or Observer articles or photography, please email <a href="#">syndication@guardian.co.uk</a> or call the syndication department on <a href="tel:02033532539">020 3353 2539</a>.</p>
+					<p><a href="#top">^ Back to top</a></p>	
+				</section>
+				<section id="offers">
+					<h3>Reader offers</h3>
+					<p>All feedback and queries relating to Guardian reader offers should be directed to readeroffershelp@guardian.co.uk. Alternatively, please call 0330 333 6865 (national call rates apply) weekdays between 9.30am and 5.30pm.</p>
+					<p><a href="#top">^ Back to top</a></p>	
+				</section>
+				<section id="guardian-departmental">
+					<h3>Guardian departmental emails</h3>
+					<p>Please address email for specific desks at the Guardian as follows:</p>
+					<ul>
+						<li><a href="#">Arts desk</a></li>
+						<li><a href="#">Books competitions and events</a></li>
+						<li><a href="#">Business desk and financial staff</a></li>
+						<li><a href="#">Comment pages and Comment is free</a></li>
+						<li><a href="#">Consumer desk</a></li>
+						<li><a href="#">Consumer investigative column in weekly Money section</a></li>
+						<li><a href="#">Diary</a></li>
+						<li><a href="#">Education desk</a></li>
+						<li><a href="#">Education letters offered for publication in the weekly Education Guardian section</a></li>
+						<li><a href="#">Family weekly Saturday section</a></li>
+						<li><a href="#">G2 (features) desk</a></li>
+						<li><a href="#">Film</a></li>
+						<li><a href="#">Film &amp; Music weekly section</a></li>
+						<li><a href="#">The Guide weekly arts and listing magazine</a></li>
+						<li><a href="#">The Guide listings submissions</a></li>
+						<li><a href="#">International &amp; foreign news desk</a></li>
+						<li><a href="#">Letters </a></li>
+						<li><a href="#">Life and style</a></li>
+						<li><a href="#">Media Guardian</a></li>
+						<li><a href="#">Money personal finance section</a></li>
+						<li><a href="#">Money letters column</a></li>
+						<li><a href="#">Money section's Personal effects column where readers share advice</a></li>
+						<li><a href="#">News desk, for UK national news</a></li>
+						<li><a href="#">Obituaries desk</a></li>
+						<li><a href="#">Pictures: for emails from readers, agencies and PRs</a></li>
+						<li><a href="#">Pictures: for advisories on film openings, PR openings and similar</a></li>
+						<li><a href="#">Pictures: for photographers submitting portfolios</a></li>
+						<li><a href="#">Political staff</a></li>
+						<li><a href="#">Readers' editor</a></li>
+						<li><a href="#">Review</a></li>
+						<li><a href="#">Science desk</a></li>
+						<li><a href="#">Society</a></li>
+						<li><a href="#">Space</a></li>
+						<li><a href="#">Sports desk</a></li>
+						<li><a href="#">Technology desk</a></li>
+						<li><a href="#">Travel desk</a></li>
+						<li><a href="#">Weekend magazine</a></li>
+						<li><a href="#">Work</a></li>
+					</ul>
+					<p><a href="#top">^ Back to top</a></p>	
+				</section>
+				<section id="observer-departmental">
+					<h3>Observer departmental emails</h3>
+					<p>Please address email for specific desks at the Observer as follows:</p>
+					<ul>
+						<li><a href="#">Business</a></li>
+						<li><a href="#">Cash</a></li>
+						<li><a href="#">Consumer investigative column</a></li>
+						<li><a href="#">Escape &amp; travel</a></li>
+						<li><a href="#">Food Monthly</a></li>
+						<li><a href="#">Letters to the editor</a></li>
+						<li><a href="#">Magazine</a></li>
+						<li><a href="#">News</a></li>
+						<li><a href="#">Review</a></li>
+						<li><a href="#">Sport</a></li>
+						<li><a href="#">TV and radio</a></li>	
+					</ul>
+					<p><a href="#top">^ Back to top</a></p>	
+				</section>
+				
+			</article>
+
+			<!--#include virtual="/inc/footer.inc" -->						
+		</section>
+		<!-- end #main -->
+		
+		<!--#include virtual="/inc/top-stories-list-news.inc" -->
+	</div>
+	<!-- end .wrapper -->
+</body>
+
+</html>

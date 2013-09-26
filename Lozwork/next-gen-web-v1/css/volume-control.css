@@ -1,0 +1,327 @@
+.clear-fix:before,
+.clear-fix:after {
+  content: "";
+  display: table;
+}
+.clear-fix:after {
+  clear: both;
+}
+.no-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+.reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/* general
+--------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  -webkit-text-size-adjust: none;
+}
+body {
+  text-align: center;
+  /*	background:url("/img/background-360.png") center top repeat-y @background;*/
+
+  background: #eeeeee;
+}
+.wrapper {
+  width: 322px;
+  text-align: left;
+  margin: 0 auto;
+}
+p {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+h1 {
+  margin: 25px 0px 25px 0px;
+  margin: 2.5rem 0px 2.5rem 0px;
+}
+a {
+  color: #005689;
+  text-decoration: none;
+}
+a:hover {
+  color: #003656;
+}
+a:visited {
+  color: #0076bc;
+}
+form {
+  margin-bottom: 19px;
+  margin-bottom: 1.9000000000000001rem;
+}
+form ul {
+  list-style: none;
+}
+form li:first-of-type {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  padding-bottom: 9px;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px dotted #cccccc;
+}
+form label {
+  display: inline-block;
+  width: 29.5%;
+  font-family: "guardian-bold";
+}
+form span label {
+  font-family: "guardian-regular", georgia, serif;
+}
+form input[type="range"] {
+  vertical-align: baseline;
+  width: 70%;
+}
+form input[type="radio"] {
+  margin-right: 5px;
+}
+#window {
+  width: 320px;
+  height: 480px;
+  overflow-y: scroll;
+  background: #fff;
+  border: 1px solid #000;
+  /*	background:url("/img/baseline-20.png") left top repeat;*/
+
+}
+article {
+  margin: 20px 10px 20px 10px;
+  margin: 2rem 10px 2rem 10px;
+}
+article h2 {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+article h2 img {
+  display: none;
+}
+article p {
+  clear: both;
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+article h3 {
+  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
+}
+article h4 img {
+  display: none;
+}
+.small[data-has-pictures="yes"] h2 img,
+.small-medium[data-has-pictures="yes"] h2 img,
+.medium[data-has-pictures="yes"] h2 img,
+.medium-large[data-has-pictures="yes"] h2 img,
+.large[data-has-pictures="yes"] h2 img,
+.nuclear[data-has-pictures="yes"] h2 img {
+  display: block;
+}
+.small h4 img,
+.small-medium h4 img,
+.medium h4 img {
+  display: none;
+}
+.small h2 img,
+.small-medium h2 img,
+.medium h2 img,
+.medium-large h2 img {
+  float: left;
+  margin-right: 2%;
+}
+.medium h3,
+.medium-large h3,
+.medium .related-items li:nth-child(n+3),
+.medium-large .related-items li:nth-child(n+3) {
+  display: none;
+}
+.medium p,
+.medium-large p,
+.large p,
+.nuclear p,
+.medium h3,
+.medium-large h3,
+.large h3,
+.nuclear h3,
+.medium .related-items,
+.medium-large .related-items,
+.large .related-items,
+.nuclear .related-items {
+  display: block;
+}
+.medium-large .related-items li,
+.large .related-items li,
+.nuclear .related-items li {
+  margin-top: 5px;
+  margin-top: 0.5rem;
+  padding-top: 4px;
+  padding-top: 0.4rem;
+  border-top: 1px solid #eeeeee;
+}
+.medium-large .related-items li:first-child,
+.large .related-items li:first-child,
+.nuclear .related-items li:first-child {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.medium-large[data-has-pictures="yes"] h4 img,
+.large[data-has-pictures="yes"] h4 img,
+.nuclear[data-has-pictures="yes"] h4 img {
+  float: left;
+  display: block;
+  width: 20%;
+  margin-right: 2%;
+}
+.medium h2 img,
+.medium-large h2 img,
+.large h2 img {
+  float: left;
+  width: 41.66666666666667%;
+  margin: 0px 2% 10px 0px;
+  margin: 0rem 2% 1rem 0px;
+}
+.large .related-items li:nth-child(n),
+.nuclear .related-items li:nth-child(n) {
+  display: block;
+}
+.large .related-items li:nth-child(n+4),
+.nuclear .related-items li:nth-child(n+4) {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.small h2 {
+  margin: 0;
+}
+.small h2:before,
+.small h2:after {
+  content: "";
+  display: table;
+}
+.small h2:after {
+  clear: both;
+}
+.small h2 img {
+  width: 33.33333333333333%;
+}
+.small p,
+.small h3,
+.small .related-items {
+  display: none;
+}
+.small-medium h2 img {
+  float: left;
+  width: 33.33333333333333%;
+  margin: 0px 2% 10px 0px;
+  margin: 0rem 2% 1rem 0px;
+}
+.small-medium p {
+  clear: both;
+  display: block;
+  margin: 0;
+}
+.small-medium h3,
+.small-medium .related-items {
+  display: none;
+}
+.nuclear h2 img {
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+  margin: 0rem 0px 1rem 0px;
+}
+/* typography
+--------------------------------------------------*/
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "guardian-regular", georgia, serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 20px;
+  line-height: 2rem;
+  text-rendering: optimizeLegibility;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "guardian-regular", georgia, serif;
+  font-weight: normal;
+}
+h1 {
+  font-size: 24px;
+  font-size: 2.4000000000000004rem;
+  line-height: 30px;
+  line-height: 3rem;
+}
+article {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  padding-bottom: 9px;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px dotted #cccccc;
+}
+article h2 {
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 30px;
+  line-height: 3rem;
+}
+article h3 {
+  font-family: "guardian-bold";
+  font-weight: normal;
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: 20px;
+  line-height: 2rem;
+}
+article .related-items {
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: 20px;
+  line-height: 2rem;
+}
+.small h2 {
+  font-family: "guardian-bold";
+  font-weight: normal;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 20px;
+  line-height: 2rem;
+}
+.small-medium h2,
+.medium h2,
+.medium-large h2,
+.large h2 {
+  font-family: "guardian-regular", georgia, serif;
+  font-weight: normal;
+  font-size: 17px;
+  font-size: 1.7000000000000002rem;
+  line-height: 20px;
+  line-height: 2rem;
+}
+.medium-large .related-items li:nth-child(-n+2) h4 {
+  font-family: "guardian-bold";
+}
+.large h2,
+.large .related-items li:nth-child(-n+2) h4 {
+  font-family: "guardian-bold";
+}
+.nuclear h2 {
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 30px;
+  line-height: 3rem;
+}
+.nuclear .related-items li:nth-child(-n+2) h4 {
+  font-family: "guardian-bold";
+}

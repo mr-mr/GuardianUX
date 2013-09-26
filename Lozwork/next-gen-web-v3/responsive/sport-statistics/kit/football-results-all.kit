@@ -1,0 +1,80 @@
+<!-- $pageTitle = Football results – All -->
+<!-- $pageType = sport-statistics -->
+<!-- $page = football-results-all -->
+<!-- $navSection = uk-edition-football -->
+
+<!-- @include '../../inc/template/template-header-v2.kit' -->
+
+		<!-- @include '../../inc/navigation/nav-uk-edition-football.kit' -->
+		
+		<!-- @include '../../inc/advert/advert-banner.kit' -->
+
+		<header class="statistics-header">
+			<h2 class="article-section"><a href="#">Football</a></h2>
+			<p class="date-stamp article-date-stamp"><time>Thursday 28 June 2013</time></p>
+			<h1>All results</h1>
+			<!-- @include '../../inc/page/page-sharing-tools.kit' -->
+			<!-- @include '../../inc/sport-statistics/sport-statistics-football-competition-filter.kit -->
+		</header>
+		<!-- end .statistics-header -->
+		
+		<article class="statistics-body" data-notation="This collated (all competitons) results page displays the previous three days worth of results, with the option to load more in three day chunks. Only days including results should count towards the three days (which during the season is pretty much every day anyway).">
+			<!-- @include '../../inc/sport-statistics/sport-statistics-football-results-all.kit -->
+						
+			<div class="load-more-destination" role="presentation"></div>
+			<!-- end .load-more-container -->
+			<p class="load-more" data-notation="Loads in previous three days worth of results"><a href="../ajax/sport-statistics/sport-statistics-football-results-all-more.html" class="load-more-control">Load next 3 days</a></p>
+			
+			<!-- @include '../../inc/page/page-sharing-tools.kit' -->
+		</article>
+		<!-- end .statistics-body -->
+		
+		<!-- @include '../../inc/sport-statistics/sport-statistics-football-key-dates-all.kit' -->
+
+		<aside class="related-statistics related-statistics-tables" data-notation="At larger screen sizes, the Premier League tabe is shown in the right hand side (chosen because the majority of our football coverage/visitors are Premier League based).">
+			<!-- @include '../../inc/sport-statistics/sport-statistics-football-table-v2.kit' -->	
+			
+			<!-- @include '../../inc/sport-statistics/sport-statistics-football-more-tables-module.kit' -->
+		</aside>
+		<!-- end .related-statistics -->
+		
+		<!-- @include '../../inc/sport-statistics/sport-statistics-football-more-statistics-module.kit' -->
+		
+		
+		<aside class="most-read-articles" data-notation="Most read articles show the first paragraph of their content, with the option to read more and expand the content in place. Ads are placed within each expanded article, along with a link to 'read the full article'.">
+			<h2>Most read</h2>
+	
+			<div class="tabs-container">
+				<ul class="tabs">
+					<li><a href="#most-read-tab-1" class="tab-control">Football</a></li><li><a href="#most-read-tab-2" class="tab-control">Guardian</a></li>
+				</ul>
+				<div id="most-read-tab-1" class="tab-pane">
+					<!-- @include '../../inc/most-read/most-read-expandable-football-v2.kit' -->
+				</div>
+				<div id="most-read-tab-2" class="tab-pane">
+					<!-- @include '../../inc/most-read/most-read-expandable-guardian-v2.kit' -->
+				</div>
+			</div>
+			<!-- end .tab-container -->
+		</aside>
+		<!-- end .most-read-articles -->
+
+		<ul class="page-controls medium-large-screens" role="presentation">
+			<li class="page-next article article-next-previous" data-is-link="true" data-notation="Links to fixtures">
+				<h2 class="article-section">Football</h2>
+				<p class="date-stamp"><time>Today</time></p>
+				<h3><a href="football-fixtures-all.html">All fixtures</a></h3>
+				<p>Full fixtures for competitions in England, Scotland and Europe, as well as international games.</p>
+			</li>
+			<li class="page-previous article article-next-previous" data-is-link="true" data-notation="Links to live scores">
+				<h2 class="article-section">Football</h2>				
+				<p class="date-stamp"><time>1 minute ago</time></p>
+				<h3><a href="football-live-scores-all.html">Live scores</a></h3>
+				<p>Live scores service for competitions in England, Scotland and Europe, as well as international games.</p>
+			</li>
+		</ul>
+		<!-- end page-controls -->
+
+		<!-- @include '../../inc/page/page-footer.kit' -->
+		
+<!-- @include '../../inc/template/template-footer-v2.kit' -->

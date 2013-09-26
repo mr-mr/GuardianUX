@@ -1,0 +1,69 @@
+.clear-fix:before,.clear-fix:after{content:"";display:table;}
+.clear-fix:after{clear:both;}
+.clear-clear-fix:before,.clear-clear-fix:after{clear:none;content:none;display:none;}
+.no-margin-padding{margin:0;padding:0;}
+.reset{margin:0;padding:0;border:none;}
+.dwell,.navigator,#show-more-coverage{display:none;}
+h1{clear:both;font-family:"guardian-regular",georgia,serif;font-weight:normal;font-size:20px;font-size:2rem;line-height:20px;line-height:2rem;margin-top:5px;margin-top:0.5rem;margin-bottom:20px;margin-bottom:2rem;}
+blockquote,.promo .author,.back-to-top{margin-bottom:0;}
+.navigator{font-size:12px;font-size:1.2000000000000002rem;line-height:14px;line-height:1.4000000000000001rem;margin:0;}
+.author a{font-family:"guardian-bold";}
+.gallery-agents h3{font-family:"guardian-bold";}
+.gallery-agents .gallery{list-style:none;}
+.comment-preview blockquote{font-family:"guardian-italic";font-weight:normal;font-size:15px;font-size:1.5rem;line-height:20px;line-height:2rem;}
+.comment-preview .author-name{margin-bottom:10px;margin-bottom:1rem;}
+.comment-count{margin-bottom:0;}
+.accordian h3{margin:0;}
+.must-read-article h4,.chapter-heading,.associated-story h3,.analysis h3{font-size:17px;font-size:1.7000000000000002rem;line-height:20px;line-height:2rem;margin:5px 0px 5px 0px;margin:0.5rem 0px 0.5rem 0px;}
+.analysis h3{margin:5px 0px 10px 0px;margin:0.5rem 0px 1rem 0px;}
+.chapter-heading{margin:5px 2% 5px 2%;margin:0.5rem 2% 0.5rem 2%;}
+.chapter-summary{font-size:14px;font-size:1.4000000000000001rem;line-height:18px;line-height:1.8rem;margin:0px 2% 5px 2%;margin:0rem 2% 0.5rem 2%;}
+.intro{margin-left:2%;margin-right:2%;}
+.timeline{list-style:none;}
+.guardian-article h4,.most-read-article h4,.guardian-article h5,.most-read-article h5{font-family:"guardian-bold";font-weight:normal;font-size:14px;font-size:1.4000000000000001rem;line-height:18px;line-height:1.8rem;}
+a.show-hide{display:block;text-align:center;padding:10px 2% 10px 2%;padding:1rem 2% 1rem 2%;background:#eeeeee;}
+.around-web-article h4{margin:5px 0px 5px 0px;margin:0.5rem 0px 0.5rem 0px;}
+.news-org{font-family:"guardian-italic";font-weight:normal;font-size:12px;font-size:1.2000000000000002rem;line-height:14px;line-height:1.4000000000000001rem;margin:0;}
+.trending-story h3{font-family:"guardian-bold";font-weight:normal;font-size:15px;font-size:1.5rem;line-height:20px;line-height:2rem;}
+#ny-minute,#background,.analysis-comment-reaction,.analysis-comment-reaction-too,#actors,#comments,#coverage,#social,#you-might-like,#associated,#related,section.tabs{margin-bottom:10px;margin-bottom:1rem;padding-bottom:10px;padding-bottom:1rem;border-bottom:1px dotted #cccccc;}
+.viewport-top{top:0;-moz-box-shadow:0 1px 2px #cccccc;-webkit-box-shadow:0 1px 2px #cccccc;box-shadow:0 1px 2px #cccccc;}
+.viewport-bottom{bottom:0;-moz-box-shadow:0 -1px 2px #cccccc;-webkit-box-shadow:0 -1px 2px #cccccc;box-shadow:0 -1px 2px #cccccc;}
+.navigator{position:fixed;left:0;width:93.75%;margin:0;padding:8px 3.125% 8px 3.125%;padding:0.8rem 3.125% 0.8rem 3.125%;background:#fff;}.navigator li a{display:inline-block;width:50%;padding:8px 2% 8px 2%;padding:0.8rem 2% 0.8rem 2%;background:#eeeeee;border:1px solid #fff;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;}.navigator li a:only-child{width:100%;}
+.navigator li a i{float:right;}
+.article-details{margin:0px 0px 20px 0px;margin:0rem 0px 2rem 0px;padding:9px 0px 9px 0px;padding:0.9rem 0px 0.9rem 0px;list-style:none;border-top:1px solid #cccccc;border-bottom:1px solid #cccccc;}.article-details li:last-child:before,.article-details li:last-child:after{content:"";display:table;}
+.article-details li:last-child:after{clear:both;}
+.author-avatar{float:left;vertical-align:top;width:13.333333333%;margin-right:3.333333333%;}
+.promo,.comment-preview,.most-read-article,.around-web-article,.tab .analysis,#guardian-coverage .back-to-top{margin-bottom:10px;margin-bottom:1rem;padding-bottom:10px;padding-bottom:1rem;border-bottom:1px dotted #cccccc;}
+#guardian-coverage .back-to-top:last-child{padding:0;border:none;}
+.promo .author{padding:0px 2% 10px 2%;padding:0rem 2% 1rem 2%;background:#eeeeee;}
+.tab{margin-bottom:10px;margin-bottom:1rem;}.tab #actors{margin:0;padding:0;border:none;}
+.tab .promo blockquote,.tab .promo .author{background:#fff;}
+.tab .load-more{display:block;text-align:center;margin-top:10px;margin-top:1rem;padding:10px 2% 10px 2%;padding:1rem 2% 1rem 2%;background:#fff;}
+.tab p:last-child{margin:0;}
+.gallery-agents .gallery{margin-bottom:0;}.gallery-agents .gallery:before,.gallery-agents .gallery:after{content:"";display:table;}
+.gallery-agents .gallery:after{clear:both;}
+.gallery-agents li{float:left;width:25%;border:1px solid #fff;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;}.gallery-agents li.lead-image{z-index:0;position:relative;float:none;clear:both;width:100%;}
+.gallery-agents li.selected{border:1px solid #000;}
+.gallery-agents img{display:block;}
+.gallery-agents .next,.gallery-agents .prev{position:absolute;display:block;width:30px;height:36px;top:50%;margin-top:-18px;}
+.gallery-agents .next{right:0;}
+.gallery-agents .prev{left:0;}
+.comment-preview:last-of-type{margin:0;padding:0;border:none;}
+.comment-preview .comment-count{padding:0px 2% 10px 2%;padding:0rem 2% 1rem 2%;background:#eeeeee;}
+.accordian{margin-bottom:10px;margin-bottom:1rem;}.accordian .control{display:block;padding:10px 2% 10px 2%;padding:1rem 2% 1rem 2%;background:#eeeeee;border-top:1px solid #cccccc;}.accordian .control.selected{margin-bottom:10px;margin-bottom:1rem;background:#fff;border-bottom:1px dotted #cccccc;}
+.accordian article{padding-left:2%;padding-right:2%;}
+.accordian .load-more{display:block;text-align:center;margin-top:10px;margin-top:1rem;padding:10px 2% 10px 2%;padding:1rem 2% 1rem 2%;background:#eeeeee;}
+.must-read-article{margin-bottom:10px;margin-bottom:1rem;border-bottom:1px dotted #cccccc;}.must-read-article:last-child{margin-bottom:0;border:none;}
+.timeline article{padding-top:5px;padding-top:0.5rem;padding-bottom:5px;padding-bottom:0.5rem;border-left:2px solid #666666;}
+.chapter article{margin-left:2%;padding-left:2%;}
+.guardian-article{margin-bottom:1px;}
+.most-read-article:last-child{margin-bottom:0;border:none;}
+.around-web-article:last-child{margin-bottom:0;padding-bottom:0;border:none;}
+.graph{height:200px;height:20rem;}
+.trending-story,.related-story{margin-bottom:10px;margin-bottom:1rem;padding-bottom:10px;padding-bottom:1rem;border-bottom:1px dotted #cccccc;}.trending-story:before,.related-story:before,.trending-story:after,.related-story:after{content:"";display:table;}
+.trending-story:after,.related-story:after{clear:both;}
+.trending-story:last-of-type,.related-story:last-of-type{margin:0;padding:0;border:none;}
+.trending-story img,.related-story img{float:left;width:20%;margin-right:1.6666666666666667%;margin-bottom:5px;margin-bottom:0.5rem;}
+.associated-story:last-of-type{margin:0;padding:0;border:none;}
+.analysis p:last-of-type{margin:0;}
+#show-more-bute,#show-more-fsa,#show-more-school-meals,#show-more-readymeals{display:none;}

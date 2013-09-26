@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+	
+	<title>The Guardian | Guardian.co.uk</title> 
+	
+ 	<link rel="stylesheet/less" href="/css/network-front-four.less" type="text/css" media="screen" />	
+ 	<link rel="stylesheet" href="/css/fonts.css" type="text/css" media="screen" />
+	
+	<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src="/js/hide-address-bar.js" type="text/javascript"></script>
+	<script src="/js/show-hide-network-front.js" type="text/javascript"></script>
+
+	<script src="/js/less-1.3.0.min.js" type="text/javascript"></script>
+</head>
+
+<body id="network-front">
+	<div id="wrapper">
+		<!--#include virtual="/inc/branding-home.inc" -->	
+
+		<section id="top-stories">
+			<h2><a href="#">Top stories</a></h2>
+			<p class="section-control"><a href="#top-stories-content"><strong>Hide</strong> top stories</a></p>
+			<div id="top-stories-content">
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Osborne and Cameron to give evidence at Leveson</a></h3>
+					<p>Significant week for inquiry with chancellor, PM, Nick Clegg and Gordon Brown all appearing</p>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Assad regime has lost humanity - Ban</a></h3>
+					<p>UN secretary general says Syrians 'are bleeding' and fears terrible crimes have been committed</p>
+					<aside class="latest">
+						<p><strong class="live-latest">Latest</strong> “11.40am: Libya: Former oil minister Shukri Ghanem "offered to tell Libyan officials everything he knew about a range of suspect oil deals in exchange&hellip;”</p>
+						<p><a href="#">The latest on our Middle East live blog</a></p>
+					</aside>
+					<ul class="sublinks">
+						<li><a href="#">Assad inhumane and illegitimate, says Ban</a></li>
+						<li><a href="#">Al-Qaida leader's wife praises Arab spring women</a></li>
+						<li><a href="#">Syrian troops 'seen walking towards massacre site'</a></li>
+					</ul>
+				</article>
+				<article>
+					<h3><a href="#">Spain to request banking bailout</a></h3>
+					<p class="datestamp">Last updated one minute ago</p>
+					<p><strong class="live-latest">Live</strong> Madrid expected to formally request bailout of overexposed banking system in conference call on Saturday</p>
+					<ul class="sublinks">
+						<li><a href="#">215 comments</a></li>
+						<li><a href="#">Spain downgraded by three notches</a></li>
+						<li><a href="#">Cameron threatens veto to protect UK interests</a></li>
+						<li><a href="#">Merkel and Cameron's cosy chat on future of Europe</a></li>
+						<li><a href="#">George Soros: Germany must take control</a></li>
+						<li><a href="#">Simon Jenkins: the euro gets off scot-free</a></li>
+					</ul>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">British rower rescued from Pacific</a></h3>
+					<p>Sarah Outen 'in good spirits' after solo rowing attempt is scuppered by storm and Japanese coastguard are deployed</p>
+					<ul class="sublinks">
+						<li><a href="#">Post your comment</a></li>
+					</ul>
+				</article>
+				<article>
+					<h3><a href="#">Tom Winsor in line for top police job</a></h3>
+					<p>Police minister defends expected appointment of former rail regulator to be chief inspector of constabulary</p>
+					<ul class="sublinks">
+						<li><a href="#">64 comments</a></li>
+						<li><a href="#">Riot gang jailed for shooting at police</a></li>
+						<li><a href="#">Politics live: visit our regular Friday chatzone</a></li>
+					</ul>
+				</article>				
+			</div>
+			<!-- end #top-stories-content -->
+		</section>		
+		<!-- end #top-stories -->
+
+		<section id="football">
+			<h2><a href="#">Football</a></h2>
+			<p class="section-control"><a href="#football-content"><strong>Hide</strong> football stories</a></p>
+			<div id="football-content">
+				<article>
+					<h3>Latest results and fixtures</h3>
+					<p class="datestamp">All times are in BST</p>
+					<h4>Friday 8 June Group A</h4>
+					<table>
+						<tr>
+							<td>17:00</td><td>Poland</td><td>v</td><td>Greece</td>
+						</tr>
+						<tr>
+							<td>19:45</td><td>Russia</td><td>v</td><td>Czech Rep</td>
+						</tr>
+					</table>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Euro 2012 day one – live!</a></h3>
+					<p class="datestamp">Last updated four minutes ago</p>
+					<p><strong class="live-latest">Live</strong> Join Tom Lutz for all the latest news on the opening day in Poland and Ukraine, as the tournament finally gets under way</p>
+					<ul class="sublinks">
+						<li><a href="#">365 comments</a></li>
+						<li><a href="#">Terry fit and ready to face France</a></li>
+						<li><a href="#">M'Vila makes progress but is doubt for England</a></li>
+						<li><a href="#">Downing determined to confound the doubters</a></li>
+						<li><a href="#">England to visit Auschwitz and Schindler's factory</a></li>
+						<li><a href="#">Richard Williams: England expects ... not much</a></li>
+					</ul>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Uefa will not investigate racist abuse</a></h3>
+					<p>Euro 2012: Uefa says it has 'no plans' to investigate the racist chanting that was aimed at Holland players</p>
+					<ul class="sublinks">
+						<li><a href="#">Given declared fit for Ireland opener</a></li>
+						<li><a href="#">David Hytner: Modric the key for Croatia</a></li>
+						<li><a href="#">Mertesacker fit for Germany's game with Portugal</a></li>
+						<li><a href="#">Elmander battling to recover from fracture</a></li>
+						<li><a href="#">How BBC and ITV will battle it out to the final</a></li>
+					</ul>
+				</article>
+				<article>
+					<h3><a href="#">Clarke becomes West Brom manager</a></h3>
+					<p>Former Liverpool and West Ham No2 Steve Clarke has landed his first job as a manager, at West Brom</p>
+					<ul class="sublinks">
+						<li><a href="#">Hughton makes keeping Holt his priority</a></li>
+						<li><a href="#">All the latest on our breaking newswire</a></li>
+					</ul>
+				</article>
+				<article>
+					<h3><a href="#">Poland looking to Dortmund trio</a></h3>
+					<p>Euro 2012: Poland hope Lukasz Piszczek, Jakub Blaszczykowski and Robert Lewandowsk can star</p>
+					<ul class="sublinks">
+						<li><a href="#">16 comments</a></li>
+						<li><a href="#">Advocaat staying cool for Czech test</a></li>
+						<li><a href="#">Our writers' Euro 2012 predictions</a></li>
+						<li><a href="#">Daniel Taylor: Spain remain team to beat</a></li>
+						<li><a href="#">Follow all the Guardian's Euro 2012 coverage</a></li>
+					</ul>
+				</article>
+				<article>
+					<blockquote>
+						<p><a href="#">"Michel Platini and Uefa's continued reluctance to use their power for the public good makes them accessories to a crime"</a></p>
+						<p class="author"><cite>Richard Williams</cite></p>
+					</blockquote>
+				</article>				
+			</div>
+			<!-- end #football-content -->
+		</section>		
+		<!-- end #football -->		
+
+		<section id="world">
+			<h2><a href="#">World</a></h2>
+			<p class="section-control"><a href="#world-content"><strong>Hide</strong> stories</a></p>
+			<div id="world-content">
+				<article>
+					<h3><a href="#">British rower Sarah Outen rescued from Pacific by Japanese coastguard</a></h3>
+					<p>Outen 'in good spirits' after solo rowing attempt is scuppered by storm, as another British adventurer awaits rescue</p>
+					<ul class="sublinks">
+						<li><a href="#">7 comments</a></li>
+					</ul>
+				</article>
+				<article>
+					<h3><a href="#">Two million children can be saved by tackling pneumonia and diarrhoea</a></h3>
+					<p>Two diseases need not be deadly for under-fives in poor countries if simple interventions are expanded, says Unicef</p>
+				</article>
+				<article>
+					<h3><a href="#">Al-Qaida leader's wife praises Arab spring women</a></h3>
+					<p>Omaima Hassan uses rare online message to congratulate women on their role in uprisings</p>
+				</article>
+				<article>
+					<h3><a href="#">Japan gripped by TV 'election' of pop group AKB48</a></h3>
+					<p>Millions watch as Yuko Oshima is voted 'president' of phenomenally successful girl band with 90 rotating members</p>
+				</article>
+				<article>
+					<h3><a href="#">Greek politician hit by Golden Dawn MP lambasts far-right party - video</a></h3>
+					<p>Video (1min 18sec) Liana Kanelli, a Greek politician who was struck by a member of the far-right Golden Dawn party live on television, calls the party a 'force of darkness' and urges voters to punish them at the polls</p>
+				</article>
+			</div>
+			<!-- end #world-content -->
+		</section>		
+		<!-- end #world -->		
+
+		<section id="sport">
+			<h2><a href="#">Sport</a></h2>
+			<p class="section-control"><a href="#sport-content"><strong>Hide</strong> sport stories</a></p>
+			<div id="sport-content">
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href"#">England v West Indies – live!</a></h3>
+					<p class="datestamp">Last updated six minutes ago</p>
+					<p><strong class="live-latest">Live</strong> Over-by-over report: Will it be another day of watching the rain rather than the cricket? Join Rob Smyth to find out
+					<ul class="sublinks">
+						<li><a href="#">ICC chief defends Duckworth-Lewis decision</p></a></li>
+						<li><a href="#">'England better off without Pietersen'</a></li>
+						<li><a href="#">Doctrove to step down from ICC's elite panel</a></li>
+						<li><a href="#">West Indies waiting on Chanderpaul after scan</a></li>
+						<li><a href="#">County cricket – live!</a></li>
+					</ul>				
+				</article>
+				<article>
+					<img src="/img/5x3.png" />	
+					<h3><a href="#">Cook row is 'embarrassing' Britain</a></h3>
+					<p>London 2012: The Sports minister, Hugh Robertson, has criticised the non-selection of world No1 Aaron Cook</p>
+					<ul class="sublinks">
+						<li><a href="#">Bolt pushed all the way by Powell in Oslo</a></li>
+						<li><a href="#">Thousands more tickets go on sale</a></li>
+						<li><a href="#">Marina Hyde's Olympics: the Beeb's river hoodoo</a></li>
+						<li><a href="#">Daley aims to confirm Team GB diving spot</a></li>
+						<li><a href="#">All the latest on our breaking newswire</a></li>
+					</ul>			
+				</article>
+				<article>
+					<img src="/img/5x3.png" />				
+					<h3><a href="#">Murray must stay cool, says McEnroe</a></h3>
+					<p>French Open: John McEnroe says Andy Murray should not show his pain and feelings while on court</p>
+					<ul class="sublinks">
+						<li><a href="#">Errani to face Sharapova in final</a></li>
+						<li><a href="#">Much more on our French Open site</a></li>
+					</ul>
+				</article>				
+			</div>
+			<!-- end #sport-content -->
+		</section>		
+		<!-- end #sport -->		
+
+		<section id="comment">
+			<h2><a href="#">Comment</a></h2>
+			<p class="section-control"><a href="#comment-content"><strong>Hide</strong> comment stories</a></p>
+			<div id="comment-content">
+				<article>
+					<blockquote>
+						<p>On pensioners, Iain Duncan Smith is right: 'granny bashing' is fair</p>
+						<p class="author"><cite>Gaby Hinsliff</cite></p>
+					</blockquote>
+				</article>
+				<article>
+					<blockquote>
+						<p>The euro gets off scot-free in this debacle – just like the black rat</p>
+						<p class="author"><cite>Scott Jenkins</cite></p>
+					</blockquote>
+				</article>
+				<article>
+					<blockquote>
+						<p>We Palestinians are reclaiming our destiny</p>
+						<p class="author"><cite>Ismail Haniyeh</cite></p>
+					</blockquote>
+				</article>				
+			</div>
+			<!-- end #comment-content -->
+		</section>		
+		<!-- end #comment -->	
+
+		<section id="life-style">
+			<h2><a href="#">Life &amp; style</a></h2>
+			<p class="section-control"><a href="#life-style-content"><strong>Hide</strong> life &amp; style stories</a></p>
+			<div id="life-style-content">
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Why Japan prefers pets to parenthood</a></h3>
+					<p>As Japan's birthrate plummets, its pet industry has risen to be worth $10bn, with pampered pooches enjoying holidays at exclusive resorts, yoga classes and designer clothes</p>
+					<ul class="sublinks">
+						<li><a href="#">1 comment</a></li>
+						<li><a href="#">More on pets</a></li>
+					</ul>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Baldwin v Costner</a></h3>
+					<p>In a court case that would have put Hollywood in a spin back in 1992, Stephen Baldwin is sueing Kevin Costner</p>
+					<ul class="sublinks">
+						<li><a href="#">62 comments</a></li>
+						<li><a href="#">Lost in showbiz</a></li>
+					</ul>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Feeding kids</a></h3>
+					<p>Kids who would have been called 'fussy' not long ago are now 'principled', apparently. Do you want to cater for mini Michael Winners?</p>
+					<ul class="sublinks">
+						<li><a href="#">89 comments</a></li>
+					</ul>
+				</article>
+			</div>
+			<!-- end #life-style-content -->
+		</section>		
+		<!-- end #life-style -->		
+
+		<section id="uk">
+			<h2><a href="#">UK</a></h2>
+			<p class="section-control"><a href="#uk-content"><strong>Hide</strong> UK stories</a></p>
+			<div id="uk-content">
+				<article>
+					<h3><a href="#">Two arrested after man and woman shot dead in Walsall</a></h3>
+					<p>Police hold 23-year-old man and a 22-year-old woman for questioning and seal off property for forensic searches</p>
+				</article>
+				<article>
+					<h3><a href="#">Tom Winsor: the right man to shine daylight on to the police</a></h3>
+					<p>In her choice for the next chief inspector of constabulary, Theresa May has selected a tough, independent outsider</p>
+				</article>
+				<article>
+					<h3><a href="#">Twickenham film studios saved from closure after campaigners intervene</a></h3>
+					<p>Mystery buyer steps in after Spielberg and others back petition – while in Miami, Donald Trump plans to open huge new studio</p>
+					<ul>
+						<li><a href="#">1 comment</a></li>
+					</ul>
+				</article>
+			</div>
+			<!-- end #uk-content -->
+		</section>		
+		<!-- end #uk -->		
+
+		<section id="tech">
+			<h2><a href="#">Technology</a></h2>
+			<p class="section-control"><a href="#tech-content"><strong>Hide</strong> technology stories</a></p>
+			<div id="tech-content">
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Nintendo Wii U offers glimpses of next must-have for video gamers at E3</a></h3>
+					<p>Jonathan Ross: It's like the Wii on steroids – and after a long wait it should be out for Christmas</p>
+					<ul class="sublinks">
+						<li><a href="#">75 comments</a></li>
+						<li><a href="#">Halo 4 to follow 'TV season' structure</a></li>
+						<li><a href="#">E3 2012: Nintendo reveals new games for Wii U</a></li>
+						<li><a href="#">Wii U at E3 2012: first hands-on</a></li>
+						<li><a href="#">E3 2012: Nintendo conference</a></li>
+						<li><a href="#">Nintendo Wii U faces tough launch</a></li>
+						<li><a href="#">E3 2012: Hitman Absolution – preview</a></li>
+					</ul>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">E3 2012: Call of Duty Black Ops 2</a></h3>
+					<p>Steve Boxer: With sandbox missions, branching storylines and gameplay choices, Treyarch's forthcoming Black Ops 2 is making a much-needed break from the rigid Call of Duty blueprint</p>
+					<ul class="sublinks">
+						<li><a href="#">9 comments</a></li>
+					</ul>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Why Ubisoft is the publisher of the show</a></h3>
+					<p>Keza MacDonald: Ubisoft's E3 2012 press conference showed a third-party publisher at the top of its game</p>
+					<ul class="sublinks">
+						<li><a href="#">9 comments</a></li>
+						<li><a href="#">SmartGlass and the battle for the connected living room</a></li>
+						<li><a href="#">Microsoft's E3 2012 conference</a></li>
+						<li><a href="#">Electronic Arts E3 2012 conference</a></li>
+						<li><a href="#">E3 2012: Sony PlayStation conference</a></li>
+						<li><a href="#">E3 2012: full coverage</a></li>
+					</ul>
+				</article>
+			</div>
+			<!-- end #tech-content -->
+		</section>		
+		<!-- end #tech -->		
+
+		<section id="music">
+			<h2><a href="#">Music</a></h2>
+			<p class="section-control"><a href="#music-content"><strong>Hide</strong> music stories</a></p>
+			<div id="music-content">
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">The Cunning Little Vixen at Glyndebourne: what to expect</a></h3>
+					<p>You can watch Glyndebourne's new production of Janáček's opera live here on Sunday 10 June – and here's a taste of what to expect</p>
+					<ul class="sublinks">
+						<li><a href="#">Field Day Festival time-lapse – video</a></li>
+						<li><a href="#">Father John Misty: a How I wrote ... session</a></li>
+						<li><a href="#">More How I wrote ... sessions</a></li>
+						<li><a href="#">Damon Albarn: a How I wrote ... session</a></li>
+						<li><a href="#">Amadou &amp; Mariam: A Room for London</a></li>
+						<li><a href="#">All music videos from the Guardian</a></li>
+						<li><a href="#">Watch more video on our YouTube channel</a></li>
+						<li><a href="#">Discover more new music with Bands in Transit</a></li>
+					</ul>				
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Football songs championship 2012: quarter final 1</a></h3>
+					<p>Don't worry about England inevitably messing up at Euro 2012 – here's your chance to vote for the best football song, and that's what really matters</p>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Rihanna defends Chris Brown collaboration</a></h3>
+					<p>Singer says she never considered that making a record with her abusive ex-boyfriend would spark controversy</p>
+				</article>				
+			</div>
+			<!-- end #music-content -->
+		</section>		
+		<!-- end #music -->
+
+		<section id="film">
+			<h2><a href="#">Film</a></h2>
+			<p class="section-control"><a href="#film-content"><strong>Hide</strong> film stories</a></p>
+			<div id="film-content">
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Twickenham film studios saved from closure after campaigners intervene</a></h3>
+					<p>Mystery buyer steps in after Spielberg and others back petition – while in Miami, Donald Trump plans to open huge new studio</p>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Samuel L Jackson set for Robocop remake</a></h3>
+					<p>Jackson to star as a media mogul, opposite Gary Oldman and Joel Kinnaman, in José Padilha's remake of Paul Verhoeven's sci-fi classic</p>
+					22 comments
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Red Road demolition ends Glasgow tower blocks' high art</a></h3>
+					<p>Housing scheme became a byword for urban decay, but literature, photography and film flourished there</p>
+				</article>				
+			</div>
+			<!-- end #film-stories -->
+		</section>		
+		<!-- end #film -->	
+
+		<section id="business">
+			<h2><a href="#">Business</a></h2>
+			<article>
+				<table>
+					<tr>
+						<th>FTSE</th><th>Dow</th><th>Nasdaq</th>
+					</tr>
+					<tr>
+						<td>5,903.0</td><td>5,903.0</td><td>5,903.0</td>
+					</tr>
+					<tr>
+						<td>+0.478%</td><td>+0.478%</td><td>+0.478%</td>
+					</tr>
+					<tr>
+						<td>+16%</td><td>+16%</td><td>+16%</td>
+					</tr>
+				</table>
+				<!-- I know this is cheating -->
+			</article>
+			<article>
+				<h3><a href="#">China cuts rates as fears grow that economy is stalling</a></h3>
+				<p>Markets rise after first drop in lending rate since 2008, but omens are bad for data due this weekend</p>
+				<ul class="sublinks">
+					<li><a href="#">10 comments</a></li>
+					<li><a href="#">Bernanke offers no sign of US stimulus</a></li>
+					<li><a href="#">ECB dashes market hopes of rate cuts</a></li>
+					<li><a href="#">Bank of England holds out against QE change</a></li>
+					<li><a href="#">Larry Elliott: Why no more QE?</a></li>
+					<li><a href="#">UK services sector expands in May</a></li>
+					<li><a href="#">Sunny weather gives UK retailers a boost in May</a></li>
+				</ul>
+			</article>
+		</section>		
+		<!-- end #business -->		
+
+		<section id="culture">
+			<h2><a href="#">Culture</a></h2>
+			<article>
+				<img src="/img/5x3.png" />
+				<h3><a href="#">The month in photography</a></h3>
+				<p>Audio slideshow: Our guide to the month's best photo exhibitions and books – featuring Anders Petersen, Diane Arbus, Stephanie Sinclair and Olivia Arthur</p>
+			</article>
+		</section>		
+		<!-- end #culture -->		
+
+		<section id="media">
+			<h2><a href="#">Media</a></h2>
+			<article>
+				<img src="/img/5x3.png" />
+				<h3><a href="#">Peter Willis and Alison Phillips take editor roles at seven-day Mirror</a></h3>
+				<p>Weekday and weekend editor appointed after the ousting of Richard Wallace and Tina Weaver. By Mark Sweney</p>
+			</article>
+		</section>		
+		<!-- end #media -->		
+
+		<section id="books">
+			<h2><a href="#">Books</a></h2>
+			<article>
+				<img src="/img/5x3.png" />
+				<h3><a href="#">Barry Unsworth, Booker prizewinner, dies at 81</a></h3>
+				<p>Writer of historical fiction, who won Britain's highest literary honour in 1992 for Sacred Hunger, has died</p>
+				<ul class="sublinks">
+					<li><a href="#">2 comments</a></li>
+				</ul>		
+			</article>
+		</section>		
+		<!-- end #books -->
+
+		<section id="science">
+			<h2><a href="#">Science</a></h2>
+			<article>
+				<img src="/img/5x3.png" />
+				<h3><a href="#">Just Six Numbers: The Deep Forces that Shape the Universe by Martin Rees – review</a></h3>
+				<p>Tim Radford: The astronomer royal addresses the cosmic coincidence that six numbers in physics are just right for the emergence of galaxies, stars, chemistry and people</p>
+				<ul class="sublinks">
+					<li><a href="#">56 comments</a></li>
+				</ul>			
+			</article>
+		</section>		
+		<!-- end #science -->		
+
+		<section id="art-design">
+			<h2><a href="#">Art &amp; design</a></h2>
+			<article>
+				<img src="/img/5x3.png" />	
+				<h3><a href="#">Portrait mistaken for 18th-century lady is early painting of transvestite</a></h3>
+				<p>National Portrait Gallery buys portrait of celebrated diplomat, soldier and cross-dresser Chevalier d'Eon</p>			
+			</article>
+		</section>		
+		<!-- end #art-design -->		
+
+		<section id="society">
+			<h2><a href="#">Society</a></h2>
+			<article>
+				<h3><a href="#">Facebook forced into revealing identities of cyberbullies</a></h3>
+				<p>Mother wins high court backing after she received abusive messages about post on The X Factor's Frankie Cocozza. By Josh Halliday</p>			
+			</article>
+		</section>		
+		<!-- end #society -->		
+
+		<section id="politics">
+			<h2><a href="#">Politics</a></h2>
+			<article>
+				<h3><a href="#">Are gay people really anti-gay marriage?</a></h3>
+				<p>Reports of a poll on gay marriage suggest that most gay people are apathetic towards the issue. Does the research back that up? James Ball, with your help, finds out</p>
+				<ul class="sublinks">
+					<li><a href="#">Post your comment</a></li>
+				</ul>
+			</article>
+		</section>		
+		<!-- end #politics -->
+						
+		<!--#include virtual="/inc/most-read.inc" -->	
+	</div>
+	<!-- end #wrapper -->
+</body>
+
+</html>

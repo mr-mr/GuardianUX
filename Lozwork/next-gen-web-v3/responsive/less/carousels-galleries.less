@@ -1,0 +1,155 @@
+// ------------------------------------------------------------------------------------------------------------------------------------------------- 
+// Table of contents
+// --------------------------------------------------
+// 1.0 imports
+// 2.0 variables
+// 3.0 general
+// 4.0 type
+// 5.0 layout
+// 6.0 modules
+// -------------------------------------------------------------------------------------------------------------------------------------------------  
+
+// 1.0 imports
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+@import "library.less";
+@import "breakpoints.less";
+@import "fonts.less";
+@import "colors.less";
+
+// 2.0 variables
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+@gutter:2%;
+@medium-column:49%;
+@large-column:32%;
+@large-column-two:(@large-column * 2) + @gutter;
+
+// 3.0 general
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+.pagination-pages {
+	margin:0;
+	text-align:center;
+	li {
+		display:inline-block;
+		width:10px;
+		height:10px;
+		margin-right:10px;
+		&:last-child {
+			margin:0;
+		}
+		a {
+			display:block;
+			text-indent:-9999em;
+			overflow:hidden;
+			width:100%;
+			height:100%;
+			background:@light-grey;
+			&:hover {
+				background:@mid-grey;
+			}
+		}
+	}		
+}
+.carousel {
+	.medium, .medium-large {
+		display:none;
+	}
+	@media (min-width:@medium) {
+		.medium {
+			display:block;
+		}
+	}
+	@media (min-width:@medium-large) {
+		.medium-large {
+			display:block;
+		}
+	}
+}
+
+
+// 4.0 type
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+.carousel {
+	h3 {
+		.font-size(17,20);
+		font-family:@serif-bold;
+	}
+}
+
+.carousel-current {
+	text-align:center;
+}
+
+// 5.0 layout
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+
+// 6.0 modules
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+.carousel {
+	position:relative;
+	button {
+		margin-left:auto;
+		margin-right:auto;
+		width:30%;
+	}
+	.pagination-controls {
+		li {
+			position:absolute;
+			top:40%;
+			width:45px;
+			height:54px;
+			margin-top:-54px / 2;
+		}
+		a {
+			text-indent:-9999em;
+			display:block;
+			width:100%;
+			height:100%;
+			opacity:.5;
+			background-size:contain;
+			background-position:left top;
+			background-repeat:no-repeat;
+			&:hover {
+				opacity:1;
+			}
+		}
+	}
+	.pagination-next {
+		right:0;
+		a {
+			background-image:url('../img/in-body-next.svg');
+		}
+	}
+	.pagination-previous {
+		left:0;
+		a {
+			background-image:url('../img/in-body-prev.svg');
+		}
+	}
+}
+
+.commercial-books {
+	.carousel-image {
+		width:50%;
+		max-width:50%;
+		margin:0 auto;
+	}
+}
+
+.carousel-current {
+	@media (min-width:@medium) {
+		// float:left;
+		// width:@medium-column;
+		// margin-right:2%;
+		// &.medium {
+		// 	margin-right:0;
+		// }
+	}
+	@media (min-width:@medium-large) {
+		float:left;
+		width:@large-column;
+		margin-right:2%;
+		&:last-of-type {
+			margin-right:0;
+		}
+	}
+}

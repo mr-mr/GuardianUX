@@ -1,0 +1,98 @@
+// ------------------------------------------------------------------------------------------------------------------------------------------------- 
+// Table of contents
+// --------------------------------------------------
+// 1.0 imports
+// 2.0 variables
+// 3.0 general
+// 4.0 type
+// 5.0 layout
+// 6.0 modules
+// -------------------------------------------------------------------------------------------------------------------------------------------------  
+
+// 1.0 imports
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+@import "base-navigation-subsections.less";
+
+// 2.0 variables
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+@current-page:section-four;
+
+// 3.0 general
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+.dropdown {
+	@media (min-width:@bp-5) {
+		width:50%;
+	}
+	@media (min-width:@bp-6) {
+		width:25%;
+	}
+}
+
+// 4.0 type
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+
+// 5.0 layout
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+
+// 6.0 modules
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+.navigation-horizontal {
+	@media (min-width:@bp-5) {
+		.subsection-eight {
+			display:none;
+		}
+	}
+	@media (min-width:@bp-6) {
+		.subsection-eight {
+			display:block;
+		}
+	}
+}
+
+#navigation-dropdown {
+	.navigation-primary {
+		.@{current-page} {
+			width:100%;
+			float:none;
+		}		
+	}
+	.@{current-page} {
+		display:block;
+	}
+	@media (min-width:@small-medium) {
+		.@{current-page} {
+			display:none;
+		}
+	}
+	@media (min-width:@bp-2) {
+		.navigation-primary, .navigation-subsections {
+			width:50%;
+			border:none;
+		}
+		.navigation-primary {
+			float:right;
+		}
+		.navigation-subsections {
+			float:left;
+			clear:none;
+			display:block;
+		}
+	}
+	@media (min-width:@bp-5) {
+		.subsection-seven {
+			display:none;
+		}
+		.subsection-eight {
+			display:block;
+		}
+	}
+	@media (min-width:@bp-6) {
+		.navigation-primary {
+			float:none;
+			width:100%;
+		}
+		.navigation-subsections {
+			display:none;
+		}
+	}
+}

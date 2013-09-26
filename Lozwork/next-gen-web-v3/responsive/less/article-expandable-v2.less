@@ -1,0 +1,157 @@
+// ------------------------------------------------------------------------------------------------------------------------------------------------- 
+// Table of contents
+// --------------------------------------------------
+// 1.0 imports
+// 2.0 variables
+// 3.0 general
+// 4.0 type
+// 5.0 layout
+// 6.0 modules
+// -------------------------------------------------------------------------------------------------------------------------------------------------  
+
+// 1.0 imports
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+@import "colors.less";
+@import "library.less";
+@import "breakpoints.less";
+@import "lozstrap.tabs.less";
+
+// 2.0 variables
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+
+// 3.0 general
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+
+// 4.0 type
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+.is-expanded {
+	header h3:nth-child(n) {
+		.font-size(24,30);
+		font-family:@serif;
+		font-weight:normal;
+		.margin-bottom(20);
+	}
+}
+
+.article-related {
+	p {
+		.font-size(13,20);
+	}
+}
+
+.page-controls {
+	list-style:none;
+	.article-section {
+		.font-size(15,20);
+	}
+}
+
+// 5.0 layout
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+.articles-most-popular {
+	@media (min-width:@medium-large) {
+		width:60%;
+		margin-left:20%;
+	}	
+}
+
+// 6.0 modules
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+.article {
+	&[data-importance="small"], &[data-importance="small-medium"], &[data-importance="medium"], &[data-importance="medium-large"], &[data-importance="large"] {
+		img, h3 {
+			-webkit-transition:all .2s ease-in-out;
+		}
+		.show-on-expand {
+			display:none;
+		}
+	}
+}
+
+.is-expanded {
+	&[data-importance="small"], &[data-importance="small-medium"], &[data-importance="medium"], &[data-importance="medium-large"], &[data-importance="large"] {
+		img {
+			float:none;
+			width:100%;
+			min-width:100%;
+		}
+		.show-on-expand {
+			display:block;
+		}
+	}
+}
+
+.article-related {
+	padding-right:2%;
+	padding-left:2%;
+	.box-sizing;
+}
+
+
+aside {
+	.padding-bottom(10);
+	border-top:5px solid @light-grey;
+	border-bottom:5px solid @light-grey;
+}
+
+.tab-pane {
+	> h2 {
+		display:none;
+	}
+	.article:nth-child(n+2) {
+		border-top:1px dotted @mid-grey;
+	}
+	.show-hide {
+		border-top:1px dotted @mid-grey;
+	}
+	.show-hide-control {
+		background:@mid-grey;
+		&:hover {
+			background:@link-hover;
+		}
+	}
+}
+
+.page-controls {
+	display:none;
+	@media (min-width:@medium-large) {
+		display:block;
+		width:100%;
+		.article {
+			position:fixed;
+			top:50%;
+			width:60px;
+			min-height:72px;
+			margin-top:-36px;
+			background-size:100%;
+			background-color:@light-grey;
+			background-repeat:no-repeat;
+			-webkit-transition:opacity .2s ease-in-out;
+			.box-sizing;
+			h2, h3, p {
+				display:none;
+			}
+			&:hover {
+				width:20%;
+				.padding(10,1%,10,1%);
+				cursor:pointer;
+				h2, h3, p {
+					display:block;
+				}
+			}
+		}
+		.page-next {
+			right:0;
+			background-image:url('../img/in-body-next.svg');
+		}
+		.page-previous {
+			left:0;
+			background-image:url('../img/in-body-prev.svg');
+		}
+		.page-next, .page-previous {
+			&:hover {
+				background-image:none;
+			}
+		}
+	}
+}

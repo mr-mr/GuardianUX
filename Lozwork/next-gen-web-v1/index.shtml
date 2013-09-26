@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+	
+	<title>Index</title>
+
+ 	<link rel="stylesheet" href="/css/fonts.css" type="text/css" media="screen" />	
+ 	<link rel="stylesheet/less" href="/css/index.less" type="text/css" media="screen" />	
+
+	<script src="/js/hide-address-bar.js" type="text/javascript"></script>
+	<script src="/js/less-1.3.0.min.js" type="text/javascript"></script>	
+</head>
+
+<body>
+	<div id="top" class="wrapper">
+		<header>
+			<h1 class="branding">The Guardian<a href="/"></a></h1>
+		</header>
+		
+		<section id="overview">
+			<h2>Responsive Guardian UX</h2>
+			<h3>Table of content</h3>
+			<ul>
+				<li><a href="#statistics">Sport statistics</a></li>
+				<li><a href="#live-blog">Live blog</a></li>
+				<li><a href="#navigation">Navigation</a></li>
+				<li><a href="#articles">Articles</a></li>
+				<li><a href="#sponsored-module">Sponsored modules</a></li>
+			</ul>
+		</section>
+
+		<section id="statistics">
+			<h2>Sport statistics</h2>
+			<p>Work currently in progress across this section.</p>
+			<h3>General notes</h3>
+			<ul>
+				<li>Team names always link to the team/club section/keyword page</li>
+				<li>During live games, the scores should link to the live blog for that series of fixtures, i.e. if there is a single fixture the score will link to that games live blog. If there are multiple games, each score will link to the one live blog that is covering all the games. For the purposes of the demos, this links to the Live blog two example page from the live blog section below.</li>
+				<li>Post game the score should link to the match report.</li>
+			</ul>
+			<h3>Statistics module</h3>
+			<p>This shows how a statistics module could work on the sport section front.</p>
+			<ul>
+				<li><a href="statistics-sport.shtml">Sport section front</a> - module contains any upcoming football fixtures, with links to other sport scores, fixtures and results. You'll need to scroll down to see the module.</li>
+			</ul>
+			<h3>Live scores, fixtures and results</h3>
+			<ul>
+				<li><a href="statistics-all-fixtures.shtml">All fixtures</a> - shows all fixtures for the coming week ahead. The user has the ability to filter this list by nation/competition (the filter doesn't work, but it should be obvious what it does), and also to load in another weeks worth of fixtures when they reach the bottom of the page.</li>
+			</ul>
+			<h3>Football section front</h3>
+			<p>These are using the scenario of a Saturday during the premiership season. They should cover enough bases for application to other days of the week/competitions.</p>
+			<p>There are some very basic rules on what is shown where within the list of games. The priority order should be Live, fixtures then results. This allows live games to always be at the top of the list. I've explained this in more detail below.</p>
+			<ul>
+				<li><a href="statistics-football-am.shtml">Football section front on the morning of matchday</a> - all games are upcoming fixtures so they appear in the list as normal.</li>
+				<li><a href="statistics-football-lunch-live.shtml">Football section front during lunchtime kick off</a> - the first fixture in the list becomes live, with the score linking to the live blog for this game. The kick off time changes to indicate which stage the game is at (1st, HT, 2nd, ET, PEN, FT).</li>
+				<li><a href="statistics-football-afternoon-live.shtml">Football section front during 3pm kick offs</a> - the Chelsea game is now a result, and so drops to the end of the list, allowing the 3pm kick offs, now live, to be shown first. The scores for the 3pm kick offs link to the multi game live blog, and kick off times change as above.</li>
+				<li><a href="statistics-football-five-pm.shtml">Football section front at 5pm</a> - The 3pm kick offs have finished, but the 5.30 game has yet to start. As the 3pm games are now results, they drop to the bottom of the list, and the 5pm fixture is shown top as there are no other live games.</li>
+				<li><a href="statistics-football-evening-live.shtml">Football section front during 5.30pm kick off</a> - The final fixture of the day now becomes live, with the score linking to the live blog for this game, and the kick off time changing as above.</li>
+				<li><a href="statistics-football-results.shtml">Football section front evening/night</a> - All games have been played and are now results. This should shown at the top for a period of time, before dropping down the section front.</li>
+				<li><a href="statistics-football-facup.shtml">Football section front the morning of FA Cup third round</a> - This is to show what it would look like if we included all the major fixtures for the day. FA Cup third round is the most fixtures we'll have, with 32 (and that's assuming all play on the Saturday which wont happen as they're usually spread over the weekend).</li>
+				<li><a href="statistics-football-mixed-fix.shtml">Football section front showing multiple competition fixtures</a> - later on in the season when the FA Cup and Champions League reach their latter stages, league games or Cup replays can be played alongside other these competitions. The acronym to the left indicates competition.</li>
+			</ul>
+			<h4>Notes</h4>
+			<ul>
+				<li>The live/fixtures/results module is intended to be flexibile in it's liositioning, i.e. it shouldn't always be toli. My initial thoughts are that it should be toli of the liage from the get go on Saturday's, somewhere further down initially on Sundays - Thursdays. On Sunday it should go toli at around 11am and Mon-Thurs it should move to the toli around 2lim/3lim. Fridays I don't think there are any significant fixtures (i.e. Prem, FA Culi, UEFA), though there might be the odd FA Culi game.</li>
+				<li>It would be good if the liositioning were automated, with an overide (i.e. if something significant haliliens, lilayer dies etc, we can lead with that, rather than the fixtures module).</li>
+			</ul>
+			<p><a href="#top">^ Back to top</a></p>
+		</section>
+
+		
+		<section id="live-blog">
+			<h2>Live blog</h2>
+			<p>Football is shown for the wireframes, but the principles of how these work should be applicable to all sports and also to news live blogs.</p>
+			<ul>
+				<li><a href="live-blog-one.shtml">Live blog, single game</a></li>
+				<li><a href="live-blog-two.shtml">Live blog, multiple games</a></li>
+			</ul>
+			<h3>Notes</h3>
+			<ul>
+				<li>Auto-refresh is on by default and should work across all tabs.</li>
+				<li>A user can chose to turn it off and an indicator of available updates will appear instead.</li>
+				<li>The page doesn't load in the full live blog – only the last XX minutes are loaded (half hour?).</li>
+				<li>Single game live blogs should have the score as the articel title.</li>
+				<li>As a user scrolls down past the tabs, the score becomes sticky at the top of the page.</li>
+				<li>For multiple games the sticky score will cycle between active games.</li>
+				<li><strong>N.B.</strong> The wireframes don't show all available elements within the live blog.</li>
+			</ul>
+			<p><a href="#top">^ Back to top</a></p>
+		</section>
+		
+		<section id="navigation">
+			<h2>Navigation</h2>
+			<p></p>
+			<ul>
+				<li><a href="navigation-four.shtml">Navigation</a> - Twitter/Facebook style navigation, that slides in from the left and is accessible from anywhere, by swiping left or right. Sections are available with a left swipe, top stories are available with a right swipe.</li>
+			</ul>
+			<h3>Notes</h3>
+			<ul>
+				<li>The implementation of this is a bit buggy, but you should get the idea.</li>
+				<li>Tapping the 'sections' link or swiping the page left to right will invoke the navigation.</li>
+				<li>Likewise, tapping 'top stories' or swiping the page right to left will show the top stories.</li>
+				<li>A second tap of the 'sections' link, or swiping right to left, will close the navigation.</li>
+				<li>Likewise, a second tap of 'top stories' or swiping the page left to right, will close the top stories</li>
+				<li>I couldn't do this for the demo, but when the navigation or the top stories are invoked, the main page content shouldn't scroll.</li>
+			</ul>
+			<p><a href="#top">^ Back to top</a></p>
+		</section>
+		
+		<section id="articles">
+			<h2>Articles</h2>
+			<p>This illustrates an article with a story package, but the rules should be the same for both story packages and related content.</p>
+			<ul>
+				<li><a href="article-elements.shtml">Article page</a> - showing story package and popular content at the end of the article.</li>
+			</ul>
+			<h3>Notes</h3>
+			<ul>
+				<li>If there is no story package, related links should be shown instead.</li>
+				<li>Story packages/related content/popular show a maximum of ten articles.</li>
+				<li>The first five stories are shown, the second five are hidden with a 'show more' link.</li>
+				<li>The five articles that are shown are displayed with picture, link text and trail text.</li>
+				<li>The five articels that are hidden are displayed with only link text and trail text (no picture).</li>
+				<li>The 'show more' link should have a count of how many more stories are hidden.</li>
+				<li>When the extra articles are shown, the 'show more' link text should change to say 'Hide'.</li>
+				<li>The above rules also apply to the most popular module as well.</li>
+				<li>Comments are initially hidden to show the user the onward journeys (related links, story package) first.</li>
+				<li>The comment link doesn't work currently. If it's tapped, the comments should be shown within this page, and the link should change to 'Hide comments'</li>
+			</ul>
+			<p><a href="#top">^ Back to top</a></p>
+		</section>
+		
+		<section id="sponsored-module">
+			<h2>Sponsored modules</h2>
+			<p>These are quick mockups to show how the sponsored module could look. The features on these wireframes have been stripped back or out for ease, so these pages are purely for illustrating the sponsored module.</p>
+			<ul>
+				<li><a href="network-front-ads.shtml">Network front</a> - sponsored US Election module appears after top stories trail block.</li>
+				<li><a href="article-ads.shtml">Article page</a> - sponsored US Elections module appears before more on this story.</li>
+			</ul>
+			<p><a href="#top">^ Back to top</a></p>
+		</section>
+		
+	</div>
+</body>
+
+</html>

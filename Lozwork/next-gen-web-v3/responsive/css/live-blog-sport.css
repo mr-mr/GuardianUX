@@ -1,0 +1,38 @@
+.clear-fix:before,.clear-fix:after{content:"";display:table}
+.clear-fix:after{clear:both}
+.clear-clear-fix:before,.clear-clear-fix:after{clear:none;content:none;display:none}
+br:last-child{clear:both}
+@font-face{font-family:"guardian-regular";src:url('../fnt/Guardian-Egyp-Web-Regular.woff') format('woff');font-weight:normal;font-style:normal}@font-face{font-family:"guardian-italic";src:url('../fnt/Guardian-Egyp-Web-Regular It.woff') format('woff');font-weight:normal;font-style:normal}@font-face{font-family:"guardian-bold";src:url('../fnt/Guardian-Egyp-Web-Semibold.woff') format('woff');font-weight:normal;font-style:normal}@font-face{font-family:"guardian-bold-italic";src:url('../fnt/Guardian-Egyp-Web-Semibold It.woff') format('woff');font-weight:normal;font-style:normal}#live-blog-statistics ul{list-style:none}
+@media (min-width:640px){#live-blog-statistics table,#live-blog-summary table,#live-blog-statistics p:last-child,#live-blog-summary p:last-child{font-size:13px;font-size:1.3rem;line-height:16px;line-height:1.6rem}}@media (min-width:960px){#live-blog-statistics table,#live-blog-summary table,#live-blog-statistics p:last-child,#live-blog-summary p:last-child{font-size:14px;font-size:1.4000000000000001rem;line-height:20px;line-height:2rem}}
+#table table,#scores table{width:100%;margin-bottom:10px;margin-bottom:1rem}
+#scores td:first-child{text-align:right}
+#scores td:nth-child(3),#scores td:last-child{text-align:left}
+#scores td:nth-child(2){text-align:center}
+#scores tr{background:#eee}#scores tr[data-is-link="true"]{color:#005689;cursor:pointer}#scores tr[data-is-link="true"]:hover{color:#003656;background:#e5e5e5}
+#scores tr[data-is-link="true"]:visited{color:#0076bc}
+#scores th,#scores td{vertical-align:top;padding:5px 1.666666667% 5px 1.666666667%;padding:.5rem 1.666666667% .5rem 1.666666667%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+#scores td:first-child,#scores td:nth-child(3){width:34%}
+#scores td:nth-child(2){width:15%}
+#scores td:last-child{width:18%}
+#table .primary-detail,#table .secondary-detail,#table .full-detail{display:none}
+#table tr{background:#eee}#table tr[data-is-link="true"]{color:#005689;cursor:pointer}#table tr[data-is-link="true"]:hover{color:#003656;background:#e5e5e5}
+#table tr[data-is-link="true"]:visited{color:#0076bc}
+#table th,#table td{vertical-align:top;padding:5px 1.666666667% 5px 1.666666667%;padding:.5rem 1.666666667% .5rem 1.666666667%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+#table td:first-child,#table td:nth-child(3){width:34%}
+#table td:nth-child(2){width:15%}
+#table td:last-child{width:18%}
+#table .league tbody tr:first-child td,#table .league tbody tr:nth-child(4) td,#table .league tbody tr:nth-last-child(4) td{border-collapse:collapse;border-bottom:2px solid #e5e5e5}
+#table tr{background:#eee}#table tr[data-is-link="true"]{cursor:pointer}#table tr[data-is-link="true"]:hover{background:#e5e5e5}
+#table thead tr:nth-child(n){background:transparent}
+#table thead tr:first-child th{text-align:center}
+#table th,#table td{text-align:right;vertical-align:top;padding:5px 1.666666667% 5px 1.666666667%;padding:.5rem 1.666666667% .5rem 1.666666667%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}#table th:nth-child(2),#table td:nth-child(2){text-align:left}
+#table th:first-child,#table td:first-child{width:7%}
+#table th:nth-child(n+3),#table td:nth-child(n+3){width:8%}
+#table tbody tr:nth-child(4){border-bottom:1px dotted #e5e5e5}
+#live-blog-statistics dl{margin-bottom:10px;margin-bottom:1rem;padding-bottom:9px;padding-bottom:.9rem;border-bottom:1px dotted #e5e5e5}#live-blog-statistics dl:before,#live-blog-statistics dl:after{content:"";display:table}
+#live-blog-statistics dl:after{clear:both}
+#live-blog-statistics dl:last-child{margin-bottom:20px;margin-bottom:2rem;padding:0;border:none}#live-blog-statistics dl:last-child dd:nth-of-type(-n+2){margin-bottom:20px;margin-bottom:2rem}
+#live-blog-statistics dl ul{width:48%;margin:0}#live-blog-statistics dl ul:first-child{float:left}
+#live-blog-statistics dl ul:first-child{float:right}
+#live-blog-statistics dl ul:only-child{float:none;width:100%}#live-blog-statistics dl ul:only-child li{float:left;width:50%;padding:5px 3% 5px 3%;padding:.5rem 3% .5rem 3%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}#live-blog-statistics dl ul:only-child li:first-child{text-align:right;background:#e5e5e5}
+#live-blog-statistics dl ul:only-child li:last-child{text-align:left;background:#eee}

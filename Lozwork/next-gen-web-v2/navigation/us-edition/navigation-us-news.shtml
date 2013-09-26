@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+		
+	<title>US News | Guardian.co.uk</title>
+
+ 	<link rel="stylesheet" href="/css/fonts.css" media="screen" />
+ 	<link rel="stylesheet" href="/css/font-awesome.css" media="screen" />
+	
+ 	<link rel="stylesheet" href="/css/navigation-three-us-edition.css" media="screen" />
+	
+	<script src="/js/jquery-1.7.2.min.js"></script>
+</head>
+
+
+<body id="us-news">
+	<header>
+		<!--#include virtual="/inc/navigation-tools-us-edition.inc" -->
+		
+		<p class="branding">The Guardian<a href="navigation-home.shtml"></a></p>
+		
+		<div id="navigation-horizontal" class="navigation-container" role="presentation">
+			<nav class="primary-navigation medium-large-screens">
+				<ul>
+					<li><a href="navigation-home.shtml">Home</a></li>
+					<li><a href="navigation-us-news.shtml" class="selected">US</a></li>
+					<li><a href="navigation-world-news.shtml">World</a></li>
+					<li><a href="navigation-comment.shtml">Comment</a></li>
+					<li><a href="navigation-sport.shtml">Sports</a></li>
+					<li><a href="navigation-soccer.shtml">Soccer</a></li>
+					<li><a href="navigation-life-style.shtml">Life &amp; style</a></li>
+					<li><a href="navigation-culture.shtml">Culture</a></li>
+					<li><a href="navigation-business.shtml">Business</a></li>
+					<!-- <li><a href="navigation-money.shtml">Money</a></li> -->
+					<li><a href="navigation-travel.shtml">Travel</a></li>
+					<li><a href="navigation-technology.shtml">Tech</a></li>
+					<li><a href="navigation-environment.shtml">Environment</a></li>
+					<!-- <li><a href="#">Jobs</a></li>
+					<li><a href="#">Soulmates</a></li> -->
+					<li><a href="#">All sections</a></li>
+				</ul>
+			</nav>
+			<nav class="subsection-navigation medium-large-screens">
+				<ul>
+					<li><a href="#">Politics</a></li>
+					<li><a href="#">Media</a></li>
+					<li><a href="#">Science</a></li>
+					<li><a href="#">US States</a></li>
+					<!-- <li><a href="#">Crime</a></li>  -->
+					<!-- <li><a href="#">Weather</a></li> -->
+					<li><a href="#">[special event]</a></li>
+					<li><a href="#">[special event]</a></li>
+				</ul>	
+			</nav>	
+			<!--#include virtual="/inc/navigation-controls.inc" -->	
+		</div>		
+		
+		<div id="navigation-dropdown" class="navigation-container dropdown overflow" role="presentation">
+			<ol class="crumbtrail small-screen">
+				<li><a href="navigation-home.shtml">Home</a></li>
+				<li><a href="#" class="selected">US News</a></li>
+			</ol>
+			<nav class="primary-navigation medium-large-screens">
+				<h2 class="medium-large-screens">Sections</h2>
+				<ul>
+					<li><a href="navigation-home.shtml">Home</a></li>
+					<li><a href="navigation-us-news.shtml" class="selected">US</a></li>
+					<li><a href="navigation-world-news.shtml">World</a></li>
+					<li><a href="navigation-comment.shtml">Comment</a></li>
+					<li><a href="navigation-sport.shtml">Sports</a></li>
+					<li><a href="navigation-soccer.shtml">Soccer</a></li>
+					<li><a href="navigation-life-style.shtml">Life &amp; style</a></li>
+					<li><a href="navigation-culture.shtml">Culture</a></li>
+					<li><a href="navigation-business.shtml">Business</a></li>
+					<!-- <li><a href="navigation-money.shtml">Money</a></li> -->
+					<li><a href="navigation-travel.shtml">Travel</a></li>
+					<li><a href="navigation-technology.shtml">Tech</a></li>
+					<li><a href="navigation-environment.shtml">Environment</a></li>
+					<!-- <li><a href="#">Jobs</a></li>
+					<li><a href="#">Soulmates</a></li> -->
+					<li><a href="navigation-.shtml">All sections</a></li>
+				</ul>		
+			</nav>
+			<nav class="subsection-navigation">
+				<h2 class="medium-large-screens">US News</h2>
+				<ul>
+					<li><a href="#">Politics</a></li>
+					<li><a href="#">Media</a></li>
+					<li><a href="#">Science</a></li>
+					<li><a href="#">US states</a></li>
+					<!-- <li><a href="#">Crime</a></li> -->
+					<!-- <li><a href="#">Weather</a></li> -->
+					<li><a href="#">[special event]</a></li>
+					<li><a href="#">[special event]</a></li>
+				</ul>
+			</nav>
+			<!--#include virtual="/inc/navigation-search.inc" -->
+		</div>
+		
+		<div id="global-search-dropdown" class="dropdown" role="presentation">
+			<!--#include virtual="/inc/navigation-search.inc" -->
+		</div>
+		
+		<div class="top-stories dropdown">
+			
+		</div>
+	</header>
+	
+	<h1>US News</h1>
+</body>
+
+<script src="/js/navigation-three.js"></script>
+
+</html>

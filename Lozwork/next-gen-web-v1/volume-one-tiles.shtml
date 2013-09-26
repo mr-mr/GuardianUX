@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+	
+	<title>The Guardian | Guardian.co.uk</title> 
+	
+ 	<link rel="stylesheet/less" href="/css/volume.less" type="text/css" media="screen" />	
+ 	<link rel="stylesheet/less" href="/css/volume-tiles.less" title="normal" type="text/css" media="screen" />
+ 	<link rel="stylesheet" href="/css/fonts.css" type="text/css" media="all" />
+	
+	<script src="/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src="/js/hide-address-bar.js" type="text/javascript"></script>
+	<script src="/js/volume-tiles.js" type="text/javascript"></script>
+	
+	<script src="/js/less-1.3.0.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+	
+	<div class="wrapper" role="presentation">
+		<!--#include virtual="/inc/branding-home.inc" -->
+
+		<section class="top-stories">
+			<!-- <h2>Top stories</h2> -->
+			<article class="primary">
+				<!-- <h2>World</h2> -->
+				<h3><a href="#"><img src="/img/Katsuya-Takahashi-is-led--008.jpg" />Last arrest for Tokyo subway attack</a></h3>
+				<p>Katsuya Takahashi, accused of driving five Aum Supreme Truth attackers to their targets in 1995, is caught</p>
+				<ul class="related-stories">
+					<li><h3><a href="#">Video: cult member arrested over gas attack</a></h3></li>
+					<li><h3><a href="#">Aum Shinrikyo cult fugitive turns himself in after 16 years</a></h3></li>
+				</ul>
+			</article>
+			<article class="secondary">
+				<!-- <h2>World</h2> -->
+				<h3><a href="#"><img src="/img/Protester-shouts-as-he-st-008.jpg" />Egypt reels from 'judicial coup'</a></h3>
+				<p><strong class="live-latest">Live</strong> Egypt's highest court dissolves parliament and clears former PM Ahmed Shafiq to stand in presidential runoff</p>
+			</article>
+			<article class="tertiary">
+				<!-- <h2>UK</h2> -->
+				<h3><a href="#"><img src="/img/An-Oregon-man-is-in-a-cri-008.jpg" />Plague patient in critical condition</a></h3>
+				<p>Man was infected by bite from cat that was carrying dead mouse in mouth, say US health officials</p>
+			</article>
+		</section>
+		
+		<section class="more-news">
+			<h2><a href="#">News</a></h2>
+			<!--#include virtual="/inc/top-stories-three.inc" -->
+		</section>
+	</div>
+	<!-- end .wrapper -->
+</body>
+
+</html>

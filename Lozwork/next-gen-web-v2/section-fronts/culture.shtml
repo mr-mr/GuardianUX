@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+		
+	<title>Culture section front</title>
+
+ 	<link rel="stylesheet" href="/css/fonts.css" media="screen" />
+
+ 	<link rel="stylesheet/less" href="/css/base.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/section-fronts.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/tabs.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/article-promos.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/most-read.less" media="screen" />
+	
+	<script src="/js/hide-address-bar.js"></script>
+
+	<script src="/js/jquery-1.7.2.min.js"></script>
+	<script src="/js/jquery.event.move.js"></script>	
+	<script src="/js/jquery.event.swipe.js"></script>
+	<script src="/js/jquery.cookie.js"></script>
+		
+	<script src="/js/navigation.js"></script>
+	<script src="/js/show-hide-with-cookies.js"></script>
+	<script src="/js/clickable-block.js"></script>
+	<script src="/js/tabs.js"></script>
+	
+	<script src="/js/less-1.3.0.min.js"></script>	
+</head>
+
+<body id="section-front" class="culture">
+	<div class="wrapper">
+		<!--#include virtual="/inc/primary-navigation.inc" -->
+
+		<section id="content" role="presentation">
+			<!--#include virtual="/inc/header.inc" -->
+			
+			<h1>Culture</h1>
+
+			<section class="top-stories">
+				<h2><a href="#">Today's picks</a><a href="#top-stories" class="show-hide"><span>Hide</span></a></h2>
+				
+				<div id="top-stories" class="show-hide" role="presentation">
+					<article data-importance="medium">
+						<h3><a href="#"><img src="/img/5x3-video.svg" />Iron Man 3: watch the full trailer</a></h3>
+						<p>Watch the full trailer for Iron Man 3, the third in the blockbuster series starring Robert Downey Jr</p>
+						<ul>
+							<li><a href="#">23 comments</a> in the last 2 hours</li>
+						</ul>
+					</article> 
+					<article data-importance="small-medium">
+						<h3><a href="#"><img src="/img/5x3.png" />Jay-Z and Beyoncé lose bid to trademark daughter's name</a></h3>
+						<p>Musicians hoped to reserve 'Blue Ivy' for a brand of baby products, despite a company already existing with that name</p>
+						<ul>
+							<li><a href="#">24 comments</a> in the last 2 hours</li>
+						</ul>
+					</article> 
+					<article data-importance="small-medium">
+						<h3><a href="#"><img src="/img/5x3.png" />Visions of a toxic planet</a></h3>
+						<p class="ratings rating-three">Rating: 3</p>
+						<p>From Chernobyl to the room where a Mossad assassination took place, Jane and Louise Wilson capture the aftermath of death and destruction</p>
+						<ul>
+							<li><a href="#">903 comments</a> in the last 2 hours</li>
+						</ul>
+					</article>
+					<article data-importance="small-medium">
+						<h3><a href="#">How we made Back to Life, by Soul II Soul</a></h3>
+						<p>Jazzie B and Caron Wheeler on how reggae violins, shuffling beats and an outstanding vocal made a 1980s club classic</p>
+						<ul>
+							<li><a href="#">475 comments</a> in the last 2 hours</li>
+						</ul>
+					</article>
+					<article data-importance="small-medium">
+						<h3><a href="#">Here come the Girls</a></h3>
+						<p>Lena Dunham's sitcom had both praise and outrage heaped upon it in the US for its portrayal of young women. But UK viewers will have seen it all before</p>
+						<ul>
+							<li><a href="#">287 comments</a> in the last 2 hours</li>
+						</ul>
+					</article>
+				</div>
+			</section>
+			<!-- end .top-stories -->	
+			
+			<section class="features">
+				<h2><a href="#">Featured</a> <a href="#culture-features-stories" class="show-hide"><span>Hide</span></a></h2>
+				<div id="culture-features-stories" class="show-hide" role="presentation">
+					<article data-importance="medium">
+						<h3><a href="#">The Week In TV</a></h3>
+						<p>The Thick Of It, Friday Night Dinner, The Great British Bake-Off Final and My Tattoo Addiction</p>
+					</article>
+					<article data-importance="small">
+						<h3><a href="#">Guardian Books podcast</a></h3>
+					</article>
+					<article data-importance="small">
+						<h3><a href="#">Music Weekly podcast</a></h3>
+					</article>
+					<ul class="carousel-controls">
+						<li><a href="#">Previous</a></li>
+						<li><a href="#">Next</a></li>
+					</ul>
+					<ol class="pagination">
+						<li><a href="#" class="selected">Page 1</a></li><li><a href="#">Page 2</a></li><li><a href="#">Page 3</a></li>
+					</ol>
+				</div>
+			</section>
+			<!-- end .features -->		
+
+			<section class="tv-radio">
+				<h2><a href="#">TV &amp; Radio</a><a href="#tv-radio-stories" class="show-hide"><span>Hide</span></a></h2>
+				
+				<div id="tv-radio-stories" class="show-hide" role="presentation">
+					<article data-importance="small-medium">
+						<h3><a href="#"><img src="/img/5x3.png" />Have you been watching… Cuckoo</a></h3>
+						<p class="date-staml"><time>4 hours ago</time></p>	
+						<p>BBC3's subversive, surreal Andy Samberg comedy is breathing new life into the family sitcom with its fresh execution and edge of awkwardness</p>	
+						<ul>
+							<li><a href="#">96 comments</a> in the last 2 hours</li>
+						</ul>					
+					</article>
+				</div>
+			</section>
+			<!-- end .tv-radio -->	
+
+			<section class="Film">
+				<h2><a href="#">Film</a><a href="#Film-stories" class="show-hide"><span>Hide</span></a></h2>
+				
+				<div id="Film-stories" class="show-hide" role="presentation">
+					<article data-importance="small-medium">
+						<h3><a href="#"><img src="/img/5x3.png" />Tony Scott had antidepressant in system but no cancer</a></h3>
+						<p class="date-staml"><time>2 hours ago</time></p>	
+						<p>Los Angeles coroner confirms that British film director's death was suicide</p>
+						<ul>
+							<li><a href="#">39 comments</a> in the last 2 hours</li>
+						</ul>
+					</article>					
+				</div>
+			</section>
+			<!-- end .Film -->	
+			
+			<section class="music">
+				<h2><a href="#">Music</a><a href="#music-stories" class="show-hide"><span>Hide</span></a></h2>
+				
+				<div id="music-stories" class="show-hide" role="presentation">
+					<article data-importance="small-medium">
+						<h3><a href="#"><img src="/img/5x3.png" />Jennifer Lopez in concert</a></h3>
+						<p class="ratings rating-four">Rating: 4</p>
+						<p>Thundering around the stage, shaking hands with overwhelmed fans, Lopez is warm, funny and, despite the gloss, very 'real'</p>
+						<ul>
+							<li><a href="#">102 comments</a> in the last 2 hours</li>
+						</ul>
+					</article>				
+				</div>
+			</section>
+			<!-- end .music -->	
+	
+			<section class="theatre">
+				<h2><a href="#">Stage</a><a href="#theatre-stories" class="show-hide"><span>Hide</span></a></h2>
+				
+				<div id="theatre-stories" class="show-hide" role="presentation">
+					<article data-importance="small-medium">
+						<h3><a href="#"><img src="/img/5x3.png" />Freedom of speech – and jokes</a></h3>
+						<p class="date-staml"><time>1 hour ago</time></p>	
+						<p>Rowan Atkinson defends 'insulting words' – and Frankie Boyle wins more than £50,000 in damages</p>
+						<ul>
+							<li><a href="#">79 comments</a> in the last 2 hours</li>
+						</ul>
+					</article>					
+				</div>
+			</section>
+			<!-- end .theatre -->	
+			
+			<section class="hot-topics">
+				<h2><a href="#">Talking points</a><a href="#hot-topics-stories" class="show-hide"><span>Hide</span></a></h2>
+				
+				<div id="your-say-stories" class="show-hide" role="presentation">
+					<article data-importance="small-medium">
+						<div role="presentation">
+							<h3><a href="#">Cabaret stars make a song and dance about Gary Barlow's X Factor jibes</a></h3>
+							<ul>
+								<li><a href="#">Ben Walters</a></li>
+							</ul>
+						</div>
+						<blockquote>
+							<p>From <a href="#">LakersFan</a></p>
+							<p>"I wouldn't be concerned - after all Louis Walsh could write his knowledge of popular music on the back of a postage stamp<a href="#">…</a>"</p>
+							<ul>
+								<li><a href="#">14 comments</a> in the last 2 hours</li>
+							</ul>
+						</blockquote>
+					</article>
+					<article data-importance="small-medium">
+						<div role="presentation">
+							<h3><a href="#">Why ballet companies should co-operate</a></h3>
+							<ul>
+								<li><a href="#">Judith Mackrell</a></li>							
+							</ul>
+						</div>
+						<blockquote>
+							<p>From <a href="#">ChetMorton</a></p>
+							<p>"At present, virtually nowhere in England outside London, with the possible exception of Birmingham, gets enough visits from a company to develop a comfortable familiarity<a href="#">…</a>"</p>
+							<ul>
+								<li><a href="#">18 comments</a> in the last 2 hours</li>
+							</ul>
+						</blockquote>
+					</article>
+					<article data-importance="small-medium">
+						<div role="presentation">
+							<h3><a href="#">Does Arrow hit the target?</a></h3>
+							<ul>
+								<li><a href="#">Stephen Kelly</a></li>
+							</ul>							
+						</div>
+						<blockquote>
+							<p>From <a href="#">ukbazza</a></p>
+							<p>"Watched the first episode yesterday and first impressions: Kept me engaged. But it is basically a Batman rip-off<a href="#">…</a>"</p>
+							<ul>
+								<li><a href="#">5 comments</a></li>
+							</ul>
+						</blockquote>
+					</article>
+				</div>				
+			</section>	
+			<!-- end .hot-topics -->
+			
+			<section class="books">
+				<h2><a href="#">Books</a><a href="#books-stories" class="show-hide"><span>Hide</span></a></h2>
+				
+				<div id="books-stories" class="show-hide" role="presentation">
+					<article data-importance="small">
+						<h3><a href="#">Scary stories for Halloween: Granny's Grinning by Robert Shearman</a></h3>
+						<p class="date-stamp"><time>2 mins ago</time></p>
+						<ul>
+							<li><a href="#">3 comments</a> in the last two hours</li>
+						</ul>
+					</article>
+				</div>
+			</section>
+			<!-- end .books -->	
+
+			<section class="art-design">
+				<h2><a href="#">Art &amp; design</a><a href="#art-design-stories" class="show-hide"><span>Hide</span></a></h2>
+				
+				<div id="art-design-stories" class="show-hide" role="presentation">
+					<article data-importance="small">
+						<h3><a href="#">Parisian architects propose an inflatable doughnut structure to span the Seine</a></h3>
+						<p class="date-stamp"><time>30 mins ago</time></p>	
+						<ul>
+							<li><a href="#">93 comments</a></li>
+						</ul>				
+					</article>
+				</div>
+			</section>
+			<!-- end .art-design -->	
+			
+			<section class="games">
+				<h2><a href="#">Games</a><a href="#games-stories" class="show-hide"><span>Hide</span></a></h2>
+				
+				<div id="games-stories" class="show-hide" role="presentation">
+					<article data-importance="small">
+						<h3><a href="#">Forza Horizon review</a></h3>
+						<p class="date-stamp"><time>16 Oct 2012</time></p>	
+						<ul>
+							<li><a href="#">265 comments</a></li>
+						</ul>							
+					</article>	
+				</div>
+			</section>
+			<!-- end .games -->	
+			
+			<!-- <section class="">
+				<h2><a href="#"></a><a href="#-stories" class="show-hide"><span>Hide</span></a></h2>
+				
+				<div id="-stories" class="show-hide" role="presentation">
+				</div>
+			</section> -->
+			<!-- end . -->	
+						
+			<!--#include virtual="/inc/culture-most-read.inc" -->	
+			
+			<!--#include virtual="/inc/footer.inc" -->						
+		</section>
+		<!-- end #main -->
+		
+		<!--#include virtual="/inc/top-stories-list-network-front.inc" -->
+	</div>
+	<!-- end .wrapper -->
+</body>
+
+</html>
+			

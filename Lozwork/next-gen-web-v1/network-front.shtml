@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+	
+	<title>The Guardian | Guardian.co.uk</title> 
+	
+ 	<link rel="stylesheet/less" href="/css/network-front.less" type="text/css" media="all" />	
+ 	<link rel="stylesheet" href="/css/fonts.css" type="text/css" media="all" />
+	
+	<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src="/js/hide-address-bar.js" type="text/javascript"></script>
+	<script src="/js/show-hide-network-front.js" type="text/javascript"></script>
+
+	<script src="/js/less-1.3.0.min.js" type="text/javascript"></script>
+</head>
+
+<body id="network-front">
+	<div id="wrapper">
+		<!--#include virtual="/inc/branding-home.inc" -->	
+
+		<section id="top-stories">
+			<h2><a href="#">Top stories</a></h2>
+			<p class="section-control"><a href="#top-stories-content"><strong>Hide</strong> top stories</a></p>
+			<div id="top-stories-content" role="presentation">
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">UK</a></h3>
+					<h4><a href="#">Top story title Lorem ipsum dolor sit amet consectetur</a></h4>
+					<p><strong class="live-latest">Live</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<ol class="sublinks">
+						<li><a href="#">Ut enim ad minim veniam</a></li>
+						<li><a href="#">Quis nostrud exercitation ullamco</a></li>
+						<li><a href="#">Laboris nisi ut aliquip ex</a></li>
+						<li><a href="#">Ea commodo consequat duis aute irure</a></li>
+					</ol>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">UK</a></h3>
+					<h4><a href="#">Top story title Lorem ipsum dolor sit amet consectetur</a></h4>
+					<p><strong class="live-latest">Live</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<aside class="latest">
+						<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+					</aside>
+					<ol class="sublinks">
+						<li><a href="#">Ut enim ad minim veniam</a></li>
+						<li><a href="#">Quis nostrud exercitation ullamco</a></li>
+					</ol>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">World</a></h3>
+					<h4><a href="#">Top story title Lorem ipsum dolor sit amet consectetur</a></h4>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<ol class="sublinks">
+						<li><a href="#">Laboris nisi ut aliquip ex</a></li>
+						<li><a href="#">Ea commodo consequat duis aute irure</a></li>
+					</ol>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Technology</a></h3>
+					<h4><a href="#">Top story title Lorem ipsum dolor sit amet consectetur</a></h4>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<ol class="sublinks">
+						<li><a href="#">Ea commodo consequat duis aute irure</a></li>
+					</ol>
+				</article>
+
+				<article class="featured-event">
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Jubilee celebrations</a></h3>
+					<h4><a href="#">Featured event story title dolor sit amet consectetur</a></h4>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<ol class="sublinks">
+						<li><a href="#">Ea commodo consequat duis aute irure</a></li>
+					</ol>
+				</article>			
+				<p class="show-more"><a href="#more-top-stories">Show more top stories</a></p>
+			
+				<section id="more-top-stories" class="more">
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">UK</a></h3>
+						<h4><a href="#">Additional top story title Lorem ipsum dolor sit amet consectetur</a></h4>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">UK</a></h3>
+						<h4><a href="#">Additional top story title Lorem ipsum dolor sit amet consectetur</a></h4>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">World</a></h3>
+						<h4><a href="#">Additional top story title Lorem ipsum dolor sit amet consectetur</a></h4>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">UK</a></h3>
+						<h4><a href="#">Additional top story title Lorem ipsum dolor sit amet consectetur</a></h4>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">World</a></h3>
+						<h4><a href="#">Additional top story title Lorem ipsum dolor sit amet consectetur</a></h4>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>				
+				</section>
+			</div>
+			<!-- end #top-stories-content -->
+		</section>		
+		<!-- end #top-stories -->
+
+		<section id="sport">
+			<h2><a href="#">Sport stories</a></h2>
+			<p class="section-control"><a href="#sport-content"><strong>Hide</strong> sport stories</a></p>
+			<div id="sport-content" role="presentation">
+				<article class="live">
+					<h3>Live Euro 2012</h3>
+					<table>
+						<tr>
+							<th>England</th>
+							<th>0 - 1</th>
+							<th>France</th>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>Ribery</td>
+						</tr>
+						<tr>
+							<td><a href="#">Live blog</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">Fixtures &amp; results</a></td>
+						</tr>
+					</table>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Football</a></h3>
+					<h4><a href="#">Sport story title Lorem ipsum dolor sit amet consectetur</a></h4>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<ol class="sublinks">
+						<li><a href="#">Ut enim ad minim veniam</a></li>
+						<li><a href="#">Quis nostrud exercitation ullamco</a></li>
+						<li><a href="#">Laboris nisi ut aliquip ex</a></li>
+						<li><a href="#">Ea commodo consequat duis aute irure</a></li>
+					</ol>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Cricket</a></h3>
+					<h4><a href="#">Sport story title Lorem ipsum dolor sit amet consectetur</a></h4>
+					<p><strong class="live-latest">Live</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<aside class="latest">
+						<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+					</aside>
+					<ol class="sublinks">
+						<li><a href="#">Ut enim ad minim veniam</a></li>
+						<li><a href="#">Quis nostrud exercitation ullamco</a></li>
+					</ol>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Football</a></h3>
+					<h4><a href="#">Sport story title Lorem ipsum dolor sit amet consectetur</a></h4>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<ol class="sublinks">
+						<li><a href="#">Laboris nisi ut aliquip ex</a></li>
+						<li><a href="#">Ea commodo consequat duis aute irure</a></li>
+					</ol>
+				</article>
+				<article>
+					<blockquote>
+						<p><a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</a></p>
+						<p class="author"><cite>A N Other-Columnist</cite></p>
+					</blockquote>
+				</article>
+				<article class="featured-event">
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Olympics</a></h3>
+					<h4><a href="#">Featured event story title dolor sit amet consectetur</a></h4>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<ol class="sublinks">
+						<li><a href="#">Quis nostrud exercitation ullamco</a></li>
+						<li><a href="#">Laboris nisi ut aliquip ex</a></li>
+						<li><a href="#">Ea commodo consequat duis aute irure</a></li>
+					</ol>
+				</article>
+			
+				<p class="show-more"><a href="#more-sport">Show more sport stories</a></p>
+			
+				<section id="more-sport" class="more">
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">Tennis</a></h3>
+						<h4><a href="#">Additional sport story title Lorem ipsum dolor sit amet consectetur</a></h4>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">Football</a></h3>
+						<h4><a href="#">Additional sport story title Lorem ipsum dolor sit amet consectetur</a></h4>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">Boxing</a></h3>
+						<h4><a href="#">Additional sport story title Lorem ipsum dolor sit amet consectetur</a></h4>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">Racing</a></h3>
+						<h4><a href="#">Additional sport story title Lorem ipsum dolor sit amet consectetur</a></h4>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>				
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">Football</a></h3>
+						<h4><a href="#">Additional sport story title Lorem ipsum dolor sit amet consectetur</a></h4>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>	
+				</section>
+			</div>
+			<!-- end #sport-content -->
+		</section>		
+		<!-- end #sport -->
+		
+		<section id="comment">
+			<h2><a href="#">Comment</a></h2>
+			<p class="section-control"><a href="#comment-content"><strong>Hide</strong> comment stories</a></p>
+			<div id="comment-content" role="presentation">
+				<article>
+					<blockquote>
+						<p><a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</a></p>
+						<p class="author"><cite>A N Other-Columnist</cite></p>
+					</blockquote>
+				</article>
+				<article>
+					<blockquote>
+						<p><a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</a></p>
+						<p class="author"><cite>A N Other-Columnist</cite></p>
+					</blockquote>
+				</article>
+				<article>
+					<blockquote>
+						<p><a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</a></p>
+						<p class="author"><cite>A N Other-Columnist</cite></p>
+					</blockquote>
+				</article>
+				
+				<p class="show-more"><a href="#more-comment">Show more comment stories</a></p>		
+		
+				<section id="more-comment" class="more">
+					<article>
+						<blockquote>
+							<p><a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</a></p>
+							<p class="author"><cite>A N Other-Columnist</cite></p>
+						</blockquote>
+					</article>
+					<article>
+						<blockquote>
+							<p><a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</a></p>
+							<p class="author"><cite>A N Other-Columnist</cite></p>
+						</blockquote>
+					</article>
+					<article>
+						<blockquote>
+							<p><a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</a></p>
+							<p class="author"><cite>A N Other-Columnist</cite></p>
+						</blockquote>
+					</article>			
+				</section>
+				<!-- end #more-comment -->
+			</div>
+			<!-- end #comment-content -->
+		</section>
+
+		<section id="life-style">
+			<h2><a href="#">Life &amp; style</a></h2>
+			<p class="section-control"><a href="#life-style-content"><strong>Hide</strong> life &amp; style stories</a></p>
+			<div id="life-style-content" role="presentation">
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Fashion</a></h3>
+					<h4><a href="#">Life &amp; style story title Lorem ipsum dolor sit amet consectetur</a></h4>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<ol class="sublinks">
+						<li><a href="#">Ut enim ad minim veniam</a></li>
+					</ol>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Food &amp; drink</a></h3>
+					<h4><a href="#">Life &amp; style story title Lorem ipsum dolor sit amet consectetur</a></h4>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<ol class="sublinks">
+						<li><a href="#">Ut enim ad minim veniam</a></li>
+					</ol>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Women</a></h3>
+					<h4><a href="#">Life &amp; style story title Lorem ipsum dolor sit amet consectetur</a></h4>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<ol class="sublinks">
+						<li><a href="#">Laboris nisi ut aliquip ex</a></li>
+					</ol>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Family &amp; relationships</a></h3>
+					<h4><a href="#">Life &amp; style story title Lorem ipsum dolor sit amet consectetur</a></h4>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<ol class="sublinks">
+						<li><a href="#">Ea commodo consequat duis aute irure</a></li>
+					</ol>
+				</article>
+				<article>
+					<blockquote>
+						<p><a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</a></p>
+						<p class="author"><cite>A N Other-Columnist</cite></p>
+					</blockquote>
+				</article>
+			
+				<p class="show-more"><a href="#more-life-style">Show more life &amp; style stories</a></p>
+			
+				<section id="more-life-style" class="more">
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">Health, wellbeing &amp; fitness</a></h3>
+						<h4><a href="#">Additional life &amp; style story title Lorem ipsum dolor sit amet consectetur</a></h4>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">Gardens</a></h3>
+						<h4><a href="#">Additional life &amp; style story title Lorem ipsum dolor sit amet consectetur</a></h4>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">Homes</a></h3>
+						<h4><a href="#">Additional life &amp; style story title Lorem ipsum dolor sit amet consectetur</a></h4>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">Food &amp; drink</a></h3>
+						<h4><a href="#">Additional life &amp; style story title Lorem ipsum dolor sit amet consectetur</a></h4>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>				
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">Fashion</a></h3>
+						<h4><a href="#">Additional life &amp; style story title Lorem ipsum dolor sit amet consectetur</a></h4>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>	
+				</section>
+			</div>
+			<!-- end #life-style-content -->
+		</section>		
+		<!-- end #life-style -->
+		
+		<section id="culture">
+			<h2><a href="#">Culture</a></h2>
+			<p class="section-control"><a href="#culture-content"><strong>Hide</strong> culture stories</a></p>
+			<div id="culture-content" role="presentation">
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Music</a></h3>
+					<h4><a href="#">Culture story title Lorem ipsum dolor sit amet consectetur</a></h4>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<ol class="sublinks">
+						<li><a href="#">Ut enim ad minim veniam</a></li>
+						<li><a href="#">Quis nostrud exercitation ullamco</a></li>
+					</ol>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">TV &amp; radio</a></h3>
+					<h4><a href="#">Culture story title Lorem ipsum dolor sit amet consectetur</a></h4>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<ol class="sublinks">
+						<li><a href="#">Ut enim ad minim veniam</a></li>
+						<li><a href="#">Quis nostrud exercitation ullamco</a></li>
+					</ol>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Music</a></h3>
+					<h4><a href="#">Culture story title Lorem ipsum dolor sit amet consectetur</a></h4>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Film</a></h3>
+					<h4><a href="#">Culture story title Lorem ipsum dolor sit amet consectetur</a></h4>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Books</a></h3>
+					<h4><a href="#">Culture story title Lorem ipsum dolor sit amet consectetur</a></h4>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				</article>
+			
+				<p class="show-more"><a href="#more-culture">Show more culture stories</a></p>
+			
+				<section id="more-culture" class="more">
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">Classical</a></h3>
+						<h4><a href="#">Additional culture story title Lorem ipsum dolor sit amet consectetur</a></h4>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">Stage</a></h3>
+						<h4><a href="#">Additional culture story title Lorem ipsum dolor sit amet consectetur</a></h4>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">Film</a></h3>
+						<h4><a href="#">Additional culture story title Lorem ipsum dolor sit amet consectetur</a></h4>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">TV &amp; radio</a></h3>
+						<h4><a href="#">Additional culture story title Lorem ipsum dolor sit amet consectetur</a></h4>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>				
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">Books</a></h3>
+						<h4><a href="#">Additional culture story title Lorem ipsum dolor sit amet consectetur</a></h4>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>	
+				</section>
+			</div>
+			<!-- end #culture-content -->
+		</section>		
+		<!-- end #culture -->
+
+		<section id="business">
+			<h2><a href="#">Business</a></h2>
+			<p class="section-control"><a href="#business-content"><strong>Hide</strong> business stories</a></p>
+			<div id="business-content" role="presentation">
+				<article class="live">
+					<!-- <dl id="markets">
+						<dt class="up">FTSE</dt><dd><ul><li>5,903.0</li><li>+0.478%</li><li>+16%</li></ul></dd><dt class="down">Dow</dt><dd><ul><li>5,903.0</li><li>+0.478%</li><li>+16%</li></ul></dd><dt class="up">Nasdaq</dt><dd><ul><li>5,903.0</li><li>+0.478%</li><li>+16%</li></ul></dd>
+					</dl> -->
+					<table>
+						<tr>
+							<th>FTSE</th>
+							<th>Dow</th>
+							<th>Nasdaq</th>
+						</tr>
+						<tr>
+							<td>5,903.0</td>
+							<td>5,903.0</td>
+							<td>5,903.0</td>
+						</tr>
+						<tr>
+							<td>+0.478%</td>
+							<td>+0.478%</td>
+							<td>+0.478%</td>
+						</tr>
+						<tr>
+							<td>+16%</td>
+							<td>+16%</td>
+							<td>+16%</td>
+						</tr>
+					</table>
+					<!-- I know this is cheating -->
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Business story title Lorem ipsum dolor sit amet consectetur</a></h3>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<ol class="sublinks">
+						<li><a href="#">Ut enim ad minim veniam</a></li>
+						<li><a href="#">Quis nostrud exercitation ullamco</a></li>
+						<li><a href="#">Laboris nisi ut aliquip ex</a></li>
+						<li><a href="#">Ea commodo consequat duis aute irure</a></li>
+					</ol>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Business story title Lorem ipsum dolor sit amet consectetur</a></h3>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<ol class="sublinks">
+						<li><a href="#">Ut enim ad minim veniam</a></li>
+						<li><a href="#">Quis nostrud exercitation ullamco</a></li>
+					</ol>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Business story title Lorem ipsum dolor sit amet consectetur</a></h3>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				</article>
+				<article>
+					<img src="/img/5x3.png" />
+					<h3><a href="#">Business story title Lorem ipsum dolor sit amet consectetur</a></h3>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<ol class="sublinks">
+						<li><a href="#">Ea commodo consequat duis aute irure</a></li>
+					</ol>
+				</article>
+				<article>
+					<blockquote>
+						<p><a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</a></p>
+						<p class="author"><cite>A N Other-Columnist</cite></p>
+					</blockquote>
+				</article>
+			
+				<p class="show-more"><a href="#more-business">Show more business stories</a></p>
+			
+				<section id="more-business" class="more">
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">Additional business story title Lorem ipsum dolor sit amet consectetur</a></h3>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">Additional business story title Lorem ipsum dolor sit amet consectetur</a></h3>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">Additional business story title Lorem ipsum dolor sit amet consectetur</a></h3>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">Additional business story title Lorem ipsum dolor sit amet consectetur</a></h3>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>				
+					<article>
+						<img src="/img/5x3.png" />
+						<h3><a href="#">Additional business story title Lorem ipsum dolor sit amet consectetur</a></h3>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</article>	
+				</section>
+			</div>
+			<!-- end #business-content -->
+		</section>		
+		<!-- end #business -->
+		
+		<!--#include virtual="/inc/most-read.inc" -->	
+	</div>
+	<!-- end #wrapper -->
+</body>
+
+</html>

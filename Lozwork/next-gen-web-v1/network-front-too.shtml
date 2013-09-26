@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+	
+	<title>The Guardian | Guardian.co.uk</title> 
+	
+ 	<link rel="stylesheet/less" href="/css/network-front.less" type="text/css" media="screen" />	
+ 	<link rel="stylesheet" href="/css/fonts.css" type="text/css" media="screen" />
+	
+	<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src="/js/hide-address-bar.js" type="text/javascript"></script>
+	<script src="/js/show-hide-network-front.js" type="text/javascript"></script>
+	<script src="/js/tabs.js" type="text/javascript"></script>
+
+	<script src="/js/less-1.3.0.min.js" type="text/javascript"></script>
+</head>
+
+<body id="network-front">
+	<div id="wrapper">
+		<!--#include virtual="/inc/branding-home.inc" -->	
+
+		<section id="top-stories">
+			<h2><a href="#">Top stories</a></h2>
+			
+			<div id="top-stories-content" role="presentation">
+				<!--#include virtual="/inc/top-stories-six.inc" -->
+					
+				<p class="show-more"><a href="#more-top-stories">Show more top stories</a></p>
+			
+				<!--#include virtual="/inc/top-stories-more-nopics.inc" -->
+			</div>
+			<!-- end #top-stories-content -->
+		</section>		
+		<!-- end #top-stories -->
+
+		<section id="sport">
+			<h2><a href="#">Sport stories</a></h2>
+			<div id="sport-content" role="presentation">
+				<!--#include virtual="/inc/sport-stories-six.inc" -->
+			
+				<p class="show-more"><a href="#more-sport">Show more sport stories</a></p>
+			
+				<!--#include virtual="/inc/sport-stories-more-nopics.inc" -->				
+			</div>
+			<!-- end #sport-content -->
+		</section>		
+		<!-- end #sport -->
+		
+		<section id="comment">
+			<h2><a href="#">Comment</a></h2>
+			<div id="comment-content" role="presentation">
+				<!--#include virtual="/inc/comment-stories-three.inc" -->						
+				
+				<p class="show-more"><a href="#more-comment">Show more comment stories</a></p>		
+		
+				<!--#include virtual="/inc/comment-stories-more.inc" -->		
+			</div>
+			<!-- end #comment-content -->
+		</section>
+		
+		<section id="culture">
+			<h2><a href="#">Culture</a></h2>
+			<div id="culture-content" role="presentation">
+				<!--#include virtual="/inc/culture-stories-three.inc" -->				
+			
+				<p class="show-more"><a href="#more-culture">Show more culture stories</a></p>
+			
+				<!--#include virtual="/inc/culture-stories-more-nopics.inc" -->						
+			</div>
+			<!-- end #culture-content -->
+		</section>		
+		<!-- end #culture -->
+
+		<section id="business">
+			<h2><a href="#">Business</a></h2>
+			<div id="business-content" role="presentation">
+				<!--#include virtual="/inc/business-stories-three.inc" -->					
+			
+				<p class="show-more"><a href="#more-business">Show more business stories</a></p>
+			
+				<!--#include virtual="/inc/business-stories-more-nopics.inc" -->
+			</div>
+			<!-- end #business-content -->
+		</section>		
+		<!-- end #business -->
+
+		<section id="money">
+			<h2><a href="#">Money</a></h2>
+			<div id="money-content" role="presentation">
+				<!--#include virtual="/inc/money-stories-three.inc" -->					
+			
+				<p class="show-more"><a href="#more-money">Show more money stories</a></p>
+			
+				<!--#include virtual="/inc/money-stories-more-nopics.inc" -->
+			</div>
+			<!-- end #money-content -->
+		</section>		
+		<!-- end #money -->
+
+		<section id="life-style">
+			<h2><a href="#">Life &amp; style</a></h2>
+			<div id="life-style-content" role="presentation">
+				<!--#include virtual="/inc/life-style-stories-three.inc" -->					
+				
+				<p class="show-more"><a href="#more-life-style">Show more life &amp; style stories</a></p>
+			
+				<!--#include virtual="/inc/life-style-stories-more-nopics.inc" -->				
+			</div>
+			<!-- end #life-style-content -->
+		</section>		
+		<!-- end #life-style -->
+
+		<section id="travel">
+			<h2><a href="#">Travel</a></h2>
+			<div id="travel-content" role="presentation">
+				<!--#include virtual="/inc/travel-stories-three.inc" -->					
+			
+				<p class="show-more"><a href="#more-travel">Show more travel stories</a></p>
+			
+				<!--#include virtual="/inc/travel-stories-more-nopics.inc" -->
+			</div>
+			<!-- end #travel-content -->
+		</section>		
+		<!-- end #travel -->
+		
+		<!--#include virtual="/inc/most-read-zeitgeist.inc" -->	
+	</div>
+	<!-- end #wrapper -->
+</body>
+
+</html>

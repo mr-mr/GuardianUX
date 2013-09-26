@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+	
+	<title>Horsemeat found in Burgers</title>
+	
+ 	<link rel="stylesheet" href="/css/fonts.css" media="screen" />	
+	<link rel="stylesheet" href="/css/font-awesome.css" media="screen" />	
+
+ 	<link rel="stylesheet" href="/css/base-too.css" media="screen" />
+	<link rel="stylesheet" href="/css/forms.css"media="screen">
+	<link rel="stylesheet" href="/css/navigation-storytelling.css" media="screen" />	
+	<link rel="stylesheet" href="/css/horsemeat-in-burgers.css" media="screen" />		
+	<link rel="stylesheet" href="/css/tabs.css" media="screen">			
+	<link rel="stylesheet" href="/css/gallery-in-body.css" media="screen">	
+	
+	<link rel="stylesheet" href="/js/photoswipe-3.0.5/photoswipe.css" media="screen" />	
+	
+	<script src="/js/hide-address-bar.js"></script>
+
+	<script src="/js/jquery-1.9.1.min.js"></script>
+	<script src="/js/photoswipe-3.0.5/lib/klass.min.js"></script>
+	<script src="/js/photoswipe-3.0.5/code.photoswipe.jquery-3.0.5.min.js"></script>
+</head>	
+
+
+<body id="uk-news">
+	<header>
+		<!--#include virtual="/inc/navigation-tools-three.inc" -->
+		
+		<p class="branding">The Guardian<a href="navigation-home.shtml"></a></p>
+		
+		<div id="navigation-horizontal" class="navigation-container" role="presentation">
+			<nav class="primary-navigation medium-large-screens">
+				<ul>
+					<li><a href="navigation-home.shtml">Home</a></li>
+					<li><a href="navigation-uk-news.shtml" class="selected">UK</a></li>
+					<li><a href="navigation-world-news.shtml">World</a></li>
+					<li><a href="navigation-comment.shtml">Comment</a></li>
+					<li><a href="navigation-sport.shtml">Sport</a></li>
+					<li><a href="navigation-football.shtml">Football</a></li>
+					<li><a href="navigation-life-style.shtml">Life &amp; style</a></li>
+					<li><a href="navigation-culture.shtml">Culture</a></li>
+					<li><a href="navigation-business-money.shtml">Business &amp; money</a></li>
+					<li><a href="navigation-travel.shtml">Travel</a></li>
+					<li><a href="navigation-technology.shtml">Technology</a></li>
+					<li><a href="navigation-environment.shtml">Environment</a></li>
+					<!-- <li><a href="#">Jobs</a></li>
+					<li><a href="#">Soulmates</a></li> -->
+					<li><a href="#">All sections</a></li>
+
+				</ul>
+			</nav>
+			<nav class="subsection-navigation medium-large-screens">
+				<ul>
+					<li><a href="#">Politics</a></li>
+					<li><a href="#">Media</a></li>
+					<li><a href="#">Science</a></li>
+					<li><a href="#" class="selected">Society</a></li>
+					<li><a href="#">Crime</a></li>
+					<li><a href="#">Weather</a></li>
+					<li><a href="#">[special event]</a></li>
+					<li><a href="#">[special event]</a></li>
+				</ul>	
+			</nav>	
+			<!--#include virtual="/inc/navigation-controls.inc" -->	
+		</div>		
+		
+		<div id="navigation-dropdown" class="navigation-container dropdown overflow" role="presentation">
+			<ol class="crumbtrail small-screen">
+				<li><a href="navigation-home.shtml">Home</a></li>
+				<li><a href="#" class="selected">UK News</a></li>
+			</ol>
+			<nav class="primary-navigation medium-large-screens">
+				<h2 class="medium-large-screens">Sections</h2>
+				<ul>
+					<li><a href="navigation-home.shtml">Home</a></li>
+					<li><a href="navigation-uk-news.shtml" class="selected">UK</a></li>
+					<li><a href="navigation-world-news.shtml">World</a></li>
+					<li><a href="navigation-comment.shtml">Comment</a></li>
+					<li><a href="navigation-sport.shtml">Sport</a></li>
+					<li><a href="navigation-football.shtml">Football</a></li>
+					<li><a href="navigation-life-style.shtml">Life &amp; style</a></li>
+					<li><a href="navigation-culture.shtml">Culture</a></li>
+					<li><a href="navigation-business-money.shtml">Business &amp; money</a></li>
+					<li><a href="navigation-travel.shtml">Travel</a></li>
+					<li><a href="navigation-technology.shtml">Technology</a></li>
+					<li><a href="navigation-environment.shtml">Environment</a></li>
+					<li class="small-screen"><a href="#">Jobs</a></li>
+					<li class="small-screen"><a href="#">Soulmates</a></li>
+					<li><a href="#">All sections</a></li>
+				</ul>		
+			</nav>
+			<nav class="subsection-navigation">
+				<h2 class="medium-large-screens">UK News</h2>
+				<ul>
+					<li><a href="#">Politics</a></li>
+					<li><a href="#">Media</a></li>
+					<li><a href="#">Science</a></li>
+					<li><a href="#">Society</a></li>
+					<li><a href="#">Crime</a></li>
+					<li><a href="#">Weather</a></li>
+					<li><a href="#">[special event]</a></li>
+					<li><a href="#">[special event]</a></li>
+				</ul>
+			</nav>
+			<!--#include virtual="/inc/navigation-search.inc" -->
+		</div>
+		
+		<div id="global-search-dropdown" class="dropdown" role="presentation">
+			<!--#include virtual="/inc/navigation-search.inc" -->
+		</div>
+		
+		<div class="top-stories dropdown">
+			
+		</div>
+	</header>
+	<!-- end header -->
+	
+	<div class="wrapper" role="presentation">
+		<p class="date-stamp"><time>Today, 11.40am</time></p>
+		<h1>Horsemeat found in burgers</h1>
+		
+		<ul class="navigator viewport-bottom">
+			<li><a href="#ny-minute">Latest developments <i class="icon-angle-up icon-large"></i></a><a href="#coverage">Full coverage <i class="icon-angle-up icon-large"></i></a></li>
+			<li><a href="#analysis-comment-reaction">Analysis/reaction <i class="icon-angle-down icon-large"></i></a><a href="#coverage">Full coverage <i class="icon-angle-down icon-large"></i></a></li>
+			<li><a href="#coverage">Full coverage <i class="icon-angle-down icon-large"></i></a><a href="#ny-minute">Latest developments <i class="icon-angle-up icon-large"></i></a></li>
+			<li><a href="#comments">Comments <i class="icon-angle-down icon-large"></i></a><a href="#coverage">Full coverage <i class="icon-angle-up icon-large"></i></a></li>
+			<li><a href="#actors">Agents <i class="icon-angle-down icon-large"></i></a><a href="#coverage">Full coverage <i class="icon-angle-u[] icon-large"></i></a></li>
+			<li><a href="#background">Background <i class="icon-angle-down icon-large"></i></a><a href="#coverage">Full coverage <i class="icon-angle-up icon-large"></i></a></li>
+			<li><a href="#you-might-like">Trending events <i class="icon-angle-down icon-large"></i></a><a href="#coverage">Full coverage <i class="icon-angle-up icon-large"></i></a></li>
+		</ul>
+		
+		
+		<section id="ny-minute">
+			<h2>Latest developments</h2>
+			<ul class="article-details">
+				<li class="author"><a href="#"><img src="/img/1x1.png" class="author-avatar" />Kim Willsher</a></li>
+				<li class="contact"><a href="#" class="email">Email</a> or <a href="#" class="twitter">Tweet me</a></li>
+			</ul>
+			<figure class="slideshow-gallery">
+				<div role="presentation">
+					<ul id="gallery" class="gallery">
+						<li><a href="/img/5x3-photo-1.svg"><img src="/img/5x3-photo-1.svg" alt="Image 1" /></a></li>
+						<li><a href="/img/5x3-photo-2.svg"><img src="/img/5x3-photo-2.svg" alt="Image 2"/></a></li>
+						<li><a href="/img/5x3-photo-3.svg"><img src="/img/5x3-photo-3.svg" alt="Image 3" /></a></li>
+						<li><a href="/img/5x3-photo-4.svg"><img src="/img/5x3-photo-4.svg" alt="Image 4" /></a></li>
+						<li><a href="/img/5x3-photo-5.svg"><img src="/img/5x3-photo-5.svg" alt="Image 5" /></a></li>
+						<li><a href="/img/5x3-photo-6.svg"><img src="/img/5x3-photo-6.svg" alt="Image 6" /></a></li>
+						<li><a href="/img/5x3-photo-7.svg"><img src="/img/5x3-photo-7.svg" alt="Image 7"/></a></li>
+					</ul>
+					<ul class="gallery-controls">
+						<li><a href="#">previous</a></li>
+						<li><a href="#">next</a></li>
+					</ul>
+				</div>
+				<!-- <figcaption>Horse meat scandal gallery</figcaption> -->
+			</figure>
+			<p>Taco Bell, the US-based fast food company, has withdrawn its taco beef products from sale in British and Spanish outlets after finding some beef contained more than 10% horse DNA. The move came as Birds Eye confirmed that two ready meals it removed from supermarket shelves as a precaution last week have proved to have "low levels" of horse DNA.</p>
+			<div class="dwell">
+				<p>Taco Bell has three UK outlets, in Manchester's Arndale centre, and the Lakeside shopping centre and Basildon in Essex. It has nine outlets in Spain.</p>
+				<p>A spokesperson for the company said its testing had revealed ingredients from one as yet unnamed supplier in Europe had tested positive for horsemeat. "We immediately withdrew it from sale, and discontinued purchase of that meat and contacted the FSA [Food Standards Authority] with this information. We apologise to our customers and take this matter very seriously as food quality is our highest priority."</p>
+				<p>Birds Eye withdrew its Traditional Spaghetti Bolognese 340g, Shepherd's Pie 400g and Beef Lasagne 400g lines last week because they were made by the Belgian company, Frigilunch, that was responsible for the chili con carne made for the Belgian market that was found to have equine DNA. Further tests on the bolognese and lasagne have found they also had horse DNA.</p>
+			</div>
+			<p><a href="http://m.guardian.co.uk/uk/2013/mar/01/horsemeat-taco-bell-withdraws-beef-uk">Continue reading</a></p>		
+			<p class="back-to-top"><a href="#top">^ Back to top</a></p>
+		</section>
+		<!-- end #ny-minute -->
+		
+		<section class="analysis-comment-reaction">
+			<h2>Analysis, comment &amp; reaction</h2>
+			
+			<article class="analysis">
+				<p class="date-stamp"><time>Friday 15 February 15:44</time></p>
+				<h3><a href="http://m.guardian.co.uk/commentisfree/2013/feb/17/no-more-excuses-go-vegetarian">No more excuses. The only defensible option is to go vegetarian</a></h3>
+				<ul class="article-details">
+					<li class="author"><a href="#"><img src="/img/1x1.png" class="author-avatar" />John Harris</a></li>
+					<li class="contact"><a href="#" class="email">Email</a> or <a href="#" class="twitter">Tweet me</a></li>
+				</ul>
+				<p>Scores of questions, but no satisfactory answers. Did British ministers really know back in 2011 that horsemeat had entered domestic food supplies? Might the scandal now include donkeys? And what exactly was the role of an almost comically shadowy set-up called Draap Trading Ltd, which is owned by a trust registered in the British Virgin Islands?</p>
+				<p>While we're on the subject of the more light-footed aspects of modern capitalism, what of the fact that Findus – caught with horse flesh in its lasagne, and revealed to have outsourced the making of its Crispy Pancakes to the now-notorious French firm Comigel – is part-owned by a private-equity outfit commanded by one Lyndon Lea, a polo-playing gadfly once famed for a party in Montecito, California, where sushi was reportedly served on the bodies of half-naked women?</p>
+				<div class="dwell">
+					<p>Accounts of his company's role in the recent Findus story are full of phrases such as "extensive cost-cutting", the sour tang of class and echoes of a lyric once sung by a long-lost indie rock band who went under the wonderfully apt name World Domination Enterprises: "Don't feel sick, cos someone's got to eat it."</p>
+					<p>As the scandal goes on, that very British sensitivity whereby cows and pigs can be killed and hacked to pieces, but no one must touch horses – or dogs – remains as curious as ever. No one has died, or even fallen ill; the possible entry of the veterinary drug bute into the scandal still looks likely to be a mildly worrying detail rather than the basis of any reasonable cause for mass panic. As far as I am aware, as the meat industry has grown both increasingly complex and ever-more unregulated, precious few of the voices now screaming about its excesses have ever sought to prise open its doors, question whether cutting back on inspection and regulation was such a great idea or wonder whether modern meat-eating might be leading us somewhere grim.</p>
+				</div>
+				<p><a href="http://m.guardian.co.uk/commentisfree/2013/feb/17/no-more-excuses-go-vegetarian">Continue reading</a></p>	
+				<p class="back-to-top"><a href="#top">^ Back to top</a></p>
+			</article>
+		</section>
+		<!-- end .analysis-comment-reaction  -->
+					
+		<article class="promo">
+			<blockquote>
+				<p><i class="icon-quote-left"></i> <a href="#">Many feel their industry has been tarred with a problem caused by supermarkets' sourcing practices</a> <i class="icon-quote-right"></i></p>
+			</blockquote>
+			<p class="author"><strong><a href="#">Fiona Harvey</a></strong> on farmers wondering who will foot the bill</p>
+		</article>
+		
+		<section class="analysis-comment-reaction-too">	
+			<article class="analysis">
+				<p class="date-stamp"><time>Friday 15 February 15:44</time></p>
+				<h3><a href="http://m.guardian.co.uk/commentisfree/2013/feb/16/horsemeat-scandal-fish-europe">What the horsemeat scandal and fish quotas tell us about Europe</a></h3>
+				<ul class="article-details">
+					<li class="author"><a href="#"><img src="/img/1x1.png" class="author-avatar" />Andrew Watt</a></li>
+					<li class="contact"><a href="#" class="email">Email</a> or <a href="#" class="twitter">Tweet me</a></li>
+				</ul>
+				<p>The scandal of horsemeat – its being declared as beef and smuggled across borders and then into processed food – is sweeping Europe. According to the Financial Times a few days ago, the process involved "horse meat from a Romanian abattoir being sold to a French supplier by way of a Cypriot trader, and then passed on to a French food processing company before landing on British and French supermarket shelves". Since then the "horseplay" has spread to Germany and from beefburgers to lasagne.</p>
+				<p>What needs to be recognised beyond all the immediate hullabaloo is that the scandal shows just how illusory it is to imagine that Europe can function as a "common market" without all the red tape and constraints on sacred national sovereignty that Eurosceptics so ferociously decry. Production for the market requires regulation. And if we want to enjoy the benefits of a highly developed international division of labour – and they are real – then we need agreement on common rules between the trading partners.</p>
+				<div class="dwell">
+					<p>Now, in principle, such rules could be established without pooling sovereignty. All you have to do is to get a legitimate representative of 27 countries to sign up to a common set of rules and have it ratified by 27 sovereign national parliaments. It is just that you then give each country a veto and a huge temptation to use it to play strategic games with the other 26 trading partners. And every time circumstances change, you need to get the 27 representatives together and to agree again. Such intergovernmentalism does not look likely to generate efficient solutions. And that is what you need to remember the next time you read about EU regulations running to thousands of pages. Even then you are not done: what happens if a country fails to apply the common rules? If they are to have any clout, supranational elements will certainly be necessary in the area of enforcement. All of which shows how fatuous it is to criticise, on principle, supranational meddling in national affairs and the associated loss of national sovereignty. (And no, this does not, of course, mean, that everything that Brussels imposes on member states is beyond reproach.)</p>
+					<p>The recent debate on the EU budget also clearly shows the limits of intergovernmentalism. Wherever unanimity is required, things rapidly descend into a zero-sum scrap in which national politicians are rated according to how successfully they have bullied their partners, and even serious newspapers score the event like a 27-way boxing match: Cameron – winner!; Merkel – winner!; Hollande – loser! The problem is that this obscures the real news, which is that the outcome is a budget plan that is completely illogical from the point of view of rationally addressing the challenges faced by European citizens.</p>
+				</div>
+				<p><a href="http://m.guardian.co.uk/commentisfree/2013/feb/16/horsemeat-scandal-fish-europe">Continue reading</a></p>	
+				<p class="back-to-top"><a href="#top">^ Back to top</a></p>
+			</article>
+		</section>
+		<!-- end .analysis-comment-reaction  -->
+		
+		<article class="promo">
+			<blockquote>
+				<p><i class="icon-quote-left"></i> <a href="#">Restaurants and pubs up and down the country are serving up horse steaks. It's fine&hellip; tuck in</a> <i class="icon-quote-right"></i></p>
+			</blockquote>
+			<p class="author"><strong><a href="#">Alex Renton</a></strong> discusses where should you go for yours</p>
+		</article>
+		
+		<section id="coverage">
+			<section id="full-coverage">
+				<h2>Full coverage</h2>
+			
+				<dl class="accordian">
+					<dt><h3><a href="#guardian-coverage" class="control">Guardian coverage</a></h3></dt>
+					<dd id="guardian-coverage" class="pane">
+						<p class="intro">This story started on the 16 January 2013, when horsemeat DNA was found in beefburgers from Aldi, Iceland, Lidl and Tesco.</p>
+						
+						<h4 class="chapter-heading">Birdseye, Nestle &amp; Findus find horsemeat in ready meals</h4>
+						<p class="chapter-summary">Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+						<ul class="timeline chapter">
+							<li>
+								<article class="guardian-article">
+									<p class="date-stamp"><time>Friday 22 February 2013, 15.44 GMT</time></p>					
+									<h5><a href="#">Birds Eye withdraws ready meals after horse DNA found in chilli</a></h5>
+								</article>
+							</li>
+							<li>
+								<article class="guardian-article">
+									<p class="date-stamp"><time>Tuesday 19 February 2013, 15.44 GMT</time></p>					
+									<h5><a href="#">Nestlé finds horse DNA in Spanish and Italian pasta meals - video</a></h5>
+								</article>
+							</li>
+							<li>
+								<article class="guardian-article">
+									<p class="date-stamp"><time>Tuesday 19 February 2013, 15.44 GMT</time></p>					
+									<h5><a href="#">Nestlé finds horsemeat in pasta meals</a></h5>
+								</article>
+							</li>
+							<li>
+								<article class="guardian-article">
+									<p class="date-stamp"><time>Sunday 10 February 2013, 15.44 GMT</time></p>					
+									<h5><a href="#">Findus and horsemeat: how social media keeps a story on the boil</a></h5>
+								</article>
+							</li>
+							<li>
+								<article class="guardian-article">
+									<p class="date-stamp"><time>Thursday 7 February 2013 19.33 GMT</time></p>
+									<h5><a href="#">Findus beef lasagne withdrawn after tests show high level of horsemeat</a></h5>	
+								</article>	
+							</li>	
+							<li>					
+								<article class="guardian-article">
+									<p class="date-stamp"><time>Wednesday 6 February 2013 16.59 GMT</time></p>
+									<h5><a href="#">Lasagne taken off shelves amid concern over horsemeat contamination</a></h5>		
+								</article>
+							</li>
+						</ul>
+						<div id="show-more-coverage">
+							<ul class="timeline">
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp">Friday 22 February 2013 15.44 GMT<time></time></p>					
+										<h4><a href="#">Horsemeat scandal's origin lies in the heart of our economic model</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp">Friday 21 February 2013 15.44 GMT<time></time></p>					
+										<h4><a href="#">Asda warns of tough year ahead as boss speaks out on horsemeat scandal</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp">Friday 21 February 2013 15.44 GMT<time></time></p>					
+										<h4><a href="#">Horsemeat scandal triggers 15% rise in sales for France's equine butchers</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Tuesday 19 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">How to buy better meat</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Monday 18 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">French company Spanghero restarts operations</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Monday 18 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">Asda bolognese supplier back in production after horsemeat scandal</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Tuesday 19 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">Halve meat consumption, scientists urge rich world</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Sunday 18 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">No more excuses. The only defensible option is to go vegetarian</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Sunday 17 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">'Government warned two years ago'</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Sunday 17 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">The meat scandal shows all that is rotten about our free marketeers</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Sunday 17 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">As the horsemeat scandal shows, thuggish supermarkets are endangering our food supply</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Saturday 16 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">Horsemeat scandal linked to secret network of firms</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Saturday 16 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">What the horsemeat scandal and fish quotas tell us about Europe
+	</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Saturday 16 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">'We will never know how many have eaten horse'</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Saturday 16 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">After the horsemeat scandal, are you still a meat-lover?</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Saturday 16 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">Horsemeat or not, it's all junk</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Friday 15 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">The price of cheap food</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Friday 15 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">Mystery meat at the food bank close to foodies' paradise</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Friday 15 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">Horsemeat scandal boosts sales for small-scale butchers</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Friday 15 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">Supermarket suppliers could win from the horsemeat scandal</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Friday 15 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">Horsemeat scandal: the essential guide</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Friday 15 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">The ABP and Comigel connections - graphic</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Friday 15 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">The companies involved – graphic</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Friday 15 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">Tesco statement - video</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Friday 15 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">The European trade in horsemeat mapped - interactive</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Friday 15 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">How the horsemeat scandal unfolded</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Friday 15 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">Horsemeat is 'delicious, like rich beef', says restaurant owner</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Tuesday 19 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">French government suspects firm sold horsemeat labelled as beef</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Thursday 14 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">Fresh meat sales soar at Morrisons amid horsemeat scandal</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Thursday 14 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">Horsemeat scandal in Britain in 1948 - British Pathé video</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Thursday 15 February 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">Horsemeat scandal has left ministers 'flat-footed', says committee of MPs</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Wednesday 16 January 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">Horsemeat discovered in burgers sold by four British supermarkets</a></h4>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Wednesday 16 January 2013, 15.44 GMT</time></p>					
+										<h4><a href="#">Horse DNA found in beefburgers from four major supermarkets</a></h4>
+									</article>
+								</li>
+							</ul>
+							<h4 class="chapter-heading">Horsemeat present in school and hospital meals</h4>
+							<p class="chapter-summary">Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+							<ul class="timeline chapter">
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Friday 22 February 2013 15.44 GMT</time></p>					
+										<h5><a href="#">Scotland bans frozen beefburgers in schools</a></h5>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Friday 15 February 2013, 15.44 GMT</time></p>					
+										<h5><a href="#">Traces found in school dinners and hospital meals</a></h5>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Friday 15 February 2013, 15.44 GMT</time></p>					
+										<h5><a href="#">Horsemeat found in school and hospital meals</a></h5>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Friday 15 February 2013, 15.44 GMT</time></p>					
+										<h5><a href="#">Hospital burgers withdrawn over horsemeat</a></h5>
+									</article>
+								</li>
+							</ul>
+							<h4 class="chapter-heading">Suppliers recall products</h4>
+							<ul class="timeline chapter">
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp">Friday 21 February 2013, 15.44 GMT<time></time></p>					
+										<h5><a href="#">Horsemeat scandal: Welsh firm recalls burgers after tests show illicit meat</a></h5>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Monday 4 February 2013, 15.44 GMT</time></p>					
+										<h5><a href="#">Another Irish company suspends burger production</a></h5>
+									</article>
+								</li>
+							
+							</ul>
+							<h4 class="chapter-heading">FSA testing &amp; results</h4>
+							<p class="chapter-summary">Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+							<ul class="timeline chapter">
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Tuesday 19 February 2013, 15.44 GMT</time></p>					
+										<h5><a href="#">Nestlé UK products test negative for horsemeat</a></h5>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Tuesday 19 February 2013, 15.44 GMT</time></p>					
+										<h5><a href="#">Nestlé yet to submit results of UK tests for horsemeat to FSA</a></h5>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Monday 18 February 2013, 15.44 GMT</time></p>					
+										<h5><a href="#">Horsemeat tests 'will end this week'</a></h5>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Friday 15 February 2013, 15.44 GMT</time></p>					
+										<h5><a href="#">No new products involved, says FSA
+	</a></h5>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Friday 15 February 2013, 15.44 GMT</time></p>					
+										<h5><a href="#">FSA findings – the key points</a></h5>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Friday 15 February 2013, 15.44 GMT</time></p>					
+										<h5><a href="#">'Fresh beef' discovery as tests overwhelm laboratories</a></h5>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Thursday 14 February 2013, 15.44 GMT</time></p>					
+										<h5><a href="#">Steve Bell on the horsemeat scandal – cartoon</a></h5>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Friday 14 February 2013, 15.44 GMT</time></p>					
+										<h5><a href="#">French firm accused of being first to label horse as beef</a></h5>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Friday 8 February 2013 09.05 GMT</time></p>
+										<h4><a href="#">FSA orders tests of processed beef after horsemeat is found in Findus lasagne</a></h5>	
+									</article>
+								</li>
+							</ul>
+							<h4 class="chapter-heading">Supplier investigations &amp; raids</h4>
+							<p class="chapter-summary">Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+							<ul class="timeline chapter">
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Friday 15 February 2013, 15.44 GMT</time></p>					
+										<h5><a href="#">French inspectors scour Spanghero processing firm</a></h5>
+									</article>
+								</li>	
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Friday 15 February 2013, 15.44 GMT</time></p>					
+										<h5><a href="#">FSA raid three new premises</a></h5>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Thursday 14 February 2013, 15.44 GMT</time></p>					
+										<h5><a href="#">Cheshire firm investigated in horsemeat scandal</a></h5>
+									</article>
+								</li>
+										
+							</ul>
+							<h4 class="chapter-heading">Bute in the food chain</h4>
+							<p class="chapter-summary">Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+							<ul class="timeline chapter">
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp">Thursday 14 February 2013, 15.44 GMT<time></time></p>					
+										<h5><a href="#">How will bute being found in horsemeat affect the food chain? - video</a></h5>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Thursday 14 February 2013, 15.44 GMT</time></p>					
+										<h5><a href="#">Horsemeat and bute: Q&amp;A</a></h5>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Tuesday 19 February 2013, 15.44 GMT</time></p>					
+										<h5><a href="#">Horse drug bute may have entered food chain, says minister - video</a></h5>
+									</article>
+								</li>
+								<li>
+									<article class="guardian-article">
+										<p class="date-stamp"><time>Saturday 9 February 2013, 15.44 GMT</time></p>					
+										<h5><a href="#">Horsemeat does carry a health risk, but it's incredibly small</a></h5>
+									</article>
+								</li>							
+							</ul>
+						</div>
+						<p><a href="#show-more-coverage" class="show-hide">Load more</a></p>
+					</dd>
+					<dt><h3><a href="#must-read" class="control">Most popular</a></h3></dt>
+					<dd id="must-read" class="pane">
+						<article class="most-read-article">
+							<p class="date-stamp"><time>Friday 15 February 2013, 15.44 GMT</time></p>					
+							<h4><a href="#">FSA findings – the key points</a></h4>
+						</article>
+						<article class="most-read-article">
+							<p class="date-stamp"><time>Friday 15 February 2013, 15.44 GMT</time></p>					
+							<h4><a href="#">'Fresh beef' discovery as tests overwhelm laboratories</a></h4>
+						</article>
+						<article class="most-read-article">
+							<p class="date-stamp"><time>Thursday 14 February 2013, 15.44 GMT</time></p>					
+							<h4><a href="#">Steve Bell on the horsemeat scandal – cartoon</a></h4>
+						</article>
+						<article class="most-read-article">
+							<p class="date-stamp"><time>Friday 14 February 2013, 15.44 GMT</time></p>					
+							<h4><a href="#">French firm accused of being first to label horse as beef</a></h4>
+						</article>
+						<article class="most-read-article">
+							<p class="date-stamp"><time>Friday 8 February 2013 09.05 GMT</time></p>
+							<h4><a href="#">FSA orders tests of processed beef after horsemeat is found in Findus lasagne</a></h4>	
+						</article>
+					</dd>
+					<dt><h3><a href="#around-web" class="control">Around the web</a></h3></dt>
+					<dd id="around-web" class="pane">
+						<article class="around-web-article">
+							<p class="date-stamp"><time>Friday 15 February 2013 16.49 GMT</time></p>
+							<h4><a href="#">Off the shelves - which products have been withdrawn?</a></h4>
+							<p class="news-org">BBC News</p>
+						</article>
+						<article class="around-web-article">
+							<p class="date-stamp"><time>Friday 17 February 2013 13.05 GMT</time></p>
+							<h4><a href="#">Iceland boss says schools are to blame for horsemeat scandal</a></h4>
+							<p class="news-org">The Telegraph</p>
+						</article>
+						<article class="around-web-article">
+							<p class="date-stamp"><time>Friday 7 February 2013 18.28 GMT</time></p>
+							<h4><a href="#">Findus may sue French suppliers over horse meat</a></h4>
+							<p class="news-org">The Daily Mail</p>
+						</article>	
+						<article class="around-web-article">
+							<p class="date-stamp"><time>Friday 15 February 2013 16.49 GMT</time></p>
+							<h4><a href="#">Off the shelves - which products have been withdrawn?</a></h4>
+							<p class="news-org">BBC News</p>
+						</article>
+						<article class="around-web-article">
+							<p class="date-stamp"><time>Friday 17 February 2013 13.05 GMT</time></p>
+							<h4><a href="#">Iceland boss says schools are to blame for horsemeat scandal</a></h4>
+							<p class="news-org">The Telegraph</p>
+						</article>
+						<article class="around-web-article">
+							<p class="date-stamp"><time>Friday 7 February 2013 18.28 GMT</time></p>
+							<h4><a href="#">Findus may sue French suppliers over horse meat</a></h4>
+							<p class="news-org">The Daily Mail</p>
+						</article>	
+					</dd>
+				</dl>
+			</section>			
+			<!-- end #full-coverage -->		
+			<p class="back-to-top"><a href="#top">^ Back to top</a></p>
+		</section>
+		<!-- end #coverage -->
+
+		<section id="comments">
+			<h2>Join the discussion</h2>
+			
+			<article class="comment-preview">
+				<p class="author-name">From <a href="#">edinamikie</a>, commenting on <strong><a href="#">How to buy better meat</a></strong></p>
+				<blockquote>
+					<p><i class="icon-quote-left pull-left"></i><a href="#">If only retailers opened like they do in other countries. 12pm - 8pm. That would give people like me the chance to go to a butchers after work but they are all shut by the time I finish at 5.30pm during the week&hellip;</a><i class="icon-quote-right"></i></p>					
+				</blockquote>
+				<p class="comment-count"><a href="#">102 comments</a> in the last 2 hour</p>
+			</article>
+			
+			<article class="comment-preview">
+				<p class="author-name">From <a href="#">Bennetta</a>, commenting on <strong><a href="#">Nestlé finds horsemeat in pasta meals</a></strong></p>
+				<blockquote>
+					<p><i class="icon-quote-left pull-left"></i><a href="#">@Kinslowdian - Why? Criminals are corrupting the supply chain. What makes anybody think that they won't do so with organic produce if they can?&hellip;</a><i class="icon-quote-right"></i></p>					
+				</blockquote>
+				<p class="comment-count"><a href="#">190 comments</a> in the last 2 hour</p>
+			</article>
+		</section>
+		<!-- end #comments -->
+
+		<section id="actors">
+			<h2>People, places &amp; organisations</h2>
+			
+			<figure class="gallery-agents">
+				<ul class="gallery">
+					<li class="selected"><img src="/img/findus-5x3.jpg" /></li>
+					<li><img src="/img/comigel-5x3.png" /></li>
+					<li><img src="/img/nestle-5x3.jpg" /></li>
+					<li><img src="/img/owen-patterson-5x3.jpg" /></li>
+					<li><img src="/img/catharine-brown-5x3.jpg" /></li>
+					<li><img src="/img/hull-5x3.png" /></li>
+					<li><img src="/img/tottenham-5x3.png" /></li>
+					<li><img src="/img/fsa-5x3.png" /></li>
+					<li class="lead-image">
+						<img src="/img/findus-5x3.jpg" />
+						<span class="next"><img src="/img/in-body-next.svg" /></span>
+						<span class="prev"><img src="/img/in-body-prev.svg" /></span>
+					</li>
+				</ul>
+				<figcaption>
+					<h3>Findus</h3>
+					<p>Findus is a frozen food brand which was first sold in Sweden in 1945. Findus products include ready meals, peas and Crispy Pancakes, the latter of which were invented in the early 1970s.</p>				
+				</figcaption>				
+			</figure>
+			
+			<p class="back-to-top"><a href="#top">^ Back to top</a></p>
+		</section>
+		<!-- end #actors/agents -->
+		
+		<section id="background">
+			<h2>Background to the story</h2>
+			
+			<figure class="video">
+				<img src="/img/5x3-video.svg" />
+				<figcaption></figcaption>
+			</figure>
+			
+			<p>The Food Safety Authority of Ireland says beefburgers with traces of equine DNA, including one product classed as 29% horse, are being supplied to supermarkets by Silvercrest Foods in Ireland and Dalepak Hambleton in Yorkshire, subsidiaries of the ABP Food Group.</p>
+			<div class="dwell">
+				<p>Ten million burgers are taken off the shelves, by retailers including Tesco, Lidl, Aldi, Iceland and Dunnes Stores.</p>
+				<p>A third company, Liffey meats, based in County Cavan, Ireland, is also found to be supplying products to supermarkets with traces of horse DNA.</p>
+				<p>The ABP Food Group suspends work at its Silvercrest Foods plant in County Monaghan, Ireland, until further notice.</p>
+			</div>
+			
+			<p class="back-to-top"><a href="#top">^ Back to top</a></p>
+		</section>
+		<!-- end #background -->
+		
+		<section id="you-might-like">
+			<h2>Trending stories</h2>
+
+			<article class="trending-story">
+				<img src="/img/5x3.png" />
+				<p class="date-stamp"><time>Friday 15 February 2013 14:23 GMT</time></p>
+				<h3><a href="#">Oscar Pistorius shots girlfriend on Valentines day</a></h3>
+			</article>
+			<article class="trending-story">
+				<img src="/img/5x3.png" />
+				<p class="date-stamp"><time>Friday 15 February 2013 09:31 GMT</time></p>
+				<h3><a href="#">Meteorite explodes over Russia</a></h3>
+			</article>
+			<article class="trending-story">
+				<img src="/img/5x3.png" />
+				<p class="date-stamp"><time>Sunday 17 February 2013 11:49 GMT</time></p>
+				<h3><a href="#">Pakistan market bomb</a></h3>
+			</article>
+			
+			<p class="back-to-top"><a href="#top">^ Back to top</a></p>
+		</section>
+		<!-- end #background -->
+		
+		<!--#include virtual="/inc/footer-storytelling.inc" -->	
+	</div>
+	<!-- end .wrapper -->
+	
+	<script src="/js/horsemeat-in-burgers-20percenter.min.js"></script>
+	<script src="/js/show-hide.js"></script>
+	<script src="/js/accordian.min.js"></script>
+</body>
+
+</html>

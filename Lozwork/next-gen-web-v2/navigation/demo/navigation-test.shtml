@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+		
+	<title></title>
+
+ 	<link rel="stylesheet" href="/css/fonts.css" media="screen" />
+ 	<link rel="stylesheet" href="/css/font-awesome.css" media="screen" />
+
+ 	<link rel="stylesheet" href="/css/navigation-test-too.css" media="screen" />
+	
+	<script src="/js/jquery-1.7.2.min.js"></script>
+	
+	<script src="/js/navigation-test.js"></script>
+</head>
+
+
+<body>
+	<header>
+		<!--#include virtual="/inc/navigation-tools-three.inc" -->
+		
+		<p class="branding">The Guardian<a href="navigation-home.shtml"></a></p>
+		
+		<div id="navigation-horizontal" class="navigation-container" role="presentation">
+			<nav class="primary-navigation medium-large-screens">
+				<ul>
+					<li><a href="#home-subsections" class="selected">Home</a></li>
+					<li><a href="#uk-subsections">UK</a></li>
+					<li><a href="#world-subsections">World</a></li>
+					<li><a href="#comment-subsections">Comment</a></li>
+					<li><a href="#sport-subsections">Sport</a></li>
+					<li><a href="#football-subsections">Football</a></li>
+					<li><a href="#life-style-subsections">Life &amp; style</a></li>
+					<li><a href="#culture-subsections">Culture</a></li>
+					<li><a href="#business-money-subsections">Business &amp; money</a></li>
+					<li><a href="#travel-subsections">Travel</a></li>
+					<li><a href="#technology-subsections">Technology</a></li>
+					<li><a href="#environment-subsections">Environment</a></li>
+					<li class="small-screen"><a href="#">Jobs</a></li>
+					<li class="small-screen"><a href="#">Soulmates</a></li>
+					<li><a href="#">All sections</a></li>
+				</ul>
+			</nav>
+			<nav id="uk-subsections" class="subsection-navigation medium-large-screens">
+				<ul>
+					<li><a href="#">Politics</a></li>
+					<li><a href="#">Media</a></li>
+					<li><a href="#">Science</a></li>
+					<li><a href="#">Society</a></li>
+					<li><a href="#">Crime</a></li>
+					<li><a href="#">Weather</a></li>
+					<li><a href="#">[special event]</a></li>
+					<li><a href="#">[special event]</a></li>
+				</ul>	
+			</nav>	
+			<nav id="world-subsections" class="subsection-navigation medium-large-screens">
+				<ul>
+					<li><a href="#">US</a></li>
+					<li><a href="#">Europe</a></li>
+					<li><a href="#">Middle East</a></li>
+					<li><a href="#">Asia Pacific</a></li>
+					<li><a href="#">Africa</a></li>
+					<li><a href="#">Americas</a></li>
+					<li><a href="#">[special event]</a></li>
+					<li><a href="#">[special event]</a></li>
+				</ul>	
+			</nav>	
+			<nav id="comment-subsections" class="subsection-navigation medium-large-screens">
+				<ul>
+					<li><a href="#">CIF America</a></li>
+					<li><a href="#">CIF Belief</a></li>
+					<li><a href="#">Contributors</a></li>
+					<li><a href="#">Cartoon</a></li>
+					<li><a href="#">[special event]</a></li>
+					<li><a href="#">[special event]</a></li>
+				</ul>	
+			</nav>
+			<nav id="sport-subsections" class="subsection-navigation medium-large-screens">
+				<ul>
+					<li><a href="#">Football</a></li>
+					<li><a href="#">Cricket</a></li>
+					<li><a href="#">Tennis</a></li>
+					<li><a href="#">Rugby Union</a></li>
+					<li><a href="#">Cycling</a></li>
+					<li><a href="#">US sport</a></li>
+					<li><a href="#">[special event]</a></li>
+					<li><a href="#">[special event]</a></li>
+				</ul>
+			</nav>	
+			<nav id="football-subsections" class="subsection-navigation medium-large-screens">
+				<ul>
+					<li><a href="#">Live scores</a></li>
+					<li><a href="#">Clubs &amp; competitions</a></li>
+					<li><a href="#">Results</a></li>
+					<li><a href="#">Fixtures</a></li>
+					<li><a href="#">Tables</a></li>
+					<li><a href="#">Transfer rumours</a></li>
+					<li><a href="#">[special event]</a></li>
+					<li><a href="#">[special event]</a></li>
+				</ul>	
+			</nav>	
+			<nav id="life-style-subsections" class="subsection-navigation medium-large-screens">
+				<ul>
+					<li><a href="#">Food &amp; drink</a></li>
+					<li><a href="#">Fashion</a></li>
+					<li><a href="#">Relationships</a></li>
+					<li><a href="#">Health &amp; wellbeing</a></li>
+					<li><a href="#">Family</a></li>
+					<li><a href="#">Women</a></li>
+					<li><a href="#">[special event]</a></li>
+					<li><a href="#">[special event]</a></li>
+				</ul>	
+			</nav>	
+			<nav id="culture-subsections" class="subsection-navigation medium-large-screens">
+				<ul>
+					<li><a href="#">Stage</a></li>
+					<li><a href="#">Film</a></li>
+					<li><a href="#">Television &amp; radio</a></li>
+					<li><a href="#">Music</a></li>
+					<li><a href="#">Art &amp; design</a></li>
+					<li><a href="#">Books</a></li>
+					<li><a href="#">[special event]</a></li>
+					<li><a href="#">[special event]</a></li>
+				</ul>	
+			</nav>	
+			<nav id="business-money-subsections" class="subsection-navigation medium-large-screens">
+				<ul>
+					<li><a href="#">Economics</a></li>
+					<li><a href="#">Banking sector</a></li>
+					<li><a href="#">Retail sector</a></li>
+					<li><a href="#">Homes &amp; property</a></li>
+					<li><a href="#">Work &amp; Careers</a></li>
+					<li><a href="#">Saving &amp; borrowing</a></li>
+					<li><a href="#">[special event]</a></li>
+					<li><a href="#">[special event]</a></li>
+				</ul>
+			</nav>	
+			<nav id="travel-subsections" class="subsection-navigation medium-large-screens">
+				<ul>
+					<li><a href="#">Short breaks</a></li>
+					<li><a href="#">Top 10s</a></li>
+					<li><a href="#">UK</a></li>
+					<li><a href="#">Europe</a></li>
+					<li><a href="#">Hotels</a></li>
+					<li><a href="#">Food &amp; drink</a></li>
+					<li><a href="#">[special event]</a></li>
+					<li><a href="#">[special event]</a></li>					
+				</ul>
+			</nav>	
+			<nav id="technology-subsections" class="subsection-navigation medium-large-screens">
+				<ul>
+					<li><a href="#">Internet</a></li>
+					<li><a href="#">Video games</a></li>
+					<li><a href="#">Mobiles &amp; tablets</a></li>
+					<li><a href="#">Apps</a></li>
+					<li><a href="#">Apple</a></li>
+					<li><a href="#">Google</a></li>
+					<li><a href="#">[special event]</a></li>
+					<li><a href="#">[special event]</a></li>
+				</ul>	
+			</nav>	
+			<nav id="environment-subsections" class="subsection-navigation medium-large-screens">
+				<ul>
+					<li><a href="#">Climate change</a></li>
+					<li><a href="#">Wildlife</a></li>
+					<li><a href="#">Energy</a></li>
+					<li><a href="#">Conservation</a></li>
+					<li><a href="#">Food production</a></li>
+					<li><a href="#">Opinion</a></li>
+					<li><a href="#">[special event]</a></li>
+					<li><a href="#">[special event]</a></li>
+				</ul>
+			</nav>
+			<!--#include virtual="/inc/navigation-controls.inc" -->
+		</div>		
+		
+		<div id="navigation-dropdown" class="navigation-container dropdown overflow" role="presentation">
+			<ol class="crumbtrail small-screen">
+				<li><a href="#home-subsections">Home</a></li>
+				<li><a href="#" class="selected"></a></li>
+			</ol>
+			<nav class="primary-navigation">
+				<h2 class="medium-large-screens">Sections</h2>
+				<ul>
+				</ul>		
+			</nav>
+			<nav class="subsection-navigation">
+				<h2 class="medium-large-screens"></h2>
+				<ul>
+				</ul>
+			</nav>
+			<!--#include virtual="/inc/navigation-search.inc" -->
+		</div>
+		
+		<div id="global-search-dropdown" class="dropdown" role="presentation">
+			<!--#include virtual="/inc/navigation-search.inc" -->
+		</div>
+		
+		<div class="top-stories dropdown">
+			
+		</div>
+	</header>
+	
+	<h1></h1>
+</body>
+
+</html>

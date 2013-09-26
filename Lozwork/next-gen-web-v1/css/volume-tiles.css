@@ -1,0 +1,350 @@
+/* imports
+--------------------------------------------------*/
+.clear-fix:before,
+.clear-fix:after {
+  content: "";
+  display: table;
+}
+.clear-fix:after {
+  clear: both;
+}
+.no-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+.reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/* general
+--------------------------------------------------*/
+header {
+  margin: 0;
+}
+header h1 {
+  width: 150px;
+  height: 27px;
+  margin: 11px 0px 12px 0px;
+  margin: 1.1rem 0px 1.2000000000000002rem 0px;
+  border: none;
+}
+header h1 a {
+  width: 150px;
+  height: 27px;
+  background-size: 150px 27px;
+}
+h1,
+h2,
+h3 {
+  font-family: "guardian-bold";
+}
+/* structure
+--------------------------------------------------*/
+.top-stories,
+.event,
+.armageddon,
+.two-events {
+  margin-bottom: 20px;
+}
+.top-stories h2,
+.event h2,
+.armageddon h2,
+.two-events h2 {
+  background: #333333;
+}
+.top-stories article,
+.event article,
+.armageddon article,
+.two-events article,
+.top-stories section,
+.event section,
+.armageddon section,
+.two-events section {
+  clear: both;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.top-stories h3 img,
+.event h3 img,
+.armageddon h3 img,
+.two-events h3 img,
+.top-stories p,
+.event p,
+.armageddon p,
+.two-events p {
+  display: none;
+}
+.top-stories a,
+.event a,
+.armageddon a,
+.two-events a,
+.top-stories a:hover,
+.event a:hover,
+.armageddon a:hover,
+.two-events a:hover,
+.top-stories a:visited,
+.event a:visited,
+.armageddon a:visited,
+.two-events a:visited {
+  display: block;
+  width: 100%;
+  min-height: 85px;
+  /*		height:@a-height;*/
+
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  padding: 5px 1.6666666666666667% 5px 1.6666666666666667%;
+  padding: 0.5rem 1.6666666666666667% 0.5rem 1.6666666666666667%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.top-stories a,
+.event a,
+.armageddon a,
+.two-events a {
+  background: rgba(128, 128, 128, 0.65);
+}
+.top-stories a:hover,
+.event a:hover,
+.armageddon a:hover,
+.two-events a:hover {
+  background: rgba(128, 128, 128, 0.9);
+}
+.top-stories .related-stories,
+.event .related-stories,
+.armageddon .related-stories,
+.two-events .related-stories {
+  min-height: 85px;
+  /*		height:@a-height;*/
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.top-stories .related-stories li,
+.event .related-stories li,
+.armageddon .related-stories li,
+.two-events .related-stories li {
+  float: left;
+  display: block;
+  width: 50%;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.top-stories .related-stories li:nth-child(odd),
+.event .related-stories li:nth-child(odd),
+.armageddon .related-stories li:nth-child(odd),
+.two-events .related-stories li:nth-child(odd) {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+.top-stories .related-stories li a,
+.event .related-stories li a,
+.armageddon .related-stories li a,
+.two-events .related-stories li a,
+.top-stories .related-stories li a:hover,
+.event .related-stories li a:hover,
+.armageddon .related-stories li a:hover,
+.two-events .related-stories li a:hover,
+.top-stories .related-stories li a:visited,
+.event .related-stories li a:visited,
+.armageddon .related-stories li a:visited,
+.two-events .related-stories li a:visited {
+  padding: 5px 3.3333333333333335% 5px 3.3333333333333335%;
+  padding: 0.5rem 3.3333333333333335% 0.5rem 3.3333333333333335%;
+}
+.top-stories .related-stories li a,
+.event .related-stories li a,
+.armageddon .related-stories li a,
+.two-events .related-stories li a {
+  background: rgba(154, 154, 154, 0.65);
+}
+.top-stories .related-stories li a:hover,
+.event .related-stories li a:hover,
+.armageddon .related-stories li a:hover,
+.two-events .related-stories li a:hover {
+  background: rgba(154, 154, 154, 0.9);
+}
+.top-stories article,
+.event,
+.armageddon,
+.two-events article {
+  position: relative;
+  z-index: 1;
+}
+.top-stories article:before,
+.event:before,
+.armageddon:before,
+.two-events article:before {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: .8;
+  content: "";
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top-stories article {
+  clear: both;
+}
+.top-stories article:first-child {
+  border-top: none;
+}
+.top-stories .primary:before {
+  background-image: url("/img/Katsuya-Takahashi-is-led--008.jpg");
+  background-position: center center;
+}
+.top-stories .secondary:before {
+  background-image: url("/img/Protester-shouts-as-he-st-008.jpg");
+}
+.top-stories .tertiary:before {
+  background-image: url("/img/An-Oregon-man-is-in-a-cri-008.jpg");
+}
+.event a,
+.event a:hover,
+.event a:visited,
+.event .related-items {
+  min-height: 105px;
+}
+.event:before {
+  background-image: url("/img/osbourne-budget.jpg");
+}
+.armageddon:before {
+  background-image: url("/img/world-trade-center.jpg");
+}
+.armageddon > h3 a,
+.armageddon .related-stories {
+  min-height: 170px;
+}
+.two-events a {
+  min-height: 105px;
+}
+.two-events article:before {
+  background-position: center center;
+}
+.two-events article:first-child:before {
+  background-image: url("/img/david-cameron.jpg");
+}
+.two-events article:last-child:before {
+  background-image: url("/img/england-win.jpg");
+}
+.two-events .related-stories {
+  min-height: 105px;
+}
+.more-news h2 {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+.more-news article {
+  margin: 0px 0px 10px 0px;
+  margin: 0rem 0px 1rem 0px;
+  padding: 0px 0px 9px 0px;
+  padding: 0rem 0px 0.9rem 0px;
+  border-bottom: 1px dotted #cccccc;
+}
+.more-news article img {
+  float: left;
+  display: block;
+  width: 33.33333333333333%;
+  margin: 0px 2% 5px 0px;
+  margin: 0rem 2% 0.5rem 0px;
+}
+.more-news article p {
+  clear: both;
+}
+.more-news article .related-items,
+.more-news article .sublinks,
+.more-news article aside {
+  display: none;
+}
+.type .top-stories article:before,
+.type .event:before,
+.type .armageddon:before,
+.type .two-events article:before {
+  content: none;
+  background: none;
+}
+/* typography
+--------------------------------------------------*/
+.top-stories h2,
+.event h2,
+.armageddon h2,
+.two-events h2 {
+  font-family: "guardian-bold";
+  font-weight: normal;
+  font-size: 10px;
+  font-size: 1rem;
+  line-height: 10px;
+  line-height: 1rem;
+  text-transform: uppercase;
+  color: #333333;
+  padding: 5px 1.6666666666666667% 5px 1.6666666666666667%;
+  padding: 0.5rem 1.6666666666666667% 0.5rem 1.6666666666666667%;
+  background: #cccccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.top-stories h3,
+.event h3,
+.armageddon h3,
+.two-events h3 {
+  font-size: 22px;
+  font-size: 2.2rem;
+  line-height: 24px;
+  line-height: 2.4000000000000004rem;
+}
+.top-stories .related-stories h3,
+.event .related-stories h3,
+.armageddon .related-stories h3,
+.two-events .related-stories h3,
+.top-stories aside h3,
+.event aside h3,
+.armageddon aside h3,
+.two-events aside h3,
+.top-stories .related-stories h4,
+.event .related-stories h4,
+.armageddon .related-stories h4,
+.two-events .related-stories h4,
+.top-stories aside h4,
+.event aside h4,
+.armageddon aside h4,
+.two-events aside h4 {
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 18px;
+  line-height: 1.8rem;
+}
+.more-news h3 {
+  font-family: "guardian-bold";
+  font-weight: normal;
+  font-size: 10px;
+  font-size: 1rem;
+  line-height: 10px;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+.more-news h4 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 20px;
+  line-height: 2rem;
+}

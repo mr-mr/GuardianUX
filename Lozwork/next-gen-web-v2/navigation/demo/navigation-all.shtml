@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+		
+	<title>All navigation</title>
+
+ 	<link rel="stylesheet" href="/css/fonts.css" media="screen" />
+
+ 	<link rel="stylesheet" href="/css/navigation-all.css" media="screen" />
+</head>
+
+<body>
+	
+</body>
+	<div class="wrapper">
+		<section id="content">
+			<h1>Navigation comparison</h1>
+			
+			<p>Just a quick page to allow us to compare the navigations side by side.</p>
+	
+			<div class="comparison" role="presentation">
+				<h2>Home</h2>
+				<iframe src="/navigation/test-three/navigation-home.shtml"></iframe>
+			</div>
+			<div class="comparison" role="presentation">
+				<h2>UK News</h2>
+				<iframe src="/navigation/test-three/navigation-uk-news.shtml"></iframe>
+			</div>
+			<div class="comparison" role="presentation">
+				<h2>World News</h2>
+				<iframe src="/navigation/test-three/navigation-world-news.shtml"></iframe>
+			</div>
+			<div class="comparison" role="presentation">
+				<h2>Comment is free</h2>
+				<iframe src="/navigation/test-three/navigation-comment.shtml"></iframe>
+			</div>
+			<div class="comparison" role="presentation">
+				<h2>Sport</h2>
+				<iframe src="/navigation/test-three/navigation-sport.shtml"></iframe>
+			</div>
+			<div class="comparison" role="presentation">
+				<h2>Football</h2>
+				<iframe src="/navigation/test-three/navigation-football.shtml"></iframe>
+			</div>
+			<div class="comparison" role="presentation">
+				<h2>Life &amp; style</h2>
+				<iframe src="/navigation/test-three/navigation-life-style.shtml"></iframe>
+			</div>
+			<div class="comparison" role="presentation">
+				<h2>Culture</h2>
+				<iframe src="/navigation/test-three/navigation-culture.shtml"></iframe>
+			</div>
+			<div class="comparison" role="presentation">
+				<h2>Business &amp; money</h2>
+				<iframe src="/navigation/test-three/navigation-business-money.shtml"></iframe>
+			</div>
+			<!-- <div class="comparison" role="presentation">
+				<h2>Money</h2>
+				<iframe src="/navigation/test-three/navigation-money.shtml"></iframe>
+			</div> -->
+			<div class="comparison" role="presentation">
+				<h2>Travel</h2>
+				<iframe src="/navigation/test-three/navigation-travel.shtml"></iframe>
+			</div>
+			<div class="comparison" role="presentation">
+				<h2>Technology</h2>
+				<iframe src="/navigation/test-three/navigation-technology.shtml"></iframe>
+			</div>
+			<div class="comparison" role="presentation">
+				<h2>Environment</h2>
+				<iframe src="/navigation/test-three/navigation-environment.shtml"></iframe>
+			</div>
+		</section>
+	</div>
+</html>

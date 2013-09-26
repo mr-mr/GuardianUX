@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+	
+	<title>Match - Friday afternoon</title>
+
+ 	<link rel="stylesheet" href="/css/fonts.css" media="screen" />	
+	
+ 	<link rel="stylesheet/less" href="/css/base.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/article.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/article-promos.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/live-blog.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/statistics-base.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/matches.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/tabs.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/most-read.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/gallery-in-body.less" media="screen" />
+
+	<link rel="stylesheet" href="/js/photoswipe-3.0.5/photoswipe.css" media="screen" />
+			
+	<script src="/js/hide-address-bar.js" type="text/javascript"></script>
+	
+	<script src="/js/jquery-1.7.2.min.js"></script>
+	<script src="/js/jquery.event.move.js"></script>	
+	<script src="/js/jquery.event.swipe.js"></script>
+	<script src="/js/photoswipe-3.0.5/lib/klass.min.js"></script>
+	<script src="/js/photoswipe-3.0.5/code.photoswipe.jquery-3.0.5.min.js"></script>
+		
+	<script src="/js/navigation.js"></script>
+	<script src="/js/show-hide.js"></script>
+	<script src="/js/load-more.js"></script>
+	<script src="/js/gallery.js"></script>
+	<script src="/js/matches-tabs.js"></script>		
+	<script src="/js/matches-post-game.js"></script>	
+	<script src="/js/less-1.3.0.min.js" type="text/javascript"></script>	
+</head>
+
+<body id="article" class="live match single">
+	<div class="wrapper">
+		<!--#include virtual="/inc/primary-navigation.inc" -->
+
+		<section id="content" role="presentation">
+			<!--#include virtual="/inc/header.inc" -->
+			
+			<article class="article-body">
+				<hgroup>
+					<h2><a href="/section-fronts/football.shtml">Football</a></h2>
+					<h1><span class="home">Sunderland</span><span class="score">1-1</span><span class="away">Liverpool</span><span class="time">FT</span></h1>
+					<ul class="match-details">
+						<li class="home">Fletcher (o.g.) 29'</li><li class="score">&nbsp;</li><li class="away">Suarez 77'</li><li class="time">&nbsp;</li>
+					</ul>
+				</hgroup>
+				
+				<ul class="article-details">
+					<li class="author"><a href="#"><img src="/img/1x1.png" class="author-avatar" />Louise Taylor</a></li>
+					<li class="contact"><a href="#" class="email">Email</a> or <a href="#" class="twitter">Tweet me</a></li>
+					<li class="date-stamp"><a href="#article-history" class="show-hide"><time>1 minute ago</time></a></li>
+					<li id="article-history">
+						<dl>
+							<dt>About this article</dt>
+							<dd>This article was published on guardian.co.uk at 09.54 BST on Monday 6 August 2012. It was last modified at 11.48 BST on Monday 6 August 2012.</dd>
+						</dl>
+					</li>
+				</ul>
+				
+				<section class="tabs live-blog">
+					<ul class="tabs">
+						<li><a href="#report">Report</a></li><li><a href="#statistics">Stats</a></li><li><a href="#live-gallery">Gallery</a></li><li><a href="#scores-table">Scores</a></li>
+					</ul>
+					
+					<section id="report">
+						<figure>
+							<img src="/img/5x3-video.svg" alt="" />
+							<figcaption>Sunderland v Liverpool match highlights. <cite class="source">Video: ESPN</cite></figcaption>
+						</figure>
+						<section class="match-report-one">
+							<hgroup>
+								<h3>Guardian</h3>
+								<h2>Luis Suárez equaliser cannot mask Liverpool's striking deficiencies</h2>
+							</hgroup>
+							<p>Compromise is a vital part of football management. The surprising number of long balls studding Liverpool's game suggested that Brendan Rodgers, mere weeks into his first season at Anfield, has already accepted the need to modify a few short-passing principles.</p>						
+							<p>With Steven Gerrard in Liverpool's team it is virtually impossible to replicate precisely the controlled, possession-based game Rodgers instilled at Swansea and the Northern Irishman has responded with a sensible dash of pragmatism.</p>						
+							<p>The only shame is that this slight relaxation of philosophy arrived too late to keep Andy Carroll at Anfield. Had Carroll – or another senior outright striker of the type Liverpool, unforgivably, lack – been on the pitch, Rodgers' team would surely have won comfortably.</p>						
+							<p>With Raheem Sterling excelling on the right of the front three and Jonjo Shelvey dangerous in an attacking midfield role in front of Gerrard and Joe Allen, Liverpool were frequently a fluid blur of exhilaratingly high-tempo passing and movement. When they played it long they usually did so with intelligence and accuracy but they lacked an attacking focal point.</p>		
+							<div id="more-match-report-two" class="show-hide">					
+								<p>Fortunately for Martin O'Neill a Sunderland side well below their best possessed a £12m centre-forward in Steven Fletcher who, courtesy of dreadful defending on Glen Johnson's part, scored his third goal in two games.</p>						
+								<p>Sunderland had started badly and vaguely got going only when the impressive Jack Colback began exploiting the gaps left by Gerrard's occasional positional indiscipline. With the normally assured Allen hassled into uncharacteristic concessions of possession, they might have done better on the counter-attack had Adam Johnson not been absent injured or the alarmingly lacklustre Stéphane Sessègnon looked as if he cared.</p>						
+								<p>An evocative evening when thoughts rested with the 96 who lost their lives at Hillsborough 23 years ago really should have concluded with Liverpool's first league victory of the season but they had to settle for a point achieved by way of Sterling's cross, Titus Bramble's misjudgment and Luis Suárez's volley.</p>						
+								<p>"We dominated and should have won," said Shelvey. "Stevie G always has words of inspiration for us before kick-off and he was like that again but the boss was like that too. His message was 'do it for the 96'.</p>						
+								<p>"What happened this week was an inspiration for us. The Liverpool fans fought for years to get that verdict and we wanted to do it for them. Everyone is gutted we didn't get the three points we deserved.</p>						
+								<p>"The way Brendan Rodgers plays his football suits me. His system is working, we're dominating possession but we have to start taking our chances. When we do that we'll rise up the table. We were disappointed no striker was brought in at the end of the transfer window but it's down to the midfielders to start racking up goals."</p>						
+								<p>Although Suárez is clearly a forward, his clever approach play – sometimes too subtle for team-mates – against a Sunderland team that last won a Premier League game in March emphasised that he is much more a creator than a finisher.</p>						
+								<p>Yet the moment, late on, which really highlighted the folly of loaning Carroll to West Ham came when the Uruguayan – whose booking for a first-half dive was his third in four league games – took a corner. The problem? At that point Suárez was the only visiting player who could properly be described as a striker and he needed to be in the area.</p>						
+								<p>"Luis plays on emotion, all the top players do," said Rodgers. "I've got to say I'd read all these reports about Luis but he's been an absolute pleasure to work with. He's a good guy, an honest guy who works very hard."</p>						
+								<p>Much the same could be said about Kenny Dalglish's successor; what a shame Rodgers lacks the centre-forward required to make the most of his very real managerial qualities.</p>		
+							</div>
+							<p class="show-hide"><a href="#more-match-report-two" class="show-hide"><span>Show</span> more</a></p>											
+						</section>
+
+						<section class="match-report-two">
+							<hgroup>
+								<h3>Observer</h3>
+								<h2>Liverpool's Luis Suárez strikes to salvage a point at Sunderland</h2>				
+							</hgroup>
+							<p>Liverpool moved the ball around fluently enough, created several chances, possessed a fabulous young winger in Raheem Sterling and even scored a rare goal but something was missing.</p>
+							<p>If Andy Carroll had been on the pitch rather than nursing an injury at West Ham, Brendan Rodgers's team would surely have secured a much craved victory on one of the more poignant evenings of their long history. Instead they had to make do with a point and the looming prospect of some uncomfortably forensic analysis of the new regime's perceived shortcomings.</p>
+							<p>"It was an emotional occasion but I thought the performance, our movement, was outstanding," said Rodgers, accentuating the positives. "We looked a threat, players are growing into the team, we're improving all the time. We were terrific."</p>
+							<p>The only problem is that Liverpool have loaned their only senior outright striker to Upton Park and watching them increasingly mix Rodgers's preferred short passes with some accurate long balls, the folly of Carroll's exit was emphasised.</p>
+							<div id="more-match-report-one" class="show-hide">	
+								<p>In many ways it had been a day which belonged to the memory of absent friends. The flags outside the Stadium of Light were at half mast, banners demanded "Justice for the 96" and Liverpool emerged wearing black tracksuit tops emblazoned with that most haunting number.</p>
+								<p>Rodgers knew that the end of a week in which the prime minister had apologised unequivocally for the events at Hillsborough 23 years ago was the perfect time for his side to record a first League win of the season.</p>
+								<p>Appearing suitably psyched up, Liverpool started well, their momentum boosted by Sunderland's initial inability to string two passes together. A fluid, essentially 4-2-1-3 visiting formation featuring Jonjo Shelvey as the link between midfield and attack certainly seemed to confuse Martin O'Neill's players.</p>
+								<p>Gradually though, Steven Gerrard began losing a little positional discipline and, spotting the gaps as England's captain rampaged forward from his supposedly deep role alongside Joe Allen, Sunderland's Jack Colback began initiating the odd home attack.</p>
+								<p>Even so, Simon Mignolet made some decent saves as his defence were repeatedly mesmerised by Liverpool's movement and positional interchanging. How O'Neill must have wished that a thigh injury had not sidelined Adam Johnson.</p>
+								<p>At least he had Steven Fletcher on the pitch. Very much against the run of play, the £12m striker scored his third goal in two games. It came at the end of a move started by Colback, continued by Craig Gardner and featuring lax marking from Luis Suárez and, most negligently Glen Johnson. When Gardner, overlapping from right-back, danced around Johnson with embarrassing ease, Pepe Reina could not quite reach his cross and Fletcher pounced to shoot Sunderland ahead.</p>
+								<p>As Rodgers, unusually, lost his cool and berated Johnson, Liverpool's game went a little flat. It took Sterling and his exciting talents to get them going again and Sunderland's Danny Rose was given a tough time at left-back. How many goals, you wondered, might Carroll have scored in tandem with the 17-year-old?</p>
+								<p>When Suárez collapsed under John O'Shea's challenge visiting fans appealed for a penalty. Sunderland supporters simply saw a dive and Martin Atkinson, the referee, agreed, booking Suárez. It was the Uruguayan's third yellow card in four League games.</p>
+								<p>Cutting in on his right foot, Johnson very nearly atoned for the opener with a curving, Mignolet-deceiving, shot but the crossbar came between the full-back and redemption. With Colback, still Sunderland's best player, making things sporadically tough for Liverpool, Rodgers's body language became palpable. Off came Fabio Borini and on went Stewart Downing, the substitute assuming his preferred left side attacking role as Suárez shifted to a more central position – although that did not prevent the latter, bizarrely, taking the odd corner.</p>
+								<p>Courtesy of a little help from Titus Bramble, Suárez celebrated his relocation by equalising. Sterling crossed, the ball bounced off Bramble's shin and, as the South American's fine volley hit the back of the net, Rodgers relaxed a little.</p>
+								<p>"Liverpool probably deserved the equaliser," said O'Neill, presumably relieved to see Sebastian Larsson merely booked for a bad tackle on Sterling. "They had a number of chances but didn't take them."</p>	
+								<dl>
+									<dt>Match rating</dt>
+									<dd>5 out of 10</dd>
+								</dl>
+							</div>
+							<p class="show-hide"><a href="#more-match-report-one" class="show-hide"><span>Show</span> more</a></p>
+						</section>
+						<!--#include virtual="/inc/comments.inc" -->
+						<!-- end #comments	 -->
+						
+						<section class="live-text">
+							<h2>Text commentary</h2>
+							<dl>
+								<dt>Full time - Sunderland 1-1 Liverpool</dt>
+								<dd>Allen, Suarez and Downing combine down the right. Corner. Johnson meets the set piece with a harmless header, the ball floating wide right of goal. And that's that. Sunderland would have robbed a victory had Titus Bramble Luis Suarez not equalised late on, but that's still their worst start to a league campaign since 1911. Liverpool move ahead of Southampton, Reading and QPR into 17th place, while Sunderland nestle three places above them with an extra point in their kitty. Both teams are still looking for their first win, but you sense the home team will be a far happier clan than the visiting one. "Matt Dony's been busy in the shower with a huge tub of swarfega?" splutters Phil Sawyer, leaving us with an image to take away. "The mind fair boggles."</dd>	
+							</dl>	
+							<p><a href="/inc/live-blog-more.inc" class="load-more">Load previous 10 minutes</a></p>
+			
+						</section>
+						<!-- end .live-text -->
+						
+						<section class="squad-sheets">
+							<h2>Squad sheets</h2>
+							<p>At the end of a week in which the prime minister has apologised to Liverpool fans for terrible wrongs that took place 23 years ago at Hillsborough, the atmosphere on Wearside promises to be poignant and evocative. "It will be highly charged because of what happened on Wednesday," said the Sunderland manager, Martin O'Neill. "It will be a very emotional occasion with Liverpool fans coming in their droves."</p>
+							<div id="more-squad-sheets" class="show-hide">
+								<p>While Brendan Rodgers's players aim to begin correcting a disappointing start to the campaign, Sunderland have surmounted problems with their new pitch's drainage and finally play their first home league game of the season.</p>
+								<figure>
+									<img src="/img/45x65.png" alt="" />
+									<figcaption>Sunderland v Liverpool: Probable starters in bold, contenders in light.</figcaption>
+								</figure>
+								<h3>Match details</h3>
+								<dl>
+									<dt>Venue Stadium of Light</dt>
+									<dd>Saturday 5.30pm</dd>
+									<dt>Tickets</dt>
+									<dd>£27-35 (0871 911 1973)</dd>
+									<dt>Last season</dt>
+									<dd>Sunderland 1 Liverpool 0</dd>
+									<dt>Referee</dt>
+									<dd>Martin Atkinson</dd>
+									<dt>This season's matches</dt>
+									<dd>3 Y13, R0, 4.33 cards per game</dd>
+									<dt>Odds</dt>
+									<dd>Sunderland 11-5 Liverpool 6-5 Draw 9-4</dd>
+								</dl>
+								<h2>Sunderland</h2>
+								<dl>
+									<dt>Subs from</dt>
+									<dd>Westwood, Rose, Kilgallon, Bramble, Meyler, Campbell, Vaughan, Ji, Saha, Wickham, Reed, Egan</dd>
+									<dt>Doubtful</dt>
+									<dd>Johnson (thigh), Vaughan (groin)</dd>
+									<dt>Injured</dt>
+									<dd>Bardsley (ankle, Oct), Brown (knee, Oct)</dd>
+									<dt>Suspended</dt>
+									<dd>None</dd>
+									<dt>Form guide</dt>
+									<dd>DD</dd>
+									<dt>Disciplinary record</dt>
+									<dd>Y1 R0</dd>
+									<dt>Leading scorer</dt>
+									<dd>Fletcher 2</dd>
+								</dl>
+								<h2>Liverpool</h2>
+								<dl>
+									<dt>Subs from</dt>
+									<dd>Doni, Jones, Kelly, Carragher, Coates, Henderson, Shelvey, Downing, Assaidi, Morgan, Robinson, Wilson</dd>
+									<dt>Doubtful</dt>
+									<dd>Assaidi (groin), José Enrique (knee)</dd>
+									<dt>Injured</dt>
+									<dd>Cole (hamstring, 23 Sep), Lucas (thigh ,Nov)</dd>
+									<dt>Suspended</dt>
+									<dd>None</dd>
+									<dt>Form guide</dt>
+									<dd>LDL</dd>
+									<dt>Disciplinary record</dt>
+									<dd>Y7 R1</dd>
+									<dt>Leading scorers</dt>
+									<dd>Skrtel, Suárez 1</dd>	
+								</dl>
+							</div>
+							<p><a href="#more-squad-sheets" class="show-hide"><span>Show</span> more of squad sheets</a></p>
+						</section>
+						<!-- end .squad-sheets -->
+					</section>
+					<!-- end #live -->
+					
+					<section id="statistics">
+						<!--#include virtual="/inc/matches-live-blog-statistics.inc" -->
+					</section>
+					<!-- end #statistcs -->
+
+					<section id="live-gallery">
+						<figure class="slideshow-gallery">
+							<div role="presentation">
+								<ul id="gallery" class="gallery">
+									<li><a href="/img/5x3-photo-1.svg"><img src="/img/5x3-photo-1.svg" alt="Image 1" /></a></li>
+									<li><a href="/img/5x3-photo-2.svg"><img src="/img/5x3-photo-2.svg" alt="Image 2"/></a></li>
+									<li><a href="/img/5x3-photo-3.svg"><img src="/img/5x3-photo-3.svg" alt="Image 3" /></a></li>
+									<li><a href="/img/5x3-photo-4.svg"><img src="/img/5x3-photo-4.svg" alt="Image 4" /></a></li>
+									<li><a href="/img/5x3-photo-5.svg"><img src="/img/5x3-photo-5.svg" alt="Image 5" /></a></li>
+									<li><a href="/img/5x3-photo-6.svg"><img src="/img/5x3-photo-6.svg" alt="Image 6" /></a></li>
+									<li><a href="/img/5x3-photo-7.svg"><img src="/img/5x3-photo-7.svg" alt="Image 7"/></a></li>
+								</ul>
+								<ul class="gallery-controls">
+									<li><a href="#">previous</a></li>
+									<li><a href="#">next</a></li>
+								</ul>
+							</div>
+						</figure>						
+					</section>
+					<!-- end #gallery -->
+					
+					<section id="scores-table">
+						<h2>Saturday, 15 September 2012</h2>
+						<section id="scores">
+							<!--#include virtual="/inc/matches-live-blog-scores.inc" -->
+						</section>
+						
+						<section id="table">
+							<!--#include virtual="/inc/matches-live-blog-table.inc" -->
+						</section>
+					</section>
+					<!-- end #table -->
+				</section>
+				<!-- end .tabs -->
+			</article>
+
+			<aside class="article-related">
+				<section class="more-on-story">
+					<h2>More on this match</h2>
+					<article class="related" data-importance="medium">
+						<h3><a href="#"><img src="/img/5x3.png" alt="" />Premier League: 10 talking points from this weekend's action</a></h3>
+						<p class="date-stamp"><time>2 minute ago</time></p>
+						<p>Aston Villa are on the road to recovery | Santi Cazorla could be player of the year | Chelsea lack depth up front | Will Michael Owen start at Stoke.</p>
+					</article>
+					<article class="related" data-importance="medium">
+						<h3><a href="#"><img src="/img/5x3-video.svg" alt="" />O'Neill pleased Sunderland are back on track</a></h3>
+						<p class="date-stamp"><time>Yesterday</time></p>
+						<p>Martin O'Neill praises the resilience of his Sunderland side following their hard-fought 1-0 defeat of Liverpool.</p>
+					</article>
+					<article class="related" data-importance="medium">
+						<h3><a href="#"><img src="/img/5x3-video.svg" alt="" />Brendan rogers believes Liverpool deserved win</a></h3>
+						<p class="date-stamp"><time>Yesterday</time></p>
+						<p>Rodgers praises his sides "very very good performance" following a 1-1 draw at the Stadium of Light, stating he is disappointed not to win.</p>
+					</article>
+					<article class="related" data-importance="small-medium">
+						<h3><a href="#">Video: Liverpool's Brendan Rodgers expects 'terrific job' from new scouts</a></h3>
+						<p class="date-stamp"><time>14 Sept 2012</time></p>
+						<p>Brendan Rodgers believes one of the main causes of Liverpool's calamitous end to the transfer window has been resolved.</p>
+					</article>
+			
+					<article class="related" data-importance="small-medium">
+						<h3><a href="#">Video: Liverpool fly-on-the-wall documentary raises Martin O'Neill's eyebrows</a></h3>
+						<p class="date-stamp"><time>14 Sept 2012</time></p>
+						<p>Martin O'Neill is surprised that Brendan Rodgers consented to the new fly-on-the-wall documentary about Liverpool which will be broadcast this month.</p>
+					</article>
+				</section>
+				<!-- end .more-on-story -->
+
+				<!--#include virtual="/inc/statistics-most-read.inc" -->
+			</aside>
+		
+			<!--#include virtual="/inc/footer.inc" -->						
+		</section>
+		<!-- end #main -->
+		
+		<!--#include virtual="/inc/top-stories-list-network-front.inc" -->
+	</div>
+	<!-- end .wrapper -->		
+</body>
+
+</html>		

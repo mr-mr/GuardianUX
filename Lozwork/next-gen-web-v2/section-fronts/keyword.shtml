@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+		
+	<title>Keyword/tag page</title>
+
+ 	<link rel="stylesheet" href="/css/fonts.css" media="screen" />
+
+ 	<link rel="stylesheet/less" href="/css/base.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/section-fronts.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/tabs.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/article-promos.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/most-read.less" media="screen" />
+	
+	<script src="/js/hide-address-bar.js"></script>
+
+	<script src="/js/jquery-1.7.2.min.js"></script>
+	<script src="/js/jquery.event.move.js"></script>	
+	<script src="/js/jquery.event.swipe.js"></script>
+	<script src="/js/jquery.cookie.js"></script>
+		
+	<script src="/js/navigation.js"></script>
+	<script src="/js/show-hide-with-cookies.js"></script>
+	<script src="/js/clickable-block.js"></script>
+	<script src="/js/tabs.js"></script>
+	
+	<script src="/js/less-1.3.0.min.js"></script>	
+</head>
+
+<body id="section-front" class="keyword">
+	<div class="wrapper">
+		<!--#include virtual="/inc/primary-navigation.inc" -->
+
+		<section id="content" role="presentation">
+			<!--#include virtual="/inc/header.inc" -->
+			
+			<h1>David Cameron</h1>
+			
+			<section class="top-stories">
+				<article data-importance="medium">
+					<h3><a href="#"><img src="/img/5x3.png" />William Hague warns EU of British disillusion</a></h3>
+					<p class="date-stamp"><time>Yesterday</time></p>
+					<p>Foreign secretary in Berlin demands change from 'one-way Europe' as PM rules out above inflation budget increase</p>
+				</article>
+				<article data-importance="small-medium">
+					<h3><a href="#"><img src="/img/5x3.png" />Skilled probation officers cut crime</a></h3>
+					<p class="date-stamp"><time>Yesterday</time></p>
+					<p>Letters: Without an investment in the required resources, the prime minister's rhetoric will remain just that</p>
+				</article>
+				<article data-importance="small-medium">
+					<h3><a href="#"><img src="/img/5x3.png" />Tim Montgomerie: pushing for a rightwing Tory party – with a heart</a></h3>
+					<p class="date-stamp"><time>Yesterday</time></p>
+					<p>The ConservativeHome founder and editor is a critic of, and cheerleader for, the Conservatives</p>
+				</article>
+				<article data-importance="small-medium">
+					<h3><a href="#">David Cameron: crime and the numbers game</a></h3>
+					<p class="date-stamp"><time>Yesterday</time></p>
+					<p>Editorial: Many critics saw the PM's law-and-order speech as an attempt to remedy a woeful week but it was more interesting than that suggests</p>
+				</article>
+				<article data-importance="small-medium">
+					<h3><a href="#">William Hague warns EU of British disillusion</a></h3>
+					<p class="date-stamp"><time>Yesterday</time></p>
+					<p>Foreign secretary in Berlin demands change from 'one-way Europe' as PM rules out above inflation budget increase</p>
+				</article>
+				<article data-importance="small-medium">
+					<h3><a href="#">Daily crises hint at deeper flaws inside David Cameron's machine</a></h3>
+					<p class="date-stamp"><time>Yesterday</time></p>
+					<p>In addition to Labour's eight-point poll lead, No 10 is beset by a lack of grip and a catalogue of structural problems</p>
+				</article>
+				<article data-importance="small-medium">
+					<h3><a href="#">Steve Bell on David Cameron, the BBC and the Jimmy Savile scandal - cartoon</a></h3>
+					<p class="date-stamp"><time>22 Oct 2012</time></p>
+					<p>David Cameron accuses BBC of 'effectively changing its story about why it dropped the Newsnight programme about Jimmy Savile'</p>
+				</article>
+				<article data-importance="small-medium">
+					<h3><a href="#">Why politicians won't tell you the truth about crime</a></h3>
+					<p class="date-stamp"><time>22 Oct 2012</time></p>
+					<p>Polly Toynbee: Offending is falling, and prison doesn't work. But Cameron shows he's also addicted to the quick fix of tough talk</p>
+				</article>
+				<article data-importance="small-medium">
+					<h3><a href="#">It's location, location, location for David Cameron's rehabilitation nation</a></h3>
+					<p class="date-stamp"><time>22 Oct 2012</time></p>
+					<p>Prime minister brushes up the orotund phrases for law and order launch at Wormwood Scrubs</p>
+				</article>
+				<article data-importance="small-medium">
+					<h3><a href="#">David Cameron's speech on crime: Politics live blog</a></h3>
+					<p class="date-stamp"><time>22 Oct 2012</time></p>
+					<p>Andrew Sparrow's rolling coverage of the day's political developments, including David Cameron's speech on prisoner rehabilitation and the criminal justice system</p>
+				</article>
+				<article data-importance="small-medium">
+					<h3><a href="#">David Cameron and the smack of firm government</a></h3>
+					<p class="date-stamp"><time>22 Oct 2012</time></p>
+					<p>Michael White: The PM would do well to remember that much of government is about authority which, once lost, usually stays lost</p>
+				</article>
+				<article data-importance="small-medium">
+					<h3><a href="#">Don't be fooled: the Conservatives never hugged any hoodies</a></h3>
+					<p class="date-stamp"><time>22 Oct 2012</time></p>
+					<p>Richard Garside: The party is becoming increasingly punitive on criminal justice – so David Cameron may take an even tougher line this week</p>
+				</article>
+				<article data-importance="small-medium">
+					<h3><a href="#">David Cameron's political adviser tells of 'crisis management' - video</a></h3>
+					<p class="date-stamp"><time>22 Oct 2012</time></p>
+					<p>Oliver Dowden, the prime minister's senior political adviser, says he spends most of his time working on 'day-to-day crisis management'</p>
+				</article>
+				<article data-importance="small-medium">
+					<h3><a href="#">David Cameron's 'tough, but intelligent' initiative on crime runs into trouble</a></h3>
+					<p class="date-stamp"><time>22 Oct 2012</time></p>
+					<p>Prime minister's attempt to forget week of setbacks with 'tough, but intelligent' speech flawed by lack of new money to support it</p>
+				</article>
+				<article data-importance="small-medium">
+					<h3><a href="#">Martin Rowson on a difficult week for the Tories – cartoon</a></h3>
+					<p class="date-stamp"><time>21 Oct 2012</time></p>
+					<p>Andrew Mitchell resigns over 'Plebgate' amid storm about chancellor's first-class rail seat</p>
+				</article>
+				<article data-importance="small">
+					<h3><a href="#">This bill represents David Cameron's cover-up on torture</a></h3>
+					<p class="date-stamp"><time>21 Oct 2012</time></p>
+				</article>
+				<article data-importance="small">
+					<h3><a href="#">It's been a week of low farce for the Tories. Yet little has really changed</a></h3>
+					<p class="date-stamp"><time>21 Oct 2012</time></p>
+				</article>
+				<article data-importance="small">
+					<h3><a href="#">The Tories forced their own chief whip out. David Cameron beware</a></h3>
+					<p class="date-stamp"><time>21 Oct 2012</time></p>
+				</article>
+				<article data-importance="small">
+					<h3><a href="#">Energy: We must mix to match future demands in Britain</a></h3>
+					<p class="date-stamp"><time>21 Oct 2012</time></p>
+				<article data-importance="small">
+					<h3><a href="#">The Tories are doing Alex Salmond's job for him</a></h3>
+					<p class="date-stamp"><time>21 Oct 2012</time></p>
+				</article>
+			</section>
+			<!-- end .top-stories -->
+			
+			<ul class="pagination">
+				<li><strong>1</strong></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li><a href="#">4</a></li><li><a href="#">5</a></li><li><a href="#">6</a></li><li><a href="#">7</a></li><li><a href="#">8</a></li><li><a href="#">9</a></li><li><a href="#">10&hellip;</a></li><li><a href="#">200</a></li><li><a href="#">Next »</a></li>
+			</ul>
+
+			<!--#include virtual="/inc/most-read.inc" -->	
+			
+			<!--#include virtual="/inc/footer.inc" -->						
+		</section>
+		<!-- end #main -->
+		
+		<!--#include virtual="/inc/top-stories-list-network-front.inc" -->
+	</div>
+	<!-- end .wrapper -->
+</body>
+
+</html>

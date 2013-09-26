@@ -1,0 +1,708 @@
+.clear-fix:before,
+.clear-fix:after {
+  content: "";
+  display: table;
+}
+.clear-fix:after {
+  clear: both;
+}
+.clear-clear-fix:before,
+.clear-clear-fix:after {
+  clear: none;
+  content: none;
+  display: none;
+}
+.no-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+.reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/* general
+--------------------------------------------------*/
+#content > .pagination {
+  list-style: none;
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  padding-bottom: 10px;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #cccccc;
+}
+#content > .pagination li {
+  display: inline-block;
+  margin-right: 2%;
+}
+#content > .pagination li:last-child {
+  margin-right: 0;
+}
+section[class]:not(.advert) {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  padding-bottom: 9px;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid #cccccc;
+}
+section[class]:not(.advert) > h2 {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+section[class]:not(.advert) > h2 a.show-hide {
+  float: right;
+}
+section[class]:not(.advert) > div.show-hide {
+  display: block;
+}
+section.motorsport:not(.advert),
+section.horse-racing:not(.advert),
+section.boxing:not(.advert),
+section.rugby-league:not(.advert),
+section.us-sport:not(.advert),
+section.cycling:not(.advert),
+section.belief-comment:not(.advert),
+section.life-style-comment:not(.advert),
+section.politics-comment:not(.advert),
+section.society-comment:not(.advert),
+section.culture-comment:not(.advert),
+section.health:not(.advert),
+section.fitness:not(.advert),
+section.home:not(.advert),
+section.garden:not(.advert),
+section.celebrity:not(.advert),
+section.books:not(.advert),
+section.art-design:not(.advert),
+section.games:not(.advert) {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  padding-bottom: 9px;
+  padding-bottom: 0.9rem;
+}
+section.motorsport:not(.advert) > h2,
+section.horse-racing:not(.advert) > h2,
+section.boxing:not(.advert) > h2,
+section.rugby-league:not(.advert) > h2,
+section.us-sport:not(.advert) > h2,
+section.cycling:not(.advert) > h2,
+section.belief-comment:not(.advert) > h2,
+section.life-style-comment:not(.advert) > h2,
+section.politics-comment:not(.advert) > h2,
+section.society-comment:not(.advert) > h2,
+section.culture-comment:not(.advert) > h2,
+section.health:not(.advert) > h2,
+section.fitness:not(.advert) > h2,
+section.home:not(.advert) > h2,
+section.garden:not(.advert) > h2,
+section.celebrity:not(.advert) > h2,
+section.books:not(.advert) > h2,
+section.art-design:not(.advert) > h2,
+section.games:not(.advert) > h2 {
+  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
+}
+section.motorsport:not(.advert) article:only-of-type,
+section.horse-racing:not(.advert) article:only-of-type,
+section.boxing:not(.advert) article:only-of-type,
+section.rugby-league:not(.advert) article:only-of-type,
+section.us-sport:not(.advert) article:only-of-type,
+section.cycling:not(.advert) article:only-of-type,
+section.belief-comment:not(.advert) article:only-of-type,
+section.life-style-comment:not(.advert) article:only-of-type,
+section.politics-comment:not(.advert) article:only-of-type,
+section.society-comment:not(.advert) article:only-of-type,
+section.culture-comment:not(.advert) article:only-of-type,
+section.health:not(.advert) article:only-of-type,
+section.fitness:not(.advert) article:only-of-type,
+section.home:not(.advert) article:only-of-type,
+section.garden:not(.advert) article:only-of-type,
+section.celebrity:not(.advert) article:only-of-type,
+section.books:not(.advert) article:only-of-type,
+section.art-design:not(.advert) article:only-of-type,
+section.games:not(.advert) article:only-of-type {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+section#more-statistics,
+section.comment-is-free:not(.advert) {
+  border-bottom: none;
+}
+section.comment-is-free:not(.advert) {
+  padding-bottom: 0;
+}
+/*section {
+	&.football:not(.advert), &.comment-is-free:not(.advert) {
+		article:last-of-type {
+			.margin-bottom(10);
+			.padding-bottom(9);
+			border-bottom:1px dotted @light-grey;			
+		}
+	}
+}*/
+section.features:not(.advert) {
+  padding: 10px 3.333333333% 10px 3.333333333%;
+  padding: 1rem 3.333333333% 1rem 3.333333333%;
+  background: #eeeeee;
+  border: none;
+}
+section.features:not(.advert) div.show-hide {
+  position: relative;
+}
+section.features:not(.advert) article {
+  margin: 0;
+  border: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+section.features:not(.advert) article[data-importance="medium"] {
+  height: 210px;
+  height: 21rem;
+  margin-bottom: 2px;
+  margin-bottom: 0.2rem;
+}
+section.features:not(.advert) article[data-importance="medium"] a {
+  height: 210px;
+  height: 21rem;
+}
+section.features:not(.advert) article[data-importance="small"] {
+  clear: none;
+  float: left;
+  width: 50%;
+  height: 105px;
+  height: 10.5rem;
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+section.features:not(.advert) article[data-importance="small"]:nth-child(2) {
+  border-right: 2px solid #eeeeee;
+}
+section.features:not(.advert) article[data-importance="small"] a {
+  height: 105px;
+  height: 10.5rem;
+}
+section.features:not(.advert) article p {
+  display: none;
+}
+section.features:not(.advert) article a {
+  display: block;
+  width: 100%;
+  color: #fff;
+  padding: 10px 3.333333333% 10px 3.333333333%;
+  padding: 1rem 3.333333333% 1rem 3.333333333%;
+  background: #c1c1c1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+section.features:not(.advert) article a:hover,
+section.features:not(.advert) article a:visited {
+  color: #fff;
+}
+section.features:not(.advert) article a:hover {
+  background: #a8a8a8;
+}
+section.features:not(.advert) ol,
+section.features:not(.advert) ul {
+  list-style: none;
+}
+section.features:not(.advert) ul.carousel-controls li {
+  position: absolute;
+  top: 50%;
+  width: 10%;
+  height: 20%;
+  margin-top: -10%;
+}
+section.features:not(.advert) ul.carousel-controls li:first-child {
+  left: 0;
+}
+section.features:not(.advert) ul.carousel-controls li:first-child a {
+  background-image: url('/img/in-body-prev.svg');
+}
+section.features:not(.advert) ul.carousel-controls li:last-child {
+  right: 0;
+}
+section.features:not(.advert) ul.carousel-controls li:last-child a {
+  background-image: url('/img/in-body-next.svg');
+}
+section.features:not(.advert) ul.carousel-controls li a {
+  text-indent: -9999em;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+  background-size: contain;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+section.features:not(.advert) ul.carousel-controls li a:hover {
+  opacity: 1;
+}
+section.features:not(.advert) ol.pagination {
+  /*		clear:both;*/
+
+  text-align: center;
+}
+section.features:not(.advert) ol.pagination li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+section.features:not(.advert) ol.pagination li:last-child {
+  margin: 0;
+}
+section.features:not(.advert) ol.pagination li a {
+  display: block;
+  text-indent: -9999em;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: #666666;
+}
+section.features:not(.advert) ol.pagination li a.selected,
+section.features:not(.advert) ol.pagination li a:hover {
+  background: #bfbfbf;
+}
+section.business-stories table {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  /*		.padding-bottom(9);
+		border-bottom:1px dotted @light-grey;*/
+
+}
+section.business-stories table tr {
+  width: 25%;
+}
+section.business-stories table tr:nth-child(odd) {
+  background: #eeeeee;
+}
+section.business-stories table tr:nth-child(even) {
+  background: #cccccc;
+}
+section.business-stories table tr th,
+section.business-stories table tr td {
+  padding: 0 5px 0 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+section.business-stories table tr th:nth-child(n+2),
+section.business-stories table tr td:nth-child(n+2) {
+  text-align: right;
+}
+section.event:not(.advert) {
+  padding: 10px 3.333333333% 10px 3.333333333%;
+  padding: 1rem 3.333333333% 1rem 3.333333333%;
+  background: #eeeeee;
+  border-bottom: none;
+}
+section.event:not(.advert) article {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+section.event:not(.advert) article .related-items li {
+  border-top: 1px dotted #cccccc;
+}
+section.event:not(.advert) article .related-items li:first-child,
+section.event:not(.advert) article .related-items li:nth-child(n+4) {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+section.twitter-feed .author-avatar {
+  float: left;
+  vertical-align: top;
+  width: 13.333333333%;
+  margin-right: 3.333333333%;
+}
+section.twitter-feed dl {
+  margin-bottom: 0;
+}
+section.twitter-feed dd {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  padding-bottom: 9px;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px dotted #cccccc;
+}
+section.twitter-feed dd:last-of-type {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+blockquote {
+  min-height: 60px;
+  min-height: 6rem;
+  margin-bottom: 12px;
+  margin-bottom: 1.2000000000000002rem;
+  padding: 6px 70px 6px 6px;
+  padding: 0.6000000000000001rem 70px 0.6000000000000001rem 6px;
+  background: url("/img/headshot.svg") bottom right no-repeat #eeeeee;
+  background-size: 70px 70px;
+}
+blockquote:last-of-type {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+blockquote:hover {
+  background-color: #d5d5d5;
+  cursor: pointer;
+}
+blockquote p,
+blockquote cite {
+  margin: 0;
+}
+#section-front #fixtures,
+#section-front #results,
+#section-front #scores {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  border-bottom: 1px dotted #cccccc;
+}
+#section-front #fixtures h2,
+#section-front #results h2,
+#section-front #scores h2 {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+#section-front #fixtures div.show-hide,
+#section-front #results div.show-hide,
+#section-front #scores div.show-hide {
+  display: none;
+}
+#section-front #fixtures table:first-of-type,
+#section-front #results table:first-of-type,
+#section-front #scores table:first-of-type {
+  margin-bottom: -2px;
+}
+#section-front #fixtures ul:last-child,
+#section-front #results ul:last-child,
+#section-front #scores ul:last-child {
+  margin-top: 10px;
+  margin-top: 1rem;
+  padding-top: 0;
+  border: none;
+}
+#section-front #fixtures ul:last-child li,
+#section-front #results ul:last-child li,
+#section-front #scores ul:last-child li {
+  display: inline-block;
+}
+#section-front #fixtures ul:last-child li:first-child,
+#section-front #results ul:last-child li:first-child,
+#section-front #scores ul:last-child li:first-child {
+  margin-right: 1%;
+  padding-right: 2%;
+  border-right: 1px solid #cccccc;
+}
+#section-front.club #fixtures table:first-of-type {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+#section-front.club #fixtures ul li:first-child,
+#section-front.club #results ul li:first-child {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+#section-front.club .around-the-web {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  padding: 10px 3.333333333% 10px 3.333333333%;
+  padding: 1rem 3.333333333% 1rem 3.333333333%;
+  background: #eeeeee;
+  border-bottom: none;
+}
+#section-front.club .around-the-web h3 {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+#section-front.club .around-the-web ul:last-child,
+#section-front.club .around-the-web ul:only-child {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#section-front.club .around-the-web ul:last-child:before,
+#section-front.club .around-the-web ul:only-child:before,
+#section-front.club .around-the-web ul:last-child:after,
+#section-front.club .around-the-web ul:only-child:after {
+  content: "";
+  display: table;
+}
+#section-front.club .around-the-web ul:last-child:after,
+#section-front.club .around-the-web ul:only-child:after {
+  clear: both;
+}
+#section-front.club .around-the-web ul:last-child li,
+#section-front.club .around-the-web ul:only-child li {
+  float: left;
+  width: 48.33333335%;
+  margin-bottom: 9px;
+  margin-bottom: 0.9rem;
+  padding-bottom: 10px;
+  padding-bottom: 1rem;
+  border-bottom: 1px dotted #cccccc;
+}
+#section-front.club .around-the-web ul:last-child li:nth-child(odd),
+#section-front.club .around-the-web ul:only-child li:nth-child(odd) {
+  clear: both;
+  margin-right: 3.333333333%;
+}
+#section-front.club .around-the-web ul:last-child li:nth-last-child(-n+2),
+#section-front.club .around-the-web ul:only-child li:nth-last-child(-n+2) {
+  margin-bottom: 0;
+  padding: 0;
+  border: none;
+}
+#section-front.club #tables h2,
+#section-front.premier-league #tables h2 {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+#section-front.club #tables h3,
+#section-front.premier-league #tables h3 {
+  margin-bottom: 0;
+}
+#section-front #more-statistics h3 {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+#section-front #more-statistics ul {
+  border-bottom: none;
+}
+#section-front #more-statistics ul li:nth-child(n+3) {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+#section-front.football #more-statistics ul:last-child li:first-child,
+#section-front.premier-league #more-statistics ul:last-child li:first-child {
+  margin-right: 3.333333333%;
+}
+#section-front.sport #more-statistics ul:last-child li,
+#section-front.club #more-statistics ul:last-child li,
+#section-front.sport #more-statistics ul:only-child li,
+#section-front.club #more-statistics ul:only-child li {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  padding-bottom: 9px;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px dotted #cccccc;
+}
+#section-front.sport #more-statistics ul:last-child li:nth-child(odd),
+#section-front.club #more-statistics ul:last-child li:nth-child(odd),
+#section-front.sport #more-statistics ul:only-child li:nth-child(odd),
+#section-front.club #more-statistics ul:only-child li:nth-child(odd) {
+  margin-right: 3.333333333%;
+}
+#section-front.sport #more-statistics ul:last-child li:nth-child(n+3),
+#section-front.club #more-statistics ul:last-child li:nth-child(n+3),
+#section-front.sport #more-statistics ul:only-child li:nth-child(n+3),
+#section-front.club #more-statistics ul:only-child li:nth-child(n+3),
+#section-front.sport #more-statistics ul:last-child li:nth-last-child(2),
+#section-front.club #more-statistics ul:last-child li:nth-last-child(2),
+#section-front.sport #more-statistics ul:only-child li:nth-last-child(2),
+#section-front.club #more-statistics ul:only-child li:nth-last-child(2) {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+#section-front.keyword .top-stories {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  border-bottom: 1px dotted #cccccc;
+}
+section.sport-stats #sport-statistics {
+  display: none;
+}
+.comment .carousel,
+.life-style .carousel {
+  position: relative;
+}
+.comment .carousel ul.mugshots,
+.life-style .carousel ul.mugshots {
+  list-style: none;
+}
+.comment .carousel ul.mugshots li,
+.life-style .carousel ul.mugshots li {
+  display: inline-block;
+  width: 30%;
+  margin-right: 5%;
+}
+.comment .carousel ul.mugshots li:last-child,
+.life-style .carousel ul.mugshots li:last-child {
+  margin-right: 0;
+}
+.comment .carousel ul.carousel-controls,
+.life-style .carousel ul.carousel-controls {
+  width: 100%;
+}
+.comment .carousel ul.carousel-controls li,
+.life-style .carousel ul.carousel-controls li {
+  position: absolute;
+  top: 50%;
+  width: 10%;
+  height: 40%;
+  margin-top: -30%;
+}
+.comment .carousel ul.carousel-controls li:first-child,
+.life-style .carousel ul.carousel-controls li:first-child {
+  left: 0;
+}
+.comment .carousel ul.carousel-controls li:first-child a,
+.life-style .carousel ul.carousel-controls li:first-child a {
+  background-image: url('/img/in-body-prev.svg');
+  background-size: 100% 100%;
+}
+.comment .carousel ul.carousel-controls li:last-child,
+.life-style .carousel ul.carousel-controls li:last-child {
+  right: 0;
+}
+.comment .carousel ul.carousel-controls li:last-child a,
+.life-style .carousel ul.carousel-controls li:last-child a {
+  background-image: url('/img/in-body-next.svg');
+  background-size: 100% 100%;
+}
+.comment .carousel ul.carousel-controls li a,
+.life-style .carousel ul.carousel-controls li a {
+  text-indent: -9999em;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+  background-size: contain;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+.comment .carousel ul.carousel-controls li a:hover,
+.life-style .carousel ul.carousel-controls li a:hover {
+  opacity: 1;
+}
+.comment .carousel ol.pagination,
+.life-style .carousel ol.pagination {
+  /*		clear:both;*/
+
+  text-align: center;
+}
+.comment .carousel ol.pagination li,
+.life-style .carousel ol.pagination li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+.comment .carousel ol.pagination li:last-child,
+.life-style .carousel ol.pagination li:last-child {
+  margin: 0;
+}
+.comment .carousel ol.pagination li a,
+.life-style .carousel ol.pagination li a {
+  display: block;
+  text-indent: -9999em;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: #666666;
+}
+.comment .carousel ol.pagination li a.selected,
+.life-style .carousel ol.pagination li a.selected,
+.comment .carousel ol.pagination li a:hover,
+.life-style .carousel ol.pagination li a:hover {
+  background: #bfbfbf;
+}
+/* typography
+--------------------------------------------------*/
+section[class] > h2 {
+  font-size: 17px;
+  font-size: 1.7000000000000002rem;
+  line-height: 20px;
+  line-height: 2rem;
+}
+section[class] > h2 a.show-hide {
+  font-family: "guardian-bold";
+  font-weight: normal;
+  font-size: 12px;
+  font-size: 1.2000000000000002rem;
+  line-height: 20px;
+  line-height: 2rem;
+  text-transform: uppercase;
+  font-family: "guardian-regular", georgia, serif;
+  text-transform: none;
+}
+section[class] p strong:first-child {
+  font-family: "guardian-bold";
+  font-weight: normal;
+  font-size: 12px;
+  font-size: 1.2000000000000002rem;
+  line-height: 20px;
+  line-height: 2rem;
+  font-style: normal;
+  text-transform: uppercase;
+}
+section.boxing > h2,
+section.horse-racing > h2,
+section.rugby-league > h2,
+section.us-sport > h2,
+section.cycling > h2,
+section.belief-comment > h2,
+section.life-style-comment > h2,
+section.politics-comment > h2,
+section.society-comment > h2,
+section.culture-comment > h2,
+section.health > h2,
+section.fitness > h2,
+section.home > h2,
+section.garden > h2,
+section.celebrity > h2,
+section.books > h2,
+section.art-design > h2,
+section.games > h2 {
+  font-family: "guardian-bold";
+  font-weight: normal;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 20px;
+  line-height: 2rem;
+}
+blockquote p {
+  font-family: "guardian-regular", georgia, serif;
+  font-weight: normal;
+  font-size: 17px;
+  font-size: 1.7000000000000002rem;
+  line-height: 20px;
+  line-height: 2rem;
+  font-style: italic;
+  color: #666666;
+}
+blockquote cite {
+  font-family: "guardian-regular", georgia, serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 20px;
+  line-height: 2rem;
+  font-family: "guardian-bold";
+  font-style: normal;
+  color: #333333;
+}
+section.comment-is-free .author {
+  font-family: "guardian-bold";
+}
+#more-statistics h3 {
+  font-family: "guardian-bold";
+  font-weight: normal;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 20px;
+  line-height: 2rem;
+}

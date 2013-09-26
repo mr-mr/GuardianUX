@@ -1,0 +1,98 @@
+.clear-fix:before,
+.clear-fix:after {
+  content: "";
+  display: table;
+}
+.clear-fix:after {
+  clear: both;
+}
+.clear-clear-fix:before,
+.clear-clear-fix:after {
+  clear: none;
+  content: none;
+  display: none;
+}
+.no-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+.reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/* general
+--------------------------------------------------*/
+form ul {
+  list-style: none;
+}
+input,
+button,
+select,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  padding: 5px 1.666666667% 5px 1.666666667%;
+  padding: 0.5rem 1.666666667% 0.5rem 1.666666667%;
+  border: 1px solid #cccccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+select {
+  height: 32px;
+  height: 3.2rem;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+}
+input[type="submit"],
+button {
+  background: #005689;
+  border: 1px solid #003656;
+}
+input[type="submit"]:hover,
+button:hover {
+  background: #003656;
+  border: 1px solid #001623;
+  cursor: pointer;
+}
+.comment button {
+  padding: 2px 4px 2px 4px;
+  padding: 0.2rem 4px 0.2rem 4px;
+  background: #eeeeee;
+  border: 1px solid #cccccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* typography
+--------------------------------------------------*/
+input,
+button,
+select,
+textarea {
+  font-family: "guardian-regular", georgia, serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 20px;
+  line-height: 2rem;
+}
+input[type="submit"],
+button {
+  color: #fff;
+}
+.comment button {
+  font-size: 12px;
+  font-size: 1.2000000000000002rem;
+  line-height: 20px;
+  line-height: 2rem;
+  color: #333333;
+}

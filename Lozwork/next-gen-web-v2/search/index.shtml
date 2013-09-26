@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+		
+	<title>Search results</title>
+
+ 	<link rel="stylesheet" href="/css/fonts.css" media="screen" />
+	
+	<link rel="stylesheet/less" href="/css/search-results.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/article-promos.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/tabs.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/forms.less" media="screen" />
+	
+	<script src="/js/hide-address-bar.js"></script>
+
+	<script src="/js/jquery-1.7.2.min.js"></script>
+	<script src="/js/search-results.js"></script>
+	
+	<script src="/js/less-1.3.0.min.js"></script>	
+</head>
+
+<body id="search-results">
+	<div class="wrapper">
+		<section class="advert">
+			<img src="/img/ad.gif" />
+		</section>
+
+		<header>
+			<h1 class="branding">The Guardian<a href="/"></a></h1>
+			<div role="presentation">
+				<ul class="navigation-controls">
+					<li><a href="#top-stories-list">Top&nbsp;stories</a></li><li><a href="#primary-navigation">Sections</a></li><li><a href="#search-global">Search</a></li>
+				</ul>
+				<nav>
+					<ul>
+						<li><a href="/network-front">Home</a></li><li><a href="#">UK News</a></li><li><a href="#">World News</a></li><li><a href="/section-fronts/sport.shtml">Sport</a></li><li><a href="/section-fronts/football.shtml">Football</a></li><li><a href="#">Comment is free</a></li><li><a href="#">Life &amp; Style</a></li><li><a href="#">Culture</a></li><li><a href="#">Business</a></li><li><a href="#">Jobs</a></li><li><a href="#">Technology</a></li><li><a href="#">Film</a></li><li><a href="#">Music</a></li><li><a href="/navigation/section-list.shtml">All section</a></li>
+					</ul>			
+				</nav>				
+			</div>
+			<!--#include virtual="/inc/primary-navigation.inc" -->
+			<!--#include virtual="/inc/search-global.inc" -->
+			<!--#include virtual="/inc/top-stories-list-network-front.inc" -->
+		</header>
+		
+		<h1>Search results for "David Cameron"</h1>
+		
+		<p>Your search returned <strong>37,474</strong> results</p>
+		
+		<section class="results">
+			<article class="result" data-importance="small-medium">
+				<!--Politics -->
+				<h3><a href="#"><strong>David Cameron</strong> seeks to avoid Commons defeat over EU budget</a></h3>
+				<p class="date-stamp"><time>5 minutes ago</time></p>
+				<p>&hellip;<strong>David Cameron</strong> moved closer to Tory rebels calling for a real-terms cut in the EU budget as he sought to avoid a humiliating Commons defeat.The prime minister said he would like a cut but would settle for a freeze, as rebel Tories prepared&hellip;</p>
+			</article>
+			<article class="result" data-importance="small-medium">
+				<!--Politics -->
+				<h3><a href="#"><strong>David Cameron</strong> backs Lord Heseltine's report on economic strategy</a></h3>
+				<p class="date-stamp"><time>10 minutes ago</time></p>
+				<p>&hellip;<strong>David Cameron</strong> backs Lord Heseltine's report on economic strategy &hellip; <strong>David Cameron</strong> has praised Lord Heseltine's "excellent report" into economic growth – and denied it criticised current government policies.The Tory former deputy prime minister urged the coalition to go&hellip;</p>
+			</article>
+			<article class="result" data-importance="small-medium">
+				<!-- Politics -->
+				<h3><a href="#">Prime minister's questions: 31 October 2012 - audio</a></h3>
+				<p class="date-stamp"><time>2 hours ago</time></p>
+				<p>&hellip;<strong>David Cameron</strong> takes questions from Labour leader Ed Miliband and other MPs about the EU budget and government energy policy&hellip;</p>
+			</article>
+			<article class="result" data-importance="small-medium">
+				<!--Art and design -->
+				<h3><a href="#">Lebbeus Woods, visionary architect of imaginary worlds, dies in New York</a></h3>
+				<p class="date-stamp"><time>4 hours ago</time></p>
+				<p>&hellip;of Vincent Ward's ill-fated Alien III – abandoned in favour of David Fincher's much more successful Alien 3, which Woods later described as having "unremarkable sets" and "unrelenting grimness&hellip;</p>
+			</article>
+			<article class="result" data-importance="small-medium">
+				<!--Global development -->
+				<h3><a href="#">The post-2015 development agenda explained | Mark Tran</a></h3>
+				<p class="date-stamp"><time>Today</time></p>
+				<p>&hellip;Where are we on the post-2015 development agenda?In May, Ban Ki-moon, the UN secretary general, named UK prime minister <strong>David Cameron</strong>, Liberian president Ellen Johnson Sirleaf, and President Susilo Bambang Yudhoyono, of Indonesia, as co&hellip;</p>
+			</article>
+			<article class="result" data-importance="small-medium">
+				<!--Media -->
+				<h3><a href="#">Asylum seekers continue to be stigmatised by the British press</a></h3>
+				<p class="date-stamp"><time>Today</time></p>
+				<p>&hellip;and discriminatory towards the group if not the individual portrayed.But why does this matter? And why does it matter so much right now?On 6 July 2011, <strong>David Cameron</strong>, facing widespread public revulsion over the extent and depth of the News&hellip;</p>
+			</article>
+			<article class="result" data-importance="small-medium">
+				<!--Politics -->
+				<h3><a href="#">Michael 'Del Boy' Heseltine launches Plan H</a></h3>
+				<p class="date-stamp"><time>Today</time></p>
+				<p>&hellip;except Bristol, of course. But that wasn't Hezza's fault.As you may have read or heard, the former DPM's report to <strong>David Cameron</strong> – called No Stone Unturned; it's out today – wants a national growth council to promote long-term economic strategy. He&hellip;</p>
+			</article>
+			<article class="result" data-importance="small-medium">
+				<!--Politics -->
+				<h3><a href="#">Labour to vote for EU budget cut</a></h3>
+				<p class="date-stamp"><time>Today</time></p>
+				<p>&hellip;Eurosceptics.As Downing Street served notice that <strong>David Cameron</strong> is prepared to wield the British veto to ensure a less severe, real-terms freeze in the budget, Clegg attacked plans by Miliband, Ed Balls and Douglas Alexander to side with the Tory rebels&hellip;</p>
+			</article>
+			<article class="result" data-importance="small-medium">
+				<!--Environment -->
+				<h3><a href="#">John Hayes's wind power warning is clever spin or national betrayal</a></h3>
+				<p class="date-stamp"><time>Today</time></p>
+				<p>&hellip;at and what many Conservatives want, perhaps by chopping further at the subsidies wind farms receive. If, backed by <strong>David Cameron</strong> and George Osborne, Hayes prevails then the energy minister who also claimed to be "the peoples' minister" will have betrayed them&hellip;</p>
+			</article>
+			<article class="result" data-importance="small-medium">
+				<!--Politics -->
+				<h3><a href="#">PMQs and EU budget vote: Politics live blog</a></h3>
+				<p class="date-stamp"><time>Today</time></p>
+				<p>&hellip;PMQs verdictEd Miliband made a strong case that the EU budget should not rise while swingeing cuts are being levelled across every part of the UK public sector. But does anyone really believe this is not, as <strong>David Cameron</strong> said, simply "rank&hellip;</p>
+			</article>
+			<article class="result" data-importance="small-medium">
+				<!--Politics -->
+				<h3><a href="#">Lord Heseltine interview: the older politician who glows with strength</a></h3>
+				<p class="date-stamp"><time>Today</time></p>
+				<p>&hellip;confront the way in which other national governments, unlike Britain, aided and abetted their wealth creators.His views on the role of government were never so simple again.But that leads to the question of why <strong>David Cameron</strong> ever asked&hellip;</p>
+			</article>
+			<article class="result" data-importance="small-medium">
+				<!--Global development -->
+				<h3><a href="#"><strong>David Cameron</strong>, beware: the post-2015 aid agenda is an MDG minefield | Claire Melamed</a></h3>
+				<p class="date-stamp"><time>Today</time></p>
+				<p>&hellip;<strong>David Cameron</strong>, beware: the post-2015 aid agenda is an MDG minefield &hellip; , trade in deadly weapons – and governments are failing to solve any of them.It makes <strong>David Cameron</strong>'s reported eagerness to put himself at the forefront of another global process – this time on poverty – either admirable or foolhardy&hellip;</p>
+			</article>
+			<article class="result" data-importance="small-medium">
+				<!--Environment -->
+				<h3><a href="#">Plan to merge British Antarctic Survey comes under fire</a></h3>
+				<p class="date-stamp"><time>Today</time></p>
+				<p>&hellip;its skills to help "de-risk" investment for UK oil companies exploring the polar regions."Only a few years ago Prime Minister <strong>David Cameron</strong> was photographed hugging huskies in the Arctic in an effort to stress his green credentials; I hope&hellip;</p>
+			</article>
+			<article class="result" data-importance="small-medium">
+				<!--Politics -->
+				<h3><a href="#">Cameron berates Clegg over constitutional reform</a></h3>
+				<p class="date-stamp"><time>Today</time></p>
+				<p>&hellip;Cameron berates Clegg over constitutional reform &hellip; The coalition has been cast into further disarray after <strong>David Cameron</strong> confronted Nick Clegg over constitutional reforms, and the Liberal Democrats hit out at Tory plans to slow the introduction of new windfarms in the UK.In a sign&hellip;</p>
+			</article>
+			<article class="result" data-importance="small-medium">
+				<!--Politics -->
+				<h3><a href="#">Nick Clegg accuses Labour of dishonesty over EU budget vote</a></h3>
+				<p class="date-stamp"><time>Today</time></p>
+				<p>&hellip;As Downing Street served notice that <strong>David Cameron</strong> is prepared to wield the British veto to ensure a less severe, real-terms freeze in the budget, the deputy prime minister attacked plans by Miliband, Ed Balls and Douglas Alexander to side with the Tory&hellip;</p>
+			</article>
+			<article class="result" data-importance="small-medium">
+				<!--Comment is free -->
+				<h3><a href="#"><strong>David Cameron</strong>'s pro-EU charade cannot go on much longer</a></h3>
+				<p class="date-stamp"><time>Yesterday</time></p>
+				<p>&hellip;After Wednesday's vote in the House of Commons, <strong>David Cameron</strong> could find 	himself the last "pro-European" in Britain. He will leave for Brussels next month for the seven-year EU budget summit trying to hang tough, but outflanked by his party&hellip;</p>
+			</article>
+			<article class="result" data-importance="small-medium">
+				<!--UK news -->
+				<h3><a href="#">'Green-on-blue' attacks are difficult to deal with, UK commander tells MPs</a></h3>
+				<p class="date-stamp"><time>Yesterday</time></p>
+				<p>&hellip;Dame Mariot Leslie, Britain's ambassador to Nato, told the MPs that there may &hellip; Lieutenant General David Capewell says better vetting is being introduced to try to stop attacks by Afghans on Nato troops&hellip;</p>
+			</article>
+			<article class="result" data-importance="small-medium">
+				<!--Environment -->
+				<h3><a href="#">Hiatchi energises future of low-carbon power in the UK</a></h3>
+				<p class="date-stamp"><time>Yesterday</time></p>
+				<p>&hellip;threatened to hold the government to ransom for higher subsidies for its nuclear plans, will face competition in constructing new reactors. <strong>David Cameron</strong> said: "This is a decades-long, multibillion-pound vote of confidence in the UK that will contribute&hellip;</p>
+			</article>
+			<article class="result" data-importance="small-medium">
+				<!--Media -->
+				<h3><a href="#">Leveson report delayed until late November</a></h3>
+				<p class="date-stamp"><time>Yesterday</time></p>
+				<p>&hellip;the Daily Telegraph and the Daily Mail, as well as politicians including Boris Johnson, have warned of dire consequences if statutory regulation were to be recommended by Leveson and taken up by <strong>David Cameron</strong>.The two papers are among those&hellip;</p>
+			</article>
+			<article class="result" data-importance="small-medium">
+				<!--Comment is free -->
+				<h3><a href="#">How to be funny on Twitter – Austin Mitchell take note</a></h3>
+				<p class="date-stamp"><time>Yesterday</time></p>
+				<p>&hellip;Retweet or tweet unlikely things from/to famous individuals <strong>David Cameron</strong> is an excellent person to gently troll for a chuckle or two. You can make &hellip;Don't forget the jokes. Bullying is off-limits, but <strong>David Cameron</strong> is always fair game. And being a famous comedian helps&hellip;</p>
+			</article>	
+		</section>
+		<!-- end #articles -->
+		
+		<ul class="pagination">
+			<li><strong>1</strong></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li><a href="#">4</a></li><li><a href="#">5</a></li><li><a href="#">6</a></li><li><a href="#">7</a></li><li><a href="#">8</a></li><li><a href="#">9</a></li><li><a href="#">10&hellip;</a></li><li><a href="#">200</a></li><li><a href="#">Next »</a></li>
+		</ul>
+
+		<ul class="navigation-controls">
+			<li><a href="#top-stories-list">Top&nbsp;stories</a></li><li><a href="#primary-navigation">Sections</a></li><li><a href="#search">Search</a></li>
+		</ul>
+
+		<section class="advert">
+			<img src="/img/ad-too.gif" />
+		</section>
+
+		<p><a href="#top">^ Back to top</a></p>
+
+		<footer>
+			<nav>
+				<ul>
+					<li><a href="#">View this page on desktop version</a></li>
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Contact us</a></li>
+					<li><a href="#">Terms &amp; conditions</a></li>
+					<li><a href="#">Privacy policy</a></li>
+					<li>© 2012 Guardian News and Media Limited or its affiliated companies. All rights reserved.</li>
+				</ul>
+			</nav>
+		</footer>	
+	</div>
+	<!-- end .wrapper -->
+</body>
+
+</html>

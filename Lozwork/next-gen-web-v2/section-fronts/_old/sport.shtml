@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+		
+	<title>Sport section front</title>
+
+ 	<link rel="stylesheet" href="/css/fonts.css" media="screen" />
+
+ 	<link rel="stylesheet/less" href="/css/base.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/section-fronts.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/tabs.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/article-promos.less" media="screen" />
+ 	<link rel="stylesheet/less" href="/css/most-read.less" media="screen" />
+	
+	<script src="/js/hide-address-bar.js"></script>
+
+	<script src="/js/jquery-1.7.2.min.js"></script>
+	<script src="/js/jquery.event.move.js"></script>	
+	<script src="/js/jquery.event.swipe.js"></script>
+	<script src="/js/jquery.cookie.js"></script>
+		
+	<script src="/js/navigation.js"></script>
+	<script src="/js/show-hide-with-cookies.js"></script>
+	<script src="/js/clickable-block.js"></script>
+	<script src="/js/tabs.js"></script>
+	
+	<script src="/js/less-1.3.0.min.js"></script>	
+</head>
+
+<body id="section-front" class="sport">
+	<div class="wrapper">
+		<!--#include virtual="/inc/primary-navigation.inc" -->
+
+		<section id="content" role="presentation">
+			<!--#include virtual="/inc/header.inc" -->
+			
+			<section class="top-stories">
+				<h2><a href="#">Top stories</a><a href="#sport-top-stories" class="show-hide"><span>Hide</span></a></h2>
+				
+				<div id="sport-top-stories" class="show-hide" role="presentation">
+					<article data-importance="medium">
+						<h3><a href="#"><img src="/img/5x3.png" />Ryder Cup: day one <strong class="live-latest">Live</strong></a></h3>
+						<p class="date-stamp"><time>5 minutes ago</time></p>
+						<p><strong><a href="#">Golf:</a></strong> Scott Murray's minute-by-minute report as it all kicks off with the foursomes.</p>
+					</article>
+					<article data-importance="medium">
+						<h3><a href="#"><img src="/img/5x3.png" />South Africa v Pakistan <strong class="live-latest">live</strong></a></h3>
+						<p class="date-stamp"><time>1 minute ago</time></p>
+						<p><strong><a href="#">Cricket:</a></strong> South Africa have set Pakistan 134 to win in their first Super Eight match. Join James Riach for over by over coverage</p>
+					</article>
+					<article data-importance="small-medium">
+						<h3><a href="#">Terry will feel ban is 'quite lenient'</a></h3>
+						<p class="date-stamp"><time>3 hours ago</time></p>
+						<p><strong><a href="#">Football:</a></strong> Sir Alex Ferguson believes John Terry may feel his ban lenient in light of Luis Suárez's eight-game ban</p>
+					</article>
+					<article data-importance="small-medium">
+						<h3><a href="#">Suárez accepts penalty decisions</a></h3>
+						<p class="date-stamp"><time>2 hours ago</time></p>
+						<p><strong><a href="#">Football:</a></strong> Luis Suárez has said he accepts the refereeing decisions that have gone against him recently</p>
+					</article>
+					<article data-importance="small-medium">
+						<h3><a href="#">Pérez replaces Hamilton at McLaren</a></h3>
+						<p class="date-stamp"><time>10 minutes ago</time></p>
+						<p><strong><a href="#">F1:</a></strong> McLaren confirm they are signing Sergio Pérez from next season as a replacement for Lewis Hamilton</p>
+					</article>
+				</div>
+			</section>
+			<!-- end .top-stories -->
+			
+			<section class="football">
+				<h2><a href="#">Football</a><a href="#sport-football" class="show-hide"><span>Hide</span></a></h2>
+				
+				<div id="sport-football" class="show-hide" role="presentation">	
+					<article data-importance="medium">
+						<h3><a href="#"><img src="/img/5x3.png" />Wilshere taking first steps back</a></h3>
+						<p class="date-stamp"><time>5 minutes ago</time></p>
+						<p>Jack Wilshere will return for Arsenal Under-21s on Monday, 14 months after suffering a stress fracture</p>
+					</article>
+
+					<article data-importance="medium">
+						<h3><a href="#"><img src="/img/5x3.png" />Argentina pick Agüero but not Tevez</a></h3>
+						<p class="date-stamp"><time>10 minutes ago</time></p>
+						<p>Sergio Agüero and Pablo Zabaleta have been called up for Argentina's World Cup qualifiers next month</p>
+					</article>
+					<article data-importance="small-medium">
+						<h3><a href="#"><img src="/img/5x3.png" />Terry looks to clear his name over FA racism ban</a></h3>
+						<p class="date-stamp"><time>10 minutes ago</time></p>
+						<p>John Wareing has been cautioned for posting abusive comments on Twitter about referee Mark Halsey</p>
+					</article>	
+					<article data-importance="small-medium">
+						<h3><a href="#">Leeds near takeover from Bahrain</a></h3>
+						<p class="date-stamp"><time>10 minutes ago</time></p>
+						<p>A takeover deal from Bahrain is set to end Ken Bates's controversial seven-year reign at Elland Road</p>
+					</article>
+
+					<article data-importance="small-medium">
+						<h3><a href="#">Man cautioned after Halsey abuse</a></h3>
+						<p class="date-stamp"><time>10 minutes ago</time></p>
+						<p>John Wareing has been cautioned for posting abusive comments on Twitter about referee Mark Halsey</p>
+					</article>
+					<div id="more-football-stories" class="show-hide" role="presentation">
+						<article data-importance="small">
+							<h3><a href="#">Rodgers warns that Liverpool may start diving to get decisions</a></h3>
+							<p class="date-stamp"><time>1 hour ago</time></p>
+						</article>
+						<article data-importance="small">
+							<h3><a href="#">Mourhino: "Terry's not a racist – that's 100%"</a></h3>
+							<p class="date-stamp"><time>2 hours ago</time></p>
+						</article>
+						<article data-importance="small">
+							<h3><a href="#">Five questions in light of the Terry ban</a></h3>
+							<p class="date-stamp"><time>3 hours ago</time></p>
+						</article>
+						<article data-importance="small">
+							<h3><a href="#">Arsenal report pre-tax £36.6m profit</a></h3>
+							<p class="date-stamp"><time>4 hours ago</time></p>
+						</article>
+						<article data-importance="small">
+							<h3><a href="#">Santos given driving ban after police chase</a></h3>
+							<p class="date-stamp"><time>3 hours ago</time></p>
+						</article>
+					</div>
+					
+					<p><a href="#more-football-stories" class="show-hide"><span>Show</span> more news stories (5)</a></p>
+				</div>		
+			</section>
+			<!-- end .football -->
+
+			<section class="comment-is-free">
+				<h2><a href="#">Opinion</a><a href="#sport-opinion-blogs" class="show-hide"><span>Hide</span></a></h2>
+			
+				<div id="sport-opinion-blogs" class="show-hide" role="presentation">
+					<blockquote data-is-link="true">
+						<p><a href="#">The first thing that hits you between the eyes is that you don't get much for the odd bit of racial abuse, do you?</a></p>
+						<p class="author"><cite>Daniel Taylor</cite></p>
+					</blockquote>	
+					<blockquote data-is-link="true">
+						<p><a href="#">The epic growth of the Ryder Cup as a tournament belies the fact those featuring in it are generally close acquaintances</a></p>
+						<p class="author"><cite>Ewan Murray</cite></p>
+					</blockquote>	
+					<blockquote data-is-link="true">
+						<p><a href="#">The biggest round of applause should go to the refereeing of the breakdown and this season's insistence that the tackler roll away</a></p>
+						<p class="author"><cite>Shaun Edwards</cite></p>
+					</blockquote>
+					
+					<div id="more-comment-is-free" class="show-hide" role="presentation">
+						<article data-importance="small">
+							<h3><a href="#">The panel in the Suárez case specifically said that a four-game ban "is the entry-point" for breaches of E3(2)</a></h3>
+							<p class="author">David Conn</p>
+						</article>						
+						<article data-importance="small">
+							<h3><a href="#">Whether he likes it or not, Lewis Hamilton has taken a step into history</a></h3>
+							<p class="author">Richard Williams</p>
+						</article>
+						<article data-importance="small">
+							<h3><a href="#">Gloucester's Freddie Burns only three steps to rugby heaven and England</a></h3>
+							<p class="author">Robert Kitson</p>
+						</article>
+					</div>
+					
+					<p><a href="#more-comment-is-free" class="show-hide"><span>Show</span> more comment is free (3)</a></p>
+				</div>
+			</section>
+			<!-- end .comment-is-free -->
+			
+			<section class="cricket">
+				<h2><a href="#">Cricket</a><a href="#sport-cricket" class="show-hide"><span>Hide</span></a></h2>
+				<div id="sport-" class="show-hide" role="presentation">
+					<article data-importance="small-medium">
+						<h3><a href="#"><img src="/img/5x3.png" />Australia v India <strong class="live-latest">Live</strong></a></h3>
+						<p class="date-stamp"><time>1 minute ago</time></p>
+						<p>Over-by-over report: Will Australia beat India and record their first win of the Super Eights? Join James Riach to find out</p>
+					</article>
+					<article data-importance="small">
+					<h3><a href="#">South Africa v Pakistan – as it happened</a></h3>
+						<p class="date-stamp"><time>Yesterday</time></p>
+						<p>Pakistan edged out South Africa by two wickets after a thrilling game in Colombo</p>
+					</article>
+					<article data-importance="small">
+						<h3><a href="#">England can recover and win World Twenty20, says captain Stuart Broad</a></h3>
+						<p class="date-stamp"><time>2 hours ago</time></p>
+						<p>Stuart Broad has said he still feels England can win the World Twenty20 despite successive defeat</p>
+					</article>					
+					<div id="more-cricket-stories" class="show-hide" role="presentation">
+						<article data-importance="small">
+							<h3><a href="#">England lose to West Indies after World Twenty20 run chase falls short</a></h3>
+							<p class="date-stamp"><time>Yesterday</time></p>
+						</article>
+						<article data-importance="small">
+							<h3><a href="#">England v West Indies – as it happened</a></h3>
+							<p class="date-stamp"><time>Yesterday</time></p>
+						</article>
+						<article data-importance="small">
+							<h3><a href="#">Surrey want Graeme Smith to succeed Rory Hamilton-Brown as captain</a></h3>
+							<p class="date-stamp"><time>Yesterday</time></p>
+						</article>
+					</div>
+					
+					<p><a href="#more-cricket-stories" class="show-hide"><span>Show</span> more cricket (3)</a></p>					
+				</div>
+			</section>
+			<!-- end .cricket -->
+			
+			<section class="golf">
+				<h2><a href="#">Golf</a><a href="#sport-golf" class="show-hide"><span>Hide</span></a></h2>
+				<div id="sport-golf" class="show-hide" role="presentation">
+					<article data-importance="small-medium">
+						<h3><a href="#"><img src="/img/5x3.png" />Olazabál used 'Pep talk'</a></h3>
+						<p class="date-stamp"><time>10 minutes ago</time></p>					
+						<p>José María Olazabál was inspired by Pep Guardiola to include Gladiator theme alongside Al Pacino to motivate</p>
+					</article>
+					<article data-importance="small">
+						<h3><a href="#">Is golf a good metaphor for life?</a></h3>
+						<p class="date-stamp"><time>5 hours ago</time></p>
+						<p>Open thread: Justin Timberlake sang golf's praises at the Ryder Cup's opening ceremony. Tell us which sport would represent your life</p>
+					</article>
+					<article data-importance="small">
+							<h3><a href="#">David Howell: 'Europe are good enough to win the Ryder Cup'</a></h3>
+						<p class="date-stamp"><time>5 minutes ago</time></p>
+						<p>Small Talk: The golfer and commentator on Europe v USA, porridge and Fifty Shades of Grey</p>
+					</article>
+					
+					<div id="more-golf-stories" class="show-hide" role="presentation">
+						<article data-importance="small">
+							<h3><a href="#">Sergio García's guide to five key holes</a></h3>
+							<p class="date-stamp"><time>Yesterday</time></p>
+						</article>
+						<article data-importance="small">
+							<h3><a href="#">Ryder Cup 2012: José María Olazábal tinkers with practice pairings</a></h3>
+							<p class="date-stamp"><time>Yesterday</time></p>
+						</article>
+						<article data-importance="small">
+							<h3><a href="#">Ryder Cup 2012: Ewan Murray answered your questions</a></h3>
+							<p class="date-stamp"><time>Yesterday</time></p>
+						</article>
+					</div>
+					
+					<p><a href="#more-golf-stories" class="show-hide"><span>Show</span> more golf (3)</a></p>					
+				</div>
+			</section>
+			<!-- end .golf -->
+			
+			<section class="tennis">
+				<h2><a href="#">Tennis</a><a href="#sport-tennis" class="show-hide"><span>Hide</span></a></h2>
+				<div id="sport-tennis" class="show-hide" role="presentation">
+					<article data-importance="small-medium">
+						<h3><a href="#"><img src="/img/5x3.png" />Serena Williams pulls out of China Open due to illness</a></h3>
+						<p class="date-stamp"><time>2 hours ago</time></p>
+						<p>The organisers of the China Open have confirmed that Serena Williams has withdrawn from the tournament with illness</p>
+					</article>
+					<article data-importance="small-medium">
+						<h3><a href="#">Pan Pacific Open: Victoria Azarenka pulls out, Maria Sharapova beaten</a></h3>
+						<p class="date-stamp"><time>Yesterday</time></p>
+						<p>The world No1, Victoria Azarenka, has pulled out of the Pan Pacific Open, while Maria Sharapova has been beaten</p>
+					</article>
+					<article data-importance="small-medium">
+						<h3><a href="#">Heather Watson pushes Maria Sharapova to the limit in Tokyo</a></h3>
+						<p class="date-stamp"><time>25 Sep 2012</time></p>
+						<p>Heather Watson battled for more than three hours against the world No2 before losing her second-round match in three sets</p>
+					</article>
+					<div id="more-tennis-stories" class="show-hide" role="presentation">
+						<article data-importance="small">
+							<h3><a href="#">Rafael Nadal admits injury may force him to miss Australian Open</a></h3>
+							<p class="date-stamp"><time>25 Sep 2012</time></p>
+						</article>
+						<article data-importance="small">
+							<h3><a href="#">Heather Watson sees off Sabine Lisicki in Toray Pan Pacific first round</a></h3>
+							<p class="date-stamp"><time>24 Sep 2012</time></p>
+						</article>
+						<article data-importance="small">
+							<h3><a href="#">After 2012 women take one step forward, two steps back</a></h3>
+							<p class="date-stamp"><time>23 Sep 2012</time></p>
+						</article>
+					</div>
+					
+					<p><a href="#more-tennis-stories" class="show-hide"><span>Show</span> more tennis (3)</a></p>					
+				</div>
+			</section>
+			<!-- end .tennis -->
+			
+			<section class="rubgy-union">
+				<h2><a href="#">Rugby Union</a><a href="#sport-rubgy-union" class="show-hide"><span>Hide</span></a></h2>
+				<div id="sport-rubgy-union" class="show-hide" role="presentation">
+					<article data-importance="small-medium">
+						<h3><a href="#"><img src="/img/5x3.png" />Ospreys and Wales centre Andrew Bishop convicted of assault</a></h3>
+						<p class="date-stamp"><time>2 hours ago</time></p>
+						<p>The Ospreys and Wales centre Andrew Bishop has been convicted of assault after drunkenly attacking a man in a Cardiff street</p>
+					</article>
+					<article data-importance="small-medium">
+						<h3><a href="#">Gloucester's Freddie Burns only three steps to rugby heaven and England</a></h3>
+						<p class="date-stamp"><time>5 hours ago</time></p>
+						<p>Gloucester's No10 Freddie Burns is desperate to impress before England's 10 November game against Fiji, he tells Robert Kitson</p>
+					</article>
+					<article data-importance="small-medium">
+						<h3><a href="#">Australia's Quade Cooper and ARU continue war of words over Wallabies</a></h3>
+						<p class="date-stamp"><time>3 hours ago</time></p>
+						<p>Quade Cooper has followed up his 'toxic environment' claims about Australia, questioning whether he will ever play for the Wallabies again</p>
+					</article>
+					<div id="more-rubgy-union-stories" class="show-hide" role="presentation">
+						<article data-importance="small">
+							<h3><a href="#">Enlightened refereeing sees attack receiving its rightful reward</a></h3>
+							<p class="date-stamp"><time>27 Sep 2012</time></p>
+						</article>
+						<article data-importance="small">
+							<h3><a href="#">Quade Cooper protests at Australia's 'toxic' Test rugby environment</a></h3>
+							<p class="date-stamp"><time>27 Sep 2012</time></p>
+						</article>
+						<article data-importance="small">
+							<h3><a href="#">Sale's dreams turn sour as defensive errors hamstring Danny Cipriani</a></h3>
+							<p class="date-stamp"><time>27 Sep 2012</time></p>
+						</article>
+					</div>
+					
+					<p><a href="#more-rubgy-union-stories" class="show-hide"><span>Show</span> more rugby union (3)</a></p>					
+				</div>
+			</section>	
+			<!-- end .rugby-union -->
+			
+			<section class="features">
+				<h2><a href="#">Features</a> <a href="#sport-features-stories" class="show-hide"><span>Hide</span></a></h2>
+				<div id="sport-features-stories" class="show-hide" role="presentation">
+					<article data-importance="medium">
+						<h3><a href="#">They joy of six: Big clubs slumming it</a></h3>
+						<p>A particularly brilliant edition this week, including tales of Manchester United fans on the rampage in the Second Division and the decline and rise of Leeds United</p>
+					</article>
+					<article data-importance="small">
+						<h3><a href="#">Premier League: 10 weekend talking points</a></h3>
+						<p>André Villas-Boas faces his first big test as he takes Tottenham to Old Trafford, Liverpool know they must deliver after an appalling start, and Monday night promises magic</p>
+					</article>
+					<article data-importance="small">
+						<h3><a href="#">NFL Talkboard: Week four</a></h3>
+						<p>Have your say on all week three's games in the NFL, plus take part in our Pick Six predictions game</p>
+					</article>
+					<ul class="carousel-controls">
+						<li><a href="#">Previous</a></li>
+						<li><a href="#">Next</a></li>
+					</ul>
+					<ol class="pagination">
+						<li><a href="#" class="selected">Page 1</a></li><li><a href="#">Page 2</a></li><li><a href="#">Page 3</a></li>
+					</ol>
+				</div>
+			</section>
+			<!-- end .features -->
+			
+			<section class="motorsport">
+				<h2><a href="#">Motor sport</a><a href="#sport-motorsport" class="show-hide"><span>Hide</span></a></h2>
+				<div id="sport-motorsport" class="show-hide" role="presentation">
+					<article data-importance="small-medium">
+						<h3><a href="#"><img src="/img/5x3.png" />Lewis Hamilton set to leave McLaren to join Mercedes</a></h3>
+						<p class="date-stamp"><time>Today</time></p>
+						<p>Hamilton will walk out on McLaren and sign for Mercedes, the German car giant is expected to announce later on Friday</p>
+					</article>		
+				</div>
+			</section>
+			<!-- end .golf -->
+			
+			<section class="horse-racing">
+				<h2><a href="#">Horse racing</a><a href="#sport-horse-racing" class="show-hide"><span>Hide</span></a></h2>
+				<div id="sport-horse-racing" class="show-hide" role="presentation">
+					<article data-importance="small-medium">
+						<h3><a href="#"><img src="/img/5x3.png" />Talking Horses</a></h3>
+						<p class="date-stamp"><time>Today</time></p>
+						<p>Will Hayler and Tony Paley: The latest news and best bets from day one of Newmarket's Cambridgeshire meeting in our daily racing blog</p>
+					</article>					
+				</div>
+			</section>
+			<!-- end .tennis -->
+			
+			<section class="other-sports">
+				<h2><a href="#">Other sports</a><a href="#sport-other-sports" class="show-hide"><span>Hide</span></a></h2>
+				<div id="sport-other-sports" class="show-hide" role="presentation">
+					<article data-importance="small-medium">
+						<h3><a href="#"><img src="/img/5x3.png" />Hatton seals Senchenko comeback</a></h3>
+						<p class="date-stamp"><time>Today</time></p>
+						<p><strong><a href="#">Boxing:</a></strong> Ricky Hatton's 24 November comeback fight will be against the Ukrainian Vyacheslav Senchenko</p>
+					</article>
+					<article data-importance="small-medium">
+						<h3><a href="#">López switches from Movistar to Sky</a></h3>
+						<p class="date-stamp"><time>Today</time></p>
+						<p><strong><a href="#">Cycling:</a></strong> Team Sky have added the Spanish rider David López to their roster for the next two seasons</p>
+					</article>
+					<article data-importance="small-medium">
+						<h3><a href="#">Waterhouse ready to lead Warrington</a></h3>
+						<p class="date-stamp"><time>Today</time></p>
+						<p><strong><a href="#">Rugby league:</a></strong> Trent Waterhouse has his eyes on a first Grand Final at Old Trafford for Warrington</p>
+					</article>
+				</div>
+			</section>	
+			<!-- end .rugby-union -->
+					
+			<!--#include virtual="/inc/statistics-sport-most-read.inc" -->	
+			
+			<!--#include virtual="/inc/footer.inc" -->						
+		</section>
+		<!-- end #main -->
+		
+		<!--#include virtual="/inc/top-stories-list-network-front.inc" -->
+	</div>
+	<!-- end .wrapper -->
+</body>
+
+</html>

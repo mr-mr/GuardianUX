@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+	
+	<title>The Guardian | Guardian.co.uk</title> 
+
+ 	<link rel="stylesheet" href="/css/fonts.css" type="text/css" media="screen" />	
+ 	<link rel="stylesheet/less" href="/css/statistics.less" type="text/css" media="screen" />	
+	
+	<script src="/js/hide-address-bar.js" type="text/javascript"></script>
+	
+	<script src="/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src="/js/statistics-sport-show-hide.js" type="text/javascript"></script>
+		
+	<script src="/js/less-1.3.0.min.js" type="text/javascript"></script>	
+</head>
+
+<body id="statistics-football-facup">
+
+	<div class="wrapper" role="presentation">
+		<!--#include virtual="/inc/header.inc" -->
+		
+		<h1>Football</h1>
+		
+		<article class="fixtures">
+			<h2>Today's games</h2>
+			<p class="section-control"><a href="#fixture-list"><strong>Hide</strong> games</a></p>
+			<section id="fixture-list">
+				<table>
+					<tbody>
+						<tr>
+							<td>EPL</td><td><a href="statistics-club.shtml">Everton</a></td><td><a href="live-blog-two.shtml">0-1</a></td><td><a hre="statistics-club-shtml">Newcastle</a></td><td>1st</td>
+						</tr>
+						<tr>
+							<td>EPL</td><td><a href="statistics-club.shtml">Man City</a></td><td><a href="live-blog-two.shtml">1-0</a></td><td><a hre="statistics-club-shtml">QPR</a></td><td>HT</td>
+						</tr>
+						<tr>
+							<td>EPL</td><td><a href="statistics-club.shtml">Norwich</a></td><td><a href="live-blog-two.shtml">0-0</a></td><td><a hre="statistics-club-shtml">Aston Villa</a></td><td>1st</td>
+						</tr>
+						<tr class="hide">
+							<td>EPL</td><td><a href="statistics-club.shtml">Stoke</a></td><td><a href="live-blog-two.shtml">0-0</a></td><td><a hre="statistics-club-shtml">Bolton</a></td><td>1st</td>
+						</tr>
+						<tr class="hide">
+							<td>EPL</td><td><a href="statistics-club.shtml">Sunderland</a></td><td><a href="live-blog-two.shtml">0-0</a></td><td><a hre="statistics-club-shtml">Man Utd</a></td><td>1st</td>
+						</tr>
+						<tr class="hide">
+							<td>EPL</td><td><a href="statistics-club.shtml">Swansea</a></td><td><a href="live-blog-two.shtml">0-0</a></td><td><a hre="statistics-club-shtml">Liverpool</a></td><td>1st</td>
+						</tr>
+						<tr class="hide">
+							<td>EPL</td><td><a href="statistics-club.shtml">Tottenham</a></td><td><a href="live-blog-two.shtml">0-0</a></td><td><a hre="statistics-club-shtml">Fulham</a></td><td>HT</td>
+						</tr>
+						<tr class="hide">
+							<td>EPL</td><td><a href="statistics-club.shtml">West Brom</a></td><td><a href="live-blog-two.shtml">0-0</a></td><td><a hre="statistics-club-shtml">Arsenal</a></td><td>HT</td>
+						</tr>
+						<tr class="hide">
+							<td>EPL</td><td><a href="statistics-club.shtml">Wigan</a></td><td>v</td><td><a hre="statistics-club-shtml">Wolves</a></td><td>17:30</td>
+						</tr>
+						<tr class="hide">
+							<td>EPL</td><td><a href="statistics-club.shtml">Chelsea</a></td><td><a href="statistics-match-report.shtml">2-1</a></td><td><a hre="statistics-club-shtml">Blackburn</a></td><td>FT</td>
+						</tr>
+					</tbody>
+				</table>
+				<ul>
+					<li><a id="show-hide" href="#"><span>Show more</span> games</a></li>
+					<li><a href="statistics-all-fixtures.shtml">All fixtures</a></li>
+					<li><a href="statistics-all-results.shtml">All results</a></li>
+				</ul>			
+			</section>
+		</article>
+		<article class="medium-large" data-has-pictures="yes">
+			<h2><a href="#"><img src="/img/5x3.png" />Lorem ipsum dolor sit amet consectetur adipiscing elit</a></h2>
+			<p>Donec sed odio dui vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+			<h3>More on this story</h3>
+			<ul class="related-items">
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+			</ul>
+		</article>
+		<article class="medium-large" data-has-pictures="yes">
+			<h2><a href="#"><img src="/img/5x3.png" />Maecenas faucibus mollis interdum</a></h2>
+			<p>Donec sed odio dui vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+			<h3>More on this story</h3>
+			<ul class="related-items">
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+			</ul>
+		</article>
+		<article class="medium" data-has-pictures="yes">
+			<h2><a href="#"><img src="/img/5x3.png" />Nulla vitae elit libero a pharetra augue</a></h2>
+			<p>Donec sed odio dui vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+			<h3>More on this story</h3>
+			<ul class="related-items">
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+			</ul>
+		</article>
+		<article class="small-medium" data-has-pictures="yes">
+			<h2><a href="#"><img src="/img/5x3.png" />Donec ullamcorper nulla non metus auctor fringilla</a></h2>
+			<p>Donec sed odio dui vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+			<h3>More on this story</h3>
+			<ul class="related-items">
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+			</ul>
+		</article>
+		<article class="small-medium" data-has-pictures="yes">
+			<h2><a href="#"><img src="/img/5x3.png" />Cras mattis consectetur purus sit amet fermentum</a></h2>
+			<p>Donec sed odio dui vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+			<h3>More on this story</h3>
+			<ul class="related-items">
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+			</ul>
+		</article>
+		<article class="small" data-has-pictures="no">
+			<h2><a href="#"><img src="/img/5x3.png" />Lorem ipsum dolor sit amet consectetur adipiscing elit</a></h2>
+			<p>Donec sed odio dui vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+			<h3>More on this story</h3>
+			<ul class="related-items">
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+			</ul>
+		</article>
+		<article class="small" data-has-pictures="no">
+			<h2><a href="#"><img src="/img/5x3.png" />Maecenas faucibus mollis interdum</a></h2>
+			<p>Donec sed odio dui vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+			<h3>More on this story</h3>
+			<ul class="related-items">
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+			</ul>
+		</article>
+		<article class="small" data-has-pictures="no">
+			<h2><a href="#"><img src="/img/5x3.png" />Nulla vitae elit libero a pharetra augue</a></h2>
+			<p>Donec sed odio dui vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+			<h3>More on this story</h3>
+			<ul class="related-items">
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+			</ul>
+		</article>
+		<article class="small" data-has-pictures="no">
+			<h2><a href="#"><img src="/img/5x3.png" />Donec ullamcorper nulla non metus auctor fringilla</a></h2>
+			<p>Donec sed odio dui vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+			<h3>More on this story</h3>
+			<ul class="related-items">
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+			</ul>
+		</article>
+		<article class="small" data-has-pictures="no">
+			<h2><a href="#"><img src="/img/5x3.png" />Cras mattis consectetur purus sit amet fermentum</a></h2>
+			<p>Donec sed odio dui vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+			<h3>More on this story</h3>
+			<ul class="related-items">
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+				<li><h4><a href="#">Maecenas faucibus mollis interdum</a></h4></li>
+			</ul>
+		</article>
+		<!--#include virtual="/inc/footer-nav-test.inc" -->
+	</div>
+	<!-- end .wrapper -->
+	
+</body>
+
+</html>

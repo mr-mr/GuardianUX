@@ -1,0 +1,218 @@
+.clear-fix:before,
+.clear-fix:after {
+  content: "";
+  display: table;
+}
+.clear-fix:after {
+  clear: both;
+}
+.clear-clear-fix:before,
+.clear-clear-fix:after {
+  clear: none;
+  content: none;
+  display: none;
+}
+.no-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+.reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/* general
+--------------------------------------------------*/
+.article-body hgroup {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+.article-body hgroup ul {
+  width: 100%;
+  margin-bottom: 0;
+}
+.article-body hgroup ul li {
+  display: inline-block;
+  vertical-align: top;
+}
+.article-body hgroup span {
+  display: inline-block;
+}
+.article-body hgroup .home,
+.article-body hgroup .away,
+.article-body hgroup .score,
+.article-body hgroup .time {
+  vertical-align: top;
+  padding: 5px 1.666666667% 5px 1.666666667%;
+  padding: 0.5rem 1.666666667% 0.5rem 1.666666667%;
+  background: #eeeeee;
+  border: 1px solid #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.article-body hgroup .home,
+.article-body hgroup .away {
+  width: 37%;
+}
+.article-body hgroup .score {
+  width: 16%;
+  margin-bottom: 0;
+}
+.article-body hgroup .time {
+  width: 10%;
+}
+.article-body hgroup .match-details .home,
+.article-body hgroup .match-details .away,
+.article-body hgroup .match-details .score,
+.article-body hgroup .match-details .time {
+  padding: 0px 0px 0px 0px;
+  padding: 0rem 0px 0rem 0px;
+  background: none;
+}
+.article-body hgroup h1 {
+  margin-bottom: 0;
+}
+.article-body section.squad-sheets p,
+.article-body section.live-text p,
+.article-body section.match-report p,
+.article-body section.match-report-one p,
+.article-body section.match-report-two p {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+.article-body section.squad-sheets > p:last-child,
+.article-body section.live-text > p:last-child {
+  margin-bottom: 0;
+  padding: 9px 0px 9px 0px;
+  padding: 0.9rem 0px 0.9rem 0px;
+  border-top: 1px dotted #cccccc;
+}
+.article-body section.squad-sheets h3 {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+.article-body section.live-text,
+.article-body section#comments {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #cccccc;
+}
+.article-body section.match-report-one > p:last-child,
+.article-body section.match-report-two > p:last-child {
+  margin-bottom: 0;
+  padding: 9px 0px 9px 0px;
+  padding: 0.9rem 0px 0.9rem 0px;
+  border-top: 1px dotted #cccccc;
+}
+.article-body section.match-report-one {
+  border-bottom: 1px dotted #cccccc;
+}
+.article-body section.match-report-two {
+  margin-top: 20px;
+  margin-top: 2rem;
+}
+.article-body section.tabs #live,
+.article-body section.tabs #statistics,
+.article-body section.tabs #scores-table,
+.article-body section.tabs #live-gallery,
+.article-body section.tabs #scores,
+.article-body section.tabs #table {
+  border-bottom: none;
+}
+.article-body #scores-table section:first-of-type {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+.article-body #comments > p:last-child {
+  margin-bottom: 0;
+}
+/* typography
+--------------------------------------------------*/
+#article.match h1 {
+  font-size: 17px;
+  font-size: 1.7000000000000002rem;
+  line-height: 20px;
+  line-height: 2rem;
+}
+.article-body hgroup .home {
+  text-align: right;
+}
+.article-body hgroup .score {
+  text-align: center;
+}
+.article-body hgroup .away,
+.article-body hgroup .time {
+  text-align: left;
+}
+.article-body hgroup .time {
+  font-size: 12px;
+  font-size: 1.2000000000000002rem;
+  line-height: 20px;
+  line-height: 2rem;
+}
+.article-body hgroup .match-details {
+  font-size: 12px;
+  font-size: 1.2000000000000002rem;
+  line-height: 20px;
+  line-height: 2rem;
+}
+.article-body section.squad-sheets h2,
+.article-body section.live-blog h2 {
+  font-family: "guardian-regular", georgia, serif;
+  font-weight: normal;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 20px;
+  line-height: 2rem;
+}
+.article-body section.squad-sheets h3,
+.article-body section.live-blog h3 {
+  font-size: 17px;
+  font-size: 1.7000000000000002rem;
+  line-height: 20px;
+  line-height: 2rem;
+}
+.article-body section.match-report-one hgroup h2,
+.article-body section.match-report-two hgroup h2 {
+  font-family: "guardian-regular", georgia, serif;
+  font-weight: normal;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 20px;
+  line-height: 2rem;
+  text-transform: none;
+}
+.article-body section.match-report-one hgroup h3,
+.article-body section.match-report-two hgroup h3 {
+  font-size: 12px;
+  font-size: 1.2000000000000002rem;
+  line-height: 20px;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+.article-body #scores-table h3 {
+  font-family: "guardian-regular", georgia, serif;
+  font-weight: normal;
+  font-size: 17px;
+  font-size: 1.7000000000000002rem;
+  line-height: 20px;
+  line-height: 2rem;
+}
+@media only screen and (min-width: 480px) {
+  #article.match h1 {
+    font-size: 24px;
+    font-size: 2.4000000000000004rem;
+    line-height: 30px;
+    line-height: 3rem;
+  }
+  .article-body hgroup .time,
+  .article-body hgroup .match-details {
+    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 30px;
+    line-height: 3rem;
+  }
+}

@@ -1,0 +1,38 @@
+.clear-fix:before,.clear-fix:after{content:"";display:table}
+.clear-fix:after{clear:both}
+.clear-clear-fix:before,.clear-clear-fix:after{clear:none;content:none;display:none}
+br:last-child{clear:both}
+.comment-teaser .response-to,.article-comments .response-to,.live-blog-stream .response-to,.comment-teaser .comment-tools,.article-comments .comment-tools,.live-blog-stream .comment-tools{font-size:12px;font-size:1.2000000000000002rem;line-height:20px;line-height:2rem;color:#666}
+.comment-teaser .comment-details,.article-comments .comment-details,.live-blog-stream .comment-details{list-style:none;margin-left:0}
+.comment-teaser .comment-tools-reply-button,.article-comments .comment-tools-reply-button,.live-blog-stream .comment-tools-reply-button{color:#333}.comment-teaser .comment-tools-reply-button:hover,.article-comments .comment-tools-reply-button:hover,.live-blog-stream .comment-tools-reply-button:hover{color:#fff}
+.article-comments .article-comments-close-control{text-align:center}.article-comments .article-comments-close-control:hover{color:#fff}
+.list-poll-options{list-style:none}.list-poll-options a{text-align:center;color:#fff}.list-poll-options a:hover{color:#fff}
+.comment-teaser-ctas{list-style:none}
+.comment-teaser-ctas-reply a{color:#fff}
+.comment-teaser-ctas-reply,.comment-teaser-ctas-view{text-align:center}.comment-teaser-ctas-reply a:hover,.comment-teaser-ctas-view a:hover{color:#fff}
+.comment-teaser #comment-form,.article-comments #comment-form,.live-blog-stream #comment-form{margin-bottom:20px;margin-bottom:2rem}.comment-teaser #comment-form:before,.article-comments #comment-form:before,.live-blog-stream #comment-form:before,.comment-teaser #comment-form:after,.article-comments #comment-form:after,.live-blog-stream #comment-form:after{content:"";display:table}
+.comment-teaser #comment-form:after,.article-comments #comment-form:after,.live-blog-stream #comment-form:after{clear:both}
+.comment-teaser .comment,.article-comments .comment,.live-blog-stream .comment{margin-bottom:10px;margin-bottom:1rem;padding-bottom:9px;padding-bottom:.9rem;border-bottom:1px dotted #e5e5e5}.comment-teaser .comment.reply,.article-comments .comment.reply,.live-blog-stream .comment.reply{margin-left:4.5%}
+.comment-teaser .comment:only-of-type,.article-comments .comment:only-of-type,.live-blog-stream .comment:only-of-type{margin-bottom:0;border:none}
+.comment-teaser .comment p,.article-comments .comment p,.live-blog-stream .comment p{clear:both;margin-bottom:10px;margin-bottom:1rem}
+.comment-teaser .comment-author-avatar,.article-comments .comment-author-avatar,.live-blog-stream .comment-author-avatar{float:left;vertical-align:top;width:48px;margin:0 2% 10px 0;margin:0 2% 1rem 0}
+.comment-teaser .comment-tools,.article-comments .comment-tools,.live-blog-stream .comment-tools{margin-bottom:0;margin-left:0}.comment-teaser .comment-tools li,.article-comments .comment-tools li,.live-blog-stream .comment-tools li{display:inline-block;margin-right:10px}.comment-teaser .comment-tools li:last-child,.article-comments .comment-tools li:last-child,.live-blog-stream .comment-tools li:last-child{margin-right:0}
+.comment-teaser .comment-tools-reply-button,.article-comments .comment-tools-reply-button,.live-blog-stream .comment-tools-reply-button{width:auto;padding:10px 5px 10px 5px;padding:1rem 5px 1rem 5px;background:#e5e5e5}.comment-teaser .comment-tools-reply-button:hover,.article-comments .comment-tools-reply-button:hover,.live-blog-stream .comment-tools-reply-button:hover{background:#003656}
+@media (min-width:960px){.comment-teaser .comment-form-post,.article-comments .comment-form-post,.live-blog-stream .comment-form-post{float:right;display:block} .comment-teaser .comment-form-preview,.article-comments .comment-form-preview,.live-blog-stream .comment-form-preview{float:left;display:block}}
+.article-comments .form-comment-controls{display:none;margin-bottom:20px;margin-bottom:2rem;padding:10px 0 10px 0;padding:1rem 0 1rem 0;border-top:1px solid #e5e5e5;border-bottom:1px dotted #e5e5e5}.article-comments .form-comment-controls ul{margin-bottom:0}
+@media (min-width:960px){.article-comments .form-comment-controls{clear:both;display:block}.article-comments .form-comment-controls li{display:inline-block;margin:0 2% 0 0}}
+.article-comments .article-comments-close-control{display:block;padding:10px 2% 10px 2%;padding:1rem 2% 1rem 2%;background:#e5e5e5}.article-comments .article-comments-close-control:hover{background:#003656}
+.comment-teaser{border-top:5px solid #e5e5e5}@media (min-width:750px){.comment-teaser{border-top-width:1px}}
+.list-poll-options{position:relative;height:100px;height:10rem;margin:0 0 10px 0;margin:0 0 1rem 0;background:url('../img/comment-teaser-poll.svg') center center no-repeat;background-size:auto auto}.list-poll-options li{position:absolute;width:20%;top:50%;margin-top:-15px;margin-top:-1.5rem}.list-poll-options li:first-child{right:55%}
+.list-poll-options li:last-child{left:55%}
+.list-poll-options .button-poll-option{display:block;width:100%;padding:5px 5px 5px 5px;padding:.5rem 5px .5rem 5px;background:#005689;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.list-poll-options .button-poll-option:hover{background:#003656}
+@media (min-width:960px){.list-poll-options li{width:40%}}
+.comment-teaser-ctas{margin:0 0 20px 0;margin:0 0 2rem 0}
+.comment-teaser-ctas-reply a,.comment-teaser-ctas-view a{display:block;padding:10px 2% 10px 2%;padding:1rem 2% 1rem 2%}.comment-teaser-ctas-reply a:hover,.comment-teaser-ctas-view a:hover{background:#003656}
+.comment-teaser-ctas-reply{margin-bottom:10px;margin-bottom:1rem}.comment-teaser-ctas-reply a{background:#005689}
+.comment-teaser-ctas-view a{background:#e5e5e5}
+.live-blog-stream-item .comment-teaser-ctas:before,.live-blog-stream-item .comment-teaser-ctas:after{content:"";display:table}
+.live-blog-stream-item .comment-teaser-ctas:after{clear:both}
+.live-blog-stream-item .comment-teaser-ctas-reply,.live-blog-stream-item .comment-teaser-ctas-view{width:48%}
+.live-blog-stream-item .comment-teaser-ctas-reply{float:left}
+.live-blog-stream-item .comment-teaser-ctas-view{float:right}

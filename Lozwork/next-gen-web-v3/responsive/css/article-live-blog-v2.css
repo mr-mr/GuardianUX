@@ -1,0 +1,31 @@
+.clear-fix:before,.clear-fix:after{content:"";display:table}
+.clear-fix:after{clear:both}
+.clear-clear-fix:before,.clear-clear-fix:after{clear:none;content:none;display:none}
+br:last-child{clear:both}
+.match-statistics ul{list-style:none}
+.football-scores td:first-child{text-align:right}
+.football-scores td:nth-child(2){text-align:center}
+@media (min-width:960px){.football-scores,.football-league-table{font-size:13px;font-size:1.3rem;line-height:20px;line-height:2rem}}
+.match-statistics{margin-top:10px;margin-top:1rem}.match-statistics dl{margin-bottom:10px;margin-bottom:1rem;padding-bottom:9px;padding-bottom:.9rem;border-bottom:1px dotted #e5e5e5}.match-statistics dl:before,.match-statistics dl:after{content:"";display:table}
+.match-statistics dl:after{clear:both}
+.match-statistics dl:last-child{margin-bottom:20px;margin-bottom:2rem;padding:0;border:none}.match-statistics dl:last-child dd:nth-of-type(-n+2){margin-bottom:20px;margin-bottom:2rem}
+.match-statistics dl ul{width:48%;margin:0}.match-statistics dl ul:first-child{float:left}
+.match-statistics dl ul:first-child{float:right}
+.match-statistics dl ul:only-child{float:none;width:100%}.match-statistics dl ul:only-child li{float:left;width:50%;padding:5px 3% 5px 3%;padding:.5rem 3% .5rem 3%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.match-statistics dl ul:only-child li:first-child{text-align:right;background:#e5e5e5}
+.match-statistics dl ul:only-child li:last-child{text-align:left;background:#eee}
+.football-scores{width:100%;margin-bottom:20px;margin-bottom:2rem}.football-scores:last-of-type{margin-bottom:0}
+.football-scores tr{background:#eee}.football-scores tr[data-is-link="true"]{color:#005689;cursor:pointer}.football-scores tr[data-is-link="true"]:hover{color:#003656;background:#e5e5e5}
+.football-scores tr[data-is-link="true"]:visited{color:#0076bc}
+.football-scores th,.football-scores td{vertical-align:top;padding:5px 1.666666667% 5px 1.666666667%;padding:.5rem 1.666666667% .5rem 1.666666667%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.football-scores td:first-child,.football-scores td:nth-child(3){width:34%}
+.football-scores td:nth-child(2){width:15%}
+.football-scores td:last-child{width:18%}
+.live-blog-summary .live-blog-summary-initial{margin-bottom:0}
+.football-league-table{width:100%;margin-bottom:20px;margin-bottom:2rem}.football-league-table tbody tr:first-child td,.football-league-table tbody tr:nth-child(4) td,.football-league-table tbody tr:nth-last-child(4) td{border-collapse:collapse;border-bottom:2px solid #e5e5e5}
+.football-league-table tr{background:#eee}.football-league-table tr[data-is-link="true"]{cursor:pointer}.football-league-table tr[data-is-link="true"]:hover{background:#e5e5e5}
+.football-league-table thead tr:nth-child(n){background:transparent}
+.football-league-table thead tr:first-child th{text-align:center}
+.football-league-table th,.football-league-table td{text-align:right;vertical-align:top;padding:5px 1.666666667% 5px 1.666666667%;padding:.5rem 1.666666667% .5rem 1.666666667%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.football-league-table th:nth-child(2),.football-league-table td:nth-child(2){text-align:left}
+.football-league-table th:first-child,.football-league-table td:first-child{width:7%}
+.football-league-table th:nth-child(n+3),.football-league-table td:nth-child(n+3){width:8%}
+.football-league-table .primary-detail,.football-league-table .secondary-detail,.football-league-table .full-detail{display:none}

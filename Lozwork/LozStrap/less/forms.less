@@ -1,0 +1,85 @@
+// ------------------------------------------------------------------------------------------------------------------------------------------------- 
+// Table of contents
+// --------------------------------------------------
+// 1.0 global variables
+// 2.0 base styles
+// 3.0 text boxes
+// 4.0 dropdowns
+// 5.0 radio buttons & checkboxes
+// 6.0 buttons
+// ------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+// 1.0 global variables
+// --------------------------------------------------
+@vertical-padding:8;
+
+// 2.0 base styles
+// --------------------------------------------------
+label, input[type="text"], textarea, select, input[type="submit"], input[type="button"], button, .button {
+	width:100%;
+	.no-radius;
+	.box-sizing;
+	@media only screen and (min-width:@medium) {
+		width:auto;
+	}
+}
+
+label, input[type="text"], textarea, select, input[type="submit"], input[type="button"], button, .button {
+	.margin-bottom(10);
+	&:last-child {
+		margin-bottom:0;
+	}
+}
+
+select, input[type="submit"], input[type="button"], button, .button {
+	cursor:pointer;
+}
+
+label {
+	display:block;
+	@media (min-width:@medium) {
+		display:inline-block;
+	}
+}
+
+// 3.0 text boxes
+// --------------------------------------------------
+input[type="text"], textarea {
+	.padding(@vertical-padding,5,@vertical-padding,5);
+	border:1px solid @grey;
+	.box-sizing;
+}
+
+
+// 4.0 dropdowns
+// --------------------------------------------------
+select {
+	.padding(@vertical-padding,10,10,@vertical-padding,300);
+	border:1px solid @grey;		
+}
+
+
+// 5.0 radio buttons & checkboxes
+// --------------------------------------------------
+
+// 6.0 buttons
+// --------------------------------------------------
+input[type="submit"], input[type="button"], button, .button a {
+	-webkit-appearance:none;
+	.padding(@vertical-padding,10,10,@vertical-padding,300);
+	background:@link;
+	.shadow;
+	.box-sizing;
+	&:hover {
+		background:@link-hover;
+		.no-shadow;
+	}
+	&:active {
+		.top(1);
+	}
+}
+
+.button a {
+	display:block;
+}
+

@@ -1,0 +1,123 @@
+/* imports
+--------------------------------------------------*/
+.clear-fix:before,
+.clear-fix:after {
+  content: "";
+  display: table;
+}
+.clear-fix:after {
+  clear: both;
+}
+.no-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+.reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/* general
+--------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  -webkit-text-size-adjust: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "guardian-regular", georgia, serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 20px;
+  line-height: 2rem;
+  text-align: center;
+  /*	background:url("/img/baseline-20.png") left top repeat;*/
+
+}
+.wrapper {
+  width: 93.75%;
+  height: 100%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+header,
+hgroup,
+nav,
+footer,
+section,
+article,
+figure,
+figcaption {
+  display: block;
+}
+header h1 {
+  position: relative;
+  width: 120px;
+  height: 21px;
+  overflow: hidden;
+  margin: 10px 0px 9px 0px;
+  margin: 1rem 0px 0.9rem 0px;
+}
+header h1 a {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 120px;
+  height: 21px;
+  background: url("/img/logo.gif") center center no-repeat;
+  background-size: 120px 21px;
+  border: none;
+}
+strong.live-latest {
+  font-family: helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  font-size: 1rem;
+  line-height: 10px;
+  line-height: 1rem;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 2px;
+  background: #cc0000;
+}
+/* links
+	--------------------------------------------------*/
+a {
+  color: #005689;
+  text-decoration: none;
+}
+a:hover,
+a:visited:hover {
+  color: #003656;
+  border-bottom: 1px dotted #003656;
+}
+/* typography
+	--------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  vertical-align: baseline;
+}
+h2 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 20px;
+  line-height: 2rem;
+  color: #000;
+  /*		.margin-all(0,0,10,0);*/
+
+}

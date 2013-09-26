@@ -1,0 +1,154 @@
+// ------------------------------------------------------------------------------------------------------------------------------------------------- 
+// Table of contents
+// --------------------------------------------------
+// 1.0 imports
+// 2.0 variables
+// 3.0 general
+// 4.0 type
+// 5.0 layout
+// 6.0 modules
+// -------------------------------------------------------------------------------------------------------------------------------------------------  
+
+// 1.0 imports
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+@import "base-navigation-subsections.less";
+
+// 2.0 variables
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+@current-page:section-twelve;
+
+// 3.0 general
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+
+// 4.0 type
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+
+// 5.0 layout
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+
+// 6.0 modules
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+.navigation-horizontal {
+	@media (min-width:@small-medium) {
+		.section-five {
+			display:none;
+		}
+		.@{current-page} {
+			display:block;
+		}
+	}
+	@media (min-width:@bp-1) {
+		.section-five {
+			display:block;
+		}
+		.section-six {
+			display:none;
+		}
+	}
+	@media (min-width:@bp-2) {
+		.section-six {
+			display:block;
+		}
+		.section-seven {
+			display:none;
+		}
+	}
+	@media (min-width:@bp-3) {
+		.section-seven {
+			display:block;
+		}
+		.section-eight {
+			display:none;
+		}
+	}
+	@media (min-width:@bp-5) {
+		.section-eight {
+			display:block;
+		}
+		.section-nine {
+			display:none;
+		}
+	}
+}	
+
+.us-edition {
+	.navigation-horizontal {
+		@media (min-width:@bp-7) {
+			.section-nine {
+				display:block;
+			}
+			.section-ten, .section-eleven {
+				display:none;
+			}
+		}
+		@media (min-width:@bp-9) {
+			.section-ten, .section-eleven {
+				display:block;
+			}
+		}
+	}
+}
+
+#navigation-dropdown {
+	.navigation-primary {
+		.@{current-page} {
+			width:100%;
+			float:none;
+		}		
+	}
+	.@{current-page} {
+		display:block;
+	}
+	@media (min-width:@small-medium) {
+		.section-five, .section-six, .section-seven {
+			display:block;
+		}
+		.@{current-page} {
+			display:none;
+		}
+	}
+	@media (min-width:@bp-1) {
+		.section-five {
+			display:none;
+		}
+	}
+	@media (min-width:@bp-2) {
+		.section-six {
+			display:none;
+		}
+	}
+	@media (min-width:@bp-3) {
+		.section-seven {
+			display:none;
+		}
+		.section-eight {
+			display:block;
+		}
+	}
+	@media (min-width:@bp-5) {
+		.section-eight {
+			display:none;
+		}
+		.section-nine {
+			display:block;
+		}
+	}
+}
+	
+.us-edition {
+	#navigation-dropdown {
+		@media (min-width:@bp-7) {
+			.section-nine {
+				display:none;
+			}
+			.section-ten, .section-eleven {
+				display:block;
+			}
+		}
+		@media (min-width:@bp-9) {
+			.section-ten, .section-eleven {
+				display:none;
+			}
+		}		
+	}
+}

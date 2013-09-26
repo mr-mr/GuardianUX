@@ -1,0 +1,324 @@
+// ------------------------------------------------------------------------------------------------------------------------------------------------- 
+// Table of contents
+// --------------------------------------------------
+// 1.0 imports
+// 2.0 variables
+// 3.0 general
+// 4.0 type
+// 5.0 layout
+// 6.0 modules
+// -------------------------------------------------------------------------------------------------------------------------------------------------  
+
+// 1.0 imports
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+@import "library.less";
+@import "colors.less";
+@import "fonts.less";
+@import "breakpoints.less";
+@import "lozstrap.tabs.less";
+
+// 2.0 variables
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+
+// 3.0 general
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+
+// 4.0 type
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+.is-expanded {
+	header h3:nth-child(n) {
+		.font-size(24,30);
+		font-family:@serif;
+		font-weight:normal;
+		.margin-bottom(20);
+	}
+}
+
+h2 {
+	.show-hide-control {
+		.font-size(12,20);
+		font-family:@serif-bold;
+		color:@link;
+		&:hover, &:visited:hover {
+			color:@link-hover;
+		}
+	}
+}
+
+.article-update-control {
+	dt {
+		font-family:@serif;
+		font-weight:normal;
+	}
+	ul {
+		text-align:center;
+	}
+	a {
+		&:hover, &:visited:hover, &.selected {
+			color:#fff;
+		}
+		&.is-selected {
+			font-family:@serif-bold;
+			color:#fff;
+		}
+	}
+}
+
+.article-related {
+	p {
+		.font-size(13,20);
+	}
+}
+
+.articles-most-popular {
+	.tab-pane {
+		@media (min-width:@medium-large) {
+			.show-hide {
+				.font-size(12,16);
+			}
+		}
+	}
+}
+
+.page-controls {
+	list-style:none;
+	.article-section {
+		.font-size(15,20);
+	}
+}
+
+// 5.0 layout
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+.container-article-comments {
+	position:relative;
+}
+
+.articles-most-popular {
+	@media (min-width:@medium) {
+		width:68%;
+	}
+	@media (min-width:@medium-large) {
+		.clear-fix;
+		width:100%;
+		.tab-pane{
+			.margin(0,0,10,0);
+			.padding(0,0,20,0);
+			background:none;
+			border:none;
+			border-bottom:5px solid @light-grey;
+			.clear-fix;
+			&:last-child {
+				border:none;
+			}
+		}
+		.article {
+			width:60%;
+			margin-left:20%;
+		}
+	}	
+}
+
+// 6.0 modules
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+#article-body, #article-comments {
+	clear:both;
+}
+
+.article {
+	&[data-importance="small"], &[data-importance="small-medium"], &[data-importance="medium"], &[data-importance="medium-large"], &[data-importance="large"] {
+		img, h3 {
+			-webkit-transition:all .2s ease-in-out;
+		}
+		.show-on-expand {
+			display:none;
+		}
+	}
+}
+
+.is-expanded {
+	&[data-importance="small"], &[data-importance="small-medium"], &[data-importance="medium"], &[data-importance="medium-large"], &[data-importance="large"] {
+		img {
+			float:none;
+			width:100%;
+			min-width:100%;
+		}
+		.show-on-expand {
+			display:block;
+		}
+	}
+}
+
+h2 {
+	.show-hide-control {
+		float:right;
+		display:inline;
+		vertical-align:baseline;
+		margin:0;
+		padding:0;
+		background:none;
+		&:hover {
+			padding:0;
+			background:none;
+		}
+	}
+}
+
+.article-summary {
+	.margin-bottom(20);
+	.padding-bottom(10);
+	border-bottom:1px dotted @light-grey;
+	#article-live-blog-summary {
+		display:block;
+		margin-bottom:0;
+	}
+}
+
+#article-comments {
+	border-top:5px solid @light-grey;
+	#show-comments {
+		.margin-top(20);
+		border-top:5px solid @light-grey;		
+	}
+}
+
+.article-related {
+	padding-right:2%;
+	padding-left:2%;
+	.box-sizing;
+}
+
+aside {
+	.padding-bottom(10);
+	border-top:5px solid @light-grey;
+	border-bottom:5px solid @light-grey;
+}
+
+.articles-most-popular {
+	.tab-pane {
+		> h2 {
+			display:none;
+		}
+		.article:nth-child(n+2) {
+			border-top:1px dotted @mid-grey;
+		}
+		.show-hide {
+			border-top:1px dotted @mid-grey;
+		}
+		.show-hide-control {
+			background:@mid-grey;
+			&:hover {
+				background:@link-hover;
+			}
+		}
+	}
+	@media (min-width:@medium-large) {
+		> h2 {
+			display:none
+		}
+		.tabs {
+			display:none;
+		}
+		.tab-pane {
+			h2 {
+				display:block;
+			}
+			.show-hide {
+				text-align:center;
+				margin-top:0;
+				padding-top:0;
+				border-top:2px solid @light-grey;
+			}
+
+			.show-hide-control {
+				display:inline-block;
+				margin-top:0;
+				background:@light-grey;
+				.radius(0,0,3px,3px);
+				&:hover {
+					background:@link-hover;
+				}			
+			}
+		}
+	}
+}
+
+.article-update-control {
+	clear:both;
+	width:100%;
+	background:@background;
+	dt, dd, li {
+		display:inline-block;
+		vertical-align:middle;
+	}
+	ul {
+		width:100%;
+		margin:0;
+		padding:0;
+	}
+	dt, li a {
+		.padding(10,5,10,5);
+		.box-sizing;
+	}
+	dt, dd, li {
+		width:50%;
+	}
+	li {
+		border-left:1px solid #fff;
+		.box-sizing;
+	}
+	a {
+		display:block;
+		&:hover, &:visited:hover, &.is-selected {
+			background:@link-hover;
+		}
+		&.is-selected {
+			background:@link;
+			cursor:default;
+		}
+	}
+}
+
+
+.page-controls {
+	display:none;
+	@media (min-width:@medium-large) {
+		display:block;
+		width:100%;
+		.article {
+			position:fixed;
+			top:50%;
+			width:60px;
+			min-height:72px;
+			margin-top:-36px;
+			background-size:100%;
+			background-color:@light-grey;
+			background-repeat:no-repeat;
+			-webkit-transition:opacity .2s ease-in-out;
+			.box-sizing;
+			h2, h3, p {
+				display:none;
+			}
+			&:hover {
+				width:20%;
+				.padding(10,1%,10,1%);
+				cursor:pointer;
+				h2, h3, p {
+					display:block;
+				}
+			}
+		}
+		.page-next {
+			right:0;
+			background-image:url('../img/in-body-next.svg');
+		}
+		.page-previous {
+			left:0;
+			background-image:url('../img/in-body-prev.svg');
+		}
+		.page-next, .page-previous {
+			&:hover {
+				background-image:none;
+			}
+		}
+	}
+}
