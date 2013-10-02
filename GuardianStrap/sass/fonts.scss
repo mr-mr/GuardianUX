@@ -11,6 +11,13 @@ $font-path:"../fnt/";
 $sans-serif:Helmet,Freesans,sans-serif;
 $serif:Georgia,serif;
 
+@font-face {
+  font-family: 'FontAwesome';
+  src:url('../fnt/fontawesome-webfont.woff?v=#{$FontAwesomeVersion}') format('woff')
+//  src: url('#{$FontAwesomePath}/FontAwesome.otf') format('opentype'); // used when developing fonts
+  font-weight: normal;
+  font-style: normal;
+}
 
 // @sans-serif-italic:;
 // @serif-italic:;
@@ -28,7 +35,7 @@ $serif:Georgia,serif;
 //     font-style:normal;
 // } 
 
-// @font-face {
+//$font-face {
 //     font-family:"";
 //     src:url('@{font-path}.woff') format('woff');
 //     font-weight:normal;
