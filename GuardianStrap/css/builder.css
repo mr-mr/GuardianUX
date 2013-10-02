@@ -1,0 +1,16 @@
+/* Current import list to implement...
+colors
+library
+adverts
+media
+screen
+template
+*/
+#header {
+  color: #4d926f;
+}
+h1 {
+  color: #4d926f;
+  font: Helmet, Freesans, sans-serif;
+  font-size: 2.3em;
+}

@@ -4,7 +4,7 @@
 // 1.Title
 //-----------------------------
 // Imports would go here
-$import "fonts.scss";
+@import "fonts.scss";
 //
 /* Current import list to implement...
 * colors
@@ -15,13 +15,14 @@ $import "fonts.scss";
 * template
 */
 
-$color: #666;
+$color: #333;	
 
-#header {
-  color: $color;
-}
 h1 {
   color: $color;
   font: $sans-serif;
-  font-size: 1.3em;
+  font-size: 4.3em;
+}
+
+img {
+	width:50%;
 }
