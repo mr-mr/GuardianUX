@@ -6,10 +6,10 @@
 
 // 1.0 fonts
 // ------------------------------------------------------------------------------------------------------------------------------------------------- 
-@font-path:"../fnt/";
+//$font-path:"../fnt/";
 
-@sans-serif:Helmet,Freesans,sans-serif;
-@serif:Georgia,serif;
+$sans-serif:Helvetica, sans-serif;
+$serif:Georgia,serif;
 
 
 // @sans-serif-italic:;
@@ -28,7 +28,7 @@
 //     font-style:normal;
 // } 
 
-// @font-face {
+//$font-face {
 //     font-family:"";
 //     src:url('@{font-path}.woff') format('woff');
 //     font-weight:normal;
