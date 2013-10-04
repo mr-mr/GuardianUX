@@ -1632,18 +1632,30 @@ article.tabs section h3 {
   color: #fff;
   background-color: #fff; }
 
-article.tabs section:nth-child(2) h3 {
-  left: 150px; }
+article.tabs section:nth-child(n+1++) h3 {
+  left: 10px; }
 
-article.tabs section:nth-child(3) h3 {
-  left: 280px; }
+/*
+article.tabs section:nth-child(2) h3
+{
+	left: 150px;
+}
 
-article.tabs section:nth-child(4) h3 {
-  left: 440px; }
+article.tabs section:nth-child(3) h3
+{
+	left: 280px;
+}
 
-article.tabs section:nth-child(5) h3 {
-  left: 580px; }
+article.tabs section:nth-child(4) h3
+{
+	left: 440px;
+}
 
+article.tabs section:nth-child(5) h3
+{
+	left: 580px;
+}
+*/
 article.tabs section h3 a {
   display: block;
   width: 100%;
