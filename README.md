@@ -10,7 +10,7 @@ Split into front pages, articles, soulmates, and identity.
 Everything is styled with Sass.
 Reference can be found <a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html">here</a>
 
-<button><a href="http://htmlpreview.github.io/?https://github.com/mr-mr/GuardianUX/blob/master/GuardianStrap/index.html#tab1"The Guardian UX site</a></button>
+<button><a href="http://htmlpreview.github.io/?https://github.com/mr-mr/GuardianUX/blob/master/GuardianStrap/index.html#tab1">The Guardian UX site</a></button>
 
 More to come soon.
 <!--
