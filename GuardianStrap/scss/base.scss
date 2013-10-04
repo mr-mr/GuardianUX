@@ -59,7 +59,7 @@ ul {
 	top:0;
 	height:5px;
 	background:#254a82;
-	//position: fixed;
+	position: fixed;
 }
 
 .border-line{
@@ -279,7 +279,7 @@ article.tabs section h3
 	position: absolute;
 	font-size: 1.1em;
 	font-weight: normal;
-	width: 130px;
+	width: 140px;
 	height: 60px;
 	top: -40px;
 	left: 10px;
@@ -291,31 +291,31 @@ article.tabs section h3
 	//border-top: 1px solid #333;
 }
 
-article.tabs section:nth-child(n+1++) h3
+/*article.tabs section:nth-child(n+2) h3
 {
-	left:10px;
-}
-/*
+	left:100px;
+}*/
+
 article.tabs section:nth-child(2) h3
 {
-	left: 150px;
+	left: 170px;
 }
 
 article.tabs section:nth-child(3) h3
 {
-	left: 280px;
+	left: 300px;
 }
 
 article.tabs section:nth-child(4) h3
 {
-	left: 440px;
+	left: 460px;
 }
 
 article.tabs section:nth-child(5) h3
 {
-	left: 580px;
+	left: 600px;
 }
-*/
+
 
 article.tabs section h3 a
 {

@@ -1474,7 +1474,8 @@ ul {
   right: 0;
   top: 0;
   height: 5px;
-  background: #254a82; }
+  background: #254a82;
+  position: fixed; }
 
 .border-line {
   border: 1px solid #e5e5e5;
@@ -1623,7 +1624,7 @@ article.tabs section h3 {
   position: absolute;
   font-size: 1.1em;
   font-weight: normal;
-  width: 130px;
+  width: 140px;
   height: 60px;
   top: -40px;
   left: 10px;
@@ -1632,30 +1633,22 @@ article.tabs section h3 {
   color: #fff;
   background-color: #fff; }
 
-article.tabs section:nth-child(n+1++) h3 {
-  left: 10px; }
-
-/*
-article.tabs section:nth-child(2) h3
+/*article.tabs section:nth-child(n+2) h3
 {
-	left: 150px;
-}
+	left:100px;
+}*/
+article.tabs section:nth-child(2) h3 {
+  left: 170px; }
 
-article.tabs section:nth-child(3) h3
-{
-	left: 280px;
-}
+article.tabs section:nth-child(3) h3 {
+  left: 300px; }
 
-article.tabs section:nth-child(4) h3
-{
-	left: 440px;
-}
+article.tabs section:nth-child(4) h3 {
+  left: 460px; }
 
-article.tabs section:nth-child(5) h3
-{
-	left: 580px;
-}
-*/
+article.tabs section:nth-child(5) h3 {
+  left: 600px; }
+
 article.tabs section h3 a {
   display: block;
   width: 100%;
