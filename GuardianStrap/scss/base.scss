@@ -291,6 +291,11 @@ article.tabs section h3
 	//border-top: 1px solid #333;
 }
 
+article.tabs section:nth-child(n+1++) h3
+{
+	left:10px;
+}
+/*
 article.tabs section:nth-child(2) h3
 {
 	left: 150px;
@@ -310,6 +315,7 @@ article.tabs section:nth-child(5) h3
 {
 	left: 580px;
 }
+*/
 
 article.tabs section h3 a
 {
