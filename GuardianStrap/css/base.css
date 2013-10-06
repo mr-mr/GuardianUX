@@ -1524,13 +1524,13 @@ h1, h2, h3, h4 {
 h1 {
   color: #333333;
   font-family: "guardian-regular";
-  font-size: 2.85714em;
+  font-size: 2.14286em;
   font-weight: bold; }
 
 h2 {
   color: #333333;
-  font-family: Helmet, Freesans, sans-serif;
-  font-size: 13/15; }
+  font-family: "guardian-regular";
+  font-size: 1.42857em; }
 
 h3 {
   font-size: 15,20;
