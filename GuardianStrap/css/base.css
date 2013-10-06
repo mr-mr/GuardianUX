@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "guardian-regular";
+  src: url("../font/Guardian-Egyp-Web-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "guardian-italic";
+  src: url("../font/Guardian-Egyp-Web-Regular It.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "guardian-bold";
+  src: url("../font/Guardian-Egyp-Web-Semibold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "guardian-bold-italic";
+  src: url("../font/Guardian-Egyp-Web-Semibold It.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 /*!
  *  Font Awesome 3.2.1
  *  the iconic font designed for Bootstrap
@@ -1447,10 +1471,10 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 #wrapper {
   margin: 0 auto;
-  width: 960px; }
+  width: 900px; }
 
 html {
-  font-family: Georgia, serif;
+  font-family: "guardian-regular";
   list-style-type: none; }
 
 body {
@@ -1468,6 +1492,14 @@ a:hover {
 
 ul {
   line-style-type: none; }
+
+.button a:link, .button a:visited {
+  color: #fff;
+  background: #005689;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none; }
+.button a:hover {
+  background: #003656; }
 
 .nav-header {
   left: 0;
@@ -1491,28 +1523,31 @@ h1, h2, h3, h4 {
 
 h1 {
   color: #333333;
-  font-family: Helvetica, sans-serif;
+  font-family: "guardian-regular";
   font-size: 2.85714em;
   font-weight: bold; }
 
 h2 {
   color: #333333;
-  font-family: Helvetica, sans-serif;
+  font-family: Helmet, Freesans, sans-serif;
   font-size: 13/15; }
 
 h3 {
   font-size: 15,20;
-  font-family: Georgia, Bold;
+  font-family: "guardian-bold";
   margin: 5,0,5,0; }
 
 h4 {
   font-size: 15,20;
-  font-family: Georgia, Bold;
+  font-family: "guardian-bold";
   margin: 5,0,5,0; }
 
 ul {
   list-style-type: none;
   padding: 0; }
+
+p {
+  line-height: 140%; }
 
 .logo {
   background: url("../img/guardian-logo-2.svg") no-repeat;
@@ -1531,6 +1566,13 @@ img {
   width: 100%;
   max-width: 100%;
   display: block; }
+
+article {
+  width: 70%;
+  height: auto;
+  margin: 40px 0 10px 0;
+  padding: 0;
+  line-height: 140%; }
 
 /*.column {
 	float:left;
@@ -1598,100 +1640,96 @@ img {
   padding: 10px;
   margin: 0; }
 
-tabs li:a {
-  float: left;
-  background: lime; }
-
 /*
-article.tabs
-{
-	position: relative;
-	display: block;
-	width:100%;
-	height: 20em;
-	margin: 2em auto;
-}
+#tabs li {
+	a:link, a:visited{
+		float:left;
+		width:140px;
+		height:35px;
+		background:$tab;
+		margin:0;
+		padding:10px;
+		padding-bottom: 1px;
+		color:$dark-grey;
 
-article.tabs section
-{
-	position: absolute;
-	display: block;
-	top: 1.8em;
-	left: 0;
-	right:0;
-	height: 100%;
-	padding: 10px 20px;
-	background-color: #fff;
-	//border-radius: 5px;
-	//box-shadow: 0 3px 3px rgba(0,0,0,0.1);
-	z-index: 0;
-}
+		position: relative;
+		//top: 0;
+		white-space: nowrap;
+		list-style: none;
 
-article.tabs section:first-child
-{
-	z-index: 1;
-}
-
-article.tabs section h3
-{
-	position: absolute;
-	font-size: 1.1em;
-	font-weight: normal;
-	width: 140px;
-	height: 60px;
-	top: -40px;
-	left: 10px;
-	padding: 0;
-	margin: 0;
-	color: #fff;
-	background-color: #edede7;
-	//border-radius: 5px 5px 0 0;
-	//border-top: 1px solid #333;
-}
-
-
-article.tabs section:nth-child(2) h3
-{
-	left: 153px;
-}
-
-article.tabs section:nth-child(3) h3
-{
-	left: 296px;
-}
-
-article.tabs section:nth-child(4) h3
-{
-	left: 439px;
-}
-
-article.tabs section:nth-child(5) h3
-{
-	left: 582px;
-}
-
-
-article.tabs section h3 a
-{
-	display: block;
-	width: 100%;
-	line-height: 1.7em;
-	text-align: center;
-	text-decoration: none;
-	color: $link;
-	outline: 1px black;
-}
-
-article.tabs section:target,
-article.tabs section:target h3,
-{
-	article.tabs section:nth-child(2)
-	{
-	display:none;
+		}
+	a:hover{
+		background: $tab-hover;
+		text-decoration: none;
 	}
-	color: #333;
-	background-color: #fff;
-	z-index: 2;
-	border-top: 1px solid #005689;
 }
+
 */
+#tabs div {
+  width: 100%;
+  float: left;
+  border-top: 1px solid #cccccc;
+  margin-top: -4px; }
+  #tabs div:p {
+    float: left; }
+  #tabs div:li {
+    line-height: 10px;
+    margin: 0;
+    padding: 0; }
+
+.ui-tabs .ui-tabs-nav li {
+  list-style: none;
+  float: left;
+  position: relative;
+  top: 0;
+  width: 135px;
+  border-bottom-width: 0;
+  padding: 10px 0 0 10px;
+  white-space: nowrap; }
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+  margin-bottom: -1px;
+  padding-bottom: 2px;
+  background: #fff; }
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a,
+.ui-tabs .ui-tabs-nav li.ui-state-disabled a,
+.ui-tabs .ui-tabs-nav li.ui-tabs-loading a {
+  cursor: text; }
+
+.ui-tabs .ui-tabs-nav li a,
+.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
+  cursor: pointer; }
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  background: #e6e6e6;
+  height: 40px;
+  font-weight: normal;
+  color: #555555; }
+
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+  color: #555555;
+  text-decoration: none; }
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+  background: #dadada;
+  font-weight: normal;
+  color: #212121; }
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+  border-top: 3px solid #4bc6df;
+  background: #e6e6e6;
+  font-weight: normal;
+  color: #212121;
+  padding: 0; }
