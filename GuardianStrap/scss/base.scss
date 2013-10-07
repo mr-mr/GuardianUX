@@ -276,7 +276,7 @@ article{
 #tabs div {
 	width:100%;
 	float:left;
-	border-top: 1px solid $grey;
+	border-top: 1px solid $semi-grey;
 	//background: lime;
 	margin-top:-4px;
 
@@ -318,7 +318,6 @@ article{
 .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
 	cursor: pointer;
 }
-
 
 
 .ui-state-default,

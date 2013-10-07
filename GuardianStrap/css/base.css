@@ -1644,7 +1644,7 @@ article {
 #tabs div {
   width: 100%;
   float: left;
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #a6a6a6;
   margin-top: -4px; }
   #tabs div:p {
     float: left; }
