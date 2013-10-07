@@ -1471,7 +1471,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 #wrapper {
   margin: 0 auto;
-  width: 900px; }
+  width: 880px; }
 
 html {
   font-family: "guardian-regular";
@@ -1485,7 +1485,8 @@ body {
 
 a:link, a:visited {
   color: #005689;
-  text-decoration: none; }
+  text-decoration: none;
+  font-weight: normal; }
 a:hover {
   color: #003656;
   text-decoration: underline; }
@@ -1518,7 +1519,7 @@ ul {
   padding: 10px;
   line-height: 25px; }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, li {
   font-weight: normal; }
 
 h1 {
@@ -1640,31 +1641,6 @@ article {
   padding: 10px;
   margin: 0; }
 
-/*
-#tabs li {
-	a:link, a:visited{
-		float:left;
-		width:140px;
-		height:35px;
-		background:$tab;
-		margin:0;
-		padding:10px;
-		padding-bottom: 1px;
-		color:$dark-grey;
-
-		position: relative;
-		//top: 0;
-		white-space: nowrap;
-		list-style: none;
-
-		}
-	a:hover{
-		background: $tab-hover;
-		text-decoration: none;
-	}
-}
-
-*/
 #tabs div {
   width: 100%;
   float: left;
