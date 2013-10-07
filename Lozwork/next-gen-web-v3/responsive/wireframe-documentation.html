@@ -23,10 +23,40 @@
 	<div class="wrapper">
 		<h1>Wireframe documentation</h1>		
 		
-		<h2>Overview</h2>
-		<p>This doc provides a brief overview of the HTML wireframes produced so far for the Next Gen Web project. Chris Clarke and Stephen Hellens are the people to ask if you have any questions. Failing that, feel free to <a href="mailto:loz.gray@lab7.co.uk?subject=Guardian%20Wireframes">drop me an email</a>.</p>
+		<h2>Table of contents</h2>
+		<ul>
+			<li><a href="#overview">Overview</a></li>
+			<li><a href="#browser-support">Browser support</a></li>
+			<li><a href="#notes-about-notes">A note about notes</a></li>
+			<li><a href="#old-wireframes">Older wireframes</a></li>
+			<li><a href="#necessary-applications">Necessary applications</a></li>
+			<li><a href="#codekit-setup">Codekit setup</a></li>
+			<li><a href="#mamp-setup">MAMP setup</a></li>
+			<li><a href="#languages">Languages</a></li>
+			<li><a href="#frameworks">Frameworks</a></li>
+			<li><a href="#how-it-works">How it works (/is supposed to work) in practice</a></li>
+			<li><a href="#folder-structure">Folder structure</a></li>
+		</ul>
 		
-		<h2>Necessary applications</h2>
+		<h2 id="overview">Overview</h2>
+		<p>This doc provides a brief overview of the wireframes produced so far for the Next Gen Web project. Chris Clarke and Stephen Hellens are the people to ask if you have any questions. Failing that, feel free to <a href="mailto:loz.gray@lab7.co.uk?subject=Guardian%20Wireframes">drop me an email</a>.</p>
+		
+		<h2 id="browser-support">Browser support</h2>
+		<p>Before we dive in, it's important to note that these wireframes will work in Chrome and Safari first and foremost.</p>
+		<p>Firefox and Opera will probably cope pretty well with them, but your milage may vary considerably in any given version of Internet Explorer, though IE 9 and 10 should (should) be okay.</p>
+		
+		<h2 id="note-about-notes">A note about notes</h2>
+		<p>Later versions of wireframes have notes on them. You can turn these off by adding the following to the end of the URL:</p>
+		<p><pre><span class="pre-line-numbers">?notations=hidden</span></pre></p>
+		
+		<h2 id="old-wireframes">Older wireframes</h2>
+		<p>There are two lots of older wireframes:</p>
+		<ul>
+			<li><a href="http://guardian.lab7.co.uk">Initial concepts</a> and rough exploratory work</li>
+			<li><a href="http://guardian-v2.lab7.co.uk">Older work</a> that was the basis of the November 2012 relaunch of m.guardian. <strong>Storytelling wireframes</strong> are part of this batch of work.</li>
+		</ul>
+		
+		<h2 id="necessary-applications">Necessary applications</h2>
 		<p>You'll need a suite of four apps, with two being prescriptive:</p>
 		<ul>
 			<li>A text editor for markup</li>
@@ -36,7 +66,7 @@
 		</ul>
 		<p>The text editor and FTP client can be your personal choice (most UXers have Textmate and Transmit respectively), however Codekit and MAMP are required.</p>
 
-		<h2>Codekit setup</h2>
+		<h2 id="codekit-setup">Codekit setup</h2>
 		<p><a href="http://incident57.com/codekit/">Codekit</a> compiles and minifies the languages used to build the wireframes. You add projects, and frameworks, and code kit does the rest (more on this later).</p>
 		<p>You'll need to make a few minor changes to the out of the box preferences to ensure it works with the HTML wireframes:</p>
 		<ul>
@@ -49,7 +79,7 @@
 		</ul>
 		<p><strong>N.B.</strong> One thing to bear in mind with Codekit is that it scans intermittently for new files, so you can sometimes end up trying to save a newly created file and not getting any output because Codekit hasn't scanned it yet. You can force Codekit to rescan for files at any time.</p>
 
-		<h2>MAMP setup</h2>
+		<h2 id="mamp-setup">MAMP setup</h2>
 		<p>The <a href="http://www.mamp.info/en/index.html">MAMP package</a> is basically a web server in a folder. There are two versions of MAMP: MAMP and MAMP Pro. You'll only need the normal, non-pro version.</p>
 		<p>MAMP runs at <a href="http://localhost:8888">http://localhost:8888</a> and you can access this from any device on the same wireless network (e.g. your mobile/tablet) by replacing localhost with your IP address, e.g.:</p>
 		<p>http://192.161.0.10:8888</p>
@@ -63,7 +93,7 @@
 		<p>With username:</p>
 		<p>Ubuntu</p>
 		<p>There there is no password on the server, because access is limited to SSH keys. To enable you to have FTP access you need to open Terminal, type (or copy paste in) the following, then hit return:</p>
-		<p><pre>ssh-keygen -P "" -f ~/.ssh/id_rsa; pbcopy < ~/.ssh/id_rsa.pub</pre></p>
+		<p><pre><span class="pre-line-numbers">ssh-keygen -P "" -f ~/.ssh/id_rsa; pbcopy < ~/.ssh/id_rsa.pub</span></pre></p>
 		<p>This command will copy something to your clipboard. You need to paste that into an email and send it to Matt Chadburn and ask him nicely to sort out your permissions for the UX server.</p>
 		<p>Once this is done, you can plug these details into your chosen FTP client and you should gain access.</p>
 		<p>The /www is where all the files live. For the responsive track of work there are three folders:</p>
@@ -75,12 +105,12 @@
 		<p>The second folder contains most of the things that made it into the November 2012 relaunch of m.guardian. There are still large parts of functionality here that didn't make it in, for whatever reason so it's worth perusing – breaking news would be a good example of this.</p>
 		<p><srong>N.B.</srong> This server is temporary - you should work locally and upload to this server.</p>
 
-		<h2>Languages</h2>
+		<h2 id="languages">Languages</h2>
 		<p>The HTML wireframes are built using:</p>
 		<ul>
 			<li>Codekit's .kit files</li>
-			<li>jQuery</li>
-			<li>LESS</li>			
+			<li>LESS</li>	
+			<li>jQuery</li>		
 		</ul>
 
 		<h3>Codekit's .kit files</h3>
@@ -88,21 +118,22 @@
 		<p>Includes (like normal HTML server side includes) allow you to create fragments of reusable HTML, such as navigation and footers, and place them within other HTML documents. Unlike normal SSIs, you can also place an include _in_ an include. Codekit will parse all the includes and generate a flat .html file.</p>
 		<p>Variables, as in any other language, allow you to define reusable bits of information. Variables can also work in tandem with includes, and can be passed between the two.</p>
 		<p>Full documentation on .kit files can be found at <a href="http://incident57.com/codekit/kit.php">http://incident57.com/codekit/kit.php</a>.</p>
-		<p><strong>N.B.</strong> Always, always, edit the '.kit' files instead of editing the outputted '.html' files. If you make changes to the HTML files, when you save anything Codekit will automatically recompile _the '.kit' files_ to HTML, overwriting your changes.</p>
+		<p><strong>N.B.</strong> Always, always, edit the .kit files instead of editing the outputted '.html' files. If you make changes to the HTML files, when you save anything Codekit will automatically recompile _the .kit files_ to HTML, overwriting your changes.</p>
 
+		<h3>LESS</h3>
+		<p>These CSS for the wireframes is written using LESS.</p>
+		<p>LESS and SASS are essentially the same, preprocessors for CSS that feature mixins, variables, colour functions and a whole host of other useful features that are too detailed to go into here, so take a look at <a href="http://lesscss.org/">the LESS homepage</a> for more info.</p>
+		<p>As the front end team for next gen uses SASS (and, well, Compass), eventually the wireframes will migrate to SASS – hence getting you to tweak the preference for that as well in Codekit.</p>
+		<p><strong>N.B.</strong> It's likely that your text editor will not highlight LESS files, or will try to highlight them as CSS. You'll need to find a plugin or bundle that highlights LESS. I use <a href="http://github.com/appden/less.tmbundle/">the one by Rasmus Andersson and Scott Kyle on github</a>.</p>
+		
 		<h3>jQuery</h3>
 		<p>The syntax of jQuery mirrors that of javascript, but it's easier to learn. It allows you to chain commands to traverse and change the document object model (DOM) of an HTML file.</p>
 		<p>The API documentation is comprehensive with plenty of examples and, failing that, any question you have has likely been asked and answered on StackOverflow – remember Google is your friend here kids.</p>
 		<p>Full documentation on jQuery can be found at <a href="http://api.jquery.com/">http://api.jquery.com/</a>.</p>
 		<p><strong>N.B.</strong> Your text editor will highlight jQuery as if it were javascript which should work just fine.</p>
 
-		<h3>LESS</h3>
-		<p>These HTML wireframes were written using LESS. LESS and SASS are essentially the same, preprocessors for CSS that feature mixins, variables, colour functions and a whole host of other useful features that are too detailed to go into here, so take a look at <a href="http://lesscss.org/">the LESS homepage</a> for more info.</p>
-		<p>As the front end team for next gen uses SASS (and, well, Compass), eventually the wireframes will migrate to SASS – hence getting you to tweak the preference for that as well in Codekit.</p>
-		<p><strong>N.B.</strong> It's likely that your text editor will not highlight LESS files, or will try to highlight them as CSS. You'll need to find a plugin or bundle that highlights LESS. I use <a href="http://github.com/appden/less.tmbundle/">the one by Rasmus Andersson and Scott Kyle on github</a>.</p>
-
-		<h2>Frameworks</h2>
-		<p>The only real framework used is lozstrap which is a lightweight (read 'half-arsed') framework that I created – and hilariously titled – as I've done wireframes on various projects.</p>
+		<h2 id="frameworks">Frameworks</h2>
+		<p>The only real framework used is lozstrap which is a lightweight (read 'half-arsed') framework that I've created – and hilariously titled – as I've done wireframes on various projects.</p>
 		<p>All of the wireframes are built against this (particularly <em>library.less</em> and the JS files), so you'll want to add this (it's in the next-ten-web-3/responsive folder) as a framework in Codekit. In due course this will be replaced by a GuardianStrap (with a better name).</p>
 
 		<h3>loznotes</h3>
@@ -111,7 +142,7 @@
 		<h3>fontawesome</h3>
 		<p>And it really is. It provides generic icons to insert into projects, and it's usage is documented on the <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome site</a>.</p>
  
-		<h2>How it works (/is supposed to work) in practice</h2>
+		<h2 id="how-it-works">How it works (/is supposed to work) in practice</h2>
 		<p>The basic principle is that there are .kit, .less and .js files for each wireframe.</p>
 		<ul>
 			<li>Within the .kit file, variables will be defined and includes will be referenced.</li>
@@ -119,28 +150,107 @@
 			<li>Within the .js files, there are sometimes other lozstrap framework files imported, for example lozstrap.show-hide.js.</li>			
 		</ul>
 		<p>Codekit allows you to view any file and it's dependancies in the 'files' tab of the application. Just click on a file and the imported or included files will appear in the right hand pane.</p>
-		<p>The .kit includes fall into three types:</p>
+		
+		<h3>.kit files</h3>
+		<p>As mentioned above there is a .kit file for each wireframe. Within that we call .kit files that contain fragments of code that we can reuse. The .kit includes fall into three types:</p>
 		<ul>
 			<li>Template level modules – there are only two of these that matter, '_template-header-v2.kit' and '_template-footer-v2.kit'. The header file contains the <code>&lt;doctype&gt;</code> and <code>&lt;head&gt;</code> tag information, including references to CSS files. The footer has references to any page specific js files. Both have references to variables, for use in file names and page titles, that the including page will supply.</li>
 			<li>Page level modules – there are only three of these, '_page-footer.kit', '_page-sharing-tools.kit' and '_page-tools.kit'.</li>
 			<li>Genre/type specific – includes that are related to a page genre or type, i.e. articles or sports stats pages.</li>			
 		</ul>
-		<p>LESS files are slightly more complicated, but they fall into two types:</p>
+		<p>To illustrate how the various components work together it's probably best to show an example. Below is the top of the wireframe for all football fixtures ('football-fixtures-all.kit'):</p>		
+		<p><pre>
+<span class="pre-line-numbers">&lt;!-- $pageTitle = Football fixtures – All --&gt;</span>
+<span class="pre-line-numbers">&lt;!-- $pageType = sport-statistics --&gt;</span>
+<span class="pre-line-numbers">&lt;!-- $page = football-fixtures-all --&gt;</span>
+<span class="pre-line-numbers">&lt;!-- $navSection = uk-edition-football --&gt;</span>
+<span class="pre-line-numbers"></span>
+<span class="pre-line-numbers">&lt;!-- @include '../../inc/template/template-header-v2.kit' --&gt;</span>
+<span class="pre-line-numbers">&lt;!-- @include '../../inc/navigation/nav-uk-edition-football.kit' --&gt;</span>
+<span class="pre-line-numbers">	&lt;!-- @include '../../inc/advert/advert-banner.kit' --&gt;</span></pre></p>		
+		<p>Lines one to four define variables:</p>
 		<ul>
-			<li>A base file – this can be an overarching base file, such as 'base.less' which defines styles that are used across the entire project, or page type/module specific, like 'base-article.less' or 'base-comments.less'.</li>
-			<li>A page specific file – these are files that are used specifically for one page, such as 'article-live-blog-v2.less'.</li>		
+			<li><code>$pageTitle</code> – the title that will be displayed within the Browser header bar</li>
+			<li><code>$pageType</code> – the type, or genre, of page we are dealing with, so in this example it's a sport statistics page</li>
+			<li><code>$page</code> – the specific page we are working with, within the above type, which is the all football fixtures page</li>
+			<li><code>$navSection</code> – which navigation this page uses</li>
 		</ul>
+		<p>Lines six to eight are include statements to pull in other .kit files:</p>
+		<ul>
+			<li><code>template-header-v2.kit</code> – the global page template header</li>
+			<li><code>nav-uk-edition-football.kit</code> – the global navigation for the page</li>
+			<li><code>advert-banner.kit</code> – a banner advert (which also appears at the bottom of the page)</li>
+		</ul>
+		<p><strong>N.B.</strong> Include .kit files can be referenced with or without their preceeding underscore.</p>
+		<p>You'll notice that the last three variables have dashes in them. This is because we use these variables to help us by referencing them elsewhere.</p>
+		<p>If we now look at an abridged version of one of the template files we are bringing in, '_template-header-v2.kit', this should start to make sense:</p>
+		<p><pre>
+<span class="pre-line-numbers">&lt;!DOCTYPE html&gt;</span>
+<span class="pre-line-numbers"></span>
+<span class="pre-line-numbers">&lt;html lang="en"&gt;</span>
+<span class="pre-line-numbers"></span>
+<span class="pre-line-numbers">&lt;head&gt;</span>
+<span class="pre-line-numbers">	&lt;title&gt;&lt;!--$pageTitle--&gt; | Next Gen Web&lt;/title&gt;</span>
+<span class="pre-line-numbers"></span>
+<span class="pre-line-numbers">	&lt;link rel="stylesheet" href="../css/base-&lt;!--$pageType--&gt;.css" media="screen" /&gt;</span>
+<span class="pre-line-numbers"></span>
+<span class="pre-line-numbers">	&lt;link rel="stylesheet" href="../css/nav-&lt;!--$navSection--&gt;.css" media="screen" /&gt;</span>
+<span class="pre-line-numbers">	&lt;link rel="stylesheet" href="../css/&lt;!--$page--&gt;.css" media="screen" /&gt;</span>
+<span class="pre-line-numbers">&lt;/head&gt;</span>
+<span class="pre-line-numbers"></span>
+<span class="pre-line-numbers">&lt;body id="&lt;!--$navSection--&gt;" class="&lt;!--$pageType--&gt; &lt;!--$page--&gt; uk-edition section"&gt;</span>
+<span class="pre-line-numbers">	&lt;div class="wrapper"&gt;</pre></p></span>
+		<p>Codekit will include this file within our all fixtures wireframe and replace variable references with the contents of the variables, so in:</p>
+		<ul>
+			<li><strong>Line 6</strong> – Our previously defined <code>$pageTitle</code> varible is inserted so the page title will now read 'Football fixtures – All | Next Gen Web';</li>
+			<li><strong>Line 8</strong> – The <code>$pageType</code> variable is used to call in 'base-sport-statistics.css' file;</li>
+			<li><strong>Line 9</strong> – The correct navigation CSS is called in by using <code>$navSection</code> to call 'nav-uk-edition-football.css';</li>
+			<li><strong>Line 10</strong> – Likewise we use <code>$page</code> to call any page specific CSS in 'football-fixtures-all.css', and;</li>
+			<li><strong>Line 14</strong> – Three variables are used to give the <code>&lt;body&gt;</code> element an ID and some classes.</li>
+		</ul>
+		<p>Having these variables allows us to use one '_template-header-v2.kit' file across all the wireframes, and Codekit will insert the correct value when it compiles the HTML page.</p>
+		<p><strong>N.B.</strong> If you were paying particular attention, you'd notice that we could have changed line seven in the all football fixtures page to read:</p>
+		<p><pre><span class="pre-line-numbers">&lt;!-- @include '../../inc/navigation/nav-&lt;!--$navSection--&gt;.kit' --&gt;</span></pre></p>
+		<p>An oversight on my part.</p>
+		
+		<h3>.less files</h3>
+		<p>LESS files do similar things and they fall into three categories:</p>
+		<ul>
+			<li><strong>Utility files</strong> – these are files used by other .less files. They can be either part of the lozstrap framework such as 'library.less', or define global variables for the project such as 'fonts.less', 'breakpoints.less' and 'colors.less'</li>
+			<li><strong>A base file</strong> – this can be an overarching base file, such as 'base.less' which defines styles that are used across the entire project, or page type/module specific, like 'base-article.less' (page genre/type) and 'base-comments.less' (module).</li>
+			<li><strong>A page specific file</strong> – these are files that are used specifically for one page, such as 'article-live-blog-v2.less'. In newer wireframes, this file isn't usually called upon.</li>		
+		</ul>
+		<p>Utility files are imported into the top of base or page specific files, as we see at the top of 'base-article-v2.less':</p>
+		<p><pre>
+<span class="pre-line-numbers">// 1.0 imports</span>
+<span class="pre-line-numbers">// --------------------------------------------------</span>
+<span class="pre-line-numbers">@import "library.less";</span>
+<span class="pre-line-numbers">@import "fonts.less";</span>
+<span class="pre-line-numbers">@import "breakpoints.less";</span>
+<span class="pre-line-numbers">@import "colors.less";</span></pre></p>
+		<p>Regardless of type of .less file, each one is split up into sections:</p>
+		<ul>
+			<li><strong>1.0 imports</strong> – as detailed above</li>
+			<li><strong>2.0 variables</strong> – any extra variables needed for this particular .less file</li>
+			<li><strong>3.0 general</strong> – generic styles and rules</li>
+			<li><strong>4.0 type</strong> – all type related rules, so <code>sizes</code>, <code>line-height</code>, <code>vertical-align</code>, <code>color</code>, <code>text-indent</code></li>
+			<li><strong>5.0 layout</strong> – this is gnerally whether a module is shown or hidden, and how where it sits at various breakpoints</li>
+			<li><strong>6.0 modules</strong> – module specific rules</li>
+		</ul>
+		<p>Media queries are present within any given style rule – there are no file level media queries. This means that all declarations for styles (within the schema outlined above) are grouped together, regardless of breakpoints.</p>
+		
+		<h3>.js files</h3>
 		<p>The jQuery/JS files follow the same pattern as the LESS files, with base files and page specific files. In most instances, although a page specific file is referenced, the base file is usually the only one that exists.</p>
 
-		<h2>File system</h2>
+		<h2 id="folder-structure">Folder structure</h2>
 		<p>Firstly, an apology.</p>
 		<p>The method of building files – and to an extent the file system – changed during this project, so there are a lot of files hanging around in next-gen-web-3/responsive that are legacy and which adds to the complexity of understanding how I've been working. There are (thankfully) a few basic principles:</p>
 		<ul>
 			<li>A folder is created in the document root for every page type, i.e. 'articles', 'live-blogs', 'sports-statistics', etc. Within that is a 'kit' folder.</li>
 			<li>A folder is created, where necessary, for each page type within /ajax and /inc.</li>
-			<li>For any given page type, the only folders you will work in are always the '/ajax', '/inc', 'kit', '/less' and '/script'.</li>
+			<li>For any given page type, <strong>the only folders you will work in</strong> are always the '/ajax', '/inc', 'kit', '/less' and '/script'.</li>
 			<li>File names generally follow the format of [base-][page type][-subtype][-version number].[filetype], e.g. 'navigation-uk-politics.kit', 'article-live-blog-v2.less' or 'base-navigation.less'.</li>
-			<li>To distinguish between .kit files that are pages and .kit files that are fragments we use an underscore. This has the added benefit of Codekit knowing that files that start with an underscore are for including only.</li>
+			<li>To distinguish between .kit files that are pages and .kit files that are includes we use an underscore. This has the added benefit of Codekit knowing that files that start with an underscore are for including only, so it wont compile them.</li>
 			<li>The general rule of thumb is that the higher the version number at the end of the file (e.g. '_v4'), the more likely that is to be the latest.</li>
 			<li>It's an easy trap to fall into, but don't open the generated .html files and edit those instead of the .kit files.</li>
 		</ul>
