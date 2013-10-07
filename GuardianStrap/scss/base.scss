@@ -28,7 +28,7 @@
 #wrapper {
 	margin: 0 auto;
 	//width:90%;
-	width:960px;
+	width:900px;
 }
 
 html {
@@ -53,13 +53,28 @@ ul {
 	line-style-type:none;
 }
 
+.button{
+	a:link, a:visited{
+	color:#fff;
+	background: $link;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	
+	}
+
+	a:hover{
+	background: $link-hover;
+	}
+}
+
+
 .nav-header{
 	left:0;
 	right:0;
 	top:0;
 	height:5px;
 	background:#254a82;
-	position: fixed;
+	//position: fixed;
 }
 
 .border-line{
@@ -87,15 +102,15 @@ h1, h2, h3, h4 {
 
 h1 {
 	color: $copy; 
-	font-family: $sans-serif; 
-	font-size:(40 / 14) * 1em;
+	font-family: $serif; 
+	font-size:(30 / 14) * 1em;
 	font-weight:bold;
 }
 
 h2 {
 	color:$copy;
-	font-family: $sans-serif; 
-	font-size: 13/15;
+	font-family: $serif; 
+	font-size:(20 / 14) * 1em;
 }
 
 h3 {
@@ -113,6 +128,10 @@ h4 {
 ul {
 	list-style-type: none;
 	padding:0;
+}
+
+p{
+	line-height:2.1em;
 }
 
 
@@ -147,6 +166,15 @@ video{
 
 // x.modules
 //-----------------------------
+
+article{
+	width:70%;
+	height:auto;
+	margin:40px 0 10px 0 ;
+	padding:0;
+	line-height:140%;
+}
+
 .column-left{}
 .column-right{}
 //:nth-child(2)
@@ -245,96 +273,115 @@ video{
 	
 }
 // Tabs
-article.tabs
-{
-	position: relative;
-	display: block;
+/*
+#tabs li {
+	a:link, a:visited{
+		float:left;
+		width:140px;
+		height:35px;
+		background:$tab;
+		margin:0;
+		padding:10px;
+		padding-bottom: 1px;
+		color:$dark-grey;
+
+		position: relative;
+		//top: 0;
+		white-space: nowrap;
+		list-style: none;
+
+		}
+	a:hover{
+		background: $tab-hover;
+		text-decoration: none;
+	}
+}
+
+*/
+#tabs div {
 	width:100%;
-	height: 20em;
-	margin: 2em auto;
+	float:left;
+	border-top: 1px solid $grey;
+	//background: lime;
+	margin-top:-4px;
+
+	&:p{
+		float:left;
+	}
+
+	&:li{
+		line-height:10px;
+		margin:0;
+		padding:0;
+	}
 }
 
-article.tabs section
-{
-	position: absolute;
-	display: block;
-	top: 1.8em;
-	left: 0;
-	right:0;
-	height: 100%;
-	padding: 10px 20px;
-	background-color: #fff;
-	//border-radius: 5px;
-	//box-shadow: 0 3px 3px rgba(0,0,0,0.1);
-	z-index: 0;
+
+
+.ui-tabs .ui-tabs-nav li {
+	list-style: none;
+	float: left;
+	position: relative;
+	top: 0;
+	width:135px;
+	border-bottom-width: 0;
+	padding: 10px 0 0 10px;
+	white-space: nowrap;
 }
 
-article.tabs section:first-child
-{
-	z-index: 1;
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+	margin-bottom: -1px;
+	padding-bottom: 2px;
+	background: #fff;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a,
+.ui-tabs .ui-tabs-nav li.ui-state-disabled a,
+.ui-tabs .ui-tabs-nav li.ui-tabs-loading a {
+	cursor: text;
+}
+.ui-tabs .ui-tabs-nav li a,
+.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
+	cursor: pointer;
 }
 
-article.tabs section h3
-{
-	position: absolute;
-	font-size: 1.1em;
+
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	background: #e6e6e6;
+	height:40px;
 	font-weight: normal;
-	width: 140px;
-	height: 60px;
-	top: -40px;
-	left: 10px;
-	padding: 0;
-	margin: 0;
-	color: #fff;
-	background-color: #fff;
-	//border-radius: 5px 5px 0 0;
-	//border-top: 1px solid #333;
+	color: #555555;
 }
-
-/*article.tabs section:nth-child(n+2) h3
-{
-	left:100px;
-}*/
-
-article.tabs section:nth-child(2) h3
-{
-	left: 170px;
-}
-
-article.tabs section:nth-child(3) h3
-{
-	left: 300px;
-}
-
-article.tabs section:nth-child(4) h3
-{
-	left: 460px;
-}
-
-article.tabs section:nth-child(5) h3
-{
-	left: 600px;
-}
-
-
-article.tabs section h3 a
-{
-	display: block;
-	width: 100%;
-	line-height: 1.7em;
-	text-align: center;
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+	color: #555555;
 	text-decoration: none;
-	color: $link;
-	outline: 1px black;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+	
+	background: #dadada;
+	font-weight: normal;
+	color: #212121;
 }
 
-article.tabs section:target,
-article.tabs section:target h3,
-{
-	//color: #333;
-	background-color: #fff;
-	z-index: 2;
-	border-top: 1px solid #005689;
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+	border-top: 3px solid #4bc6df;
+	background: #e6e6e6;
+	font-weight: normal;
+	color: #212121;
+	padding:0;
 }
+
+
 
 

@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "guardian-regular";
+  src: url("../font/Guardian-Egyp-Web-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "guardian-italic";
+  src: url("../font/Guardian-Egyp-Web-Regular It.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "guardian-bold";
+  src: url("../font/Guardian-Egyp-Web-Semibold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "guardian-bold-italic";
+  src: url("../font/Guardian-Egyp-Web-Semibold It.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 img {
   width: 100%;
   color: #005689; }
