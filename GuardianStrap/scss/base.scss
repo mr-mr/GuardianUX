@@ -28,7 +28,7 @@
 #wrapper {
 	margin: 0 auto;
 	//width:90%;
-	width:900px;
+	width:880px;
 }
 
 html {
@@ -45,7 +45,7 @@ body{
 
 
 a {
-	&:link, &:visited {color:$link; text-decoration:none;}
+	&:link, &:visited {color:$link; text-decoration:none; font-weight:normal;}
 	&:hover{color:$link-hover; text-decoration:underline;}
 }
 
@@ -96,7 +96,7 @@ nav-footer{}
 // x.type
 //-----------------------------
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, li {
 	font-weight:normal;
 }
 
@@ -272,36 +272,11 @@ article{
 	//font-size:1.0em;
 	
 }
-// Tabs
-/*
-#tabs li {
-	a:link, a:visited{
-		float:left;
-		width:140px;
-		height:35px;
-		background:$tab;
-		margin:0;
-		padding:10px;
-		padding-bottom: 1px;
-		color:$dark-grey;
 
-		position: relative;
-		//top: 0;
-		white-space: nowrap;
-		list-style: none;
-
-		}
-	a:hover{
-		background: $tab-hover;
-		text-decoration: none;
-	}
-}
-
-*/
 #tabs div {
 	width:100%;
 	float:left;
-	border-top: 1px solid $grey;
+	border-top: 1px solid $semi-grey;
 	//background: lime;
 	margin-top:-4px;
 
@@ -343,7 +318,6 @@ article{
 .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
 	cursor: pointer;
 }
-
 
 
 .ui-state-default,
