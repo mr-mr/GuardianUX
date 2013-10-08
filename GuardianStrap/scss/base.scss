@@ -81,7 +81,7 @@ ul {
 	border: 1px solid $light-grey;
 	width:100%;
 	//height:10%;
-	margin:0;
+	margin:0 0 20px 0;
 	padding:0;
 }
 
@@ -111,6 +111,8 @@ h2 {
 	color:$copy;
 	font-family: $serif; 
 	font-size:(20 / 14) * 1em;
+	margin:0;
+	padding:0;
 }
 
 h3 {
