@@ -1,0 +1,135 @@
+// Example sass file to be used a builder
+// Table of contents
+//-----------------------------
+// 1. imports
+// 2. general
+// 3. type
+// 4. images & video
+// 5. layout
+// 6. modules
+// ------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+
+// 1.Imports
+//-----------------------------
+@import "fonts.scss";
+@import "font-awesome.scss";
+@import "colors.scss";
+@import "breakpoints.scss";
+@import "media.scss";
+
+
+// 2. General
+//-----------------------------
+
+.profile-container {
+	background-color: pink;
+	width: 100%;
+	height: 100%;
+}
+
+.username-information {
+	width: 60%;
+	float: left;
+	background-color: olive;
+}
+
+.user-stats {
+	width: 40%;
+	float: right;
+	background-color: teal;
+}
+
+.comment-controls {
+	height: 30px;
+	width: 100%;
+	float: left;
+	background-color: fuchsia;
+}
+
+.comments-list {
+	background-color: #eded68;
+	clear: both;
+}
+
+.comment {
+	height: 100px;
+	clear: both;
+	border: 1px dotted #000000;
+}
+
+/*.pagination {
+	width: auto;
+	height: 20px;
+	background-color: orange;
+	clear: both;
+
+}*/
+
+/*.pagination ol {
+	list-style: none;
+}*/
+
+ul.pagination {
+	border:0; 
+	margin:0; 
+	padding:0;
+}
+
+#pagination-profiles li {
+	border:0; 
+	margin:0; 
+	padding:0;
+	list-style:none;
+}
+#pagination-profiles a {
+	border:solid 1px black;
+	margin-right:2px;
+}
+#pagination-profiles .previous-off, #pagination-profiles .next-off {
+	color:black;
+	display:block;
+	float:left;
+	font-weight:bold;
+	padding:3px 4px;
+}
+
+#pagination-profiles .next a, #pagination-profiles .previous a {
+	font-weight:bold;
+	border:solid 1px #FFFFFF;
+} 
+#pagination-profiles .active{
+	color:black;
+	font-weight:bold;
+	display:block;
+	float:left;
+	padding:4px 6px;
+}
+#pagination-profiles a:link, #pagination-profiles a:visited {
+	display:block;
+	float:left;
+	padding:3px 6px;
+	text-decoration:none;
+}
+#pagination-profiles a:hover{
+	border:solid 1px #666666;
+}
+
+
+// 3. type
+//-----------------------------
+
+
+// 4. images & video
+//-----------------------------
+
+// 5. layout
+//-----------------------------
+
+// 5. Modules
+//-----------------------------
+
+
+
+
+
