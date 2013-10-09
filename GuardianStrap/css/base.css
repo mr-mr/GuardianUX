@@ -1545,12 +1545,14 @@ h2 {
 h3 {
   font-size: 15,20;
   font-family: "guardian-bold";
-  margin: 5,0,5,0; }
+  margin: 5,0,5,0;
+  float: left; }
 
 h4 {
   font-size: 15,20;
   font-family: "guardian-bold";
-  margin: 5,0,5,0; }
+  margin: 5,0,5,0;
+  float: left; }
 
 ul {
   list-style-type: none;
