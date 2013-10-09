@@ -92,7 +92,12 @@ ul {
 
 nav-footer{}
 
-
+/*iframe {
+	width:100%;
+	height:auto;
+	border:none;
+}
+*/
 // x.type
 //-----------------------------
 
@@ -133,7 +138,7 @@ ul {
 }
 
 p{
-	line-height:2.1em;
+	line-height:1.4em;
 }
 
 
@@ -170,7 +175,7 @@ video{
 //-----------------------------
 
 article{
-	width:70%;
+	width:100%;
 	height:auto;
 	margin:40px 0 10px 0 ;
 	padding:0;
