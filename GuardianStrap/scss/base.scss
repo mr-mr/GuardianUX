@@ -92,12 +92,14 @@ ul {
 
 nav-footer{}
 
-/*iframe {
+iframe {
 	width:100%;
-	height:auto;
+	height:100%;
 	border:none;
+	margin-top:50px;
+	padding:0;
 }
-*/
+
 // x.type
 //-----------------------------
 
@@ -280,6 +282,7 @@ article{
 	
 }
 
+//HOMEPAGE TABS
 #tabs div {
 	width:100%;
 	float:left;
