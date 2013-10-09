@@ -1519,6 +1519,12 @@ ul {
   padding: 10px;
   line-height: 25px; }
 
+/*iframe {
+	width:100%;
+	height:auto;
+	border:none;
+}
+*/
 h1, h2, h3, h4, li {
   font-weight: normal; }
 
@@ -1550,7 +1556,7 @@ ul {
   padding: 0; }
 
 p {
-  line-height: 2.1em; }
+  line-height: 1.4em; }
 
 .logo {
   background: url("../img/guardian-logo-2.svg") no-repeat;
@@ -1571,7 +1577,7 @@ img {
   display: block; }
 
 article {
-  width: 70%;
+  width: 100%;
   height: auto;
   margin: 40px 0 10px 0;
   padding: 0;
