@@ -1,0 +1,73 @@
+// Table of contents
+//-----------------------------
+// 1. imports
+// 2. general
+// X. type
+// x. images & video
+// x. layout
+// x. modules
+// ------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+
+// 1.Imports
+//-----------------------------
+@import "fonts.scss";
+@import "font-awesome.scss";
+@import "colors.scss";
+//@import "media.scss";
+//@import "base.scss";
+//@import "adverts.scss";
+//@import "screen.scss";
+@import "breakpoints.scss";
+
+
+// 2.General
+//-----------------------------
+
+.showhide {
+	color:$link;
+	cursor: pointer; cursor: hand;
+	&:hover{
+		text-decoration:underline;
+	}
+}
+
+.container{
+	width:100%;
+	float:left;
+}
+
+.border-box{
+	border: 1px solid $grey;
+	width:98%;
+	height:auto;
+	margin:20px 0 0 0;
+	padding:10px;
+	float:left;
+}
+
+.border-box-code{
+	border: 1px solid $grey;
+	background: $code-grey;
+	width:98%;
+	//height:auto;
+	margin:-1px 0 0 0;
+	padding:10px;
+	float:left;
+}
+
+.note {
+	background: $notes;
+	padding:20;
+	border-left: 2px solid $notes-border;
+}
+
+code {
+	float:left;
+}
+
+
+// 2.General
+//-----------------------------
+
+
