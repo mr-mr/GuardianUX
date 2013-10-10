@@ -30,6 +30,8 @@ $background:#eee;
 $highlight:#c00;
 $tab:#edede7;
 $tab-hover:darken($tab,5%);
+$notes:#f9ff9b;
+$notes-border:darken($notes, 10%);
 	
 // 5. greys
 // ------------------------------------------------------------------------------------------------------------------------------------------------- 
@@ -38,3 +40,4 @@ $semi-grey:#a6a6a6;
 $grey:#ccc;
 $mid-grey:#d2d2d2;
 $light-grey:#e5e5e5;
+$code-grey:#f7f7f9;

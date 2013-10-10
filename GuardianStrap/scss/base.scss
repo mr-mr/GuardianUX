@@ -1,4 +1,3 @@
-// Example sass file to be used a builder
 // Table of contents
 //-----------------------------
 // 1. imports
@@ -15,6 +14,7 @@
 @import "fonts.scss";
 @import "font-awesome.scss";
 @import "colors.scss";
+@import "tabs.scss";
 //@import "media.scss";
 //@import "library.scss";
 //@import "adverts.scss";
@@ -88,14 +88,7 @@ a {
 	float:left;
 }
 
-.border-box{
-	border: 1px solid $grey;
-	width:100%;
-	height:auto;
-	margin:20px 0 30px 0;
-	padding:10px;
-	float:left;
-}
+
 
 .intro{
 	padding:10px;
@@ -133,13 +126,14 @@ h2 {
 	font-size:(20 / 14) * 1em;
 	margin:0;
 	padding:0;
+	
 }
 
 h3 {
 	font-size:(14 / 14) * 1em;
 	font-family:$serif;
 	margin:5,0,5,0;
-	float:left;
+	padding:0;
 }
 
 h4 {
@@ -158,11 +152,14 @@ ul{
 }
 
 li {
-	float:left;
+	//float:left;
 	margin:0;
 	padding:0;
 	width:100%;
+	list-style-type: square;
+	line-height:1.2em;
 }
+
 
 p{
 	line-height:1.4em;
@@ -200,6 +197,12 @@ video{
 
 // x.modules
 //-----------------------------
+
+.list-block {
+	//float:left;
+	padding:18px;
+	margin:-20px 0 0 20px;
+}
 
 article{
 	width:100%;
@@ -304,92 +307,6 @@ article{
 	padding:10px; margin:0;
 	//font-size:1.0em;
 	
-}
-
-//HOMEPAGE TABS
-#tabs div {
-	width:100%;
-	float:left;
-	border-top: 1px solid $semi-grey;
-	//background: lime;
-	margin-top:-4px;
-
-	&:p{
-		float:left;
-	}
-
-	&:li{
-		line-height:10px;
-		margin:0;
-		padding:0;
-	}
-}
-
-
-
-.ui-tabs .ui-tabs-nav li {
-	list-style: none;
-	float: left;
-	position: relative;
-	top: 0;
-	width:135px;
-	border-bottom-width: 0;
-	padding: 10px 0 0 10px;
-	white-space: nowrap;
-}
-
-.ui-tabs .ui-tabs-nav li.ui-tabs-active {
-	margin-bottom: -1px;
-	padding-bottom: 2px;
-	background: #fff;
-}
-.ui-tabs .ui-tabs-nav li.ui-tabs-active a,
-.ui-tabs .ui-tabs-nav li.ui-state-disabled a,
-.ui-tabs .ui-tabs-nav li.ui-tabs-loading a {
-	cursor: text;
-}
-.ui-tabs .ui-tabs-nav li a,
-.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
-	cursor: pointer;
-}
-
-
-.ui-state-default,
-.ui-widget-content .ui-state-default,
-.ui-widget-header .ui-state-default {
-	background: #e6e6e6;
-	margin-top:20px;
-	height:40px;
-	font-weight: normal;
-	color: #555555;
-}
-.ui-state-default a,
-.ui-state-default a:link,
-.ui-state-default a:visited {
-	color: #555555;
-	
-	text-decoration: none;
-}
-.ui-state-hover,
-.ui-widget-content .ui-state-hover,
-.ui-widget-header .ui-state-hover,
-.ui-state-focus,
-.ui-widget-content .ui-state-focus,
-.ui-widget-header .ui-state-focus {
-	
-	background: #dadada;
-	font-weight: normal;
-	color: #212121;
-}
-
-.ui-state-active,
-.ui-widget-content .ui-state-active,
-.ui-widget-header .ui-state-active {
-	border-top: 3px solid #4bc6df;
-	background: #e6e6e6;
-	font-weight: normal;
-	color: #212121;
-	padding:0;
 }
 
 
