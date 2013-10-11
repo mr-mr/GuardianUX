@@ -16,8 +16,13 @@ $header-visited:lighten($header, 10%);
 // ------------------------------------------------------------------------------------------------------------------------------------------------- 
 $link: #005689;
 $link-hover:darken($link,10%);
+$link-darker-still:darken($link,30%);
 $link-visited:lighten($link,10%);
-	
+
+$link-white:#fff;
+$link-white-hover:darken($link-white,30%);
+$link-white-visited:darken($link-white,10%);
+
 // 3. Body text
 // ------------------------------------------------------------------------------------------------------------------------------------------------- 
 $copy:#333;
