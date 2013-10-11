@@ -2,7 +2,8 @@
 //-----------------------------
 // 1. imports
 // 2. general
-// 3. code snippets
+// 3. type
+// 4. code snippets
 // ------------------------------------------------------------------------------------------------------------------------------------------------- 
 
 
@@ -12,7 +13,7 @@
 @import "font-awesome.scss";
 @import "colors.scss";
 //@import "media.scss";
-//@import "base.scss";
+@import "base.scss";
 //@import "adverts.scss";
 //@import "screen.scss";
 @import "breakpoints.scss";
@@ -32,6 +33,24 @@
 .container{
 	width:100%;
 	float:left;
+}
+
+.framework-bar{
+	left:0;
+	right:0;
+	top:0;
+	height:50px;
+	background:$light-grey;
+	position: fixed;
+	z-index:100;
+	border-bottom: 1px solid $grey;
+}
+
+.framework-nav-container {
+	max-width:940px;
+	height:50px;
+	background:$link;
+	margin:0 auto;
 }
 
 .border-box{
@@ -68,8 +87,49 @@ code {
 }
 
 
-// 3.Code Snippets
+// 3.Type
 //-----------------------------
+
+.framework-header {
+	color: $link-white;
+	width:110px;
+	height:18px;
+	//background:darken($link,5%); 
+	background:$link;
+	font-family: $serif; 
+	font-size:(14 / 14) * 1em;
+	font-weight:bold;
+	padding:16px;
+	margin:0;
+}
+
+.framework-nav {
+		
+		padding:10px;
+		margin: 5px 0 0 0px;
+	
+	li 	{
+		
+		display: inline;
+		list-style-type: none;
+		//background:lime;
+		padding:0;
+        margin:0 0 0 10px;
+		a {
+		&:link, &:visited {color:$link; background:$light-grey; border-radius:20px; padding:10px; text-decoration:underline; font-weight:normal;}
+		&:hover{color:$link; background:$grey; text-decoration:none;}
+		}
+	}
+	.framework-nav-active {color:$link; background:$link-white; border-radius:20px; padding:10px;}
+}
+
+// 4.Code Snippets
+//-----------------------------
+
+pre.prettyprint {
+padding: 2px;
+//border: 1px solid #000;
+}
 
 pre code {
   padding: 0;
@@ -101,6 +161,6 @@ pre {
   color: #333333;
   word-break: break-all;
   word-wrap: break-word;
-  
+  border:0;
 }
 

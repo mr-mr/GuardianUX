@@ -1573,29 +1573,6 @@ a:hover {
 .button a:hover {
   background: #003656; }
 
-.nav-header {
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 50px;
-  background: #005689;
-  position: fixed;
-  z-index: 100; }
-
-.nav-header li {
-  float: left;
-  color: #fff;
-  list-style-type: none; }
-  .nav-header li:last-child {
-    margin-right: 0px; }
-  .nav-header li:a:link, .nav-header li:a:visited {
-    color: #005689;
-    text-decoration: none;
-    font-weight: normal; }
-  .nav-header li:a:hover {
-    color: #003656;
-    text-decoration: underline; }
-
 .border-line {
   border: 1px solid #e5e5e5;
   width: 100%;
@@ -1629,13 +1606,6 @@ h1 {
   font-family: "guardian-regular";
   font-size: 2.14286em;
   font-weight: bold; }
-
-.header {
-  color: #fff;
-  font-family: "guardian-regular";
-  font-size: 1em;
-  font-weight: bold;
-  padding: 15px; }
 
 h2 {
   color: #333333;
@@ -1703,9 +1673,10 @@ article {
   line-height: 140%; }
 
 .column-left {
-  width: 30%;
+  width: 20%;
   float: left;
-  position: fixed; }
+  position: fixed;
+  margin-left: 30px; }
 
 .column-right {
   width: 70%;
