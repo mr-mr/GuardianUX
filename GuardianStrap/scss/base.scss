@@ -15,6 +15,7 @@
 @import "font-awesome.scss";
 @import "colors.scss";
 @import "tabs.scss";
+@import "accordian.scss";
 //@import "media.scss";
 //@import "library.scss";
 //@import "adverts.scss";
@@ -70,29 +71,6 @@ a {
 }
 
 
-.nav-header{
-	left:0;
-	right:0;
-	top:0;
-	height:50px;
-	background:$link;
-	position: fixed;
-	z-index:100;
-}
-
-.nav-header li{
-		float:left;
-		color:#fff;
-		//background:lime;
-		list-style-type: none;
-		&:last-child{
-            margin-right:0px;
-        }
-		&:a {
-		&:link, &:visited {color:$link; text-decoration:none; font-weight:normal;}
-		&:hover{color:$link-hover; text-decoration:underline;}
-		}
-}
 
 .border-line{
 	border: 1px solid $light-grey;
@@ -143,13 +121,6 @@ h1 {
 	font-weight:bold;
 }
 
-.header {
-	color: #fff; 
-	font-family: $serif; 
-	font-size:(14 / 14) * 1em;
-	font-weight:bold;
-	padding:15px;
-}
 
 h2 {
 	color:$copy;
@@ -168,10 +139,10 @@ h3 {
 }
 
 h4 {
-	font-size:15,20;
+	font-size:15;
 	font-family:$serif-bold;
 	margin:5,0,5,0;
-	float:left;
+	//float:left;
 }
 
 ul{
@@ -202,17 +173,17 @@ p{
 .logo{
 	background:url("../img/guardian-logo.svg") no-repeat;
 	background-size:100% auto;
-	position:absolute;
-	width:110px;
+	//position:absolute;
+	width:120px;
 	height:55px;
-	margin:10px 0px 0px 30px;
+	margin:12px 0 0 15px;
 	//background-color:lime;
 
-	@media (max-width:$small-medium){
+	/*@media (max-width:$small-medium){
 		width:90px;
 		height:20;
 		margin:10,10,10,10;
-	}
+	}*/
 }
 
 img {
@@ -244,10 +215,12 @@ article{
 }
 
 .column-left{
-	width:30%;
-	float:left;
-	position:fixed;
+	width: 20%;
+	float: left;
+	position: fixed;
+	margin-left: 30px;
 }
+
 .column-right{
 	width:70%;
 	float:right;
