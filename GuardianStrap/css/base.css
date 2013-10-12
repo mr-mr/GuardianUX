@@ -1540,12 +1540,30 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   color: #212121;
   padding: 0; }
 
+.accordion {
+  margin-bottom: 10px; }
+
+.accordion {
+  border-bottom: 1px solid #e5e5e5; }
+  .accordion h2, .accordion h3 {
+    margin: 0; }
+
+.accordion-control {
+  display: block;
+  padding: 10,10,10,10,300;
+  border-top: 1px solid #e5e5e5; }
+
+.accordion-pane {
+  padding: 10,10,10,10;
+  border-top: 1px dotted #e5e5e5; }
+
 #wrapper {
   margin: 60px auto;
   width: 880px; }
 
 .container {
-  margin-top: 15px; }
+  margin: 0 auto;
+  width: 940px; }
 
 html {
   font-family: "guardian-regular";
@@ -1621,10 +1639,9 @@ h3 {
   padding: 0; }
 
 h4 {
-  font-size: 15,20;
+  font-size: 15;
   font-family: "guardian-bold";
-  margin: 5,0,5,0;
-  float: left; }
+  margin: 5,0,5,0; }
 
 ul {
   list-style-type: none;
@@ -1646,15 +1663,14 @@ p {
 .logo {
   background: url("../img/guardian-logo.svg") no-repeat;
   background-size: 100% auto;
-  position: absolute;
-  width: 110px;
+  width: 120px;
   height: 55px;
-  margin: 10px 0px 0px 30px; }
-  @media (max-width: 506px) {
-    .logo {
-      width: 90px;
-      height: 20;
-      margin: 10,10,10,10; } }
+  margin: 12px 0 0 15px;
+  /*@media (max-width:$small-medium){
+  	width:90px;
+  	height:20;
+  	margin:10,10,10,10;
+  }*/ }
 
 img {
   width: 100%;
@@ -1675,12 +1691,20 @@ article {
 .column-left {
   width: 20%;
   float: left;
-  position: fixed;
-  margin-left: 30px; }
+  margin: -60px 0 0 -20px;
+  padding: 50px 10px 10px 10px;
+  background: #e7eef3;
+  z-index: -10;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px; }
 
 .column-right {
   width: 70%;
   float: right; }
+
+.fixed {
+  position: fixed;
+  top: 0; }
 
 /*.column {
 	float:left;

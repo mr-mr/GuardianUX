@@ -34,7 +34,8 @@
 
 .container {
 	//background: $grey;
-	margin-top:15px;
+	margin:0 auto;
+	width:940px;
 }
 
 html {
@@ -214,16 +215,29 @@ article{
 	line-height:140%;
 }
 
+
 .column-left{
 	width: 20%;
 	float: left;
-	position: fixed;
-	margin-left: 30px;
+	//border-radius:5px;
+	//position: fixed;
+	margin: -60px 0 0 -20px ;
+	padding:50px 10px 10px 10px;
+	background:$light-blue;
+	//opacity:0.1;
+	z-index:-10;
+	border-bottom-right-radius:5px;
+	border-bottom-left-radius:5px;
 }
 
 .column-right{
 	width:70%;
 	float:right;
+}
+
+.fixed {
+	position: fixed;
+    top: 0;
 }
 
 /*.column {
