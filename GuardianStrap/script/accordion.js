@@ -3,7 +3,7 @@ $(function () {
 	var containers = $('.accordion-pane');
 
 	containers.hide().filter(':first').show();
-
+	
 	controls.click(function (e) {
 		containers.slideUp().filter(this.hash).slideDown();
 

@@ -22,6 +22,12 @@
 // 2.General
 //-----------------------------
 
+.reset {
+		margin:0;
+		padding:0;
+		border:none;
+}
+
 .showhide {
 	color:$link;
 	cursor: pointer; cursor: hand;
@@ -41,8 +47,8 @@
 	width:940px;
 	div{
 		color:$link-white;
-		padding:40px 20px 0 20px ;
-		font-size: 90px;
+		padding:50px 20px 0 20px ;
+		font-size: 80px;
 		//margin:30px 0 20px 0;
 	}
 	p{
@@ -67,7 +73,7 @@
 	right:0;
 	top:0;
 	height:50px;
-	background:$link-hover;
+	background:$link;
 	position: fixed;
 	z-index:100;
 	border-bottom: 1px solid $grey;
@@ -75,9 +81,9 @@
 
 .framework-nav-container {
 	max-width:940px;
-	height:38px;
-	background:$link-hover;
-	margin:0 auto;
+	height:50px;
+	margin:-13px auto;
+	padding-top:13px;
 }
 
 .border-box{
