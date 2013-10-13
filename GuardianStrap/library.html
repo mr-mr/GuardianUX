@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/profiles.css" media="all" />
 	<link rel="stylesheet" href="css/prettify.css" media="all" />
 	<link rel="stylesheet" href="css/library.css" media="all" />
+	<link rel="stylesheet" href="css/accordion.css" media="all" />
 	<!--<link rel="stylesheet" href="css/bootstrap.css" media="all" />-->
 
 </head>
@@ -47,7 +48,7 @@
 	<h3>Table of contents</h3>
 		<ul class="list-block">
 			<li><a href="#tab">Tabs</a></li>
-			<li><a href="#accordian">Accordian</a></li>
+			<li><a href="#accordion">Accordion</a></li>
 			<li><a href="#carousel">Carousel</a></li>
 			<li><a href="#images">Images</a></li>
 			<li><a href="#thumbnails">Tumbnails</a></li>
@@ -88,109 +89,55 @@
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>
 	</div>
-	<div class="border-line"></div>
+	<div class="border-line" id="accordion"></div>
 </div>
 		<div class="container">
-	<h2 class="page-header" id="accordian">Accordian</h2>
+	<h2 class="page-header">Accordian</h2>
 	
 	<p>Used for trail links in the footer and Lorem ipsum dolor sit amet</p>
 
 	<div class="border-box">
 	<h4>Example</h4>
 
-
-		<!--<dt><h2><a href="#option1" class="accordion-control">Header 1 <i class="icon-angle-down icon-large"></i></a></h2></dt>
-		<dd id="option-1" class="accordion-pane">
-			<h3>Content</h3>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-		</dd>
-		</dt>
-
-		<dt><h2><a href="#option-2" class="accordion-control">Header 2 <i class="icon-angle-down icon-large"></i></a></h2></dt>
-		<dd id="option2" class="accordion-pane">
-			<h3>Content</h3>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			
-		</dd>
-		</dt>-->
-<dt><h2><a href="#sport-statistics" class="accordion-control">Sport statistics  <strong class="live-latest">Updated 25 September</strong> <i class="icon-angle-down icon-large"></i></a></h2></dt>
-		<dd id="sport-statistics" class="accordion-pane">
-			<h3>Football</h3>
+	<dt><h2><a href="#example-1" class="accordion-control">Example 1 <i class="icon-angle-down icon-large"></i></a></h2></dt>
+		<dd id="example-1" class="accordion-pane">
+			<h3>Header 1</h3>
 			<ul class="list-page">
-				<li><a href="sport-statistics/football-stats-module.html">Football fixtures &amp; results module <strong class="live-latest">New 25 September</strong></a></li>
-				<li><a href="sport-statistics/football-results-all.html">Football results - all <strong class="live-latest">Updated 24 September</strong></a></li>
-				<li><a href="sport-statistics/football-results-competition.html">Football results - competition <strong class="live-latest">Updated 24 September</strong></a></li>						
-				<li><a href="sport-statistics/football-results-club.html">Football results - club <strong class="live-latest">Updated 24 September</strong></a></li>							
-				<li><a href="sport-statistics/football-fixtures-all.html">Football fixtures - all <strong class="live-latest">Updated 24 September</strong></a></li>
-				<li><a href="sport-statistics/football-fixtures-competition.html">Football fixtures - competition <strong class="live-latest">Updated 24 September</strong></a></li>		
-				<li><a href="sport-statistics/football-fixtures-club.html">Football fixtures - club <strong class="live-latest">Updated 24 September</strong></a></li>
-				<li><a href="sport-statistics/football-tables-all.html">Football tables - all <strong class="live-latest">New 20 August</strong></a></li>
-				<li><a href="sport-statistics/football-tables-competition.html">Football tables - competition <strong class="live-latest">New 20 August</strong></a></li>	
-				<li><a href="sport-statistics/football-tables-club.html">Football tables - club <strong class="live-latest">New 20 August</strong></a></li>														
-				<li><a href="sport-statistics/football-live-scores-all.html">Football live scores - all <strong class="live-latest">New 19 August</strong></a></li>
-				<li><a href="sport-statistics/football-live-scores-competition.html">Football live scores - competition <strong class="live-latest">New 19 August</strong></a></li>
-			</ul>
-			<!-- <h3>Notes</h3>
-			<ul class="list-notes">
-				<li>The saturday afternoon (game in progress) page has a score alert (wait seconds to view).</li>
-			</ul> -->
-			<h3>Tennis</h3>
-			<ul class="list-page">
-				<li><a href="sport-statistics/tennis-results-all.html">Tennis results <strong class="live-latest">Updated 24 September</a></strong></li>
-				<li><a href="sport-statistics/tennis-calendar.html">Tennis calendar <strong class="live-latest">Updated 24 September</strong></a></li>
-				<li><a href="sport-statistics/tennis-live-scores-all.html">Tennis live scores <strong class="live-latest">New 23 September</a></strong></li>
-				<li><a href="sport-statistics/tennis-order-of-play.html">Tennis order of play <strong class="live-latest">New 19 September</a></strong></li>
-				<li><a href="sport-statistics/tennis-atp-rankings.html">Tennis ATP rankings <strong class="live-latest">New 19 September</strong></a></li>
-			</ul>
-			
-			<h3>Cricket</h3>
-			<ul class="list-page">
-				<li><a href="sport-statistics/cricket-results-all.html">Cricket results - all <strong class="live-latest">Updated 24 September</strong></a></li>
-				<li><a href="sport-statistics/cricket-fixtures-all.html">Cricket fixtures - all <strong class="live-latest">Updated 24 September</strong></a></li>
-				<li><a href="sport-statistics/cricket-scorecard.html">Cricket scorecard <strong class="live-latest">New 28 August</strong></a></li>
-				<li><a href="sport-statistics/cricket-tables-all.html">Cricket tables - all <strong class="live-latest">New 23 August</strong></a></li>
-				<li><a href="sport-statistics/cricket-tables-competition.html">Cricket tables - competition <strong class="live-latest">New 23 August</strong></a></li>													
-				<li><a href="sport-statistics/cricket-live-scores-all.html">Cricket live scores - all <strong class="live-latest">New 23 August</strong></a></li>
-			</ul>
-			<h3>Notes</h3>
-			<ul class="list-notes">
-				<li>Competition scores, fixtures and results should be the same as the cumulative ones, with the top batsmen/bowler tables replacing the 'more tables' list.</li>
+				<li>Copy or whatever you want here Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt</li>
 			</ul>
 		</dd>
-		<!-- end sport-statistics -->
-
-	
-		<dl class="accordion">	
-			<dt><h2><a href="#live-blogs" class="accordion-control">Live blogs <strong class="live-latest">Updated 5 September</strong> <i class="icon-angle-down icon-large"></i></a></h2></dt>
-			<dd id="live-blogs" class="accordion-pane">
-				<ul class="list-page">
-					<li><a href="live-blog/live-blog-news-transit-v4.html">Live blog, news, v4, transit to venus example <strong class="live-latest">New 5 September</strong></a></li>
-					<li><a href="live-blog/live-blog-news-streaming-video-v4.html">Live blog, news, v4 with streaming video at top <strong class="live-latest">New 29 August</strong></a></li>
-					<li><a href="live-blog/live-blog-news-v4.html">Live blog, news, v4 <strong class="live-latest">Updated 2 September</strong></a></li>
-					<li><a href="live-blog/live-blog-football-v4.html">Live blog, football, v4 <strong class="live-latest">New 2 September</strong></a></li>
-					<li><a href="article/article-v4-w-live-blog.html">Article v4 with comment teaser and live blog element <strong class="live-latest">Updated 1 August</strong></a></li>
-					<!-- <li><del><a href="live-blog/live-blog-on-article.html">Live blog module on article <strong class="live-latest">New 8 July</strong></a></del></li>
-					<li><del><a href="live-blog/live-blog-news-v2.html">Live blog, news <strong class="live-latest">New 4 July</strong></a></del></li>
-					<li><del><a href="live-blog/live-blog-football-v2.html">Live blog, football <strong class="live-latest">New 4 July</strong></a></del></li> -->
-				</ul>
-				<h3>Notes</h3>
-				<ul class="list-notes">
-					<li>Summary is pinned to top of the news live blog</li>
-					<li>At wider widths summary moves to right hand side, but cuts in to main column, to give it enough space</li>
-					<li>On the football live blog, scores occupies the same position as the summary on news. Likewise at larger widths, the scores move to the right hand side, cutting in to the main column.</li>
-					<li>The table tab is pulled out and placed under the scores at larger screen sizes.</li>
-					<li>Comments have been removed from football example, after conversation with James Dart, as they are not used on live sport events.</li>
-				</ul>
-			</dd>
-		</dt>
-
+	<dl class="accordion">	
+	<dt><h2><a href="#example-2" class="accordion-control">Example 2 <i class="icon-angle-down icon-large"></i></a></h2></dt>
+		<dd id="example-2" class="accordion-pane">
+			<h3>Header 2</h3>
+			<ul class="list-page">
+				<li>Copy or whatever you want here Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt</li>
+			</ul>
+		</dd>
+	</dl>
 	</div>	
 	<div class="border-box-code">
-			<p>Code goes here: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum iusto iure nobis non recusandae modi dolores natus. Ut, nisi, doloribus, libero quas minima omnis repudiandae quasi rerum illum quod laudantium.</p>
+			<pre class="prettyprint"><code><span class="nt">&lt;dt&gt;&lt;h2&gt;&lt;a href="#example-1" class="accordion-control"&gt;Example 1 &lt;i class="icon-angle-down icon-large"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;/dt&gt;
+&nbsp;&nbsp;&lt;dd id="example-1" class="accordion-pane"&gt;
+&nbsp;&nbsp;&nbsp;&lt;h3&gt;Header 1&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&lt;ul class="list-page"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Copy or whatever you want here Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+&nbsp;&nbsp;&nbsp;&nbsp;tempor incididunt&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&lt;/ul&gt;
+&nbsp;&nbsp;&lt;/dd&gt;
+&nbsp;&lt;dl class="accordion"&gt;	
+&nbsp;&lt;dt&gt;&lt;h2&gt;&lt;a href="#example-2" class="accordion-control"&gt;Example 2 &lt;i class="icon-angle-down icon-large"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;/dt&gt;
+&nbsp;&nbsp;&lt;dd id="example-2" class="accordion-pane"&gt;
+&nbsp;&nbsp;&nbsp;&lt;h3&gt;Header 2&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&lt;ul class="list-page"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Copy or whatever you want here Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+&nbsp;&nbsp;&nbsp;&nbsp;tempor incididunt&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&lt;/ul&gt;
+&nbsp;&nbsp;&lt;/dd&gt;
+&nbsp;&lt;/dl&gt;</span>
+</code></pre>
 	</div>
 	<div class="border-line"></div>
 
@@ -203,7 +150,8 @@
 		<p>Example of the element</p>
 	</div>	
 	<div class="border-box-code">
-			<p>Code goes here: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum iusto iure nobis non recusandae modi dolores natus. Ut, nisi, doloribus, libero quas minima omnis repudiandae quasi rerum illum quod laudantium.</p>
+			<pre class="prettyprint"><code><span class="nt"></span>
+</code></pre>
 	</div>
 	<div class="border-line"></div>
 
@@ -216,7 +164,8 @@
 		<p>Example of the element</p>
 	</div>
 	<div class="border-box-code">
-			<p>Code goes here: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum iusto iure nobis non recusandae modi dolores natus. Ut, nisi, doloribus, libero quas minima omnis repudiandae quasi rerum illum quod laudantium.</p>
+			<pre class="prettyprint"><code><span class="nt"></span>
+</code></pre>
 	</div>
 	<div class="border-line"></div>
 </div>		<div class="container">
@@ -228,7 +177,8 @@
 		<p>Example of the element</p>
 	</div>
 	<div class="border-box-code">
-			<p>Code goes here: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum iusto iure nobis non recusandae modi dolores natus. Ut, nisi, doloribus, libero quas minima omnis repudiandae quasi rerum illum quod laudantium.</p>
+			<pre class="prettyprint"><code><span class="nt"></span>
+</code></pre>
 	</div>
 	<div class="border-line"></div>
 </div>		<div class="container">
@@ -240,7 +190,8 @@
 		<p>Example of the element</p>
 	</div>
 	<div class="border-box-code">
-			<p>Code goes here: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum iusto iure nobis non recusandae modi dolores natus. Ut, nisi, doloribus, libero quas minima omnis repudiandae quasi rerum illum quod laudantium.</p>
+			<pre class="prettyprint"><code><span class="nt"></span>
+</code></pre>
 	</div>
 	<div class="border-line"></div>
 </div>		<div class="container">
@@ -252,7 +203,8 @@
 		<p>Example of the element</p>
 	</div>
 	<div class="border-box-code">
-			<p>Code goes here: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum iusto iure nobis non recusandae modi dolores natus. Ut, nisi, doloribus, libero quas minima omnis repudiandae quasi rerum illum quod laudantium.</p>
+			<pre class="prettyprint"><code><span class="nt"></span>
+</code></pre>
 	</div>
 	<div class="border-line"></div>
 </div>		<div class="container">
@@ -264,7 +216,8 @@
 		<p>Example of the element</p>
 	</div>
 	<div class="border-box-code">
-			<p>Code goes here: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum iusto iure nobis non recusandae modi dolores natus. Ut, nisi, doloribus, libero quas minima omnis repudiandae quasi rerum illum quod laudantium.</p>
+			<pre class="prettyprint"><code><span class="nt"></span>
+</code></pre>
 	</div>
 	<div class="border-line"></div>
 </div>	</div>
@@ -283,7 +236,9 @@
 <script src="js/run_prettify_cc.min.js"> </script>
  
  <script src="js/showhide.min.js"> </script>
- <script src="js/accordian.min.js"> </script>
+
+ <script src="js/accordion.min.js"> </script>
+ <!--<script src="js/accordion-with-arrows.min.js"> </script>-->
 
  <script src="js/sticky-position.min.js"> </script>
 

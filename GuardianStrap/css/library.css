@@ -3017,7 +3017,8 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 .accordion {
   border-bottom: 1px solid #e5e5e5; }
   .accordion h2, .accordion h3 {
-    margin: 0; }
+    margin: 0;
+    padding: 10px; }
 
 .accordion-control {
   display: block;
@@ -3121,13 +3122,6 @@ ul {
   margin: 0;
   float: left; }
 
-li {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  list-style-type: square;
-  line-height: 1.2em; }
-
 p {
   line-height: 1.4em; }
 
@@ -3136,7 +3130,7 @@ p {
   background-size: 100% auto;
   width: 120px;
   height: 55px;
-  margin: 12px 0 0 15px;
+  margin: 13px 0 0 15px;
   /*@media (max-width:$small-medium){
   	width:90px;
   	height:20;
@@ -3169,6 +3163,12 @@ article {
   z-index: -10;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px; }
+  .column-left li {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: square;
+    line-height: 1.2em; }
 
 .column-right {
   width: 70%;
@@ -3246,6 +3246,11 @@ article {
   padding: 10px;
   margin: 0; }
 
+.reset {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
 .showhide {
   color: #005689;
   cursor: pointer;
@@ -3262,8 +3267,8 @@ article {
   width: 940px; }
   .header-container div {
     color: white;
-    padding: 40px 20px 0 20px;
-    font-size: 90px; }
+    padding: 50px 20px 0 20px;
+    font-size: 80px; }
   .header-container p {
     color: white;
     padding: 25px;
@@ -3283,16 +3288,16 @@ article {
   right: 0;
   top: 0;
   height: 50px;
-  background: #003656;
+  background: #005689;
   position: fixed;
   z-index: 100;
   border-bottom: 1px solid #cccccc; }
 
 .framework-nav-container {
   max-width: 940px;
-  height: 38px;
-  background: #003656;
-  margin: 0 auto; }
+  height: 50px;
+  margin: -13px auto;
+  padding-top: 13px; }
 
 .border-box {
   border: 1px solid #cccccc;

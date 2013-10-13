@@ -15,7 +15,7 @@
 @import "font-awesome.scss";
 @import "colors.scss";
 @import "tabs.scss";
-@import "accordian.scss";
+@import "accordion.scss";
 //@import "media.scss";
 //@import "library.scss";
 //@import "adverts.scss";
@@ -154,14 +154,6 @@ ul{
 	float:left;
 }
 
-li {
-	//float:left;
-	margin:0;
-	padding:0;
-	width:100%;
-	list-style-type: square;
-	line-height:1.2em;
-}
 
 
 p{
@@ -177,7 +169,7 @@ p{
 	//position:absolute;
 	width:120px;
 	height:55px;
-	margin:12px 0 0 15px;
+	margin:13px 0 0 15px;
 	//background-color:lime;
 
 	/*@media (max-width:$small-medium){
@@ -228,6 +220,14 @@ article{
 	z-index:-10;
 	border-bottom-right-radius:5px;
 	border-bottom-left-radius:5px;
+	li {
+		//float:left;
+		margin:0;
+		padding:0;
+		width:100%;
+		list-style-type: square;
+		line-height:1.2em;
+	}
 }
 
 .column-right{
