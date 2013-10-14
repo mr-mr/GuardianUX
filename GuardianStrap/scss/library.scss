@@ -41,6 +41,23 @@
 	float:left;
 }
 
+.message-container{
+	left: 0;
+	right:0;
+	height:40px;
+	background:$light-grey;
+	border-bottom: 1px solid $grey;
+	margin:0;
+	padding:0;
+	
+	.message-bar {
+		width:940px;
+		margin:0 auto;
+		padding:12px;
+		text-align:left;
+	}
+}
+
 .header-container {
 	//background: $grey;
 	margin:0 auto;
@@ -48,14 +65,17 @@
 	div{
 		color:$link-white;
 		padding:50px 20px 0 20px ;
-		font-size: 80px;
+		font-size: 70px;
 		//margin:30px 0 20px 0;
+
 	}
 	p{
 		color:$link-white;
 		padding:25px;
-		font-size: 18px;
+		font-size: 16px;
 		margin-top:-20px;
+		font-weight:normal;
+		width:70%;
 	}
 }
 
@@ -63,10 +83,12 @@
 	left:0;
 	right:0;
 	margin-top:50px;
-	height:300px;
+	height:250px;
 	background:$link;
+	background:url("../img/library-bg.png") top left repeat;
 	z-index:99;
 }
+
 
 .framework-bar{
 	left:0;
@@ -76,7 +98,7 @@
 	background:$link;
 	position: fixed;
 	z-index:100;
-	border-bottom: 1px solid $grey;
+	border-bottom: 1px solid rgba(255, 255, 255, .3);
 }
 
 .framework-nav-container {
@@ -138,9 +160,9 @@ code {
 
 .framework-nav {
 		
-		float:right;
+		float:left;
 		padding:10px;
-		margin: -62px 0 0 200px;
+		margin: -62px 0 0 140px;
 		//background:lime;
 		width:420px;
 	
