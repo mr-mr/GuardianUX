@@ -27,7 +27,7 @@
 //-----------------------------
 
 #wrapper {
-	margin: 60px auto;
+	margin: 50px auto;
 	//width:90%;
 	width:880px;
 }
@@ -241,11 +241,12 @@ article{
 .column-right{
 	width:70%;
 	float:right;
+	margin-top:-15px;
 }
 
 .fixed {
 	position: fixed;
-    top:80px;
+    top:100px;
     width: 200px;
 	float: left;
 }
