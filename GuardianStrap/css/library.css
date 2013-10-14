@@ -3048,20 +3048,20 @@ body {
   text-rendering: optimizeLegibility; }
 
 a:link, a:visited {
-  color: #005689;
+  color: #234a81;
   text-decoration: none;
   font-weight: normal; }
 a:hover {
-  color: #003656;
+  color: #183359;
   text-decoration: underline; }
 
 .button a:link, .button a:visited {
   color: #fff;
-  background: #005689;
+  background: #234a81;
   padding: 10px 20px 10px 20px;
   text-decoration: none; }
 .button a:hover {
-  background: #003656; }
+  background: #183359; }
 
 .border-line {
   border: 1px solid #e5e5e5;
@@ -3069,6 +3069,11 @@ a:hover {
   margin: 20px 0 30px 0;
   padding: 0;
   float: left; }
+
+.border-line-dark {
+  border: 1px solid lime;
+  width: 100%;
+  opacity: 0.4; }
 
 .border-vertical {
   border: 1px solid #e5e5e5;
@@ -3252,7 +3257,7 @@ article {
   border: none; }
 
 .showhide {
-  color: #005689;
+  color: #234a81;
   cursor: pointer;
   cursor: hand; }
   .showhide:hover {
@@ -3262,25 +3267,42 @@ article {
   width: 100%;
   float: left; }
 
+.message-container {
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: #e5e5e5;
+  border-bottom: 1px solid #cccccc;
+  margin: 0;
+  padding: 0; }
+  .message-container .message-bar {
+    width: 940px;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: left; }
+
 .header-container {
   margin: 0 auto;
   width: 940px; }
   .header-container div {
     color: white;
     padding: 50px 20px 0 20px;
-    font-size: 80px; }
+    font-size: 70px; }
   .header-container p {
     color: white;
     padding: 25px;
-    font-size: 18px;
-    margin-top: -20px; }
+    font-size: 16px;
+    margin-top: -20px;
+    font-weight: normal;
+    width: 70%; }
 
 .framework-top {
   left: 0;
   right: 0;
   margin-top: 50px;
-  height: 300px;
-  background: #005689;
+  height: 250px;
+  background: #234a81;
+  background: url("../img/library-bg.png") top left repeat;
   z-index: 99; }
 
 .framework-bar {
@@ -3288,10 +3310,10 @@ article {
   right: 0;
   top: 0;
   height: 50px;
-  background: #005689;
+  background: #234a81;
   position: fixed;
   z-index: 100;
-  border-bottom: 1px solid #cccccc; }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
 
 .framework-nav-container {
   max-width: 940px;
@@ -3331,7 +3353,7 @@ code {
   color: white;
   width: 110px;
   height: 18px;
-  background: #005689;
+  background: #234a81;
   font-family: "guardian-regular";
   font-size: 1em;
   font-weight: bold;
@@ -3339,9 +3361,9 @@ code {
   margin: 0; }
 
 .framework-nav {
-  float: right;
+  float: left;
   padding: 10px;
-  margin: -62px 0 0 200px;
+  margin: -62px 0 0 140px;
   width: 420px; }
   .framework-nav li {
     display: inline;
