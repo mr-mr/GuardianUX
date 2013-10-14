@@ -2941,7 +2941,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   content: "\f18b"; }
 
 #tabs div {
-  width: inherit;
+  width: 100%;
   float: left;
   border-top: 1px solid #a6a6a6;
   margin-top: -4px; }
@@ -2975,7 +2975,10 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 .ui-tabs .ui-tabs-nav li a,
 .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
-  cursor: pointer; }
+  cursor: pointer;
+  outline: 0;
+  padding: 11px 97px 22px 10px;
+  margin: 0 0 0 -10px; }
 
 .ui-state-default,
 .ui-widget-content .ui-state-default,
@@ -3163,7 +3166,7 @@ article {
   float: left;
   position: relative;
   margin: -60px 0 0 -20px;
-  padding: 50px 10px 15px 22px;
+  padding: 30px 10px 15px 22px;
   background: #e7eef3;
   z-index: -10;
   border-bottom-right-radius: 5px;
@@ -3274,9 +3277,9 @@ article {
   background: #e5e5e5;
   border-bottom: 1px solid #cccccc;
   margin: 0;
-  padding: 0; }
+  padding: 10px; }
   .message-container .message-bar {
-    width: 940px;
+    width: 900px;
     margin: 0 auto;
     padding: 12px;
     text-align: left; }

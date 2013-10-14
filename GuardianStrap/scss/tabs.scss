@@ -1,5 +1,5 @@
 #tabs div {
-	width:inherit;
+	width:100%;
 	float:left;
 	border-top: 1px solid $semi-grey;
 	//background: lime;
@@ -43,6 +43,10 @@
 .ui-tabs .ui-tabs-nav li a,
 .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
 	cursor: pointer;
+	outline: 0;
+	//background:lime;
+	padding:11px 97px 22px 10px;
+	margin: 0 0 0 -10px ;
 }
 
 
