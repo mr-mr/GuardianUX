@@ -3074,7 +3074,7 @@ a:hover {
   float: left; }
 
 .border-line-dark {
-  border: 1px solid lime;
+  border: 1px solid black;
   width: 100%;
   opacity: 0.4; }
 
@@ -3308,6 +3308,9 @@ article {
   background: #234a81;
   background: url("../img/library-bg.png") top left repeat;
   z-index: 99; }
+
+.framework-top:after {
+  border-bottom: 1px solid black; }
 
 .framework-bar {
   left: 0;
