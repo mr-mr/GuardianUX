@@ -25,13 +25,13 @@
 // 5.0 layout
 // -------------------------------------------------------------------------------------------------------------------------------------------------
 .accordion {
-	margin-bottom:10px;
+	margin-bottom:15px;
 }
 
 // 6.0 modules
 // -------------------------------------------------------------------------------------------------------------------------------------------------
 .accordion {
-	border-bottom:1px solid $light-grey;
+	//border-bottom:1px solid $light-grey;
 	h2, h3 {
 		margin:0;
 		padding:10px;
@@ -41,14 +41,14 @@
 
 .accordion-control {
 	display:block;
-	padding :10,10,10,10,300;
-	border-top:1px solid $light-grey;
+	padding :10px,10px,10px,10px,300;
+	//border-top:1px solid $light-grey;
 	
 }
 
 .accordion-pane {
 	padding:10,10,10,10;
-	border-top:1px dotted $light-grey;
+	//border-top:1px dotted $light-grey;
 }
 
 

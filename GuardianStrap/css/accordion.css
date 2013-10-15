@@ -1,16 +1,13 @@
 .accordion {
-  margin-bottom: 10px; }
+  margin-bottom: 15px; }
 
-.accordion {
-  border-bottom: 1px solid #e5e5e5; }
-  .accordion h2, .accordion h3 {
-    margin: 0; }
+.accordion h2, .accordion h3 {
+  margin: 0;
+  padding: 10px; }
 
 .accordion-control {
   display: block;
-  padding: 10,10,10,10,300;
-  border-top: 1px solid #e5e5e5; }
+  padding: 10px,10px,10px,10px,300; }
 
 .accordion-pane {
-  padding: 10,10,10,10;
-  border-top: 1px dotted #e5e5e5; }
+  padding: 10,10,10,10; }

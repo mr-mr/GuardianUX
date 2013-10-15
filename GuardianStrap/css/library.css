@@ -3014,24 +3014,6 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   color: #212121;
   padding: 0; }
 
-.accordion {
-  margin-bottom: 10px; }
-
-.accordion {
-  border-bottom: 1px solid #e5e5e5; }
-  .accordion h2, .accordion h3 {
-    margin: 0;
-    padding: 10px; }
-
-.accordion-control {
-  display: block;
-  padding: 10,10,10,10,300;
-  border-top: 1px solid #e5e5e5; }
-
-.accordion-pane {
-  padding: 10,10,10,10;
-  border-top: 1px dotted #e5e5e5; }
-
 #wrapper {
   margin: 50px auto;
   width: 880px; }
@@ -3254,6 +3236,20 @@ article {
   list-style: none;
   padding: 10px;
   margin: 0; }
+
+.accordion {
+  margin-bottom: 15px; }
+
+.accordion h2, .accordion h3 {
+  margin: 0;
+  padding: 10px; }
+
+.accordion-control {
+  display: block;
+  padding: 10px,10px,10px,10px,300; }
+
+.accordion-pane {
+  padding: 10,10,10,10; }
 
 .reset {
   margin: 0;
