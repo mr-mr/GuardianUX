@@ -1,7 +1,33 @@
-@import "fonts.scss";
-@import "colors.scss";
+.logo{
+	background:url("../img/guardian-logo.svg") no-repeat;
+	background-size:100% auto;
+	//position:absolute;
+	width:120px;
+	height:55px;
+	margin:13px 0 0 15px;
+	//background-color:lime;
+
+	/*@media (max-width:$small-medium){
+		width:90px;
+		height:20;
+		margin:10,10,10,10;
+	}*/
+}
 
 img {
 	width:100%;
-	color:$link;
+	max-width:100%;
+	display:block;
+}
+
+video{
+
+}
+
+iframe {
+	width:100%;
+	height:100%;
+	border:none;
+	margin-top:50px;
+	padding:0;
 }

@@ -1,0 +1,148 @@
+.column-left{
+	width: 200px;
+	float: left;
+	//border-radius:5px;
+	position: relative;
+	margin: -60px 0 0 -20px ;
+	padding:30px 10px 15px 22px;
+	background:$light-blue;
+	//opacity:0.1;
+	z-index:-10;
+	border-bottom-right-radius:5px;
+	border-bottom-left-radius:5px;
+	li {
+		//float:left;
+		margin:0;
+		padding:0;
+		width:100%;
+		list-style-type: square;
+		line-height:1.2em;
+	}
+}
+
+.column-right{
+	width:70%;
+	float:right;
+	margin-top:-15px;
+}
+
+.fixed {
+	position: fixed;
+    top:100px;
+    width: 200px;
+	float: left;
+}
+
+.column-container{
+
+}
+
+.column-1{
+
+}
+
+.column-2{
+
+}
+
+.column-3{
+
+}
+
+.column-4{
+
+}
+
+/*.column {
+	float:left;
+	//margin-top: 0px 0px 0px 0px;
+	//background: aqua;
+	height: 100px;
+    -webkit-column-count: 4;
+       -moz-column-count: 4;
+            column-count: 4;
+    column-gap: 20px;
+    //page-break-after: </li>;
+    padding:20px;
+}
+
+.column li{
+	list-style-type: none;
+	display: inline-block;
+}
+*/
+
+.column {
+	
+	@media (min-width:$small){
+		width:100%;
+		-moz-column-count:1;
+		-webkit-column-count:1;
+		column-count:1;
+		padding:0; margin:0;
+		
+		li:nth-child(n+2) {
+			display:none;
+			//background:lime;
+			}
+		
+			li {
+			    break-after: always;
+			    -moz-column-break-after: always;
+			    -webkit-column-break-after: always;
+			}
+	
+	}
+	
+	
+	@media (min-width:$medium){
+		width:100%;
+		-moz-column-count:2;
+		-webkit-column-count:2;
+		column-count:2;
+		padding:0; margin:0;
+		
+		li:nth-child(n+4) {
+			display:block;
+			//background:lime;
+			}
+		
+			li {
+			    break-after: always;
+			    -moz-column-break-after: always;
+			    -webkit-column-break-after: always;
+			}
+	
+	}
+	
+	
+	@media (min-width:$medium-large) {
+		width:100%;
+		-moz-column-count:4;
+		-webkit-column-count:4;
+		column-count:4;
+		padding:0; margin:0;
+	
+		li:nth-child(n+2) {
+			display:block;
+			//background:aqua;
+			}
+	
+			li {
+			    break-after: always;
+			    -moz-column-break-after: always;
+			    -webkit-column-break-after: always;
+			}
+	
+		}
+	
+	}
+
+
+.column li {
+	//width:24%;
+	list-style:none;
+	padding:10px; margin:0;
+	//font-size:1.0em;
+	
+}

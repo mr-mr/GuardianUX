@@ -4,21 +4,9 @@
 // 2. general
 // 3. type
 // 4. code snippets
-// ------------------------------------------------------------------------------------------------------------------------------------------------- 
+// -------------------------------------------------------------------------------------------------------------------------
 
 
-// 1.Imports
-//-----------------------------
-@import "fonts.scss";
-@import "font-awesome.scss";
-@import "colors.scss";
-//@import "media.scss";
-//@import "base.scss";
-//@import "accordion.scss";
-//@import "tabs.scss";
-//@import "adverts.scss";
-//@import "screen.scss";
-//@import "breakpoints.scss";
 
 
 // 2.General
@@ -38,10 +26,12 @@
 	}
 }
 
+/*
 .container{
 	width:100%;
 	float:left;
 }
+*/
 
 .message-container{
 	left: 0;
