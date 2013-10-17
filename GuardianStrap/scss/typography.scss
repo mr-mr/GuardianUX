@@ -1,0 +1,56 @@
+// Table of contents
+//-----------------------------
+// 1. imports
+// ------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+
+h1, h2, h3, h4, li {
+	font-weight:normal;
+}
+
+h1 {
+	color: $copy; 
+	font-family: $serif; 
+	font-size:(30 / 14) * 1em;
+	font-weight:bold;
+}
+
+
+h2 {
+	color:$copy;
+	font-family: $serif; 
+	font-size:(20 / 14) * 1em;
+	margin:0;
+	padding:0;
+	
+}
+
+h3 {
+	font-size:(14 / 14) * 1em;
+	font-family:$serif;
+	margin:5,0,5,0;
+	padding:0;
+}
+
+h4 {
+	font-size:15;
+	font-family:$serif-bold;
+	margin:5,0,5,0;
+	//float:left;
+}
+
+ul{
+	list-style-type: none;
+	width:100%;
+	padding:0;
+	margin:0;
+	float:left;
+}
+li {
+	list-style-type: square;
+}
+
+
+p{
+	line-height:1.4em;
+}

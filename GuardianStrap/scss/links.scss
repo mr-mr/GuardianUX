@@ -1,0 +1,18 @@
+a {
+	&:link, &:visited {color:$link; text-decoration:none; font-weight:normal;}
+	&:hover{color:$link-hover; text-decoration:underline;}
+}
+
+.button{
+	a:link, a:visited{
+	color:#fff;
+	background: $link;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	
+	}
+
+	a:hover{
+	background: $link-hover;
+	}
+}

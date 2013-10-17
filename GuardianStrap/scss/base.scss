@@ -6,21 +6,26 @@
 // x. images & video
 // x. layout
 // x. modules
-// ------------------------------------------------------------------------------------------------------------------------------------------------- 
+// -------------------------------------------------------------------------------------------------------------------------
 
 
-// 1.Imports
+// 1.1 Imports General
 //-----------------------------
 @import "fonts.scss";
 @import "font-awesome.scss";
 @import "colors.scss";
+@import "breakpoints.scss";
+@import "typography.scss";
+@import "links.scss";
+@import "media.scss";
+@import "layouts.scss";
+//@import "navigation.scss";
+
+// 1.2 Imports for Framework
+//-----------------------------
 @import "tabs.scss";
 @import "accordion.scss";
-//@import "media.scss";
-//@import "library.scss";
-//@import "adverts.scss";
-//@import "screen.scss";
-@import "breakpoints.scss";
+
 
 
 // 2.General
@@ -51,28 +56,6 @@ body{
 }
 
 
-
-a {
-	&:link, &:visited {color:$link; text-decoration:none; font-weight:normal;}
-	&:hover{color:$link-hover; text-decoration:underline;}
-}
-
-.button{
-	a:link, a:visited{
-	color:#fff;
-	background: $link;
-	padding: 10px 20px 10px 20px;
-	text-decoration: none;
-	
-	}
-
-	a:hover{
-	background: $link-hover;
-	}
-}
-
-
-
 .border-line{
 	border: 1px solid $light-grey;
 	width:100%;
@@ -98,105 +81,6 @@ a {
 }
 
 
-.intro{
-	padding:10px;
-	line-height: 25px;
-}
-
-nav-footer{
-
-}
-
-iframe {
-	width:100%;
-	height:100%;
-	border:none;
-	margin-top:50px;
-	padding:0;
-}
-
-
-// x.type
-//-----------------------------
-
-h1, h2, h3, h4, li {
-	font-weight:normal;
-}
-
-h1 {
-	color: $copy; 
-	font-family: $serif; 
-	font-size:(30 / 14) * 1em;
-	font-weight:bold;
-}
-
-
-h2 {
-	color:$copy;
-	font-family: $serif; 
-	font-size:(20 / 14) * 1em;
-	margin:0;
-	padding:0;
-	
-}
-
-h3 {
-	font-size:(14 / 14) * 1em;
-	font-family:$serif;
-	margin:5,0,5,0;
-	padding:0;
-}
-
-h4 {
-	font-size:15;
-	font-family:$serif-bold;
-	margin:5,0,5,0;
-	//float:left;
-}
-
-ul{
-	list-style-type: none;
-	width:100%;
-	padding:0;
-	margin:0;
-	float:left;
-}
-
-
-
-p{
-	line-height:1.4em;
-}
-
-
-// x.media
-//-----------------------------
-.logo{
-	background:url("../img/guardian-logo.svg") no-repeat;
-	background-size:100% auto;
-	//position:absolute;
-	width:120px;
-	height:55px;
-	margin:13px 0 0 15px;
-	//background-color:lime;
-
-	/*@media (max-width:$small-medium){
-		width:90px;
-		height:20;
-		margin:10,10,10,10;
-	}*/
-}
-
-img {
-	width:100%;
-	max-width:100%;
-	display:block;
-}
-
-video{
-
-}
-
 
 // x.modules
 //-----------------------------
@@ -216,154 +100,7 @@ article{
 }
 
 
-.column-left{
-	width: 200px;
-	float: left;
-	//border-radius:5px;
-	position: relative;
-	margin: -60px 0 0 -20px ;
-	padding:30px 10px 15px 22px;
-	background:$light-blue;
-	//opacity:0.1;
-	z-index:-10;
-	border-bottom-right-radius:5px;
-	border-bottom-left-radius:5px;
-	li {
-		//float:left;
-		margin:0;
-		padding:0;
-		width:100%;
-		list-style-type: square;
-		line-height:1.2em;
-	}
-}
 
-.column-right{
-	width:70%;
-	float:right;
-	margin-top:-15px;
-}
-
-.fixed {
-	position: fixed;
-    top:100px;
-    width: 200px;
-	float: left;
-}
-
-.column-container{
-
-}
-
-.column-1{
-
-}
-
-.column-2{
-
-}
-
-.column-3{
-
-}
-
-.column-4{
-
-}
-
-/*.column {
-	float:left;
-	//margin-top: 0px 0px 0px 0px;
-	//background: aqua;
-	height: 100px;
-    -webkit-column-count: 4;
-       -moz-column-count: 4;
-            column-count: 4;
-    column-gap: 20px;
-    //page-break-after: </li>;
-    padding:20px;
-}
-
-.column li{
-	list-style-type: none;
-	display: inline-block;
-}
-*/
-
-.column {
-	
-	@media (min-width:$small){
-		width:100%;
-		-moz-column-count:1;
-		-webkit-column-count:1;
-		column-count:1;
-		padding:0; margin:0;
-		
-		li:nth-child(n+2) {
-			display:none;
-			//background:lime;
-			}
-		
-			li {
-			    break-after: always;
-			    -moz-column-break-after: always;
-			    -webkit-column-break-after: always;
-			}
-	
-	}
-	
-	
-	@media (min-width:$medium){
-		width:100%;
-		-moz-column-count:2;
-		-webkit-column-count:2;
-		column-count:2;
-		padding:0; margin:0;
-		
-		li:nth-child(n+4) {
-			display:block;
-			//background:lime;
-			}
-		
-			li {
-			    break-after: always;
-			    -moz-column-break-after: always;
-			    -webkit-column-break-after: always;
-			}
-	
-	}
-	
-	
-	@media (min-width:$medium-large) {
-		width:100%;
-		-moz-column-count:4;
-		-webkit-column-count:4;
-		column-count:4;
-		padding:0; margin:0;
-	
-		li:nth-child(n+2) {
-			display:block;
-			//background:aqua;
-			}
-	
-			li {
-			    break-after: always;
-			    -moz-column-break-after: always;
-			    -webkit-column-break-after: always;
-			}
-	
-		}
-	
-	}
-
-
-.column li {
-	//width:24%;
-	list-style:none;
-	padding:10px; margin:0;
-	//font-size:1.0em;
-	
-}
 
 
 
