@@ -1,5 +1,3 @@
-
-
 $(function () {
 	var controls = $('.accordion-control');
 	var containers = $('.accordion-pane');
