@@ -5,7 +5,7 @@ $(function () {
 	containers.hide().filter(':first').show();
 	
 	controls.click(function (e) {
-		containers.slideUp().filter(this.hash).slideDown();
+		containers.hide().filter(this.hash).show();
 
 		controls.removeClass('is-current');
 		$(this).addClass('is-current');
