@@ -2,29 +2,29 @@
 // Global Imports
 // --------------------------------------------------------------------------------------------------------------------------------------------
 @import "base";				//Holds all the variable and mixins for the prototypes
-@import "library";			//May delete
+@import "breakpoints";		//Using NGW FE team's code
+@import "colors";			//Videos and images
 @import "fonts";			//Referencing fonts and the styles associated
 @import "font-awesome";		//Font icons
-@import "colors";			//Videos and images
-@import "breakpoints";		//Using NGW FE team's code
-@import "typography";		//Videos and images
+@import "global-nav";		//Global and sub navigation
+@import "grid-system";		//This is where containers will feature
+@import "headerfooter";		//Global header and footer for all wireframes, editions
+@import "library";			//May delete
 @import "links";			//All links including buttons, trail links, trail blocks
 @import "multimedia";		//Videos and images
-@import "headerfooter";		//Global header and footer for all wireframes
-@import "navigation";		//References to
-@import "profiles";			//This should be limited to user icons, everything else should live under the above sections
-@import "grid-system";		//This is where containers will feature
 @import "mq";				//Guardian FE Media Query system
+@import "profiles";			//This should be limited to user icons, everything else should live under the above sections
+@import "typography";		//Videos and images
 
 // --------------------------------------------------------------------------------------------------------------------------------------------
 // Imports for Framework
 // --------------------------------------------------------------------------------------------------------------------------------------------
-@import "tabs";				//Tabs on the trail block and pages with multiple sections.
 @import "accordion";		//References to
+//@import "Alerts";			//References to
 @import "carousel";			//References to
+@import "tabs";				//Tabs on the trail block and pages with multiple sections.
 //@import "Images";			//References to
 //@import "Thumbnails";		//References to
-//@import "Alerts";			//References to
 //@import "Navbar";			//References to
 //@import "Pagination";		//References to
 //@import "Video";			//References to
