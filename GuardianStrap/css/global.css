@@ -1517,170 +1517,6 @@ article {
   padding: 0;
   line-height: 140%; }
 
-.reset {
-  margin: 0;
-  padding: 0;
-  border: none; }
-
-.showhide {
-  color: #234a81;
-  cursor: pointer;
-  cursor: hand; }
-  .showhide:hover {
-    text-decoration: underline; }
-
-.container {
-  width: 100%;
-  float: left; }
-
-.message-container {
-  left: 0;
-  right: 0;
-  height: 40px;
-  background: #e5e5e5;
-  border-bottom: 1px solid #cccccc;
-  margin: 0;
-  padding: 10px; }
-  .message-container .message-bar {
-    width: 900px;
-    margin: 0 auto;
-    padding: 12px;
-    text-align: left; }
-
-.header-container {
-  margin: 0 auto;
-  width: 940px; }
-  .header-container div {
-    color: white;
-    padding: 50px 20px 0 20px;
-    font-size: 70px; }
-  .header-container p {
-    color: white;
-    padding: 25px;
-    font-size: 16px;
-    margin-top: -20px;
-    font-weight: normal;
-    width: 70%; }
-
-.framework-top {
-  left: 0;
-  right: 0;
-  margin-top: 50px;
-  height: 250px;
-  background: white;
-  background: url("../img/library-bg.png") top left repeat;
-  z-index: 99; }
-
-.framework-top:after {
-  border-bottom: 1px solid black; }
-
-.framework-bar {
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 50px;
-  background: #234a81;
-  position: fixed;
-  z-index: 100;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
-
-.framework-nav-container {
-  max-width: 940px;
-  height: 50px;
-  margin: -13px auto;
-  padding-top: 13px; }
-
-.border-box {
-  border: 1px solid #cccccc;
-  width: 98%;
-  height: auto;
-  margin: 20px 0 0 0;
-  padding: 10px;
-  float: left;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px; }
-
-.border-box-code {
-  border: 1px solid #cccccc;
-  background: #f7f7f9;
-  width: 98%;
-  margin: -1px 0 0 0;
-  padding: 10px;
-  float: left;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px; }
-
-.note {
-  background: #f9ff9b;
-  padding: 20;
-  border-left: 2px solid #f6ff68; }
-
-code {
-  float: left; }
-
-.framework-header {
-  color: white;
-  width: 110px;
-  height: 18px;
-  background: #234a81;
-  font-family: "guardian-regular";
-  font-size: 1em;
-  font-weight: bold;
-  padding: 16px;
-  margin: 0; }
-
-.framework-nav {
-  float: left;
-  padding: 10px;
-  margin: -62px 0 0 140px;
-  width: 420px; }
-  .framework-nav li {
-    display: inline;
-    list-style-type: none;
-    padding: 0;
-    font-size: 14px;
-    margin: 0 0 0 20px; }
-    .framework-nav li a:link, .framework-nav li a:visited {
-      color: white;
-      text-decoration: none;
-      font-weight: normal; }
-    .framework-nav li a:hover {
-      color: aqua;
-      text-decoration: none; }
-  .framework-nav .framework-nav-active {
-    color: aqua; }
-
-pre.prettyprint {
-  padding: 2px; }
-
-pre code {
-  padding: 0;
-  font-size: inherit;
-  color: inherit;
-  white-space: pre-wrap;
-  border: 0; }
-
-code,
-pre {
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace; }
-
-code {
-  padding: 2px 4px;
-  font-size: 90%;
-  color: #c7254e;
-  white-space: nowrap; }
-
-pre {
-  display: block;
-  padding: 9.5px;
-  margin: 0 0 10px;
-  font-size: 13px;
-  line-height: 1.428571429;
-  color: #333333;
-  word-break: break-all;
-  word-wrap: break-word;
-  border: 0; }
-
 @font-face {
   font-family: "guardian-regular";
   src: url("../font/Guardian-Egyp-Web-Regular.woff") format("woff");
@@ -3152,85 +2988,169 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 .icon-renren:before {
   content: "\f18b"; }
 
-h1, h2, h3, h4, li {
-  font-weight: normal; }
-
-h1 {
-  color: #333333;
-  font-family: "guardian-regular";
-  font-size: 2.14286em;
-  font-weight: bold; }
-
-h2 {
-  color: #333333;
-  font-family: "guardian-regular";
-  font-size: 1.42857em;
+.reset {
   margin: 0;
-  padding: 0; }
-
-h3 {
-  font-size: 1em;
-  font-family: "guardian-regular";
-  margin: 5,0,5,0;
-  padding: 0; }
-
-h4 {
-  font-size: 15;
-  font-family: "guardian-bold";
-  margin: 5,0,5,0; }
-
-ul {
-  list-style-type: none;
-  width: 100%;
   padding: 0;
-  margin: 0;
+  border: none; }
+
+.showhide {
+  color: #234a81;
+  cursor: pointer;
+  cursor: hand; }
+  .showhide:hover {
+    text-decoration: underline; }
+
+.container {
+  width: 100%;
   float: left; }
 
-li {
-  list-style-type: square; }
+.message-container {
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: #e5e5e5;
+  border-bottom: 1px solid #cccccc;
+  margin: 0;
+  padding: 10px; }
+  .message-container .message-bar {
+    width: 900px;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: left; }
 
-p {
-  line-height: 1.4em; }
+.header-container {
+  margin: 0 auto;
+  width: 940px; }
+  .header-container div {
+    color: white;
+    padding: 50px 20px 0 20px;
+    font-size: 70px; }
+  .header-container p {
+    color: white;
+    padding: 25px;
+    font-size: 16px;
+    margin-top: -20px;
+    font-weight: normal;
+    width: 70%; }
 
-a:link, a:visited {
-  color: #234a81;
-  text-decoration: none;
-  font-weight: normal; }
-a:hover {
-  color: #183359;
-  text-decoration: underline; }
-
-.button a:link, .button a:visited {
-  color: #fff;
-  background: #234a81;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none; }
-.button a:hover {
-  background: #183359; }
-
-.logo {
-  background: url("../img/guardian-logo.svg") no-repeat;
-  background-size: 100% auto;
-  width: 120px;
-  height: 55px;
-  margin: 13px 0 0 15px;
-  /*@media (max-width:$small-medium){
-  	width:90px;
-  	height:20;
-  	margin:10,10,10,10;
-  }*/ }
-
-img {
-  width: 100%;
-  max-width: 100%;
-  display: block; }
-
-iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
+.framework-top {
+  left: 0;
+  right: 0;
   margin-top: 50px;
-  padding: 0; }
+  height: 250px;
+  background: white;
+  background: url("../img/library-bg.png") top left repeat;
+  z-index: 99; }
+
+.framework-top:after {
+  border-bottom: 1px solid black; }
+
+.framework-bar {
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 50px;
+  background: #234a81;
+  position: fixed;
+  z-index: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+.framework-nav-container {
+  max-width: 940px;
+  height: 50px;
+  margin: -13px auto;
+  padding-top: 13px; }
+
+.border-box {
+  border: 1px solid #cccccc;
+  width: 98%;
+  height: auto;
+  margin: 20px 0 0 0;
+  padding: 10px;
+  float: left;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
+
+.border-box-code {
+  border: 1px solid #cccccc;
+  background: #f7f7f9;
+  width: 98%;
+  margin: -1px 0 0 0;
+  padding: 10px;
+  float: left;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px; }
+
+.note {
+  background: #f9ff9b;
+  padding: 20;
+  border-left: 2px solid #f6ff68; }
+
+code {
+  float: left; }
+
+.framework-header {
+  color: white;
+  width: 110px;
+  height: 18px;
+  background: #234a81;
+  font-family: "guardian-regular";
+  font-size: 1em;
+  font-weight: bold;
+  padding: 16px;
+  margin: 0; }
+
+.framework-nav {
+  float: left;
+  padding: 10px;
+  margin: -62px 0 0 140px;
+  width: 420px; }
+  .framework-nav li {
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+    font-size: 14px;
+    margin: 0 0 0 20px; }
+    .framework-nav li a:link, .framework-nav li a:visited {
+      color: white;
+      text-decoration: none;
+      font-weight: normal; }
+    .framework-nav li a:hover {
+      color: aqua;
+      text-decoration: none; }
+  .framework-nav .framework-nav-active {
+    color: aqua; }
+
+pre.prettyprint {
+  padding: 2px; }
+
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  white-space: pre-wrap;
+  border: 0; }
+
+code,
+pre {
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace; }
+
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  white-space: nowrap; }
+
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.428571429;
+  color: #333333;
+  word-break: break-all;
+  word-wrap: break-word;
+  border: 0; }
 
 .column-left {
   width: 200px;
@@ -3325,6 +3245,46 @@ iframe {
   list-style: none;
   padding: 10px;
   margin: 0; }
+
+a:link, a:visited {
+  color: #234a81;
+  text-decoration: none;
+  font-weight: normal; }
+a:hover {
+  color: #183359;
+  text-decoration: underline; }
+
+.button a:link, .button a:visited {
+  color: #fff;
+  background: #234a81;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none; }
+.button a:hover {
+  background: #183359; }
+
+.logo {
+  background: url("../img/guardian-logo.svg") no-repeat;
+  background-size: 100% auto;
+  width: 120px;
+  height: 55px;
+  margin: 13px 0 0 15px;
+  /*@media (max-width:$small-medium){
+  	width:90px;
+  	height:20;
+  	margin:10,10,10,10;
+  }*/ }
+
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block; }
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin-top: 50px;
+  padding: 0; }
 
 @font-face {
   font-family: "guardian-regular";
@@ -4903,6 +4863,68 @@ ul.pagination {
 #pagination-profiles a:hover {
   border: solid 1px #666666; }
 
+h1, h2, h3, h4, li {
+  font-weight: normal; }
+
+h1 {
+  color: #333333;
+  font-family: "guardian-regular";
+  font-size: 2.14286em;
+  font-weight: bold; }
+
+h2 {
+  color: #333333;
+  font-family: "guardian-regular";
+  font-size: 1.42857em;
+  margin: 0;
+  padding: 0; }
+
+h3 {
+  font-size: 1em;
+  font-family: "guardian-regular";
+  margin: 5,0,5,0;
+  padding: 0; }
+
+h4 {
+  font-size: 15;
+  font-family: "guardian-bold";
+  margin: 5,0,5,0; }
+
+ul {
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  float: left; }
+
+li {
+  list-style-type: square; }
+
+p {
+  line-height: 1.4em; }
+
+.accordion {
+  margin-bottom: 10px;
+  padding: 20px; }
+
+.accordion {
+  border-top: 3px solid #e5e5e5; }
+  .accordion h2, .accordion h3 {
+    margin: 20px;
+    font-size: 18px; }
+
+.accordion-control {
+  display: block;
+  padding-top: 10px;
+  border-top: 1px solid #e5e5e5; }
+  .accordion-control i {
+    float: right;
+    text-decoration: none; }
+
+.accordion-pane {
+  padding-top: 10px;
+  height: 50px; }
+
 #tabs div {
   width: 100%;
   float: left;
@@ -4976,25 +4998,3 @@ ul.pagination {
   font-weight: normal;
   color: #212121;
   padding: 0; }
-
-.accordion {
-  margin-bottom: 10px;
-  padding: 20px; }
-
-.accordion {
-  border-top: 3px solid #e5e5e5; }
-  .accordion h2, .accordion h3 {
-    margin: 20px;
-    font-size: 18px; }
-
-.accordion-control {
-  display: block;
-  padding-top: 10px;
-  border-top: 1px solid #e5e5e5; }
-  .accordion-control i {
-    float: right;
-    text-decoration: none; }
-
-.accordion-pane {
-  padding-top: 10px;
-  height: 50px; }
