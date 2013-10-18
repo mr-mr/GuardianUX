@@ -1,4 +1,3 @@
-
 $("#example-code").hide();
 
 $(".showhide").click(function(){

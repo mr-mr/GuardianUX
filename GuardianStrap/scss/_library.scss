@@ -26,12 +26,12 @@
 	}
 }
 
-/*
+
 .container{
 	width:100%;
 	float:left;
 }
-*/
+
 
 .message-container{
 	left: 0;
@@ -76,7 +76,7 @@
 	right:0;
 	margin-top:50px;
 	height:250px;
-	background:$link;
+	background:$link-white;
 	background:url("../img/library-bg.png") top left repeat;
 	z-index:99;
 }

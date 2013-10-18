@@ -1,34 +1,33 @@
 // Table of contents
 //-----------------------------
-// 1. imports
+// 1. Imports
+// 2. Mixins
 // x. general
-// X. type
-// x. images & video
-// x. layout
-// x. modules
+// x. Variables
 // -------------------------------------------------------------------------------------------------------------------------
 
-
-// 1.1 Imports General
+// 1.Imports
 //-----------------------------
-@import "fonts.scss";
-@import "font-awesome.scss";
-@import "colors.scss";
-@import "breakpoints.scss";
-@import "typography.scss";
-@import "links.scss";
-@import "media.scss";
-@import "layouts.scss";
-//@import "navigation.scss";
+@import "fonts";
+@import "font-awesome";
+@import "colors";
 
-// 1.2 Imports for Framework
+
+// 2.Mixins
 //-----------------------------
-@import "tabs.scss";
-@import "accordion.scss";
+.box-sizing { 
 
+}
 
+.radius {
 
-// 2.General
+}
+
+.image-replacement {
+
+}
+
+// 3.General
 //-----------------------------
 
 #wrapper {
