@@ -1472,6 +1472,8 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 #wrapper {
   margin: 50px auto;
   width: 880px; }
+  #wrapper.home {
+    width: 650px; }
 
 .container {
   margin: 0 auto;
@@ -4876,7 +4878,7 @@ h2 {
   color: #333333;
   font-family: "guardian-regular";
   font-size: 1.42857em;
-  margin: 0;
+  margin: 10;
   padding: 0; }
 
 h3 {
@@ -4901,7 +4903,7 @@ li {
   list-style-type: square; }
 
 p {
-  line-height: 1.4em; }
+  font-size: 0.85714em; }
 
 .accordion {
   margin-bottom: 10px;
