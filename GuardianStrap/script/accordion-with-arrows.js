@@ -11,5 +11,5 @@ $(function () {
 		$(this).addClass('is-current').children('i').removeClass('icon-angle-down').addClass('icon-angle-up');
 
 		e.preventDefault();
-	});
+	}).filter(':first').click();;
 });
