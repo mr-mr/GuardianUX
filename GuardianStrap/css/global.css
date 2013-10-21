@@ -1514,10 +1514,6 @@ body {
   padding: 0;
   float: right; }
 
-.list-block {
-  padding: 18px;
-  margin: -20px 0 0 20px; }
-
 article {
   width: 100%;
   height: auto;
@@ -3197,6 +3193,10 @@ pre {
   top: 100px;
   width: 200px;
   float: left; }
+
+.list-block {
+  padding: 18px;
+  margin: -20px 0 0 20px; }
 
 /*.column {
 	float:left;
