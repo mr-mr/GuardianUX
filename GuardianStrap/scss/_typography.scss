@@ -17,7 +17,7 @@ h1, h2, h3, h4, li {
 h1 {
 	color: $copy; 
 	font-family: $serif; 
-	font-size:(30 / 14) * 1em;
+	font-size:(24 / 14) * 1em;
 	font-weight:bold;
 }
 
@@ -25,16 +25,16 @@ h1 {
 h2 {
 	color:$copy;
 	font-family: $serif; 
-	font-size:(20 / 14) * 1em;
+	font-size:(20 / 14) * 0.6em;
 	margin:10;
 	padding:0;
 	
 }
 
 h3 {
-	font-size:(14 / 14) * 1em;
+	font-size:(16 / 14) * 1em;
 	font-family:$serif;
-	margin:5,0,5,0;
+	margin:0;
 	padding:0;
 }
 
@@ -54,9 +54,30 @@ ul{
 }
 li {
 	list-style-type: square;
+	font-size:(13 / 14) * 1em;
+	line-height:1.6em;
 }
 
 
 p{
-	font-size:(12 / 14) * 1em;
+	font-size:(13 / 14) * 1em;
+	line-height:1.4em;
 }
+
+/*strong {
+	//color:black;
+	//font-family:$serif-bold;
+	font-size: 14px;
+	font-weight:bold;
+}*/
+
+strong, th, dt {
+	font-family:$serif-bold;
+	font-weight:normal;
+	padding:0;
+	margin:0;
+
+}
+
+
+
