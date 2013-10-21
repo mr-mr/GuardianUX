@@ -17,13 +17,16 @@
 	width:120px;
 	height:55px;
 	margin:13px 0 0 15px;
-	//background-color:lime;
+}
 
-	/*@media (max-width:$small-medium){
-		width:90px;
-		height:20;
-		margin:10,10,10,10;
-	}*/
+.logo-grey{
+	background:url("../img/g-logo.svg") no-repeat;
+	background-size:100% auto;
+	//position:absolute;
+	width:30px;
+	height:100px;
+	margin-top:0px;
+	float:right;
 }
 
 img {

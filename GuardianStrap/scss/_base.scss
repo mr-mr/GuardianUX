@@ -14,6 +14,7 @@
 @import "fonts";
 @import "font-awesome";
 @import "colors";
+@import "breakpoints";
 
 
 // 2.Mixins
@@ -35,11 +36,17 @@
 
 #wrapper {
 	margin: 50px auto;
+	min-width:280px;
+	@media (min-width:$medium-large){
 	//width:90%;
 	width:880px;
-	&.home{
-		width:650px;
 	}
+}
+
+#home{
+	margin: 0 auto;
+	width:70%;
+	max-width:650px;
 }
 
 .container {
@@ -104,6 +111,17 @@ article{
 	line-height:140%;
 }
 
+
+.live-latest {
+	font-size:(10 / 10) * 0.5em;
+	font-family:$sans-serif;
+	font-weight:bold;
+	font-style:normal;
+	text-transform:uppercase;
+	color:#fff;
+	background:$highlight;	
+	padding:2px;
+}
 
 
 

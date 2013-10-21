@@ -1471,9 +1471,15 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 #wrapper {
   margin: 50px auto;
-  width: 880px; }
-  #wrapper.home {
-    width: 650px; }
+  min-width: 280px; }
+  @media (min-width: 960px) {
+    #wrapper {
+      width: 880px; } }
+
+#home {
+  margin: 0 auto;
+  width: 70%;
+  max-width: 650px; }
 
 .container {
   margin: 0 auto;
@@ -1518,6 +1524,16 @@ article {
   margin: 40px 0 10px 0;
   padding: 0;
   line-height: 140%; }
+
+.live-latest {
+  font-size: 0.5em;
+  font-family: Helmet, Freesans, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #fff;
+  background: #cc0000;
+  padding: 2px; }
 
 @font-face {
   font-family: "guardian-regular";
@@ -3259,7 +3275,7 @@ a:hover {
 .button a:link, .button a:visited {
   color: #fff;
   background: #234a81;
-  padding: 10px 20px 10px 20px;
+  padding: 15px 35px 15px 35px;
   text-decoration: none; }
 .button a:hover {
   background: #183359; }
@@ -3269,12 +3285,15 @@ a:hover {
   background-size: 100% auto;
   width: 120px;
   height: 55px;
-  margin: 13px 0 0 15px;
-  /*@media (max-width:$small-medium){
-  	width:90px;
-  	height:20;
-  	margin:10,10,10,10;
-  }*/ }
+  margin: 13px 0 0 15px; }
+
+.logo-grey {
+  background: url("../img/g-logo.svg") no-repeat;
+  background-size: 100% auto;
+  width: 30px;
+  height: 100px;
+  margin-top: 0px;
+  float: right; }
 
 img {
   width: 100%;
@@ -4764,12 +4783,15 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   background-size: 100% auto;
   width: 120px;
   height: 55px;
-  margin: 13px 0 0 15px;
-  /*@media (max-width:$small-medium){
-  	width:90px;
-  	height:20;
-  	margin:10,10,10,10;
-  }*/ }
+  margin: 13px 0 0 15px; }
+
+.logo-grey {
+  background: url("../img/g-logo.svg") no-repeat;
+  background-size: 100% auto;
+  width: 30px;
+  height: 100px;
+  margin-top: 0px;
+  float: right; }
 
 img {
   width: 100%;
@@ -4871,20 +4893,20 @@ h1, h2, h3, h4, li {
 h1 {
   color: #333333;
   font-family: "guardian-regular";
-  font-size: 2.14286em;
+  font-size: 1.71429em;
   font-weight: bold; }
 
 h2 {
   color: #333333;
   font-family: "guardian-regular";
-  font-size: 1.42857em;
+  font-size: 0.85714em;
   margin: 10;
   padding: 0; }
 
 h3 {
-  font-size: 1em;
+  font-size: 1.14286em;
   font-family: "guardian-regular";
-  margin: 5,0,5,0;
+  margin: 0;
   padding: 0; }
 
 h4 {
@@ -4900,20 +4922,33 @@ ul {
   float: left; }
 
 li {
-  list-style-type: square; }
+  list-style-type: square;
+  font-size: 0.92857em;
+  line-height: 1.6em; }
 
 p {
-  font-size: 0.85714em; }
+  font-size: 0.92857em;
+  line-height: 1.4em; }
+
+/*strong {
+	//color:black;
+	//font-family:$serif-bold;
+	font-size: 14px;
+	font-weight:bold;
+}*/
+strong, th, dt {
+  font-family: "guardian-bold";
+  font-weight: normal;
+  padding: 0;
+  margin: 0; }
 
 .accordion {
-  margin-bottom: 10px;
-  padding: 20px; }
+  margin-bottom: 20px;
+  width: 100%; }
 
-.accordion {
-  border-top: 3px solid #e5e5e5; }
-  .accordion h2, .accordion h3 {
-    margin: 20px;
-    font-size: 18px; }
+.accordion h2, .accordion h3 {
+  margin: 20px;
+  font-size: 18px; }
 
 .accordion-control {
   display: block;
@@ -4924,7 +4959,7 @@ p {
     text-decoration: none; }
 
 .accordion-pane {
-  padding-top: 10px;
+  padding-bottom: 20px;
   height: 50px; }
 
 #tabs div {
