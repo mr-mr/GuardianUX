@@ -22,21 +22,24 @@
 // 3.0 general
 
 a {
-	&:link, &:visited {color:$link; text-decoration:none; font-weight:normal;}
+	&:link {color:$link; text-decoration:none; font-weight:normal;}
 	&:hover{color:$link-hover; text-decoration:underline;}
+	&:visited{color:$link-visited; text-decoration:none;}
 }
 
 .button{
 	a:link, a:visited{
 	color:#fff;
-	background: $link;
+	background: lime;
 	padding: 15px 35px 15px 35px;
 	//break:before;
 	text-decoration: none;
-	
 	}
-
 	a:hover{
 	background: $link-hover;
 	}
 }
+
+p a:link{
+		margin-top:10px;
+	}
