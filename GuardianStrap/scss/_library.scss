@@ -66,7 +66,7 @@
 
 .border-box-code{
 	border: 1px solid $grey;
-	background: $code-grey;
+	background:transparent;
 	width:98%;
 	//height:auto;
 	margin:-1px 0 0 0;
@@ -91,6 +91,30 @@ code {
 
 // 4.Code Snippets
 //-----------------------------
+/*
+pre, code {
+	font-size:16,20;
+}
+
+.wrapper {
+	width:55%;
+	margin-top:10;
+}
+
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+     -moz-box-sizing: $box-model; // Firefox <= 19
+          box-sizing: $box-model;
+}
+
+pre {
+	overflow:scroll;
+	padding:10,10,10,10;
+	border:1px solid $background;
+	@include box-sizing(border-box);
+}
+*/
 
 pre.prettyprint {
 padding: 2px;

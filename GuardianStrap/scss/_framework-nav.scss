@@ -63,6 +63,7 @@
 		left:0;
 		right:0;
 		bottom:0;
+
 	}
 }
 
@@ -124,8 +125,8 @@
         margin:0 0 0 20px;
 		a {
 		&:link, &:visited {color:$semi-grey;  text-decoration:none; font-weight:normal;}
-		&:hover{color:$dark-grey; text-decoration:none;}
+		&:hover{color:$dark-grey; text-decoration:underline;}
 		}
 	}
-	.nav-selected {color:$link-white; background:lime; padding:10px; text-decoration:underline; }
+	.nav-selected {color:$link-white; background:lime; padding:10px; text-decoration:none; }
 }

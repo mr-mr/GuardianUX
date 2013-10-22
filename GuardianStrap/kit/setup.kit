@@ -97,9 +97,54 @@
 
 	<div class="border-line"></div>
 	<article>
+		<h3 id="how-it-works">How it works (/is supposed to work) in practice</h3>
+		<p>The basic principle is that there are .kit, .less and .js files for each wireframe.</p>
+		<ul class="list-block">
+			<li>Within the .kit file, variables will be defined and includes will be referenced.</li>
+			<li>Within the .less file, variables will be defined and at least one file will be imported: 'library.less'.</li>
+			<li>Within the .js files, there are sometimes other lozstrap framework files imported, for example lozstrap.show-hide.js.</li>			
+		</ul>
 
-	<h2 id="how-it-works">How it works (/is supposed to work) in practice</h2>
-	
+		<p>Codekit allows you to view any file and it's dependancies in the 'files' tab of the application. Just click on a file and the imported or included files will appear in the right hand pane.</p>
+
+		<h4>.kit files</h4>
+		<p>As mentioned above there is a .kit file for each wireframe. Within that we call .kit files that contain fragments of code that we can reuse. The .kit includes fall into three types:</p>
+		<ul class="list-block">
+			<li>Template level modules – there are only two of these that matter, '_template-header-v2.kit' and '_template-footer-v2.kit'. The header file contains the <code>&lt;doctype&gt;</code> and <code>&lt;head&gt;</code> tag information, including references to CSS files. The footer has references to any page specific js files. Both have references to variables, for use in file names and page titles, that the including page will supply.</li>
+			<li>Page level modules – there are only three of these, '_page-footer.kit', '_page-sharing-tools.kit' and '_page-tools.kit'.</li>
+			<li>Genre/type specific – includes that are related to a page genre or type, i.e. articles or sports stats pages.</li>			
+		</ul>
+		<p>To illustrate how the various components work together it's probably best to show an example. Below is the top of the wireframe for all football fixtures ('football-fixtures-all.kit'):</p>
+
+		<p></p>
+		<pre><span class="pre-line-numbers">&lt;!-- $pageTitle = Football fixtures – All --&gt;</span>
+		<span class="pre-line-numbers">&lt;!-- $pageType = sport-statistics --&gt;</span>
+		<span class="pre-line-numbers">&lt;!-- $page = football-fixtures-all --&gt;</span>
+		<span class="pre-line-numbers">&lt;!-- $navSection = uk-edition-football --&gt;</span>
+		<span class="pre-line-numbers"></span>
+		<span class="pre-line-numbers">&lt;!-- @include '../../inc/template/template-header-v2.kit' --&gt;</span>
+		<span class="pre-line-numbers">&lt;!-- @include '../../inc/navigation/nav-uk-edition-football.kit' --&gt;</span>
+		<span class="pre-line-numbers">	&lt;!-- @include '../../inc/advert/advert-banner.kit' --&gt;</span></pre>
+		<p></p>
+
+		<code>&lt;head&gt;</code>
+
+		<p>Lines one to four define variables:</p>
+		<ul class="list-block">
+			<li><code>$pageTitle</code> – the title that will be displayed within the Browser header bar</li>
+			<li><code>$pageType</code> – the type, or genre, of page we are dealing with, so in this example it's a sport statistics page</li>
+			<li><code>$page</code> – the specific page we are working with, within the above type, which is the all football fixtures page</li>
+			<li><code>$navSection</code> – which navigation this page uses</li>
+		</ul>
+		<p>Lines six to eight are include statements to pull in other .kit files:</p>
+		
+		<ul class="list-block">
+			<li><code>template-header-v2.kit</code> – the global page template header</li>
+			<li><code>nav-uk-edition-football.kit</code> – the global navigation for the page</li>
+			<li><code>advert-banner.kit</code> – a banner advert (which also appears at the bottom of the page)</li>
+		</ul>
+
+
 	</article>
 
 	<div class="border-line"></div>
@@ -122,10 +167,9 @@
 
 	<div class="border-line"></div>
 	<p><img src="http://blogfiles.wfmu.org/KF/2011/01/19/gif_strangelove_scott_edit.gif"></p>
-	<div class="border-line"></div>
 	
 	<div class="logo-grey"></div>
-	<p class="signoff">October 2013</p>
+	<p class="signoff">2013</p>
 
 <!--End of Wrapper-->
 </body>
