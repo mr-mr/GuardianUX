@@ -13,6 +13,47 @@
 
 // 1.0 modules
 // -------------------------------------------------------------------------------------------------------------------------------------------------
+
+html {
+	font-family:$serif;
+	list-style-type: none;
+}
+
+body{
+	margin:0;
+	font-size:15/20;
+	color:$copy;
+	text-rendering:optimizeLegibility;
+}
+
+
+
+#wrapper {
+	margin: 50px auto;
+	min-width:280px;
+	@media (min-width:$medium-large){
+	//width:90%;
+	width:880px;
+	}
+}
+
+#home{
+	margin: 40px auto;
+	width:70%;
+	max-width:880px;
+}
+
+.container {
+	//background: lime;
+	margin:0 auto;
+	width:940px;
+}
+
+.framework-container{
+	width:100%;
+	float:left;
+}
+
 .column-left{
 	width: 200px;
 	float: left;
@@ -55,6 +96,26 @@
 	margin:-5px 0 0 20px;
 }
 
+
+article{
+	width:100%;
+	height:auto;
+	margin:40px 0 10px 0 ;
+	padding:0;
+	line-height:140%;
+}
+
+
+.live-latest {
+	font-size:(10 / 10) * 0.5em;
+	font-family:$sans-serif;
+	font-weight:bold;
+	font-style:normal;
+	text-transform:uppercase;
+	color:#fff;
+	background:$highlight;	
+	padding:2px;
+}
 
 /*.column {
 	float:left;

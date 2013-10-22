@@ -31,17 +31,14 @@
 	}
 }
 
-
-.container{
-	width:100%;
-	float:left;
+.background {
+	background:url("../img/library-bg.jpg") top left repeat;
 }
-
 
 .message-container{
 	left: 0;
 	right:0;
-	height:40px;
+	height:100%;
 	background:$code-grey;
 	border-bottom: 1px solid $grey;
 	margin:0;
@@ -50,64 +47,11 @@
 	.message-bar {
 		width:900px;
 		margin:0 auto;
-		padding:12px;
+		padding:7px;
 		text-align:left;
 	}
 }
 
-.header-container {
-	//background: $grey;
-	margin:0 auto;
-	width:940px;
-	div{
-		color:$link-white;
-		padding:50px 20px 0 20px ;
-		font-size: 70px;
-		//margin:30px 0 20px 0;
-
-	}
-	p{
-		color:$link-white;
-		padding:25px;
-		font-size: 16px;
-		margin-top:-20px;
-		font-weight:normal;
-		width:70%;
-	}
-}
-
-.framework-top {
-	left:0;
-	right:0;
-	margin-top:50px;
-	height:250px;
-	background:$link-white;
-	background:url("../img/library-bg.jpg") top left repeat;
-	z-index:99;
-}
-
-.framework-top:after{
-	border-bottom:1px solid black;
-}
-
-
-.framework-bar{
-	left:0;
-	right:0;
-	top:0;
-	height:50px;
-	background:$link-white;
-	position: fixed;
-	z-index:100;
-	border-bottom: 1px solid rgba(0, 0, 0, .1);
-}
-
-.framework-nav-container {
-	max-width:940px;
-	height:50px;
-	margin:-15px auto;
-	padding-top:13px;
-}
 
 .border-box{
 	border: 1px solid $grey;
@@ -144,46 +88,6 @@ code {
 	float:left;
 }
 
-
-// 3.Type
-//-----------------------------
-
-.framework-header {
-	color: $link-white;
-	width:110px;
-	height:18px;
-	//background:darken($link,5%); 
-	background:$link;
-	font-family: $serif; 
-	font-size:(14 / 14) * 1em;
-	font-weight:bold;
-	padding:16px;
-	margin:0;
-}
-
-.framework-nav {
-		
-		float:left;
-		padding:10px;
-		margin: -62px 0 0 140px;
-		//background:lime;
-		width:420px;
-	
-	li 	{
-		
-		display: inline;
-		list-style-type: none;
-		//background:lime;
-		padding:0;
-		font-size: 14px;
-        margin:0 0 0 20px;
-		a {
-		&:link, &:visited {color:$semi-grey;  text-decoration:none; font-weight:normal;}
-		&:hover{color:$dark-grey; text-decoration:none;}
-		}
-	}
-	.framework-nav-active {color:aqua; text-decoration:underline; }
-}
 
 // 4.Code Snippets
 //-----------------------------
