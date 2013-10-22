@@ -15,7 +15,7 @@ $header-visited:lighten($header, 10%);
 // 2. links
 // ------------------------------------------------------------------------------------------------------------------------------------------------- 
 $link: #234a81;
-$link-hover:darken($link,10%);
+$link-hover:darken($link,15%);
 $link-darker-still:darken($link,30%);
 $link-visited:lighten($link,10%);
 
@@ -36,7 +36,7 @@ $highlight:#c00;
 $tab:#edede7;
 $tab-hover:darken($tab,5%);
 $notes:#f9ff9b;
-$notes-border:darken($notes, 10%);
+$notes-border:darken($notes, 35%);
 
 $light-blue:#e7eef3;
 	

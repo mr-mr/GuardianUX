@@ -3022,7 +3022,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   left: 0;
   right: 0;
   height: 40px;
-  background: #e5e5e5;
+  background: #f7f7f9;
   border-bottom: 1px solid #cccccc;
   margin: 0;
   padding: 10px; }
@@ -3053,7 +3053,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   margin-top: 50px;
   height: 250px;
   background: white;
-  background: url("../img/library-bg.png") top left repeat;
+  background: url("../img/library-bg.jpg") top left repeat;
   z-index: 99; }
 
 .framework-top:after {
@@ -3064,15 +3064,15 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   right: 0;
   top: 0;
   height: 50px;
-  background: #234a81;
+  background: white;
   position: fixed;
   z-index: 100;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
 .framework-nav-container {
   max-width: 940px;
   height: 50px;
-  margin: -13px auto;
+  margin: -15px auto;
   padding-top: 13px; }
 
 .border-box {
@@ -3097,8 +3097,10 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 .note {
   background: #f9ff9b;
-  padding: 20;
-  border-left: 2px solid #f6ff68; }
+  padding-left: 15px;
+  border-left: 4px solid #dae800;
+  width: 97%;
+  margin-bottom: 10px; }
 
 code {
   float: left; }
@@ -3126,14 +3128,15 @@ code {
     font-size: 14px;
     margin: 0 0 0 20px; }
     .framework-nav li a:link, .framework-nav li a:visited {
-      color: white;
+      color: #a6a6a6;
       text-decoration: none;
       font-weight: normal; }
     .framework-nav li a:hover {
-      color: aqua;
+      color: #252525;
       text-decoration: none; }
   .framework-nav .framework-nav-active {
-    color: aqua; }
+    color: aqua;
+    text-decoration: underline; }
 
 pre.prettyprint {
   padding: 2px; }
@@ -3172,7 +3175,7 @@ pre {
   position: relative;
   margin: -60px 0 0 -20px;
   padding: 30px 10px 15px 22px;
-  background: #e7eef3;
+  background: #e5e5e5;
   z-index: -10;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px; }
@@ -3196,7 +3199,7 @@ pre {
 
 .list-block {
   padding: 18px;
-  margin: -20px 0 0 20px; }
+  margin: -5px 0 0 20px; }
 
 /*.column {
 	float:left;
@@ -3264,36 +3267,41 @@ pre {
   padding: 10px;
   margin: 0; }
 
-a:link, a:visited {
+a:link {
   color: #234a81;
   text-decoration: none;
   font-weight: normal; }
 a:hover {
-  color: #183359;
+  color: #132745;
   text-decoration: underline; }
+a:visited {
+  color: #2e61a9;
+  text-decoration: none; }
 
 .button a:link, .button a:visited {
   color: #fff;
-  background: #234a81;
+  background: lime;
   padding: 15px 35px 15px 35px;
   text-decoration: none; }
 .button a:hover {
-  background: #183359; }
+  background: #132745; }
+
+p a:link {
+  margin-top: 10px; }
 
 .logo {
-  background: url("../img/guardian-logo.svg") no-repeat;
+  background: url("../img/guardian-logo-3.svg") no-repeat;
   background-size: 100% auto;
   width: 120px;
-  height: 55px;
-  margin: 13px 0 0 15px; }
+  height: 53px;
+  margin: 16px 0 0 15px; }
 
 .logo-grey {
   background: url("../img/g-logo.svg") no-repeat;
   background-size: 100% auto;
   width: 30px;
-  height: 100px;
-  margin-top: 0px;
-  float: right; }
+  height: 50px;
+  margin: 0px auto; }
 
 img {
   width: 100%;
@@ -4779,19 +4787,18 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   content: "\f18b"; }
 
 .logo {
-  background: url("../img/guardian-logo.svg") no-repeat;
+  background: url("../img/guardian-logo-3.svg") no-repeat;
   background-size: 100% auto;
   width: 120px;
-  height: 55px;
-  margin: 13px 0 0 15px; }
+  height: 53px;
+  margin: 16px 0 0 15px; }
 
 .logo-grey {
   background: url("../img/g-logo.svg") no-repeat;
   background-size: 100% auto;
   width: 30px;
-  height: 100px;
-  margin-top: 0px;
-  float: right; }
+  height: 50px;
+  margin: 0px auto; }
 
 img {
   width: 100%;
@@ -4930,17 +4937,19 @@ p {
   font-size: 0.92857em;
   line-height: 1.4em; }
 
-/*strong {
-	//color:black;
-	//font-family:$serif-bold;
-	font-size: 14px;
-	font-weight:bold;
-}*/
 strong, th, dt {
   font-family: "guardian-bold";
   font-weight: normal;
   padding: 0;
   margin: 0; }
+
+.signoff {
+  font-family: "guardian-regular";
+  font-weight: normal;
+  padding: 10px;
+  margin: 0;
+  color: #cccccc;
+  text-align: center; }
 
 .accordion {
   margin-bottom: 20px;
