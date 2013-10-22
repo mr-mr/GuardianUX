@@ -3051,7 +3051,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 .border-box-code {
   border: 1px solid #cccccc;
-  background: #f7f7f9;
+  background: transparent;
   width: 98%;
   margin: -1px 0 0 0;
   padding: 10px;
@@ -3069,6 +3069,30 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 code {
   float: left; }
 
+/*
+pre, code {
+	font-size:16,20;
+}
+
+.wrapper {
+	width:55%;
+	margin-top:10;
+}
+
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+     -moz-box-sizing: $box-model; // Firefox <= 19
+          box-sizing: $box-model;
+}
+
+pre {
+	overflow:scroll;
+	padding:10,10,10,10;
+	border:1px solid $background;
+	@include box-sizing(border-box);
+}
+*/
 pre.prettyprint {
   padding: 2px; }
 
@@ -3281,7 +3305,8 @@ p a:link {
   background-size: 100% auto;
   width: 30px;
   height: 50px;
-  margin: 0px auto; }
+  margin: 0px auto;
+  opacity: 0.3; }
 
 img {
   width: 100%;
@@ -4778,7 +4803,8 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   background-size: 100% auto;
   width: 30px;
   height: 50px;
-  margin: 0px auto; }
+  margin: 0px auto;
+  opacity: 0.3; }
 
 img {
   width: 100%;
@@ -5104,9 +5130,9 @@ strong, th, dt {
       font-weight: normal; }
     .nav-list li a:hover {
       color: #252525;
-      text-decoration: none; }
+      text-decoration: underline; }
   .nav-list .nav-selected {
     color: white;
     background: lime;
     padding: 10px;
-    text-decoration: underline; }
+    text-decoration: none; }
