@@ -19,9 +19,12 @@ $link-hover:darken($link,15%);
 $link-darker-still:darken($link,30%);
 $link-visited:lighten($link,10%);
 
-$link-white:#fff;
+$link-white:#ffffff;
 $link-white-hover:darken($link-white,30%);
 $link-white-visited:darken($link-white,10%);
+
+$link-grey:#f5f5f5;
+$link-grey-hover:darken($link-white,30%);
 
 // 3. Body text
 // ------------------------------------------------------------------------------------------------------------------------------------------------- 

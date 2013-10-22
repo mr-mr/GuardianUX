@@ -30,10 +30,12 @@ a {
 .button{
 	a:link, a:visited{
 	color:#fff;
-	background: lime;
+	background: $link;
 	padding: 15px 35px 15px 35px;
+	width:100%;
 	//break:before;
 	text-decoration: none;
+	margin:10px 0 10px 0;
 	}
 	a:hover{
 	background: $link-hover;

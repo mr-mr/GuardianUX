@@ -1,5 +1,5 @@
 var sticky = document.querySelector('.column-left');
-var origOffsetY = 310;
+var origOffsetY = 330;
 
 function onScroll() {
   window.scrollY >= origOffsetY ? sticky.classList.add('fixed') :

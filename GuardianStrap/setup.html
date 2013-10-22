@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+	
+	<title>The Guardian UX Wireframe Setup</title>
+	<link rel="stylesheet" href="css/global.css" type="text/css">
+</head>
+
+<body>
+
+<div class="nav-bar">
+	<div class="nav-container">
+		<a href="../GuardianStrap"><div class="logo"></div></a>
+		<ul class="nav-list">	
+			<li><a href="../GuardianStrap">Home</a></li>
+			<li class="nav-selected">Setup</li>
+			<li><a href="library.html">Framework library</a></li>
+			<li><a href=""><strike>NextGenWeb</strike></a></li>
+			<li><a href=""><strike>Identity</strike></a></li>
+			<li><a href=""><strike>Composer</strike></a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="message-container">UX team prototypes</div>
+
+<div id="home">
+	<div>
+	<h3>Contents</h3>
+		<ul class="list-block">
+			<li><a href="#overview">Overview & Setup</a></li>
+			<li><a href="#overview">Applications</a></li>
+			<li><a href="#overview">Github</a></li>
+			<li><a href="#framework">CodeKit setup</a></li>
+			<li><a href="#framework">MAMP Setup</a></li>
+			<li><a href="#languages">Languages</a></li>
+			<li><a href="#frameworks">Frameworks</a></li>
+			<li><a href="#framework">Folder structure</a></li>
+		</ul>
+	</div>
+	
+	<div class="border-line"></div>
+	
+	<article>
+		<h3 id="overview">Overview &amp; Setup</h3>
+		<p>The framework and future wireframe work of the Guardian UX team. <a href="mailto:chris.j.clarkee@theguardian.com?subject=Guardian%20Wireframes">Chris Clarke</a> will be the best team member to talk to about this. Failing that, ping <a href="mailto:alastair.jardine@theguardian.com?subject=Guardian%20Wireframes">Alastair Jardine an email</a>.</p>
+		<ul class="note">
+			<p class="note">All the work is available to view and download on <a href="https://github.com/mr-mr/GuardianUX"><i class=" icon-github"></i> Github</a></p>
+			<p>The setup on Github is still relatively new so changes will be thick and fast.</p>
+		</ul>
+		<p></p>
+	</article>
+	
+	<div class="border-line"></div>
+	
+	<article>
+		<h3 id="overview">Applications</h3>
+
+		<p>All html files are built up in Codekit .kit files. And you'll need 3 set applications, and a text editor</p>
+		<ul class="list-block">
+			<li><a href="http://incident57.com/codekit/">Codekit</a></li>
+			<li><a href="http://www.mamp.info/en/index.html">Mamp</a></li>
+			<li><a href="https://central.github.com/mac/latest">Github app for Mac</a></li>
+			<li>A text editor (No preference, <a href="http://www.sublimetext.com/2">Sublime Text</a> is good)</li>
+			<li><strike>An FTP editor</strike> As everything is setup on github, github itself has a html preview pane <strong>(although quite buggy)</strong> We may re-visit using an FTP setup in the future.</li>
+		</ul>
+	</article>
+
+	<div class="border-line"></div>
+	
+	<article>
+		<h3 id="overview">Languages</h3>
+		<p>The HTML wireframes are built using:</p>
+		<ul class="list-block">
+			<li>Codekit's .kit files</li>
+			<li>LESS</li>	
+			<li>jQuery</li>		
+		</ul>
+
+		<h4>Codekit's .kit files</h4>
+		<p>These are essentially just HTML files, but with two main benefits: includes and variables.</p>
+		<p>Includes (like normal HTML server side includes) allow you to create fragments of reusable HTML, such as navigation and footers, and place them within other HTML documents. Unlike normal SSIs, you can also place an include _in_ an include. Codekit will parse all the includes and generate a flat .html file.</p>
+		<p>Variables, as in any other language, allow you to define reusable bits of information. Variables can also work in tandem with includes, and can be passed between the two.</p>
+		<p>Full documentation on .kit files can be found at <a href="http://incident57.com/codekit/kit.php">http://incident57.com/codekit/kit.php</a>.</p>
+		<ul class="note"><p>Always, always, edit the .kit files instead of editing the outputted '.html' files. If you make changes to the HTML files, when you save anything Codekit will automatically recompile _the .kit files_ to HTML, overwriting your changes. It's quite easy to make the mistake.</p></ul>
+
+		<h4>Sass</h4>
+		<p>We recently have moved from LESS to SASS, due to support provided from the NGW Dev team. More to be written here soon.</p>
+
+		<h4>jQuery</h4>
+		<p>The syntax of jQuery mirrors that of javascript, but it's easier to learn. It allows you to chain commands to traverse and change the document object model (DOM) of an HTML file.</p>
+		<p>The API documentation is comprehensive with plenty of examples and, failing that, any question you have has likely been asked and answered on StackOverflow – remember Google is your friend here kids.</p>
+		<p>Full documentation on jQuery can be found at <a href="http://api.jquery.com/">http://api.jquery.com/</a>.</p>
+		<ul class="note"><p>Your text editor will highlight jQuery as if it were javascript which should work just fine.</p></ul>
+
+		<h4>fontawesome</h4>
+		<p>And it really is. It provides generic icons to insert into projects, and it's usage is documented on the <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome site</a>.</p>
+
+	<div class="border-line"></div>
+	<article>
+
+	<h2 id="how-it-works">How it works (/is supposed to work) in practice</h2>
+	
+	</article>
+
+	<div class="border-line"></div>
+
+	<article>
+		<h3 id="frameworks">Frameworks</h3>
+		<p>The library framework consists of all components we need to create our prototypes. Each component will be accompanyed by the code which you can lift and place into your own page.</p>
+		
+		<p><a href="library.html">View the framework library</a></p>
+	</article>
+	
+
+	<div class="border-line"></div>
+
+	<article>
+		<h3 id="framework">Filing Structure</h3>
+		<p>All Sass files will source into a single 'global.css' file. All other files will be _partial files. The underscore defines a sass file as a partial, which is important as Codekit will not compile partial files into CSS and keep our structure nice and clean.</p>
+		<p>Each piece of the library is built separately so anybody can work and edit a single piece and not affect the overall setup.</p>
+	</article>
+
+	<div class="border-line"></div>
+	<p><img src="http://blogfiles.wfmu.org/KF/2011/01/19/gif_strangelove_scott_edit.gif"></p>
+	<div class="border-line"></div>
+	
+	<div class="logo-grey"></div>
+	<p class="signoff">October 2013</p>
+
+<!--End of Wrapper-->
+</body>
+
+
+ <script src="js/jquery-2.0.2.min.js"></script>
+ <script src="js/jquery-1.9.1.min.js"></script>
+ <script src="js/tabs.ui.min.js"></script>
+ <script src="js/tabs.min.js"> </script>
+ <script src="js/bootstrap.min.js"> </script>
+
+<script src="js/prettify.min.js"> </script> 
+<script src="js/run_prettify_cc.min.js"> </script>
+ 
+ <script src="js/showhide.min.js"> </script>
+
+ <script src="js/accordion.min.js"> </script>
+ <script src="js/accordion-with-arrows.min.js"> </script>
+
+ <script src="js/sticky-position.min.js"> </script>
+
+<footer class="page-footer">
+	<nav class="nav-footer">
+		<ul>
+			<!--<li><a href="#">Help</a></li>
+			<li><a href="#">About us</a></li>
+			<li><a href="#">Contact us</a></li>
+			<li><a href="#">Terms &amp; conditions</a></li>
+			<li><a href="#">Privacy policy</a></li>
+			<li><a href="#">Subscriptions</a></li>
+			<li class="copyright-notice">© 2012 Guardian News and Media Limited or its affiliated companies. All rights reserved.</li>-->
+		</ul>
+	</nav>
+</footer>
+</html>
+
+<!--Includes of all js files in the footer as well, jquery and any custom ones!-->
+

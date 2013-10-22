@@ -1,0 +1,131 @@
+// --------------------------------------------------------------------------------------------------------------------------------------------
+// Table of contents
+// --------------------------------------------------
+// 1.0 imports
+// 2.0 variables
+// 3.0 general
+// 4.0 type
+// 5.0 layout
+// 6.0 modules
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+// 1.0 imports
+// --------------------------------------------------------------------------------------------------------------------------------------------
+@import "colors";
+
+// 2.0 variables
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+// 3.0 general
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+// 4.0 type
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+// 5.0 layout
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+.header-container {
+	//background: $grey;
+	margin:0 auto;
+	width:940px;
+	padding:20px 0 20px 0;
+	div{
+		color:$link-white;
+		padding:50px 20px 30px 20px ;
+		font-size: 60px;
+		//margin:30px 0 20px 0;
+
+	}
+	p{
+		color:$link-white-hover;
+		padding:25px;
+		font-size: 16px;
+		margin:-50px 0 30px 0;
+		font-weight:normal;
+		width:70%;
+	}
+}
+
+.header-top {
+	left:0;
+	right:0;
+	bottom:0;
+	margin-top:50px;
+	position:relative;
+	height:100%;
+	background:$link-white;
+	background:url("../img/library-bg.jpg") top left repeat;
+	z-index:99;
+	
+	.landing{
+		position:relative;
+		left:0;
+		right:0;
+		bottom:0;
+	}
+}
+
+
+.header-top:after{
+	border-bottom:1px solid black;
+}
+
+
+.nav-bar{
+	left:0;
+	right:0;
+	top:0;
+	height:50px;
+	background:$link-white;
+	position: fixed;
+	z-index:100;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.nav-container {
+	max-width:940px;
+	height:50px;
+	margin:-15px auto;
+	padding-top:13px;
+}
+	
+// 6.0 modules
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+.nav-header {
+	color: $link-white;
+	width:110px;
+	height:18px;
+	//background:darken($link,5%); 
+	background:$link;
+	font-family: $serif; 
+	font-size:(14 / 14) * 1em;
+	font-weight:bold;
+	padding:16px;
+	margin:0;
+}
+
+.nav-list {
+		
+		float:left;
+		padding:10px;
+		margin: -62px 0 0 140px;
+		//background:lime;
+		width:560px;
+	
+	li 	{
+		
+		display: inline;
+		list-style-type: none;
+		//background:lime;
+		padding:0;
+		font-size: 14px;
+        margin:0 0 0 20px;
+		a {
+		&:link, &:visited {color:$semi-grey;  text-decoration:none; font-weight:normal;}
+		&:hover{color:$dark-grey; text-decoration:none;}
+		}
+	}
+	.nav-selected {color:$link-white; background:lime; padding:10px; text-decoration:underline; }
+}
