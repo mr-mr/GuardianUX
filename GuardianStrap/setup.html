@@ -26,20 +26,19 @@
 	</div>
 </div>
 
-<div class="message-container">UX team prototypes</div>
-
 <div id="home">
 	<div>
 	<h3>Contents</h3>
-		<ul class="list-block">
+		<ul class="list-block setup">
 			<li><a href="#overview">Overview & Setup</a></li>
-			<li><a href="#overview">Applications</a></li>
-			<li><a href="#overview">Github</a></li>
-			<li><a href="#framework">CodeKit setup</a></li>
-			<li><a href="#framework">MAMP Setup</a></li>
+			<li><a href="#applications">Applications</a></li>
+			<li><a href="#github">Github</a></li>
+			<li><a href="#codekit">CodeKit setup</a></li>
+			<li><a href="#mamp">MAMP Setup</a></li>
 			<li><a href="#languages">Languages</a></li>
+			<li><a href="#how-it-works">How it works</a></li>
 			<li><a href="#frameworks">Frameworks</a></li>
-			<li><a href="#framework">Folder structure</a></li>
+			<li><a href="#folder">Folder structure</a></li>
 		</ul>
 	</div>
 	
@@ -61,7 +60,7 @@
 		<h3 id="overview">Applications</h3>
 
 		<p>All html files are built up in Codekit .kit files. And you'll need 3 set applications, and a text editor</p>
-		<ul class="list-block">
+		<ul class="list-block setup">
 			<li><a href="http://incident57.com/codekit/">Codekit</a></li>
 			<li><a href="http://www.mamp.info/en/index.html">Mamp</a></li>
 			<li><a href="https://central.github.com/mac/latest">Github app for Mac</a></li>
@@ -73,13 +72,16 @@
 	<div class="border-line"></div>
 	
 	<article>
-		<h3 id="overview">Languages</h3>
+		<h3 id="languages">Languages</h3>
 		<p>The HTML wireframes are built using:</p>
-		<ul class="list-block">
+		<ul class="list-block setup">
 			<li>Codekit's .kit files</li>
 			<li>LESS</li>	
 			<li>jQuery</li>		
 		</ul>
+
+		<pre><span class="pre-line-numbers">?notations=hidden</span>
+		<span class="pre-line-numbers">?notations=hidden</span></pre>
 
 		<h4>Codekit's .kit files</h4>
 		<p>These are essentially just HTML files, but with two main benefits: includes and variables.</p>
@@ -104,7 +106,7 @@
 	<article>
 		<h3 id="how-it-works">How it works (/is supposed to work) in practice</h3>
 		<p>The basic principle is that there are .kit, .less and .js files for each wireframe.</p>
-		<ul class="list-block">
+		<ul class="list-block setup">
 			<li>Within the .kit file, variables will be defined and includes will be referenced.</li>
 			<li>Within the .less file, variables will be defined and at least one file will be imported: 'library.less'.</li>
 			<li>Within the .js files, there are sometimes other lozstrap framework files imported, for example lozstrap.show-hide.js.</li>			
@@ -114,7 +116,7 @@
 
 		<h4>.kit files</h4>
 		<p>As mentioned above there is a .kit file for each wireframe. Within that we call .kit files that contain fragments of code that we can reuse. The .kit includes fall into three types:</p>
-		<ul class="list-block">
+		<ul class="list-block setup">
 			<li>Template level modules – there are only two of these that matter, '_template-header-v2.kit' and '_template-footer-v2.kit'. The header file contains the <code>&lt;doctype&gt;</code> and <code>&lt;head&gt;</code> tag information, including references to CSS files. The footer has references to any page specific js files. Both have references to variables, for use in file names and page titles, that the including page will supply.</li>
 			<li>Page level modules – there are only three of these, '_page-footer.kit', '_page-sharing-tools.kit' and '_page-tools.kit'.</li>
 			<li>Genre/type specific – includes that are related to a page genre or type, i.e. articles or sports stats pages.</li>			
@@ -129,13 +131,12 @@
 		<span class="pre-line-numbers"></span>
 		<span class="pre-line-numbers">&lt;!-- @include '../../inc/template/template-header-v2.kit' --&gt;</span>
 		<span class="pre-line-numbers">&lt;!-- @include '../../inc/navigation/nav-uk-edition-football.kit' --&gt;</span>
-		<span class="pre-line-numbers">	&lt;!-- @include '../../inc/advert/advert-banner.kit' --&gt;</span></pre>
+		<span class="pre-line-numbers">&lt;!-- @include '../../inc/advert/advert-banner.kit' --&gt;</span></pre>
 		<p></p>
 
-		<code>&lt;head&gt;</code>
 
 		<p>Lines one to four define variables:</p>
-		<ul class="list-block">
+		<ul lass="list-block setup">
 			<li><code>$pageTitle</code> – the title that will be displayed within the Browser header bar</li>
 			<li><code>$pageType</code> – the type, or genre, of page we are dealing with, so in this example it's a sport statistics page</li>
 			<li><code>$page</code> – the specific page we are working with, within the above type, which is the all football fixtures page</li>
@@ -143,7 +144,7 @@
 		</ul>
 		<p>Lines six to eight are include statements to pull in other .kit files:</p>
 		
-		<ul class="list-block">
+		<ul class="list-block setup">
 			<li><code>template-header-v2.kit</code> – the global page template header</li>
 			<li><code>nav-uk-edition-football.kit</code> – the global navigation for the page</li>
 			<li><code>advert-banner.kit</code> – a banner advert (which also appears at the bottom of the page)</li>
@@ -165,7 +166,7 @@
 	<div class="border-line"></div>
 
 	<article>
-		<h3 id="framework">Filing Structure</h3>
+		<h3 id="folder">Filing Structure</h3>
 		<p>All Sass files will source into a single 'global.css' file. All other files will be _partial files. The underscore defines a sass file as a partial, which is important as Codekit will not compile partial files into CSS and keep our structure nice and clean.</p>
 		<p>Each piece of the library is built separately so anybody can work and edit a single piece and not affect the overall setup.</p>
 	</article>
@@ -195,6 +196,9 @@
  <script src="js/accordion-with-arrows.min.js"> </script>
 
  <script src="js/sticky-position.min.js"> </script>
+
+ <script src="js/fancybox-player.min.js"> </script>
+ <script src="js/jquery.fancybox-media.min.js"> </script>
 
 <footer class="page-footer">
 	<nav class="nav-footer">

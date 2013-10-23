@@ -28,20 +28,17 @@ a {
 }
 
 .button{
+	float:left;
+	margin:10px 10px 30px 0 ;
 	a:link, a:visited{
 	color:#fff;
 	background: $link;
 	padding: 15px 35px 15px 35px;
-	width:100%;
+	//float:left;
 	//break:before;
 	text-decoration: none;
-	margin:10px 0 10px 0;
 	}
 	a:hover{
 	background: $link-hover;
 	}
 }
-
-p a:link{
-		margin-top:10px;
-	}
