@@ -1,4 +1,4 @@
-var sticky = document.querySelector('.column-left');
+var sticky = document.querySelector('.framework-column-left');
 var origOffsetY = 330;
 
 function onScroll() {
