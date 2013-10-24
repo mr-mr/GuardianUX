@@ -29,7 +29,7 @@ a {
 
 .button{
 	float:left;
-	margin:10px 10px 30px 0 ;
+	margin:10px 0 30px 10px;
 	a:link, a:visited{
 	color:#fff;
 	background: $link;
@@ -40,6 +40,18 @@ a {
 	}
 	a:hover{
 	background: $link-hover;
+	}
+}
+
+.button-home{
+	a:link, a:visited{
+	color:#fff;
+	background: lime;
+	padding: 10px 30px 10px 30px;
+	text-decoration: none;
+	}
+	a:hover{
+	background: darken(lime, 20%);
 	}
 }
 
