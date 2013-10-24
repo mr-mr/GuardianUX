@@ -42,3 +42,12 @@ a {
 	background: $link-hover;
 	}
 }
+
+.button-inactive{
+	float:left;
+	margin:10px 10px 30px 0 ;
+	color:#999;
+	background: $grey;
+	padding: 15px 35px 15px 35px;
+	text-decoration: none;
+}
