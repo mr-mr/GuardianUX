@@ -3151,6 +3151,85 @@ article {
   background: #cc0000;
   padding: 2px; }
 
+/*.column {
+	//float:left;
+	margin:0 0 0 20px;
+	//background: aqua;
+	width:880px;
+	height: 100%;
+    -webkit-column-count: 4;
+       -moz-column-count: 4;
+            column-count: 4;
+    column-gap:0;
+    padding:0;
+    h3{
+    	color:$link-white;
+    	font-size:20px;
+    }
+
+    
+}
+
+.column li{
+	list-style-type: none;
+	float:left;
+	//background:lime;
+	padding:0;
+	margin:0 0 5px 5px;
+	page-break-after:always;
+}*/
+@media (min-width: 320px) {
+  .column {
+    width: 100%;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+    padding: 0;
+    margin: 0 0 0 20px; }
+    .column li:nth-child(n+2) {
+      display: none; }
+    .column li {
+      break-after: always;
+      -moz-column-break-after: always;
+      -webkit-column-break-after: always; } }
+@media (min-width: 640px) {
+  .column {
+    width: 100%;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    padding: 0;
+    margin: 0 0 0 20px; }
+    .column li:nth-child(n+4) {
+      display: block;
+      background: lime; }
+    .column li {
+      break-after: always;
+      -moz-column-break-after: always;
+      -webkit-column-break-after: always; } }
+@media (min-width: 960px) {
+  .column {
+    width: 880px;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+    padding: 0;
+    margin: 0 0 0 20px; }
+    .column li:nth-child(n+2) {
+      display: block; }
+    .column li {
+      break-after: always;
+      -moz-column-break-after: always;
+      -webkit-column-break-after: always; } }
+
+.column li {
+  list-style: none;
+  padding: 10px;
+  margin: 0; }
+  .column li h3 {
+    color: white;
+    font-size: 20px; }
+
 a:link {
   color: #234a81;
   text-decoration: none;
@@ -3172,6 +3251,14 @@ a:visited {
     text-decoration: none; }
   .button a:hover {
     background: #132745; }
+
+.button-inactive {
+  float: left;
+  margin: 10px 10px 30px 0;
+  color: #999;
+  background: #cccccc;
+  padding: 15px 35px 15px 35px;
+  text-decoration: none; }
 
 .logo {
   background: url("../img/guardian-logo-3.svg") no-repeat;
@@ -4879,6 +4966,11 @@ p {
   font-size: 0.92857em;
   line-height: 1.4em; }
 
+dd {
+  color: #a6a6a6;
+  padding: 0;
+  margin: 0; }
+
 strong, th, dt {
   font-family: "guardian-bold";
   font-weight: normal;
@@ -4994,7 +5086,7 @@ strong, th, dt {
   .header-container div {
     color: white;
     padding: 70px 20px 50px 20px;
-    font-size: 60px; }
+    font-size: 70px; }
   .header-container p {
     color: #b3b3b3;
     padding: 25px;
