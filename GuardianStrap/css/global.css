@@ -3132,7 +3132,7 @@ body {
   padding: 10px;
   margin: 0; }
   .list-block.setup {
-    margin: -5px 0 0 20px; }
+    margin: 0 0 5px 40px; }
 
 article {
   width: 100%;
@@ -3151,84 +3151,6 @@ article {
   background: #cc0000;
   padding: 2px; }
 
-/*.column {
-	
-	@media (min-width:$small){
-		width:100%;
-		-moz-column-count:1;
-		-webkit-column-count:1;
-		column-count:1;
-		padding:0; margin:30px 0 0 20px;
-		
-		li:nth-child(n+2) {
-			display:none;
-			//background:lime;
-			}
-		
-			li {
-			    break-after: always;
-			    -moz-column-break-after: always;
-			    -webkit-column-break-after: always;
-			}
-	
-	}
-	
-	
-	@media (min-width:$medium){
-		width:600px;
-		-moz-column-count:2;
-		-webkit-column-count:2;
-		column-count:2;
-		padding:0; margin:30px 0 0 20px;
-		
-		li:nth-child(n+3) {
-			display:block;
-			}
-		
-			li {
-			    break-after: always;
-			    -moz-column-break-after: always;
-			    -webkit-column-break-after: always;
-			}
-	
-	}
-	
-	
-	@media (min-width:$medium-large) {
-		width:100%;
-		-moz-column-count:4;
-		-webkit-column-count:4;
-		column-count:4;
-		padding:0; margin:30px 0 0 20px;
-	
-		li:nth-child(n+2) {
-			display:block;
-			background:$dark-grey;
-			}
-	
-			li {
-			    break-after: always;
-			    -moz-column-break-after: always;
-			    -webkit-column-break-after: always;
-			}
-	
-		}
-	
-	}
-
-
-.column li {
-	//width:24%;
-	list-style:none;
-	padding:10px; margin:0;
-	//font-size:1.0em;
-	h3{
-    	color:$link-white;
-    	font-size:20px;
-    }
-	
-}
-*/
 @media (min-width: 320px) {
   .column {
     width: 300px;
@@ -3251,13 +3173,9 @@ article {
     column-count: 2;
     padding: 0;
     margin: 30px 0 0 20px; }
-    .column li:nth-child(n+2) {
-      display: block;
-      background: aqua; }
     .column li:nth-child(n+3) {
-      display: inline;
-      background: lime;
-      margin: 10px 0 0 0; }
+      display: block;
+      background: #252525; }
     .column li {
       break-after: always;
       -moz-column-break-after: always;
@@ -3298,7 +3216,7 @@ a:visited {
 
 .button {
   float: left;
-  margin: 10px 0 30px 10px; }
+  margin: 10px 10px 30px 0; }
   .button a:link, .button a:visited {
     color: #fff;
     background: #234a81;
@@ -5066,7 +4984,8 @@ strong, th, dt {
 
 .accordion-pane {
   padding-bottom: 20px;
-  height: 50px; }
+  height: 50px;
+  padding-right: 20px; }
 
 #tabs div {
   width: 100%;
@@ -5174,7 +5093,7 @@ strong, th, dt {
   .header-container {
     margin: 0 auto;
     width: 940px;
-    padding: 20px 0 20px 0; }
+    padding: 20px 0 40px 0; }
     .header-container div {
       color: white;
       padding: 70px 20px 0px 20px;
@@ -5189,17 +5108,12 @@ strong, th, dt {
   left: 0;
   right: 0;
   bottom: 0;
-  margin-top: 50px;
+  margin: 20px 0 30px 0;
   position: relative;
   height: 100%;
   background: white;
   background: url("../img/library-bg.jpg") top left repeat;
   z-index: 99; }
-  .header-top .landing {
-    position: relative;
-    left: 0;
-    right: 0;
-    bottom: 0; }
 
 .header-top:after {
   border-bottom: 1px solid black; }
