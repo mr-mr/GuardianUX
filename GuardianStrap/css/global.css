@@ -3107,7 +3107,7 @@ body {
   float: left;
   position: relative;
   margin: -10px 0 0 -20px;
-  padding: 30px 10px 15px 22px;
+  padding: 30px 10px 30px 22px;
   background: #ccffcc;
   border: 1px solid #e5e5e5;
   z-index: -10;
@@ -3118,6 +3118,8 @@ body {
     width: 100%;
     list-style-type: none;
     line-height: 1.2em; }
+  .framework-column-left h3 {
+    margin: -5px 0 10px 0; }
 
 .framework-column-right {
   width: 70%;
