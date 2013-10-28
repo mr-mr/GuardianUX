@@ -29,7 +29,7 @@ a {
 
 .button{
 	float:left;
-	margin:10px 0 30px 10px;
+	margin:10px 10px 30px 0;
 	a:link, a:visited{
 	color:#fff;
 	background: $link;
@@ -63,3 +63,22 @@ a {
 	padding: 15px 35px 15px 35px;
 	text-decoration: none;
 }
+
+.button-read-more{
+	text-align:center;
+	a:link, a:visited{
+		margin:-20px 0 20px 0;
+		padding: 5px 20px 10px 20px;
+		height:45px;
+	     width:100px;
+	     border-radius: 0 0 100px 100px;
+		text-decoration: none;
+		background:$link;
+		color:$link-white;
+
+	}
+	a:hover{
+	background: $link-hover;
+	}
+}
+
