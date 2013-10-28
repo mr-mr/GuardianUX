@@ -1501,6 +1501,9 @@ body {
   margin: 20px 0 30px 0;
   padding: 0;
   float: left; }
+  .border-line.read-more {
+    margin: 0;
+    border-color: #234a81; }
 
 .border-line-dark {
   border: 1px solid black;
@@ -3103,13 +3106,12 @@ body {
   width: 200px;
   float: left;
   position: relative;
-  margin: -60px 0 0 -20px;
+  margin: -10px 0 0 -20px;
   padding: 30px 10px 15px 22px;
-  background: #f7f7f9;
+  background: #ccffcc;
   border: 1px solid #e5e5e5;
   z-index: -10;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px; }
+  border-radius: 5px; }
   .framework-column-left li {
     margin: 0;
     padding: 0;
@@ -3130,7 +3132,7 @@ body {
 
 .list-block {
   padding: 10px;
-  margin: 0; }
+  margin-top: 10px; }
   .list-block.setup {
     margin: 0 0 5px 40px; }
 
@@ -3240,6 +3242,20 @@ a:visited {
   background: #cccccc;
   padding: 15px 35px 15px 35px;
   text-decoration: none; }
+
+.button-read-more {
+  text-align: center; }
+  .button-read-more a:link, .button-read-more a:visited {
+    margin: -20px 0 20px 0;
+    padding: 5px 20px 10px 20px;
+    height: 45px;
+    width: 100px;
+    border-radius: 0 0 100px 100px;
+    text-decoration: none;
+    background: #234a81;
+    color: white; }
+  .button-read-more a:hover {
+    background: #132745; }
 
 .logo {
   background: url("../img/guardian-logo-3.svg") no-repeat;
@@ -5108,7 +5124,7 @@ strong, th, dt {
   left: 0;
   right: 0;
   bottom: 0;
-  margin: 20px 0 30px 0;
+  margin: 50px 0 0px 0;
   position: relative;
   height: 100%;
   background: white;
