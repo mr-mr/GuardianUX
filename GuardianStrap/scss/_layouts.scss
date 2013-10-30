@@ -50,6 +50,44 @@ body{
 	width:940px;
 }
 
+.col {
+	float:left;
+	margin-right:$gs-gutter;
+	background:lime;
+}
+
+
+.gs-wrapper {
+	overflow: hidden;
+	background: red;
+	margin-right: $gs-gutter/2;
+	margin-left: $gs-gutter/2;
+
+	@include mq(mobileLandscape) {
+		margin-right: $gs-gutter;
+		margin-left: $gs-gutter;
+	}
+}
+
+.last{
+	margin-right:0;
+}
+
+@each $breakpoint in $mq-breakpoints {
+	@for $i from 1 through $gs-max-columns {
+		@include mq(nth($breakpoint, 1)) {
+			.col-#{nth($breakpoint, 1)}-#{$i} { 
+				width:gs-span($i); 
+			}
+		}
+	}
+}
+
+
+.test{
+ width:gs-span(10);
+}
+
 .framework-container{
 	width:100%;
 	float:left;
@@ -123,6 +161,36 @@ article{
 	padding:2px;
 }
 
+
+// 2.0 Welcome screen
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+
+.welcome {
+  text-align: center;
+  margin: 20px;
+  top:50px;
+  left:0;
+  right:0;
+  //bottom:0;
+  //position:relative;
+}
+ 
+.welcome:before {
+  content: '';
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+ }
+ 
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  max-width:600px
+  //padding: 10px 15px 0 0;
+ 
+ }
 
 // 2.0 Columns
 // -------------------------------------------------------------------------------------------------------------------------------------------------
