@@ -3728,7 +3728,8 @@ iframe {
   height: 100%;
   border: none;
   margin-top: 50px;
-  padding: 0; }
+  padding: 0;
+  background: lime; }
 
 .video-overlay {
   position: fixed;
@@ -5254,7 +5255,8 @@ iframe {
   height: 100%;
   border: none;
   margin-top: 50px;
-  padding: 0; }
+  padding: 0;
+  background: lime; }
 
 .video-overlay {
   position: fixed;
