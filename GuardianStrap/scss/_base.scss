@@ -23,8 +23,19 @@
 
 }
 
-.radius {
+@mixin radius {
 
+}
+
+@mixin full-screen {
+	width:100%;
+	top:0;
+	left:0;
+	position:absolute;
+}
+
+@mixin block {
+	
 }
 
 .image-replacement {
