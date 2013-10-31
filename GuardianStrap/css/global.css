@@ -5532,8 +5532,7 @@ strong, th, dt {
 
 @media (min-width: 320px) {
   .header-container {
-    margin: 0 auto;
-    width: 940px;
+    width: 100%;
     padding: 20px 0 20px 0; }
     .header-container div {
       color: white;
@@ -5541,7 +5540,7 @@ strong, th, dt {
       font-size: 35px; }
     .header-container p {
       color: #b3b3b3;
-      font-size: 16px;
+      font-size: 20px;
       margin: 10px 0 20px 20px;
       font-weight: normal; } }
 @media (min-width: 640px) {
@@ -5566,7 +5565,7 @@ strong, th, dt {
     .header-container div {
       color: white;
       padding: 70px 20px 0px 20px;
-      font-size: 70px; }
+      font-size: 80px; }
     .header-container p {
       color: #b3b3b3;
       font-size: 16px;
@@ -5627,7 +5626,6 @@ strong, th, dt {
   color: white;
   width: 110px;
   height: 18px;
-  background: #234a81;
   font-family: "guardian-regular";
   font-size: 1em;
   font-weight: bold;
