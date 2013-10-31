@@ -46,12 +46,12 @@ a {
 .button-home{
 	a:link, a:visited{
 	color:#fff;
-	background: lime;
+	background: $framework-nav;
 	padding: 10px 30px 10px 30px;
 	text-decoration: none;
 	}
 	a:hover{
-	background: darken(lime, 20%);
+	background: darken($framework-nav, 20%);
 	}
 }
 
