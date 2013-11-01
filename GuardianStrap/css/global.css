@@ -3005,6 +3005,41 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 .icon-renren:before {
   content: "\f18b"; }
 
+#globalnav-container {
+  left: 0;
+  right: 0;
+  display: block;
+  padding: 0;
+  margin: 0;
+  float: left; }
+  #globalnav-container li {
+    float: left;
+    display: inline;
+    text-decoration: none;
+    margin-right: 10px; }
+
+.editions {
+  left: 0;
+  right: 0;
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding: 10px 0 10px 0;
+  background: lime; }
+  .editions li {
+    float: left;
+    display: inline;
+    text-decoration: none;
+    margin-right: 10px; }
+
+#logo-container {
+  background: #252525; }
+
+.icons {
+  float: right;
+  margin-top: -30px;
+  background: lime; }
+
 #framework-footer {
   position: fixed;
   left: 0;
@@ -3100,12 +3135,10 @@ body {
 
 .col {
   float: left;
-  margin-right: 20px;
-  background: lime; }
+  margin-right: 20px; }
 
 .gs-wrapper {
   overflow: hidden;
-  background: red;
   margin-right: 10px;
   margin-left: 10px; }
   @media all and (min-width: 30em) {
@@ -3604,7 +3637,7 @@ article {
     margin: 30px 0 0 20px; }
     .column li:nth-child(n+3) {
       display: block;
-      background: #252525; }
+      background: #4485f5; }
     .column li {
       break-after: always;
       -moz-column-break-after: always;
@@ -3655,11 +3688,12 @@ a:visited {
     background: #132745; }
 
 .button-home a:link, .button-home a:visited {
-  color: #fff;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4485f5), to(#0b50c8));
+  color: #252525;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#999999));
   padding: 10px 30px 10px 30px;
   text-decoration: none; }
 .button-home a:hover {
+  color: white;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4485f5), to(#0b50c8)); }
 
 .button-inactive {
@@ -5435,32 +5469,16 @@ strong, th, dt {
   color: #234a81;
   bottom: 0; }
 
-.accordion {
-  margin-bottom: 20px;
-  width: 100%; }
-
-.accordion h2, .accordion h3 {
-  margin: 20px;
-  font-size: 18px; }
-
-.accordion-control {
-  display: block;
-  padding-top: 10px;
-  border-top: 1px solid #e5e5e5; }
-  .accordion-control i {
-    float: right;
-    text-decoration: none; }
-
-.accordion-pane {
-  padding-bottom: 20px;
-  height: 50px;
-  padding-right: 20px; }
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 #tabs div {
   width: 100%;
   float: left;
   border-top: 1px solid #a6a6a6;
-  margin-top: -4px; }
+  margin-top: -1px; }
   #tabs div:p {
     float: left; }
   #tabs div:li {
@@ -5617,16 +5635,14 @@ strong, th, dt {
     font-size: 14px;
     margin: 0 0 0 20px; }
     .nav-list li a:link, .nav-list li a:visited {
-      color: #a6a6a6;
+      color: white;
       text-decoration: none;
       font-weight: normal; }
     .nav-list li a:hover {
-      color: #252525;
+      color: #4485f5;
       text-decoration: underline; }
   .nav-list .nav-selected {
-    color: white;
-    background: #4485f5;
-    padding: 10px;
+    color: #4485f5;
     text-decoration: none; }
 
 .wrapper {

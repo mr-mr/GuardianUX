@@ -44,14 +44,17 @@ a {
 }
 
 .button-home{
+	//float:left;
+	//margin-top:15px;
 	a:link, a:visited{
-	color:#fff;
-	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from($framework-nav), to(darken($framework-nav, 20%)));
+	color:$dark-grey;
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from($link-white), to(darken($grey, 20%)));
 	padding: 10px 30px 10px 30px;
 	text-decoration: none;
 	}
 	a:hover{
 	//background: darken($framework-nav, 20%);
+	color:$link-white;
 	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from($framework-nav), to(darken($framework-nav, 20%)));
 	}
 }
