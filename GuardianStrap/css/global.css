@@ -3656,11 +3656,11 @@ a:visited {
 
 .button-home a:link, .button-home a:visited {
   color: #fff;
-  background: #4485f5;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4485f5), to(#0b50c8));
   padding: 10px 30px 10px 30px;
   text-decoration: none; }
 .button-home a:hover {
-  background: #0b50c8; }
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4485f5), to(#0b50c8)); }
 
 .button-inactive {
   float: left;
@@ -3685,7 +3685,7 @@ a:visited {
     background: #132745; }
 
 .logo {
-  background: url("../img/guardian-logo-3.svg") no-repeat;
+  background: url("../img/guardian-logo.svg") no-repeat;
   background-size: 100% auto;
   width: 120px;
   height: 53px;
@@ -5212,7 +5212,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   content: "\f18b"; }
 
 .logo {
-  background: url("../img/guardian-logo-3.svg") no-repeat;
+  background: url("../img/guardian-logo.svg") no-repeat;
   background-size: 100% auto;
   width: 120px;
   height: 53px;
@@ -5533,7 +5533,7 @@ strong, th, dt {
 .header-container {
   margin: 0 auto;
   width: 940px;
-  padding: 20px 0 40px 0; }
+  padding: 20px 0 80px 0; }
   .header-container div {
     color: white;
     padding: 70px 20px 0px 20px;
@@ -5563,10 +5563,10 @@ strong, th, dt {
   right: 0;
   top: 0;
   height: 50px;
-  background: #e5e5e5;
+  background: #234a81;
   position: fixed;
   z-index: 100;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
 
 .nav-container {
   max-width: 960px;
