@@ -53,13 +53,13 @@ body{
 .col {
 	float:left;
 	margin-right:$gs-gutter;
-	background:lime;
+	//background:lime;
 }
 
 
 .gs-wrapper {
 	overflow: hidden;
-	background: red;
+	//background: red;
 	margin-right: $gs-gutter/2;
 	margin-left: $gs-gutter/2;
 
@@ -229,7 +229,7 @@ article{
 		li:nth-child(n+3) {
 			//display:block;
 			display:block;
-			background:$dark-grey;
+			background:$framework-nav;
 			//float:left;
 			}
 		

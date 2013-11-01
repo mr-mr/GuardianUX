@@ -18,13 +18,16 @@
 @import "profiles";			//This should be limited to user icons, everything else should live under the above sections
 @import "typography";		//Videos and images
 
+@import "bourbon";			//Used for Mixins
+@import "neat";				//For the responsive grid
+
 // --------------------------------------------------------------------------------------------------------------------------------------------
 // Imports for Framework
 // --------------------------------------------------------------------------------------------------------------------------------------------
-@import "accordion";		//References to
+//@import "accordion";		//Compress information
 //@import "Alerts";			//References to
-@import "carousel";			//References to
-@import "tabs";				//Tabs on the trail block and pages with multiple sections.
+//@import "carousel";			//References to
+@import "tabs";				//Show multiple pieces of work together
 //@import "Images";			//References to
 //@import "Thumbnails";		//References to
 //@import "Navbar";			//References to
@@ -38,4 +41,4 @@
 
 
 @import "framework-nav";	//Navigation for the framework only - Does not effect the global nav for prototypes
-@import "code";
+@import "code";				//The visual styles for displaying code

@@ -31,7 +31,7 @@
 		//background: $grey;
 		margin:0 auto;
 		width:940px;
-		padding:20px 0 40px 0;
+		padding:20px 0 80px 0;
 		div{
 			color:$link-white;
 			padding:70px 20px 0px 20px ;
@@ -74,10 +74,10 @@
 	right:0;
 	top:0;
 	height:50px;
-	background:$light-grey;
+	background:$link;
 	position: fixed;
 	z-index:100;
-	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
 
 .nav-container {
@@ -149,11 +149,11 @@
 		font-size: 14px;
         margin:0 0 0 20px;
 		a {
-		&:link, &:visited {color:$semi-grey;  text-decoration:none; font-weight:normal;}
-		&:hover{color:$dark-grey; text-decoration:underline;}
+		&:link, &:visited {color:$link-white;  text-decoration:none; font-weight:normal;}
+		&:hover{color:$framework-nav; text-decoration:underline;}
 		}
 	}
-	.nav-selected {color:$link-white; background:$framework-nav; padding:10px; text-decoration:none; }
+	.nav-selected {color:$framework-nav;  text-decoration:none; }
 }
 
 
