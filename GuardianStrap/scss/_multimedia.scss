@@ -20,6 +20,17 @@
 // --------------------------------------------------
 // 3.0 general
 
+.global-logo{
+	background:url("../img/guardian-logo.svg") no-repeat;
+	background-size:100% auto;
+	float:right;
+	&.footer{
+		width:130px;
+		height:53px;
+		margin:0px 50px 0 0;
+	}
+}
+
 .logo{
 	background:url("../img/guardian-logo-3.svg") no-repeat;
 	background-size:100% auto;

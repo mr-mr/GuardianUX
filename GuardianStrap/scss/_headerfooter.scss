@@ -31,5 +31,50 @@
 // --------------------------------------------------------------------------------------------------------------------------------------------
 
 #global-footer{
-	
+	@include background-container;
+	background:$link-white;
+	height:100%;
+}
+
+.logo-block{
+		background:$link;
+		height:48px;
+		//width:100%;
+		padding:15px
+	}
+
+.back-to-top{
+	margin:-3px 0 0 30px ;
+}
+
+.footer-links {
+	margin-left:30px;
+	padding:10px;
+	ul{
+		column-count:2;
+		display:inline;
+	}
+
+	li{
+		list-style-type: none;
+		width:100%;
+	}
+}
+
+.copyright{
+	float:left;
+	font-size:12px;
+	color:$semi-grey;
+	margin-left:40px;
+	padding:10px;
+
+}
+
+footer{
+	margin:-50px auto;
+	//background:lime;
+	//height:100%;
+	&.links{
+		padding:10px;
+	}
 }

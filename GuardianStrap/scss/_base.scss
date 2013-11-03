@@ -15,6 +15,7 @@
 @import "font-awesome";
 @import "colors";
 @import "breakpoints";
+@import "mq";
 
 
 // 2. variables & mixins
@@ -23,13 +24,32 @@
 $background-container:$link-white;
 $margin-paragraph: 10px 0 10px 0;
 
-@mixin radius {
+@mixin background-container {
+	//top:0;
+	//width:100%;
+	margin:0;
+	padding:0;
+	font-size:15/20;
+	color:$copy;
+	text-rendering:optimizeLegibility;
+	background:$code-grey;
+}
 
+@mixin content-container{
+	min-width:280px;
+	max-width:100%;
+	background:$link-white;
+	margin:$gs-gutter;
+	padding:$gs-gutter;
 }
 
 @mixin margins_zero {
 	margin:0;
 	padding:0;
+}
+
+@mixin border-box{
+
 }
 
 @mixin margins_paragraphs {
@@ -108,20 +128,21 @@ $margin-paragraph: 10px 0 10px 0;
 // 3.General
 //-----------------------------
 
+html {
+	font-family:$serif;
+	list-style-type: none;
+	}
+
+body{
+	@include background-container;
+}
 
 #wrapper {
-	margin: 50px auto;
-	min-width:280px;
-	@media (min-width:$medium-large){
-	//width:90%;
-	width:880px;
-	}
+	@include content-container;
 }
 
 #home{
-	margin: 40px auto;
-	width:70%;
-	max-width:880px;
+	@include content-container;
 }
 
 .container {
@@ -130,18 +151,6 @@ $margin-paragraph: 10px 0 10px 0;
 	width:940px;
 }
 
-html {
-	font-family:$serif;
-	list-style-type: none;
-}
-
-body{
-	margin:0;
-	font-size:15/20;
-	color:$copy;
-	text-rendering:optimizeLegibility;
-	background:$code-grey;
-}
 
 
 .border-line{

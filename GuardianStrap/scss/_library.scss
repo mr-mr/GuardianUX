@@ -16,8 +16,8 @@
 
 // 1.0 imports & file paths
 // ------------------------------------------------------------------------------------------------------------------------------------------------- 
-	@import "colors";
-	@import "fonts";
+	//@import "colors";
+	//@import "fonts";
 	//@image-path:"{../img/}";
 	
 // 2.0 mixins
@@ -143,30 +143,30 @@
 		}
 	}
 	
-	@mixin links(no,@link) {
-		@link-hover:darken(@link,10%);
-		@link-visited:lighten(@link,10%);
+	@mixin links(no,$link) {
+		$link-hover:darken($link,10%);
+		$link-visited:lighten($link,10%);
 		a {
-			color:@link;
+			color:$link;
 			text-decoration:none;
 			&:hover {
-				color:@link-hover;
+				color:$link-hover;
 			}
 			&:visited {
-				color:@link-visited;
+				color:$link-visited;
 			}
 		}
 	}	
 	
-	@mixin links(no,@link,@link-hover,@link-visited) {
+	@mixin links(no,$link,$link-hover,$link-visited) {
 		a {
-			color:@link;
+			color:$link;
 			text-decoration:none;
 			&:hover {
-				color:@link-hover;
+				color:$link-hover;
 			}
 			&:visited {
-				color:@link-visited;
+				color:$link-visited;
 			}
 		}
 	}
