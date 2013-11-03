@@ -9,6 +9,22 @@
 // 6.0 modules
 // --------------------------------------------------------------------------------------------------------------------------------------------
 
+// 2.0 variables
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+@mixin font-size($sizeValue: 12 ){
+  font-size: $sizeValue + px; //fallback for old browsers
+  font-size: (0.125 * $sizeValue) + rem;
+}
+
+@mixin line-height($heightValue: 12 ){
+	line-height: $heightValue + px; //fallback for old browsers
+	line-height: (0.125 * $heightValue) + rem;
+}
+
+
+// 6.0 modules
+// --------------------------------------------------------------------------------------------------------------------------------------------
 
 h1, h2, h3, h4, li {
 	font-weight:normal;
@@ -121,5 +137,12 @@ strong, th, dt {
 	color:$link;
 	bottom:0;
 }
+
+.note {
+  background: #f9ff9b;
+  padding-left: 15px;
+  border-left: 4px solid #dae800;
+  width: 97%;
+  margin-bottom: 10px; }
 
 

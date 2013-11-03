@@ -30,11 +30,11 @@
 .header-container {
 		//background: $grey;
 		margin:0 auto;
-		width:940px;
-		padding:20px 0 80px 0;
+		width:1200px;
+		padding:40px 0 40px 0;
 		div{
 			color:$link-white;
-			padding:70px 20px 0px 20px ;
+			padding:30px 20px 0px 20px ;
 			font-size: 80px;
 			//margin:30px 0 20px 0;
 
@@ -59,8 +59,6 @@
 	background:$link-white;
 	background:url("../img/library-bg.jpg") top left repeat;
 	z-index:99;
-	
-	
 }
 
 
@@ -74,22 +72,40 @@
 	right:0;
 	top:0;
 	height:50px;
-	background:$link;
+	background:$link-white;
 	position: fixed;
 	z-index:100;
-	border-bottom: 1px solid rgba(255, 255, 255, .2);
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
 
 .nav-container {
-	max-width:960px;
-	width:100%;
-	height:55px;
-	margin:-15px auto;
-	padding-top:13px;
+	@include content-container;
+	height:50px;
+	margin-top:-20px;
+
 }
 	
 // 6.0 modules
 // --------------------------------------------------------------------------------------------------------------------------------------------
+
+.nav-list {
+
+	margin: -52px 0 0 140px;
+	
+	li 	{
+		
+		display: inline;
+		list-style-type: none;
+		padding:0;
+		font-size: 14px;
+        margin:0 0 0 20px;
+		a {
+		&:link, &:visited {color:$dark-grey;  text-decoration:none; font-weight:normal;}
+		&:hover{color:$framework-nav; text-decoration:underline;}
+		}
+	}
+	.nav-selected {color:$framework-nav;  text-decoration:none; }
+}
 
 
 .framework-side-nav{
@@ -117,46 +133,5 @@
 		margin-left:30px;
 	}
 }
-
-.nav-header {
-
-	color: $link-white;
-	width:110px;
-	height:18px;
-	//background:darken($link,5%); 
-	//background:$link;
-	font-family: $serif; 
-	font-size:(14 / 14) * 1em;
-	font-weight:bold;
-	padding:16px;
-	margin:0;
-}
-
-.nav-list {
-		
-	float:left;
-	padding:10px;
-	margin: -62px 0 0 140px;
-	//background:lime;
-	width:560px;
-	
-	li 	{
-		
-		display: inline;
-		list-style-type: none;
-		//background:lime;
-		padding:0;
-		font-size: 14px;
-        margin:0 0 0 20px;
-		a {
-		&:link, &:visited {color:$link-white;  text-decoration:none; font-weight:normal;}
-		&:hover{color:$framework-nav; text-decoration:underline;}
-		}
-	}
-	.nav-selected {color:$framework-nav;  text-decoration:none; }
-}
-
-
-
 
 

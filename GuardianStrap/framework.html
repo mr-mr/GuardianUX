@@ -16,9 +16,9 @@
 	<script type="text/javascript" src="js/fancybox-player.js"></script>
 </head>
 
-<body onload="prettyPrint()">
+<body>
 
-<div class="nav-bar">
+<!--<div class="nav-bar">
 	<div class="nav-container">
 		<a href="../GuardianStrap"><div class="logo"></div></a>
 		<ul class="nav-list">	
@@ -30,9 +30,9 @@
 			<li><a href=""><strike>Composer</strike></a></li>
 		</ul>
 	</div>
-</div>
+</div>-->
 
-<div class="header-top">
+<!--<div class="header-top">
 	<div class"border-line-dark"></div>
 	<div class="header-container">
 		<div class"big-message">Framework library</div>
@@ -43,13 +43,13 @@
 
 <div class="message-container">
 	<div class="message-bar">Last updated 1<sup>st</sup> November. For info about this framework, <a href="setup.html">read the setup</a></div>
-</div>
+</div>-->
 
-<div id="wrapper">
-	
-	<div class="framework-column-left">
-	<h3>Contents</h3>	
-		<ul class="list block">	
+<div id="home">
+	<h1 class="work-landing">Framework</h1>
+	<div class="border-line"></div>
+	<div><h3>Contents</h3>	
+		<ol class="list block setup">	
 			<li><a href="#video">Article right columns</a></li>
 			<li><a href="#video">Containers</a></li>
 			<li><a href="#images">Story package</a></li>
@@ -67,11 +67,13 @@
 			<li><strike><a href="#tab">Tabs</a></strike></li>
 			<li><a href="#pagination">Pagination</a></li>
 		
-		</ul>
+		</ol>
 	</div>
 
-	<div class="framework-column-right">
-		<div class="framework-container">
+	<div class="border-line"></div>
+
+	<div>
+		<div class="home">
 	<h1 class="page-header">Accordian</h1>
 	
 	<p>Used for trail links in the footer and Lorem ipsum dolor sit amet</p>
@@ -117,29 +119,29 @@
 	
 	<div class="border-line"></div>
 
-</div>		<div class="framework-container" id="buttons">
+</div>		<div class="home" id="buttons">
 	<h1 class="page-header">Buttons</h1>
 	<p>Options for read more links, and larger calls to action.</p>
 	
-	<div class="framework-container">
+	<div class="home">
 	<h4>Active buttons</h4>
 		<p class="button"><a href="">Read more on this story</a></p>
 	</div>
 	
-	<div class="framework-container">
+	<div class="home">
 	<h4>Inactive button</h4>
 		<p class="button-inactive">Read more on this story</p>
 	</div>
 	
-	<div class="framework-container">
+	<div class="home">
 	<h4>Share buttons</h4>
-		<p class="button"><a href=""><i class="icon-envelope"></i></a></p>
-		<p class="button"><a href=""><i class="icon-twitter"></i></a></p>
-		<p class="button"><a href=""><i class="icon-facebook"></i></a></p>
-		<p class="button"><a href=""><i class="icon-google-plus"></i></a></p>
+		<p class="button button-share"><a href=""><i class="icon-envelope"></i></a></p>
+		<p class="button button-share"><a href=""><i class="icon-twitter"></i></a></p>
+		<p class="button button-share"><a href=""><i class="icon-facebook"></i></a></p>
+		<p class="button button-share"><a href=""><i class="icon-google-plus"></i></a></p>
 	</div>
 
-	<div class="framework-container">
+	<div class="home">
 	<h4>Read more button</h4>
 		<div class="border-line read-more"></div>
 		<p class="button-read-more"><a href=""><i class="icon-angle-down icon-large"></i></a></p>
@@ -148,12 +150,12 @@
 		<pre><span class="pre-line-numbers"></span></pre>
 	<p></p>
 	
-	<div class="border-line" id="accordion"></div>
-</div>		<div class="framework-container" id="header-footer">
+	<div class="border-line"></div>
+</div>		<div class="home" id="header-footer">
 	<h1 class="page-header">Header &amp; Footer</h1>
 	<p>The global setup for header and footer, including navigation.</p>
 	
-	<div class="framework-container">
+	<div class="home">
 		
 		<div id="globalnav-container">
 			
@@ -191,7 +193,35 @@
 		</ol>
 		
 		
-	</div>
+		</div>
+
+		<div class="home">
+
+			<footer id="global-footer">
+	
+				<div class="logo-block">
+					<div class="global-logo footer"></div>
+					<div class="back-to-top button"><a href="#top"><sup><i class="icon-angle-up"></i></sup> Back to top</a></div>
+				</div>
+				<div class="gs-wrapper footer-links">
+					<ul class="col col-mobile-2 col-tablet-3 footer-links">
+						<li><a href="">Desktop Version</a></li>
+						<li><a href="">Contact Us</a></li>
+						<li><a href="">Privacy Policy</a></li>
+						<li><a href="">About this site</a></li>
+					</ul>
+					
+					<ul class="col col-mobile-2 col-tablet-3 footer-links">
+						<li><a href="">Feedback</a></li>
+						<li><a href="">Cookie Policy</a></li>
+						<li><a href="">Help</a></li>
+						<li><a href="">Terms &amp; Conditions</a></li>
+					</ul>
+				</div>
+				<div class="copyright">&#169; 2013 Guardian News and Media Limited or its affiliated companies. All rights reserved.</div>
+			</footer>
+			
+		</div>
 
 	</div>
 
@@ -199,7 +229,8 @@
 	<p></p>
 	
 	<div class="border-line"></div>
-</div>		<div class="framework-container" id="tab">
+</div>
+		<div class="home" id="tab">
 	<h1 class="page-header">Tabs</h1>
 	<p>Used for to switch betwwen information on pages (e.g stats and min by min)</p>
 
@@ -219,7 +250,7 @@
 
 	<div class="border-line" id="accordion"></div>
 </div>
-		<div class="framework-container" id="video">
+		<div class="home" id="video">
 	<h1 class="page-header">Video &amp; Audio</h1>
 	<p>Video opens in an overlay, audio plays in-line or pop up?</p>
 
@@ -253,7 +284,8 @@
  <script src="js/jquery-1.9.1.min.js"></script>
  <script src="js/tabs.ui.min.js"></script>
  <script src="js/tabs.min.js"> </script>
- <script src="js/bootstrap.min.js"> </script>
+
+ <!--<script src="js/bootstrap.min.js"> </script>-->
 
 <script src="js/prettify.min.js"> </script> 
 <script src="js/run_prettify_cc.min.js"> </script>
@@ -268,19 +300,53 @@
  <script src="js/fancybox-player.min.js"> </script>
  <script src="js/jquery.fancybox-media.min.js"> </script>
 
-<footer class="page-footer">
-	<nav class="nav-footer">
-		<ul>
-			<!--<li><a href="#">Help</a></li>
-			<li><a href="#">About us</a></li>
-			<li><a href="#">Contact us</a></li>
-			<li><a href="#">Terms &amp; conditions</a></li>
-			<li><a href="#">Privacy policy</a></li>
-			<li><a href="#">Subscriptions</a></li>
-			<li class="copyright-notice">© 2012 Guardian News and Media Limited or its affiliated companies. All rights reserved.</li>-->
+<footer id="global-footer">
+	
+	<div class="logo-block">
+		<div class="global-logo footer"></div>
+		<div class="back-to-top button"><a href="#top"><sup><i class="icon-angle-up"></i></sup> Back to top</a></div>
+	</div>
+	<div class="gs-wrapper footer-links">
+		<ul class="col col-mobile-2 col-tablet-3 footer-links">
+			<li><a href="">Desktop Version</a></li>
+			<li><a href="">Contact Us</a></li>
+			<li><a href="">Privacy Policy</a></li>
+			<li><a href="">About this site</a></li>
 		</ul>
-	</nav>
+		
+		<ul class="col col-mobile-2 col-tablet-3 footer-links">
+			<li><a href="">Feedback</a></li>
+			<li><a href="">Cookie Policy</a></li>
+			<li><a href="">Help</a></li>
+			<li><a href="">Terms &amp; Conditions</a></li>
+		</ul>
+	</div>
+	<div class="copyright">&#169; 2013 Guardian News and Media Limited or its affiliated companies. All rights reserved.</div>
 </footer>
+</html>
+
+
+ <script src="js/jquery-2.0.2.min.js"></script>
+ <script src="js/jquery-1.9.1.min.js"></script>
+ <script src="js/tabs.ui.min.js"></script>
+ <script src="js/tabs.min.js"> </script>
+
+ <!--<script src="js/bootstrap.min.js"> </script>-->
+
+<script src="js/prettify.min.js"> </script> 
+<script src="js/run_prettify_cc.min.js"> </script>
+ 
+ <script src="js/showhide.min.js"> </script>
+
+ <script src="js/accordion.min.js"> </script>
+ <script src="js/accordion-with-arrows.min.js"> </script>
+
+ <script src="js/sticky-position.min.js"> </script>
+
+ <script src="js/fancybox-player.min.js"> </script>
+ <script src="js/jquery.fancybox-media.min.js"> </script>
+
+
 </html>
 <!--Includes of all js files in the footer as well, jquery and any custom ones!-->
 

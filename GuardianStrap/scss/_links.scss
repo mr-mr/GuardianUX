@@ -23,13 +23,13 @@
 
 a {
 	&:link {color:$link; text-decoration:none; font-weight:normal;}
-	&:hover{color:$link-hover; text-decoration:underline;}
-	&:visited{color:$link-visited; text-decoration:none;}
+		&:hover{color:$link-hover; text-decoration:underline;}
+		&:visited{color:$link-visited; text-decoration:none;}
 }
 
 .button{
-	float:left;
-	margin:10px 2px 30px 0;
+	//float:left;
+	//margin:10px 2px 30px 0;
 	a:link, a:visited{
 	color:#fff;
 	background: $link;
@@ -57,6 +57,11 @@ a {
 	color:$link-white;
 	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from($framework-nav), to(darken($framework-nav, 20%)));
 	}
+}
+
+.button-share{
+	display:inline;
+	margin:2px;
 }
 
 .button-inactive{

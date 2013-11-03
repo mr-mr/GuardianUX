@@ -7,7 +7,7 @@
 
 <body>
 
-<div class="nav-bar">
+<!--<div class="nav-bar">
 	<div class="nav-container">
 		<a href="../GuardianStrap"><div class="logo"></div></a>
 		<ul class="nav-list">	
@@ -19,9 +19,11 @@
 			<li><a href=""><strike>Composer</strike></a></li>
 		</ul>
 	</div>
-</div>
+</div>-->
 
 <div id="home">
+	<h1 class="work-landing">Setup</h1>
+	<div class="border-line"></div>
 	<div>
 	<h3>Contents</h3>
 		<ul class="list-block setup">
@@ -43,7 +45,9 @@
 		<h3 id="overview">Overview &amp; Setup</h3>
 		<p>The framework and future wireframe work of the Guardian UX team. <a href="mailto:chris.j.clarkee@theguardian.com?subject=Guardian%20Wireframes">Chris Clarke</a> will be the best team member to talk to about this. Failing that, ping <a href="mailto:alastair.jardine@theguardian.com?subject=Guardian%20Wireframes">Alastair Jardine an email</a>.</p>
 		<ul class="note">
-			<p class="note">All the work is available to view and download on <a href="https://github.com/mr-mr/GuardianUX"><i class=" icon-github"></i> Github</a></p>
+			<p>All the work is available to view and download on <a href="https://github.com/mr-mr/GuardianUX"><i class=" icon-github"></i> Github</a></p>
+		</ul>
+		<ul class="note">
 			<p>The setup on Github is still relatively new so changes will be thick and fast.</p>
 		</ul>
 		<p></p>
@@ -62,6 +66,8 @@
 			<li>A text editor (No preference, <a href="http://www.sublimetext.com/2">Sublime Text</a> is good)</li>
 			<li><strike>An FTP editor</strike> As everything is setup on github, github itself has a html preview pane <strong>(although quite buggy)</strong> We may re-visit using an FTP setup in the future.</li>
 		</ul>
+
+		<ul class="note"><p>Bourbon is a neat way to include what's called a 'mixin'. A mixin allows you to write repepetive code in a single block and then include that block in other classes, only having to edit it once. Bourbon is activated in Codekit by right clicking on the project, selecting Bourbon and clicking <strong>Use Bourbon on this project</strong></p></ul>
 	</article>
 
 	<div class="border-line"></div>
@@ -78,26 +84,39 @@
 		<p>Example code througout these pages will show up like this</p>
 		<pre><span class="pre-line-numbers">&lt;div&gt;Example code&lt;/div&gt;</span></pre>
 
-		<h4>Codekit's .kit files</h4>
+		<div id="tabs">
+			<ul>
+			    <li><a href="#tabs-1">Codekit</a></li>
+			    <li><a href="#tabs-2">Sass</a></li>
+			    <li><a href="#tabs-3">JQuery</a></li>
+			    <li><a href="#tabs-4">Font Awesome</a></li>
+			</ul>		  
+			<div id="tabs-1"><h4>Codekit's .kit files</h4>
 		<p>These are essentially just HTML files, but with two main benefits: includes and variables.</p>
 		<p>Includes (like normal HTML server side includes) allow you to create fragments of reusable HTML, such as navigation and footers, and place them within other HTML documents. Unlike normal SSIs, you can also place an include _in_ an include. Codekit will parse all the includes and generate a flat .html file.</p>
 		<p>Variables, as in any other language, allow you to define reusable bits of information. Variables can also work in tandem with includes, and can be passed between the two.</p>
 		<p>Full documentation on .kit files can be found at <a href="http://incident57.com/codekit/kit.php">http://incident57.com/codekit/kit.php</a>.</p>
-		<ul class="note"><p>Always, always, edit the .kit files instead of editing the outputted '.html' files. If you make changes to the HTML files, when you save anything Codekit will automatically recompile _the .kit files_ to HTML, overwriting your changes. It's quite easy to make the mistake.</p></ul>
+		<ul class="note"><p>Always, always, edit the .kit files instead of editing the outputted '.html' files. If you make changes to the HTML files, when you save anything Codekit will automatically recompile _the .kit files_ to HTML, overwriting your changes. It's quite easy to make the mistake.</p></ul></div>
 
-		<h4>Sass</h4>
-		<p>We recently have moved from LESS to SASS, due to support provided from the NGW Dev team. More to be written here soon.</p>
+		<div id="tabs-2"><h4>Sass</h4>
+		<p>We recently have moved from LESS to Sass, due to support provided from the NGW Dev team. More to be written here soon.</p>
 
-		<h4>jQuery</h4>
+		</div>
+
+		<div id="tabs-3"><h4>JQuery</h4>
 		<p>The syntax of jQuery mirrors that of javascript, but it's easier to learn. It allows you to chain commands to traverse and change the document object model (DOM) of an HTML file.</p>
 		<p>The API documentation is comprehensive with plenty of examples and, failing that, any question you have has likely been asked and answered on StackOverflow – remember Google is your friend here kids.</p>
 		<p>Full documentation on jQuery can be found at <a href="http://api.jquery.com/">http://api.jquery.com/</a>.</p>
-		<ul class="note"><p>Your text editor will highlight jQuery as if it were javascript which should work just fine.</p></ul>
+		<ul class="note"><p>Your text editor will highlight jQuery as if it were javascript which should work just fine.</p></ul></div>
+			
+			<div id="tabs-4"><h4>fontawesome</h4>
+		<p>And it really is. It provides generic icons to insert into projects, and it's usage is documented on the <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome site</a>.</p></div>
+		</div>
 
-		<h4>fontawesome</h4>
-		<p>And it really is. It provides generic icons to insert into projects, and it's usage is documented on the <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome site</a>.</p>
-
+	</article>
+	
 	<div class="border-line"></div>
+	
 	<article>
 		<h3 id="how-it-works">How it works (/is supposed to work) in practice</h3>
 		<p>The basic principle is that there are .kit, .less and .js files for each wireframe.</p>
@@ -154,7 +173,7 @@
 		<h3 id="frameworks">Frameworks</h3>
 		<p>The library framework consists of all components we need to create our prototypes. Each component will be accompanyed by the code which you can lift and place into your own page.</p>
 		
-		<p><a href="library.html">View the framework library</a></p>
+		<p><a href="framework.html">View the framework library</a></p>
 	</article>
 	
 
@@ -166,12 +185,9 @@
 		<p>Each piece of the library is built separately so anybody can work and edit a single piece and not affect the overall setup.</p>
 	</article>
 
-	<div class="border-line"></div>
-	<p><img src="http://blogfiles.wfmu.org/KF/2011/01/19/gif_strangelove_scott_edit.gif"></p>
-	
-	<div class="logo-grey"></div>
-	<p class="signoff">2013</p>
 
+	<!--<p><img src="http://blogfiles.wfmu.org/KF/2011/01/19/gif_strangelove_scott_edit.gif"></p>-->
+</div>
 <!--End of Wrapper-->
 </body>
 

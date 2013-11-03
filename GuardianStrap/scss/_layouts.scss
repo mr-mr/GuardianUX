@@ -27,21 +27,25 @@ body{
 	text-rendering:optimizeLegibility;
 }
 
-
-
-#wrapper {
-	margin: 50px auto;
-	min-width:280px;
-	@media (min-width:$medium-large){
-	//width:90%;
-	width:880px;
-	}
+.showhide {
+        color:$link;
+        cursor: pointer; cursor: hand;
+        &:hover{
+                text-decoration:underline;
+        }
 }
+
+.background {
+        background:url("../img/library-bg.jpg") top left repeat;
+}
+
+
 
 #home{
 	margin: 80px auto;
 	width:70%;
 	max-width:880px;
+	
 }
 
 .container {
@@ -94,14 +98,14 @@ body{
 }
 
 .framework-column-left{
-	width: 200px;
-	float: left;
-	position: relative;
-	margin: -10px 0 0 -20px ;
+	width: 100%;
+	//float: left;
+	//position: relative;
+	margin: 0 auto ;
 	padding:30px 10px 30px 22px;
 	background:$framework-nav-light;
 	border: 1px solid $light-grey;
-	z-index:-10;
+	z-index:10;
 	border-radius: 5px;
 	li {
 		//float:left;
@@ -118,7 +122,7 @@ body{
 
 
 .framework-column-right{
-	width:70%;
+	width:80%;
 	float:right;
 	margin-top:-15px;
 }
@@ -229,7 +233,7 @@ article{
 		li:nth-child(n+3) {
 			//display:block;
 			display:block;
-			background:$framework-nav;
+			background:darken($framework-nav, 30%);
 			//float:left;
 			}
 		
@@ -278,3 +282,20 @@ article{
 	
 }
 
+.message-container{
+	left: 0;
+	right:0;
+	height:100%;
+	color:$link-white;
+	background:$dark-grey;
+	border-bottom: 1px solid $grey;
+	margin:0;
+	padding:10px;
+	
+	.message-bar {
+		width:1200px;
+		margin:0 auto;
+		padding:7px;
+		text-align:left;
+	}
+}
