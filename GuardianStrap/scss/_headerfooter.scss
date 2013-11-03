@@ -15,7 +15,7 @@
 @import "colors";
 @import "breakpoints";
 
-// 2.0 variables
+// 2.0 variables & mixins
 // --------------------------------------------------------------------------------------------------------------------------------------------
 
 // 3.0 general
@@ -30,11 +30,6 @@
 // 6.0 modules
 // --------------------------------------------------------------------------------------------------------------------------------------------
 
-#framework-footer{
-	position:fixed;
-	left:0;
-	right:0;
-	bottom:0px;
-	text-align:center;
-	background:url("../img/library-bg.jpg") top left repeat;
+#global-footer{
+	
 }

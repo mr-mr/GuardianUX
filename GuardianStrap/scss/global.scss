@@ -11,7 +11,7 @@
 @import "font-awesome";		//Font icons
 @import "global-nav";		//Global and sub navigation
 @import "headerfooter";		//Global header and footer for all wireframes, editions
-@import "library";			//May delete
+//@import "library";			//May delete - could include all mixins
 @import "layouts";			//
 @import "links";			//All links including buttons, trail links, trail blocks
 @import "multimedia";		//Videos and images
@@ -24,7 +24,7 @@
 // --------------------------------------------------------------------------------------------------------------------------------------------
 // Imports for Framework
 // --------------------------------------------------------------------------------------------------------------------------------------------
-//@import "accordion";		//Compress information
+@import "accordion";		//Compress information
 //@import "Alerts";			//References to
 //@import "carousel";			//References to
 @import "tabs";				//Show multiple pieces of work together
@@ -33,7 +33,6 @@
 //@import "Navbar";			//References to
 //@import "Pagination";		//References to
 //@import "Video";			//References to
-//@import "Buttons";		//References to
 //@import "Panels";			//References to
 //@import "Loaders";		//References to
 

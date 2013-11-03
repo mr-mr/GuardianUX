@@ -27,7 +27,17 @@ body{
 	text-rendering:optimizeLegibility;
 }
 
+.showhide {
+        color:$link;
+        cursor: pointer; cursor: hand;
+        &:hover{
+                text-decoration:underline;
+        }
+}
 
+.background {
+        background:url("../img/library-bg.jpg") top left repeat;
+}
 
 #wrapper {
 	margin: 50px auto;
@@ -229,7 +239,7 @@ article{
 		li:nth-child(n+3) {
 			//display:block;
 			display:block;
-			background:$framework-nav;
+			background:darken($framework-nav, 30%);
 			//float:left;
 			}
 		
@@ -278,3 +288,20 @@ article{
 	
 }
 
+.message-container{
+	left: 0;
+	right:0;
+	height:100%;
+	color:$link-white;
+	background:$dark-grey;
+	border-bottom: 1px solid $grey;
+	margin:0;
+	padding:10px;
+	
+	.message-bar {
+		width:900px;
+		margin:0 auto;
+		padding:7px;
+		text-align:left;
+	}
+}

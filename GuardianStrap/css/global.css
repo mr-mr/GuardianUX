@@ -1493,7 +1493,8 @@ body {
   margin: 0;
   font-size: 15/20;
   color: #333333;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  background: #f7f7f9; }
 
 .border-line {
   border: 1px solid #e5e5e5;
@@ -3040,18 +3041,15 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   margin-top: -30px;
   background: lime; }
 
-#framework-footer {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0px;
-  text-align: center;
-  background: url("../img/library-bg.jpg") top left repeat; }
+html {
+  font-family: "guardian-regular";
+  list-style-type: none; }
 
-.reset {
+body {
   margin: 0;
-  padding: 0;
-  border: none; }
+  font-size: 15/20;
+  color: #333333;
+  text-rendering: optimizeLegibility; }
 
 .showhide {
   color: #234a81;
@@ -3062,60 +3060,6 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 .background {
   background: url("../img/library-bg.jpg") top left repeat; }
-
-.message-container {
-  left: 0;
-  right: 0;
-  height: 100%;
-  background: #f7f7f9;
-  border-bottom: 1px solid #cccccc;
-  margin: 0;
-  padding: 10px; }
-  .message-container .message-bar {
-    width: 900px;
-    margin: 0 auto;
-    padding: 7px;
-    text-align: left; }
-
-.border-box {
-  border: 1px solid #cccccc;
-  width: 98%;
-  height: auto;
-  margin: 20px 0 0 0;
-  padding: 10px;
-  float: left;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px; }
-
-.border-box-code {
-  border: 1px solid #cccccc;
-  background: transparent;
-  width: 98%;
-  margin: -1px 0 0 0;
-  padding: 10px;
-  float: left;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px; }
-
-.note {
-  background: #f9ff9b;
-  padding-left: 15px;
-  border-left: 4px solid #dae800;
-  width: 97%;
-  margin-bottom: 10px; }
-
-code {
-  margin: 0; }
-
-html {
-  font-family: "guardian-regular";
-  list-style-type: none; }
-
-body {
-  margin: 0;
-  font-size: 15/20;
-  color: #333333;
-  text-rendering: optimizeLegibility; }
 
 #wrapper {
   margin: 50px auto;
@@ -3637,7 +3581,7 @@ article {
     margin: 30px 0 0 20px; }
     .column li:nth-child(n+3) {
       display: block;
-      background: #4485f5; }
+      background: #083d98; }
     .column li {
       break-after: always;
       -moz-column-break-after: always;
@@ -3664,6 +3608,21 @@ article {
   .column li h3 {
     color: white;
     font-size: 20px; }
+
+.message-container {
+  left: 0;
+  right: 0;
+  height: 100%;
+  color: white;
+  background: #252525;
+  border-bottom: 1px solid #cccccc;
+  margin: 0;
+  padding: 10px; }
+  .message-container .message-bar {
+    width: 900px;
+    margin: 0 auto;
+    padding: 7px;
+    text-align: left; }
 
 a:link {
   color: #234a81;
@@ -3719,7 +3678,7 @@ a:visited {
     background: #132745; }
 
 .logo {
-  background: url("../img/guardian-logo.svg") no-repeat;
+  background: url("../img/guardian-logo-3.svg") no-repeat;
   background-size: 100% auto;
   width: 120px;
   height: 53px;
@@ -5246,7 +5205,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   content: "\f18b"; }
 
 .logo {
-  background: url("../img/guardian-logo.svg") no-repeat;
+  background: url("../img/guardian-logo-3.svg") no-repeat;
   background-size: 100% auto;
   width: 120px;
   height: 53px;
@@ -5474,6 +5433,27 @@ strong, th, dt {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+.accordion {
+  margin-bottom: 20px;
+  width: 100%; }
+
+.accordion h2, .accordion h3 {
+  margin: 20px;
+  font-size: 18px; }
+
+.accordion-control {
+  display: block;
+  padding-top: 10px;
+  border-top: 1px solid #e5e5e5; }
+  .accordion-control i {
+    float: right;
+    text-decoration: none; }
+
+.accordion-pane {
+  padding-bottom: 20px;
+  height: 50px;
+  padding-right: 20px; }
+
 #tabs div {
   width: 100%;
   float: left;
@@ -5551,10 +5531,10 @@ strong, th, dt {
 .header-container {
   margin: 0 auto;
   width: 940px;
-  padding: 20px 0 80px 0; }
+  padding: 40px 0 40px 0; }
   .header-container div {
     color: white;
-    padding: 70px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;
     font-size: 80px; }
   .header-container p {
     color: #b3b3b3;
@@ -5581,10 +5561,10 @@ strong, th, dt {
   right: 0;
   top: 0;
   height: 50px;
-  background: #234a81;
+  background: white;
   position: fixed;
   z-index: 100;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
 .nav-container {
   max-width: 960px;
@@ -5635,7 +5615,7 @@ strong, th, dt {
     font-size: 14px;
     margin: 0 0 0 20px; }
     .nav-list li a:link, .nav-list li a:visited {
-      color: white;
+      color: #252525;
       text-decoration: none;
       font-weight: normal; }
     .nav-list li a:hover {
@@ -5679,3 +5659,23 @@ pre {
   margin: 0 10px 0 0;
   padding: 0 5px 0 5px;
   border-right: 1px solid #e7e7e7; }
+
+.border-box {
+  border: 1px solid #cccccc;
+  width: 98%;
+  height: auto;
+  margin: 20px 0 0 0;
+  padding: 10px;
+  float: left;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
+
+.border-box-code {
+  border: 1px solid #cccccc;
+  background: transparent;
+  width: 98%;
+  margin: -1px 0 0 0;
+  padding: 10px;
+  float: left;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px; }

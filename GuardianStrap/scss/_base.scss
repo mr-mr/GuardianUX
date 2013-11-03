@@ -17,14 +17,26 @@
 @import "breakpoints";
 
 
-// 2.Mixins
+// 2. variables & mixins
 //-----------------------------
-.box-sizing { 
 
-}
+$background-container:$link-white;
+$margin-paragraph: 10px 0 10px 0;
 
 @mixin radius {
 
+}
+
+@mixin margins_zero {
+	margin:0;
+	padding:0;
+}
+
+@mixin margins_paragraphs {
+	p{
+		margin:$margin-paragraph;
+	}
+	@include box-sizing(border-box);
 }
 
 @mixin full-screen {
@@ -35,11 +47,62 @@
 }
 
 @mixin block {
-	
+	width:100%;
+	height:100%;
+	display:block;
 }
 
-.image-replacement {
+@mixin image-replacement {
 
+}
+
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+// Single side border-radius
+
+@mixin border-top-radius($radius) {
+  -webkit-border-top-right-radius: $radius;
+  border-top-right-radius: $radius;
+   -webkit-border-top-left-radius: $radius;
+   border-top-left-radius: $radius;
+   background-clip: padding-box;
+}
+@mixin border-right-radius($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+     -webkit-border-top-right-radius: $radius;
+     border-top-right-radius: $radius;
+     background-clip: padding-box;
+}
+@mixin border-bottom-radius($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+   -webkit-border-bottom-left-radius: $radius;
+   border-bottom-left-radius: $radius;
+   background-clip: padding-box;
+}
+@mixin border-left-radius($radius) {
+  -webkit-border-bottom-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+     -webkit-border-top-left-radius: $radius;
+     border-top-left-radius: $radius;
+     background-clip: padding-box;
 }
 
 // 3.General
@@ -77,6 +140,7 @@ body{
 	font-size:15/20;
 	color:$copy;
 	text-rendering:optimizeLegibility;
+	background:$code-grey;
 }
 
 
