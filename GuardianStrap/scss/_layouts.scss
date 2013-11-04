@@ -51,7 +51,7 @@ body{
 .container {
 	//background: lime;
 	margin:0 auto;
-	width:940px;
+	width:940px;	
 }
 
 .col {
@@ -90,6 +90,12 @@ body{
 
 .test{
  width:gs-span(10);
+ background:$dark-grey;
+}
+
+.test-2{
+ width:gs-span(2);
+ background:lime;
 }
 
 .framework-container{

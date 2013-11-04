@@ -32,7 +32,7 @@ $margin-paragraph: 10px 0 10px 0;
 	font-size:15/20;
 	color:$copy;
 	text-rendering:optimizeLegibility;
-	background:$code-grey;
+	background:$grey;
 }
 
 @mixin content-container{
@@ -135,6 +135,10 @@ html {
 
 body{
 	@include background-container;
+	&.work{
+		background:$link-white;
+		margin:0 auto;
+	}
 }
 
 #wrapper {
@@ -145,7 +149,7 @@ body{
 	@include content-container;
 }
 
-.container {
+.work-container {
 	//background: lime;
 	margin:0 auto;
 	width:940px;
