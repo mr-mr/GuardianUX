@@ -1,33 +1,103 @@
 
+
+		<!--<ul class="column">
+			<li>
+				<h2><a href="#">Tokyo 2020 Olympics: Hugs, tears and shouts of 'Banzai' greet news of victory</a></h2>
+				<p class="article-comment-count"><a href="#"><i class="icon-comment"></i> 105 comments</a></p>
+			</li>
+		
+			<li>
+				<h2><a href="#">Tokyo 2020 Olympics: Hugs, tears and shouts of 'Banzai' greet news of victory</a></h2>
+				<p class="article-comment-count"><a href="#"><i class="icon-comment"></i> 62 comments</a></p>
+			</li>
+		
+			<li>
+				<h2><a href="#">Tokyo 2020 Olympics: Hugs, tears and shouts of 'Banzai' greet news of victory</a></h2>
+				<p class="article-comment-count"><a href="#"><i class="icon-comment"></i> 30 comments</a></p>
+			</li>
+			
+			<li>
+				<h2><a href="#">Tokyo 2020 Olympics: Hugs, tears and shouts of 'Banzai' greet news of victory</a></h2>
+				<p class="article-comment-count"><a href="#"><i class="icon-comment"></i> 2 comments</a></p>
+			</li>
+		
+		</ul>
+		<div class="border-line"></div>-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
 	
 	<title>Containers</title>
 	<link rel="stylesheet" href="css/global.css" type="text/css">
+	<link rel="stylesheet" href="css/prettify.css" media="all" />
+
+	<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
+	<script type="text/javascript" src="js/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	<script type="text/javascript" src="js/fancybox-player.js"></script>
 </head>
 
+<header id="global-header">
+	<div class="nav-extras">
+		<li>
+			<select>
+			  <option value="UK">UK Edition</option>
+			  <option value="US">US Edition</option>
+			  <option value="AU">AU Edition</option>
+			</select>
+		</li>
+		<li><a href="">Sign in <i class="icon-user button"></i></a></li>
+	</div>
+	<div class="logo-block header">
+		<div class="global-logo header"></div>
+	</div>
+	<div class="gs-wrapper global-nav-container">
+
+		<ol id="globalnav-links">
+			<li><a href="">News</a></li>
+			<li><a href="">Comment</a></li>
+			<li><a href="">Sport</a></li>
+			<li><a href="">Football</a></li>
+			<li><a href="">Tech</a></li>
+			<li><a href="">Culture</a></li>
+			<li><a href="">Life</a></li>
+			<li><a href="">Fashion</a></li>
+			<li><a href="">Economy</a></li>
+			<li><a href="">Money</a></li>
+			<li><a href="">Travel</a></li>
+			<li><a href="">Sci &amp; Environment</a></li>
+			<li><a href="">Education</a></li>
+			<!--<li><i class="icon-reorder"></i></li>-->
+		</ol>
+		<form id="global-search">
+			<input type="text" placeholder="Search…"><button type="submit"><i class="icon-search"></i></button>
+		</form>
+	</div>
+</header>
 <body>
 
 
+<div id="wrapper">
 <h1>Example container page</h1>
-<div class="gs-wrapper">
+	<div class="gs-wrapper">
+		
+		<div class="col col-mobile-3 col-tablet-7"><img src="img/image-5x3.svg"/><h1><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h1></div>
+
+		<div class="col col-mobile-3 col-tablet-3"><img src="img/image-5x3.svg"/><h2><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2></div>
+
+		<div class="col col-mobile-3 col-tablet-3"><img src="img/image-5x3.svg"/><h2><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2></div>
+
+		<div class="col col-mobile-3 col-tablet-3"><img src="img/image-5x3.svg"/><h2><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2></div>
+
+		<div class="col col-mobile-3 col-tablet-3"><img src="img/image-5x3.svg"/></div>
 	
-	<div class="col col-mobile-3 col-tablet-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, eveniet tenetur illum sunt autem rerum quo iste aspernatur debitis nostrum excepturi odit sed ut vero eos porro animi consequuntur dolores!</div>
-
-	<div class="col col-mobile-3 col-tablet-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, eveniet tenetur illum sunt autem rerum quo iste aspernatur debitis nostrum excepturi odit sed ut vero eos porro animi consequuntur dolores!</div>
-
-	<div class="col col-mobile-3 col-tablet-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, eveniet tenetur illum sunt autem rerum quo iste aspernatur debitis nostrum excepturi odit sed ut vero eos porro animi consequuntur dolores!</div>
-
-	<div class="col col-mobile-3 col-tablet-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, eveniet tenetur illum sunt autem rerum quo iste aspernatur debitis nostrum excepturi odit sed ut vero eos porro animi consequuntur dolores!</div>
-
-	<div class="col col-mobile-3 col-tablet-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, eveniet tenetur illum sunt autem rerum quo iste aspernatur debitis nostrum excepturi odit sed ut vero eos porro animi consequuntur dolores!</div>
-
-	<div class="col col-mobile-3 col-tablet-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, eveniet tenetur illum sunt autem rerum quo iste aspernatur debitis nostrum excepturi odit sed ut vero eos porro animi consequuntur dolores!</div>
-	
+		
+	</div>
 </div>
 
 
@@ -56,7 +126,7 @@
 
 <footer id="global-footer">
 	
-	<div class="logo-block">
+	<div class="logo-block footer">
 		<div class="global-logo footer"></div>
 		<div class="back-to-top button"><a href="#top"><sup><i class="icon-angle-up"></i></sup> Back to top</a></div>
 	</div>

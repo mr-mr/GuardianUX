@@ -1479,7 +1479,10 @@ body {
   font-size: 15/20;
   color: #333333;
   text-rendering: optimizeLegibility;
-  background: #f7f7f9; }
+  background: #cccccc; }
+  body.work {
+    background: white;
+    margin: 0 auto; }
 
 #wrapper {
   min-width: 280px;
@@ -1495,7 +1498,7 @@ body {
   margin: 20px;
   padding: 20px; }
 
-.container {
+.work-container {
   margin: 0 auto;
   width: 940px; }
 
@@ -3010,39 +3013,91 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   content: "\f18b"; }
 
 #globalnav-container {
+  max-width: 1200px;
   left: 0;
   right: 0;
   display: block;
   padding: 0;
   margin: 0;
-  float: left; }
-  #globalnav-container li {
-    float: left;
+  background: transparent;
+  margin-left: 60px; }
+
+#globalnav-links {
+  max-width: 1200px;
+  left: 0;
+  right: 0;
+  display: block;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  float: left;
+  font-size: 20px; }
+  #globalnav-links li {
     display: inline;
-    text-decoration: none;
-    margin-right: 10px; }
+    margin-right: 5px; }
+  #globalnav-links a:link, #globalnav-links a:visited {
+    background: white;
+    padding: 5px; }
+  #globalnav-links a:hover {
+    color: white;
+    background: #cccccc;
+    text-decoration: none; }
+  #globalnav-links:after {
+    border-right: 1px dotted #cccccc; }
+  #globalnav-links.nav-selected {
+    background: #252525;
+    text-decoration: none; }
 
 .editions {
+  max-width: 1200px;
   left: 0;
   right: 0;
   display: block;
   padding: 0;
   margin: 0;
-  padding: 10px 0 10px 0;
-  background: lime; }
-  .editions li {
-    float: left;
-    display: inline;
-    text-decoration: none;
-    margin-right: 10px; }
-
-#logo-container {
-  background: #252525; }
+  background: transparent;
+  padding: 10px 0 10px 0; }
 
 .icons {
-  float: right;
-  margin-top: -30px;
-  background: lime; }
+  float: left;
+  margin-top: 0px; }
+
+input {
+  padding: 10px 0 10px 10px;
+  margin: -10px 0 20px 10px;
+  border: 1px solid #cccccc;
+  width: 200px;
+  height: 30px;
+  focus: none; }
+
+#global-search button[type="submit"] {
+  color: #fff;
+  cursor: pointer;
+  background: #234a81;
+  border: 0;
+  font-size: 18px;
+  margin: 14px 0 0 0;
+  padding: 2px 10px 7px 10px; }
+
+.nav-extras {
+  padding: 5px;
+  margin-left: 30px; }
+  .nav-extras li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 5px; }
+
+#global-header {
+  margin: 0;
+  padding: 0;
+  font-size: 15/20;
+  color: #333333;
+  text-rendering: optimizeLegibility;
+  background: #cccccc;
+  background: white;
+  height: 100%;
+  margin: 0 auto;
+  border-bottom: 5px solid #234a81; }
 
 #global-footer {
   margin: 0;
@@ -3050,14 +3105,22 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   font-size: 15/20;
   color: #333333;
   text-rendering: optimizeLegibility;
-  background: #f7f7f9;
+  background: #cccccc;
   background: white;
   height: 100%; }
 
-.logo-block {
+.logo-block.footer {
   background: #234a81;
   height: 48px;
   padding: 15px; }
+.logo-block.header {
+  height: 88px;
+  padding: 15px;
+  -webkit-border-bottom-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  background-clip: padding-box; }
 
 .back-to-top {
   margin: -3px 0 0 30px; }
@@ -3076,8 +3139,9 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   float: left;
   font-size: 12px;
   color: #a6a6a6;
-  margin-left: 40px;
-  padding: 10px; }
+  padding: 10px;
+  background: #e5e5e5;
+  width: 100%; }
 
 footer {
   margin: -50px auto; }
@@ -3514,7 +3578,12 @@ body {
   .col-leftCol-16 {
     width: 1260px; } }
 .test {
-  width: 780px; }
+  width: 780px;
+  background: #252525; }
+
+.test-2 {
+  width: 140px;
+  background: lime; }
 
 .framework-container {
   width: 100%;
@@ -3713,32 +3782,23 @@ a:visited {
     background: #132745; }
 
 .global-logo {
-  background: url("../img/guardian-logo.svg") no-repeat;
-  background-size: 100% auto;
   float: right; }
   .global-logo.footer {
+    background: url("../img/guardian-logo.svg") no-repeat;
+    background-size: 100% auto;
     width: 130px;
     height: 53px;
     margin: 0px 50px 0 0; }
-
-.logo {
-  background: url("../img/guardian-logo-3.svg") no-repeat;
-  background-size: 100% auto;
-  width: 120px;
-  height: 53px;
-  margin: 16px 0 0 15px; }
-
-.logo-grey {
-  background: url("../img/g-logo.svg") no-repeat;
-  background-size: 100% auto;
-  width: 30px;
-  height: 50px;
-  margin: 0px auto;
-  opacity: 0.3; }
+  .global-logo.header {
+    background: url("../img/guardian-logo-4.svg") no-repeat;
+    background-size: 100% auto;
+    width: 300px;
+    height: 53px;
+    margin: 0px 50px 0 0; }
 
 img {
   width: 100%;
-  max-width: 100%;
+  height: 100%;
   display: block; }
 
 .media-container {
@@ -3776,6 +3836,14 @@ iframe {
   height: 100%;
   z-index: 2000;
   background: #252525; }
+
+.fronts-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../img/image-5x3.svg") no repeat; }
 
 @font-face {
   font-family: "guardian-regular";
@@ -5249,32 +5317,23 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   content: "\f18b"; }
 
 .global-logo {
-  background: url("../img/guardian-logo.svg") no-repeat;
-  background-size: 100% auto;
   float: right; }
   .global-logo.footer {
+    background: url("../img/guardian-logo.svg") no-repeat;
+    background-size: 100% auto;
     width: 130px;
     height: 53px;
     margin: 0px 50px 0 0; }
-
-.logo {
-  background: url("../img/guardian-logo-3.svg") no-repeat;
-  background-size: 100% auto;
-  width: 120px;
-  height: 53px;
-  margin: 16px 0 0 15px; }
-
-.logo-grey {
-  background: url("../img/g-logo.svg") no-repeat;
-  background-size: 100% auto;
-  width: 30px;
-  height: 50px;
-  margin: 0px auto;
-  opacity: 0.3; }
+  .global-logo.header {
+    background: url("../img/guardian-logo-4.svg") no-repeat;
+    background-size: 100% auto;
+    width: 300px;
+    height: 53px;
+    margin: 0px 50px 0 0; }
 
 img {
   width: 100%;
-  max-width: 100%;
+  height: 100%;
   display: block; }
 
 .media-container {
@@ -5312,6 +5371,14 @@ iframe {
   height: 100%;
   z-index: 2000;
   background: #252525; }
+
+.fronts-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../img/image-5x3.svg") no repeat; }
 
 .profile-container {
   background-color: pink;
@@ -5589,14 +5656,17 @@ strong, th, dt {
   padding: 0; }
 
 .header-container {
+  background: transparent;
   margin: 0 auto;
-  width: 1200px;
-  padding: 40px 0 40px 0; }
+  padding: 80px 0 80px 0;
+  height: 400px; }
   .header-container div {
+    text-align: center;
     color: white;
     padding: 30px 20px 0px 20px;
     font-size: 80px; }
   .header-container p {
+    text-align: center;
     color: #b3b3b3;
     font-size: 16px;
     margin: 10px 0 20px 20px;
