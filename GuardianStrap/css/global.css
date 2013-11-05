@@ -1469,38 +1469,26 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 .icon-renren:before {
   content: "\f18b"; }
 
-html {
-  font-family: "guardian-regular";
-  list-style-type: none; }
-
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 15/20;
-  color: #333333;
-  text-rendering: optimizeLegibility;
-  background: #cccccc; }
-  body.work {
-    background: white;
-    margin: 0 auto; }
-
-#wrapper {
-  min-width: 280px;
-  max-width: 100%;
-  background: white;
-  margin: 20px;
-  padding: 20px; }
-
 #home {
   min-width: 280px;
   max-width: 100%;
   background: white;
-  margin: 20px;
+  margin: 0 auto;
   padding: 20px; }
 
 .work-container {
   margin: 0 auto;
   width: 940px; }
+
+#article-background {
+  background: white;
+  margin: 0 auto; }
+
+.border-nav {
+  border: 1px solid #e5e5e5;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
 
 .border-line {
   border: 1px solid #e5e5e5;
@@ -3014,48 +3002,65 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 #globalnav-container {
   max-width: 1200px;
+  height: 100%;
   left: 0;
   right: 0;
   display: block;
   padding: 0;
   margin: 0;
-  background: transparent;
   margin-left: 60px; }
 
 #globalnav-links {
   max-width: 1200px;
+  height: 100%;
   left: 0;
   right: 0;
   display: block;
   padding: 0;
   margin: 0;
-  background: transparent;
-  float: left;
   font-size: 20px; }
   #globalnav-links li {
-    display: inline;
-    margin-right: 5px; }
+    display: inline; }
   #globalnav-links a:link, #globalnav-links a:visited {
     background: white;
-    padding: 5px; }
+    padding: 10px; }
   #globalnav-links a:hover {
     color: white;
     background: #cccccc;
     text-decoration: none; }
-  #globalnav-links:after {
-    border-right: 1px dotted #cccccc; }
-  #globalnav-links.nav-selected {
-    background: #252525;
+  #globalnav-links.subnav {
+    background: #cccccc;
+    margin: 20px -5px; }
+    #globalnav-links.subnav li {
+      display: inline; }
+
+.nav-active {
+  color: white;
+  background: #252525;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0;
+  float: left; }
+
+.global-subnav {
+  width: 100%;
+  background: #a6a6a6; }
+  .global-subnav a:link, .global-subnav a:visited {
+    color: white;
+    padding: 10px; }
+  .global-subnav a:hover {
+    color: white;
+    background: #cccccc;
     text-decoration: none; }
 
 .editions {
   max-width: 1200px;
+  height: 100%;
   left: 0;
   right: 0;
   display: block;
   padding: 0;
   margin: 0;
-  background: transparent;
   padding: 10px 0 10px 0; }
 
 .icons {
@@ -3088,7 +3093,7 @@ input {
     margin-right: 5px; }
 
 #global-header {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-size: 15/20;
   color: #333333;
@@ -3100,7 +3105,7 @@ input {
   border-bottom: 5px solid #234a81; }
 
 #global-footer {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-size: 15/20;
   color: #333333;
@@ -3173,9 +3178,43 @@ body {
   width: 70%;
   max-width: 880px; }
 
+html {
+  font-family: "guardian-regular";
+  list-style-type: none; }
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 15/20;
+  color: #333333;
+  text-rendering: optimizeLegibility;
+  background: #cccccc; }
+  body.work {
+    background: white;
+    margin: 0 auto; }
+
+#wrapper {
+  min-width: 280px;
+  max-width: 100%;
+  background: white;
+  margin: 0 auto;
+  padding: 20px; }
+
 .container {
   margin: 0 auto;
   width: 940px; }
+
+article {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px; }
+
+aside {
+  width: 280px;
+  float: left;
+  margin: -15px 0 0 60px; }
+  aside p {
+    line-height: 10px; }
 
 .col {
   float: left;
@@ -3623,13 +3662,6 @@ body {
   .list-block.setup {
     margin: 0 0 5px 40px; }
 
-article {
-  width: 100%;
-  height: auto;
-  margin: 40px 0 10px 0;
-  padding: 0;
-  line-height: 140%; }
-
 .live-latest {
   font-size: 0.5em;
   font-family: Helmet, Freesans, sans-serif;
@@ -3792,9 +3824,9 @@ a:visited {
   .global-logo.header {
     background: url("../img/guardian-logo-4.svg") no-repeat;
     background-size: 100% auto;
-    width: 300px;
-    height: 53px;
-    margin: 0px 50px 0 0; }
+    width: 350px;
+    height: 62px;
+    margin: -20px 50px 0 0; }
 
 img {
   width: 100%;
@@ -5327,9 +5359,9 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   .global-logo.header {
     background: url("../img/guardian-logo-4.svg") no-repeat;
     background-size: 100% auto;
-    width: 300px;
-    height: 53px;
-    margin: 0px 50px 0 0; }
+    width: 350px;
+    height: 62px;
+    margin: -20px 50px 0 0; }
 
 img {
   width: 100%;
@@ -5468,8 +5500,9 @@ h1, h2, h3, h4, li {
 h1 {
   color: #333333;
   font-family: "guardian-regular";
-  font-size: 1.71429em;
-  font-weight: bold; }
+  font-size: 3.6em;
+  font-weight: bold;
+  line-height: 60px; }
 
 h2 {
   color: #333333;
@@ -5532,8 +5565,9 @@ strong, th, dt {
   text-align: center; }
 
 .sub {
-  font-size: 1.42857em;
-  margin-top: -15px; }
+  font-size: 0.85714em;
+  margin-top: -15px;
+  color: #e5e5e5; }
 
 .summary, .body-copy {
   font-size: 1.71429em;
@@ -5700,7 +5734,7 @@ strong, th, dt {
   min-width: 280px;
   max-width: 100%;
   background: white;
-  margin: 20px;
+  margin: 0 auto;
   padding: 20px;
   height: 50px;
   margin-top: -20px; }

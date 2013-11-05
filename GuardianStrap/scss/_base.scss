@@ -27,7 +27,7 @@ $margin-paragraph: 10px 0 10px 0;
 @mixin background-container {
 	//top:0;
 	//width:100%;
-	margin:0;
+	margin:0 auto;
 	padding:0;
 	font-size:15/20;
 	color:$copy;
@@ -39,7 +39,7 @@ $margin-paragraph: 10px 0 10px 0;
 	min-width:280px;
 	max-width:100%;
 	background:$link-white;
-	margin:$gs-gutter;
+	margin:0 auto;
 	padding:$gs-gutter;
 }
 
@@ -128,22 +128,6 @@ $margin-paragraph: 10px 0 10px 0;
 // 3.General
 //-----------------------------
 
-html {
-	font-family:$serif;
-	list-style-type: none;
-	}
-
-body{
-	@include background-container;
-	&.work{
-		background:$link-white;
-		margin:0 auto;
-	}
-}
-
-#wrapper {
-	@include content-container;
-}
 
 #home{
 	@include content-container;
@@ -155,7 +139,17 @@ body{
 	width:940px;
 }
 
+#article-background{
+	background:$link-white;
+		margin:0 auto;
+}
 
+.border-nav {
+	border: 1px solid $light-grey;
+	width:100%;
+	padding:0;
+	margin:0;
+}
 
 .border-line{
 	border: 1px solid $light-grey;

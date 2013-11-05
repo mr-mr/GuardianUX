@@ -18,19 +18,6 @@
 
 <body>
 
-<!--<div class="nav-bar">
-	<div class="nav-container">
-		<a href="../GuardianStrap"><div class="logo"></div></a>
-		<ul class="nav-list">	
-			<li><a href="../GuardianStrap">Home</a></li>
-			<li class="nav-selected">Setup</li>
-			<li><a href="framework.html">Framework library</a></li>
-			<li><a href=""><strike>NextGenWeb</strike></a></li>
-			<li><a href=""><strike>Identity</strike></a></li>
-			<li><a href=""><strike>Composer</strike></a></li>
-		</ul>
-	</div>
-</div>-->
 
 <div id="home">
 	<h1 class="work-landing">Setup</h1>
@@ -52,7 +39,7 @@
 	
 	<div class="border-line"></div>
 	
-	<article>
+	<div>
 		<h3 id="overview">Overview &amp; Setup</h3>
 		<p>The framework and future wireframe work of the Guardian UX team. <a href="mailto:chris.j.clarkee@theguardian.com?subject=Guardian%20Wireframes">Chris Clarke</a> will be the best team member to talk to about this. Failing that, ping <a href="mailto:alastair.jardine@theguardian.com?subject=Guardian%20Wireframes">Alastair Jardine an email</a>.</p>
 		<ul class="note">
@@ -62,11 +49,11 @@
 			<p>The setup on Github is still relatively new so changes will be thick and fast.</p>
 		</ul>
 		<p></p>
-	</article>
+	</div>
 	
 	<div class="border-line"></div>
 	
-	<article>
+	<div>
 		<h3 id="overview">Applications</h3>
 
 		<p>All html files are built up in Codekit .kit files. And you'll need 3 set applications, and a text editor</p>
@@ -79,11 +66,11 @@
 		</ul>
 
 		<ul class="note"><p>Bourbon is a neat way to include what's called a 'mixin'. A mixin allows you to write repepetive code in a single block and then include that block in other classes, only having to edit it once. Bourbon is activated in Codekit by right clicking on the project, selecting Bourbon and clicking <strong>Use Bourbon on this project</strong></p></ul>
-	</article>
+	</div>
 
 	<div class="border-line"></div>
 	
-	<article>
+	<div>
 		<h3 id="languages">Languages</h3>
 		<p>The HTML wireframes are built using:</p>
 		<ul class="list-block setup">
@@ -124,11 +111,11 @@
 		<p>And it really is. It provides generic icons to insert into projects, and it's usage is documented on the <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome site</a>.</p></div>
 		</div>
 
-	</article>
+	</div>
 	
 	<div class="border-line"></div>
 	
-	<article>
+	<div>
 		<h3 id="how-it-works">How it works (/is supposed to work) in practice</h3>
 		<p>The basic principle is that there are .kit, .less and .js files for each wireframe.</p>
 		<ul class="list-block setup">
@@ -144,7 +131,7 @@
 		<ul class="list-block setup">
 			<li>Template level modules – there are only two of these that matter, '_template-header-v2.kit' and '_template-footer-v2.kit'. The header file contains the <code>&lt;doctype&gt;</code> and <code>&lt;head&gt;</code> tag information, including references to CSS files. The footer has references to any page specific js files. Both have references to variables, for use in file names and page titles, that the including page will supply.</li>
 			<li>Page level modules – there are only three of these, '_page-footer.kit', '_page-sharing-tools.kit' and '_page-tools.kit'.</li>
-			<li>Genre/type specific – includes that are related to a page genre or type, i.e. articles or sports stats pages.</li>			
+			<li>Genre/type specific – includes that are related to a page genre or type, i.e. divs or sports stats pages.</li>			
 		</ul>
 		<p>To illustrate how the various components work together it's probably best to show an example. Below is the top of the wireframe for all football fixtures ('football-fixtures-all.kit'):</p>
 
@@ -176,25 +163,25 @@
 		</ul>
 
 
-	</article>
+	</div>
 
 	<div class="border-line"></div>
 
-	<article>
+	<div>
 		<h3 id="frameworks">Frameworks</h3>
 		<p>The library framework consists of all components we need to create our prototypes. Each component will be accompanyed by the code which you can lift and place into your own page.</p>
 		
 		<p><a href="framework.html">View the framework library</a></p>
-	</article>
+	</div>
 	
 
 	<div class="border-line"></div>
 
-	<article>
+	<div>
 		<h3 id="folder">Filing Structure</h3>
 		<p>All Sass files will source into a single 'global.css' file. All other files will be _partial files. The underscore defines a sass file as a partial, which is important as Codekit will not compile partial files into CSS and keep our structure nice and clean.</p>
 		<p>Each piece of the library is built separately so anybody can work and edit a single piece and not affect the overall setup.</p>
-	</article>
+	</div>
 
 
 	<!--<p><img src="http://blogfiles.wfmu.org/KF/2011/01/19/gif_strangelove_scott_edit.gif"></p>-->

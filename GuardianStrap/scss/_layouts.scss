@@ -48,10 +48,42 @@ body{
 	
 }
 
+html {
+	font-family:$serif;
+	list-style-type: none;
+	}
+
+body{
+	@include background-container;
+	&.work{
+		background:$link-white;
+		margin:0 auto;
+	}
+}
+
+#wrapper {
+	@include content-container;
+}
+
 .container {
 	//background: lime;
 	margin:0 auto;
 	width:940px;	
+}
+
+article{
+	margin:0 auto;
+	width:100%;
+	max-width:600px;
+}
+
+aside{
+	width:280px;
+	float:left;
+	margin: -15px 0 0 60px;
+	p{
+		line-height:10px;
+	}
 }
 
 .col {
@@ -148,15 +180,6 @@ body{
 		margin:0 0 5px 40px;
 		
 	}
-}
-
-
-article{
-	width:100%;
-	height:auto;
-	margin:40px 0 10px 0 ;
-	padding:0;
-	line-height:140%;
 }
 
 
