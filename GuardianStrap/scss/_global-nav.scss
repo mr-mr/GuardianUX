@@ -20,12 +20,13 @@
 
 @mixin globalNav{
 	max-width:1200px;
+	height:100%;
 	left:0;
 	right:0;
 	display:block;
 	padding:0;
 	margin:0;
-	background:transparent;
+	//background:transparent;
 
 }
 
@@ -45,19 +46,47 @@
 
 #globalnav-links {
 	@include globalNav;
-	float:left;
 	font-size:20px;
+	//padding:10px;
 	li{
 		display:inline;
-		margin-right:5px;
 	}
-	a:link, a:visited {background:$link-white; padding:5px;}
-	a:hover{color:$link-white; background:$grey; text-decoration: none;}
-	&:after{
-		border-right: 1px dotted $grey;
+	a:link, a:visited {background:$link-white; padding:10px;}
+	a:hover{color:$link-white; background:$grey; text-decoration: none;
+	}
+	&.subnav{
+		background:$grey;
+		margin:20px -5px;
+		li{
+			display:inline;
+		}
 	}
 
-	&.nav-selected {background:$dark-grey;  text-decoration:none; }
+}
+
+.nav-active {
+	color:$link-white;
+	background:$dark-grey;  
+	text-decoration:none;
+	padding:10px;
+	margin:0;
+	float:left;
+}
+
+.global-subnav{
+	width:100%;
+	//padding:10px;
+	background:$semi-grey;
+
+		a:link, a:visited {
+			color:$link-white; 
+			padding:10px;
+		}
+		a:hover{
+			color:$link-white; 
+			background:$grey; 
+			text-decoration: none;
+		}
 }
 
 .editions {
