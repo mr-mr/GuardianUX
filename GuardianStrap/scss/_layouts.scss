@@ -119,11 +119,15 @@ aside{
 	float:left;
 	margin-right:$gs-gutter;
 	//background:lime;
+	li{
+		display:inline;
+	}
 }
 
 
 .gs-wrapper {
 	overflow: hidden;
+	margin:0 auto;
 	//background: red;
 	margin-right: $gs-gutter/2;
 	margin-left: $gs-gutter/2;

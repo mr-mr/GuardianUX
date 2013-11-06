@@ -178,6 +178,16 @@ sub {
 .container-header {
 	font-size:20px;
 	font-family:$serif-bold;
+	&.large{
+		font-size:(24 / 14) * 1em;
+		font-family:$serif;
+	}
+	&.medium{
+
+	}
+	&.small{
+
+	}
 }
 
 
