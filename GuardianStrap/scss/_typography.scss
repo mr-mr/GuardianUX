@@ -116,9 +116,26 @@ strong, th, dt {
 
 .sub {
 	@extend .work-landing;
-	font-size:(12 / 14) * 1em;
+	font-size:(24 / 14) * 1em;
 	margin-top:-15px;
-	color:$light-grey;
+	color:$link;
+}
+
+sub {
+	font-size:(10 / 14) * 1em;
+	margin-top:-15px;
+	color:$semi-grey;
+}
+
+.quote {
+	font-size:(24 / 14) * 1em;
+	color:$dark-grey;
+	font-weight:bold;
+	font-style:italic;
+	margin-top:-5px;
+	img{
+		width:15%;
+	}
 }
 
 
@@ -126,6 +143,11 @@ strong, th, dt {
 	@extend .work-landing;
 	font-size:(24 / 14) * 1em;
 	color:$copy;
+	&.article{
+		text-align:left;
+		margin-top:-20px;
+		font-size:18px;
+	}
 }
 
 .body-copy{
@@ -150,7 +172,12 @@ strong, th, dt {
 }
 
 .article-comment-count {
+	font-size:13px;
+}
 
+.container-header {
+	font-size:20px;
+	font-family:$serif-bold;
 }
 
 
