@@ -1,6 +1,6 @@
 .advert {
   padding-bottom: 30px;
-  margin: 0 auto; }
+  margin: 30px auto; }
 
 .advert-mpu {
   display: inline;
@@ -3251,9 +3251,12 @@ aside {
 .col {
   float: left;
   margin-right: 20px; }
+  .col li {
+    display: inline; }
 
 .gs-wrapper {
   overflow: hidden;
+  margin: 0 auto;
   margin-right: 10px;
   margin-left: 10px; }
   @media all and (min-width: 30em) {
@@ -3814,6 +3817,8 @@ a:visited {
   text-decoration: none; }
 .button a:hover {
   background: #132745; }
+.button.center {
+  margin: 0 auto; }
 
 .button-home a:link, .button-home a:visited {
   color: #252525;
@@ -5650,6 +5655,9 @@ sub {
 .container-header {
   font-size: 20px;
   font-family: "guardian-bold"; }
+  .container-header.large {
+    font-size: 1.71429em;
+    font-family: "guardian-regular"; }
 
 * {
   -webkit-box-sizing: border-box;

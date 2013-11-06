@@ -41,6 +41,9 @@ a {
 	a:hover{
 	background: $link-hover;
 	}
+	&.center{
+		margin:0 auto;
+	}
 }
 
 .button-home{
