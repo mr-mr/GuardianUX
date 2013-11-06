@@ -1,3 +1,11 @@
+.advert {
+  padding-bottom: 30px;
+  margin: 0 auto; }
+
+.advert-mpu {
+  display: inline;
+  width: 300px; }
+
 @font-face {
   font-family: "guardian-regular";
   src: url("../font/Guardian-Egyp-Web-Regular.woff") format("woff");
@@ -1471,7 +1479,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 #home {
   min-width: 280px;
-  max-width: 100%;
+  max-width: 1200px;
   background: white;
   margin: 0 auto;
   padding: 20px; }
@@ -1500,10 +1508,15 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
     margin: 0;
     border-color: #234a81; }
 
-.border-line-dark {
-  border: 1px solid black;
+.border-line-thick {
+  border: 3px solid #e5e5e5;
   width: 100%;
-  opacity: 0.4; }
+  opacity: 0.8; }
+
+.border-line-dotted {
+  border: 1px dotted black;
+  width: 100%;
+  opacity: 0.2; }
 
 .border-vertical {
   border: 1px solid #e5e5e5;
@@ -3007,8 +3020,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   right: 0;
   display: block;
   padding: 0;
-  margin: 0;
-  margin-left: 60px; }
+  margin: 5px auto; }
 
 #globalnav-links {
   max-width: 1200px;
@@ -3017,41 +3029,40 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   right: 0;
   display: block;
   padding: 0;
-  margin: 0;
+  margin: 5px auto;
   font-size: 20px; }
   #globalnav-links li {
     display: inline; }
   #globalnav-links a:link, #globalnav-links a:visited {
-    background: white;
     padding: 10px; }
   #globalnav-links a:hover {
     color: white;
-    background: #cccccc;
+    background: #a6a6a6;
     text-decoration: none; }
-  #globalnav-links.subnav {
-    background: #cccccc;
-    margin: 20px -5px; }
-    #globalnav-links.subnav li {
-      display: inline; }
+
+.subnav {
+  background: #e5e5e5;
+  height: 100%;
+  height: 35px;
+  padding-top: 1px;
+  font-size: 14px; }
+  .subnav a:link, .subnav a:visited {
+    color: #a6a6a6;
+    background: #e5e5e5;
+    padding: 10px; }
+  .subnav a:hover {
+    color: white;
+    background: #a6a6a6;
+    text-decoration: none; }
 
 .nav-active {
-  color: white;
-  background: #252525;
+  color: #252525;
+  background: #e5e5e5;
   text-decoration: none;
-  padding: 10px;
-  margin: 0;
-  float: left; }
-
-.global-subnav {
-  width: 100%;
-  background: #a6a6a6; }
-  .global-subnav a:link, .global-subnav a:visited {
-    color: white;
-    padding: 10px; }
-  .global-subnav a:hover {
-    color: white;
-    background: #cccccc;
-    text-decoration: none; }
+  padding: 5px 10px 5px 10px;
+  margin-top: -5px;
+  float: left;
+  border-bottom: 5px solid #e5e5e5; }
 
 .editions {
   max-width: 1200px;
@@ -3060,7 +3071,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   right: 0;
   display: block;
   padding: 0;
-  margin: 0;
+  margin: 5px auto;
   padding: 10px 0 10px 0; }
 
 .icons {
@@ -3075,6 +3086,10 @@ input {
   height: 30px;
   focus: none; }
 
+#global-search {
+  width: 300px;
+  margin: 0px 0 -80px 0px; }
+
 #global-search button[type="submit"] {
   color: #fff;
   cursor: pointer;
@@ -3085,8 +3100,7 @@ input {
   padding: 2px 10px 7px 10px; }
 
 .nav-extras {
-  padding: 5px;
-  margin-left: 30px; }
+  padding: 5px; }
   .nav-extras li {
     list-style-type: none;
     display: inline;
@@ -3102,7 +3116,9 @@ input {
   background: white;
   height: 100%;
   margin: 0 auto;
-  border-bottom: 5px solid #234a81; }
+  padding-bottom: 5px;
+  border-bottom: 5px solid #234a81;
+  max-width: 1200px; }
 
 #global-footer {
   margin: 0 auto;
@@ -3195,7 +3211,7 @@ body {
 
 #wrapper {
   min-width: 280px;
-  max-width: 100%;
+  max-width: 1200px;
   background: white;
   margin: 0 auto;
   padding: 20px; }
@@ -3208,13 +3224,29 @@ article {
   margin: 0 auto;
   width: 100%;
   max-width: 600px; }
+  article:h1 {
+    margin-top: -60px; }
 
 aside {
-  width: 280px;
-  float: left;
-  margin: -15px 0 0 60px; }
+  margin-bottom: -60px; }
   aside p {
-    line-height: 10px; }
+    line-height: 18px; }
+  aside h4 {
+    width: 200px; }
+  aside.left {
+    width: 200px;
+    float: left;
+    margin: 0 0 0 0; }
+  aside.right {
+    float: right;
+    width: 300px;
+    margin: 0px -60px 0 0; }
+  aside.header {
+    margin-top: 30px; }
+
+.icon-stack {
+  margin-top: 5px;
+  padding: 5px; }
 
 .col {
   float: left;
@@ -3655,6 +3687,11 @@ aside {
   top: 100px;
   width: 200px;
   float: left; }
+  .fixed.advert {
+    position: fixed;
+    top: 50px;
+    width: 300px;
+    float: right; }
 
 .list-block {
   padding: 10px;
@@ -3826,7 +3863,7 @@ a:visited {
     background-size: 100% auto;
     width: 350px;
     height: 62px;
-    margin: -20px 50px 0 0; }
+    margin: -20px 0 0 0; }
 
 img {
   width: 100%;
@@ -5361,7 +5398,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
     background-size: 100% auto;
     width: 350px;
     height: 62px;
-    margin: -20px 50px 0 0; }
+    margin: -20px 0 0 0; }
 
 img {
   width: 100%;
@@ -5565,13 +5602,31 @@ strong, th, dt {
   text-align: center; }
 
 .sub {
-  font-size: 0.85714em;
+  font-size: 1.71429em;
   margin-top: -15px;
-  color: #e5e5e5; }
+  color: #234a81; }
+
+sub {
+  font-size: 0.71429em;
+  margin-top: -15px;
+  color: #a6a6a6; }
+
+.quote {
+  font-size: 1.71429em;
+  color: #252525;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: -5px; }
+  .quote img {
+    width: 15%; }
 
 .summary, .body-copy {
   font-size: 1.71429em;
   color: #333333; }
+  .summary.article, .article.body-copy {
+    text-align: left;
+    margin-top: -20px;
+    font-size: 18px; }
 
 .body-copy {
   font-size: 0.64286em;
@@ -5588,6 +5643,13 @@ strong, th, dt {
   border-left: 4px solid #dae800;
   width: 97%;
   margin-bottom: 10px; }
+
+.article-comment-count {
+  font-size: 13px; }
+
+.container-header {
+  font-size: 20px;
+  font-family: "guardian-bold"; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -5732,7 +5794,7 @@ strong, th, dt {
 
 .nav-container {
   min-width: 280px;
-  max-width: 100%;
+  max-width: 1200px;
   background: white;
   margin: 0 auto;
   padding: 20px;

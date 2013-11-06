@@ -37,7 +37,7 @@ $margin-paragraph: 10px 0 10px 0;
 
 @mixin content-container{
 	min-width:280px;
-	max-width:100%;
+	max-width:1200px;
 	background:$link-white;
 	margin:0 auto;
 	padding:$gs-gutter;
@@ -164,10 +164,16 @@ $margin-paragraph: 10px 0 10px 0;
 	}
 }
 
-.border-line-dark{
-	border: 1px solid black;
+.border-line-thick{
+	border: 3px solid $light-grey;
 	width:100%;
-	opacity:0.4;
+	opacity:0.8;
+}
+
+.border-line-dotted{
+	border: 1px dotted black;
+	width:100%;
+	opacity:0.2;
 }
 
 .border-vertical{
