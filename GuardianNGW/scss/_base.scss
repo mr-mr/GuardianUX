@@ -1,0 +1,283 @@
+// --------------------------------------------------------------------------------------------------------------------------------------------
+// Table of contents
+// --------------------------------------------------
+// 1.0 imports
+// 2.0 mixins
+// 		2.1 general
+//		2.2 links
+//		2.3 position
+//		2.4 width and height
+//		2.5 margin and padding
+//		2.6 fonts
+//		2.7 background and shadows
+//		2.8 borders
+//		2.9 image replacement
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+// 1.Imports
+//-----------------------------
+@import "fonts";
+@import "font-awesome";
+@import "colors";
+@import "breakpoints";
+@import "mq";
+
+
+// 2. variables & mixins
+//-----------------------------
+
+$background-container:$link-white;
+$margin-paragraph: 10px 0 10px 0;
+
+@mixin background-container {
+	//top:0;
+	//width:100%;
+	margin:0 auto;
+	padding:0;
+	font-size:15/20;
+	color:$copy;
+	text-rendering:optimizeLegibility;
+	background:$grey;
+}
+
+@mixin content-container{
+	min-width:280px;
+	max-width:1200px;
+	background:$link-white;
+	margin:0 auto;
+	padding:$gs-gutter;
+}
+
+@mixin margins_zero {
+	margin:0;
+	padding:0;
+}
+
+@mixin border-box{
+
+}
+
+@mixin margins_paragraphs {
+	p{
+		margin:$margin-paragraph;
+	}
+	@include box-sizing(border-box);
+}
+
+@mixin full-screen {
+	width:100%;
+	top:0;
+	left:0;
+	position:absolute;
+}
+
+@mixin block {
+	width:100%;
+	height:100%;
+	display:block;
+}
+
+@mixin image-replacement {
+
+}
+
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+// Single side border-radius
+
+@mixin border-top-radius($radius) {
+  -webkit-border-top-right-radius: $radius;
+  border-top-right-radius: $radius;
+   -webkit-border-top-left-radius: $radius;
+   border-top-left-radius: $radius;
+   background-clip: padding-box;
+}
+@mixin border-right-radius($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+     -webkit-border-top-right-radius: $radius;
+     border-top-right-radius: $radius;
+     background-clip: padding-box;
+}
+@mixin border-bottom-radius($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+   -webkit-border-bottom-left-radius: $radius;
+   border-bottom-left-radius: $radius;
+   background-clip: padding-box;
+}
+@mixin border-left-radius($radius) {
+  -webkit-border-bottom-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+     -webkit-border-top-left-radius: $radius;
+     border-top-left-radius: $radius;
+     background-clip: padding-box;
+}
+// 2.1 General
+@mixin clear-fix {
+		&:before, &:after {
+		    content:"";
+		    display:table;
+		}
+		&:after {
+		    clear:both;
+		}
+	}
+	
+	.clear-clear-fix {
+		&:before, &:after {
+			clear:none;
+		    content:none;
+			display:none;
+		}
+	}
+
+// 2.6 fonts
+// --------------------------------------------------
+/*@mixin font-size($size,$leading) {
+	font-size:$size * 1px;
+	font-size:$size * .1rem; 
+	line-height:$leading * 1px;
+	line-height:$leading * .1rem;	
+}
+
+@mixin font($size,$leading,$family) {
+	$sp:$size * 1px;
+	$lp:$leading * 1px;
+	$sr:$size * .1rem;
+	$lr:$leading * .1rem;
+	font:$sp~"/"$lp $family;
+	font:$sr~"/"$lr $family;
+}
+
+@mixin font($size,$leading,$weight,$style:normal) {
+	$sp:$size * 1px;
+	$lp:$leading * 1px;
+	$sr:$size * .1rem;
+	$lr:$leading * .1rem;
+	font:$style $weight $sp~"/"$lp $family;
+	font:$style $weight $sr~"/"$lr $family;
+}
+
+@mixin font($size,$leading,$weight,$style:normal,$family) {
+	$sp:$size * 1px;
+	$lp:$leading * 1px;
+	$sr:$size * .1rem;
+	$lr:$leading * .1rem;
+	font:$style $weight $sp~"/"$lp $family;
+	font:$style $weight $sr~"/"$lr $family;
+}
+
+@mixin font-margin($size,$leading) {
+	@include font-size($size,$leading);
+	.margin-bottom($leading / 2);
+}*/
+
+// 3.General
+//-----------------------------
+
+
+#home{
+	@include content-container;
+}
+
+.work-container {
+	//background: lime;
+	margin:0 auto;
+	width:940px;
+}
+
+#article-background{
+	background:$link-white;
+		margin:0 auto;
+}
+
+.border-nav {
+	border: 1px solid $light-grey;
+	width:100%;
+	padding:0;
+	margin:0;
+}
+
+.border-line{
+	@include clear-fix;
+	border: 1px solid $light-grey;
+	width:100%;
+	//height:10%;
+	margin:20px 0 30px 0;
+	padding:0;
+	float:left;
+	&.read-more{
+		margin:0;
+		border-color:$link;
+	}
+}
+
+.border-line-thick{
+	border: 3px solid $light-grey;
+	width:100%;
+	opacity:0.8;
+}
+
+.border-line-dotted{
+	border: 1px dotted black;
+	width:100%;
+	opacity:0.2;
+}
+
+.border-vertical{
+	border: 1px solid $light-grey;
+	height:30%;
+	//height:10%;
+	margin:0;
+	padding:0;
+	float:right;
+}
+
+
+
+// x.modules
+//-----------------------------
+
+
+article{
+	width:100%;
+	height:auto;
+	margin:40px 0 10px 0 ;
+	padding:0;
+	line-height:140%;
+}
+
+
+.live-latest {
+	font-size:(10 / 10) * 0.5em;
+	font-family:$sans-serif;
+	font-weight:bold;
+	font-style:normal;
+	text-transform:uppercase;
+	color:#fff;
+	background:$highlight;	
+	padding:2px;
+}
+
+
+
+
+
+
