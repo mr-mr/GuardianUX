@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>headshot-w-background</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M0,0 L0,200 L200,200 L200,0 L0,0 L0,0 L0,0 L0,0 Z M0,0" id="Rectangle-1" fill="#CCCCCC" sketch:type="MSShapeGroup"></path>
+        <path d="M75.0388473,136.170303 C61.1852228,125.069486 55.643773,105.643057 58.4144979,83.4414228 C61.1852228,52.9141764 83.351022,33.4877469 102.746096,36.2629511 C124.911895,39.0381554 138.76552,64.0149933 133.22407,94.5422397 C133.22407,108.418261 127.68262,119.519078 119.370446,127.84469 C135.994795,127.84469 152.619144,127.84469 163.702044,133.395099 C199.721468,147.27112 196.950743,200 196.950743,200 L3,200 L27.9365241,147.27112 C27.9365241,147.27112 47.3315983,141.720711 75.0388473,136.170303 C75.0388473,136.170303 47.3315983,141.720711 75.0388473,136.170303 L75.0388473,136.170303 L75.0388473,136.170303 Z M75.0388473,136.170303" id="Oval_23_1_" fill="#B1B1B1" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

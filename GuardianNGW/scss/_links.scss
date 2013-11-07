@@ -1,0 +1,82 @@
+// --------------------------------------------------------------------------------------------------------------------------------------------
+// Table of contents
+// --------------------------------------------------
+// 1.0 imports
+// 2.0 variables
+// 3.0 general
+// 4.0 type
+// 5.0 layout
+// 6.0 modules
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+// --------------------------------------------------
+// 1.0 imports
+
+@import "colors";
+
+// --------------------------------------------------
+// 2.0 variables
+
+
+// --------------------------------------------------
+// 3.0 general
+
+a {
+	&:link {color:$link; text-decoration:none; font-weight:normal;}
+		&:hover{color:$link-hover; text-decoration:underline;}
+		&:visited{color:$link-visited; text-decoration:none;}
+}
+
+.button{
+	//float:left;
+	//margin:10px 2px 30px 0;
+	//width:100%;
+	a:link, a:visited{
+	color:#fff;
+	background: $link;
+	padding: 15px 35px 15px 35px;
+	text-decoration: none;
+	}
+	a:hover{
+	background: $link-hover;
+	}
+	&.center{
+		margin:0 auto;
+	}
+}
+
+.button-home{
+	//float:left;
+	//margin-top:15px;
+	a:link, a:visited{
+	color:$dark-grey;
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from($link-white), to(darken($grey, 20%)));
+	padding: 10px 30px 10px 30px;
+	text-decoration: none;
+	}
+	a:hover{
+	//background: darken($framework-nav, 20%);
+	color:$link-white;
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from($framework-nav), to(darken($framework-nav, 20%)));
+	}
+}
+
+.button-share{
+	display:inline;
+	margin:2px;
+}
+
+.button-inactive{
+	float:left;
+	margin:10px 10px 30px 0 ;
+	color:#999;
+	background: $grey;
+	padding: 15px 35px 15px 35px;
+	text-decoration: none;
+}
+
+.button-read-more{
+	//width:100%;
+	margin:20px;
+}
+
