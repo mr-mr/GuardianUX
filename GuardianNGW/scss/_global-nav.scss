@@ -41,12 +41,11 @@
 
 #globalnav-container {
 	@include globalNav;
-	
 }
 
 #globalnav-links {
 	@include globalNav;
-	font-size:20px;
+	font-size:18px;
 	//padding:10px;
 	li{
 		display:inline;
@@ -62,6 +61,8 @@
 	height:100%;
 	height: 35px;
 	padding-top: 1px;
+	margin-bottom: 5px;
+	margin-top:-10px;
 	font-size:14px;
 	
 	a:link, a:visited {color:$semi-grey; background:$light-grey; padding:10px;}
@@ -74,10 +75,10 @@
 	color:$dark-grey;
 	background:$light-grey;  
 	text-decoration:none;
-	padding:10px 10px 10px 10px;
-	margin-top:-5px;
+	padding:5px;
+	//margin-top:-5px;
 	//float:left;
-	border-bottom:5px solid $light-grey;
+	//border-bottom:4px solid $dark-grey;
 }
 
 .editions {

@@ -1,4 +1,4 @@
-<nav class="global-nav-container">
+<!--<nav class="global-nav-container">
 <div class="border-nav"></div>
 	<ol id="globalnav-links">
 		<li class="nav-active">News</li>
@@ -14,7 +14,6 @@
 		<li><a href="">Travel</a></li>
 		<li><a href="">Sci &amp; Environment</a></li>
 		<li><a href="">Education</a></li>
-		<!--<li><i class="icon-reorder"></i></li>-->
 	</ol>
 
 	<nav class="subnav">
@@ -30,6 +29,93 @@
 		</ol>
 	</nav>
 
-</nav>
-	
-</div>
+</nav>-->
+
+<header class="no-flow-into">
+  <nav id="nav-global">
+    <a href="" class="nav-active">News</a>
+	<a href="">Comment</a>
+	<a href="">Sport</a>
+	<a href="">Football</a>
+	<a href="">Tech</a>
+	<a href="">Culture</a>
+	<a href="">Life</a>
+	<a href="">Fashion</a>
+	<a href="">Economy</a>
+	<a href="">Money</a>
+	<a href="">Travel</a>
+	<a href="">Sci &amp; Environment</a>
+	<a href="">Education</a>
+  </nav>
+
+  <div id="menu">
+    <a href="#" class="toggle"></a>
+
+    <aside>
+      <nav id="nav-compact">
+        <!-- #global nav items will flow here -->
+      </nav>
+      <em>
+        Overflow menu items will appear above.
+      </em>
+    </aside>
+
+  </div>
+
+  <nav class="subnav">
+		<ol id="globalnav-links" class="subnav">
+			<li><a href="">UK</a></li>
+			<li><a href="">Europe</a></li>
+			<li class="nav-active">Americas</li>
+			<li><a href="">Asia</a></li>
+			<li><a href="">Australia</a></li>
+			<li><a href="">Africa</a></li>
+			<li><a href="">Middle East</a></li>
+			<li><a href="">[Special event]</a></li>
+		</ol>
+	</nav>
+</header>
+
+
+  <script>
+    var menu   = document.querySelector('#menu'),
+    toggle = document.querySelector('.toggle'),
+    aside = document.querySelector('aside');
+
+toggle.addEventListener('click', function(){
+  aside.classList.toggle('visible')
+})
+
+var property = "flow-into";
+
+// check if any variant exists, prefixed or not
+var isCapable = ['-webkit-','-ms-','-moz-',''].some(function(prefix){
+  return prefix + property in document.body.style 
+})
+
+property = isCapable ? property : 'no-' + property;
+
+document.body.classList.add(property)
+
+// If there is support for flow-into
+if (isCapable){
+
+  // Run after PrefixFree
+  document.addEventListener('DOMContentLoaded',function(){
+    // Get the menu flow
+    var menuFlow = document.webkitGetNamedFlows()['menu']; 
+
+    // This is the core function
+    menuFlow.addEventListener('webkitregionoversetchange', function(e){
+      // There is no EmtpyRegion (-1)
+      if (menuFlow.firstEmptyRegionIndex == -1){
+        menu.classList.add('visible');
+      }else{
+        menu.classList.remove('visible');
+      }
+    });
+
+  });
+
+}
+  </script>

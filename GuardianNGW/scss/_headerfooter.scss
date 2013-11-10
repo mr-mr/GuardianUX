@@ -33,12 +33,12 @@
 	@include background-container;
 	background:$link-white;
 	height:100%;
-	//width:880px;
+	width:100%;
+	max-width:1200px;
 	margin:0 auto;
 	padding-bottom:5px;
-	border-bottom:5px solid $link;
-	max-width:1200px;
-
+	padding-left:$gs-gutter;
+	padding-right:$gs-gutter;
 }
 
 
