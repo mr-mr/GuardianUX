@@ -103,9 +103,26 @@
 			<li><a href="">Middle East</a></li>
 			<li><a href="">[Special event]</a></li>
 		</ol>
+
+		<select> 
+	    	<option value="" selected="selected">UK</option> 
+	    	<option value="">Home</option> 
+		    <option value="">Europe</option> 
+		    <option value="">Americas</option> 
+		    <option value="">Asia</option> 
+		    <option value="">Australia</option> 
+		    <option value="">Africa</option> 
+		    <option value="">Middle East</option>
+		    <option value="">[Special event]</option>
+  		</select>
 	</nav>
 </header>
 
+<script>
+      var navigation = responsiveNav("#nav-global", {
+        insert: "before"
+      });
+</script>
 
   <script>
     var menu   = document.querySelector('#menu'),
@@ -153,7 +170,7 @@ if (isCapable){
 
 <div id="wrapper">
 
-	<div class="advert" style="width:928px;">
+	<div class="advert" style="width:100%; max-width:928px;">
 	<img src="../img/advert-banner-large.jpg" />
 </div>
 <!-- end .advert -->	
@@ -168,7 +185,7 @@ if (isCapable){
 	<aside class="left">
 		<div class="border-line-thick"></div>
 		<p></p>
-		<p><a href="">Rory Carroll</a> in Los Angeles</p>
+		<p class="editor-name"><a href="">Rory Carroll</a> in Los Angeles</p>
 		<div class="border-line-dotted"></div>
 		<p class="article-comment-count"><i class="icon-time"></i> Monday 4 November 2013 20.40 GMT</p>
 		<div class="border-line-dotted"></div>
@@ -334,7 +351,7 @@ if (isCapable){
 		
 		</div>
 		<div class="border-line"></div>
-</div><div class="advert" style="width:728px;">
+</div><div class="advert" style="width:100%; max-width:728px;">
 	<img src="../img/advert-banner.jpg" />
 </div>
 <!-- end .advert -->
@@ -358,29 +375,30 @@ if (isCapable){
  <script src="../js/fancybox-player.min.js"> </script>
  <script src="../js/jquery.fancybox-media.min.js"> </script>
 
+ <script src="../js/responsive-nav.min.js"></script>
 
-<footer id="global-footer">
-	
-	<div class="logo-block footer">
-		<div class="global-logo footer"></div>
-		<div class="back-to-top button"><a href="#top"><sup><i class="icon-angle-up"></i></sup> Back to top</a></div>
-	</div>
-	<div class="gs-wrapper footer-links">
-		<ul class="col col-mobile-2 col-tablet-3 footer-links">
-			<li><a href="">Desktop Version</a></li>
-			<li><a href="">Contact Us</a></li>
-			<li><a href="">Privacy Policy</a></li>
-			<li><a href="">About this site</a></li>
-		</ul>
-		
-		<ul class="col col-mobile-2 col-tablet-3 footer-links">
-			<li><a href="">Feedback</a></li>
-			<li><a href="">Cookie Policy</a></li>
-			<li><a href="">Help</a></li>
-			<li><a href="">Terms &amp; Conditions</a></li>
-		</ul>
-	</div>
-	<div class="copyright">&#169; 2013 Guardian News and Media Limited or its affiliated companies. All rights reserved.</div>
+
+<footer id="global-footer" class="block">
+		<div class="logo-block footer">
+			<div class="global-logo footer"></div>
+			<div class="back-to-top button"><a href="#top"><sup><i class="icon-angle-up"></i></sup> Back to top</a></div>
+		</div>
+		<div class="gs-wrapper footer-links">
+			<ul class="col col-mobile-2 col-tablet-3 footer-links">
+				<li><a href="">Desktop Version</a></li>
+				<li><a href="">Contact Us</a></li>
+				<li><a href="">Privacy Policy</a></li>
+				<li><a href="">About this site</a></li>
+			</ul>
+			
+			<ul class="col col-mobile-2 col-tablet-3 footer-links">
+				<li><a href="">Feedback</a></li>
+				<li><a href="">Cookie Policy</a></li>
+				<li><a href="">Help</a></li>
+				<li><a href="">Terms &amp; Conditions</a></li>
+			</ul>
+		</div>
+		<div class="copyright">&#169; 2013 Guardian News and Media Limited or its affiliated companies. All rights reserved.</div>
 </footer>
 </html>
 

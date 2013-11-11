@@ -31,12 +31,23 @@ h1, h2, h3, h4, li {
 }
 
 h1 {
-	color: $copy; 
-	font-family: $serif; 
-	font-size:(24 /10) * 1.5em;
-	font-weight:bold;
-	line-height:60px;
-	//@include line-height;
+	@media (min-width:$small){
+		color: $copy; 
+		font-family: $serif; 
+		font-size:(14 /10) * 1.5em;
+		font-weight:bold;
+		line-height:40px;
+	}
+
+	@media (min-width:$medium) {
+		font-size:(24 /10) * 1.5em;
+		line-height:60px;
+	}
+
+	@media (min-width:$large) {
+		font-size:(24 /10) * 1.5em;
+		line-height:60px;
+	}
 }
 
 
@@ -74,12 +85,18 @@ li {
 	list-style-type: square;
 	font-size:(13 / 14) * 1em;
 	line-height:1.6em;
+	text-decoration:none
 }
 
 
 p {
-	font-size:(13 / 14) * 1em;
+	font-size:(18 / 14) * 1em;
 	line-height:1.4em;
+
+	&.editor-name{
+		font-size:(12 / 14) * 1em;
+		line-height:1.4em;
+	}
 }
 
 dd{
@@ -127,16 +144,16 @@ sub {
 }
 
 .quote {
-	font-size:(24 / 14) * 1em;
+	font-size:(18 / 14) * 1em;
 	color:$dark-grey;
-	font-weight:bold;
+	font:$serif-bold;
 	font-style:italic;
 	margin-top:-5px;
 	&.small{
 		font-size:(14 / 14) * 1em;
 	}
 	img{
-		width:15%;	
+		width:8%;	
 	}
 }
 

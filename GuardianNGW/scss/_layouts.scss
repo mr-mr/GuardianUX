@@ -11,6 +11,7 @@
 
 @import "breakpoints";
 @import "colors";
+@import "typography";
 
 // 1.0 modules
 // -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -44,8 +45,12 @@ body{
 #home{
 	margin: 0px auto;
 	width:70%;
-	max-width:880px;
+	max-width:840px;
 	
+	@media (min-width:$small){
+		width:100%;
+	}
+
 }
 
 html {
@@ -87,14 +92,34 @@ body{
 }
 
 article{
-	margin:-5px auto;
-	position:relative;
- 	right:50px;
-	width:100%;
-	max-width:580px;
-	&:h1{
-		margin-top:-60px;
-	}
+
+	@media (min-width:$small){
+			h1{
+				margin-top:-30px;
+			}
+		}
+
+		@media (min-width:$medium){
+			margin:-5px auto;
+			position:relative;
+			width:100%;
+		}
+
+		@media (min-width:$medium-large){
+			margin:0;
+			max-width:620px;
+		}
+
+		@media (min-width:$large){
+			margin:-5px auto;
+			position:relative;
+		 	right:50px;
+			width:100%;
+			max-width:580px;
+			&:h1{
+				margin-top:-60px;
+			}
+		}
 }
 
 aside{
@@ -106,17 +131,87 @@ aside{
 		width:200px;
 	}
 	&.left{
-		width:200px;
-		float:left;
-		margin: 0 0 0 0;
+		@media (min-width:$small){
+			display:inline;
+			&.editor-name{
+				display:none;
+			}
+			div {
+				display:none;
+			}
+		}
+
+		@media (min-width:$medium){
+			display:inline;
+			&.editor-name{
+				display:none;
+			}
+			div {
+				display:none;
+			}
+		}
+
+		@media (min-width:$medium-large){
+			display:inline;
+			&.editor-name{
+				display:none;
+			}
+			div {
+				display:none;
+			}
+		}
+
+		@media (min-width:$large){
+			display:block;
+			width:200px;
+			float:left;
+			margin: 0 0 0 0;
+			div {
+				display:block;
+			}
+		}
 	}
 	&.right{
-		float:right;
-		width:300px;
-		margin: 0px -10px 0 0;
+		@media (min-width:$small){
+			display:none;
+		}
+
+		@media (min-width:$medium){
+			display:none;
+		}
+
+		@media (min-width:$medium-large){
+			display:block;
+			float:right;
+			width:300px;
+			margin: 0px 30px 0 0;
+		}
+
+		@media (min-width:$large){
+			display:block;
+			float:right;
+			width:300px;
+			margin: 0px -10px 0 0;
+		}
+			
 	}
 	&.header{
-		margin-top:30px;
+
+		@media (min-width:$small){
+			margin:30px 0 30px 0;
+		}
+
+		@media (min-width:$medium){
+			margin:30px 0 30px 0;
+		}
+
+		@media (min-width:$medium-large){
+			margin-top:30px;
+		}
+
+		@media (min-width:$large){
+			margin-top:30px;
+		}
 	}
 }
 
