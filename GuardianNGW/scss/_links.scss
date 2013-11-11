@@ -43,6 +43,10 @@ a {
 	&.center{
 		margin:0 auto;
 	}
+
+	@media (min-width:$small){
+		a:link, a:visited{padding: 15px 15px 15px 15px;}
+	}
 }
 
 .button-home{

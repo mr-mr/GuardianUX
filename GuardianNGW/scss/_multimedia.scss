@@ -35,19 +35,38 @@ $img-landscape:"#{$img-path}/image-5x3#{$img-extension}";
 
 .global-logo{
 	float:right;
+	
 	&.footer{
+
 		background: url($guardian-logo) no-repeat;
 		background-size:100% auto;
 		width:130px;
 		height:53px;
 		margin:0px 50px 0 0;
+		
+		@media (min-width:$small){
+			margin:0;
+		}
+
+		@media (min-width:$large){
+			margin:0px 50px 0 0;
+		}
 	}
+
 	&.header{
 		background: url($guardian-logo-header) no-repeat;
 		background-size:100% auto;
 		width:350px;
 		height:62px;
 		margin:-20px 0 0 0;
+		@media (max-width:$medium){
+			background: url($guardian-logo) no-repeat;
+			background-size:100% auto;
+			float:left;
+			width:120px;
+			height:53px;
+			margin:0 0 0 -20px;
+		}
 	}
 }
 

@@ -73,9 +73,26 @@
 			<li><a href="">Middle East</a></li>
 			<li><a href="">[Special event]</a></li>
 		</ol>
+
+		<select> 
+	    	<option value="" selected="selected">UK</option> 
+	    	<option value="">Home</option> 
+		    <option value="">Europe</option> 
+		    <option value="">Americas</option> 
+		    <option value="">Asia</option> 
+		    <option value="">Australia</option> 
+		    <option value="">Africa</option> 
+		    <option value="">Middle East</option>
+		    <option value="">[Special event]</option>
+  		</select>
 	</nav>
 </header>
 
+<script>
+      var navigation = responsiveNav("#nav-global", {
+        insert: "before"
+      });
+</script>
 
   <script>
     var menu   = document.querySelector('#menu'),

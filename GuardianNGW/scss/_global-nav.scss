@@ -129,6 +129,29 @@ input {
 		display:inline;
 		margin-right:5px;
 	}
+	@media (max-width:$medium){
+		display:none;
+	}
+}
+
+.mobile-nav {
+  	display:none;
+}
+
+nav select {
+  display: none;
+  width:100%;
+  height:40px;
+  padding:10px;
+}
+
+@media (max-width:$medium){
+	nav ol, #nav-global, .subnav { display: none; }
+  	nav select { display: inline-block; }
+
+  	.mobile-nav {
+  		display:block;
+  	}
 }
 
 // 6.0 modules
