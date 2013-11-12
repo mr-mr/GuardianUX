@@ -171,8 +171,8 @@ $margin-paragraph: 10px 0 10px 0;
 	$lp:$leading * 1px;
 	$sr:$size * .1rem;
 	$lr:$leading * .1rem;
-	font:$style $weight $sp~"/"$lp $family;
-	font:$style $weight $sr~"/"$lr $family;
+	font:$style $weight $sp~'#{/}'$lp $family;
+	font:$style $weight $sr~'#{/}'$lr $family;
 }
 
 @mixin font($size,$leading,$weight,$style:normal,$family) {
@@ -180,7 +180,7 @@ $margin-paragraph: 10px 0 10px 0;
 	$lp:$leading * 1px;
 	$sr:$size * .1rem;
 	$lr:$leading * .1rem;
-	font:$style $weight $sp~"/"$lp $family;
+	font:$style $weight $sp~'#{/}'$lp $family;
 	font:$style $weight $sr~"/"$lr $family;
 }
 
