@@ -91,6 +91,38 @@ body{
 	//padding-bottom:10px;
 }
 
+.container-popular{
+
+	@media (min-width:$small){
+		div:nth-child(n+3){
+			display:none;
+		}
+		width:100%;
+	}
+	
+	@media (min-width:$medium){
+		div:nth-child(n+4){
+			display:none;
+		}
+	}
+
+	@media (min-width:$medium-large){
+		div:nth-child(n+4){
+			display:block;
+		}
+	}
+
+	@media (min-width:$large){
+		div:nth-child(n+0){
+			display:block;
+		}
+	}
+}
+
+.container-moreonthis{
+	
+}
+
 article{
 
 	@media (min-width:$small){

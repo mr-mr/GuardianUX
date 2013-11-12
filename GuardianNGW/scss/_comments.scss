@@ -11,9 +11,9 @@
 
 // 1.0 imports
 // -------------------------------------------------------------------------------------------------------------------------------------------------
-@import "library.less";
-@import "colors.less";
-@import "breakpoints.less";
+//@import "library.less";
+@import "colors";
+@import "breakpoints";
 
 // 2.0 variables
 // -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -92,7 +92,7 @@
 	.comment {
 		@include margin-bottom(10);
 		@include padding-bottom(9);
-		border-bottom:1px dotted @light-grey;
+		border-bottom:1px dotted $light-grey;
 		&.reply {
 			margin-left:4.5%;
 		}

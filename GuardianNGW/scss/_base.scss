@@ -150,7 +150,7 @@ $margin-paragraph: 10px 0 10px 0;
 
 // 2.6 fonts
 // --------------------------------------------------
-/*@mixin font-size($size,$leading) {
+@mixin font-size($size,$leading) {
 	font-size:$size * 1px;
 	font-size:$size * .1rem; 
 	line-height:$leading * 1px;
@@ -187,7 +187,7 @@ $margin-paragraph: 10px 0 10px 0;
 @mixin font-margin($size,$leading) {
 	@include font-size($size,$leading);
 	.margin-bottom($leading / 2);
-}*/
+}
 
 // 3.General
 //-----------------------------
