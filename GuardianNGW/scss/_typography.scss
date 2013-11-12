@@ -208,9 +208,10 @@ sub {
 		line-height: 20px;
 	}
 	&.small{
-		font-size:(14 / 14) * 1em;
+		font-size:(16 / 14) * 1em;
 		font-family:$serif;
-		line-height: 16px;
+		line-height: 20px;
+		//margin:-5px 0 -10px 0;
 	}
 }
 

@@ -13,6 +13,7 @@
 // -------------------------------------------------------------------------------------------------------------------------------------------------
 
 @import "colors";
+@import "links";
 
 // 2.0 variables
 // -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -39,17 +40,24 @@
 }
 .c-list {
 	width: 99999em;
-	height:150px;
+	height:160px;
 	position: relative;
 	left: 0;
-	top:0;
+	top:10px;
 	-webkit-transition: left 0.5s ease-out; 
 		-moz-transition: left 0.5s ease-out;  
 		-o-transition: left 0.5s ease-out; 
 	transition: left 0.5s ease-out;
+	
+	@media (max-width:$small-medium){
+			height:100px;
+		}
 
 	li{
 		text-decoration: none;
+		@media (max-width:$small-medium){
+			font-size:0.7em;
+		}
 	}
 }
 
@@ -79,17 +87,35 @@
 }
 .c-nav a {
 	float: left;
-	width: 50%;
+	width: 33%;
 	padding: 1em;
 	-webkit-transition: opacity 0.5s ease-out; 
 		-moz-transition: opacity 0.5s ease-out;  
 		-o-transition: opacity 0.5s ease-out; 
 	transition: opacity 0.5s ease-out;
+
+	@media (max-width:$small-medium){
+		font-size:0.7em;
+	}
 }
 .c-nav a.next {
-	border-left: 1px solid $grey;
+	//border-left: 1px solid $grey;
 	text-align: right;
+	float:right;
+	width:33%;
 }
+
+.c-nav a.active {
+	background:$code-grey;
+}
+
+.c-nav a.now {
+	border-left: 1px solid $grey;
+	border-right: 1px solid $grey;
+	text-align: center;
+	width:33%;
+}
+
 .c-nav a.inactive {
 	opacity: 0.2;
 
