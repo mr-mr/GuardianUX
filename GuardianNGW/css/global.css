@@ -1729,6 +1729,12 @@ br:last-child {
     height: 100px;
     margin: 0 auto; }
 
+.comment-reply {
+  width: 720px;
+  margin: 0;
+  margin-left: 310px;
+  border-left: 1px solid #e5e5e5; }
+
 .comment-buttons li {
   display: inline-block;
   margin-right: 130px;
