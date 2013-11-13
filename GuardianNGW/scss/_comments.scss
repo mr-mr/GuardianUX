@@ -23,7 +23,89 @@
 
 // 4.0 type
 // -------------------------------------------------------------------------------------------------------------------------------------------------
-.comment-teaser, .article-comments, .live-blog-stream {
+#comment-container{
+	width:100%;
+	height:100%;
+	margin-bottom:30px;
+}
+
+.comment-filter-controls{
+	background:$grey;
+	padding:20px;
+	li{
+		display:inline-block;
+		text-decoration:none;
+	}
+}
+
+.comment-head{
+	float:left;
+	//@include margin(0 0 0 5px 0);
+	@inlcude clear-fix;
+	width:80px;
+	height:80px;
+	border-radius: 120px;
+	background: url('../img/headshot-w-background.svg') no-repeat;
+	background-size:100% auto;
+}
+
+.comment-detail {
+	@include clear-fix;
+	width:30rem;
+	margin:0 auto;
+	padding:10px;
+	li{
+		display:inline-block;
+		margin-right:10px;
+	}
+	&:after{
+		@include clear-fix;
+	}
+}
+
+.comment-post{
+	width:620px;
+	margin:0 auto;
+
+	textarea{
+		width:100%;
+		height:100px;
+		margin:0 auto;
+	}
+
+}
+
+.comment-buttons{
+	
+	li{
+		display:inline-block;
+		margin-right:130px;
+		text-decoration:none;
+		&:after{
+			margin-right:0;
+		}
+	}
+
+	input[type=submit] {
+		margin-top:10px;
+		//padding:5px 15px; 
+		background:$grey;
+		//width:50%; 
+		border:0 none;
+		cursor:pointer;
+		-webkit-border-radius: 5px;
+		border-radius: 5px; 
+
+		text-decoration:none;
+	}
+
+	input [value=PostComment] {
+		background:$link;
+		color:$link-white;
+	}
+}
+
+/*.comment-teaser, .article-comments, .live-blog-stream {
 	.response-to, .comment-tools {
 		@include font-size(12,20);
 		color:$copy-supplemental;
@@ -87,7 +169,7 @@
 .comment-teaser, .article-comments, .live-blog-stream {
 	#comment-form {
 		@include clear-fix;
-		@include margin-bottom(20)
+		@include margin-bottom(20);
 	}
 	.comment {
 		@include margin-bottom(10);
@@ -103,13 +185,16 @@
 		p {
 			clear:both;
 			@include margin-bottom(10);
+			background:aqua;
+			width:100%;
+			border:none;
 		}
 	}
 	.comment-author-avatar {
 		float:left;
 		vertical-align:top;
 		width:48px;
-		@include margin(0,2%,10,0);
+		@include margin(0,2,10,0,10%);
 	}
 	.comment-tools {
 		margin-bottom:0;
@@ -124,7 +209,7 @@
 	}	
 	.comment-tools-reply-button {
 		width:auto;
-		@include padding(10,5px,10,5px);
+		@include padding(10,5px,10,5px,10%);
 		background:$light-grey;
 		&:hover {
 			background:$link-hover;
@@ -146,11 +231,13 @@
 	.form-comment-controls {
 		display:none;
 		@include margin-bottom(20);
-		@include padding(10,0,10,0);
+		@include padding(10,0,10,0,10%);
 		border-top:1px solid $light-grey;
 		border-bottom:1px dotted $light-grey;
 		ul {
 			margin-bottom:0;
+			background:$light-grey;
+			@include padding(10,0,10,0,5%);
 		}
 		@media (min-width:$medium-large) {
 			clear:both;
@@ -163,7 +250,7 @@
 	}
 	.article-comments-close-control {
 		display:block;
-		@include padding(10,2%,10,2%);
+		@include padding(10,2%,10,2%,10%);
 		background:$light-grey;
 		&:hover {
 			background:$link-hover;
@@ -181,7 +268,7 @@
 .list-poll-options {
 	position:relative;
 	@include height(100);
-	@include margin(0,0,10,0);
+	@include margin(0,0,10,0,10%);
 	background:url('../img/comment-teaser-poll.svg') center center no-repeat;
 	background-size:auto auto;
 	li {
@@ -199,7 +286,7 @@
 	.button-poll-option {
 		display:block;
 		width:100%;
-		@include padding(5,5,5,5);
+		@include padding(5,5,5,5,10%);
 		background:$link;
 		@include box-sizing;
 		&:hover {
@@ -214,13 +301,13 @@
 }
 
 .comment-teaser-ctas {
-	@include margin(0,0,20,0);
+	@include margin(0,0,20,0, 10%);
 }
 
 .comment-teaser-ctas-reply, .comment-teaser-ctas-view {
 	a {
 		display:block;
-		@include padding(10,2%,10,2%);
+		@include padding(10,2%,10,2%, 10%);
 		&:hover {
 			background:$link-hover;
 		}
@@ -253,4 +340,4 @@
 	.comment-teaser-ctas-view {
 		float:right;
 	}
-}
+}*/

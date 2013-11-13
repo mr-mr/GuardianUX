@@ -74,6 +74,21 @@ img {
 	@include img;
 }
 
+.headshot{
+	//@inlcude width(100);
+	//@include height(100);
+	@inlcude clear-fix;
+	width:140px;
+	height:140px;
+	border-radius: 120px;
+	background: url('../img/headshot-w-background.svg') no-repeat;
+	background-size:100% auto;
+
+	@media (max-width:$small){
+		display:none;
+	}
+}
+
 .media-container{
 	width:300px;
 	height:169px;
