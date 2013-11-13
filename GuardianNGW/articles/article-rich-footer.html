@@ -26,7 +26,7 @@
 		<li><form id="global-search"><input type="text" placeholder="Search…"><button type="submit"><i class="icon-search"></i></button></form></li>
 	</div>
 	<div class="logo-block header">
-		<div class="global-logo header"></div>
+		<a href="../"><div class="global-logo header"></div></a>
 	</div>
 	<!--<nav class="global-nav-container">
 <div class="border-nav"></div>
@@ -185,7 +185,8 @@ if (isCapable){
 	<aside class="left">
 		<div class="border-line-thick"></div>
 		<p></p>
-		<p class="editor-name"><a href="">Rory Carroll</a> in Los Angeles</p>
+		<p class="headshot"></p>
+		<dd class="editor-name"><a href="">Rory Carroll</a> in Los Angeles</dd>
 		<div class="border-line-dotted"></div>
 		<p class="article-comment-count"><i class="icon-time"></i> Monday 4 November 2013 20.40 GMT</p>
 		<div class="border-line-dotted"></div>
@@ -310,33 +311,146 @@ if (isCapable){
 	</div>
 		<div class="gs-wrapper">
 		
-		<div class="col col-mobile-3 col-tablet-3" style="background:#f5f5f5; padding:10px;"><p class="quote small"><img src="../img/quote.svg">How long did you cooperate with the NSA before deciding that spying on the world was outrageous?
-How long did you know about this spying?</p>
-		<li><a href=""><i class="icon-user"></i> Exodus 20</a></li>
-		<li class="article-comment-count" style="display:block; left:15px;"><i class="icon-time"></i> 5m</li>
+		<div class="col col-mobile-3 col-tablet-3" style="margin-top:80px">
+		<div class="comment-head"></div></br>
+		<p class="quote small" style="float:left; margin-top:10px">I understood Google data collection is effectively a US government subcontracted spying operation. Why would they go...<a href="#comment-two">Continue reading</a> </p>
+		<ul>
+			<li><a href="">prayle</a></li>
+			<li class="article-comment-count" style="display:block; left:15px;"><i class="icon-time"></i> 3h</li>
+		</ul>
+		</div>
+		
+		<div class="col col-mobile-3 col-tablet-3" style="margin-top:80px">
+		<div class="comment-head"></div></br>
+		<p class="quote small" style="float:left; margin-top:10px">When assange had legal reasons to call hilary clinton at the state department and were told they would be called back, who was it that...<a href="#comment-three">Continue reading</a></p>
+		<ul>
+			<li><a href="">Monkie</a></li>
+			<li class="article-comment-count" style="display:block; left:15px;"><i class="icon-time"></i> 3h</li>
+		</ul>
 		</div>
 
-		<div class="col col-mobile-3 col-tablet-3"><p class="quote small"><img src="../img/quote.svg">I understood Google data collection is effectively a US government subcontracted spying operation. Why would they go...<a href="#comment-two">Continue reading</a> </p>
-		<li><a href=""><i class="icon-user"></i> prayle</a></li>
-		<li class="article-comment-count" style="display:block; left:15px;"><i class="icon-time"></i> 3h</li>
+		<div class="col col-mobile-3 col-tablet-" style="margin-top:80px">
+		<div class="comment-head"></div></br>	
+		<p class="quote small" style="float:left; margin-top:10px">But, if you read their end user agreement for browsers like chrome, you give consent to their snooping. I believe the "By using this...<a href="#comment-three">Continue reading</a></a></p>
+		<ul>
+			<li><a href=""><i class="icon-user"></i> MajorRoadRage</a></li>
+			<li class="article-comment-count" style="display:block; left:15px;"><i class="icon-time"></i> 3h</li>
+		</ul>
+		<!--<form class="comment-post">
+		<h4 class="container-header">Join the conversation</h4>
+			<textarea type="text" class="comment-input"></textarea><br>
+			<ul>
+				<li><input type="submit" value="Preview"></li>
+				<li><input type="submit" value="PostComment"></li>
+			</ul>
+		</form>-->
 		</div>
 		
-		<div class="col col-mobile-3 col-tablet-3"><p class="quote small"><img src="../img/quote.svg">When assange had legal reasons to call hilary clinton at the state department and were told they would be called back, who was it that...<a href="#comment-three">Continue reading</a></p>
-		<li><a href=""><i class="icon-user"></i> Monkie</a></li>
-		<li class="article-comment-count" style="display:block; left:15px;"><i class="icon-time"></i> 3h</li>
+		<div class="col col-mobile-3 col-tablet-3" style="padding:10px;"><p>
+		<img src="../img/quote.svg">Guardian comments. Have your say.</p>
+		<p><a href="" class="button">Sign up and comment</a><p>
 		</div>
 
-		<div class="col col-mobile-3 col-tablet-"><p class="quote small"><img src="../img/quote.svg">But, if you read their end user agreement for browsers like chrome, you give consent to their snooping. I believe the "By using this...<a href="#comment-three">Continue reading</a></a></p>
-		<li><a href=""><i class="icon-user"></i> MajorRoadRage</a></li>
-		<li class="article-comment-count" style="display:block; left:15px;"><i class="icon-time"></i> 3h</li>
 		</div>
 		
-		</div>
-		
-		<div class="button button-read-more"><a class="showhide" href="">Continue reading comments <i class="icon-angle-down"></i></a></div>
-		
+		<!--<div class="button button-read-more"><a class="showhide" href="">Continue reading comments <i class="icon-angle-down"></i></a></div>-->
+		<p class="button button-read-more"><a href="#comment-teaser-container" class="showhide">Continue reading comments <i class="icon-angle-down"></i></a></p>
+
 		<div class="hidden">
-		<aside id="article-comments-container" class="article-comments show-hide-container" data-notation="Comments are hidden on small/medium screen sizes by default. There are clear links to activate them.">
+		<div id="comment-container">
+<div class="border-line-thick"></div>
+	
+	<div>
+		<form>
+			<ul class="comment-filter-controls">
+				<li>
+					Load more
+					<select>
+						<option selected="selected">10</option>
+						<option>20</option>
+						<option>50</option>
+					</select>
+				</li>
+				<li>
+					Threads
+					<select>
+						<option>Expanded</option>
+						<option selected="selected">Collapsed</option>
+					</select>
+				</li>
+				<li>
+					Order
+					<select>
+						<option selected="selected">Oldest first</option>
+						<option>Newest first</option>
+					</select>
+				</li>
+			</ul>
+		</form>
+	</div>
+
+	<p class="comment-head" style="margin-left:20%;"></p>
+	<div class="comment-detail">
+		<ul>
+			<p>FatMike</p>
+			<li class=""><i class="icon-time"></i> 3h</li></br>
+			<li class="">Isn't this guy the a$$hole who said there was no such thing as privacy anymore? Contemptible hypocrite.</li>
+		</ul>
+	<ul class="comment-tools">
+	<li class="comment-tools-reply"><button class="comment-tools-reply-button">Reply</button></li>
+	<li class="comment-tools-recommend"><a href="#">Recommend? (108)</a></li>
+	<li class="comment-tools-report"><a href="#">Report</a></li>
+	<li class="comment-tools-share"><a href="#">Share</a></li>
+</ul>	</div>
+
+	<div class="border-line"></div>
+
+	<p class="comment-head"  style="margin-left:20%;"></p>
+	<div class="comment-detail">
+		<ul>
+			<p>J</p>
+			<li class=""><i class="icon-time"></i> 4h</li></br>
+			<li class="">For companies like Google and Yahoo, privacy is very important because they deal in user generated content. If users stop trusting Google, its business will be significantly affected. Almost all Google services and products, including Android, ChromeBook, Gmail and upcoming devices like Google Glass, make heavy use of cloud storage and user-generated content.</li>
+		</ul>
+	<ul class="comment-tools">
+	<li class="comment-tools-reply"><button class="comment-tools-reply-button">Reply</button></li>
+	<li class="comment-tools-recommend"><a href="#">Recommend? (108)</a></li>
+	<li class="comment-tools-report"><a href="#">Report</a></li>
+	<li class="comment-tools-share"><a href="#">Share</a></li>
+</ul>	</div>
+
+<div class="border-line"></div>
+
+	<form class="comment-post">
+		<h4 class="container-header">Join the conversation</h4>
+			<textarea type="text" class="comment-input"></textarea><br>
+			<ul class="comment-buttons">
+				<li><input type="submit" value="Preview"></li>
+				<li><input type="submit" value="PostComment"></li>
+			</ul>
+		</form>
+
+<div class="border-line"></div>
+
+<!--<div id="container-section">
+		<div class="border-line" id="comments"></div>
+		<h2 class="container-header">post a comment</h2>
+	</div>
+	<input-->
+
+	<!--<div id="comment-reply-container" class="comment-reply">
+		<h3>Post a comment</h3>
+		<form id="comment-form"><figure>11</figure></span>
+			<textarea rows="10"></textarea>
+			<ul>
+				<li class="comment-form-post"><input type="submit" value="Post comment"></li>
+				<li class="comment-form-preview"><input type="button" value="Preview"></li>
+			</ul>
+		</form>
+	</div>-->
+
+</div>
+<!--<aside id="article-comments-container" class="article-comments">
 	<h2><i class="icon-comment"></i> 435 Comments</h2>
 	
 	<div id="show-hide-comments" class="load-more-destination" role="presentation">
@@ -366,7 +480,7 @@ How long did you know about this spying?</p>
 				</li>
 			</ul>
 		</form>
-		<!-- end #form-comment-controls -->
+	
 		
 		<article class="comment">
 			<ul class="comment-details">
@@ -376,75 +490,8 @@ How long did you know about this spying?</p>
 			<section class="comment-body">
 				<p>Goodbye Mensch, we will NOT miss you!</p>
 			</section>
-			<ul class="comment-tools">
-	<li class="comment-tools-reply"><button class="comment-tools-reply-button">Reply</button></li>
-	<li class="comment-tools-recommend"><a href="#">Recommend? (108)</a></li>
-	<li class="comment-tools-report"><a href="#">Report</a></li>
-	<li class="comment-tools-share"><a href="#">Share</a></li>
-</ul>		</article>
-		<article class="comment">
-			<ul class="comment-details">
-				<li class="comment-author"><a href="#"><img src="../img/headshot-w-background.svg" class="comment-author-avatar" />IanInOz</a></li>
-				<li class="date-stamp"><time>6 August 2012 9:58AM</time></li>								
-			</ul>
-			<section class="comment-body">
-				<p>As we say in Australia- A Top Sheila!</p>
-				<p>One of the best ..........</p>
-			</section>
-			<ul class="comment-tools">
-	<li class="comment-tools-reply"><button class="comment-tools-reply-button">Reply</button></li>
-	<li class="comment-tools-recommend"><a href="#">Recommend? (108)</a></li>
-	<li class="comment-tools-report"><a href="#">Report</a></li>
-	<li class="comment-tools-share"><a href="#">Share</a></li>
-</ul>		</article>
-		<article class="comment">
-			<ul class="comment-details">
-				<li class="comment-author"><a href="#"><img src="../img/headshot-w-background.svg" class="comment-author-avatar" />romeoromeotango</a></li>
-				<li class="date-stamp"><time>6 August 2012 9:58AM</time></li>								
-			</ul>
-			<section class="comment-body">
-				<p>Good decision!</p>
-			</section>
-			<ul class="comment-tools">
-	<li class="comment-tools-reply"><button class="comment-tools-reply-button">Reply</button></li>
-	<li class="comment-tools-recommend"><a href="#">Recommend? (108)</a></li>
-	<li class="comment-tools-report"><a href="#">Report</a></li>
-	<li class="comment-tools-share"><a href="#">Share</a></li>
-</ul>		</article>
-		<article class="comment reply">
-			<ul class="comment-details">
-				<li class="comment-author"><a href="#"><img src="../img/headshot-w-background.svg" class="comment-author-avatar" />ennisfree</a></li>
-				<li class="date-stamp"><time>6 August 2012 9:58AM</time></li>								
-			</ul>
-			<section class="comment-body">
-				<p>She planned to go after 2015 anyway.</p>
-				<p>Typical tory, milk the situation and voters for all they're worth, take, take , take then bu***r off.</p>
-				<p>She wont be missed.</p>
-				<p>Another humiliating drubbing for the libdems on Nov 15th to look forward to (if they even can find a candidate daft enough to stand for them).</p>
-			</section>
-			<ul class="comment-tools">
-	<li class="comment-tools-reply"><button class="comment-tools-reply-button">Reply</button></li>
-	<li class="comment-tools-recommend"><a href="#">Recommend? (108)</a></li>
-	<li class="comment-tools-report"><a href="#">Report</a></li>
-	<li class="comment-tools-share"><a href="#">Share</a></li>
-</ul>		</article>
-		<article class="comment reply">
-			<ul class="comment-details">
-				<li class="comment-author"><a href="#"><img src="../img/headshot-w-background.svg" class="comment-author-avatar" />Streatham</a></li>
-				<li class="date-stamp"><time>6 August 2012 9:58AM</time></li>								
-			</ul>
-			<section class="comment-body">
-				<p>What a pity. I can't stand Tories, but she was one of the more interesting ones.</p>
-			</section>
-			<ul class="comment-tools">
-	<li class="comment-tools-reply"><button class="comment-tools-reply-button">Reply</button></li>
-	<li class="comment-tools-recommend"><a href="#">Recommend? (108)</a></li>
-	<li class="comment-tools-report"><a href="#">Report</a></li>
-	<li class="comment-tools-share"><a href="#">Share</a></li>
-</ul>		</article>
-	</div>
-	<!-- end .load-more-destination -->
-	<p class="load-more-container" data-notation="An initial number of comments is shown (five in this example, but TBD), with futher comments loaded in upon clicking this button. The number of comments loaded is determined by the dropdown labeled 'Load more'."><a href="../../ajax/comments/comments-more-v2.html" class="load-more-control">Load <span>10</span> more comments</a></p>
+			
+		</article>
 	
 	<div id="comment-reply-container" class="comment-reply">
 		<h3>Post a comment</h3>
@@ -458,12 +505,15 @@ How long did you know about this spying?</p>
 	</div>
 	
 	<p class="article-comments-close"><a href="#comment-teaser-container" class="article-comments-close-control" data-notation="The option to close comments is present where comments were hidden by default.">Close comments</a></p>
-</aside>
-<!-- end .comments -->		</div>
+</aside>-->
+		</div>
 
 	</div>
 
-</div><p style="margin-top:30px;"></p>
+</div><div class="advert" style="width:100%; max-width:728px;">
+	<img src="../img/advert-banner.jpg" />
+</div>
+<!-- end .advert --><p style="margin-top:30px; float:left;"></p>
 <div id="wrapper">
 	
 	<div id="container-section">
@@ -523,10 +573,52 @@ How long did you know about this spying?</p>
 		
 		</div>
 		<div class="border-line"></div>
-</div><div class="advert" style="width:100%; max-width:728px;">
-	<img src="../img/advert-banner.jpg" />
-</div>
-<!-- end .advert --><p style="margin-top:30px;"></p>
+</div><p style="margin-top:30px;"></p>
+<div id="wrapper">
+	
+	<div id="container-section">
+		<div class="border-line-thick"></div>
+		<h2 class="container-header">popular in UK News</h2>
+	</div>
+		<div class="gs-wrapper container-popular">
+
+		<div class="col col-mobile-3 col-tablet-4">
+		<h4>Most Read</h4>
+			<img src="../img/image-5x3.svg"/>
+			<h2 class="container-header medium">1.<a href=""> Top 10 documentaries</a></h2>
+			<ul>
+				<li><i class="icon-time"></i> 2h</li>
+				<li class="article-comment-count"><a href="#"><i class="icon-comment"></i> 152</a></li>
+			</ul>
+		</div>	
+
+		<div class="col col-mobile-3 col-tablet-3" style="margin-top:40px;">
+			<h2 class="container-header small">2.<a href=""> David Cameron makes leaner state a permanent goal</a></h2>
+			<h2 class="container-header small">3.<a href=""> Apple maps: how Google lost when everyone thought it had won</a></h2>
+			<h2 class="container-header small">4.<a href=""> David Dimbleby achieves tattoo ambition at 75</a></h2>
+			<h2 class="container-header small">5.<a href=""> José Mourinho 'in tunnel bust-up' with West Brom defender Jonas Olsson</a></h2>
+		</div>
+	
+		<div class="col col-mobile-3 col-tablet-3" style="border-left:1px solid #ccc; padding-left:20px; margin-left:20px;">
+		<h4>Most Discussed</h4>
+			<h2 class="container-header small">1.<a href=""> It's business that really rules us now | George Monbiot</a></h2>
+			<h2 class="container-header small">2.<a href=""> George Clooney knocks Russell Crowe and Leonardo DiCaprio, but loves Brad Pitt</a></h2>
+			<h2 class="container-header small">3.<a href=""> The Hunger Games: Catching Fire – first look review</a></h2>
+			<h2 class="container-header small">4.<a href=""> Alcohol without the hangover? It's closer than you think | David Nutt</a></h2>
+		</div>
+
+		<div class="col col-mobile-3 col-tablet-3" style="border-left:1px solid #ccc; padding-left:20px; margin-left:20px;">
+		<h4>Most Shared</h4>
+			<h2 class="container-header small">1.<a href=""> 60 years after the war ends, two soldiers emerge from the jungle</a></h2>
+			<h2 class="container-header small">2.<a href=""> Growing-up for goths</a></h2>
+			<h2 class="container-header small">3.<a href=""> The Craigslist killers: the full story</a></h2>
+			<h2 class="container-header small">4.<a href=""> Typhoon Haiyan - before and after</a></h2>
+		</div>
+		
+		
+		</div>
+		<div class="border-line"></div>
+</div><p style="margin-top:30px;"></p>
 <div id="wrapper">
 	
 	<div id="container-section">
@@ -604,14 +696,14 @@ How long did you know about this spying?</p>
 			<div class="back-to-top button"><a href="#top"><sup><i class="icon-angle-up"></i></sup> Back to top</a></div>
 		</div>
 		<div class="gs-wrapper footer-links">
-			<ul class="col col-mobile-2 col-tablet-3 footer-links">
+			<ul class="col col-mobile-3 col-tablet-3 footer-links">
 				<li><a href="">Desktop Version</a></li>
 				<li><a href="">Contact Us</a></li>
 				<li><a href="">Privacy Policy</a></li>
 				<li><a href="">About this site</a></li>
 			</ul>
 			
-			<ul class="col col-mobile-2 col-tablet-3 footer-links">
+			<ul class="col col-mobile-3 col-tablet-3 footer-links">
 				<li><a href="">Feedback</a></li>
 				<li><a href="">Cookie Policy</a></li>
 				<li><a href="">Help</a></li>

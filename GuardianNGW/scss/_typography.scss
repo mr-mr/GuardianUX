@@ -90,6 +90,7 @@ li {
 
 
 p {
+	@include clear-fix;
 	font-size:(18 / 14) * 1em;
 	line-height:1.4em;
 

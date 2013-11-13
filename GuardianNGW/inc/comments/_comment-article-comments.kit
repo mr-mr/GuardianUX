@@ -1,4 +1,89 @@
-<aside id="article-comments-container" class="article-comments show-hide-container" data-notation="Comments are hidden on small/medium screen sizes by default. There are clear links to activate them.">
+<div id="comment-container">
+<div class="border-line-thick"></div>
+	
+	<div>
+		<form>
+			<ul class="comment-filter-controls">
+				<li>
+					Load more
+					<select>
+						<option selected="selected">10</option>
+						<option>20</option>
+						<option>50</option>
+					</select>
+				</li>
+				<li>
+					Threads
+					<select>
+						<option>Expanded</option>
+						<option selected="selected">Collapsed</option>
+					</select>
+				</li>
+				<li>
+					Order
+					<select>
+						<option selected="selected">Oldest first</option>
+						<option>Newest first</option>
+					</select>
+				</li>
+			</ul>
+		</form>
+	</div>
+
+	<p class="comment-head" style="margin-left:20%;"></p>
+	<div class="comment-detail">
+		<ul>
+			<p>FatMike</p>
+			<li class=""><i class="icon-time"></i> 3h</li></br>
+			<li class="">Isn't this guy the a$$hole who said there was no such thing as privacy anymore? Contemptible hypocrite.</li>
+		</ul>
+	<!-- @include 'comment-tools.kit'-->
+	</div>
+
+	<div class="border-line"></div>
+
+	<p class="comment-head"  style="margin-left:20%;"></p>
+	<div class="comment-detail">
+		<ul>
+			<p>J</p>
+			<li class=""><i class="icon-time"></i> 4h</li></br>
+			<li class="">For companies like Google and Yahoo, privacy is very important because they deal in user generated content. If users stop trusting Google, its business will be significantly affected. Almost all Google services and products, including Android, ChromeBook, Gmail and upcoming devices like Google Glass, make heavy use of cloud storage and user-generated content.</li>
+		</ul>
+	<!-- @include 'comment-tools.kit'-->
+	</div>
+
+<div class="border-line"></div>
+
+	<form class="comment-post">
+		<h4 class="container-header">Join the conversation</h4>
+			<textarea type="text" class="comment-input"></textarea><br>
+			<ul class="comment-buttons">
+				<li><input type="submit" value="Preview"></li>
+				<li><input type="submit" value="PostComment"></li>
+			</ul>
+		</form>
+
+<div class="border-line"></div>
+
+<!--<div id="container-section">
+		<div class="border-line" id="comments"></div>
+		<h2 class="container-header">post a comment</h2>
+	</div>
+	<input-->
+
+	<!--<div id="comment-reply-container" class="comment-reply">
+		<h3>Post a comment</h3>
+		<form id="comment-form"><figure>11</figure></span>
+			<textarea rows="10"></textarea>
+			<ul>
+				<li class="comment-form-post"><input type="submit" value="Post comment"></li>
+				<li class="comment-form-preview"><input type="button" value="Preview"></li>
+			</ul>
+		</form>
+	</div>-->
+
+</div>
+<!--<aside id="article-comments-container" class="article-comments">
 	<h2><i class="icon-comment"></i> 435 Comments</h2>
 	
 	<div id="show-hide-comments" class="load-more-destination" role="presentation">
@@ -28,7 +113,7 @@
 				</li>
 			</ul>
 		</form>
-		<!-- end #form-comment-controls -->
+	
 		
 		<article class="comment">
 			<ul class="comment-details">
@@ -38,55 +123,8 @@
 			<section class="comment-body">
 				<p>Goodbye Mensch, we will NOT miss you!</p>
 			</section>
-			<!-- @include '../../inc/comments/comment-tools.kit -->
+			
 		</article>
-		<article class="comment">
-			<ul class="comment-details">
-				<li class="comment-author"><a href="#"><img src="../img/headshot-w-background.svg" class="comment-author-avatar" />IanInOz</a></li>
-				<li class="date-stamp"><time>6 August 2012 9:58AM</time></li>								
-			</ul>
-			<section class="comment-body">
-				<p>As we say in Australia- A Top Sheila!</p>
-				<p>One of the best ..........</p>
-			</section>
-			<!-- @include '../../inc/comments/comment-tools.kit -->
-		</article>
-		<article class="comment">
-			<ul class="comment-details">
-				<li class="comment-author"><a href="#"><img src="../img/headshot-w-background.svg" class="comment-author-avatar" />romeoromeotango</a></li>
-				<li class="date-stamp"><time>6 August 2012 9:58AM</time></li>								
-			</ul>
-			<section class="comment-body">
-				<p>Good decision!</p>
-			</section>
-			<!-- @include '../../inc/comments/comment-tools.kit -->
-		</article>
-		<article class="comment reply">
-			<ul class="comment-details">
-				<li class="comment-author"><a href="#"><img src="../img/headshot-w-background.svg" class="comment-author-avatar" />ennisfree</a></li>
-				<li class="date-stamp"><time>6 August 2012 9:58AM</time></li>								
-			</ul>
-			<section class="comment-body">
-				<p>She planned to go after 2015 anyway.</p>
-				<p>Typical tory, milk the situation and voters for all they're worth, take, take , take then bu***r off.</p>
-				<p>She wont be missed.</p>
-				<p>Another humiliating drubbing for the libdems on Nov 15th to look forward to (if they even can find a candidate daft enough to stand for them).</p>
-			</section>
-			<!-- @include '../../inc/comments/comment-tools.kit -->
-		</article>
-		<article class="comment reply">
-			<ul class="comment-details">
-				<li class="comment-author"><a href="#"><img src="../img/headshot-w-background.svg" class="comment-author-avatar" />Streatham</a></li>
-				<li class="date-stamp"><time>6 August 2012 9:58AM</time></li>								
-			</ul>
-			<section class="comment-body">
-				<p>What a pity. I can't stand Tories, but she was one of the more interesting ones.</p>
-			</section>
-			<!-- @include '../../inc/comments/comment-tools.kit -->
-		</article>
-	</div>
-	<!-- end .load-more-destination -->
-	<p class="load-more-container" data-notation="An initial number of comments is shown (five in this example, but TBD), with futher comments loaded in upon clicking this button. The number of comments loaded is determined by the dropdown labeled 'Load more'."><a href="../../ajax/comments/comments-more-v2.html" class="load-more-control">Load <span>10</span> more comments</a></p>
 	
 	<div id="comment-reply-container" class="comment-reply">
 		<h3>Post a comment</h3>
@@ -100,5 +138,4 @@
 	</div>
 	
 	<p class="article-comments-close"><a href="#comment-teaser-container" class="article-comments-close-control" data-notation="The option to close comments is present where comments were hidden by default.">Close comments</a></p>
-</aside>
-<!-- end .comments -->
+</aside>-->

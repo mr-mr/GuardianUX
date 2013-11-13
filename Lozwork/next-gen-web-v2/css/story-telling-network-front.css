@@ -1,7 +1,0 @@
-.clear-fix:before,.clear-fix:after{content:"";display:table;}
-.clear-fix:after{clear:both;}
-.clear-clear-fix:before,.clear-clear-fix:after{clear:none;content:none;display:none;}
-.no-margin-padding{margin:0;padding:0;}
-.reset{margin:0;padding:0;border:none;}
-.story-label{font-size:13px;font-size:1.3rem;line-height:20px;line-height:2rem;text-transform:uppercase;margin-bottom:5px;margin-bottom:0.5rem;}
-h3 a strong{color:#353535;}
