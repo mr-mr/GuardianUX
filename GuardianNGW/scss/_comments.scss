@@ -41,7 +41,7 @@
 .comment-head{
 	float:left;
 	//@include margin(0 0 0 5px 0);
-	@inlcude clear-fix;
+	@include clear-fix;
 	width:80px;
 	height:80px;
 	border-radius: 120px;
@@ -61,6 +61,10 @@
 	&:after{
 		@include clear-fix;
 	}
+
+	@media (max-width:$medium){
+		width:100%;
+	}
 }
 
 .comment-post{
@@ -71,16 +75,31 @@
 		width:100%;
 		height:100px;
 		margin:0 auto;
+
+	}
+
+	@media (max-width:$medium){
+		width:100%;
 	}
 
 }
 
 .comment-reply{
-	//background:lime;
-	width:720px;
-	margin:0;
-	margin-left:310px;
+	width:500px;
+	padding-left: 50px;
+	left:30px;
 	border-left: 1px solid $light-grey;
+	
+	@media (max-width:$medium){
+		width:90%;
+	}
+}
+
+.head-reply{
+	margin:20px 0 0 230px;
+	@media (max-width:$medium){
+		margin:0;
+	}
 }
 
 .comment-buttons{
