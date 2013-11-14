@@ -90,14 +90,14 @@
 	left:30px;
 	border-left: 1px solid $light-grey;
 	
-	@media (max-width:$medium){
+	@media (max-width:$medium-large){
 		width:90%;
 	}
 }
 
 .head-reply{
 	margin:20px 0 0 230px;
-	@media (max-width:$medium){
+	@media (max-width:$medium-large){
 		margin:0;
 	}
 }

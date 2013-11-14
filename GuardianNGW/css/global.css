@@ -1744,13 +1744,13 @@ br:last-child {
   padding-left: 50px;
   left: 30px;
   border-left: 1px solid #e5e5e5; }
-  @media (max-width: 640px) {
+  @media (max-width: 960px) {
     .comment-reply {
       width: 90%; } }
 
 .head-reply {
   margin: 20px 0 0 230px; }
-  @media (max-width: 640px) {
+  @media (max-width: 960px) {
     .head-reply {
       margin: 0; } }
 
@@ -3591,6 +3591,9 @@ sub {
     font-family: "guardian-regular";
     line-height: 20px; }
 
+.header {
+  font-size: 18px; }
+
 body {
   margin: 0;
   font-size: 15/20;
@@ -3671,6 +3674,16 @@ body {
 @media (min-width: 1200px) {
   .container-popular div:nth-child(n+0) {
     display: block; } }
+
+.container-personal {
+  float: right;
+  width: 300px;
+  display: inline;
+  margin: -20px -120px 0 0;
+  padding-left: 40px; }
+  @media (max-width: 640px) {
+    .container-personal.side {
+      margin: -20px 0 0 0; } }
 
 .editor-1 {
   margin: -20px 0 10px 0;
@@ -6276,6 +6289,9 @@ sub {
     font-size: 1.14286em;
     font-family: "guardian-regular";
     line-height: 20px; }
+
+.header {
+  font-size: 18px; }
 
 * {
   -webkit-box-sizing: border-box;
