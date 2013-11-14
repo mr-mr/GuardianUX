@@ -1696,12 +1696,16 @@ br:last-child {
 
 .comment-head {
   float: left;
-  @inlcude clear-fix;
   width: 80px;
   height: 80px;
   border-radius: 120px;
   background: url("../img/headshot-w-background.svg") no-repeat;
   background-size: 100% auto; }
+  .comment-head:before, .comment-head:after {
+    content: "";
+    display: table; }
+  .comment-head:after {
+    clear: both; }
 
 .comment-detail {
   width: 30rem;
@@ -1720,6 +1724,9 @@ br:last-child {
     display: table; }
   .comment-detail:after:after {
     clear: both; }
+  @media (max-width: 640px) {
+    .comment-detail {
+      width: 100%; } }
 
 .comment-post {
   width: 620px;
@@ -1728,6 +1735,24 @@ br:last-child {
     width: 100%;
     height: 100px;
     margin: 0 auto; }
+  @media (max-width: 640px) {
+    .comment-post {
+      width: 100%; } }
+
+.comment-reply {
+  width: 500px;
+  padding-left: 50px;
+  left: 30px;
+  border-left: 1px solid #e5e5e5; }
+  @media (max-width: 960px) {
+    .comment-reply {
+      width: 90%; } }
+
+.head-reply {
+  margin: 20px 0 0 230px; }
+  @media (max-width: 960px) {
+    .head-reply {
+      margin: 0; } }
 
 .comment-buttons li {
   display: inline-block;
@@ -3566,6 +3591,9 @@ sub {
     font-family: "guardian-regular";
     line-height: 20px; }
 
+.header {
+  font-size: 18px; }
+
 body {
   margin: 0;
   font-size: 15/20;
@@ -3629,6 +3657,9 @@ body {
     display: inline;
     margin-right: 10px; }
 
+#container-section {
+  padding-top: 30px; }
+
 @media (min-width: 320px) {
   .container-popular {
     width: 100%; }
@@ -3643,6 +3674,33 @@ body {
 @media (min-width: 1200px) {
   .container-popular div:nth-child(n+0) {
     display: block; } }
+
+.container-personal {
+  float: right;
+  width: 300px;
+  display: inline;
+  margin: -20px -120px 0 0;
+  padding-left: 40px; }
+  @media (max-width: 640px) {
+    .container-personal.side {
+      margin: -20px 0 0 0; } }
+
+.editor-1 {
+  margin: -20px 0 10px 0;
+  padding: -10px 0 15px 0; }
+  @media (min-width: 320px) {
+    .editor-1 {
+      display: none; } }
+  @media (min-width: 1200px) {
+    .editor-1 {
+      display: block; } }
+
+@media (min-width: 320px) {
+  .editor-2 {
+    display: block; } }
+@media (min-width: 1200px) {
+  .editor-2 {
+    display: none; } }
 
 @media (min-width: 320px) {
   article h1 {
@@ -4308,9 +4366,12 @@ a:visited {
   background: #132745; }
 .button.center {
   margin: 0 auto; }
-@media (min-width: 320px) {
-  .button a:link, .button a:visited {
-    padding: 15px 15px 15px 15px; } }
+@media (max-width: 640px) {
+  .button {
+    font-size: 1em; }
+    .button a:link, .button a:visited {
+      width: 100%;
+      padding: 15px 15px 15px 15px; } }
 
 .button-home a:link, .button-home a:visited {
   color: #252525;
@@ -4334,6 +4395,7 @@ a:visited {
   text-decoration: none; }
 
 .button-read-more {
+  width: 100%;
   text-align: center;
   padding: 10px;
   margin-top: 50px; }
@@ -4377,14 +4439,17 @@ img {
 
 .headshot {
   @inlcude clear-fix;
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   border-radius: 120px;
+  padding-bottom: 5px;
   background: url("../img/headshot-w-background.svg") no-repeat;
   background-size: 100% auto; }
-  @media (max-width: 320px) {
+  @media (max-width: 640px) {
     .headshot {
-      display: none; } }
+      width: 70px;
+      height: 70px;
+      border-radius: 70px; } }
 
 .media-container {
   width: 300px;
@@ -5937,14 +6002,17 @@ img {
 
 .headshot {
   @inlcude clear-fix;
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   border-radius: 120px;
+  padding-bottom: 5px;
   background: url("../img/headshot-w-background.svg") no-repeat;
   background-size: 100% auto; }
-  @media (max-width: 320px) {
+  @media (max-width: 640px) {
     .headshot {
-      display: none; } }
+      width: 70px;
+      height: 70px;
+      border-radius: 70px; } }
 
 .media-container {
   width: 300px;
@@ -6222,6 +6290,9 @@ sub {
     font-family: "guardian-regular";
     line-height: 20px; }
 
+.header {
+  font-size: 18px; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -6273,9 +6344,12 @@ a:visited {
   background: #132745; }
 .button.center {
   margin: 0 auto; }
-@media (min-width: 320px) {
-  .button a:link, .button a:visited {
-    padding: 15px 15px 15px 15px; } }
+@media (max-width: 640px) {
+  .button {
+    font-size: 1em; }
+    .button a:link, .button a:visited {
+      width: 100%;
+      padding: 15px 15px 15px 15px; } }
 
 .button-home a:link, .button-home a:visited {
   color: #252525;
@@ -6299,6 +6373,7 @@ a:visited {
   text-decoration: none; }
 
 .button-read-more {
+  width: 100%;
   text-align: center;
   padding: 10px;
   margin-top: 50px; }

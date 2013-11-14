@@ -44,8 +44,12 @@ a {
 		margin:0 auto;
 	}
 
-	@media (min-width:$small){
-		a:link, a:visited{padding: 15px 15px 15px 15px;}
+	@media (max-width:$medium){
+		font-size:1em;
+		a:link, a:visited{
+			width:100%;
+			padding: 15px 15px 15px 15px;
+		}
 	}
 }
 
@@ -80,7 +84,7 @@ a {
 }
 
 .button-read-more{
-	//width:100%;
+	width:100%;
 	text-align:center;
 	a{left:0; right:0;}
 	padding:10px;

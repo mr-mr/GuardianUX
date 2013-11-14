@@ -83,7 +83,7 @@ body{
 
 #container-section{
 	//background:$code-grey;
-	//padding-bottom:10px;
+	padding-top:30px;
 }
 
 .container-popular{
@@ -116,6 +116,43 @@ body{
 
 .container-moreonthis{
 	
+}
+
+.container-personal{
+	float:right;
+	width:300px;
+	display:inline;
+	margin:-20px -120px 0 0;
+	padding-left:40px;
+
+	&.side{
+		@media (max-width:$medium){
+			margin:-20px 0 0 0;
+		}
+	}
+}
+
+.editor-1{
+	margin:-20px 0 10px 0;
+	padding:-10px 0 15px 0;
+
+	@media (min-width:$small){
+		display:none;
+	}
+
+	@media (min-width:$large){
+		display:block;
+	}
+}
+
+.editor-2{
+	@media (min-width:$small){
+		display:block;
+	}
+
+	@media (min-width:$large){
+		display:none;
+	}
 }
 
 article{
