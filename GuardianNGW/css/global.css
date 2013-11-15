@@ -3350,7 +3350,7 @@ input {
     .nav-extras {
       display: none; } }
 
-.mobile-nav {
+#menu-mobile {
   display: none; }
 
 nav select {
@@ -3366,8 +3366,43 @@ nav select {
   nav select {
     display: inline-block; }
 
-  .mobile-nav {
+  #menu-mobile {
     display: block; } }
+#menu-mobile {
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  min-width: 4rem;
+  position: relative;
+  background: #214583;
+  float: right;
+  right: 20px;
+  margin-top: -83px; }
+  @media (max-width: 640px) {
+    #menu-mobile {
+      visibility: visible; } }
+
+#menu-mobile aside {
+  visibility: hidden;
+  /* toggled by JavaScript */
+  background: #214583;
+  width: 13rem;
+  padding: 14px 10px 10px 10px;
+  position: absolute;
+  top: calc(3rem - 10px);
+  border: none;
+  right: 0;
+  display: block; }
+
+#menu-mobile .toggle-mobile {
+  display: block;
+  width: 4rem;
+  height: 2.4rem;
+  background-image: url(../img/menu-stripe.svg);
+  background-position: center center;
+  background-repeat: no-repeat; }
+
 #global-header {
   width: 100%;
   margin: 0 auto;
