@@ -40,18 +40,23 @@
 // --------------------------------------------------------------------------------------------------------------------------------------------
 
 .advert{
-	padding-bottom:10px;
-	margin:20px auto;
 	@media (min-width:$small){
-		
+		margin:0;
+		padding:0;
+		&.banner-small{
+			margin:0 auto;
+			padding:10px;
+		}
 	}
 
 	@media (min-width:$medium){
-		
+		padding-bottom:10px;
+		margin:20px auto;
 	}
 
 	@media (min-width:$medium-large){
-				
+		padding-bottom:10px;
+		margin:20px auto;
 	}
 
 }

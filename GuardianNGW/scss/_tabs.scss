@@ -13,9 +13,6 @@
 #tabs div {
 	width:100%;
 	float:left;
-	border-top: 1px solid $semi-grey;
-	//background: lime;
-	margin-top:-1px;
 
 	&:p{
 		float:left;
@@ -36,16 +33,18 @@
 	float: left;
 	position: relative;
 	top: 0;
-	width:135px;
+	width:33%;
 	border-bottom-width: 0;
 	padding: 10px 0 0 10px;
-	white-space: nowrap;
+	//white-space: nowrap;
+	//word-wrap:break-word;
 }
 
 .ui-tabs .ui-tabs-nav li.ui-tabs-active {
 	margin-bottom: -1px;
 	padding-bottom: 2px;
 	background: #fff;
+	z-index:20px;
 }
 .ui-tabs .ui-tabs-nav li.ui-tabs-active a,
 .ui-tabs .ui-tabs-nav li.ui-state-disabled a,
@@ -67,7 +66,8 @@
 .ui-widget-header .ui-state-default {
 	background: #e6e6e6;
 	margin-top:20px;
-	height:40px;
+	margin-right:1px;
+	height:4em;
 	font-weight: normal;
 	color: #555555;
 }
