@@ -7,9 +7,9 @@
 <title>headshot-w-background</title>
 <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
 <g id="Page-1" sketch:type="MSPage">
-	<path id="Rectangle-1" sketch:type="MSShapeGroup" fill="#CCCCCC" d="M0,0v200h200V0H0L0,0L0,0L0,0z"/>
+	<path id="Rectangle-1" sketch:type="MSShapeGroup" fill="#F1F1F1" d="M0,0v200h200V0H0L0,0L0,0L0,0z"/>
 </g>
-<ellipse fill="#B1B1B1" cx="100" cy="83" rx="38.5" ry="50"/>
-<path fill="#B1B1B1" d="M194.75,200H5.25c0,0,24.25-64,94.75-64C175.5,136,194.75,200,194.75,200z"/>
-<rect x="91.5" y="121.5" fill="#B1B1B1" width="20" height="31"/>
+<ellipse fill="#C1C1C1" cx="100" cy="83" rx="38.5" ry="50"/>
+<path fill="#C1C1C1" d="M194.75,200H5.25c0,0,24.25-64,94.75-64C175.5,136,194.75,200,194.75,200z"/>
+<rect x="91.5" y="121.5" fill="#C1C1C1" width="20" height="31"/>
 </svg>
