@@ -27,7 +27,7 @@
 	</div>
 	<div class="logo-block header">
 		<a href="../"><div class="global-logo header"></div></a>
-			</div>
+	</div>
 	<!--<nav class="global-nav-container">
 <div class="border-nav"></div>
 	<ol id="globalnav-links">
@@ -86,7 +86,7 @@
         <!-- #global nav items will flow here -->
       </nav>
       <em>
-        Overflow menu items will appear above.
+        
       </em>
     </aside>
 
@@ -165,16 +165,86 @@ if (isCapable){
   });
 
 }
-  </script></header>
-<body id="article-background">
+  </script></header><div id="menu-mobile">
+    <a href="#" class="toggle-mobile"></a>
+
+    <aside>
+      <nav id="nav-compact-mobile">
+        <ol id="mobilenav-links" class="mobile-subnav">
+			<li><a href="">UK</a></li>
+			<li><a href="">Europe</a></li>
+			<li class="nav-active">Americas</li>
+			<li><a href="">Asia</a></li>
+			<li><a href="">Australia</a></li>
+			<li><a href="">Africa</a></li>
+			<li><a href="">Middle East</a></li>
+			<li><a href="">[Special event]</a></li>
+		</ol>	
+      </nav>
+      <em>
+        <ul>
+		  <li value="UK">UK Edition</li>
+		  <li value="US">US Edition</li>
+		  <li value="AU">AU Edition</li>
+		</ul>
+      </em>
+    </aside>
+</div>
+
+<script>
+      var navigation = responsiveNav("#menu-mobile", {
+        insert: "before"
+      });
+</script>
+
+  <script>
+    var menu   = document.querySelector('#menu-mobile'),
+    toggle = document.querySelector('.toggle-mobile'),
+    aside = document.querySelector('aside');
+
+toggle.addEventListener('click', function(){
+  aside.classList.toggle('visible')
+})
+
+var property = "flow-into";
+
+// check if any variant exists, prefixed or not
+var isCapable = ['-webkit-','-ms-','-moz-',''].some(function(prefix){
+  return prefix + property in document.body.style 
+})
+
+property = isCapable ? property : 'no-' + property;
+
+document.body.classList.add(property)
+
+// If there is support for flow-into
+if (isCapable){
+
+  // Run after PrefixFree
+  document.addEventListener('DOMContentLoaded',function(){
+    // Get the menu flow
+    var menuFlow = document.webkitGetNamedFlows()['menu']; 
+
+    // This is the core function
+    menuFlow.addEventListener('webkitregionoversetchange', function(e){
+      // There is no EmtpyRegion (-1)
+      if (menuFlow.firstEmptyRegionIndex == -1){
+        menu.classList.add('visible');
+      }else{
+        menu.classList.remove('visible');
+      }
+    });
+
+  });
+
+}
+  </script><body id="article-background">
 
 <div id="wrapper">
-	<div class="advert banner-small" style="width:90%; max-width:728px;">
-	<img src="../img/advert-banner.jpg" />
+	<div class="advert" style="width:99%; max-width:928px;">
+	<img src="../img/advert-banner-large-1.jpg" />
 </div>
-<!-- end .advert -->	<p style="margin-top:30px;"></p>
-	
-<div id="container-section">
+<!-- end .advert -->	<div id="container-section">
 	<div class="border-line-thick"></div>
 	<h2 class="container-header">the day</h2>
 
