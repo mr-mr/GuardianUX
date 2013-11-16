@@ -208,6 +208,10 @@ sub {
   border-left: 4px solid #dae800;
   width: 97%;
   margin-bottom: 10px; 
+  p{
+  	font-size:14px;
+  	color:$copy;
+  }
 }
 
 .article-comment-count {
