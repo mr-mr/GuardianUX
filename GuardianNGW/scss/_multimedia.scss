@@ -21,6 +21,7 @@ $img-path: "../img";
 $img-extension : ".svg";
 $guardian-logo-header : "#{$img-path}/guardian-logo-4#{$img-extension}";
 $guardian-logo : "#{$img-path}/guardian-logo#{$img-extension}";
+$g-logo : "#{$img-path}/g-logo#{$img-extension}";
 
 $img-landscape:"#{$img-path}/image-5x3#{$img-extension}";
 
@@ -67,6 +68,22 @@ $img-landscape:"#{$img-path}/image-5x3#{$img-extension}";
 			height:53px;
 			margin:0 0 0 -20px;
 		}
+	}
+}
+
+.g-logo{
+	background: url($g-logo) no-repeat;
+	background-size:100% auto;
+	width:100px;
+	height:90px;
+	margin:-200px 0 0 0;
+	
+	@media (min-width:$small){
+		margin:0;
+	}
+
+	@media (min-width:$large){
+		margin:0;
 	}
 }
 

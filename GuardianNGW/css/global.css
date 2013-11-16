@@ -3622,6 +3622,9 @@ sub {
   border-left: 4px solid #dae800;
   width: 97%;
   margin-bottom: 10px; }
+  .note p {
+    font-size: 14px;
+    color: #333333; }
 
 .article-comment-count {
   font-size: 13px; }
@@ -4478,6 +4481,19 @@ a:visited {
         width: 120px;
         height: 53px;
         margin: 0 0 0 -20px; } }
+
+.g-logo {
+  background: url("../img/g-logo.svg") no-repeat;
+  background-size: 100% auto;
+  width: 100px;
+  height: 90px;
+  margin: -200px 0 0 0; }
+  @media (min-width: 320px) {
+    .g-logo {
+      margin: 0; } }
+  @media (min-width: 1200px) {
+    .g-logo {
+      margin: 0; } }
 
 img {
   width: 100%;
@@ -6042,6 +6058,19 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
         height: 53px;
         margin: 0 0 0 -20px; } }
 
+.g-logo {
+  background: url("../img/g-logo.svg") no-repeat;
+  background-size: 100% auto;
+  width: 100px;
+  height: 90px;
+  margin: -200px 0 0 0; }
+  @media (min-width: 320px) {
+    .g-logo {
+      margin: 0; } }
+  @media (min-width: 1200px) {
+    .g-logo {
+      margin: 0; } }
+
 img {
   width: 100%;
   height: 100%;
@@ -6321,6 +6350,9 @@ sub {
   border-left: 4px solid #dae800;
   width: 97%;
   margin-bottom: 10px; }
+  .note p {
+    font-size: 14px;
+    color: #333333; }
 
 .article-comment-count {
   font-size: 13px; }
