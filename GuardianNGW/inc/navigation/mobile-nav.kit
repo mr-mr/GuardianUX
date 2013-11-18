@@ -1,74 +1,28 @@
-<div id="menu-mobile">
-    <a href="#" class="toggle-mobile"></a>
+<ol class="extras-mobile">
+  <li><i class="icon-user"></i></li>
+  <li><i class="icon-flag icon-white"></i></li>
+  <li><i class="icon-search"></i></li>
+  <li><a class="showhide"><i class="icon-reorder"></i></a></li>
+</ol>
 
-    <aside>
-      <nav id="nav-compact-mobile">
-        <ol id="mobilenav-links" class="mobile-subnav">
-			<li><a href="">UK</a></li>
-			<li><a href="">Europe</a></li>
-			<li class="nav-active">Americas</li>
-			<li><a href="">Asia</a></li>
-			<li><a href="">Australia</a></li>
-			<li><a href="">Africa</a></li>
-			<li><a href="">Middle East</a></li>
-			<li><a href="">[Special event]</a></li>
-		</ol>	
-      </nav>
-      <em>
-        <ul>
-		  <li value="UK">UK Edition</li>
-		  <li value="US">US Edition</li>
-		  <li value="AU">AU Edition</li>
-		</ul>
-      </em>
-    </aside>
+<div id="global-nav-mobile" class="hidden">
+    <nav class="mobile-menu column">
+        <ul class="column-1">
+    			<li><a href="">UK</a></li>
+    			<li><a href="">Europe</a></li>
+    			<li class="nav-active">Americas</li>
+    			<li><a href="">Asia</a></li>
+    		</ul>
+        <ul class="column-2">
+          <li><a href="">Australia</a></li>
+    			<li><a href="">Africa</a></li>
+    			<li><a href="">Middle East</a></li>
+    			<li><a href="">[Special event]</a></li>
+        </ul>
+    </nav>
+    <ul class="editions-mobile">
+          <li class="nav-active"><i class="icon-circle-blank"></i> UK Edition</li>
+          <li><a href="">US Edition</a></li>
+          <li><a href="">AU Edition</a></li>
+        </ul>
 </div>
-
-<script>
-      var navigation = responsiveNav("#menu-mobile", {
-        insert: "before"
-      });
-</script>
-
-  <script>
-    var menu   = document.querySelector('#menu-mobile'),
-    toggle = document.querySelector('.toggle-mobile'),
-    aside = document.querySelector('aside');
-
-toggle.addEventListener('click', function(){
-  aside.classList.toggle('visible')
-})
-
-var property = "flow-into";
-
-// check if any variant exists, prefixed or not
-var isCapable = ['-webkit-','-ms-','-moz-',''].some(function(prefix){
-  return prefix + property in document.body.style 
-})
-
-property = isCapable ? property : 'no-' + property;
-
-document.body.classList.add(property)
-
-// If there is support for flow-into
-if (isCapable){
-
-  // Run after PrefixFree
-  document.addEventListener('DOMContentLoaded',function(){
-    // Get the menu flow
-    var menuFlow = document.webkitGetNamedFlows()['menu']; 
-
-    // This is the core function
-    menuFlow.addEventListener('webkitregionoversetchange', function(e){
-      // There is no EmtpyRegion (-1)
-      if (menuFlow.firstEmptyRegionIndex == -1){
-        menu.classList.add('visible');
-      }else{
-        menu.classList.remove('visible');
-      }
-    });
-
-  });
-
-}
-  </script>

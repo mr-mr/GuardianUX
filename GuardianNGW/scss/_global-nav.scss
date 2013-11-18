@@ -87,6 +87,18 @@
 	//background:lime;
 }
 
+.editions-mobile {
+	li{
+	display:inline;
+	margin-right:10px;
+	}
+	padding:20px;
+	background:$light-grey;
+	border-bottom:5px solid $link;
+	width:100%;
+}
+
+
 .icons{
 	float:left;
 	margin-top:0px;
@@ -136,9 +148,6 @@ input {
 	}
 }
 
-#menu-mobile {
-  	display:none;
-}
 
 nav select {
   display: none;
@@ -150,49 +159,62 @@ nav select {
 @media (max-width:$medium){
 	nav ol, #nav-global, .subnav { display: none; }
   	nav select { display: inline-block; }
-
-  	#menu-mobile {
-  		display:block;
-  	}
 }
 
 
 // 6.0 modules
 // --------------------------------------------------------------------------------------------------------------------------------------------
 
-#menu-mobile{
-  display: flex;
-  visibility:hidden;
-  justify-content: center;
-  align-items: center;
-  min-width: 4rem;
-  position: relative;
-  background: #214583;
-  float:right;
-  right:20px;
-  margin-top: -83px;
-  @media (max-width:$medium){
-  	visibility:visible;
-  }
+#global-nav-mobile{
+	background:$grey;
+	position:absolute;
+	width:100%;
+	z-index:10;
 }
 
-#menu-mobile aside{
-  visibility: hidden; /* toggled by JavaScript */
-  background: #214583;
-  width: 13rem;
-  padding: 14px 10px 10px 10px;
-  position: absolute;
-  top: calc(3rem - 10px);
-  border: none;
-  right: 0;
-  display:block;
+.toggle-menu-mobile{
+	display:none;
+	@media (max-width:$medium){
+		display:block;
+	}
+  	background: url('../img/menu-stripe.svg') no-repeat;
+  	background-size:100% auto;
+  	width: 25px;
+  	height: 50px; 
+  	//background-position: center center;
+  	//background-repeat: no-repeat;
+  	//background:$link;
+	float:right;
+	margin:-68px 20px 0 0;
 }
 
-#menu-mobile .toggle-mobile{
-  display: block;
-  width: 4rem;
-  height: 2.4rem; 
-  background-image: url(../img/menu-stripe.svg);
-  background-position: center center;
-  background-repeat: no-repeat;
+.mobile-menu{
+	width:100%;
+	height:100%;
+	padding:20px;
+	margin-top:-20px;
+}
+
+nav.message_list { position: relative }
+
+.extras-mobile{
+	display:none;
+	@media (max-width:$medium){
+		display:block;
+	}
+	//background:lime;
+	color:#fff;
+	width:100%;
+	text-align:right;
+	margin:-42px 0 20px 0;
+	//float:right;
+	li{
+		display:inline;
+		margin-right:10px;
+		border-right: 1px solid $dark-grey;
+		padding-right:10px;
+	}
+	a{
+		color:#fff;
+	}
 }
