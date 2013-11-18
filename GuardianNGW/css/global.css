@@ -90,6 +90,21 @@
 .no-flow-into .warning {
   display: block; }
 
+.mobile {
+  width: 320px; }
+
+.tablet {
+  width: 768px; }
+
+.desktop {
+  width: 960px; }
+
+.desktop-large {
+  width: 1200px; }
+
+.comparison {
+  overflow: hidden; }
+
 @media (min-width: 320px) {
   .advert {
     margin: 0;
@@ -3470,18 +3485,25 @@ nav.message_list {
       margin: -3px 0 0 30px; } }
 
 .footer-links {
-  margin-left: 30px;
-  padding: 10px; }
-  .footer-links ul {
-    column-count: 2;
-    display: inline; }
+  margin: 0 0 0 0;
+  padding: 20px;
+  height: 140px;
+  position: relative; }
   .footer-links li {
-    list-style-type: none;
-    width: 100%; }
-  @media (min-width: 320px) {
+    list-style-type: none; }
+  @media (max-width: 960px) {
     .footer-links {
       margin: 0;
-      padding: 10px; } }
+      width: 100%;
+      padding: 15px;
+      background: #132745; }
+      .footer-links li a {
+        color: #fff; } }
+  @media (min-width: 960px) {
+    .footer-links {
+      width: 450px;
+      margin: -10px 50px 50px 40px;
+      padding: 20px; } }
 
 .copyright {
   float: left;
@@ -3704,6 +3726,9 @@ body {
   background: white;
   margin: 0 auto;
   padding: 20px; }
+
+.presentation {
+  background: #cccccc; }
 
 .editor-1 {
   margin: -20px 0 10px 0;
@@ -4336,8 +4361,7 @@ aside {
     padding: 0;
     margin: 30px 0 0 20px; }
     .column li:nth-child(n+3) {
-      display: block;
-      background: #083d98; }
+      display: block; }
     .column li {
       break-after: always;
       -moz-column-break-after: always;
