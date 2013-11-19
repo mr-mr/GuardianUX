@@ -1670,7 +1670,7 @@ br:last-child {
   opacity: 0.2; }
 
 .border-vertical {
-  border: 1px solid #e5e5e5;
+  border: 1px dotted #e5e5e5;
   height: 30%;
   margin: 0;
   padding: 0;
@@ -3316,7 +3316,7 @@ br:last-child {
   opacity: 0.2; }
 
 .border-vertical {
-  border: 1px solid #e5e5e5;
+  border: 1px dotted #e5e5e5;
   height: 30%;
   margin: 0;
   padding: 0;
@@ -8202,6 +8202,12 @@ a:visited {
   -moz-transition: opacity 0.5s ease-out;
   -o-transition: opacity 0.5s ease-out;
   transition: opacity 0.5s ease-out; }
+  .c-nav a.prev-2 {
+    width: 50%; }
+  .c-nav a.next-2 {
+    width: 50%;
+    text-align: right;
+    border-left: 1px solid #cccccc; }
   .c-nav a:hover {
     background: #f7f7f9; }
   @media (max-width: 506px) {
