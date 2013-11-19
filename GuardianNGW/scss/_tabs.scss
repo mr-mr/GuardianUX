@@ -13,7 +13,9 @@
 #tabs div {
 	width:100%;
 	float:left;
-
+	border-top: 1px solid $grey;
+	margin-top:-1px;
+	background:#fff;
 	&:p{
 		float:left;
 	}
@@ -33,7 +35,13 @@
 	float: left;
 	position: relative;
 	top: 0;
-	width:33%;
+	left:0;
+	width:32%;
+	@media (max-width:$small){
+		//width:49%;
+		font-size:13px;
+		line-height:14px;
+	}
 	border-bottom-width: 0;
 	padding: 10px 0 0 10px;
 	//white-space: nowrap;
@@ -41,7 +49,7 @@
 }
 
 .ui-tabs .ui-tabs-nav li.ui-tabs-active {
-	margin-bottom: -1px;
+	//margin-bottom: -1px;
 	padding-bottom: 2px;
 	background: #fff;
 	z-index:20px;
@@ -56,8 +64,21 @@
 	cursor: pointer;
 	outline: 0;
 	//background:lime;
-	padding:11px 97px 22px 10px;
-	margin: 0 0 0 -10px ;
+
+	@media (min-width:$small){
+		padding:0;
+		margin:0;
+	}
+	@media (min-width:$medium){
+		//background:lime;
+		padding:14px 117px 8px 10px;
+		margin: 0 0 0 -10px;
+	}
+
+	@media (min-width:$medium-large){
+		padding:14px 207px 8px 10px;
+		margin: 0 0 0 -10px;
+	}
 }
 
 
@@ -65,9 +86,9 @@
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
 	background: #e6e6e6;
-	margin-top:20px;
+	margin-top:10px;
 	margin-right:1px;
-	height:4em;
+	height:3em;
 	font-weight: normal;
 	color: #555555;
 }
@@ -98,5 +119,5 @@
 	font-weight: normal;
 	color: #212121;
 	padding:0;
-	margin-right:2px;
+	//margin-right:2px;
 }
