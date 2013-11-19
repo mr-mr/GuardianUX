@@ -97,7 +97,14 @@
 		-moz-transition: opacity 0.5s ease-out;  
 		-o-transition: opacity 0.5s ease-out; 
 	transition: opacity 0.5s ease-out;	
-	
+	&.prev-2{
+		width:50%;
+	}
+	&.next-2{
+		width:50%;
+		text-align:right;
+		border-left: 1px solid $grey;
+	}
 	&:hover{
 		background:$code-grey;
 	}
