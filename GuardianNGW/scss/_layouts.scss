@@ -144,6 +144,11 @@ body{
 		}
 	}
 
+	/*#container-theday{
+		float:right;
+		border:1px solid $grey;
+	}*/
+
 	#container-section{
 		//background:$code-grey;
 		//padding-top:30px;
@@ -375,9 +380,9 @@ body{
 
 	.fixed {
 		position: fixed;
-	    top:100px;
-	    width: 200px;
-		float: left;
+	    top:0;
+	    //width: 200px;
+		//float: left;
 		&.advert{
 			position: fixed;
 		    top:50px;
