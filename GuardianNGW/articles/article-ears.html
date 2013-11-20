@@ -192,24 +192,40 @@ if (isCapable){
           <li><a href="">US Edition</a></li>
           <li><a href="">AU Edition</a></li>
         </ul>
-</div><body id="article-background">
+</div>
+	<nav class="ears-nav">
+		<a href="#" class=""><i class="icon-angle-right icon-3x"></i>
+		<div class="next-story">The Craigslist killers: The full story <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, ut mollitia inventore dolore. Corrupti, nisi, ducimus</dd></div></a>
+	</nav>
+
+<!--Pattern HTML-->
+ 
+<script>
+$( ".ears-nav" ).click(function() {
+  $( ".ears-nav" ).toggle( "slide" );
+});
+</script>
+
+<script>
+$(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > 800) {
+        $('.ears-nav').slideToggle();
+    } else {
+        $('.ears-nav').slideToggle();
+    }
+});
+
+$( ".ears-nav" ).click(function() {
+  $( ".ears-nav" ).slideToggle();
+});
+</script><body id="article-background">
 
 <div id="wrapper">
 	<div class="advert" style="width:99%; max-width:928px;">
 	<img src="../img/advert-banner-large-1.jpg" />
 </div>
-<!-- end .advert -->	<div id="container-section">
-
-<div class="container-controls">
-</div>
-<nav class="c-nav">
-		<a href="#" class="prev-2"><i class="icon-angle-left"></i> Previous Story | <small>Typhoon Haiyan</small> <strong class="live-latest">LIVE</strong></a>
-		<a href="#" class="next-2"><small>The Craigslist killers</small> | Next Story <i class="icon-angle-right"></i></a>
-		</nav>
-</div>
-<!--Pattern HTML-->
-  
-
+<!-- end .advert -->
 	<div class="border-line"></div>
 	<aside class="header"><h4><a href="">Politics</a></h4></aside>
 	
