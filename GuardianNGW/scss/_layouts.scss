@@ -392,16 +392,19 @@ body{
 
 
 	.fixed {
+		float:right;
+		right:50px;
 		position: fixed;
 	    top:0;
-	    //width: 200px;
-		//float: left;
-		&.advert{
+	    width: 300px;
+	    z-index:90;
+	    background:#fff;
+		/*&.advert{
 			position: fixed;
 		    top:50px;
 		    width: 300px;
 			float: right;
-		}
+		}*/
 	}
 
 	.list-block {

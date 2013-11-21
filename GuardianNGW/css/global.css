@@ -6661,13 +6661,19 @@ aside {
   .col-leftCol-16 {
     width: 1260px; } }
 .fixed {
+  float: right;
+  right: 50px;
   position: fixed;
-  top: 0; }
-  .fixed.advert {
-    position: fixed;
-    top: 50px;
-    width: 300px;
-    float: right; }
+  top: 0;
+  width: 300px;
+  z-index: 90;
+  background: #fff;
+  /*&.advert{
+  	position: fixed;
+      top:50px;
+      width: 300px;
+  	float: right;
+  }*/ }
 
 .list-block {
   padding: 10px;
@@ -8936,9 +8942,10 @@ a:visited {
   border: 1px solid #cccccc;
   margin: 30px 0 -20px 0;
   z-index: 20; }
-  @media (max-width: 640px) {
+  @media (max-width: 960px) {
     .c-nav {
-      margin: 60px 0 -20px 0; } }
+      margin: 60px 0 -20px 0;
+      display: none; } }
 
 .c-nav a {
   float: left;

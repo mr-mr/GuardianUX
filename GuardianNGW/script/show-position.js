@@ -1,9 +1,11 @@
-var stickyOJ = document.querySelector('.c-nav');
-var origOffsetY1 = 1400;
+var showy = document.querySelector('.ears-nav');
+var origOffsetY = 1400;
+var endY = 2800;
 
 function onScroll() {
-  window.scrollY >= origOffsetY1 ? stickyOJ.classList.add('fixed') :
-                                  	stickyOJ.classList.remove('fixed');
+	currentPosition = window.scrollY;
+ 	currentPosition >= origOffsetY && currentPosition <= endY ? showy.classList.add('ears-nav-open') :
+                                  								showy.classList.remove('ears-nav-open');
 }
 
 // var stickyAD = document.querySelector('aside.right');
