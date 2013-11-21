@@ -27,7 +27,7 @@ $img-landscape:"#{$img-path}/image-5x3#{$img-extension}";
 
 @mixin img{
 	width:100%;
-	height:100%;
+	//height:100%;
 	display:block;
 }
 

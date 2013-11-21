@@ -9,6 +9,13 @@
 // 6.0 modules
 // ---------------------------------------------------------------------------------------------------------------
 
+// 1.0 imports
+// ---------------------------------------------------------------------------------------------------------------
+
+
+// 6.0 modules
+// ---------------------------------------------------------------------------------------------------------------
+
 
 // Helpers
 $gs-gutter: 20px;
@@ -155,14 +162,20 @@ $gs-max-columns: 16;
     .span_2_of_4 {
         width: 100%; 
     }
-    .span_1_of_4 {
-        width: 100%; 
+    .span_1_of_4:nth-child(n+1) .container-item {
+        width:48%;
+        float:left;
     }
+
+    .span_1_of_4:nth-child(n+1) .container-item:first-child {
+        margin-right: 2%;
+    }    
+
 }
 
 /*  TOP 2 COL SPLIT THE WIDTH AT LESS THAN 768 PIXELS */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
     .span_4_of_4 {
         width: 100%; 
     }
@@ -177,6 +190,16 @@ $gs-max-columns: 16;
     .span_1_of_4 {
         width: 100%; 
     }
+   .span_1_of_4:nth-child(n+1) .container-item {
+        width:48%;
+        float:left;
+    }
+
+    .span_1_of_4:nth-child(n+1) .container-item:first-child {
+        margin-right: 2%;
+    }    
+
+
 }
 
 /*  GRID OF FIVE   ============================================================================= */
