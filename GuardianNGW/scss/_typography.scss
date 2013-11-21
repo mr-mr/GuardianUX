@@ -169,6 +169,8 @@ sub {
 
 .quote {
 	font-size:(20 / 14) * 1em;
+	font:$serif-bold;
+	color:$semi-grey;
 	font-style:italic;
 	margin:-5px 0 0 0;
 	&.small{
@@ -182,6 +184,15 @@ sub {
 	}
 	img{
 		width:8%;	
+	}
+
+	&.comment-signup{
+		@extend .quote;
+		margin:5% 0 0 0;
+		font-size:(20 / 14) * 1em;
+		img{
+			width:20%;	
+		}
 	}
 }
 

@@ -10,8 +10,7 @@
 	<g id="Layer_1_1_" sketch:type="MSLayerGroup">
 		<g id="Page_1" sketch:type="MSShapeGroup">
 			<g id="Rectangle_1">
-				<polygon fill="#CCCCCC" stroke="#666666" stroke-miterlimit="10" points="0.504,0.5 0.504,96.5 160.504,96.5 160.504,0.5 				
-					"/>
+				<polygon fill="#CCCCCC" points="0.504,0.5 0.504,96.5 160.504,96.5 160.504,0.5 				"/>
 			</g>
 		</g>
 	</g>
