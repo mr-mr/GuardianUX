@@ -6661,13 +6661,19 @@ aside {
   .col-leftCol-16 {
     width: 1260px; } }
 .fixed {
+  float: right;
+  right: 50px;
   position: fixed;
-  top: 0; }
-  .fixed.advert {
-    position: fixed;
-    top: 50px;
-    width: 300px;
-    float: right; }
+  top: 0;
+  width: 300px;
+  z-index: 90;
+  background: #fff;
+  /*&.advert{
+  	position: fixed;
+      top:50px;
+      width: 300px;
+  	float: right;
+  }*/ }
 
 .list-block {
   padding: 10px;
