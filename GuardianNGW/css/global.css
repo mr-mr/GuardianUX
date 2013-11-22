@@ -94,7 +94,7 @@
   .span_2_of_4 {
     width: 100%;
     clear: both;
-    margin-left: 0; }
+    float: left; }
 
   .span_1_of_4 {
     width: 100%; }
@@ -5824,6 +5824,12 @@ nav.message_list {
       margin: -10px 50px 50px 40px;
       padding: 20px; } }
 
+.footer-links-mobile {
+  display: none; }
+  @media (max-width: 640px) {
+    .footer-links-mobile {
+      display: block; } }
+
 .copyright {
   float: left;
   font-size: 12px;
@@ -6664,6 +6670,7 @@ aside {
   float: right;
   right: 50px;
   position: fixed;
+  overflow: display;
   top: 0;
   width: 300px;
   z-index: 90;
@@ -6873,7 +6880,11 @@ a:visited {
     margin: 0px 50px 0 0; }
     @media (min-width: 320px) {
       .global-logo.footer {
-        margin: 0; } }
+        margin: 0;
+        display: none; } }
+    @media (min-width: 640px) {
+      .global-logo.footer {
+        display: block; } }
     @media (min-width: 1200px) {
       .global-logo.footer {
         margin: 0px 50px 0 0; } }
@@ -8447,7 +8458,11 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
     margin: 0px 50px 0 0; }
     @media (min-width: 320px) {
       .global-logo.footer {
-        margin: 0; } }
+        margin: 0;
+        display: none; } }
+    @media (min-width: 640px) {
+      .global-logo.footer {
+        display: block; } }
     @media (min-width: 1200px) {
       .global-logo.footer {
         margin: 0px 50px 0 0; } }
@@ -9114,6 +9129,32 @@ a:visited {
   font-weight: normal;
   color: #212121;
   padding: 0; }
+
+.tooltip-icon {
+  z-index: 199;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  background: #b1c93b;
+  position: absolute;
+  margin: -25px -25px;
+  padding-top: 10px; }
+
+.ui-tooltip {
+  position: absolute;
+  z-index: 199;
+  background: #fff;
+  max-width: 300px;
+  border: 2px solid #b1c93b;
+  border-radius: 5px;
+  padding: 15px; }
+
+body .ui-tooltip {
+  margin-top: -10px;
+  border-width: 2px; }
 
 .header-container {
   background: transparent;

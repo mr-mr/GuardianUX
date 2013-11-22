@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="../css/prettify.css" media="all" />
 	
 	<script src="../js/menu-overflow.js"> </script>
+
+	
 </head>
 
 <header id="global-header">
@@ -342,7 +344,7 @@ if (isCapable){
 		<h2 class="container-header">comments</h2>
 	</div>
 		<div class="gs-wrapper">
-		
+		<span class="tooltip-icon" title="Taking a lead from the container model, one option is to display 3 top comments."><i class="icon-info-sign icon-light"></i></span>
 		<div class="col span_1_of_4" style="margin-top:80px">
 		<div class="comment-head"></div></br>
 		<p class="quote small" style="float:left; margin-top:10px">I understood Google data collection is effectively a US government subcontracted spying operation. Why would they go...<a href="#comment-two">Continue reading</a> </p>
@@ -379,6 +381,8 @@ if (isCapable){
 		</div>
 		
 		<div class="col span_1_of_4 quote comment-signup" style="padding:10px;">
+		<span class="tooltip-icon" title="If the user is signed in, a comment box is displayed.">
+		<i class="icon-info-sign icon-light"></i></span>
 		<p><img src="../img/quote.svg">Guardian comments. Have your say.</p>
 		<p><a href="" class="button">Sign up and comment</a><p>
 		</div>
@@ -386,7 +390,11 @@ if (isCapable){
 		</div>
 		
 		<!--<div class="button button-read-more"><a class="showhide" href="">Continue reading comments <i class="icon-angle-down"></i></a></div>-->
-		<p class="button button-read-more"><a href="#comment-teaser-container" class="showhide">Continue reading comments <i class="icon-angle-down"></i></a></p>
+		<p class="button button-read-more">
+			<a href="#comment-teaser-container" class="showhide">Continue reading comments <i class="icon-angle-down"></i></a>
+			<span class="tooltip-icon" title="Displays the next 10 comments">
+			<i class="icon-info-sign icon-light"></i></span>
+		</p>
 
 		<div class="hidden">
 		<div id="comment-container">
@@ -723,8 +731,11 @@ if (isCapable){
 <!-- end .advert -->
  <script src="../js/jquery-2.0.2.min.js"></script>
  <script src="../js/jquery-1.9.1.min.js"></script>
+
  <script src="../js/tabs.ui.min.js"></script>
  <script src="../js/tabs.min.js"> </script>
+
+ <script src="../js/tooltip.min.js"> </script>
 
  <!--<script src="js/bootstrap.min.js"> </script>-->
 
@@ -751,6 +762,33 @@ if (isCapable){
 			<div class="global-logo footer"></div>
 			<div class="back-to-top button"><a href="#top"><sup><i class="icon-angle-up"></i></sup> Back to top</a></div>
 		</div>
+		
+		<nav class="footer-links-mobile">
+			<ul class="column-1">
+				<li><a href="">Home</a></li>
+				<li><a href="">World</a></li>
+				<li><a href="">Sport</a></li>
+				<li><a href="">Life &amp; Style</a></li>
+				<li><a href="">Business</a></li>
+				<li><a href="">Technology</a></li>
+				<li><a href="">All Sections</a></li>
+			</ul>
+			
+			<ul class="column-2">
+				<li><a href="">UK</a></li>
+				<li><a href="">Comment</a></li>
+				<li><a href="">Football</a></li>
+				<li><a href="">Culture</a></li>
+				<li><a href="">Travel</a></li>
+				<li><a href="">Environment</a></li>
+			</ul>
+			<ul class="column-1">
+				<li><a href="">Soulmates</a></li>
+			</ul>
+			<ul class="column-2">
+				<li><a href="">Soulmates</a></li>
+			</ul>
+		</nav>
 
 		<nav class="footer-links">
 			<ul class="column-1">
