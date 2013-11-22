@@ -165,6 +165,7 @@ $gs-max-columns: 16;
     .span_1_of_4:nth-child(n+1) .container-item {
         width:48%;
         float:left;
+        //margin-left: 0;
     }
 
     .span_1_of_4:nth-child(n+1) .container-item:first-child {
@@ -185,7 +186,7 @@ $gs-max-columns: 16;
     .span_2_of_4 {
         width: 100%;
         clear:both; 
-        margin-left: 0;
+        float:left;
     }
     .span_1_of_4 {
         width: 100%; 

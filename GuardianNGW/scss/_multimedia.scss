@@ -47,8 +47,13 @@ $img-landscape:"#{$img-path}/image-5x3#{$img-extension}";
 		
 		@media (min-width:$small){
 			margin:0;
+			display:none;
 		}
 
+		@media (min-width:$medium){
+			display:block;
+		}
+		
 		@media (min-width:$large){
 			margin:0px 50px 0 0;
 		}

@@ -106,6 +106,13 @@
 	}
 }
 
+.footer-links-mobile{
+	display:none;
+	@media (max-width:$medium){
+		display:block;
+	}
+}
+
 .copyright{
 	float:left;
 	font-size:12px;
