@@ -36,6 +36,7 @@ a {
 	background: $link;
 	padding: 15px 35px 15px 35px;
 	text-decoration: none;
+	z-index:200;
 	}
 	a:hover{
 	background: $link-hover;

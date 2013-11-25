@@ -2336,7 +2336,8 @@ a:visited {
   color: #fff;
   background: #234a81;
   padding: 15px 35px 15px 35px;
-  text-decoration: none; }
+  text-decoration: none;
+  z-index: 200; }
 .button a:hover {
   background: #132745; }
 .button.center {
@@ -5694,7 +5695,7 @@ input {
   width: 300px;
   margin: 0px 0 -80px 0px; }
 
-#global-search button[type="submit"] {
+#global-search button[type="submit"], #global-search [type="submit"].media-button {
   color: #fff;
   cursor: pointer;
   background: #234a81;
@@ -6091,6 +6092,14 @@ sub {
 .header {
   font-size: 18px; }
 
+.video-headline {
+  color: #fff;
+  background: #2e61a9;
+  float: right;
+  padding: 10px;
+  height: 46px;
+  margin: -15px 0 0 0; }
+
 html {
   font-family: "guardian-regular";
   list-style-type: none; }
@@ -6319,6 +6328,13 @@ aside {
   @media (min-width: 1200px) {
     aside.header {
       margin-top: 30px; } }
+
+.lean-left {
+  float: left;
+  width: 50%;
+  padding-right: 80px;
+  margin: 0 0 0 0;
+  position: relative; }
 
 .icon-stack {
   margin-top: 5px;
@@ -6897,7 +6913,8 @@ a:visited {
   color: #fff;
   background: #234a81;
   padding: 15px 35px 15px 35px;
-  text-decoration: none; }
+  text-decoration: none;
+  z-index: 200; }
 .button a:hover {
   background: #132745; }
 .button.center {
@@ -7010,7 +7027,13 @@ img {
   margin-bottom: 20px; }
 
 .media-button {
-  margin: 137px 0 0 0; }
+  position: absolute;
+  bottom: 1px;
+  z-index: 1000;
+  margin: 0; }
+  .media-button a {
+    width: 100px;
+    height: 50px; }
 
 .icon-play {
   position: absolute;
@@ -7024,7 +7047,6 @@ img {
 
 iframe {
   width: 100%;
-  height: 100%;
   border: none;
   margin-top: 50px;
   padding: 0;
@@ -8588,7 +8610,13 @@ img {
   margin-bottom: 20px; }
 
 .media-button {
-  margin: 137px 0 0 0; }
+  position: absolute;
+  bottom: 1px;
+  z-index: 1000;
+  margin: 0; }
+  .media-button a {
+    width: 100px;
+    height: 50px; }
 
 .icon-play {
   position: absolute;
@@ -8602,7 +8630,6 @@ img {
 
 iframe {
   width: 100%;
-  height: 100%;
   border: none;
   margin-top: 50px;
   padding: 0;
@@ -8884,6 +8911,14 @@ sub {
 .header {
   font-size: 18px; }
 
+.video-headline {
+  color: #fff;
+  background: #2e61a9;
+  float: right;
+  padding: 10px;
+  height: 46px;
+  margin: -15px 0 0 0; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -8931,7 +8966,8 @@ a:visited {
   color: #fff;
   background: #234a81;
   padding: 15px 35px 15px 35px;
-  text-decoration: none; }
+  text-decoration: none;
+  z-index: 200; }
 .button a:hover {
   background: #132745; }
 .button.center {
