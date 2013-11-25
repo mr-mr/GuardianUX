@@ -98,6 +98,20 @@
 	width:100%;
 }
 
+.editions-mobile-footer {
+	@include clear-fix;
+	li{
+	display:inline;
+	margin-right:10px;
+	}
+	padding:20px;
+	background:$light-grey;
+	border-bottom:1px solid $semi-grey;
+	width:100%;
+	left:0;
+	right:0;
+}
+
 
 .icons{
 	float:left;
