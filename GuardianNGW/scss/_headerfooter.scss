@@ -138,8 +138,12 @@
 		display:block;
 		padding:20px 20px 40px 20px;
 		height:230px;
+		margin-top:10px;
+		border-bottom: 1px solid $semi-grey;
+		background:$light-grey;
+		
 		ul:first-child{
-			border-right:1px solid $semi-grey;
+			border-right:1px solid $grey;
 			padding-right:10px;
 		}
 		ul:nth-child(2){
@@ -149,15 +153,12 @@
 		li{ 
 		list-style-type:none;
 			a {
-				//border-top: 1px solid darken($link, 10%);
 				border-width:100%;
 				padding-top:15px;
 				color:$dark-grey; 
 				width:50%;
 			}
 		}
-		z-index:20;
-		background:$light-grey;
 	}
 }
 

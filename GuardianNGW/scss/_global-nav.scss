@@ -99,17 +99,21 @@
 }
 
 .editions-mobile-footer {
-	@include clear-fix;
-	li{
-	display:inline;
-	margin-right:10px;
+	display:none;
+	@media (max-width:$medium){
+		@include clear-fix;
+		display:block;
+		li{
+		display:inline;
+		margin-right:10px;
+		}
+		padding:20px;
+		background:$light-grey;
+		border-bottom:1px solid $semi-grey;
+		width:100%;
+		left:0;
+		right:0;
 	}
-	padding:20px;
-	background:$light-grey;
-	border-bottom:1px solid $semi-grey;
-	width:100%;
-	left:0;
-	right:0;
 }
 
 

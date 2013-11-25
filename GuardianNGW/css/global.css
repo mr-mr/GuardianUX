@@ -5659,20 +5659,24 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
     margin-right: 10px; }
 
 .editions-mobile-footer {
-  padding: 20px;
-  background: #e5e5e5;
-  border-bottom: 1px solid #a6a6a6;
-  width: 100%;
-  left: 0;
-  right: 0; }
-  .editions-mobile-footer:before, .editions-mobile-footer:after {
-    content: "";
-    display: table; }
-  .editions-mobile-footer:after {
-    clear: both; }
-  .editions-mobile-footer li {
-    display: inline;
-    margin-right: 10px; }
+  display: none; }
+  @media (max-width: 640px) {
+    .editions-mobile-footer {
+      display: block;
+      padding: 20px;
+      background: #e5e5e5;
+      border-bottom: 1px solid #a6a6a6;
+      width: 100%;
+      left: 0;
+      right: 0; }
+      .editions-mobile-footer:before, .editions-mobile-footer:after {
+        content: "";
+        display: table; }
+      .editions-mobile-footer:after {
+        clear: both; }
+      .editions-mobile-footer li {
+        display: inline;
+        margin-right: 10px; } }
 
 .icons {
   float: left;
@@ -5869,10 +5873,11 @@ nav.message_list {
       display: block;
       padding: 20px 20px 40px 20px;
       height: 230px;
-      z-index: 20;
+      margin-top: 10px;
+      border-bottom: 1px solid #a6a6a6;
       background: #e5e5e5; }
       .footer-links-mobile-bottom ul:first-child {
-        border-right: 1px solid #a6a6a6;
+        border-right: 1px solid #cccccc;
         padding-right: 10px; }
       .footer-links-mobile-bottom ul:nth-child(2) {
         padding-left: 20px; }
