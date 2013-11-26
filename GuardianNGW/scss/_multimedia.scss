@@ -133,12 +133,17 @@ img {
 		width:100px;
 		height:50px;
 	}
+
 }
 
 .icon-play{
 	position:absolute;
 	margin:0 0 0 -35px;
 	padding:10px 0px 7px 10px;
+	@media (max-width:$medium){
+		float:right;
+		left:30px;
+	}
 }
 
 .icon-volume-up{
@@ -165,6 +170,10 @@ iframe {
 	height:100%;
 	z-index:2000;
 	background:$dark-grey;
+}
+
+.interactive{
+	width:200px;
 }
 
 .fronts-image{

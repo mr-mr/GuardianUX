@@ -333,14 +333,30 @@ body{
 		}
 	}
 
-	.lean-left{
-		float:left;
-		width:50%;
-		padding-right:80px;
-		//display:inline;
-		margin:0 0 0 0;
-		position:relative;
+	.lean-left{		
+		@media (min-width:$small){
+			margin:0;
+			padding:0;
+			width:100%;
+			position:relative;
+		}
+
+		@media (min-width:$medium-large){
+			width:60%;
+		}
+
+		@media (min-width:$large){
+			float:left;
+			width:50%;
+			padding-right:80px;
+			&.portrait{
+				width:30%;
+				margin-left:130px;
+			}
+
+		}
 	}
+
 
 	.icon-stack {
 		margin-top:5px;

@@ -2347,7 +2347,7 @@ a:visited {
     font-size: 1em; }
     .button a:link, .button a:visited {
       width: 100%;
-      padding: 15px 15px 15px 15px; } }
+      padding: 15px 35px 15px 15px; } }
 
 .button-home a:link, .button-home a:visited {
   color: #252525;
@@ -6329,12 +6329,23 @@ aside {
     aside.header {
       margin-top: 30px; } }
 
-.lean-left {
-  float: left;
-  width: 50%;
-  padding-right: 80px;
-  margin: 0 0 0 0;
-  position: relative; }
+@media (min-width: 320px) {
+  .lean-left {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative; } }
+@media (min-width: 960px) {
+  .lean-left {
+    width: 60%; } }
+@media (min-width: 1200px) {
+  .lean-left {
+    float: left;
+    width: 50%;
+    padding-right: 80px; }
+    .lean-left.portrait {
+      width: 30%;
+      margin-left: 130px; } }
 
 .icon-stack {
   margin-top: 5px;
@@ -6924,7 +6935,7 @@ a:visited {
     font-size: 1em; }
     .button a:link, .button a:visited {
       width: 100%;
-      padding: 15px 15px 15px 15px; } }
+      padding: 15px 35px 15px 15px; } }
 
 .button-home a:link, .button-home a:visited {
   color: #252525;
@@ -7039,6 +7050,10 @@ img {
   position: absolute;
   margin: 0 0 0 -35px;
   padding: 10px 0px 7px 10px; }
+  @media (max-width: 640px) {
+    .icon-play {
+      float: right;
+      left: 30px; } }
 
 .icon-volume-up {
   position: absolute;
@@ -7060,6 +7075,9 @@ iframe {
   height: 100%;
   z-index: 2000;
   background: #252525; }
+
+.interactive {
+  width: 200px; }
 
 .fronts-image {
   width: 100%;
@@ -8622,6 +8640,10 @@ img {
   position: absolute;
   margin: 0 0 0 -35px;
   padding: 10px 0px 7px 10px; }
+  @media (max-width: 640px) {
+    .icon-play {
+      float: right;
+      left: 30px; } }
 
 .icon-volume-up {
   position: absolute;
@@ -8643,6 +8665,9 @@ iframe {
   height: 100%;
   z-index: 2000;
   background: #252525; }
+
+.interactive {
+  width: 200px; }
 
 .fronts-image {
   width: 100%;
@@ -8977,7 +9002,7 @@ a:visited {
     font-size: 1em; }
     .button a:link, .button a:visited {
       width: 100%;
-      padding: 15px 15px 15px 15px; } }
+      padding: 15px 35px 15px 15px; } }
 
 .button-home a:link, .button-home a:visited {
   color: #252525;
