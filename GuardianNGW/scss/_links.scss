@@ -36,6 +36,7 @@ a {
 	background: $link;
 	padding: 15px 35px 15px 35px;
 	text-decoration: none;
+	z-index:200;
 	}
 	a:hover{
 	background: $link-hover;
@@ -48,7 +49,7 @@ a {
 		font-size:1em;
 		a:link, a:visited{
 			width:100%;
-			padding: 15px 15px 15px 15px;
+			padding: 15px 35px 15px 15px;
 		}
 	}
 }

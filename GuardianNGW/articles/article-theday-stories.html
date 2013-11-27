@@ -9,6 +9,8 @@
 	<title>Google chairman: NSA spying on our data centres 'outrageous'</title>
 	<link rel="stylesheet" href="../css/global.css" type="text/css">
 	<link rel="stylesheet" href="../css/prettify.css" media="all" />
+
+	<link rel="stylesheet" href="../css/jquery.fancybox.css?v=2.1.5" type="text/css" />
 	
 	<script src="../js/menu-overflow.js"> </script>
 
@@ -30,39 +32,7 @@
 	<div class="logo-block header">
 		<a href="../"><div class="global-logo header"></div></a>
 	</div>
-	<!--<nav class="global-nav-container">
-<div class="border-nav"></div>
-	<ol id="globalnav-links">
-		<li class="nav-active">News</li>
-		<li><a href="">Comment</a></li>
-		<li><a href="">Sport</a></li>
-		<li><a href="">Football</a></li>
-		<li><a href="">Tech</a></li>
-		<li><a href="">Culture</a></li>
-		<li><a href="">Life</a></li>
-		<li><a href="">Fashion</a></li>
-		<li><a href="">Economy</a></li>
-		<li><a href="">Money</a></li>
-		<li><a href="">Travel</a></li>
-		<li><a href="">Sci &amp; Environment</a></li>
-		<li><a href="">Education</a></li>
-	</ol>
-
-	<nav class="subnav">
-		<ol id="globalnav-links" class="subnav">
-			<li><a href="">UK</a></li>
-			<li><a href="">Europe</a></li>
-			<li class="nav-active">Americas</li>
-			<li><a href="">Asia</a></li>
-			<li><a href="">Australia</a></li>
-			<li><a href="">Africa</a></li>
-			<li><a href="">Middle East</a></li>
-			<li><a href="">[Special event]</a></li>
-		</ol>
-	</nav>
-
-</nav>-->
-
+	
 <header class="no-flow-into">
   <nav id="nav-global">
     <a href="" class="nav-active">News</a>
@@ -190,9 +160,10 @@ if (isCapable){
         </ul>
     </nav>
     <ul class="editions-mobile">
-          <li class="nav-active"><i class="icon-circle-blank"></i> UK Edition</li>
-          <li><a href="">US Edition</a></li>
-          <li><a href="">AU Edition</a></li>
+          <li>Edition:</li>
+          <li class="nav-active"><i class="icon-circle-blank"></i> UK</li>
+          <li><a href="">US</a></li>
+          <li><a href="">AU</a></li>
         </ul>
 </div><body id="article-background">
 
@@ -576,13 +547,13 @@ if (isCapable){
 			<h2 class="container-header small">5.<a href=""> José Mourinho 'in tunnel bust-up' with West Brom defender Jonas Olsson</a></h2>
 		</div>
 	
-		<div class="col col-mobile-3 col-tablet-3" style="border-left:1px solid #ccc; padding-left:20px; margin-left:20px;">
+		<!--<div class="col col-mobile-3 col-tablet-3" style="border-left:1px solid #ccc; padding-left:20px; margin-left:20px;">
 		<h4>Most Discussed</h4>
 			<h2 class="container-header small">1.<a href=""> It's business that really rules us now | George Monbiot</a></h2>
 			<h2 class="container-header small">2.<a href=""> George Clooney knocks Russell Crowe and Leonardo DiCaprio, but loves Brad Pitt</a></h2>
 			<h2 class="container-header small">3.<a href=""> The Hunger Games: Catching Fire – first look review</a></h2>
 			<h2 class="container-header small">4.<a href=""> Alcohol without the hangover? It's closer than you think | David Nutt</a></h2>
-		</div>
+		</div>-->
 
 		<div class="col col-mobile-3 col-tablet-3" style="border-left:1px solid #ccc; padding-left:20px; margin-left:20px;">
 		<h4>Most Shared</h4>
@@ -598,8 +569,7 @@ if (isCapable){
 		<div id="tabs" class="container-popular-tabs">
 			<ul>
 			    <li><a href="#tabs-1">Most Read</a></li>
-			    <li><a href="#tabs-2">Most Discussed</a></li>
-			    <li><a href="#tabs-3">Most Shared</a></li>
+			    <li><a href="#tabs-2">Most Shared</a></li>
 			</ul>		  
 			<div id="tabs-1">
 				<h2 class="container-header small">1.<a href=""> Top 10 documentaries</a></h2>
@@ -609,13 +579,6 @@ if (isCapable){
 			</div>
 
 			<div id="tabs-2">
-				<h2 class="container-header small">1.<a href=""> It's business that really rules us now | George Monbiot</a></h2>
-				<h2 class="container-header small">2.<a href=""> George Clooney knocks Russell Crowe and Leonardo DiCaprio, but loves Brad Pitt</a></h2>
-				<h2 class="container-header small">3.<a href=""> The Hunger Games: Catching Fire – first look review</a></h2>
-				<h2 class="container-header small">4.<a href=""> Alcohol without the hangover? It's closer than you think | David Nutt</a></h2>
-			</div>
-
-			<div id="tabs-3">
 				<h2 class="container-header small">1.<a href=""> 60 years after the war ends, two soldiers emerge from the jungle</a></h2>
 				<h2 class="container-header small">2.<a href=""> Growing-up for goths</a></h2>
 				<h2 class="container-header small">3.<a href=""> The Craigslist killers: the full story</a></h2>
@@ -654,7 +617,7 @@ if (isCapable){
  <script src="../js/jquery.fancybox-media.min.js"> </script>
 
  <script src="../js/responsive-nav.min.js"></script>
- <script src="js/responsivegridsystem.js"></script>
+ <script src="../js/responsivegridsystem.js"></script>
 
 
 <footer id="global-footer" class="block">
@@ -682,19 +645,47 @@ if (isCapable){
 				<li><a href="">Travel</a></li>
 				<li><a href="">Environment</a></li>
 			</ul>
-			<ul class="column-1">
+			
+			<ul class="column-3 extra-products-mobile">
 				<li><a href="">Soulmates</a></li>
-			</ul>
-			<ul class="column-2">
-				<li><a href="">Soulmates</a></li>
+				<li><a href="">Jobs</a></li>
 			</ul>
 		</nav>
 
+			<ul class="editions-mobile-footer">
+				<li>Edition:</li>
+	         	<li class="nav-active"><i class="icon-circle-blank"></i> UK</li>
+	         	<li><a href="">US</a></li>
+	         	<li><a href="">AU</a></li>
+	        </ul>
+
+	        <ul class="editions-mobile-footer">
+				<li>View:</li>
+	         	<li class="nav-active"><i class="icon-circle-blank"></i> Mobile</li>
+	         	<li><a href="">Desktop</a></li>
+	        </ul>
+
+			<div class="footer-links-mobile-bottom">
+				<ul class="column-1">
+					<li><a href="">About this site</a></li>
+					<li><a href="">Contact us</a></li>
+					<li><a href="">Terms &amp; Conditions</a></li>
+					<li><a href="">Cookie Policy</a></li>
+				</ul>
+
+				<ul class="column-2">
+					<li><a href="">Help</a></li>
+					<li><a href="">Feedback</a></li>
+					<li><a href="">Privacy policy</a></li>
+				</ul>
+			</div>
+
+
 		<nav class="footer-links">
 			<ul class="column-1">
-				<li><a href="">Desktop Version</a></li>
-				<li><a href="">Contact Us</a></li>
-				<li><a href="">Privacy Policy</a></li>
+				<li><a href="">Desktop version</a></li>
+				<li><a href="">Contact us</a></li>
+				<li><a href="">Privacy policy</a></li>
 				<li><a href="">About this site</a></li>
 			</ul>
 			

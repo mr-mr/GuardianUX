@@ -333,6 +333,45 @@ body{
 		}
 	}
 
+	.lean-left{		
+		@media (min-width:$small){
+			margin:0;
+			padding:0;
+			width:100%;
+			position:relative;
+		}
+		@media (min-width:$medium){
+			&.portrait{
+				width:50%;
+				float:left;
+				padding-right:40px;
+			}
+		}
+
+		@media (min-width:$medium-large){
+			width:60%;
+			&.portrait{
+				width:30%;
+				float:left;
+				padding-right:40px;
+			}
+
+		}
+
+		@media (min-width:$large){
+			float:left;
+			width:50%;
+			padding-right:80px;
+			&.portrait{
+				width:30%;
+				margin-right:40px;
+				margin-left:130px;
+			}
+
+		}
+	}
+
+
 	.icon-stack {
 		margin-top:5px;
 		padding:5px;
@@ -540,6 +579,10 @@ body{
 
 	.column-2{
 		width:50%;
+	}
+
+	.column-3{
+		float:left;
 	}
 
 	/*  COLUMNS  ============================================================================= */

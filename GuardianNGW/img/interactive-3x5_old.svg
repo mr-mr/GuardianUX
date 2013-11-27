@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="96px" height="160px"
+	 viewBox="0 0 96 160" enable-background="new 0 0 96 160" xml:space="preserve">
+<title>image-5x3</title>
+<description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+<g id="Page_1_2_" sketch:type="MSPage">
+	<g id="Layer_1_2_" sketch:type="MSLayerGroup">
+		<g id="Page_1_3_" sketch:type="MSShapeGroup">
+			<g id="Rectangle_1_1_">
+				<polygon fill="#CCCCCC" points="96.132,0 0.132,0 0.132,160 96.132,160 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+<circle fill="#848484" cx="14.382" cy="26" r="5.5"/>
+<g>
+	<circle fill="#FFFFFF" cx="11.882" cy="132" r="3"/>
+	<circle fill="#545454" cx="11.882" cy="140" r="3"/>
+	<circle fill="#848484" cx="11.882" cy="148" r="3"/>
+	<text transform="matrix(1 0 0 1 16.6318 133)" fill="#424242" font-family="'HelveticaNeue'" font-size="5">no</text>
+	<text transform="matrix(1 0 0 1 16.6318 141)" fill="#424242" font-family="'HelveticaNeue'" font-size="5">yes</text>
+	<text transform="matrix(1 0 0 1 16.6318 149)" fill="#424242" font-family="'HelveticaNeue'" font-size="5">maybe</text>
+</g>
+<text transform="matrix(1 0 0 1 21.9556 26)" fill="#424242" font-family="'DE4DisplayEgyptianMedium'" font-size="7">UK</text>
+<text transform="matrix(1 0 0 1 21.9556 31)" fill="#424242" font-family="'DE4DisplayEgyptianMedium'" font-size="4">1125 responses</text>
+<g>
+	<path fill="#848484" d="M48.132,45.5c-21.677,0-39.25,17.573-39.25,39.25S26.455,124,48.132,124c21.678,0,39.25-17.573,39.25-39.25
+		S69.81,45.5,48.132,45.5z M48.132,102.75c-9.389,0-17-7.835-17-17.5s7.611-17.5,17-17.5s17,7.835,17,17.5
+		S57.521,102.75,48.132,102.75z"/>
+	<path fill="#FFFFFF" d="M86.782,91.55c0.387-2.21,0.6-4.479,0.6-6.8c0-9.558-3.42-18.315-9.098-25.123L61.267,74.142
+		c2.416,3.021,3.865,6.89,3.865,11.108c0,0.74-0.061,1.465-0.146,2.182L86.782,91.55z"/>
+	<path fill="#545454" d="M61.267,74.142l17.019-14.515C70.549,50.833,60.883,45.5,48.132,45.5v22.25
+		C53.233,67.75,58.149,70.479,61.267,74.142z"/>
+</g>
+<rect x="20.351" fill="#848484" width="18.709" height="9.667"/>
+<rect x="39.351" fill="#848484" width="18.709" height="9.667"/>
+<rect x="58.351" fill="#848484" width="18.709" height="9.667"/>
+<rect x="77.351" fill="#848484" width="18.709" height="9.667"/>
+<line fill="none" stroke="#424242" stroke-miterlimit="10" x1="0" y1="0.567" x2="20.409" y2="0.567"/>
+<text transform="matrix(1 0 0 1 1.2041 4.834)" fill="#424242" font-family="'DE4DisplayEgyptianMedium'" font-size="4">UK</text>
+<text transform="matrix(1 0 0 1 21.2041 4.834)" fill="#CCCCCC" font-family="'DE4DisplayEgyptianMedium'" font-size="4">Germany</text>
+<text transform="matrix(1 0 0 1 41.2041 4.834)" fill="#CCCCCC" font-family="'DE4DisplayEgyptianMedium'" font-size="4">France</text>
+<text transform="matrix(1 0 0 1 61.2041 4.834)" fill="#CCCCCC" font-family="'DE4DisplayEgyptianMedium'" font-size="4">Italy</text>
+<text transform="matrix(1 0 0 1 81.2041 4.834)" fill="#CCCCCC" font-family="'DE4DisplayEgyptianMedium'" font-size="4">Spain</text>
+</svg>

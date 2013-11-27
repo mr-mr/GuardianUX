@@ -21,7 +21,8 @@ $img-path: "../img";
 $img-extension : ".svg";
 $guardian-logo-header : "#{$img-path}/guardian-logo-4#{$img-extension}";
 $guardian-logo : "#{$img-path}/guardian-logo#{$img-extension}";
-$g-logo : "#{$img-path}/g-logo#{$img-extension}";
+$ux-logo : "#{$img-path}/g-logo#{$img-extension}";
+$g-only-logo : "#{$img-path}/guardian-logo-2#{$img-extension}";
 
 $img-landscape:"#{$img-path}/image-5x3#{$img-extension}";
 
@@ -76,8 +77,8 @@ $img-landscape:"#{$img-path}/image-5x3#{$img-extension}";
 	}
 }
 
-.g-logo{
-	background: url($g-logo) no-repeat;
+.ux-logo{
+	background: url($ux-logo) no-repeat;
 	background-size:100% auto;
 	width:100px;
 	height:90px;
@@ -90,6 +91,20 @@ $img-landscape:"#{$img-path}/image-5x3#{$img-extension}";
 	@media (min-width:$large){
 		margin:0;
 	}
+}
+
+.g-only-logo{
+	background: url($g-only-logo) no-repeat center;
+	background-size:40%;
+	background-color:$link; 
+	padding-left:20px;
+	float:left;
+	top:0;
+	left:0;
+	//position:relative;
+	width:60px;
+	height:39px;
+	//margin:0 0 0 30px;
 }
 
 img {
@@ -124,13 +139,26 @@ img {
 }
 
 .media-button{
-	margin:137px 0 0 0;
+	@extend button;
+	position:absolute;
+	bottom:1px;
+	z-index:1000;
+	margin:0;
+	a{
+		width:100px;
+		height:50px;
+	}
+
 }
 
 .icon-play{
 	position:absolute;
 	margin:0 0 0 -35px;
 	padding:10px 0px 7px 10px;
+	@media (max-width:$medium){
+		float:right;
+		left:30px;
+	}
 }
 
 .icon-volume-up{
@@ -141,7 +169,7 @@ img {
 
 iframe {
 	width:100%;
-	height:100%;
+	//height:100%;
 	border:none;
 	margin-top:50px;
 	padding:0;
@@ -157,6 +185,10 @@ iframe {
 	height:100%;
 	z-index:2000;
 	background:$dark-grey;
+}
+
+.interactive{
+	width:200px;
 }
 
 .fronts-image{

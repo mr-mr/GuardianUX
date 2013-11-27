@@ -6,8 +6,8 @@ function onScroll() {
 	currentPosition = window.scrollY;
  	currentPosition >= origOffsetY && currentPosition <= endY ? showy.classList.add('ears-nav-open') :
                                   								showy.classList.remove('ears-nav-open');
-}
 
+}
 // var stickyAD = document.querySelector('aside.right');
 // var origOffsetY = 390;
 

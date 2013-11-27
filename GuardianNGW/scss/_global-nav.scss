@@ -98,6 +98,24 @@
 	width:100%;
 }
 
+.editions-mobile-footer {
+	display:none;
+	@media (max-width:$medium){
+		@include clear-fix;
+		display:block;
+		li{
+		display:inline;
+		margin-right:10px;
+		}
+		padding:20px;
+		background:$light-grey;
+		border-bottom:1px solid $semi-grey;
+		width:100%;
+		left:0;
+		right:0;
+	}
+}
+
 
 .icons{
 	float:left;
@@ -170,6 +188,12 @@ nav select {
 	position:absolute;
 	width:100%;
 	z-index:10;
+	@media (min-width:$small){
+		display:block;
+	}
+	@media (min-width:$medium){
+		display:none;
+	}
 }
 
 .toggle-menu-mobile{
@@ -216,5 +240,11 @@ nav.message_list { position: relative }
 	}
 	a{
 		color:#fff;
+	}
+}
+
+.go-home{
+	a:link{
+		background:$link;
 	}
 }
