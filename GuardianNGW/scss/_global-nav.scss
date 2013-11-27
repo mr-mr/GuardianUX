@@ -188,6 +188,12 @@ nav select {
 	position:absolute;
 	width:100%;
 	z-index:10;
+	@media (min-width:$small){
+		display:block;
+	}
+	@media (min-width:$medium){
+		display:none;
+	}
 }
 
 .toggle-menu-mobile{
@@ -234,5 +240,11 @@ nav.message_list { position: relative }
 	}
 	a{
 		color:#fff;
+	}
+}
+
+.go-home{
+	a:link{
+		background:$link;
 	}
 }

@@ -3,12 +3,12 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="159.868px" height="96px"
-	 viewBox="31.504 -31.5 159.868 96" enable-background="new 31.504 -31.5 159.868 96" xml:space="preserve">
+	 viewBox="0 0 159.868 96" enable-background="new 0 0 159.868 96" xml:space="preserve">
 <g id="Page_1_1_" sketch:type="MSPage">
 	<g id="Layer_1_1_" sketch:type="MSLayerGroup">
 		<g id="Page_1" sketch:type="MSShapeGroup">
 			<g id="Rectangle_1">
-				<polygon fill="#CCCCCC" points="31.372,-31.5 31.372,64.5 191.372,64.5 191.372,-31.5 				"/>
+				<polygon fill="#CCCCCC" points="0,0 0,96 160,96 160,0 				"/>
 			</g>
 		</g>
 	</g>
@@ -16,12 +16,23 @@
 <title>image-5x3</title>
 <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
 <g>
-	<path fill="#848484" d="M112.902-18.084c-18.459,0-33.424,14.964-33.424,33.423s14.965,33.423,33.424,33.423
-		s33.424-14.964,33.424-33.423S131.361-18.084,112.902-18.084z M112.902,30.667c-7.995,0-14.477-6.672-14.477-14.902
-		s6.481-14.902,14.477-14.902s14.477,6.671,14.477,14.902S120.897,30.667,112.902,30.667z"/>
-	<path fill="#FFFFFF" d="M145.814,21.129c0.329-1.882,0.512-3.814,0.512-5.791c0-8.139-2.912-15.596-7.748-21.394l-14.491,12.36
-		c2.057,2.573,3.292,5.867,3.292,9.459c0,0.63-0.051,1.247-0.124,1.857L145.814,21.129z"/>
-	<path fill="#545454" d="M124.087,6.306l14.491-12.36c-6.587-7.488-14.818-12.03-25.676-12.03V0.863
-		C117.247,0.863,121.434,3.186,124.087,6.306z"/>
+	<path fill="#848484" d="M99.53,13.416c-18.459,0-33.424,14.964-33.424,33.423S81.071,80.262,99.53,80.262
+		s33.425-14.964,33.425-33.423S117.989,13.416,99.53,13.416z M99.53,62.167c-7.995,0-14.478-6.672-14.478-14.901
+		c0-8.23,6.481-14.903,14.478-14.903s14.478,6.671,14.478,14.903C114.007,55.496,107.525,62.167,99.53,62.167z"/>
+	<path fill="#FFFFFF" d="M132.442,52.629c0.329-1.882,0.513-3.814,0.513-5.791c0-8.139-2.912-15.596-7.748-21.394l-14.492,12.36
+		c2.058,2.573,3.293,5.867,3.293,9.459c0,0.629-0.051,1.246-0.125,1.856L132.442,52.629z"/>
+	<path fill="#545454" d="M110.714,37.806l14.492-12.36c-6.588-7.488-14.818-12.03-25.677-12.03v18.947
+		C103.875,32.363,108.062,34.686,110.714,37.806z"/>
 </g>
+<circle fill="#848484" cx="13.316" cy="12" r="5.5"/>
+<g>
+	<circle fill="#FFFFFF" cx="10.816" cy="68" r="3"/>
+	<circle fill="#545454" cx="10.816" cy="76" r="3"/>
+	<circle fill="#848484" cx="10.816" cy="84" r="3"/>
+	<text transform="matrix(1 0 0 1 15.5659 69)" fill="#424242" font-family="'HelveticaNeue'" font-size="5">no</text>
+	<text transform="matrix(1 0 0 1 15.5659 77)" fill="#424242" font-family="'HelveticaNeue'" font-size="5">yes</text>
+	<text transform="matrix(1 0 0 1 15.5659 85)" fill="#424242" font-family="'HelveticaNeue'" font-size="5">maybe</text>
+</g>
+<text transform="matrix(1 0 0 1 20.8896 12)" fill="#424242" font-family="'DE4DisplayEgyptianMedium'" font-size="7">UK</text>
+<text transform="matrix(1 0 0 1 20.8896 17)" fill="#424242" font-family="'DE4DisplayEgyptianMedium'" font-size="4">1125 responses</text>
 </svg>

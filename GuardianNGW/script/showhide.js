@@ -1,3 +1,4 @@
+//$(".extras-mobile").hide();
 $(".hidden").hide();
 
 $(".showhide").click(function(e){
