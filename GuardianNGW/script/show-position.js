@@ -1,6 +1,6 @@
 var showy = document.querySelector('.ears-nav');
 var origOffsetY = 1400;
-var endY = 2800;
+var endY = 3300;
 
 function onScroll() {
 	currentPosition = window.scrollY;
@@ -22,10 +22,11 @@ $("#nav-global-scroll").hide();
 
 $(document).scroll(function () {
     var y = $(this).scrollTop();
-    if (y >= 500) {
+
+    if (y >= 1300 && window.innerWidth > 360) {
         $('#nav-global-scroll').show();
        // $("#nav-global-scroll").css("margin-top","0");
-    } else {
+    } else  {
         $('#nav-global-scroll').hide();
     }
 });
