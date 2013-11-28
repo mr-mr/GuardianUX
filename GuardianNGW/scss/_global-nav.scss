@@ -248,3 +248,37 @@ nav.message_list { position: relative }
 		background:$link;
 	}
 }
+
+
+#nav-global-scroll{
+  display:block;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  background:#fff;
+  z-index:3000;
+  height: 2.4rem;
+  flex: 1 1 auto;
+}
+
+#nav-global-scroll {
+  a:link {
+  font-size:18px;
+  text-decoration: none;
+  //margin-right: 0.7rem;
+  padding: 10px;
+  float: left;
+  color: #333;
+  }
+  a:hover{color:$link-white; background:$semi-grey; padding:10px; text-decoration: none;
+  }
+  
+}
+.nav-scroll{
+  -webkit-box-shadow: 0px 7px 15px rgba(50, 50, 50, 0.35);
+  -moz-box-shadow:    0px 7px 15px rgba(50, 50, 50, 0.35);
+  box-shadow:         0px 7px 15px rgba(50, 50, 50, 0.35);
+  //border-bottom:10px solid $light-grey;
+
+}
