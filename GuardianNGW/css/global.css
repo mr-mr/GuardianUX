@@ -690,13 +690,21 @@
   display: block; }
 
 #nav-global-scroll {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  background: #fff;
   z-index: 3000;
   height: 2.4rem;
   flex: 1 1 auto; }
+  @media (max-width: 640px) {
+    #nav-global-scroll {
+      display: none; } }
+  @media (max-width: 960px) {
+    #nav-global-scroll {
+      height: 3em; } }
 
 #nav-global-scroll a:link {
   font-size: 18px;
