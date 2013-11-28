@@ -1,4 +1,3 @@
-//$(".extras-mobile").hide();
 $(".hidden").hide();
 
 $(".showhide").click(function(e){
@@ -10,6 +9,8 @@ $(".showhide").click(function(e){
 	//alert('This button works');
 	
  });
+
+
 
 
 

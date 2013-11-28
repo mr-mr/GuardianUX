@@ -16,4 +16,18 @@ function onScroll() {
 //                                   stickyAD.classList.remove('fixed.advert');
 // }
 
+//$("#nav-global-scroll").css("margin-top","-50px");
+$("#nav-global-scroll").hide();
+
+
+$(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y >= 500) {
+        $('#nav-global-scroll').show();
+       // $("#nav-global-scroll").css("margin-top","0");
+    } else {
+        $('#nav-global-scroll').hide();
+    }
+});
+
 document.addEventListener('scroll', onScroll);
