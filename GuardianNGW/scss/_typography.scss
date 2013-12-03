@@ -94,7 +94,8 @@ li {
 	list-style-type: square;
 	font-size:(13 / 14) * 1em;
 	line-height:1.6em;
-	text-decoration:none
+	text-decoration:none;
+	color:$dark-grey;
 }
 
 
@@ -222,11 +223,11 @@ sub {
 }
 
 .note {
-  background: #f9ff9b;
-  padding-left: 15px;
-  border-left: 4px solid #dae800;
-  width: 97%;
-  margin-bottom: 10px; 
+  //background: #f9ff9b;
+  //padding-left: 5px;
+  border-left: 3px solid $semi-grey;
+  width: 90%;
+  margin:0 0 10px 0; 
   p{
   	font-size:14px;
   	color:$copy;
@@ -240,6 +241,11 @@ sub {
 .container-header {
 	font-size:20px;
 	font-family:$serif-bold;
+	&.extralarge{
+		font-size:(34 / 14) * 1em;
+		font-family:$serif;
+		line-height: 24px;
+	}
 	&.large{
 		font-size:(24 / 14) * 1em;
 		font-family:$serif;
