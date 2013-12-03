@@ -11,13 +11,14 @@
 }
 
 #nav-global {
-  a:link {
+  a:link, a:visited {
   font-size:18px;
   text-decoration: none;
   //margin-right: 0.7rem;
   padding: 10px;
   float: left;
-  color: #333;
+  color: #fff;
+  //background:$link-hover;
   }
   a:hover{color:$link-white; background:$semi-grey; padding:10px; text-decoration: none;
   }
@@ -31,14 +32,14 @@
   align-items: left;
   min-width: 4rem;
   position: relative;
-  background: #214583;
+  background: $semi-grey;
   float:right;
   margin-top: -48px;
 }
 
 #menu aside{
   visibility: hidden; /* toggled by JavaScript */
-  background: #214583;
+  background: $semi-grey;
   width: 13rem;
   padding: 14px 10px 10px 10px;
   position: absolute;

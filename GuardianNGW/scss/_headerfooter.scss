@@ -31,18 +31,20 @@
 // --------------------------------------------------------------------------------------------------------------------------------------------
 #global-header{
 	@include background-container;
-	background:$link-white;
-	height:100%;
+	background:$link;
+	//height:100%;
 	width:100%;
-	max-width:1200px;
+	//max-width:1200px;
 	margin:0 auto;
-	padding-bottom:5px;
+	padding-bottom:-10px;
+	padding-top:$gs-gutter;
 	padding-left:$gs-gutter;
 	padding-right:$gs-gutter;
 
 	@media (max-width:$medium){
-		background:$link;
+		//background:$link;
 		height:60px;
+		padding-top:0;
 	}
 }
 
@@ -74,11 +76,13 @@
 	margin:-3px 0 0 30px ;
 
 	@media (min-width:$small){
-			margin:-3px 0 0 0;		
+			margin:-3px 0 0 0;	
+			float:left;	
 	}
 
 	@media (min-width:$large){
-		margin:-3px 0 0 30px ;
+		margin:-55px 0 0 30px ;
+		float:right;
 	}
 }
 
@@ -185,7 +189,7 @@ footer{
 	//height:100%;
 	&.block{
 		width:100%;
-		max-width:1200px;
+		//max-width:1200px;
 	}
 	&.links{
 		padding:10px;

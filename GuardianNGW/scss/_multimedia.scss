@@ -19,7 +19,7 @@
 
 $img-path: "../img";
 $img-extension : ".svg";
-$guardian-logo-header : "#{$img-path}/guardian-logo-4#{$img-extension}";
+$guardian-logo-header : "#{$img-path}/guardian-logo#{$img-extension}";
 $guardian-logo : "#{$img-path}/guardian-logo#{$img-extension}";
 $ux-logo : "#{$img-path}/g-logo#{$img-extension}";
 $g-only-logo : "#{$img-path}/guardian-logo-2#{$img-extension}";
@@ -36,7 +36,7 @@ $img-landscape:"#{$img-path}/image-5x3#{$img-extension}";
 // 3.0 general
 
 .global-logo{
-	float:right;
+	//float:right;
 	
 	&.footer{
 
@@ -63,7 +63,7 @@ $img-landscape:"#{$img-path}/image-5x3#{$img-extension}";
 	&.header{
 		background: url($guardian-logo-header) no-repeat;
 		background-size:100% auto;
-		width:350px;
+		width:250px;
 		height:62px;
 		margin:-20px 0 0 0;
 		@media (max-width:$medium){
