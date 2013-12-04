@@ -14,13 +14,14 @@
 
 @import "colors";
 @import "breakpoints";
+@import "links";
 
 // 2.0 variables + mixins
 // --------------------------------------------------------------------------------------------------------------------------------------------
 
 @mixin globalNav{
-	max-width:1200px;
-	//height:100%;
+	//max-width:1200px;
+	height:32px;
 	left:0;
 	right:0;
 	display:block;
@@ -155,12 +156,14 @@ input {
 .nav-extras{
 	padding:5px;
 	float:right;
-	//background:$code-grey;
-	//margin-left:30px;
+	@include link-white;
 	li{
 		list-style-type: none;
 		display:inline;
 		margin-right:5px;
+		border-right: 1px solid $link;
+		color:#fff;
+		padding-right:10px;
 	}
 	@media (max-width:$medium){
 		display:none;
@@ -264,18 +267,23 @@ nav.message_list { position: relative }
 }
 
 #nav-global-scroll {
-  a:link {
+  a:link, a:visited {
   font-size:18px;
   text-decoration: none;
   //margin-right: 0.7rem;
   padding: 10px;
   float: left;
-  color: #333;
+  //color: $link;
   }
-  a:hover{color:$link-white; background:$semi-grey; padding:10px; text-decoration: none;
+  a:hover{color:#fff; background:$semi-grey; padding:10px; text-decoration: none;
   }
   
 }
+
+.home-only{
+	background:$link;
+}
+
 .nav-scroll{
   -webkit-box-shadow: 0px 7px 15px rgba(50, 50, 50, 0.35);
   -moz-box-shadow:    0px 7px 15px rgba(50, 50, 50, 0.35);

@@ -15,7 +15,14 @@
 @import "colors";
 
 // --------------------------------------------------
-// 2.0 variables
+// 2.0 variables & mixins
+
+@mixin link-white{
+	a:link, a:visited{
+	color:#fff;
+	}
+	a:hover{}
+}
 
 
 // --------------------------------------------------
@@ -85,11 +92,14 @@ a {
 }
 
 .back-to-top-nav{
-	a:link{
+	a:link, a:visited{
 		padding-right:5px;
-		color:#fff;
+		//color:#fff;
 	}
+}
 
+.return-to-home{
+	a:link{width:100%;}
 }
 
 .button-read-more{

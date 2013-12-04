@@ -2137,7 +2137,6 @@ br:last-child {
 #home {
   min-width: 280px;
   max-width: 1200px;
-  height: 100%;
   background: #fff;
   position: auto;
   margin: 0 auto;
@@ -3783,7 +3782,6 @@ br:last-child {
 #home {
   min-width: 280px;
   max-width: 1200px;
-  height: 100%;
   background: #fff;
   position: auto;
   margin: 0 auto;
@@ -5396,8 +5394,72 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 .icon-renren:before {
   content: "\f18b"; }
 
+a:link {
+  color: #234a81;
+  text-decoration: none;
+  font-weight: normal; }
+a:hover {
+  color: #132745;
+  text-decoration: underline; }
+a:visited {
+  color: #2e61a9;
+  text-decoration: none; }
+
+.button a:link, .button a:visited {
+  color: #fff;
+  background: #234a81;
+  padding: 15px 35px 15px 35px;
+  text-decoration: none;
+  z-index: 200; }
+.button a:hover {
+  background: #132745; }
+.button.center {
+  margin: 0 auto; }
+@media (max-width: 640px) {
+  .button {
+    font-size: 1em; }
+    .button a:link, .button a:visited {
+      width: 100%;
+      padding: 15px 35px 15px 15px; } }
+
+.button-home a:link, .button-home a:visited {
+  color: #252525;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#999999));
+  padding: 10px 30px 10px 30px;
+  text-decoration: none; }
+.button-home a:hover {
+  color: white;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4485f5), to(#0b50c8)); }
+
+.button-share {
+  display: inline;
+  margin: 2px; }
+
+.button-inactive {
+  float: left;
+  margin: 10px 10px 30px 0;
+  color: #999;
+  background: #cccccc;
+  padding: 15px 35px 15px 35px;
+  text-decoration: none; }
+
+.back-to-top-nav a:link, .back-to-top-nav a:visited {
+  padding-right: 5px; }
+
+.return-to-home a:link {
+  width: 100%; }
+
+.button-read-more {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px; }
+  .button-read-more a {
+    left: 0;
+    right: 0; }
+
 #globalnav-container {
-  max-width: 1200px;
+  height: 32px;
   left: 0;
   right: 0;
   display: block;
@@ -5405,7 +5467,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   margin: 5px auto; }
 
 #globalnav-links {
-  max-width: 1200px;
+  height: 32px;
   left: 0;
   right: 0;
   display: block;
@@ -5443,7 +5505,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   padding: 5px; }
 
 .editions {
-  max-width: 1200px;
+  height: 32px;
   left: 0;
   right: 0;
   display: block;
@@ -5508,10 +5570,15 @@ input {
 .nav-extras {
   padding: 5px;
   float: right; }
+  .nav-extras a:link, .nav-extras a:visited {
+    color: #fff; }
   .nav-extras li {
     list-style-type: none;
     display: inline;
-    margin-right: 5px; }
+    margin-right: 5px;
+    border-right: 1px solid #234a81;
+    color: #fff;
+    padding-right: 10px; }
   @media (max-width: 640px) {
     .nav-extras {
       display: none; } }
@@ -5592,17 +5659,19 @@ nav.message_list {
   height: 2.4rem;
   flex: 1 1 auto; }
 
-#nav-global-scroll a:link {
+#nav-global-scroll a:link, #nav-global-scroll a:visited {
   font-size: 18px;
   text-decoration: none;
   padding: 10px;
-  float: left;
-  color: #333; }
+  float: left; }
 #nav-global-scroll a:hover {
-  color: white;
+  color: #fff;
   background: #a6a6a6;
   padding: 10px;
   text-decoration: none; }
+
+.home-only {
+  background: #234a81; }
 
 .nav-scroll {
   -webkit-box-shadow: 0px 7px 15px rgba(50, 50, 50, 0.35);
@@ -5723,15 +5792,13 @@ nav.message_list {
   color: #333333;
   text-rendering: optimizeLegibility;
   background: #cccccc;
-  background: white;
-  height: 100%; }
+  background: white; }
 
 .logo-block.footer {
   background: #234a81;
   height: 49px;
   padding: 15px; }
 .logo-block.header {
-  height: 88px;
   padding: 15px;
   -webkit-border-bottom-right-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -5745,7 +5812,7 @@ nav.message_list {
     .back-to-top {
       margin: -3px 0 0 0;
       float: left; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 640px) {
     .back-to-top {
       margin: -55px 0 0 30px;
       float: right; } }
@@ -5880,7 +5947,6 @@ h3 {
     clear: both; }
 
 h4 {
-  font-size: 15;
   font-family: "guardian-bold";
   margin: 5,0,5,0; }
 
@@ -5937,12 +6003,11 @@ small {
 
 .work-landing, .sub, .summary, .body-copy, .scrolltoview {
   font-family: "guardian-regular";
-  font-size: 1.71429em;
-  font-weight: bold; }
+  font-size: 1.71429em; }
 
 .sub {
   font-size: 1.71429em;
-  margin-top: -15px;
+  margin-top: -5px;
   color: #234a81; }
 
 sub {
@@ -5971,11 +6036,29 @@ sub {
 
 .summary, .body-copy {
   font-size: 1.71429em;
-  color: #333333; }
-  .summary.article, .article.body-copy {
-    text-align: left;
-    margin-top: -20px;
-    font-size: 18px; }
+  color: #a6a6a6;
+  font-weight: light; }
+  .summary li, .body-copy li {
+    list-style-type: none;
+    color: #a6a6a6; }
+  .summary li:before, .body-copy li:before {
+    content: "·";
+    color: #a6a6a6;
+    font-size: 120px;
+    vertical-align: middle;
+    line-height: 20px; }
+  @media (min-width: 320px) {
+    .summary.article, .article.body-copy {
+      margin: -15px 0 -10px 0;
+      font-size: 14px; } }
+  @media (min-width: 640px) {
+    .summary.article, .article.body-copy {
+      margin: -25px 0 10px 0;
+      font-size: 18px; } }
+  @media (min-width: 960px) {
+    .summary.article, .article.body-copy {
+      margin: -25px 0 20px 0;
+      font-size: 18px; } }
 
 .body-copy {
   font-size: 0.64286em;
@@ -6070,7 +6153,6 @@ body {
 #wrapper {
   min-width: 280px;
   max-width: 1200px;
-  height: 100%;
   background: #fff;
   position: auto;
   margin: 0 auto;
@@ -6108,7 +6190,8 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 940px; }
+  width: 940px;
+  height: 100%; }
 
 .container-controls {
   text-align: center;
@@ -6131,7 +6214,6 @@ body {
 
 .container-popular {
   max-width: 1200px;
-  height: 100%;
   position: relative;
   margin-top: 10px;
   padding: 0; }
@@ -6246,16 +6328,19 @@ aside {
       margin: 0px -10px 0 0; } }
   @media (min-width: 320px) {
     aside.header {
-      margin: 30px 0 30px 0; } }
+      margin: 20px 0 45px 0; } }
   @media (min-width: 640px) {
     aside.header {
-      margin: 30px 0 30px 0; } }
+      margin: 30px 0 45px 0; } }
   @media (min-width: 960px) {
     aside.header {
       margin-top: 30px; } }
   @media (min-width: 1200px) {
     aside.header {
-      margin-top: 30px; } }
+      font-size: 20;
+      margin-top: -25px;
+      width: 200px;
+      float: left; } }
 
 @media (min-width: 320px) {
   .lean-left {
@@ -6896,9 +6981,11 @@ a:visited {
   padding: 15px 35px 15px 35px;
   text-decoration: none; }
 
-.back-to-top-nav a:link {
-  padding-right: 5px;
-  color: #fff; }
+.back-to-top-nav a:link, .back-to-top-nav a:visited {
+  padding-right: 5px; }
+
+.return-to-home a:link {
+  width: 100%; }
 
 .button-read-more {
   width: 100%;
@@ -6926,11 +7013,11 @@ a:visited {
     .global-logo.footer {
       margin: 0px 50px 0 0; } }
 .global-logo.header {
-  background: url("../img/guardian-logo.svg") no-repeat;
+  background: url("../img/guardian-logo-5.svg") no-repeat;
   background-size: 100% auto;
-  width: 250px;
-  height: 62px;
-  margin: -20px 0 0 0; }
+  width: 260px;
+  height: 78px;
+  margin: -10px 0 10px 0; }
   @media (max-width: 640px) {
     .global-logo.header {
       background: url("../img/guardian-logo.svg") no-repeat;
@@ -6939,6 +7026,12 @@ a:visited {
       width: 120px;
       height: 53px;
       margin: 5px 0 0 -20px; } }
+.global-logo.section {
+  background: url("../img/news-logo.svg") no-repeat;
+  background-size: 100% auto;
+  width: 280px;
+  height: 88px;
+  margin: -10px 0 10px 0; }
 
 .ux-logo {
   background: url("../img/g-logo.svg") no-repeat;
@@ -6956,7 +7049,7 @@ a:visited {
 .g-only-logo {
   background: url("../img/guardian-logo-2.svg") no-repeat center;
   background-size: 40%;
-  background-color: #234a81;
+  background-color: #132745;
   padding-left: 20px;
   float: left;
   top: 0;
@@ -8525,11 +8618,11 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
     .global-logo.footer {
       margin: 0px 50px 0 0; } }
 .global-logo.header {
-  background: url("../img/guardian-logo.svg") no-repeat;
+  background: url("../img/guardian-logo-5.svg") no-repeat;
   background-size: 100% auto;
-  width: 250px;
-  height: 62px;
-  margin: -20px 0 0 0; }
+  width: 260px;
+  height: 78px;
+  margin: -10px 0 10px 0; }
   @media (max-width: 640px) {
     .global-logo.header {
       background: url("../img/guardian-logo.svg") no-repeat;
@@ -8538,6 +8631,12 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
       width: 120px;
       height: 53px;
       margin: 5px 0 0 -20px; } }
+.global-logo.section {
+  background: url("../img/news-logo.svg") no-repeat;
+  background-size: 100% auto;
+  width: 280px;
+  height: 88px;
+  margin: -10px 0 10px 0; }
 
 .ux-logo {
   background: url("../img/g-logo.svg") no-repeat;
@@ -8555,7 +8654,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 .g-only-logo {
   background: url("../img/guardian-logo-2.svg") no-repeat center;
   background-size: 40%;
-  background-color: #234a81;
+  background-color: #132745;
   padding-left: 20px;
   float: left;
   top: 0;
@@ -8759,7 +8858,6 @@ h3 {
     clear: both; }
 
 h4 {
-  font-size: 15;
   font-family: "guardian-bold";
   margin: 5,0,5,0; }
 
@@ -8816,12 +8914,11 @@ small {
 
 .work-landing, .sub, .summary, .body-copy, .scrolltoview {
   font-family: "guardian-regular";
-  font-size: 1.71429em;
-  font-weight: bold; }
+  font-size: 1.71429em; }
 
 .sub {
   font-size: 1.71429em;
-  margin-top: -15px;
+  margin-top: -5px;
   color: #234a81; }
 
 sub {
@@ -8850,11 +8947,29 @@ sub {
 
 .summary, .body-copy {
   font-size: 1.71429em;
-  color: #333333; }
-  .summary.article, .article.body-copy {
-    text-align: left;
-    margin-top: -20px;
-    font-size: 18px; }
+  color: #a6a6a6;
+  font-weight: light; }
+  .summary li, .body-copy li {
+    list-style-type: none;
+    color: #a6a6a6; }
+  .summary li:before, .body-copy li:before {
+    content: "·";
+    color: #a6a6a6;
+    font-size: 120px;
+    vertical-align: middle;
+    line-height: 20px; }
+  @media (min-width: 320px) {
+    .summary.article, .article.body-copy {
+      margin: -15px 0 -10px 0;
+      font-size: 14px; } }
+  @media (min-width: 640px) {
+    .summary.article, .article.body-copy {
+      margin: -25px 0 10px 0;
+      font-size: 18px; } }
+  @media (min-width: 960px) {
+    .summary.article, .article.body-copy {
+      margin: -25px 0 20px 0;
+      font-size: 18px; } }
 
 .body-copy {
   font-size: 0.64286em;
@@ -8988,9 +9103,11 @@ a:visited {
   padding: 15px 35px 15px 35px;
   text-decoration: none; }
 
-.back-to-top-nav a:link {
-  padding-right: 5px;
-  color: #fff; }
+.back-to-top-nav a:link, .back-to-top-nav a:visited {
+  padding-right: 5px; }
+
+.return-to-home a:link {
+  width: 100%; }
 
 .button-read-more {
   width: 100%;
@@ -9183,9 +9300,11 @@ a:visited {
   padding: 15px 35px 15px 35px;
   text-decoration: none; }
 
-.back-to-top-nav a:link {
-  padding-right: 5px;
-  color: #fff; }
+.back-to-top-nav a:link, .back-to-top-nav a:visited {
+  padding-right: 5px; }
+
+.return-to-home a:link {
+  width: 100%; }
 
 .button-read-more {
   width: 100%;
@@ -9403,7 +9522,6 @@ body .ui-tooltip {
 .nav-container {
   min-width: 280px;
   max-width: 1200px;
-  height: 100%;
   background: #fff;
   position: auto;
   margin: 0 auto;

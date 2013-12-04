@@ -77,7 +77,7 @@ h3 {
 }
 
 h4 {
-	font-size:15;
+	//font-size:15;
 	font-family:$serif-bold;
 	margin:5,0,5,0;
 	//float:left;
@@ -152,13 +152,13 @@ small{
 	
 	font-family: $serif; 
 	font-size:(24 / 14) * 1em;
-	font-weight:bold;
+	//font-weight:bold;
 }
 
 .sub {
 	@extend .work-landing;
 	font-size:(24 / 14) * 1em;
-	margin-top:-15px;
+	margin-top:-5px;
 	color:$link;
 }
 
@@ -201,11 +201,36 @@ sub {
 .summary {
 	@extend .work-landing;
 	font-size:(24 / 14) * 1em;
-	color:$copy;
+	color:$semi-grey;
+	font-weight:light;
+	li {
+		list-style-type: none;
+		color:$semi-grey;
+	}
+	li:before {
+        content:"·";
+        color:$semi-grey;
+        font-size:120px;
+        vertical-align:middle;
+        line-height:20px;
+    }
+
 	&.article{
-		text-align:left;
-		margin-top:-20px;
-		font-size:18px;
+		//text-align:left;
+		@media (min-width:$small){
+			margin:-15px 0 -10px 0;
+			font-size:14px;
+		}
+
+		@media (min-width:$medium){
+			margin:-25px 0 10px 0;
+			font-size:18px;
+		}
+
+		@media (min-width:$medium-large){
+			margin:-25px 0 20px 0;
+			font-size:18px;
+		}
 	}
 }
 
