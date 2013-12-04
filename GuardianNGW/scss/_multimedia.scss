@@ -64,7 +64,7 @@ $img-landscape:"#{$img-path}/image-5x3#{$img-extension}";
 	&.header{
 		background: url($guardian-logo-header) no-repeat;
 		background-size:100% auto;
-		width:280px;
+		width:260px;
 		height:78px;
 		margin:-10px 0 10px 0;
 		@media (max-width:$medium){

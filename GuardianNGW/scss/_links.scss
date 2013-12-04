@@ -15,7 +15,14 @@
 @import "colors";
 
 // --------------------------------------------------
-// 2.0 variables
+// 2.0 variables & mixins
+
+@mixin link-white{
+	a:link, a:visited{
+	color:#fff;
+	}
+	a:hover{}
+}
 
 
 // --------------------------------------------------

@@ -5394,6 +5394,70 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 .icon-renren:before {
   content: "\f18b"; }
 
+a:link {
+  color: #234a81;
+  text-decoration: none;
+  font-weight: normal; }
+a:hover {
+  color: #132745;
+  text-decoration: underline; }
+a:visited {
+  color: #2e61a9;
+  text-decoration: none; }
+
+.button a:link, .button a:visited {
+  color: #fff;
+  background: #234a81;
+  padding: 15px 35px 15px 35px;
+  text-decoration: none;
+  z-index: 200; }
+.button a:hover {
+  background: #132745; }
+.button.center {
+  margin: 0 auto; }
+@media (max-width: 640px) {
+  .button {
+    font-size: 1em; }
+    .button a:link, .button a:visited {
+      width: 100%;
+      padding: 15px 35px 15px 15px; } }
+
+.button-home a:link, .button-home a:visited {
+  color: #252525;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#999999));
+  padding: 10px 30px 10px 30px;
+  text-decoration: none; }
+.button-home a:hover {
+  color: white;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4485f5), to(#0b50c8)); }
+
+.button-share {
+  display: inline;
+  margin: 2px; }
+
+.button-inactive {
+  float: left;
+  margin: 10px 10px 30px 0;
+  color: #999;
+  background: #cccccc;
+  padding: 15px 35px 15px 35px;
+  text-decoration: none; }
+
+.back-to-top-nav a:link, .back-to-top-nav a:visited {
+  padding-right: 5px; }
+
+.return-to-home a:link {
+  width: 100%; }
+
+.button-read-more {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px; }
+  .button-read-more a {
+    left: 0;
+    right: 0; }
+
 #globalnav-container {
   height: 32px;
   left: 0;
@@ -5506,10 +5570,15 @@ input {
 .nav-extras {
   padding: 5px;
   float: right; }
+  .nav-extras a:link, .nav-extras a:visited {
+    color: #fff; }
   .nav-extras li {
     list-style-type: none;
     display: inline;
-    margin-right: 5px; }
+    margin-right: 5px;
+    border-right: 1px solid #234a81;
+    color: #fff;
+    padding-right: 10px; }
   @media (max-width: 640px) {
     .nav-extras {
       display: none; } }
@@ -6946,7 +7015,7 @@ a:visited {
 .global-logo.header {
   background: url("../img/guardian-logo-5.svg") no-repeat;
   background-size: 100% auto;
-  width: 280px;
+  width: 260px;
   height: 78px;
   margin: -10px 0 10px 0; }
   @media (max-width: 640px) {
@@ -8551,7 +8620,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 .global-logo.header {
   background: url("../img/guardian-logo-5.svg") no-repeat;
   background-size: 100% auto;
-  width: 280px;
+  width: 260px;
   height: 78px;
   margin: -10px 0 10px 0; }
   @media (max-width: 640px) {
