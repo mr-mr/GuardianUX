@@ -203,6 +203,18 @@ sub {
 	font-size:(24 / 14) * 1em;
 	color:$semi-grey;
 	font-weight:light;
+	li {
+		list-style-type: none;
+		color:$semi-grey;
+	}
+	li:before {
+        content:"·";
+        color:$semi-grey;
+        font-size:120px;
+        vertical-align:middle;
+        line-height:20px;
+    }
+
 	&.article{
 		//text-align:left;
 		@media (min-width:$small){

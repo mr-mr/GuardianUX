@@ -38,8 +38,8 @@
 	margin:0 auto;
 	padding-bottom:-10px;
 	padding-top:$gs-gutter;
-	//padding-left:$gs-gutter;
-	//padding-right:$gs-gutter;
+	padding-left:$gs-gutter;
+	padding-right:$gs-gutter;
 
 	@media (max-width:$medium){
 		//background:$link;
@@ -65,7 +65,7 @@
 
 	&.header{
 		//ackground:$code-grey;
-		height:88px;
+		//height:88px;
 		//background:#fff;
 		padding:15px;
 		@include border-bottom-radius(2px);

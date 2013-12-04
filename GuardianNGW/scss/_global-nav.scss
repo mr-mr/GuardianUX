@@ -264,18 +264,23 @@ nav.message_list { position: relative }
 }
 
 #nav-global-scroll {
-  a:link {
+  a:link, a:visited {
   font-size:18px;
   text-decoration: none;
   //margin-right: 0.7rem;
   padding: 10px;
   float: left;
-  color: #333;
+  //color: $link;
   }
-  a:hover{color:$link-white; background:$semi-grey; padding:10px; text-decoration: none;
+  a:hover{color:#fff; background:$semi-grey; padding:10px; text-decoration: none;
   }
   
 }
+
+.home-only{
+	background:$link;
+}
+
 .nav-scroll{
   -webkit-box-shadow: 0px 7px 15px rgba(50, 50, 50, 0.35);
   -moz-box-shadow:    0px 7px 15px rgba(50, 50, 50, 0.35);

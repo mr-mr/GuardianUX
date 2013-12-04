@@ -105,7 +105,7 @@ $img-landscape:"#{$img-path}/image-5x3#{$img-extension}";
 .g-only-logo{
 	background: url($g-only-logo) no-repeat center;
 	background-size:40%;
-	background-color:$link; 
+	background-color:$link-hover; 
 	padding-left:20px;
 	float:left;
 	top:0;
