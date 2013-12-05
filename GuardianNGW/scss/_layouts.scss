@@ -337,6 +337,23 @@ body{
 		}
 	}
 
+	.panel-comment{
+		@media (min-width:$small){
+			float:right;
+			font-size:18px;
+		}
+		@media (min-width:$medium){
+			float:none;
+		}
+	}
+	
+	.panel-readtime{
+		@media (min-width:$small){
+			float:left;
+			font-size:18px;
+		}
+	}
+
 	.lean-left{		
 		@media (min-width:$small){
 			margin:0;

@@ -6343,6 +6343,19 @@ aside {
       float: left; } }
 
 @media (min-width: 320px) {
+  .panel-comment {
+    float: right;
+    font-size: 18px; } }
+@media (min-width: 640px) {
+  .panel-comment {
+    float: none; } }
+
+@media (min-width: 320px) {
+  .panel-readtime {
+    float: left;
+    font-size: 18px; } }
+
+@media (min-width: 320px) {
   .lean-left {
     margin: 0;
     padding: 0;
