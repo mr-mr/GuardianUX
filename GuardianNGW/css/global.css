@@ -6011,7 +6011,7 @@ small {
   color: #234a81; }
 
 sub {
-  font-size: 0.71429em;
+  font-size: 0.78571em;
   margin-top: -15px;
   color: #a6a6a6; }
 
@@ -6319,7 +6319,7 @@ aside {
       display: block;
       float: right;
       width: 300px;
-      margin: 0px 30px 0 0; } }
+      margin: 41px 30px 0 0; } }
   @media (min-width: 1200px) {
     aside.right {
       display: block;
@@ -6344,16 +6344,27 @@ aside {
 
 @media (min-width: 320px) {
   .panel-comment {
-    float: right;
-    font-size: 18px; } }
+    float: right; }
+    .panel-comment a:link {
+      font-size: 18px; } }
 @media (min-width: 640px) {
+  .panel-comment {
+    float: left;
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: 1px solid #cccccc; } }
+@media (min-width: 1200px) {
   .panel-comment {
     float: none; } }
 
 @media (min-width: 320px) {
   .panel-readtime {
-    float: left;
-    font-size: 18px; } }
+    float: left; }
+    .panel-readtime a:link {
+      font-size: 18px; } }
+@media (min-width: 1200px) {
+  .panel-readtime {
+    float: none; } }
 
 @media (min-width: 320px) {
   .lean-left {
@@ -8935,7 +8946,7 @@ small {
   color: #234a81; }
 
 sub {
-  font-size: 0.71429em;
+  font-size: 0.78571em;
   margin-top: -15px;
   color: #a6a6a6; }
 
