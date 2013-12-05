@@ -34,6 +34,12 @@
 h1, h2, h3, h4, li {
 	font-weight:normal;
 }
+.global-logo{
+	font-family: $serif-bold;
+	color:#fff;
+	font-weight:normal;
+	font-size:1.8em;
+}
 
 h1 {
 	@media (min-width:$small){
