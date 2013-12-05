@@ -6344,18 +6344,26 @@ aside {
 
 @media (min-width: 320px) {
   .panel-comment {
-    float: right; }
+    float: right;
+    width: 150px;
+    padding-left: 10px;
+    margin-left: 20px;
+    border-left: 1px solid #cccccc; }
     .panel-comment a:link {
       font-size: 18px; } }
 @media (min-width: 640px) {
   .panel-comment {
     float: left;
-    padding-left: 10px;
-    margin-left: 10px;
-    border-left: 1px solid #cccccc; } }
+    padding-left: 20px;
+    width: 300px; } }
 @media (min-width: 1200px) {
   .panel-comment {
-    float: none; } }
+    float: none;
+    border: none;
+    padding: 10px 0 10px 0;
+    margin: 0; }
+    .panel-comment a:link {
+      font-size: 14px; } }
 
 @media (min-width: 320px) {
   .panel-readtime {
@@ -6364,7 +6372,11 @@ aside {
       font-size: 18px; } }
 @media (min-width: 1200px) {
   .panel-readtime {
-    float: none; } }
+    float: none;
+    border: none;
+    padding: 0; }
+    .panel-readtime a:link {
+      font-size: 14px; } }
 
 @media (min-width: 320px) {
   .lean-left {
@@ -7091,13 +7103,15 @@ img {
   height: 120px;
   border-radius: 120px;
   padding-bottom: 5px;
+  padding-right: 10px;
   background: url("../img/headshot-w-background.svg") no-repeat;
   background-size: 100% auto; }
   @media (max-width: 640px) {
     .headshot {
       width: 70px;
       height: 70px;
-      border-radius: 70px; } }
+      border-radius: 70px;
+      float: left; } }
 
 .media-container {
   width: 300px;
@@ -8696,13 +8710,15 @@ img {
   height: 120px;
   border-radius: 120px;
   padding-bottom: 5px;
+  padding-right: 10px;
   background: url("../img/headshot-w-background.svg") no-repeat;
   background-size: 100% auto; }
   @media (max-width: 640px) {
     .headshot {
       width: 70px;
       height: 70px;
-      border-radius: 70px; } }
+      border-radius: 70px;
+      float: left; } }
 
 .media-container {
   width: 300px;
