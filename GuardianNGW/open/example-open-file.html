@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+	
+	<title>Welcome to your profile</title>
+	<link rel="stylesheet" href="../css/global.css" type="text/css">
+	<link rel="stylesheet" href="../css/prettify.css" media="all" />
+
+	<link rel="stylesheet" href="../css/jquery.fancybox.css?v=2.1.5" type="text/css" />
+	
+	<script src="../js/menu-overflow.js"> </script>
+
+	
+</head>
+
+<header id="global-header">
+	<div class="nav-extras">
+		<li><a href="">UK Edition <i class="icon-angle-down"></i></a></li>
+			<!--<select>
+			  <option value="UK">UK Edition</option>
+			  <option value="US">US Edition</option>
+			  <option value="AU">AU Edition</option>
+			</select>-->
+		<li><a href="">Sign in <i class="icon-user button"></i></a></li>
+		<li><a href=""><i class="icon-search"></i></a></li>
+		<!--<li><form id="global-search"><input type="text" placeholder="Search…"><button type="submit"><i class="icon-search"></i></button></form></li>-->
+	</div>
+	<div class="logo-block header">
+		<a href="../"><div class="global-logo header"></div></a>
+	</div>
+	<!--<div class="global-logo section"></div>-->
+	
+<header class="no-flow-into">
+  <nav id="nav-global">
+    <a href="">Home</a>
+    <a href="" class="nav-active">News</a>
+  	<a href="">Comment</a>
+  	<a href="">Sport</a>
+  	<a href="">Football</a>
+  	<a href="">Tech</a>
+  	<a href="">Culture</a>
+  	<a href="">Life</a>
+  	<a href="">Fashion</a>
+  	<a href="">Economy</a>
+  	<a href="">Money</a>
+  	<a href="">Travel</a>
+  	<a href="">Sci &amp; Environment</a>
+  	<a href="">Education</a>
+  </nav>
+
+  <div id="menu">
+    <a href="#" class="toggle"></a>
+
+    <aside>
+      <nav id="nav-compact">
+        <!-- #global nav items will flow here -->
+      </nav>
+      <em>
+        
+      </em>
+    </aside>
+
+  </div>
+
+  <nav class="subnav">
+		<ol id="globalnav-links" class="subnav">
+			<li><a href="">UK</a></li>
+			<li><a href="">Europe</a></li>
+			<li class="nav-active">Americas</li>
+			<li><a href="">Asia</a></li>
+			<li><a href="">Australia</a></li>
+			<li><a href="">Africa</a></li>
+			<li><a href="">Middle East</a></li>
+			<li><a href="">[Special event]</a></li>
+		</ol>
+
+		<select> 
+	    	<option value="" selected="selected">UK</option> 
+	    	<option value="">Home</option> 
+		    <option value="">Europe</option> 
+		    <option value="">Americas</option> 
+		    <option value="">Asia</option> 
+		    <option value="">Australia</option> 
+		    <option value="">Africa</option> 
+		    <option value="">Middle East</option>
+		    <option value="">[Special event]</option>
+  		</select>
+	</nav>
+</header>
+
+<script>
+      var navigation = responsiveNav("#nav-global", {
+        insert: "before"
+      });
+</script>
+
+  <script>
+    var menu   = document.querySelector('#menu'),
+    toggle = document.querySelector('.toggle'),
+    aside = document.querySelector('aside');
+
+toggle.addEventListener('click', function(){
+  aside.classList.toggle('visible')
+})
+
+var property = "flow-into";
+
+// check if any variant exists, prefixed or not
+var isCapable = ['-webkit-','-ms-','-moz-',''].some(function(prefix){
+  return prefix + property in document.body.style 
+})
+
+property = isCapable ? property : 'no-' + property;
+
+document.body.classList.add(property)
+
+// If there is support for flow-into
+if (isCapable){
+
+  // Run after PrefixFree
+  document.addEventListener('DOMContentLoaded',function(){
+    // Get the menu flow
+    var menuFlow = document.webkitGetNamedFlows()['menu']; 
+
+    // This is the core function
+    menuFlow.addEventListener('webkitregionoversetchange', function(e){
+      // There is no EmtpyRegion (-1)
+      if (menuFlow.firstEmptyRegionIndex == -1){
+        menu.classList.add('visible');
+      }else{
+        menu.classList.remove('visible');
+      }
+    });
+
+  });
+
+}
+  </script></header><ol class="extras-mobile">
+  <li><a class=""><i class="icon-user"></i></a></li>
+  <li><a class=""><i class="icon-flag icon-white"></i></a></li>
+  <li><a class=""><i class="icon-search"></i></a></li>
+  <li><a class="menu-showhide"><i class="icon-reorder"></i></a></li>
+</ol>
+
+<div id="global-nav-mobile" class="menu-hidden">
+    <nav class="mobile-menu column">
+        <ul class="column-1">
+    			<li><a href="">Home</a></li>
+          <li class="nav-active">News</li>
+    			<li><a href="">Comment</a></li>
+    			<li><a href="">Sport</a></li>
+          <li><a href="">Football</a></li>
+          <li><a href="">Tech</a></li>
+          <li><a href="">Culture</a></li>
+          <li><a href="">Life</a></li>
+    		</ul>
+        <ul class="column-2">
+          <li><a href="">Fashion</a></li>
+    			<li><a href="">Economy</a></li>
+    			<li><a href="">Money</a></li>
+    			<li><a href="">Travel</a></li>
+          <li><a href="">Sci &amp; Environment</a></li>
+          <li><a href="">Education</a></li>
+        </ul>
+    </nav>
+      <ul class="editions-mobile">
+          <li>Edition:</li>
+          <li class="nav-active"><i class="icon-circle-blank"></i> UK</li>
+          <li><a href="">US</a></li>
+          <li><a href="">AU</a></li>
+      </ul>
+      <ul class="editions-mobile-footer">
+        <li>View:</li>
+        <li class="nav-active"><i class="icon-circle-blank"></i> Mobile</li>
+        <li><a href="">Desktop</a></li>
+      </ul>
+</div><body id="article-background">
+
+
+
+</body>
+
+ <script src="../js/jquery-2.0.2.min.js"></script>
+ <script src="../js/jquery-1.9.1.min.js"></script>
+
+ <script src="../js/tabs.ui.min.js"></script>
+ <script src="../js/tabs.min.js"> </script>
+
+ <script src="../js/tooltip.min.js"> </script>
+
+ <!--<script src="js/bootstrap.min.js"> </script>-->
+
+<script src="../js/prettify.min.js"> </script> 
+<script src="../js/run_prettify_cc.min.js"> </script>
+ 
+ <script src="../js/showhide.min.js"> </script>
+
+ <script src="../js/accordion.min.js"> </script>
+ <script src="../js/accordion-with-arrows.min.js"> </script>
+
+ <script src="../js/sticky-position.min.js"> </script>
+ <script src="../js/show-position.min.js"> </script>
+
+ <script src="../js/fancybox-player.min.js"> </script>
+ <script src="../js/jquery.fancybox-media.min.js"> </script>
+
+ <script src="../js/responsive-nav.min.js"></script>
+ <script src="../js/responsivegridsystem.js"></script>
+
+
+<footer id="global-footer" class="block">
+		<div class="logo-block footer">
+			<div class="global-logo footer"></div>
+			<div class="back-to-top button"><a href="#top"><sup><i class="icon-angle-up"></i></sup> Back to top</a></div>
+		</div>
+		
+		<nav class="footer-links-mobile">
+			<ul class="column-1">
+				<li><a href="">Home</a></li>
+				<li><a href="">World</a></li>
+				<li><a href="">Sport</a></li>
+				<li><a href="">Life &amp; Style</a></li>
+				<li><a href="">Business</a></li>
+				<li><a href="">Technology</a></li>
+				<li><a href="">All Sections</a></li>
+			</ul>
+			
+			<ul class="column-2">
+				<li><a href="">UK</a></li>
+				<li><a href="">Comment</a></li>
+				<li><a href="">Football</a></li>
+				<li><a href="">Culture</a></li>
+				<li><a href="">Travel</a></li>
+				<li><a href="">Environment</a></li>
+			</ul>
+			
+			<ul class="column-3 extra-products-mobile">
+				<li><a href="">Soulmates</a></li>
+				<li><a href="">Jobs</a></li>
+			</ul>
+		</nav>
+
+			<ul class="editions-mobile-footer">
+				<li>Edition:</li>
+	         	<li class="nav-active"><i class="icon-circle-blank"></i> UK</li>
+	         	<li><a href="">US</a></li>
+	         	<li><a href="">AU</a></li>
+	        </ul>
+
+	        <ul class="editions-mobile-footer">
+				<li>View:</li>
+	         	<li class="nav-active"><i class="icon-circle-blank"></i> Mobile</li>
+	         	<li><a href="">Desktop</a></li>
+	        </ul>
+
+			<div class="footer-links-mobile-bottom">
+				<ul class="column-1">
+					<li><a href="">About this site</a></li>
+					<li><a href="">Contact us</a></li>
+					<li><a href="">Terms &amp; Conditions</a></li>
+					<li><a href="">Cookie Policy</a></li>
+				</ul>
+
+				<ul class="column-2">
+					<li><a href="">Help</a></li>
+					<li><a href="">Feedback</a></li>
+					<li><a href="">Privacy policy</a></li>
+				</ul>
+			</div>
+
+
+		<nav class="footer-links">
+			<ul class="column-1">
+				<li><a href="">Desktop version</a></li>
+				<li><a href="">Contact us</a></li>
+				<li><a href="">Privacy policy</a></li>
+				<li><a href="">About this site</a></li>
+			</ul>
+			
+			<ul class="column-2">
+				<li><a href="">Feedback</a></li>
+				<li><a href="">Cookie Policy</a></li>
+				<li><a href="">Help</a></li>
+				<li><a href="">Terms &amp; Conditions</a></li>
+			</ul>
+		</nav>
+		
+		<div class="copyright">&#169; 2013 Guardian News and Media Limited or its affiliated companies. All rights reserved.</div>
+</footer>
+</html>
+<!--Includes of all js files in the footer as well, jquery and any custom ones!-->

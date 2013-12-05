@@ -1,0 +1,134 @@
+// ------------------------------------------------------------------------------------------------------------------------------------------------- 
+// Table of contents
+// --------------------------------------------------
+// 1.0 imports
+// 2.0 variables
+// 3.0 general
+// 4.0 type
+// 5.0 layout
+// 6.0 modules
+// -------------------------------------------------------------------------------------------------------------------------------------------------  
+
+// 1.0 imports
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+//@import "library.less";
+@import "colors";
+@import "breakpoints";
+
+// 2.0 variables
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+
+// 3.0 general
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+
+// 4.0 type
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+#comment-container{
+	width:100%;
+	height:100%;
+	margin-bottom:30px;
+}
+
+.comment-filter-controls{
+	background:$grey;
+	padding:20px;
+	li{
+		display:inline-block;
+		text-decoration:none;
+	}
+}
+
+.comment-head{
+	float:left;
+	//@include margin(0 0 0 5px 0);
+	@include clear-fix;
+	width:80px;
+	height:80px;
+	border-radius: 120px;
+	background: url('../img/headshot-w-background.svg') no-repeat;
+	background-size:100% auto;
+}
+
+.comment-detail {
+	@include clear-fix;
+	width:30rem;
+	margin:0 auto;
+	padding:10px;
+	li{
+		display:inline-block;
+		margin-right:10px;
+	}
+	&:after{
+		@include clear-fix;
+	}
+
+	@media (max-width:$medium){
+		width:100%;
+	}
+}
+
+.comment-post{
+	width:620px;
+	margin:0 auto;
+
+	textarea{
+		width:100%;
+		height:100px;
+		margin:0 auto;
+
+	}
+
+	@media (max-width:$medium){
+		width:100%;
+	}
+
+}
+
+.comment-reply{
+	width:500px;
+	padding-left: 50px;
+	left:30px;
+	border-left: 1px solid $light-grey;
+	
+	@media (max-width:$medium-large){
+		width:90%;
+	}
+}
+
+.head-reply{
+	margin:20px 0 0 230px;
+	@media (max-width:$medium-large){
+		margin:0;
+	}
+}
+
+.comment-buttons{
+	
+	li{
+		display:inline-block;
+		margin-right:130px;
+		text-decoration:none;
+		&:after{
+			margin-right:0;
+		}
+	}
+
+	input[type=submit] {
+		margin-top:10px;
+		//padding:5px 15px; 
+		background:$grey;
+		//width:50%; 
+		border:0 none;
+		cursor:pointer;
+		-webkit-border-radius: 5px;
+		border-radius: 5px; 
+
+		text-decoration:none;
+	}
+
+	input [value=PostComment] {
+		background:$link;
+		color:$link-white;
+	}
+}
+

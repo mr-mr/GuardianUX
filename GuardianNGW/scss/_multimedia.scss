@@ -1,0 +1,209 @@
+// --------------------------------------------------------------------------------------------------------------------------------------------
+// Table of contents
+// --------------------------------------------------
+// 1.0 imports
+// 2.0 variables
+// 3.0 general
+// 4.0 type
+// 5.0 layout
+// 6.0 modules
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+// --------------------------------------------------
+// 1.0 imports
+
+@import "colors";
+
+// --------------------------------------------------
+// 2.0 variables
+
+$img-path: "../img";
+$img-extension : ".svg";
+$guardian-logo-header : "#{$img-path}/guardian-logo-5#{$img-extension}";
+$section-logo-header : "#{$img-path}/news-logo#{$img-extension}";
+$guardian-logo : "#{$img-path}/guardian-logo#{$img-extension}";
+$ux-logo : "#{$img-path}/g-logo#{$img-extension}";
+$g-only-logo : "#{$img-path}/guardian-logo-2#{$img-extension}";
+
+$img-landscape:"#{$img-path}/image-5x3#{$img-extension}";
+
+@mixin img{
+	width:100%;
+	//height:100%;
+	display:block;
+}
+
+// --------------------------------------------------
+// 3.0 general
+
+.global-logo{
+	//float:right;
+	
+	&.footer{
+
+		background: url($guardian-logo) no-repeat;
+		background-size:100% auto;
+		width:130px;
+		height:53px;
+		margin:0px 50px 0 0;
+		
+		@media (min-width:$small){
+			margin:0;
+			display:none;
+		}
+
+		@media (min-width:$medium){
+			display:block;
+		}
+		
+		@media (min-width:$large){
+			margin:0px 50px 0 0;
+		}
+	}
+
+	&.header{
+		background: url($guardian-logo-header) no-repeat;
+		background-size:100% auto;
+		width:260px;
+		height:78px;
+		margin:-10px 0 10px 0;
+		@media (max-width:$medium){
+			background: url($guardian-logo) no-repeat;
+			background-size:100% auto;
+			float:left;
+			width:120px;
+			height:53px;
+			margin:5px 0 0 -20px;
+		}
+	}
+
+	&.section{
+		background: url($section-logo-header) no-repeat;
+		background-size:100% auto;
+		width:280px;
+		height:88px;
+		margin:-10px 0 10px 0;
+	}
+}
+
+.ux-logo{
+	background: url($ux-logo) no-repeat;
+	background-size:100% auto;
+	width:100px;
+	height:90px;
+	margin:-200px 0 0 0;
+	
+	@media (min-width:$small){
+		margin:0;
+	}
+
+	@media (min-width:$large){
+		margin:0;
+	}
+}
+
+.g-only-logo{
+	background: url($g-only-logo) no-repeat center;
+	background-size:40%;
+	background-color:$link-hover; 
+	padding-left:20px;
+	float:left;
+	top:0;
+	left:0;
+	//position:relative;
+	width:60px;
+	height:39px;
+	//margin:0 0 0 30px;
+}
+
+img {
+	@include img;
+}
+
+.headshot{
+	//@inlcude width(100);
+	//@include height(100);
+	@inlcude clear-fix;
+	width:120px;
+	height:120px;
+	border-radius: 120px;
+	padding-bottom:5px;
+	background: url('../img/headshot-w-background.svg') no-repeat;
+	background-size:100% auto;
+	
+	@media (max-width:$medium){
+		width:70px;
+		height:70px;
+		border-radius: 70px;
+	}
+
+	
+}
+
+.media-container{
+	width:300px;
+	height:169px;
+	background:$light-grey;
+	margin-bottom:20px;
+}
+
+.media-button{
+	@extend button;
+	position:absolute;
+	bottom:1px;
+	z-index:1000;
+	margin:0;
+	a{
+		width:100px;
+		height:50px;
+	}
+
+}
+
+.icon-play{
+	position:absolute;
+	margin:0 0 0 -35px;
+	padding:10px 0px 7px 10px;
+	@media (max-width:$medium){
+		float:right;
+		left:30px;
+	}
+}
+
+.icon-volume-up{
+	position:absolute;
+	margin:0 0 0 -35px;
+	padding:10px 0px 7px 10px;
+}
+
+iframe {
+	width:100%;
+	//height:100%;
+	border:none;
+	margin-top:50px;
+	padding:0;
+	//background: lime;
+	position:absolute;
+}
+
+.video-overlay {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:2000;
+	background:$dark-grey;
+}
+
+.interactive{
+	width:200px;
+}
+
+.fronts-image{
+	@include img;
+	width:100%;
+	height:100%;
+	background: url($img-landscape) no repeat;
+}
+

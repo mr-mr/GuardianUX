@@ -1,0 +1,533 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+	
+	<title>Google chairman: NSA spying on our data centres 'outrageous'</title>
+	<link rel="stylesheet" href="../css/global.css" type="text/css">
+	<link rel="stylesheet" href="../css/prettify.css" media="all" />
+
+	<link rel="stylesheet" href="../css/jquery.fancybox.css?v=2.1.5" type="text/css" />
+	
+	<script src="../js/menu-overflow.js"> </script>
+
+	
+</head>
+
+<header id="global-header">
+	<div class="nav-extras">
+		<li><a href="">UK Edition <i class="icon-angle-down"></i></a></li>
+			<!--<select>
+			  <option value="UK">UK Edition</option>
+			  <option value="US">US Edition</option>
+			  <option value="AU">AU Edition</option>
+			</select>-->
+		<li><a href="">Sign in <i class="icon-user button"></i></a></li>
+		<li><a href=""><i class="icon-search"></i></a></li>
+		<!--<li><form id="global-search"><input type="text" placeholder="Search…"><button type="submit"><i class="icon-search"></i></button></form></li>-->
+	</div>
+	<div class="logo-block header">
+		<a href="../"><div class="global-logo header"></div></a>
+	</div>
+	<!--<div class="global-logo section"></div>-->
+	
+<header class="no-flow-into">
+  <nav id="nav-global">
+    <a href="">Home</a>
+    <a href="" class="nav-active">News</a>
+  	<a href="">Comment</a>
+  	<a href="">Sport</a>
+  	<a href="">Football</a>
+  	<a href="">Tech</a>
+  	<a href="">Culture</a>
+  	<a href="">Life</a>
+  	<a href="">Fashion</a>
+  	<a href="">Economy</a>
+  	<a href="">Money</a>
+  	<a href="">Travel</a>
+  	<a href="">Sci &amp; Environment</a>
+  	<a href="">Education</a>
+  </nav>
+
+  <div id="menu">
+    <a href="#" class="toggle"></a>
+
+    <aside>
+      <nav id="nav-compact">
+        <!-- #global nav items will flow here -->
+      </nav>
+      <em>
+        
+      </em>
+    </aside>
+
+  </div>
+
+  <nav class="subnav">
+		<ol id="globalnav-links" class="subnav">
+			<li><a href="">UK</a></li>
+			<li><a href="">Europe</a></li>
+			<li class="nav-active">Americas</li>
+			<li><a href="">Asia</a></li>
+			<li><a href="">Australia</a></li>
+			<li><a href="">Africa</a></li>
+			<li><a href="">Middle East</a></li>
+			<li><a href="">[Special event]</a></li>
+		</ol>
+
+		<select> 
+	    	<option value="" selected="selected">UK</option> 
+	    	<option value="">Home</option> 
+		    <option value="">Europe</option> 
+		    <option value="">Americas</option> 
+		    <option value="">Asia</option> 
+		    <option value="">Australia</option> 
+		    <option value="">Africa</option> 
+		    <option value="">Middle East</option>
+		    <option value="">[Special event]</option>
+  		</select>
+	</nav>
+</header>
+
+<script>
+      var navigation = responsiveNav("#nav-global", {
+        insert: "before"
+      });
+</script>
+
+  <script>
+    var menu   = document.querySelector('#menu'),
+    toggle = document.querySelector('.toggle'),
+    aside = document.querySelector('aside');
+
+toggle.addEventListener('click', function(){
+  aside.classList.toggle('visible')
+})
+
+var property = "flow-into";
+
+// check if any variant exists, prefixed or not
+var isCapable = ['-webkit-','-ms-','-moz-',''].some(function(prefix){
+  return prefix + property in document.body.style 
+})
+
+property = isCapable ? property : 'no-' + property;
+
+document.body.classList.add(property)
+
+// If there is support for flow-into
+if (isCapable){
+
+  // Run after PrefixFree
+  document.addEventListener('DOMContentLoaded',function(){
+    // Get the menu flow
+    var menuFlow = document.webkitGetNamedFlows()['menu']; 
+
+    // This is the core function
+    menuFlow.addEventListener('webkitregionoversetchange', function(e){
+      // There is no EmtpyRegion (-1)
+      if (menuFlow.firstEmptyRegionIndex == -1){
+        menu.classList.add('visible');
+      }else{
+        menu.classList.remove('visible');
+      }
+    });
+
+  });
+
+}
+  </script></header><ol class="extras-mobile">
+  <li><a class=""><i class="icon-user"></i></a></li>
+  <li><a class=""><i class="icon-flag icon-white"></i></a></li>
+  <li><a class=""><i class="icon-search"></i></a></li>
+  <li><a class="menu-showhide"><i class="icon-reorder"></i></a></li>
+</ol>
+
+<div id="global-nav-mobile" class="menu-hidden">
+    <nav class="mobile-menu column">
+        <ul class="column-1">
+    			<li><a href="">Home</a></li>
+          <li class="nav-active">News</li>
+    			<li><a href="">Comment</a></li>
+    			<li><a href="">Sport</a></li>
+          <li><a href="">Football</a></li>
+          <li><a href="">Tech</a></li>
+          <li><a href="">Culture</a></li>
+          <li><a href="">Life</a></li>
+    		</ul>
+        <ul class="column-2">
+          <li><a href="">Fashion</a></li>
+    			<li><a href="">Economy</a></li>
+    			<li><a href="">Money</a></li>
+    			<li><a href="">Travel</a></li>
+          <li><a href="">Sci &amp; Environment</a></li>
+          <li><a href="">Education</a></li>
+        </ul>
+    </nav>
+      <ul class="editions-mobile">
+          <li>Edition:</li>
+          <li class="nav-active"><i class="icon-circle-blank"></i> UK</li>
+          <li><a href="">US</a></li>
+          <li><a href="">AU</a></li>
+      </ul>
+      <ul class="editions-mobile-footer">
+        <li>View:</li>
+        <li class="nav-active"><i class="icon-circle-blank"></i> Mobile</li>
+        <li><a href="">Desktop</a></li>
+      </ul>
+</div><body id="article-background">
+
+<div id="wrapper">
+	<div class="advert" style="width:99%; max-width:928px;">
+	<img src="../img/advert-banner-large-2.jpg" />
+</div>
+<!-- end .advert -->	<div id="container-section">
+
+<div class="container-controls">
+</div>
+<nav class="c-nav">
+<span class="tooltip-icon" title="A simpler, stripped back version of the day container - using sequencing to populate the previous and next options. Once scrolling, the option sticks to the right on desktop and tablet.">
+	<i class="icon-info-sign icon-light"></i></span>
+	<a href="#" class="prev-2"><i class="icon-angle-left"></i> Previous Story | <small>Typhoon Haiyan</small> <strong class="live-latest">LIVE</strong></a>
+	<a href="#" class="next-2"><small>The Craigslist killers</small> | Next Story <i class="icon-angle-right"></i></a>
+</nav>
+</div>
+<!--Pattern HTML-->
+  
+
+	<div class="border-line"></div>
+	<aside class="header"><h4><a href="">Politics</a></h4></aside>
+	
+	<article><h1>Google chairman: NSA spying on our data centres 'outrageous'</h1></article>
+
+	<article><h2 class="summary article">
+		<li>Eric Schmidt says company has lodged complaints with NSA</li>
+		<li>White House and Congress criticism hardens in Silicon Valley</li>
+	</h2></article>
+	
+	<div class="toggle-menu-mobile"></div>
+
+	<aside class="left">
+	<div class="border-line-thick"></div>
+	<p></p>
+<div class="editor-1">
+	<p class="headshot"></p>
+	<dd class="editor-name"><a href="">Rory Carroll</a> in Los Angeles</dd>
+</div>
+	<div class="border-line-dotted"></div>
+	<p class="article-comment-count"><i class="icon-bookmark"></i> 4 min read</p>
+	<div class="border-line-dotted"></div>
+	<p class="article-comment-count"><a href="#comments"><i class="icon-comment"></i> 107 comments</a></p>
+	<!--<div class="border-line-dotted"></div>
+	<p class="article-comment-count"><i class="icon-time"></i> Monday 4 November 2013 20.40 GMT</p>-->
+	<div class="border-line-thick"></div>
+</aside>	<aside class="right">
+		<div class="border-line-thick"></div>
+		<p>Share this article</p>
+		<ul>
+			<span class="icon-stack">
+          		<i class="icon-circle icon-stack-base"></i>
+          		<i class="icon-envelope icon-light"></i>
+        	</span>
+
+			<span class="icon-stack">
+          		<i class="icon-circle icon-stack-base"></i>
+          		<i class="icon-twitter icon-light"></i>
+        	</span>
+
+        	<span class="icon-stack">
+          		<i class="icon-circle icon-stack-base"></i>
+          		<i class="icon-facebook icon-light"></i>
+        	</span>
+
+        	<span class="icon-stack">
+          		<i class="icon-circle icon-stack-base"></i>
+          		<i class="icon-google-plus icon-light"></i>
+        	</span>
+		</ul>
+
+	<div class="border-line advert"></div>
+	<p>Advertisement</p>
+		<div class="advert advert-mpu" style="margin-top:10px;">
+	<img src="../img/advert-mpu.jpg" style="width: 300px; float: left; padding: 0px 15px 10px 5px;" />
+</div>
+<!-- end .advert -->	</aside>	
+	<article>
+		<img src="../img/image-5x3.svg"/>
+		<sub><i class="icon-camera"></i> Google executive chairman Eric Schmidt looks on during a talk in Hong Kong. Photograph: Bobby Yip/Reuters<sub>
+	</article>
+
+	<article>
+	<div class="editor-2">
+		<p class="headshot"></p>
+		<dd class="editor-name"><a href="">Rory Carroll</a> in Los Angeles</dd>
+	</div>
+		<p> Schmidt, the executive chairman of Google, has attacked the US government for apparently breaking into the connections that link the company's data centres around the world as "outrageous" and described other surveillance practices as "possibly illegal".</p>
+
+		<p>Speaking at an event in Hong Kong, Schmidt stepped up the company's response to revelations in the Washington Post that the National Security Agency, working with its British counterpart, GCHQ, had broken into fibre optic cables that carry the transfer of data around the world for Google and Yahoo.</p>
+
+		<p class="quote"><img src="../img/quote.svg">It's really outrageous that the National Security Agency was looking between the Google data centers, if that's true," Schmidt told the Wall Street Journal.
+
+"The steps that the organization was willing to do without good judgment to pursue its mission and potentially violate people's privacy, it's not OK.</p>
+
+		<p>The comments reflected Silicon Valley's hardening criticism of government snooping amid continued revelations based on documents leaked by the former NSA contractor Edward Snowden.</p>
+
+		<p>Just two months ago, Schmidt declined to "pass judgment" on the surveillance programmes.</p>
+
+		<p>But last week it was reported that the NSA intercepted communications links used by Google and Yahoo to move vast amounts of data between overseas data centres.</p>
+
+		<p>On Monday, the Washington Post published further Snowden documents and additional context for its story. Among the details published in the latest report is the claim the interception took place on "British territory".</p>
+
+		<p>It also claimed that none of the statements issued by the NSA since the story was published contained substantive denials. It said the source documents showed the NSA, rather than break directly into Google or Yahoo data centres, intercepted communication between them that ran on private fibre optic cable circuits. The former is known as "data at rest", the latter as "data on the fly".</p>
+
+		<p>It was clear spies broke into both companies' private "clouds", or internal networks, said the report, because some of the extracted data existed nowhere else.</p>
+
+		<p>It remained unclear how the NSA did this, and whether it had help from inside the technology giants.</p>
+
+		<p>Asked if it had launched an internal security review, Google on Monday reissued a statement given last week from chief legal officer David Drummond, saying the company did not give access to its systems to any government and that it was expanding encryption across more Google services and links.</p>
+
+		<p></p>
+		<p>In his interview, Schmidt said Google had lodged complaints with the NSA, the White House and members of Congress. He also attacked the separate NSA program that sweeps up the telephone metadata relating millions of Americans. </p>
+
+		<p class="quote"><img src="../img/quote.svg"> The NSA allegedly collected the phone records of 320 million people in order to identify roughly 300 people who might be a risk. It's just bad public policy … and perhaps illegal, he said.</p>
+
+		<p>Google itself has faced repeated accusations of privacy violations, including illicitly tracking web browsing.</p>
+
+		<p>Schmidt has made no secret that the company tests boundaries of what is acceptable. "Google policy is to get right up to the creepy line and not cross it," he said in 2010.</p>
+
+		<p>Outcries in Europe and growing momentum in Washington to rein in surveillance has put the NSA on the defensive.</p>
+
+		<p>Asked to respond to Schmidt's criticism, an NSA spokesperson said the agency was "focused on valid foreign intelligence targets" and referred to a previous statement that press articles had misstated facts and mischaracterised NSA activities.</p>
+
+		<p class="quote"><img src="../img/quote.svg"> NSA conducts all of its activities in accordance with applicable laws, regulations, and policies – and assertions to the contrary do a grave disservice to the nation, its allies and partners, and the men and women who make up the National Security Agency.</p>
+
+		<p>Last week the agency's director, General Keith Alexander, said the agency had not used a presidential order to circumvent domestic legal restrictions: "I can tell you factually we do not have access to Google servers, Yahoo servers. We go through a court order."</p>
+
+		<div class="border-line-thick"></div>
+		<p>Tags: <a href="">Eric Schmidt</a>,  <a href="">Google</a>,  <a href="">NSA</a>,  <a href="">Obama administration</a>,  <a href="">United States</a></p>		<ul>
+			<span class="icon-stack">
+          		<i class="icon-circle icon-stack-base"></i>
+          		<i class="icon-envelope icon-light"></i>
+        	</span>
+
+			<span class="icon-stack">
+          		<i class="icon-circle icon-stack-base"></i>
+          		<i class="icon-twitter icon-light"></i>
+        	</span>
+
+        	<span class="icon-stack">
+          		<i class="icon-circle icon-stack-base"></i>
+          		<i class="icon-facebook icon-light"></i>
+        	</span>
+
+        	<span class="icon-stack">
+          		<i class="icon-circle icon-stack-base"></i>
+          		<i class="icon-google-plus icon-light"></i>
+        	</span>
+		</ul>
+		<div class="border-line"></div>
+	</article>
+		
+</div>
+
+
+</body>
+<p></p>
+<div id="wrapper">
+	
+	<div id="container-section">
+		<div class="border-line-thick"></div>
+		<h2 class="container-header">popular on the Guardian</h2>
+	</div>
+		<div class="gs-wrapper container-popular">
+
+		<div class="col span_1_of_4">
+		<h4>Most Read</h4>
+			<img src="../img/image-5x3.svg"/>
+			<h2 class="container-header medium">1.<a href=""> Top 10 documentaries</a></h2>
+			<ul>
+				<li class="article-comment-count"><a href="#"><i class="icon-comment"></i> 152</a></li>
+			</ul>
+		</div>	
+
+		<div class="col span_1_of_4" style="padding-top:40px;">
+			<h2 class="container-header small">2.<a href=""> David Cameron makes leaner state a permanent goal</a></h2>
+			<h2 class="container-header small">3.<a href=""> Apple maps: how Google lost when everyone thought it had won</a></h2>
+			<h2 class="container-header small">4.<a href=""> David Dimbleby achieves tattoo ambition at 75</a></h2>
+			<h2 class="container-header small">5.<a href=""> José Mourinho 'in tunnel bust-up' with West Brom defender Jonas Olsson</a></h2>
+		</div>
+
+		<div class="col span_1_of_4" style="padding-top:40px;">
+			<h2 class="container-header small">6.<a href=""> It's business that really rules us now | George Monbiot</a></h2>
+			<h2 class="container-header small">7.<a href=""> George Clooney knocks Russell Crowe and Leonardo DiCaprio, but loves Brad Pitt</a></h2>
+			<h2 class="container-header small">8.<a href=""> The Hunger Games: Catching Fire – first look review</a></h2>
+			<h2 class="container-header small">9.<a href=""> Alcohol without the hangover? It's closer than you think | David Nutt</a></h2>
+			<h2 class="container-header small">10.<a href=""> Typhoon Haiyan - before and after</a></h2>
+		</div>
+	
+
+		<div class="col span_1_of_4" style="border-left:1px solid #ccc; padding-left:15px;">
+		<h4>Most Shared</h4>
+			<h2 class="container-header small">1.<a href=""> 60 years after the war ends, two soldiers emerge from the jungle</a></h2>
+			<h2 class="container-header small">2.<a href=""> Growing-up for goths</a></h2>
+			<h2 class="container-header small">3.<a href=""> The Craigslist killers: the full story</a></h2>
+			<h2 class="container-header small">4.<a href=""> Typhoon Haiyan - before and after</a></h2>
+			<h2 class="container-header small">5.<a href=""> José Mourinho 'in tunnel bust-up' with West Brom defender Jonas Olsson</a></h2>
+		</div>
+		
+		
+		</div>
+
+		<div id="tabs" class="container-popular-tabs" style="backgroud:#fff;">
+			<ul>
+			    <li><a href="#tabs-1">Most Read</a></li>
+			    <li><a href="#tabs-2">Most Shared</a></li>
+			</ul>		  
+			<div id="tabs-1">
+				<h2 class="container-header small">1.<a href=""> Top 10 documentaries</a></h2>
+				<h2 class="container-header small">2.<a href=""> David Cameron makes leaner state a permanent goal</a></h2>
+				<h2 class="container-header small">3.<a href=""> Apple maps: how Google lost when everyone thought it had won</a></h2>
+				<h2 class="container-header small">4.<a href=""> David Dimbleby achieves tattoo ambition at 75</a></h2>
+				<h2 class="container-header small">5.<a href=""> José Mourinho 'in tunnel bust-up' with West Brom defender Jonas Olsson</a></h2>
+			<h2 class="container-header small">6.<a href=""> It's business that really rules us now | George Monbiot</a></h2>
+			<h2 class="container-header small">7.<a href=""> George Clooney knocks Russell Crowe and Leonardo DiCaprio, but loves Brad Pitt</a></h2>
+			<h2 class="container-header small">8.<a href=""> The Hunger Games: Catching Fire – first look review</a></h2>
+			<h2 class="container-header small">9.<a href=""> Alcohol without the hangover? It's closer than you think | David Nutt</a></h2>
+			<h2 class="container-header small">10.<a href=""> Typhoon Haiyan - before and after</a></h2>
+
+			</div>
+
+			<!--<div id="tabs-2">
+				<h2 class="container-header small">1.<a href=""> It's business that really rules us now | George Monbiot</a></h2>
+				<h2 class="container-header small">2.<a href=""> George Clooney knocks Russell Crowe and Leonardo DiCaprio, but loves Brad Pitt</a></h2>
+				<h2 class="container-header small">3.<a href=""> The Hunger Games: Catching Fire – first look review</a></h2>
+				<h2 class="container-header small">4.<a href=""> Alcohol without the hangover? It's closer than you think | David Nutt</a></h2>
+			</div>-->
+
+			<div id="tabs-2">
+				<h2 class="container-header small">1.<a href=""> 60 years after the war ends, two soldiers emerge from the jungle</a></h2>
+				<h2 class="container-header small">2.<a href=""> Growing-up for goths</a></h2>
+				<h2 class="container-header small">3.<a href=""> The Craigslist killers: the full story</a></h2>
+				<h2 class="container-header small">4.<a href=""> Typhoon Haiyan - before and after</a></h2>
+				<h2 class="container-header small">5.<a href=""> José Mourinho 'in tunnel bust-up' with West Brom defender Jonas Olsson</a></h2>
+			</div>
+		</div>
+		<div class="border-line"></div>
+</div>
+<div class="advert banner-small" style="width:90%; max-width:728px;">
+	<img src="../img/advert-banner.jpg" />
+</div>
+<!-- end .advert -->
+ <script src="../js/jquery-2.0.2.min.js"></script>
+ <script src="../js/jquery-1.9.1.min.js"></script>
+
+ <script src="../js/tabs.ui.min.js"></script>
+ <script src="../js/tabs.min.js"> </script>
+
+ <script src="../js/tooltip.min.js"> </script>
+
+ <!--<script src="js/bootstrap.min.js"> </script>-->
+
+<script src="../js/prettify.min.js"> </script> 
+<script src="../js/run_prettify_cc.min.js"> </script>
+ 
+ <script src="../js/showhide.min.js"> </script>
+
+ <script src="../js/accordion.min.js"> </script>
+ <script src="../js/accordion-with-arrows.min.js"> </script>
+
+ <script src="../js/sticky-position.min.js"> </script>
+ <script src="../js/show-position.min.js"> </script>
+
+ <script src="../js/fancybox-player.min.js"> </script>
+ <script src="../js/jquery.fancybox-media.min.js"> </script>
+
+ <script src="../js/responsive-nav.min.js"></script>
+ <script src="../js/responsivegridsystem.js"></script>
+
+
+<footer id="global-footer" class="block">
+		<div class="logo-block footer">
+			<div class="global-logo footer"></div>
+			<div class="back-to-top button"><a href="#top"><sup><i class="icon-angle-up"></i></sup> Back to top</a></div>
+		</div>
+		
+		<nav class="footer-links-mobile">
+			<ul class="column-1">
+				<li><a href="">Home</a></li>
+				<li><a href="">World</a></li>
+				<li><a href="">Sport</a></li>
+				<li><a href="">Life &amp; Style</a></li>
+				<li><a href="">Business</a></li>
+				<li><a href="">Technology</a></li>
+				<li><a href="">All Sections</a></li>
+			</ul>
+			
+			<ul class="column-2">
+				<li><a href="">UK</a></li>
+				<li><a href="">Comment</a></li>
+				<li><a href="">Football</a></li>
+				<li><a href="">Culture</a></li>
+				<li><a href="">Travel</a></li>
+				<li><a href="">Environment</a></li>
+			</ul>
+			
+			<ul class="column-3 extra-products-mobile">
+				<li><a href="">Soulmates</a></li>
+				<li><a href="">Jobs</a></li>
+			</ul>
+		</nav>
+
+			<ul class="editions-mobile-footer">
+				<li>Edition:</li>
+	         	<li class="nav-active"><i class="icon-circle-blank"></i> UK</li>
+	         	<li><a href="">US</a></li>
+	         	<li><a href="">AU</a></li>
+	        </ul>
+
+	        <ul class="editions-mobile-footer">
+				<li>View:</li>
+	         	<li class="nav-active"><i class="icon-circle-blank"></i> Mobile</li>
+	         	<li><a href="">Desktop</a></li>
+	        </ul>
+
+			<div class="footer-links-mobile-bottom">
+				<ul class="column-1">
+					<li><a href="">About this site</a></li>
+					<li><a href="">Contact us</a></li>
+					<li><a href="">Terms &amp; Conditions</a></li>
+					<li><a href="">Cookie Policy</a></li>
+				</ul>
+
+				<ul class="column-2">
+					<li><a href="">Help</a></li>
+					<li><a href="">Feedback</a></li>
+					<li><a href="">Privacy policy</a></li>
+				</ul>
+			</div>
+
+
+		<nav class="footer-links">
+			<ul class="column-1">
+				<li><a href="">Desktop version</a></li>
+				<li><a href="">Contact us</a></li>
+				<li><a href="">Privacy policy</a></li>
+				<li><a href="">About this site</a></li>
+			</ul>
+			
+			<ul class="column-2">
+				<li><a href="">Feedback</a></li>
+				<li><a href="">Cookie Policy</a></li>
+				<li><a href="">Help</a></li>
+				<li><a href="">Terms &amp; Conditions</a></li>
+			</ul>
+		</nav>
+		
+		<div class="copyright">&#169; 2013 Guardian News and Media Limited or its affiliated companies. All rights reserved.</div>
+</footer>
+</html>
+
+<!--Includes of all js files in the footer as well, jquery and any custom ones!-->

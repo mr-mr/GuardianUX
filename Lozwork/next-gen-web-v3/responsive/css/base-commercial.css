@@ -1,8 +1,0 @@
-.clear-fix:before,.clear-fix:after{content:"";display:table}
-.clear-fix:after{clear:both}
-.clear-clear-fix:before,.clear-clear-fix:after{clear:none;content:none;display:none}
-br:last-child{clear:both}
-@font-face{font-family:"guardian-regular";src:url('../fnt/Guardian-Egyp-Web-Regular.woff') format('woff');font-weight:normal;font-style:normal}@font-face{font-family:"guardian-italic";src:url('../fnt/Guardian-Egyp-Web-Regular It.woff') format('woff');font-weight:normal;font-style:normal}@font-face{font-family:"guardian-bold";src:url('../fnt/Guardian-Egyp-Web-Semibold.woff') format('woff');font-weight:normal;font-style:normal}@font-face{font-family:"guardian-bold-italic";src:url('../fnt/Guardian-Egyp-Web-Semibold It.woff') format('woff');font-weight:normal;font-style:normal}.carousel h3{font-size:17px;font-size:1.7000000000000002rem;line-height:20px;line-height:2rem;font-family:"guardian-bold"}
-.carousel button{margin-left:auto;margin-right:auto;width:30%}
-.commercial-books .carousel-image{width:50%;max-width:50%;margin:0 auto}
-.carousel-current{text-align:center}

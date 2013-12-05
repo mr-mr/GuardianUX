@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="96px" height="160px"
+	 viewBox="0 0 96 160" enable-background="new 0 0 96 160" xml:space="preserve">
+<title>image-5x3</title>
+<description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+<g id="Page_1_2_" sketch:type="MSPage">
+	<g id="Layer_1_2_" sketch:type="MSLayerGroup">
+		<g id="Page_1_3_" sketch:type="MSShapeGroup">
+			<g id="Rectangle_1_1_">
+				<polygon fill="#CCCCCC" points="96.132,0 0.132,0 0.132,160 96.132,160 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g>
+	<path fill="#848484" d="M48.132,39.5c-21.677,0-39.25,17.573-39.25,39.25S26.455,118,48.132,118c21.679,0,39.25-17.573,39.25-39.25
+		S69.811,39.5,48.132,39.5z M48.132,96.75c-9.389,0-17-7.835-17-17.5s7.611-17.5,17-17.5c9.39,0,17,7.835,17,17.5
+		S57.521,96.75,48.132,96.75z"/>
+	<path fill="#FFFFFF" d="M86.782,85.55c0.387-2.21,0.6-4.479,0.6-6.8c0-9.558-3.42-18.315-9.098-25.123L61.268,68.142
+		c2.416,3.021,3.864,6.89,3.864,11.108c0,0.74-0.062,1.465-0.146,2.182L86.782,85.55z"/>
+	<path fill="#545454" d="M61.268,68.142l17.019-14.515C70.549,44.833,60.883,39.5,48.132,39.5v22.25
+		C53.232,61.75,58.148,64.479,61.268,68.142z"/>
+</g>
+<circle fill="#848484" cx="12.382" cy="20" r="5.5"/>
+<g>
+	<circle fill="#FFFFFF" cx="9.882" cy="126" r="3"/>
+	<circle fill="#545454" cx="9.882" cy="134" r="3"/>
+	<circle fill="#848484" cx="9.882" cy="142" r="3"/>
+	<text transform="matrix(1 0 0 1 14.6318 127)" fill="#424242" font-family="'HelveticaNeue'" font-size="5">no</text>
+	<text transform="matrix(1 0 0 1 14.6318 135)" fill="#424242" font-family="'HelveticaNeue'" font-size="5">yes</text>
+	<text transform="matrix(1 0 0 1 14.6318 143)" fill="#424242" font-family="'HelveticaNeue'" font-size="5">maybe</text>
+</g>
+<text transform="matrix(1 0 0 1 19.9556 20)" fill="#424242" font-family="'DE4DisplayEgyptianMedium'" font-size="7">UK</text>
+<text transform="matrix(1 0 0 1 19.9556 25)" fill="#424242" font-family="'DE4DisplayEgyptianMedium'" font-size="4">1125 responses</text>
+</svg>
