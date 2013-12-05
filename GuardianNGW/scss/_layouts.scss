@@ -340,6 +340,10 @@ body{
 	.panel-comment{
 		@media (min-width:$small){
 			float:right;
+			width:150px;
+			padding-left:10px;
+			margin-left:20px;
+			border-left: 1px solid $grey;
 			a:link {
 				font-size:18px;
 			}
@@ -347,12 +351,17 @@ body{
 		@media (min-width:$medium){
 			//max-width:580px;
 			float:left;
-			padding-left:10px;
-			margin-left:10px;
-			border-left: 1px solid $grey;
+			padding-left:20px;
+			width:300px;
 		}
 		@media (min-width:$large){
 			float:none;
+			border:none;
+			padding:10px 0 10px 0;
+			margin:0;
+			a:link {
+				font-size:14px;
+			}
 		}
 	}
 	
@@ -365,6 +374,11 @@ body{
 		}
 		@media (min-width:$large){
 			float:none;
+			border:none;
+			padding:0;
+			a:link {
+				font-size:14px;
+			}
 		}
 	}
 
