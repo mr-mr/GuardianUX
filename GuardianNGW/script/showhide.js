@@ -21,7 +21,7 @@ $(".menu-showhide").click(function(e){
 	e.preventDefault();
 
 	//$alert("Hello", "Good Evening", "How do you do?", "Goodbye");
-	$( ".menu-hidden" ).slideToggle("slow");
+	$( ".menu-hidden" ).toggle();
 	//alert('This button works');
 	
  });
