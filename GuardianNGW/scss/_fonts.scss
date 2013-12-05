@@ -8,7 +8,7 @@
 // ------------------------------------------------------------------------------------------------------------------------------------------------- 
 $font-path:"../font/";
 
-$sans-serif:Helmet,Freesans,sans-serif;
+$sans-serif:"guardian-sans";
 $serif:"guardian-regular";
 
 // $sans-serif-italic:;
@@ -47,3 +47,10 @@ $serif-bold-italic:"guardian-bold-italic";
     font-weight:normal;
     font-style:normal;
 }
+
+@font-face {
+    font-family:"guardian-sans";
+    src:url('../font/AgateSans-Regular.woff') format('woff');
+    font-weight:normal;
+    font-style:normal;
+} 
