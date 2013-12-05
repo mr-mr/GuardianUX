@@ -5909,6 +5909,12 @@ footer {
 h1, h2, h3, h4, li {
   font-weight: normal; }
 
+.global-logo {
+  font-family: "guardian-bold";
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.8em; }
+
 @media (min-width: 320px) {
   h1 {
     color: #333333;
@@ -8945,6 +8951,12 @@ ul.pagination {
 
 h1, h2, h3, h4, li {
   font-weight: normal; }
+
+.global-logo {
+  font-family: "guardian-bold";
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.8em; }
 
 @media (min-width: 320px) {
   h1 {
