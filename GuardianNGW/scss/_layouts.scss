@@ -303,7 +303,7 @@ body{
 				display:block;
 				float:right;
 				width:300px;
-				margin: 41px 30px 0 0;
+				margin: 70px 30px 0 0;
 			}
 
 			@media (min-width:$large){
@@ -337,10 +337,27 @@ body{
 		}
 	}
 
-	.panel-comment{
+	.panel-time{
 		@media (min-width:$small){
+			//background:lime;
+			width:50%;
+			float:left;
+		}
+
+		@media (min-width:$medium-large){
+			width:30%;
+		}
+
+		@media (min-width:$large){
+			float:none;
+			width:100%;
+		}
+	}
+	.panel-comment-mobile{
+		display:none;
+		@media (min-width:$small){
+			display:block;
 			float:right;
-			width:150px;
 			padding-left:10px;
 			margin-left:20px;
 			border-left: 1px solid $grey;
@@ -348,13 +365,27 @@ body{
 				font-size:18px;
 			}
 		}
-		@media (min-width:$medium){
-			//max-width:580px;
+		@media (min-width:$medium-large){
+			display:block;
 			float:left;
-			padding-left:20px;
-			width:300px;
+			//width:50%;
+			padding-left:10px;
+			margin-left:20px;
+			margin-right:10px;
+			border-left: 1px solid $grey;
 		}
 		@media (min-width:$large){
+			display:none;
+		}
+
+	}
+	.panel-comment{
+		@media (min-width:$small){
+			display:none;
+		}
+		@media (min-width:$large){
+			display:block;
+			width:100%;
 			float:none;
 			border:none;
 			padding:10px 0 10px 0;
@@ -364,15 +395,38 @@ body{
 			}
 		}
 	}
-	
-	.panel-readtime{
+	.panel-readtime-mobile{
 		@media (min-width:$small){
+			display:block;
 			float:left;
+			padding-left:10px;
+			margin-left:10%;
+			border-left: 1px solid $grey;
 			a:link {
 				font-size:18px;
 			}
 		}
+		@media (min-width:$medium){
+			margin-left:260px;
+		}
+		@media (min-width:$medium-large){
+			float:left;
+			padding-left:10px;
+			margin-left:10px;
+			margin-right:0;
+		}
 		@media (min-width:$large){
+			display:none;
+		}
+	}
+
+	.panel-readtime{
+		@media (min-width:$small){
+			display:none;
+		}
+
+		@media (min-width:$large){
+			display:block;
 			float:none;
 			border:none;
 			padding:0;
