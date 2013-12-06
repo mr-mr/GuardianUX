@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*  SECTIONS  ============================================================================= */
 .section {
   clear: both;
@@ -5791,7 +5790,6 @@ nav.message_list {
   font-size: 15/20;
   color: #333333;
   text-rendering: optimizeLegibility;
-  background: #cccccc;
   background: #234a81;
   width: 100%;
   margin: 0 auto;
@@ -5811,7 +5809,6 @@ nav.message_list {
   font-size: 15/20;
   color: #333333;
   text-rendering: optimizeLegibility;
-  background: #cccccc;
   background: white; }
 
 .logo-block.footer {
@@ -6155,7 +6152,6 @@ body {
   font-size: 15/20;
   color: #333333;
   text-rendering: optimizeLegibility;
-  background: #cccccc;
   margin: 0;
   font-size: 15/20;
   background: #eeeeee;
@@ -8755,14 +8751,6 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 .icon-renren:before {
   content: "\f18b"; }
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
-
-body {
-  padding: 10px; }
 
 .comment-date {
   font-family: "guardian-sans";
