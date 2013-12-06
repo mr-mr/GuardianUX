@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*  SECTIONS  ============================================================================= */
 .section {
   clear: both;
@@ -624,6 +625,12 @@
 @font-face {
   font-family: "guardian-bold-italic";
   src: url("../font/Guardian-Egyp-Web-Semibold It.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "guardian-sans";
+  src: url("../font/AgateSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -2269,6 +2276,12 @@ body {
 @font-face {
   font-family: "guardian-bold-italic";
   src: url("../font/Guardian-Egyp-Web-Semibold It.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "guardian-sans";
+  src: url("../font/AgateSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -3944,6 +3957,12 @@ br:last-child {
 @font-face {
   font-family: "guardian-bold-italic";
   src: url("../font/Guardian-Egyp-Web-Semibold It.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "guardian-sans";
+  src: url("../font/AgateSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -6177,7 +6196,7 @@ body {
 
 .live-latest, .live-soon {
   font-size: 0.5em;
-  font-family: Helmet, Freesans, sans-serif;
+  font-family: "guardian-sans";
   font-weight: bold;
   font-style: normal;
   text-transform: uppercase;
@@ -7151,6 +7170,12 @@ iframe {
 @font-face {
   font-family: "guardian-bold-italic";
   src: url("../font/Guardian-Egyp-Web-Semibold It.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "guardian-sans";
+  src: url("../font/AgateSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -8601,180 +8626,197 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 .icon-renren:before {
   content: "\f18b"; }
 
-.global-logo.footer {
-  background: url("../img/guardian-logo.svg") no-repeat;
-  background-size: 100% auto;
-  width: 130px;
-  height: 53px;
-  margin: 0px 50px 0 0; }
-  @media (min-width: 320px) {
-    .global-logo.footer {
-      margin: 0;
-      display: none; } }
-  @media (min-width: 640px) {
-    .global-logo.footer {
-      display: block; } }
-  @media (min-width: 1200px) {
-    .global-logo.footer {
-      margin: 0px 50px 0 0; } }
-.global-logo.header {
-  background: url("../img/guardian-logo-5.svg") no-repeat;
-  background-size: 100% auto;
-  width: 260px;
-  height: 78px;
-  margin: -10px 0 10px 0; }
-  @media (max-width: 640px) {
-    .global-logo.header {
-      background: url("../img/guardian-logo.svg") no-repeat;
-      background-size: 100% auto;
-      float: left;
-      width: 120px;
-      height: 53px;
-      margin: 5px 0 0 -20px; } }
-.global-logo.section {
-  background: url("../img/news-logo.svg") no-repeat;
-  background-size: 100% auto;
-  width: 280px;
-  height: 88px;
-  margin: -10px 0 10px 0; }
-
-.ux-logo {
-  background: url("../img/g-logo.svg") no-repeat;
-  background-size: 100% auto;
-  width: 100px;
-  height: 90px;
-  margin: -200px 0 0 0; }
-  @media (min-width: 320px) {
-    .ux-logo {
-      margin: 0; } }
-  @media (min-width: 1200px) {
-    .ux-logo {
-      margin: 0; } }
-
-.g-only-logo {
-  background: url("../img/guardian-logo-2.svg") no-repeat center;
-  background-size: 40%;
-  background-color: #132745;
-  padding-left: 20px;
-  float: left;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 39px; }
-
-img {
-  width: 100%;
-  display: block; }
-
-.headshot {
-  @inlcude clear-fix;
-  width: 120px;
-  height: 120px;
-  border-radius: 120px;
-  padding-bottom: 5px;
-  background: url("../img/headshot-w-background.svg") no-repeat;
-  background-size: 100% auto; }
-  @media (max-width: 640px) {
-    .headshot {
-      width: 70px;
-      height: 70px;
-      border-radius: 70px; } }
-
-.media-container {
-  width: 300px;
-  height: 169px;
-  background: #e5e5e5;
-  margin-bottom: 20px; }
-
-.media-button {
-  position: absolute;
-  bottom: 1px;
-  z-index: 1000;
-  margin: 0; }
-  .media-button a {
-    width: 100px;
-    height: 50px; }
-
-.icon-play {
-  position: absolute;
-  margin: 0 0 0 -35px;
-  padding: 10px 0px 7px 10px; }
-  @media (max-width: 640px) {
-    .icon-play {
-      float: right;
-      left: 30px; } }
-
-.icon-volume-up {
-  position: absolute;
-  margin: 0 0 0 -35px;
-  padding: 10px 0px 7px 10px; }
-
-iframe {
-  width: 100%;
-  border: none;
-  margin-top: 50px;
+* {
   padding: 0;
-  position: absolute; }
+  margin: 0;
+  box-sizing: border-box; }
 
-.video-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2000;
-  background: #252525; }
+body {
+  padding: 10px; }
 
-.interactive {
-  width: 200px; }
-
-.fronts-image {
-  width: 100%;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: url("../img/image-5x3.svg") no repeat; }
+.comment-date {
+  font-family: "guardian-sans";
+  height: auto;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #a6a6a6; }
 
 .profile-container {
-  background-color: pink;
-  width: 100%;
-  height: 100%; }
+  /*background-color: pink;*/ }
+  .profile-container .username-information-wrapper {
+    width: 100%; }
+    @media (min-width: 640px) {
+      .profile-container .username-information-wrapper {
+        /*background-color: blue;*/
+        width: 60%; } }
+    .profile-container .username-information-wrapper .username-information {
+      width: 80%;
+      padding: 0 10px;
+      float: left;
+      overflow: hidden;
+      /*	background-color: black;*/ }
+      .profile-container .username-information-wrapper .username-information h1 {
+        /*float: left;*/
+        font-family: "guardian-sans"; }
+        @media (min-width: 320px) {
+          .profile-container .username-information-wrapper .username-information h1 {
+            /*	background-color: orange;*/ } }
+        @media (min-width: 506px) {
+          .profile-container .username-information-wrapper .username-information h1 {
+            /* background-color: yellow;*/ } }
+        @media (min-width: 640px) {
+          .profile-container .username-information-wrapper .username-information h1 {
+            /*	background-color: blue;*/ } }
+        @media (min-width: 960px) {
+          .profile-container .username-information-wrapper .username-information h1 {
+            /*		background-color: green;*/ } }
+        @media (min-width: 1200px) {
+          .profile-container .username-information-wrapper .username-information h1 {
+            /*		background-color: grey;*/ } }
+    .profile-container .username-information-wrapper .profile-picture {
+      float: left; }
+      @media (min-width: 320px) {
+        .profile-container .username-information-wrapper .profile-picture {
+          width: 20%; } }
+      @media (min-width: 506px) {
+        .profile-container .username-information-wrapper .profile-picture {
+          width: 18%; } }
+      @media (min-width: 640px) {
+        .profile-container .username-information-wrapper .profile-picture {
+          width: 17%; } }
+      @media (min-width: 960px) {
+        .profile-container .username-information-wrapper .profile-picture {
+          width: 16%; } }
+      @media (min-width: 1200px) {
+        .profile-container .username-information-wrapper .profile-picture {
+          width: 15%; } }
+    .profile-container .username-information-wrapper .join-date {
+      font-size: 0.8rem; }
 
-.username-information {
-  width: 60%;
-  float: left;
-  background-color: olive; }
+@media (min-width: 320px) {
+  .user-stats {
+    clear: both;
+    width: 100%; } }
+@media (min-width: 506px) {
+  .user-stats {
+    clear: both;
+    width: 100%; } }
+@media (min-width: 640px) {
+  .user-stats {
+    clear: none; } }
+@media (min-width: 960px) {
+  .user-stats {
+    clear: none; } }
+@media (min-width: 1200px) {
+  .user-stats {
+    clear: none; } }
 
-.user-stats {
-  width: 40%;
-  float: right;
-  background-color: teal; }
-
-.comment-controls {
+/* @group comment body */
+.comments-listing select {
+  display: inline-block;
+  margin-right: 3px; }
+.comments-listing form {
+  display: inline-block; }
+.comments-listing .comment-controls {
   height: 30px;
   width: 100%;
   float: left;
-  background-color: fuchsia; }
-
-.comments-list {
-  background-color: #eded68;
-  clear: both; }
-
-.comment {
-  height: 100px;
+  margin: 20px 0;
   clear: both;
-  border: 1px dotted #000000; }
+  /*background-color: orange;*/ }
+.comments-listing p {
+  margin: 8px 0; }
+.comments-listing .comments-list {
+  clear: both; }
+.comments-listing .comment {
+  /*background-color: #eded68;*/
+  clear: both;
+  border-top: 1px dotted #000000;
+  margin-top: 15px;
+  margin-bottom: 5px; }
+.comments-listing .comment-body {
+  font-family: "guardian-sans";
+  padding-left: 15px; }
+  .comments-listing .comment-body p {
+    margin: 8px 0;
+    max-width: 550px; }
 
-/*.pagination {
-	width: auto;
-	height: 20px;
-	background-color: orange;
-	clear: both;
+/* @end */
+.username-reply {
+  font-family: "guardian-sans";
+  font-size: 0.9rem; }
 
-}*/
-/*.pagination ol {
-	list-style: none;
-}*/
+.comment-article-link {
+  padding: 5px 0; }
+
+.icon-reply {
+  font-size: 0.9rem;
+  color: gray; }
+
+.comment-view-replies-action {
+  font-size: 0.9rem;
+  color: #a6a6a6; }
+
+@media (min-width: 506px) {
+  .comment-date {
+    text-align: right; } }
+@media (min-width: 640px) {
+  .comments-listing {
+    max-width: 1024px; }
+
+  .comment-meta {
+    float: left;
+    display: inline-block;
+    width: 200px;
+    margin-right: 30px; }
+
+  .comment-body {
+    float: left;
+    max-width: 60%; }
+
+  .comment-date {
+    float: right;
+    display: inline-block; }
+
+  .comment-actions {
+    clear: both; } }
+@media (min-width: 960px) {
+  .comments-listing {
+    background-color: green; }
+
+  .comment-meta {
+    float: left;
+    display: inline-block;
+    background-color: orange;
+    width: 200px;
+    margin-right: 30px; }
+
+  .comment-body {
+    float: left;
+    background-color: pink; }
+
+  .comment-date {
+    float: right;
+    display: inline-block;
+    background-color: yellow; }
+
+  .comment-actions {
+    clear: both;
+    background-color: #b4d455; }
+
+  .comment-details {
+    background-color: yellow; } }
+@media (min-width: 1200px) {
+  .comments-listing {
+    background-color: grey; } }
+/* @group pagination */
+.pagination {
+  height: 10px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  clear: both;
+  padding-top: 30px; }
+
 ul.pagination {
   border: 0;
   margin: 0;
@@ -8791,7 +8833,7 @@ ul.pagination {
   margin-right: 2px; }
 
 #pagination-profiles .previous-off, #pagination-profiles .next-off {
-  color: black;
+  color: gray;
   display: block;
   float: left;
   font-weight: bold;
@@ -8817,6 +8859,7 @@ ul.pagination {
 #pagination-profiles a:hover {
   border: solid 1px #666666; }
 
+/* @end */
 h1, h2, h3, h4, li {
   font-weight: normal; }
 
