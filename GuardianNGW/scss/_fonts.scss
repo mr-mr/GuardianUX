@@ -11,6 +11,8 @@ $font-path:"../font/";
 $sans-serif:"guardian-sans";
 $serif:"guardian-regular";
 
+$serif-title:"guardian-title";
+
 // $sans-serif-italic:;
 $serif-italic:"guardian-italic";
 
@@ -19,6 +21,13 @@ $serif-bold:"guardian-bold";
 
 // $sans-serif-bold-italic:;
 $serif-bold-italic:"guardian-bold-italic";
+
+@font-face {
+    font-family:"guardian-title";
+    src:url('../font/GdnTitlepiece-Autohint.otf') format('opentype');
+    font-weight:normal;
+    font-style:normal;
+} 
 
 @font-face {
     font-family:"guardian-regular";

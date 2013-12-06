@@ -604,6 +604,12 @@
   margin-left: 0; }
 
 @font-face {
+  font-family: "guardian-title";
+  src: url("../font/GdnTitlepiece-Autohint.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: "guardian-regular";
   src: url("../font/Guardian-Egyp-Web-Regular.woff") format("woff");
   font-weight: normal;
@@ -2253,6 +2259,12 @@ body {
 .advert-mpu {
   display: inline;
   width: 300px; }
+
+@font-face {
+  font-family: "guardian-title";
+  src: url("../font/GdnTitlepiece-Autohint.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
   font-family: "guardian-regular";
@@ -3934,6 +3946,12 @@ br:last-child {
 .comment-buttons input [value=PostComment] {
   background: #234a81;
   color: white; }
+
+@font-face {
+  font-family: "guardian-title";
+  src: url("../font/GdnTitlepiece-Autohint.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
   font-family: "guardian-regular";
@@ -5827,7 +5845,7 @@ nav.message_list {
   margin: -3px 0 0 30px; }
   @media (min-width: 320px) {
     .back-to-top {
-      margin: -3px 0 0 0;
+      margin: -15px 0 0 0;
       float: left; } }
   @media (min-width: 640px) {
     .back-to-top {
@@ -5927,10 +5945,14 @@ h1, h2, h3, h4, li {
   font-weight: normal; }
 
 .global-logo {
-  font-family: "guardian-bold";
+  font-family: "guardian-title";
   color: #fff;
   font-weight: normal;
-  font-size: 1.8em; }
+  font-size: 2.6em;
+  margin: -10px 0 10px 0; }
+  @media (max-width: 320px) {
+    .global-logo {
+      font-size: 1.1em; } }
 
 @media (min-width: 320px) {
   h1 {
@@ -7274,6 +7296,12 @@ iframe {
   width: 100%;
   height: 100%;
   background: url("../img/image-5x3.svg") no repeat; }
+
+@font-face {
+  font-family: "guardian-title";
+  src: url("../font/GdnTitlepiece-Autohint.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
   font-family: "guardian-regular";
@@ -8982,10 +9010,14 @@ h1, h2, h3, h4, li {
   font-weight: normal; }
 
 .global-logo {
-  font-family: "guardian-bold";
+  font-family: "guardian-title";
   color: #fff;
   font-weight: normal;
-  font-size: 1.8em; }
+  font-size: 2.6em;
+  margin: -10px 0 10px 0; }
+  @media (max-width: 320px) {
+    .global-logo {
+      font-size: 1.1em; } }
 
 @media (min-width: 320px) {
   h1 {
