@@ -121,21 +121,36 @@ img {
 }
 
 .headshot{
-	//@inlcude width(100);
-	//@include height(100);
-	@inlcude clear-fix;
-	width:120px;
-	height:120px;
-	border-radius: 120px;
-	padding-bottom:5px;
 	background: url('../img/headshot-w-background.svg') no-repeat;
 	background-size:100% auto;
-	
-	@media (max-width:$medium){
-		width:70px;
-		height:70px;
+	@include width(80);
+	@include height(80);
+	@include clear-fix;
+	border-radius: 120px;
+	padding-bottom:5px;
+	padding-right:10px;
+
+	@media (min-width:$small){
+		
+		@include width(40);
+		@include height(40);
 		border-radius: 70px;
 	}
+
+	@media (min-width:$medium){
+		@include width(70);
+		@include height(70);
+		//float:left;
+		//padding:0;
+		//margin:0;
+	
+	}
+
+	@media (min-width:$large){
+		float:none;
+	}
+
+	
 
 	
 }

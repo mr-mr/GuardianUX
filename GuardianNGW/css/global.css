@@ -5429,7 +5429,8 @@ a:visited {
   background: #234a81;
   padding: 15px 35px 15px 35px;
   text-decoration: none;
-  z-index: 200; }
+  z-index: 200;
+  display: inline-block; }
 .button a:hover {
   background: #132745; }
 .button.center {
@@ -5615,7 +5616,7 @@ nav select {
   nav select {
     display: inline-block; } }
 #global-nav-mobile {
-  background: #cccccc;
+  background: #fff;
   position: absolute;
   width: 100%;
   z-index: 10; }
@@ -5928,6 +5929,12 @@ footer {
 h1, h2, h3, h4, li {
   font-weight: normal; }
 
+.global-logo {
+  font-family: "guardian-bold";
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.8em; }
+
 @media (min-width: 320px) {
   h1 {
     color: #333333;
@@ -6030,7 +6037,7 @@ small {
   color: #234a81; }
 
 sub {
-  font-size: 0.71429em;
+  font-size: 0.78571em;
   margin-top: -15px;
   color: #a6a6a6; }
 
@@ -6096,8 +6103,15 @@ sub {
     font-size: 14px;
     color: #333333; }
 
-.article-comment-count {
-  font-size: 13px; }
+@media (min-width: 320px) {
+  .article-comment-count {
+    font-size: 13px; } }
+@media (min-width: 640px) {
+  .article-comment-count {
+    font-size: 18px; } }
+@media (min-width: 1200px) {
+  .article-comment-count {
+    font-size: 13px; } }
 
 .container-header {
   font-size: 20px;
@@ -6270,6 +6284,20 @@ body {
     margin: -25px -100px 0 0;
     padding-left: 30px; } }
 
+@media (max-width: 320px) {
+  .nf-desktop {
+    display: none; } }
+@media (min-width: 640px) {
+  .nf-desktop {
+    display: block; } }
+
+@media (max-width: 320px) {
+  .nf-mobile {
+    display: block; } }
+@media (min-width: 640px) {
+  .nf-mobile {
+    display: none; } }
+
 @media (min-width: 320px) {
   article h1 {
     margin-top: -30px; } }
@@ -6338,7 +6366,7 @@ aside {
       display: block;
       float: right;
       width: 300px;
-      margin: 0px 30px 0 0; } }
+      margin: 70px 30px 0 0; } }
   @media (min-width: 1200px) {
     aside.right {
       display: block;
@@ -6360,6 +6388,89 @@ aside {
       margin-top: -25px;
       width: 200px;
       float: left; } }
+
+@media (min-width: 320px) {
+  .panel-time {
+    width: 50%;
+    float: left; } }
+@media (min-width: 960px) {
+  .panel-time {
+    width: 30%; } }
+@media (min-width: 1200px) {
+  .panel-time {
+    float: none;
+    width: 100%; } }
+
+.panel-comment-mobile {
+  display: none; }
+  @media (min-width: 320px) {
+    .panel-comment-mobile {
+      display: block;
+      float: right;
+      padding-left: 10px;
+      margin-left: 20px;
+      border-left: 1px solid #cccccc; }
+      .panel-comment-mobile a:link {
+        font-size: 18px; } }
+  @media (min-width: 960px) {
+    .panel-comment-mobile {
+      display: block;
+      float: left;
+      padding-left: 10px;
+      margin-left: 20px;
+      margin-right: 10px;
+      border-left: 1px solid #cccccc; } }
+  @media (min-width: 1200px) {
+    .panel-comment-mobile {
+      display: none; } }
+
+@media (min-width: 320px) {
+  .panel-comment {
+    display: none; } }
+@media (min-width: 1200px) {
+  .panel-comment {
+    display: block;
+    width: 100%;
+    float: none;
+    border: none;
+    padding: 10px 0 10px 0;
+    margin: 0; }
+    .panel-comment a:link {
+      font-size: 14px; } }
+
+@media (min-width: 320px) {
+  .panel-readtime-mobile {
+    display: block;
+    float: left;
+    padding-left: 10px;
+    margin-left: 10%;
+    border-left: 1px solid #cccccc; }
+    .panel-readtime-mobile a:link {
+      font-size: 18px; } }
+@media (min-width: 640px) {
+  .panel-readtime-mobile {
+    margin-left: 35%; } }
+@media (min-width: 960px) {
+  .panel-readtime-mobile {
+    float: left;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 0; } }
+@media (min-width: 1200px) {
+  .panel-readtime-mobile {
+    display: none; } }
+
+@media (min-width: 320px) {
+  .panel-readtime {
+    display: none; } }
+@media (min-width: 1200px) {
+  .panel-readtime {
+    display: block;
+    float: none;
+    border: none;
+    padding: 0; }
+    .panel-readtime a:link {
+      font-size: 14px; } }
 
 @media (min-width: 320px) {
   .lean-left {
@@ -6967,7 +7078,8 @@ a:visited {
   background: #234a81;
   padding: 15px 35px 15px 35px;
   text-decoration: none;
-  z-index: 200; }
+  z-index: 200;
+  display: inline-block; }
 .button a:hover {
   background: #132745; }
 .button.center {
@@ -7081,18 +7193,36 @@ img {
   display: block; }
 
 .headshot {
-  @inlcude clear-fix;
-  width: 120px;
-  height: 120px;
+  background: url("../img/headshot-w-background.svg") no-repeat;
+  background-size: 100% auto;
+  width: 80px;
+  width: 8rem;
+  height: 80px;
+  height: 8rem;
   border-radius: 120px;
   padding-bottom: 5px;
-  background: url("../img/headshot-w-background.svg") no-repeat;
-  background-size: 100% auto; }
-  @media (max-width: 640px) {
+  padding-right: 10px; }
+  .headshot:before, .headshot:after {
+    content: "";
+    display: table; }
+  .headshot:after {
+    clear: both; }
+  @media (min-width: 320px) {
+    .headshot {
+      width: 40px;
+      width: 4rem;
+      height: 40px;
+      height: 4rem;
+      border-radius: 70px; } }
+  @media (min-width: 640px) {
     .headshot {
       width: 70px;
+      width: 7rem;
       height: 70px;
-      border-radius: 70px; } }
+      height: 7rem; } }
+  @media (min-width: 1200px) {
+    .headshot {
+      float: none; } }
 
 .media-container {
   width: 300px;
@@ -8863,6 +8993,12 @@ ul.pagination {
 h1, h2, h3, h4, li {
   font-weight: normal; }
 
+.global-logo {
+  font-family: "guardian-bold";
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.8em; }
+
 @media (min-width: 320px) {
   h1 {
     color: #333333;
@@ -8965,7 +9101,7 @@ small {
   color: #234a81; }
 
 sub {
-  font-size: 0.71429em;
+  font-size: 0.78571em;
   margin-top: -15px;
   color: #a6a6a6; }
 
@@ -9031,8 +9167,15 @@ sub {
     font-size: 14px;
     color: #333333; }
 
-.article-comment-count {
-  font-size: 13px; }
+@media (min-width: 320px) {
+  .article-comment-count {
+    font-size: 13px; } }
+@media (min-width: 640px) {
+  .article-comment-count {
+    font-size: 18px; } }
+@media (min-width: 1200px) {
+  .article-comment-count {
+    font-size: 13px; } }
 
 .container-header {
   font-size: 20px;
@@ -9113,7 +9256,8 @@ a:visited {
   background: #234a81;
   padding: 15px 35px 15px 35px;
   text-decoration: none;
-  z-index: 200; }
+  z-index: 200;
+  display: inline-block; }
 .button a:hover {
   background: #132745; }
 .button.center {
@@ -9310,7 +9454,8 @@ a:visited {
   background: #234a81;
   padding: 15px 35px 15px 35px;
   text-decoration: none;
-  z-index: 200; }
+  z-index: 200;
+  display: inline-block; }
 .button a:hover {
   background: #132745; }
 .button.center {

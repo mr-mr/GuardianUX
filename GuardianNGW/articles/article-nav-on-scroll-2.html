@@ -30,6 +30,7 @@
 		<!--<li><form id="global-search"><input type="text" placeholder="Search…"><button type="submit"><i class="icon-search"></i></button></form></li>-->
 	</div>
 	<div class="logo-block header">
+		<!--<h1 class="global-logo">theguardian<h1>-->
 		<a href="../"><div class="global-logo header"></div></a>
 	</div>
 	<!--<div class="global-logo section"></div>-->
@@ -214,34 +215,46 @@ if (isCapable){
 	<dd class="editor-name"><a href="">Rory Carroll</a> in Los Angeles</dd>
 </div>
 	<div class="border-line-dotted"></div>
-	<p class="article-comment-count"><i class="icon-bookmark"></i> 4 min read</p>
+	<p class="article-comment-count panel-time"><i class="icon-time"></i> Monday 4 November 2013 20.40 GMT</p>
 	<div class="border-line-dotted"></div>
-	<p class="article-comment-count"><a href="#comments"><i class="icon-comment"></i> 107 comments</a></p>
-	<!--<div class="border-line-dotted"></div>
-	<p class="article-comment-count"><i class="icon-time"></i> Monday 4 November 2013 20.40 GMT</p>-->
+	<p class="article-comment-count panel-readtime"><a href=""><i class="icon-bookmark"></i></a>  4 min read</p>
+	<div class="border-line-dotted"></div>
+	<p class="article-comment-count panel-comment"><a href="#comments"><i class="icon-comment"></i> 107 comments</a></p>
+	<p class="article-comment-count panel-readtime-mobile"><a href=""><i class="icon-bookmark"></i></a></p>
+	<p class="article-comment-count panel-comment-mobile"><a href="#comments"><i class="icon-comment"></i> 107</a></p>
 	<div class="border-line-thick"></div>
 </aside>	<aside class="right">
+
+    <!--<div class="border-line-thick"></div>
+    <div class="panel-bookmark">
+      <h3>4 min read</h3>
+        <span class="icon-stack" style="float:right;">
+            <a href=""><i class="icon-circle icon-stack-base"></i>
+            <i class="icon-bookmark icon-light"></i></a>
+        </span>
+    <div>-->
+
 		<div class="border-line-thick"></div>
 		<p>Share this article</p>
 		<ul>
 			<span class="icon-stack">
-          		<i class="icon-circle icon-stack-base"></i>
-          		<i class="icon-envelope icon-light"></i>
+          		<a href=""><i class="icon-circle icon-stack-base"></i>
+          		<i class="icon-envelope icon-light"></i></a>
         	</span>
 
 			<span class="icon-stack">
-          		<i class="icon-circle icon-stack-base"></i>
-          		<i class="icon-twitter icon-light"></i>
+          		<a href=""><i class="icon-circle icon-stack-base"></i>
+          		<i class="icon-twitter icon-light"></i></a>
         	</span>
 
         	<span class="icon-stack">
-          		<i class="icon-circle icon-stack-base"></i>
-          		<i class="icon-facebook icon-light"></i>
+          		<a href=""><i class="icon-circle icon-stack-base"></i>
+          		<i class="icon-facebook icon-light"></i></a>
         	</span>
 
         	<span class="icon-stack">
-          		<i class="icon-circle icon-stack-base"></i>
-          		<i class="icon-google-plus icon-light"></i>
+          		<a href=""><i class="icon-circle icon-stack-base"></i>
+          		<i class="icon-google-plus icon-light"></i></a>
         	</span>
 		</ul>
 
@@ -344,7 +357,7 @@ if (isCapable){
 	
 	<div id="container-section">
 		<div class="border-line-thick"></div>
-		<h2 class="container-header">popular in UK News</h2>
+		<h2 class="container-header">most popular in UK News</h2>
 	</div>
 		<div class="gs-wrapper container-popular">
 
@@ -421,32 +434,16 @@ if (isCapable){
 		</div>
 		<div class="border-line"></div>
 </div>
-<div id="wrapper">
-	
-	<div id="container-section">
-		
-		<h2 class="container-header"></h2>
-	</div>
-		
-		<div class="gs-wrapper">
-		
-			<div class="col span_4_of_4">
-
-			<a class="container-header small" href="../"><img src="../img/image-5x3-nf.svg"/></a>
-
-			</div>
-
-			<!--<div class="col span_1_of_4">
-			<h1 style="font-size:35px; line-height:40px;"><a href="">Google trying to evade UK privacy laws, campaigners claim</a></h1>
-				<h2 class="container-header small"> Search giant aims to contest right of British users to bring lawsuit in UK over claims company illicitly tracked their web browsing </h2>
-			<ul>
-				<li class="article-comment-count"><a href="#"><i class="icon-comment"></i> 52</a></li>
-				<li class="article-comment-count"><a href="#"><i class="icon-share-alt"></i> 502</a></li>
-			</ul>
-			</div>-->
-		
+<div id="wrapper">	
+	<div class="nf-desktop">
+		<div class="col span_4_of_4">
+		<a class="container-header small" href="../"><img src="../img/image-5x3-nf.svg"/></a>
 		</div>
-		
+	</div>
+	<p></p>
+	<div class="button nf-mobile">
+		<a href="../">Visit the Guardian homepage, for the whole picture</a>
+	</div>
 </div>
 
  <script src="../js/jquery-2.0.2.min.js"></script>

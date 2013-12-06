@@ -35,19 +35,20 @@ a {
 }
 
 .button{
-	//float:left;
-	//margin:10px 2px 30px 0;
-	//width:100%;
+
 	a:link, a:visited{
-	color:#fff;
-	background: $link;
-	padding: 15px 35px 15px 35px;
-	text-decoration: none;
-	z-index:200;
+		color:#fff;
+		background: $link;
+		padding: 15px 35px 15px 35px;
+		text-decoration: none;
+		z-index:200;
+		display: inline-block;
 	}
+
 	a:hover{
-	background: $link-hover;
+		background: $link-hover;
 	}
+
 	&.center{
 		margin:0 auto;
 	}
