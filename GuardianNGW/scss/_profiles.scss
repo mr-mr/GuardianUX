@@ -12,12 +12,10 @@
 
 // 1.Imports
 //-----------------------------
-@import "reset.scss";
-@import "fonts.scss";
-@import "font-awesome.scss";
-@import "colors.scss";
-@import "breakpoints.scss";
-@import "media.scss";
+@import "fonts";
+@import "font-awesome";
+@import "colors";
+@import "breakpoints";
 
 * {
 	padding: 0;
