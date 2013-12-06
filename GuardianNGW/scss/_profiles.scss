@@ -12,24 +12,15 @@
 
 // 1.Imports
 //-----------------------------
+
 @import "fonts";
 @import "font-awesome";
 @import "colors";
 @import "breakpoints";
 
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
 
 // 2. General
 //-----------------------------
-
-body {
-	padding: 10px;
-}
-
 
 
 .comment-date {
