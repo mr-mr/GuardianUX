@@ -205,6 +205,23 @@ body{
 	
 	}
 
+	.nf-desktop{
+		@media(max-width:$small){
+			display:none;
+		}
+		@media(min-width:$medium){
+			display:block;
+		}
+	}
+	.nf-mobile{
+		@media(max-width:$small){
+			display:block;
+		}
+		@media(min-width:$medium){
+			display:none;
+		}
+	}
+
 	
 	// 6.2 Article parts
 	// ------------------------------------------------------------------------------
@@ -407,7 +424,7 @@ body{
 			}
 		}
 		@media (min-width:$medium){
-			margin-left:260px;
+			margin-left:35%;
 		}
 		@media (min-width:$medium-large){
 			float:left;
