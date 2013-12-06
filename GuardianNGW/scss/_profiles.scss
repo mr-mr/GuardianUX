@@ -12,12 +12,19 @@
 
 // 1.Imports
 //-----------------------------
+<<<<<<< HEAD
 @import "reset.scss";
 @import "fonts.scss";
 @import "font-awesome.scss";
 @import "colors.scss";
 @import "breakpoints.scss";
 @import "media.scss";
+=======
+@import "fonts";
+@import "font-awesome";
+@import "colors";
+@import "breakpoints";
+>>>>>>> master
 
 * {
 	padding: 0;
