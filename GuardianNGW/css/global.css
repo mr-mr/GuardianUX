@@ -6160,8 +6160,8 @@ sub {
   background: #2e61a9;
   float: right;
   padding: 10px;
-  height: 46px;
-  margin: -15px 0 0 0; }
+  height: 50px;
+  margin: -50px 0 0 0; }
 
 html {
   font-family: "guardian-regular";
@@ -7259,7 +7259,7 @@ img {
 
 .icon-play {
   position: absolute;
-  margin: 0 0 0 -35px;
+  margin: 20px 0 0 -35px;
   padding: 10px 0px 7px 10px; }
   @media (max-width: 640px) {
     .icon-play {
@@ -9225,8 +9225,8 @@ sub {
   background: #2e61a9;
   float: right;
   padding: 10px;
-  height: 46px;
-  margin: -15px 0 0 0; }
+  height: 50px;
+  margin: -50px 0 0 0; }
 
 * {
   -webkit-box-sizing: border-box;
