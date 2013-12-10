@@ -12,6 +12,7 @@
 	// 6.3 Welcome screen
 	// 6.4 Columns
 	// 6.5 Framework parts
+	// 6.6 Flat design setup
 // -----------------------------------------------------------------------------------------------------------------------------------------
 
 // 1.0 imports
@@ -771,3 +772,37 @@ body{
 			text-align:left;
 		}
 	}
+
+
+	// 6.6 Flat design setup
+	// ------------------------------------------------------------------------------
+
+	.flat-design {
+		@media(min-width:$small){
+			.flat-design-mobile{
+				display:block;
+			}
+			.flat-design-desktop, .flat-design-tablet{
+				display:none;
+			}
+		}
+		
+		@media(min-width:$medium){
+			.flat-design-tablet{
+				display:block;
+			}
+			.flat-design-desktop, .flat-design-mobile{
+				display:none;
+			}
+		}
+
+		@media(min-width:$large){
+			.flat-design-desktop{
+				display:block;
+			}
+			.flat-design-tablet, .flat-design-mobile{
+				display:none;
+			}
+		}
+	}
+
