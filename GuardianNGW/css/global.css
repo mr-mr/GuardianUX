@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*  SECTIONS  ============================================================================= */
 .section {
   clear: both;
@@ -9004,6 +9005,9 @@ ul.pagination {
 
 #pagination-profiles a:hover {
   border: solid 1px #666666; }
+
+.comment-replies {
+  display: none; }
 
 /* @end */
 h1, h2, h3, h4, li {

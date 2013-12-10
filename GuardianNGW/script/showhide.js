@@ -25,3 +25,12 @@ $(".menu-showhide").click(function(e){
 	//alert('This button works');
 	
  });
+
+
+
+$('body').on('click', '.comment-view-replies-action', function(e) {
+   e.preventDefault();
+   var clickedNode = $(this);
+  
+  clickedNode.parent().next('.comment-replies').show();
+});
