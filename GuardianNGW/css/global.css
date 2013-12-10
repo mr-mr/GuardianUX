@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*  SECTIONS  ============================================================================= */
 .section {
   clear: both;
@@ -6162,7 +6161,10 @@ sub {
   float: right;
   padding: 10px;
   height: 50px;
-  margin: -50px 0 0 0; }
+  margin: -50px 0 0 1px; }
+  @media (max-width: 960px) {
+    .video-headline {
+      margin: -50px 0 0 15px; } }
 
 html {
   font-family: "guardian-regular";
@@ -9230,7 +9232,10 @@ sub {
   float: right;
   padding: 10px;
   height: 50px;
-  margin: -50px 0 0 0; }
+  margin: -50px 0 0 1px; }
+  @media (max-width: 960px) {
+    .video-headline {
+      margin: -50px 0 0 15px; } }
 
 * {
   -webkit-box-sizing: border-box;

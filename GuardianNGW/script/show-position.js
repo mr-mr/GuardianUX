@@ -1,5 +1,5 @@
 var showy = document.querySelector('.ears-nav');
-var origOffsetY = 1400;
+var origOffsetY = 2000;
 var endY = 3300;
 var navscrollend = 3900;
 
