@@ -19,7 +19,7 @@
 
 $img-path: "../img";
 $img-extension : ".svg";
-$guardian-logo-header : "#{$img-path}/guardian-logo-5#{$img-extension}";
+$guardian-logo-header : "#{$img-path}/guardian-logo#{$img-extension}";
 $section-logo-header : "#{$img-path}/news-logo#{$img-extension}";
 $guardian-logo : "#{$img-path}/guardian-logo#{$img-extension}";
 $ux-logo : "#{$img-path}/g-logo#{$img-extension}";
@@ -64,9 +64,10 @@ $img-landscape:"#{$img-path}/image-5x3#{$img-extension}";
 	&.header{
 		background: url($guardian-logo-header) no-repeat;
 		background-size:100% auto;
-		width:260px;
+		width:160px;
 		height:78px;
-		margin:-10px 0 10px 0;
+		//margin:-10px 0 10px 0;
+		margin: -15px 0 -28px 0;
 		@media (max-width:$medium){
 			background: url($guardian-logo) no-repeat;
 			background-size:100% auto;
