@@ -5716,7 +5716,6 @@ nav.message_list {
   box-shadow: 0px 7px 15px rgba(50, 50, 50, 0.35); }
 
 #nav-global {
-  height: 3rem;
   flex: 1 1 auto; }
 
 #nav-global a:link, #nav-global a:visited {
@@ -6302,7 +6301,7 @@ body {
     float: right;
     width: 300px;
     display: inline;
-    margin: -25px -100px 0 0;
+    margin: -25px -150px 0 0;
     padding-left: 30px; } }
 
 @media (max-width: 320px) {
@@ -7181,11 +7180,11 @@ a:visited {
     .global-logo.footer {
       margin: 0px 50px 0 0; } }
 .global-logo.header {
-  background: url("../img/guardian-logo-5.svg") no-repeat;
+  background: url("../img/guardian-logo.svg") no-repeat;
   background-size: 100% auto;
-  width: 260px;
+  width: 160px;
   height: 78px;
-  margin: -10px 0 10px 0; }
+  margin: -15px 0 -28px 0; }
   @media (max-width: 640px) {
     .global-logo.header {
       background: url("../img/guardian-logo.svg") no-repeat;
