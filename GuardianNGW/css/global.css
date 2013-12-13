@@ -7083,22 +7083,6 @@ aside {
     padding: 7px;
     text-align: left; }
 
-@media (min-width: 320px) {
-  .flat-design .flat-design-mobile {
-    display: block; }
-  .flat-design .flat-design-desktop, .flat-design .flat-design-tablet {
-    display: none; } }
-@media (min-width: 640px) {
-  .flat-design .flat-design-tablet {
-    display: block; }
-  .flat-design .flat-design-desktop, .flat-design .flat-design-mobile {
-    display: none; } }
-@media (min-width: 1200px) {
-  .flat-design .flat-design-desktop {
-    display: block; }
-  .flat-design .flat-design-tablet, .flat-design .flat-design-mobile {
-    display: none; } }
-
 a:link {
   color: #234a81;
   text-decoration: none;

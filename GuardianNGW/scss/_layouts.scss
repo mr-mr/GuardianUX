@@ -777,32 +777,3 @@ body{
 	// 6.6 Flat design setup
 	// ------------------------------------------------------------------------------
 
-	.flat-design {
-		@media(min-width:$small){
-			.flat-design-mobile{
-				display:block;
-			}
-			.flat-design-desktop, .flat-design-tablet{
-				display:none;
-			}
-		}
-		
-		@media(min-width:$medium){
-			.flat-design-tablet{
-				display:block;
-			}
-			.flat-design-desktop, .flat-design-mobile{
-				display:none;
-			}
-		}
-
-		@media(min-width:$large){
-			.flat-design-desktop{
-				display:block;
-			}
-			.flat-design-tablet, .flat-design-mobile{
-				display:none;
-			}
-		}
-	}
-
