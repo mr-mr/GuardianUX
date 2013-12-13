@@ -1,0 +1,533 @@
+
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+	
+	<title>5.4 Google chairman: NSA spying on our data centres 'outrageous'</title>
+	<link rel="stylesheet" href="../css/global.css" type="text/css">
+	<link rel="stylesheet" href="../css/prettify.css" media="all" />
+
+	<link rel="stylesheet" href="../css/jquery.fancybox.css?v=2.1.5" type="text/css" />
+	
+	<script src="../js/menu-overflow.js"> </script>
+
+	
+</head>
+
+<header id="global-header">
+	<div class="nav-extras">
+		<li><a href="">UK Edition <i class="icon-angle-down"></i></a></li>
+			<!--<select>
+			  <option value="UK">UK Edition</option>
+			  <option value="US">US Edition</option>
+			  <option value="AU">AU Edition</option>
+			</select>-->
+		<li><a href="">Sign in <i class="icon-user button"></i></a></li>
+		<li><a href=""><i class="icon-search"></i></a></li>
+		<!--<li><form id="global-search"><input type="text" placeholder="Search…"><button type="submit"><i class="icon-search"></i></button></form></li>-->
+	</div>
+	<div class="logo-block header">
+		<!--<a href="../"><h1 class="global-logo">theguardian<h1></a>-->
+		<a href="../"><div class="global-logo header"></div></a>
+	</div>
+	<!--<div class="global-logo section"></div>-->
+	
+<header class="no-flow-into">
+  <nav id="nav-global">
+    <a href="">Home</a>
+    <a href="" class="nav-active">News</a>
+  	<a href="">Comment</a>
+  	<a href="">Sport</a>
+  	<a href="">Football</a>
+  	<a href="">Tech</a>
+  	<a href="">Culture</a>
+  	<a href="">Life</a>
+  	<a href="">Fashion</a>
+  	<a href="">Economy</a>
+  	<a href="">Money</a>
+  	<a href="">Travel</a>
+  	<a href="">Sci &amp; Environment</a>
+  	<a href="">Education</a>
+  </nav>
+
+  <div id="menu">
+    <a href="#" class="toggle"></a>
+
+    <aside>
+      <nav id="nav-compact">
+        <!-- #global nav items will flow here -->
+      </nav>
+      <em>
+        
+      </em>
+    </aside>
+
+  </div>
+
+  <!--<nav class="subnav">
+		<ol id="globalnav-links" class="subnav">
+			<li><a href="">UK</a></li>
+			<li><a href="">Europe</a></li>
+			<li class="nav-active">Americas</li>
+			<li><a href="">Asia</a></li>
+			<li><a href="">Australia</a></li>
+			<li><a href="">Africa</a></li>
+			<li><a href="">Middle East</a></li>
+			<li><a href="">[Special event]</a></li>
+		</ol>
+
+		<select> 
+	    	<option value="" selected="selected">UK</option> 
+	    	<option value="">Home</option> 
+		    <option value="">Europe</option> 
+		    <option value="">Americas</option> 
+		    <option value="">Asia</option> 
+		    <option value="">Australia</option> 
+		    <option value="">Africa</option> 
+		    <option value="">Middle East</option>
+		    <option value="">[Special event]</option>
+  		</select>
+	</nav>-->
+</header>
+
+<script>
+      var navigation = responsiveNav("#nav-global", {
+        insert: "before"
+      });
+</script>
+
+  <script>
+    var menu   = document.querySelector('#menu'),
+    toggle = document.querySelector('.toggle'),
+    aside = document.querySelector('aside');
+
+toggle.addEventListener('click', function(){
+  aside.classList.toggle('visible')
+})
+
+var property = "flow-into";
+
+// check if any variant exists, prefixed or not
+var isCapable = ['-webkit-','-ms-','-moz-',''].some(function(prefix){
+  return prefix + property in document.body.style 
+})
+
+property = isCapable ? property : 'no-' + property;
+
+document.body.classList.add(property)
+
+// If there is support for flow-into
+if (isCapable){
+
+  // Run after PrefixFree
+  document.addEventListener('DOMContentLoaded',function(){
+    // Get the menu flow
+    var menuFlow = document.webkitGetNamedFlows()['menu']; 
+
+    // This is the core function
+    menuFlow.addEventListener('webkitregionoversetchange', function(e){
+      // There is no EmtpyRegion (-1)
+      if (menuFlow.firstEmptyRegionIndex == -1){
+        menu.classList.add('visible');
+      }else{
+        menu.classList.remove('visible');
+      }
+    });
+
+  });
+
+}
+  </script></header><ol class="extras-mobile">
+  <li><a class=""><i class="icon-user"></i></a></li>
+  <li><a class=""><i class="icon-flag icon-white"></i></a></li>
+  <li><a class=""><i class="icon-search"></i></a></li>
+  <li><a class="menu-showhide"><i class="icon-reorder"></i></a></li>
+</ol>
+
+<div id="global-nav-mobile" class="menu-hidden">
+    <nav class="mobile-menu column">
+        <ul class="column-1">
+    			<li><a href="">Home</a></li>
+          <li class="nav-active">News</li>
+    			<li><a href="">Comment</a></li>
+    			<li><a href="">Sport</a></li>
+          <li><a href="">Football</a></li>
+          <li><a href="">Tech</a></li>
+          <li><a href="">Culture</a></li>
+          <li><a href="">Life</a></li>
+    		</ul>
+        <ul class="column-2">
+          <li><a href="">Fashion</a></li>
+    			<li><a href="">Economy</a></li>
+    			<li><a href="">Money</a></li>
+    			<li><a href="">Travel</a></li>
+          <li><a href="">Sci &amp; Environment</a></li>
+          <li><a href="">Education</a></li>
+        </ul>
+    </nav>
+      <ul class="editions-mobile">
+          <li>Edition:</li>
+          <li class="nav-active"><i class="icon-circle-blank"></i> UK</li>
+          <li><a href="">US</a></li>
+          <li><a href="">AU</a></li>
+      </ul>
+      <ul class="editions-mobile-footer">
+        <li>View:</li>
+        <li class="nav-active"><i class="icon-circle-blank"></i> Mobile</li>
+        <li><a href="">Desktop</a></li>
+      </ul>
+</div><header>
+  <nav id="nav-global-scroll" class="nav-scroll">
+    <!--<a href="" class="go-home"><i class="icon-reply"></i></a>-->
+    <div class="logo-block"></div>
+    <div class="button back-to-top-nav" style=" color:red"><a href="#top"><i class="icon-angle-up"></i> Back to top</a></div>
+  	<a href="../">Guardian Home</a>
+    <a href="" class="nav-scroll-dropdown">More Life & Style <i class="icon-angle-down"></i></a>
+    <div style="float:right;">
+      <a href=""><i class="icon-comment"></i> <sup>28</sup></a>
+      <a href="" class="">|</a>
+      <a href=""><i class="icon-envelope"></i></a>
+      <a href=""><i class="icon-facebook"></i></a>
+      <a href=""><i class="icon-twitter"></i></a>
+      <a href=""><i class="icon-google-plus"></i></a>
+      <!--<a href=""><i class="icon-share"></i></a>
+      <a href="" class="">|</a>
+      <a href=""><i class="icon-bookmark"></i></a>-->
+      <!--<a href=""><i class="icon-user"></i></a>-->
+      <!--<a href=""><i class="icon-user"></i> Chris Clarke</a>
+      <a href=""><i class="icon-search"></i></a>-->
+    </div>
+  </nav>
+
+</header>
+
+<body id="article-background">
+
+<div id="wrapper">
+	<div class="advert" style="width:99%; max-width:928px;">
+	<img src="../img/advert-banner-large-2.jpg" />
+</div>
+<!-- end .advert -->
+	<div class="border-line"></div>
+	<aside class="header"><h4><a href="">Life &amp; Style</a></h4></aside>
+	
+	<article><h1>Fish and chips by the Seine: French foodies embrace British cuisine</h1></article>
+
+	<article><h2 class="summary article">
+		<li>The hottest restaurant in Paris is a fish and chip shop – and battered cod is not the only British fare making waves in France</li>
+	</h2></article>
+	
+	<div class="toggle-menu-mobile"></div>
+
+	<aside class="left">
+	<div class="border-line-thick"></div>
+	<p></p>
+<div class="editor-1">
+	<p class="headshot"></p>
+	<dd class="editor-name"><a href="">Sandra Haurant </a> in London</dd>
+</div>
+	<div class="border-line-dotted"></div>
+	<p class="article-comment-count panel-time"><i class="icon-time"></i> Monday 4 November 2013 20.40 GMT</p>
+	<div class="border-line-dotted"></div>
+	<p class="article-comment-count panel-readtime"><a href=""><i class="icon-bookmark"></i></a>  4 min read</p>
+	<div class="border-line-dotted"></div>
+	<p class="article-comment-count panel-comment"><a href="#comments"><i class="icon-comment"></i> 107 comments</a></p>
+	<p class="article-comment-count panel-readtime-mobile"><a href=""><i class="icon-bookmark"></i></a></p>
+	<p class="article-comment-count panel-comment-mobile"><a href="#comments"><i class="icon-comment"></i> 107</a></p>
+	<div class="border-line-thick"></div>
+</aside>	<aside class="right">
+
+    <!--<div class="border-line-thick"></div>
+    <div class="panel-bookmark">
+      <h3>4 min read</h3>
+        <span class="icon-stack" style="float:right;">
+            <a href=""><i class="icon-circle icon-stack-base"></i>
+            <i class="icon-bookmark icon-light"></i></a>
+        </span>
+    <div>-->
+
+		<div class="border-line-thick"></div>
+		<p>Share this article</p>
+		<ul>
+			<span class="icon-stack">
+          		<a href=""><i class="icon-circle icon-stack-base"></i>
+          		<i class="icon-envelope icon-light"></i></a>
+        	</span>
+
+			<span class="icon-stack">
+          		<a href=""><i class="icon-circle icon-stack-base"></i>
+          		<i class="icon-twitter icon-light"></i></a>
+        	</span>
+
+        	<span class="icon-stack">
+          		<a href=""><i class="icon-circle icon-stack-base"></i>
+          		<i class="icon-facebook icon-light"></i></a>
+        	</span>
+
+        	<span class="icon-stack">
+          		<a href=""><i class="icon-circle icon-stack-base"></i>
+          		<i class="icon-google-plus icon-light"></i></a>
+        	</span>
+		</ul>
+
+	<div class="border-line advert"></div>
+	<p>Advertisement</p>
+		<div class="advert advert-mpu" style="margin-top:10px;">
+	<img src="../img/advert-mpu.jpg" style="width: 300px; float: left; padding: 0px 15px 10px 5px;" />
+</div>
+<!-- end .advert -->	</aside>	
+	<article>
+		<img src="../img/image-5x3.svg"/>
+		<sub><i class="icon-camera"></i> Fish and chips at The Sunken Chip in Paris.<sub>
+	</article>
+
+	<article>
+	<div class="editor-2">
+		<p class="headshot"></p>
+		<dd class="editor-name"><a href="">Sandra Haurant </a> in London</dd>
+	</div>
+		<p> Wafting by the Canal Saint-Martin in the 10th arrondissement of Paris is the familiar smell of salt and vinegar. The Sunken Chip, the only fish and chip shop in Paris, was launched in August by British-born, Paris-based chefs Michael Greenwold and James Whelan. And perhaps surprisingly, in a country whose inhabitants frequently balk at the mention of British food, it's all going swimmingly – it even made it as one of French Glamour magazine's "hottest places to go" in September.</p>
+
+		<p>Greenwold, of the award-winning Roseval restaurant, and Whelan, who owns Parisian bar L'Inconnu, had been talking about opening a "chippie" for a while, but suddenly the timing seemed right: "There has been a trend in France for the whole 'So British' thing," says Greenwold. Perhaps a byproduct of the London Olympics, the slogan "So British" has been floating about in France for the past couple of years, often in combination with an image of a teapot or some tweed. Riding the retro British wave, The Sunken Chip serves all the staples – pickled onions, pickled eggs and mushy peas, all washed down with Vimto, Lilt or dandelion and burdock.</p>
+
+		<p>"The decor we have is 1960s Formica, and that's the sort of Englishness the French like – that sort of slightly kitsch side. I think fish and chips is the ultimate version of that; it's the one food form that fits into their ideas of the British seaside," says Greenwold. The clientele is largely French, with lot of "professionals at lunchtime and hipsters at night". Greenwold says he has not exactly "Frenchified" the battered fish recipe, but has adapted the dish a little. "It's very classic, but the batter has slightly more beer in it so it's lighter … Our cooking time is so short that the fish is only just cooked." The restaurant seats just 25 for lunch and dinner, and has been known to sell 300 takeaways at night.</p>
+
+		<p>Greenwold came to Paris six years ago to learn about French food. It was while working at Le Chateaubriand – regularly ranked as one of the top restaurants in the world – that he saw first-hand what the French think of the food from over the Channel. "I got a lot of grief at the beginning for being English in a French kitchen," he says.
+Nonetheless, fish and chips seem to be a winner, and not just in Paris. Tony Hill came to southern France with a plan to build a property business. When that didn't work out, he opened a mobile fish and chip shop called Cod en Bleu. It went so well that he has now invested in a bigger and better van with a regular spots in 13 villages around the Tarn area. "Percentage-wise there are probably more British customers, but in some villages I now have more French regulars," he says.
+Meanwhile, in Avignon, a little tearoom with a British theme has been bringing in French customers for 40 years. French chef Denis Bouvier took over 16 years ago and sticks to a British menu, often only slightly adapted to the French palate. Not everything works: "Steak and kidney pie and toad in the hole don't go down well," he says. "Crumble is always a success."</p>
+
+<p>Back in Paris, Anna Trattles, who is British, and Alice Quillet, who is French and British, have spent the past three years serving up mainly British food at Le Bal Café, connected to Le Bal gallery. The restaurant is now well-established and has a loyal clientele. The kitchen serves brunch and a full dinner menu. "Brunch has always been popular," says Trattles. "Eggs and bacon and pancakes and things are universally loved. We had more of a problem with dinner. I come from St John's in London, so at first I was doing a lot of offal and cervelle d'agneau [lamb's brains]."
+But while many French people are comfortable with cuts that British palates find challenging, she says: "It wasn't as quickly accepted as I had expected. This was only three years ago, but people hadn't yet understood that the British gastronomic scene is one of the best in the world. They were stuck at boiled vegetables and boiled meat."</p>
+
+<p>The same complaints come in regularly against vinegary flavours, and sweet and savoury combinations, but not everyone needs convincing. Sidonie Pain, the author of a new recipe book published in French, Made in London, spent time in London as an au pair and is enthusiastic about British food. But she lets on that even the publishers weren't sure they could find enough British recipes to fill the book. "For a lot of French people, there is a sort of suspicion around British food," she says. That attitude is probably why her recipe book, full of cosy images and recipes for dishes such as Cornish pasties and crumpets, comes with a few words of encouragement for the sceptical French cook: "England and gastronomy are not antonyms."</p>
+
+		<div class="border-line-thick"></div>
+		<p>Tags: <a href="">Eric Schmidt</a>,  <a href="">Google</a>,  <a href="">NSA</a>,  <a href="">Obama administration</a>,  <a href="">United States</a></p>		<ul>
+			<span class="icon-stack">
+          		<i class="icon-circle icon-stack-base"></i>
+          		<i class="icon-envelope icon-light"></i>
+        	</span>
+
+			<span class="icon-stack">
+          		<i class="icon-circle icon-stack-base"></i>
+          		<i class="icon-twitter icon-light"></i>
+        	</span>
+
+        	<span class="icon-stack">
+          		<i class="icon-circle icon-stack-base"></i>
+          		<i class="icon-facebook icon-light"></i>
+        	</span>
+
+        	<span class="icon-stack">
+          		<i class="icon-circle icon-stack-base"></i>
+          		<i class="icon-google-plus icon-light"></i>
+        	</span>
+		</ul>
+		<div class="border-line"></div>
+	</article>
+		
+</div>
+
+
+</body>
+<p></p>
+<div id="wrapper">
+	
+	<div id="container-section">
+		<div class="border-line-thick"></div>
+		<h2 class="container-header">most popular on the Guardian</h2>
+	</div>
+		<div class="gs-wrapper container-popular">
+
+		<div class="col span_1_of_4">
+		<h4>Most Read</h4>
+			<img src="../img/image-5x3.svg"/>
+			<h2 class="container-header medium">1.<a href=""> Top 10 documentaries</a></h2>
+			<ul>
+				<li class="article-comment-count"><a href="#"><i class="icon-comment"></i> 152</a></li>
+			</ul>
+		</div>	
+
+		<div class="col span_1_of_4" style="padding-top:40px;">
+			<h2 class="container-header small">2.<a href=""> David Cameron makes leaner state a permanent goal</a></h2>
+			<h2 class="container-header small">3.<a href=""> Apple maps: how Google lost when everyone thought it had won</a></h2>
+			<h2 class="container-header small">4.<a href=""> David Dimbleby achieves tattoo ambition at 75</a></h2>
+			<h2 class="container-header small">5.<a href=""> José Mourinho 'in tunnel bust-up' with West Brom defender Jonas Olsson</a></h2>
+		</div>
+
+		<div class="col span_1_of_4" style="padding-top:40px;">
+			<h2 class="container-header small">6.<a href=""> It's business that really rules us now | George Monbiot</a></h2>
+			<h2 class="container-header small">7.<a href=""> George Clooney knocks Russell Crowe and Leonardo DiCaprio, but loves Brad Pitt</a></h2>
+			<h2 class="container-header small">8.<a href=""> The Hunger Games: Catching Fire – first look review</a></h2>
+			<h2 class="container-header small">9.<a href=""> Alcohol without the hangover? It's closer than you think | David Nutt</a></h2>
+			<h2 class="container-header small">10.<a href=""> Typhoon Haiyan - before and after</a></h2>
+		</div>
+	
+
+		<div class="col span_1_of_4" style="border-left:1px solid #ccc; padding-left:15px;">
+		<h4>Most Shared</h4>
+			<h2 class="container-header small">1.<a href=""> 60 years after the war ends, two soldiers emerge from the jungle</a></h2>
+			<h2 class="container-header small">2.<a href=""> Growing-up for goths</a></h2>
+			<h2 class="container-header small">3.<a href=""> The Craigslist killers: the full story</a></h2>
+			<h2 class="container-header small">4.<a href=""> Typhoon Haiyan - before and after</a></h2>
+			<h2 class="container-header small">5.<a href=""> José Mourinho 'in tunnel bust-up' with West Brom defender Jonas Olsson</a></h2>
+		</div>
+		
+		
+		</div>
+
+		<div id="tabs" class="container-popular-tabs" style="backgroud:#fff;">
+			<ul>
+			    <li><a href="#tabs-1">Most Read</a></li>
+			    <li><a href="#tabs-2">Most Shared</a></li>
+			</ul>		  
+			<div id="tabs-1">
+				<h2 class="container-header small">1.<a href=""> Top 10 documentaries</a></h2>
+				<h2 class="container-header small">2.<a href=""> David Cameron makes leaner state a permanent goal</a></h2>
+				<h2 class="container-header small">3.<a href=""> Apple maps: how Google lost when everyone thought it had won</a></h2>
+				<h2 class="container-header small">4.<a href=""> David Dimbleby achieves tattoo ambition at 75</a></h2>
+				<h2 class="container-header small">5.<a href=""> José Mourinho 'in tunnel bust-up' with West Brom defender Jonas Olsson</a></h2>
+			<h2 class="container-header small">6.<a href=""> It's business that really rules us now | George Monbiot</a></h2>
+			<h2 class="container-header small">7.<a href=""> George Clooney knocks Russell Crowe and Leonardo DiCaprio, but loves Brad Pitt</a></h2>
+			<h2 class="container-header small">8.<a href=""> The Hunger Games: Catching Fire – first look review</a></h2>
+			<h2 class="container-header small">9.<a href=""> Alcohol without the hangover? It's closer than you think | David Nutt</a></h2>
+			<h2 class="container-header small">10.<a href=""> Typhoon Haiyan - before and after</a></h2>
+
+			</div>
+
+			<!--<div id="tabs-2">
+				<h2 class="container-header small">1.<a href=""> It's business that really rules us now | George Monbiot</a></h2>
+				<h2 class="container-header small">2.<a href=""> George Clooney knocks Russell Crowe and Leonardo DiCaprio, but loves Brad Pitt</a></h2>
+				<h2 class="container-header small">3.<a href=""> The Hunger Games: Catching Fire – first look review</a></h2>
+				<h2 class="container-header small">4.<a href=""> Alcohol without the hangover? It's closer than you think | David Nutt</a></h2>
+			</div>-->
+
+			<div id="tabs-2">
+				<h2 class="container-header small">1.<a href=""> 60 years after the war ends, two soldiers emerge from the jungle</a></h2>
+				<h2 class="container-header small">2.<a href=""> Growing-up for goths</a></h2>
+				<h2 class="container-header small">3.<a href=""> The Craigslist killers: the full story</a></h2>
+				<h2 class="container-header small">4.<a href=""> Typhoon Haiyan - before and after</a></h2>
+				<h2 class="container-header small">5.<a href=""> José Mourinho 'in tunnel bust-up' with West Brom defender Jonas Olsson</a></h2>
+			</div>
+		</div>
+		<div class="border-line"></div>
+</div>
+<div class="advert banner-small" style="width:90%; max-width:728px;">
+	<img src="../img/advert-banner.jpg" />
+</div>
+<!-- end .advert -->
+ <script src="../js/jquery-2.0.2.min.js"></script>
+ <script src="../js/jquery-1.9.1.min.js"></script>
+
+ <script src="../js/tabs.ui.min.js"></script>
+ <script src="../js/tabs.min.js"> </script>
+
+ <script src="../js/tooltip.min.js"> </script>
+
+ <!--<script src="js/bootstrap.min.js"> </script>-->
+
+<script src="../js/prettify.min.js"> </script> 
+<script src="../js/run_prettify_cc.min.js"> </script>
+ 
+ <script src="../js/showhide.min.js"> </script>
+
+ <script src="../js/accordion.min.js"> </script>
+ <script src="../js/accordion-with-arrows.min.js"> </script>
+
+ <script src="../js/sticky-position.min.js"> </script>
+ <script src="../js/show-position.min.js"> </script>
+
+ <script src="../js/fancybox-player.min.js"> </script>
+ <script src="../js/jquery.fancybox-media.min.js"> </script>
+
+ <script src="../js/responsive-nav.min.js"></script>
+ <script src="../js/responsivegridsystem.js"></script>
+
+
+<footer id="global-footer" class="block">
+		<div class="logo-block footer">
+			<div class="global-logo footer"></div>
+			<div class="back-to-top button"><a href="#top"><sup><i class="icon-angle-up"></i></sup> Back to top</a></div>
+		</div>
+		
+		<nav class="footer-links-mobile">
+			<ul class="column-1">
+				<li><a href="">Home</a></li>
+				<li><a href="">World</a></li>
+				<li><a href="">Sport</a></li>
+				<li><a href="">Life &amp; Style</a></li>
+				<li><a href="">Business</a></li>
+				<li><a href="">Technology</a></li>
+				<li><a href="">All Sections</a></li>
+			</ul>
+			
+			<ul class="column-2">
+				<li><a href="">UK</a></li>
+				<li><a href="">Comment</a></li>
+				<li><a href="">Football</a></li>
+				<li><a href="">Culture</a></li>
+				<li><a href="">Travel</a></li>
+				<li><a href="">Environment</a></li>
+			</ul>
+			
+			<ul class="column-3 extra-products-mobile">
+				<li><a href="">Soulmates</a></li>
+				<li><a href="">Jobs</a></li>
+			</ul>
+		</nav>
+
+			<ul class="editions-mobile-footer">
+				<li>Edition:</li>
+	         	<li class="nav-active"><i class="icon-circle-blank"></i> UK</li>
+	         	<li><a href="">US</a></li>
+	         	<li><a href="">AU</a></li>
+	        </ul>
+
+	        <ul class="editions-mobile-footer">
+				<li>View:</li>
+	         	<li class="nav-active"><i class="icon-circle-blank"></i> Mobile</li>
+	         	<li><a href="">Desktop</a></li>
+	        </ul>
+
+			<div class="footer-links-mobile-bottom">
+				<ul class="column-1">
+					<li><a href="">About this site</a></li>
+					<li><a href="">Contact us</a></li>
+					<li><a href="">Terms &amp; Conditions</a></li>
+					<li><a href="">Cookie Policy</a></li>
+				</ul>
+
+				<ul class="column-2">
+					<li><a href="">Help</a></li>
+					<li><a href="">Feedback</a></li>
+					<li><a href="">Privacy policy</a></li>
+				</ul>
+			</div>
+
+
+		<nav class="footer-links">
+			<ul class="column-1">
+				<li><a href="">Desktop version</a></li>
+				<li><a href="">Contact us</a></li>
+				<li><a href="">Privacy policy</a></li>
+				<li><a href="">About this site</a></li>
+			</ul>
+			
+			<ul class="column-2">
+				<li><a href="">Feedback</a></li>
+				<li><a href="">Cookie Policy</a></li>
+				<li><a href="">Help</a></li>
+				<li><a href="">Terms &amp; Conditions</a></li>
+			</ul>
+		</nav>
+		
+		<div class="copyright">&#169; 2013 Guardian News and Media Limited or its affiliated companies. All rights reserved.</div>
+</footer>
+</html>
+
+<!--Includes of all js files in the footer as well, jquery and any custom ones!-->
