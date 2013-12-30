@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*  SECTIONS  ============================================================================= */
 .section {
   clear: both;
@@ -5716,7 +5717,7 @@ nav.message_list {
   box-shadow: 0px 7px 15px rgba(50, 50, 50, 0.35); }
 
 #nav-global {
-  height: 2.4rem;
+  height: 3rem;
   flex: 1 1 auto; }
 
 #nav-global a:link, #nav-global a:visited {
