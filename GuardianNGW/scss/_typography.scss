@@ -66,6 +66,13 @@ h1 {
 	}
 }
 
+.football-supp-header{
+	h1{
+		font-size:(24 /10) * 1em;
+		color:$semi-grey;
+	}
+}
+
 
 h2 {
 	color:$copy;
@@ -118,6 +125,11 @@ p {
 		font-size:(12 / 14) * 1em;
 		line-height:1.4em;
 	}
+	&.no-head{
+		padding:5px;
+		font-size:(16 / 14) * 1em;
+	}
+
 }
 
 dd{
@@ -134,7 +146,16 @@ strong, th, dt {
 
 }
 
-small{
+.tags{
+	display:block;
+	font-size:1em;
+	line-height:1.6em;
+	@media(max-width:$large){
+		display:none;
+	}
+}
+
+.small{
 	color:$copy;
 	font-family: $serif; 
 	font-size:(20 / 14) * 0.6em;
@@ -142,10 +163,52 @@ small{
 }
 
 .timestamp{
-	width: 24%;
+	width: 150px;
 	text-align: right;
 	padding-top: -5px;
 	margin-left:-135px;
+
+	@media (max-width:$large){
+		text-align:left;
+		padding-top:0;
+		margin-left:0;
+	}
+}
+
+.score-large{
+	display:block;
+	width:150px;
+	padding:10px;
+	text-align:center;
+
+	@media(min-width:$small){
+		font-size:1.8em;
+	}
+
+	@media(min-width:$medium){
+		font-size:(20 / 14) * 2.8em;
+	}
+}
+
+.live-score{
+	display:inline;
+	//font-size:2em;
+}
+
+.live-score-team{
+	font-size:1.8em;
+}
+
+.live-event-right{
+	margin-right:10%;
+}
+
+.live-event-left{
+	margin-left:10%;
+}
+
+.live-event-time{
+	
 }
 
 // 5.0 layout
@@ -324,7 +387,7 @@ sub {
 }
 
 .football-clock{
-	color:LimeGreen;
+	color:red;
 }
 
 .team-headline{
@@ -353,13 +416,6 @@ sub {
 	padding-left:15px;
 }
 
-.live-score{
-	font-size:2em;
-	&:h3{
-		font-size:10px;
-	}
-}
-
 .form {
 	width:5px;
 	height:3px;
@@ -380,17 +436,23 @@ sub {
 	}
 }
 
-.video-headline{
+.media-headline{
 	color:#fff;
 	background:$link-visited;
-	float:right;	
+	text-align:right;	
 	padding:10px;
 	height:50px;
-	margin:-50px 0 0 1px;
+	margin:-52px 0 0 0;
 
-	@media(max-width:$medium-large){
-		margin:-50px 0 0 15px;
+	@media(min-width:$small){
+		font-size:14px;
+		width:100%;
+		float:right;
 	}
+
+	@media(min-width:$medium){
+		font-size:1.3em;
+	}	
 }
 
 

@@ -460,6 +460,10 @@
 	margin:0;
 }
 
+.clear-fix{
+	@include clear-fix;
+}
+
 .border-line{
 	@include clear-fix;
 	border: 1px solid $light-grey;
