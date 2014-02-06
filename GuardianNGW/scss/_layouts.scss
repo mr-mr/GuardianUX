@@ -13,6 +13,7 @@
 	// 6.4 Columns
 	// 6.5 Framework parts
 	// 6.6 Flat design setup
+	// 6.7 Football components
 // -----------------------------------------------------------------------------------------------------------------------------------------
 
 // 1.0 imports
@@ -58,6 +59,8 @@ body{
         background:url("../img/library-bg.jpg") top left repeat;
 }
 
+
+
 // 4.0 type
 // -----------------------------------------------------------------------------------------------------------------------------------------
 
@@ -84,6 +87,17 @@ body{
 	//background:$grey;
 }
 
+.live-event-left{
+	width:33%;
+	position:absolute;
+	float:left;
+}
+
+.live-event-right{
+	width:33%;
+	position:absolute;
+	float:right;
+}
 
 .editor-1{
 		margin:-20px 0 10px 0;
@@ -100,7 +114,7 @@ body{
 
 	.editor-2{
 		@media (min-width:$small){
-			display:block;
+			display:none;
 		}
 
 		@media (min-width:$large){
@@ -128,6 +142,8 @@ body{
 		@extend .live-latest;
 		background:$semi-grey;	
 	}
+
+	
 
 // 6.0 modules
 // -----------------------------------------------------------------------------------------------------------------------------------------
@@ -498,6 +514,8 @@ body{
 		}
 	}
 
+	
+
 
 	.icon-stack {
 		margin-top:5px;
@@ -782,4 +800,106 @@ body{
 
 	// 6.6 Flat design setup
 	// ------------------------------------------------------------------------------
+
+
+	// 6.7 Football components
+	// ------------------------------------------------------------------------------
+
+	#fb-card-container{
+		width:300px;
+		padding:5px;
+		li{
+			display:table;
+			color:white;
+		}
+	}
+
+	#live-event-container{
+		
+		background:$light-grey;
+		margin-top:20px;
+		padding:20px;
+		line-height:2.4em;
+		text-align:center;
+
+		@media(max-width:$large){
+			margin-top:100px;
+		}
+	}
+	
+	.card-bg{
+		opacity:0.4;
+	}
+
+	.card-stat{
+		background:#66a1e3;
+		padding:10px;
+		width:50%;
+	}
+
+	.card-dyk{
+		@extend .card-stat;
+		width:100%;
+		color:white;
+	}
+
+	.card-editor{
+		@extend .card-dyk;
+		font-style:italic;
+	}
+
+	.versus{
+		//width:10%;
+		height:200px;
+		display:inline-block;
+		//background:$grey;
+	}
+	#fb-card-versus{
+		
+	}
+
+	.live-circle{
+		background:red;
+		font-family:$sans-serif;
+		color:white;
+		
+		@media(min-width:$small){
+			width:100%;
+			border-radius:0;
+			margin-bottom:80px;
+			@include clear-fix;
+			padding:10px;
+		}
+
+		@media(min-width:$medium){
+			display:block;
+			border-radius: 50%;
+			width:50px;
+			height:50px;
+			padding:13px;
+		}	
+	}
+
+	.live-circle-time{
+		font-family:$sans-serif;
+		border-radius: 50%;
+		width:50px;
+		height:50px;
+		padding:13px;
+		background:white;
+		color:$link;
+		border: 2px dotted $grey;
+		text-align:center;
+		margin:40px auto;
+
+		@media(min-width:$small){
+			text-align:left;
+		}
+
+	}
+
+	.live-score-container{
+		
+		text-align:center;
+	}
 

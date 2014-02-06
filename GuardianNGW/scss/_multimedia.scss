@@ -164,17 +164,30 @@ img {
 	margin-bottom:20px;
 }
 
-.media-button{
+.media-buttons{
 	@extend button;
-	position:absolute;
+	width:99%;
+	position:relative;
 	bottom:1px;
 	z-index:1000;
-	margin:0;
+	margin-top:-52px;
 	a{
 		width:100px;
 		height:50px;
 	}
 
+	@media(max-width:$small){
+		margin-top:-52px;
+	}
+
+}
+
+.media-play{
+	width:69px;
+	position:relative;
+	bottom:-1px;
+	z-index:1000;
+	margin:0;
 }
 
 .icon-play{
@@ -303,6 +316,7 @@ iframe {
 	color-stop(0, #E3CE44),
 	color-stop(1, #E7FF5E)
 );
+	border: 1px solid orange;
 background-image: -o-linear-gradient(bottom, #E3CE44 0%, #E7FF5E 100%);
 background-image: -moz-linear-gradient(bottom, #E3CE44 0%, #E7FF5E 100%);
 background-image: -webkit-linear-gradient(bottom, #E3CE44 0%, #E7FF5E 100%);
