@@ -55,10 +55,22 @@ body{
         }
 }
 
+.hidden,.hidden-2{
+	display:none;
+}
+
 .background {
         background:url("../img/library-bg.jpg") top left repeat;
 }
 
+/*
+.right{
+	float:right;
+}
+
+.left{
+	float:left;
+}*/
 
 
 // 4.0 type
@@ -70,11 +82,11 @@ body{
 #index{
 	margin: 0px auto;
 	width:70%;
-	max-width:840px;
+	max-width:780px;
 	
 	@media (min-width:$small){
 		width:100%;
-		padding:10px;
+		padding:20px;
 	}
 
 }
@@ -282,7 +294,7 @@ body{
 	}
 
 	aside{
-		margin-bottom: -60px;
+		//margin-bottom: -60px;
 		p{
 			line-height:18px;
 		}
@@ -807,10 +819,16 @@ body{
 
 	#fb-card-container{
 		width:300px;
-		padding:5px;
+		padding-right: 17px;
+		display:inline-block;
+		float:left;
 		li{
 			display:table;
 			color:white;
+		}
+		@media (min-width:$small){
+			//width:400px;
+			margin-bottom:20px;
 		}
 	}
 
@@ -869,6 +887,7 @@ body{
 			margin-bottom:80px;
 			@include clear-fix;
 			padding:10px;
+
 		}
 
 		@media(min-width:$medium){
@@ -877,7 +896,30 @@ body{
 			width:50px;
 			height:50px;
 			padding:13px;
+			margin-bottom:-90px;
 		}	
+	}
+
+	.live-block{
+		background:red;
+		font-family:$sans-serif;
+		color:white;
+		
+		@media(min-width:$small){
+			width:100%;
+			border-radius:0;
+			margin-bottom:-10px;
+			@include clear-fix;
+			padding:10px;
+
+		}
+		@media(min-width:$medium){
+			margin-bottom:-90px;
+			border-radius: 50%;
+			width:50px;
+			height:50px;
+			padding:13px;
+		}
 	}
 
 	.live-circle-time{
@@ -902,4 +944,64 @@ body{
 		
 		text-align:center;
 	}
+
+	.sharing-block{
+		@media(min-width:$small){
+			display:none;
+		}
+		@media(min-width:$large){
+			display:block;
+		}
+	}
+
+	.football-stat-expandblock{
+		background:$link;
+		color:white;
+		padding:20px;
+		margin-bottom:10px;
+		//margin-top:70px;
+
+		a:active
+			{ 
+			background-color:yellow;
+			}
+		i {
+			float:right;
+		}
+		@media(min-width:$small){
+			margin-top:20px;
+		}
+		@media(min-width:$medium){
+			display:block;
+		}
+		@media(min-width:$medium-large){
+			display:none;
+		}
+	}
+
+	.football-stat-expandblock-during{
+		background:$link;
+		color:white;
+		padding:20px;
+		margin-bottom:10px;
+
+		a:active
+			{ 
+			background-color:yellow;
+			}
+		i {
+			float:right;
+		}
+		@media(min-width:$small){
+			margin-top:80px;
+		}
+		@media(min-width:$medium){
+			display:block;
+			margin-top:110px;
+		}
+		@media(min-width:$medium-large){
+			display:none;
+		}
+	}
+
 

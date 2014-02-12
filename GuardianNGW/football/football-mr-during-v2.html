@@ -1,4 +1,32 @@
 
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("ul#ticker01").liScroll();
+//Syntax
+$.syntax({root: 'http://www.gcmingati.net/wordpress/wp-content/themes/giancarlo-mingati/js/jquery-syntax/'});
+
+});
+</script>
+<div class="live-scores">
+	<h4>Live ticker</h4>
+	<h2 class="live-ticker">| GOAL (Rooney '77) | MISSED PENALTY (Lampard '77) | GOAL (Rooney '77) | GOAL (Rooney '77) | GOAL (Rooney '77) | MISSED PENALTY (Lampard '77) | GOAL (Rooney '77) | GOAL (Rooney '77) | GOAL (Rooney '77) | MISSED PENALTY (Lampard '77) | GOAL (Rooney '77) | GOAL (Rooney '77)</h2>
+<!--<ul id="ticker01">
+		<li><span>10/10/2007</span><a href="#/ogt/content/news/News183.complete">The first thing that most Javascript programmers</a></li>
+		<li><span>10/10/2007</span><a href="#/ogt/content/news/News175.complete">End up doing is adding some code</a></li>
+		<li><span>10/10/2007</span><a href="#/ogt/content/news/News177.complete">The code that you want to run</a></li>
+		<li><span>08/10/2007</span><a href="#/ogt/content/news/News176.complete">Inside of which is the code that you want to run</a></li>
+		<li><span>08/10/2007</span><a href="#/ogt/content/news/News178.complete">Right when the page is loaded</a></li>
+		<li><span>05/10/2007</span><a href="#/ogt/content/news/News173.complete">Problematically, however, the Javascript code</a></li>
+		<li><span>04/10/2007</span><a href="#/ogt/content/news/News183.complete">The first thing that most Javascript programmers</a></li>
+		<li><span>04/10/2007</span><a href="#/ogt/content/news/News175.complete">End up doing is adding some code</a></li>
+		<li><span>04/10/2007</span><a href="#/ogt/content/news/News177.complete">The code that you want to run</a></li>
+		<li><span>03/10/2007</span><a href="#/ogt/content/news/News176.complete">Inside of which is the code that you want to run</a></li>
+		<li><span>03/10/2007</span><a href="#/ogt/content/news/News178.complete">Right when the page is loaded</a></li>
+		<li><span>01/10/2007</span><a href="#/ogt/content/news/News173.complete">Problematically, however, the Javascript code</a></li>
+	</ul>-->
+</div>
+<div style="clear:left; margin-bottom:-37px;">&nbsp;</div
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +34,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
 	
-	<title>Man City 1-0 Chelsea: Match report</title>
+	<title>Man City v Chelsea LIVE!</title>
 	<link rel="stylesheet" href="../css/global.css" type="text/css">
 	<link rel="stylesheet" href="../css/prettify.css" media="all" />
 
@@ -179,109 +207,28 @@ if (isCapable){
 </div><body id="article-background">
 
 <div id="wrapper">
-
+	
 	<div class="advert banner-small" style="width:90%; max-width:728px;">
 	<img src="../img/advert-banner.jpg" />
 </div>
-<!-- end .advert -->	
+<!-- end .advert -->
 	<div class="border-line"></div>
-	<aside class="header"><h4><a href="">Football</a></h4></aside>
-	
-	<!--<article><h1>Man City 0-1 Chelsea: Match report</h1></article>
+	<aside>
+		<h4 class="header"><a href="">Football</a></h4>
+		<div class="live-block" id="searching-ellipsis">LIVE 
+			<span>.</span>
+ 			<span>.</span>
+ 			<span>.</span>
+ 		</div>
 
-	<article><h2 class="summary article">Chelsea make statement of intent by ending Manchester City's home run</h2>
-	</article>-->
-		
-	<article><h4 style="padding-bottom:20px; font-size:20px;">Man City 0-1 Chelsea</h4>
-	<h1>Chelsea make statement of intent by ending Manchester City's home run</h1>
+	</aside>
+	<div class="clear-fix"></div>
+	<article class="live-score-container">
+		<div class="live-circle-time">1st</div>
+		<h1>Man City 0-<span class="goal-text">0</span> Chelsea</h1>  
 	</article>
 
-	<a href="" class="showhide-2"><div class="football-stat-expandblock">Premier league Results &amp; Table <i class="icon-plus"></i></div></a>
-	<div class="hidden-2"><h4>Barclays <a href="/section-fronts/football-competition.shtml">Premier League</a></h4>
-<table class="football-scores" data-notation="The competition pages shows live scores (and scorers) for the currently selected competition">
-	<tr data-is-link="true"><td>Norwich</td><td><a href="/sport-statistics/matches/monday.shtml">2-3</a></td><td>West Ham</td><td>FT</td></tr>
-	<tr data-is-link="true" class="updated"><td>Arsenal</td><td><a href="/sport-statistics/matches/live.shtml">0-0</a></td><td>Southampton</td><td>76'</td></tr>
-	<tr data-is-link="true"><td>Aston Villa</td><td><a href="/sport-statistics/matches/live.shtml">0-0</a></td><td>Swansea</td><td>77'</td></tr>
-	<tr data-is-link="true"><td>Fulham</td><td><a href="/sport-statistics/matches/live.shtml">0-0</a></td><td>West Brom</td><td>78'</td></tr>
-	<tr data-is-link="true"><td>Man Utd</td><td><a href="/sport-statistics/matches/live.shtml">0-0</a></td><td>Wigan</td><td>76'</td></tr>
-	<tr data-is-link="true"><td>QPR</td><td><a href="/sport-statistics/matches/live.shtml">0-0</a></td><td>Chelsea</td><td>77'</td></tr>
-	<tr data-is-link="true"><td>Stoke</td><td><a href="/sport-statistics/matches/live.shtml">0-0</a></td><td>Man City</td><td>79'</td></tr>
-	<tr data-is-link="true"><td>Sunderland</td><td><a href="/sport-statistics/matches/">v</a></td><td>Liverpool</td><td>17:30</td></tr>
-</table>
-
-<div class="border-line"></div>
-
-<!--<h3>Barclays <a href="#">Premier League</a></h3>-->
-<table class="football-league-table">
-	<thead>
-		<tr>
-			<th>&nbsp;</th><th>&nbsp;</th><th>P</th><th class="full-detail">W</th><th class="full-detail">D</th><th class="full-detail">L</th><th class="full-detail">F</th><th class="full-detail">A</th><th class="full-detail">W</th><th class="full-detail">D</th><th class="full-detail">L</th><th class="full-detail">F</th><th class="full-detail">A</th><th class="primary-detail">W</th><th class="primary-detail">D</th><th class="primary-detail">L</th><th class="secondary-detail">F</th><th class="secondary-detail">A</th><th>GD</th><th>Pts</th>
-		</tr>
-	</thead>
-	<tr data-is-link="true">
-		<td>1</td><td><a href="#">Chelsea</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
-	<tr data-is-link="true">
-		<td>2</td><td><a href="#">Swansea</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
-	<tr data-is-link="true">
-		<td>3</td><td><a href="#">West Brom</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
-	<tr data-is-link="true">
-		<td>4</td><td><a href="#">Man City</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
-	<tr data-is-link="true">
-		<td>5</td><td><a href="#">Man Utd</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
-	<tr data-is-link="true">
-		<td>6</td><td><a href="#">Everton</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
-	<tr data-is-link="true">
-		<td>7</td><td><a href="#">West Ham</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
-	<tr class="updatedLose" data-is-link="true">
-		<td>8</td><td><a href="#">Arsenal</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
-	<tr data-is-link="true">
-		<td>9</td><td><a href="#">Wigan</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
-	<tr data-is-link="true">
-		<td>10</td><td><a href="#">Newcastle</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
-	<!--<tr data-is-link="true">
-		<td>11</td><td><a href="#">Fulham</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
-	<tr data-is-link="true">
-		<td>12</td><td><a href="#">Stoke City</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
-	<tr data-is-link="true">
-		<td>13</td><td><a href="#">Sunderland</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
-	<tr data-is-link="true">
-		<td>14</td><td><a href="#">Tottenham</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
-	<tr data-is-link="true">
-		<td>15</td><td><a href="#">Norwich</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
-	<tr data-is-link="true">
-		<td>16</td><td><a href="#">Reading</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
-	<tr data-is-link="true">
-		<td>17</td><td><a href="#">Aston Villa</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
-	<tr data-is-link="true">
-		<td>18</td><td><a href="#">Liverpool</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
-	<tr data-is-link="true">
-		<td>19</td><td><a href="#">QPR</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
-	<tr class="updatedWin" data-is-link="true">
-		<td>20</td><td><a href="#">Southampton</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	-->
-	</tr>
-</table>
-<p><a href="#">View full table and data</a></p>
-<!-- end #table --></div>
-
+	
 	<aside class="left">
 	<div class="border-line-thick"></div>
 	<p></p>
@@ -294,7 +241,7 @@ if (isCapable){
 		<i class="icon-twitter"></i>
 </span> <a href="">@StuartJamesGNM</a></div>
 	<div class="border-line-dotted"></div>
-	<p class="article-comment-count panel-time"><i class="icon-time"></i> Wednesday 10th Dec 2013</p>
+	<p class="article-comment-count panel-time"><i class="icon-time"></i> Wednesday 05 Feb 2014</p>
 
 
 	<div class="border-line-thick"></div>
@@ -323,14 +270,13 @@ if (isCapable){
 		</ul>
 </aside>	<aside class="right">
 
-  <div class="border-line advert"></div>
+  <div class="border-line-thick"></div>
   <p>Advertisement</p>
     <div class="advert advert-mpu" style="margin-top:10px;">
 	<img src="../img/advert-mpu.jpg" style="width: 300px; float: left; padding: 0px 15px 10px 5px;" />
 </div>
-<!-- end .advert -->  
-  <div class="border-line"></div>
-  <h4>Barclays <a href="/section-fronts/football-competition.shtml">Premier League</a></h4>
+<!-- end .advert -->    <!-- include '../../inc/football/football-poll.kit' -->
+    <h4>Barclays <a href="/section-fronts/football-competition.shtml">Premier League</a></h4>
 <table class="football-scores" data-notation="The competition pages shows live scores (and scorers) for the currently selected competition">
 	<tr data-is-link="true"><td>Norwich</td><td><a href="/sport-statistics/matches/monday.shtml">2-3</a></td><td>West Ham</td><td>FT</td></tr>
 	<tr data-is-link="true" class="updated"><td>Arsenal</td><td><a href="/sport-statistics/matches/live.shtml">0-0</a></td><td>Southampton</td><td>76'</td></tr>
@@ -344,13 +290,20 @@ if (isCapable){
 
 <div class="border-line"></div>
 
+    <div class="article-related article-related-left" data-notation="Any related clockwatch should be linked here.">
+	<h2><a href="#">Football</a> latest</h2>
+	<div>
+		<h3><a href="#">Premier League clockwatch <strong class="live-latest">Live</strong></a></h3>
+		<p>Arsenal lead Southampton as QPR continue to frustrate Chelsea. Man United are in front against Wigan and Stoke are holding Man City</p>
+	</div>
+</div>
 
 	<div class="border-line advert"></div>
   <Select>
     <option value="premierleague">Premier League</option>
     <option value="premierleague">Championship</option>
   </select>
-
+  <!--<div class="button" style="float:right; height:50px;"><a href="">Update</a></div>-->
 	<!--<h3>Barclays <a href="#">Premier League</a></h3>-->
 <table class="football-league-table">
 	<thead>
@@ -420,83 +373,110 @@ if (isCapable){
 	</tr>
 </table>
 <p><a href="#">View full table and data</a></p>
-<!-- end #table -->  <div class="border-line advert"></div>
-<p>Upcoming fixtures</p>
-<div>Sat 18 Jan - Premier League</div>
-<ol>
-  <li class="team-fixture sidebar"><a href="">Man City</a></li> 
-  <li class="team-fixture sidebar">v</li>
-  <li class="team-fixture sidebar"><a href="">Cardiff</a></li>
-</ol>
+<!-- end #table -->
 
-<ol>
-  <li class="team-fixture sidebar"><a href="">Chelsea</a></li> 
-  <li class="team-fixture sidebar">v</li>
-  <li class="team-fixture sidebar"><a href="">Newcastle</a></li>
-</ol>
-<div class="border-line advert"></div>
+ </aside>	<!-- include '../../inc/football/live-events.kit'-->
 
-<div>Sat 25 Jan - FA Cup</div>
-<ol>
-  <li class="team-fixture sidebar"><a href="">Man City</a></li> 
-  <li class="team-fixture sidebar">v</li>
-  <li class="team-fixture sidebar"><a href="">Watford</a></li>
-</ol>
-
-<div class="border-line advert"></div>
- </aside>	
+	<a href="" class="showhide-2"><div class="football-stat-expandblock-during">Live table <i class="icon-plus"></i></div></a>
+	<div class="hidden-2"><!--<h3>Barclays <a href="#">Premier League</a></h3>-->
+<table class="football-league-table">
+	<thead>
+		<tr>
+			<th>&nbsp;</th><th>&nbsp;</th><th>P</th><th class="full-detail">W</th><th class="full-detail">D</th><th class="full-detail">L</th><th class="full-detail">F</th><th class="full-detail">A</th><th class="full-detail">W</th><th class="full-detail">D</th><th class="full-detail">L</th><th class="full-detail">F</th><th class="full-detail">A</th><th class="primary-detail">W</th><th class="primary-detail">D</th><th class="primary-detail">L</th><th class="secondary-detail">F</th><th class="secondary-detail">A</th><th>GD</th><th>Pts</th>
+		</tr>
+	</thead>
+	<tr data-is-link="true">
+		<td>1</td><td><a href="#">Chelsea</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
+	</tr>
+	<tr data-is-link="true">
+		<td>2</td><td><a href="#">Swansea</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
+	</tr>
+	<tr data-is-link="true">
+		<td>3</td><td><a href="#">West Brom</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
+	</tr>
+	<tr data-is-link="true">
+		<td>4</td><td><a href="#">Man City</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
+	</tr>
+	<tr data-is-link="true">
+		<td>5</td><td><a href="#">Man Utd</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
+	</tr>
+	<tr data-is-link="true">
+		<td>6</td><td><a href="#">Everton</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
+	</tr>
+	<tr data-is-link="true">
+		<td>7</td><td><a href="#">West Ham</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
+	</tr>
+	<tr class="updatedLose" data-is-link="true">
+		<td>8</td><td><a href="#">Arsenal</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
+	</tr>
+	<tr data-is-link="true">
+		<td>9</td><td><a href="#">Wigan</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
+	</tr>
+	<tr data-is-link="true">
+		<td>10</td><td><a href="#">Newcastle</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
+	</tr>
+	<!--<tr data-is-link="true">
+		<td>11</td><td><a href="#">Fulham</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
+	</tr>
+	<tr data-is-link="true">
+		<td>12</td><td><a href="#">Stoke City</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
+	</tr>
+	<tr data-is-link="true">
+		<td>13</td><td><a href="#">Sunderland</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
+	</tr>
+	<tr data-is-link="true">
+		<td>14</td><td><a href="#">Tottenham</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
+	</tr>
+	<tr data-is-link="true">
+		<td>15</td><td><a href="#">Norwich</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
+	</tr>
+	<tr data-is-link="true">
+		<td>16</td><td><a href="#">Reading</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
+	</tr>
+	<tr data-is-link="true">
+		<td>17</td><td><a href="#">Aston Villa</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
+	</tr>
+	<tr data-is-link="true">
+		<td>18</td><td><a href="#">Liverpool</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
+	</tr>
+	<tr data-is-link="true">
+		<td>19</td><td><a href="#">QPR</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
+	</tr>
+	<tr class="updatedWin" data-is-link="true">
+		<td>20</td><td><a href="#">Southampton</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	-->
+	</tr>
+</table>
+<p><a href="#">View full table and data</a></p>
+<!-- end #table --><a href="">Live score tracker</a></div>
+	
+	<div class="clear-fix"></div>
+	<div class="border-line-thick"></div>
 	<article>
-		<aside>
+<h4 class="fb-updating-text"><i class="icon-refresh"></i> <span class="updating-text">Updated just now</span></h4>
+
+<div class="football-goal hidden">
+<p>GOAL (hazard, 88)</p>
+</div>
+
+<p class="football-clock">87 min:</p>
+<p class="quote">Sergio Aguero has scored 8 goals with his head this season. 80% more than any other player under 5'9.<h2>Jeff Stelling bot</h2></p>
+
+<p class="football-clock">83 min:</p>
+<p>Not alot going on, City are passing without much penetration and whenever Blackburn get the ball they're trying to get forward quickly down the wings and slip balls through to DJ Campbell - to no avail thus far.  </p>
+
+<p class="football-clock">78 min:</p>
+<aside>
 	<img src="../img/gallery-5x3.svg"/>
 	<div class="media-button-container">
 		<dt class="media-play media-button"> <a href="#"><i class="icon-play"></i></a></dt>
-		<dt><h2 class="media-headline">Gallery: All the best images from the game</h2></dt>
+		<dt><h2 class="media-headline">Live pictures</h2></dt>
 	<div>
 </aside>
-<!-- End of gallery -->		<p style="margin-bottom:100px;"></p>
-	</article>
+<!-- End of gallery --><p>Blackburn enjoy a little possession in the City half, working the ball from Chris Taylor on the right to Ben Marshall on the left, but Micah Richards is too strong for him, and it's a City throw. </p>
 
-	<article>
-	<div class="editor-2">
-		<p class="headshot"></p>
-		<dd class="editor-name"><a href="">Stuart James</a> in London</dd>
-	</div>
-		<p>Chelsea have just reminded the Premier League, with a sharp dig in the ribs, that they have not forgotten what it takes to be champions. José Mourinho's team played as though affronted by the suggestion they would not dare to take on Manchester City at their own game and, in the process, there was a peacock-like spreading of feathers from the team in the darker shade of blue.</p>
-
-		<p>They won through Branislav Ivanovic's first-half goal but could also reflect on three other occasions when they struck the woodwork, alongside a clutch of other opportunities to emphasise their superiority. City, in stark contrast, looked like a side that had forgotten they had scored four goals or more on 14 different occasions this season.</p>
-	
-		<p>They badly missed Sergio Agüero and Fernandinho but their shortcomings were considerable and a jolting night has heavy consequences for Manuel Pellegrini's side. Chelsea are now level on points, two behind Arsenal at the top, and the manner of the win left the clear sense that Mourinho's team have the togetherness, ambition and manager to last the course.</p>
-
-		<p class="quote"><img src="../img/quote.svg">Two horses and a little horse," he said of the title race. "A little horse who needs milk and to learn how to jump. <br><sub>Jose Mourinho</sub></p>
-
-		<p>Mourinho made his own point with the adventure of his team. The first cries of "he's parking the bus" rained down inside the opening minutes. After half an hour it was "you're worse than Allardyce." Yet it quickly became evident that Chelsea would not restrict themselves to ploys of conservatism. They defended with supreme organisation and togetherness, with John Terry and Gary Cahill making immense contributions, but they also counter-attacked with great purpose and the taunts felt incongruous to how the match was actually shaping. Anyone who takes the lazy option and smears Mourinho's teams as routinely dour and unimaginative should be shown the footage of this match.</p>
-
-		</article>
-
-		<!--<aside class="lean-left">
-	<div class="media-button button"><a class="fancybox-media" href="http://www.youtube.com/watch?v=9A5wbCSiKNo"><i class="icon-play"></i></a>
-	<h2 class="media-headline"></h2>
-	</div>
-	<img src="../img/video-5x3.svg"/>
-</aside>-->
-
-<aside class="lean-left">
-<img src="../img/video-5x3.svg"/>
-	<div class="media-button-container">
-		<dt class="media-play media-button"> <a href="#"><i class="icon-play"></i></a></dt>
-		<dt class="media-headline">Mourinho: Post match interview</dt>
-	<div>
-</aside>		
-		<article>
-
-		<p>Chelsea's manager is also entitled to think his team could have made it easier for themselves. Cahill's header, direct from a corner, struck the post. Nemanja Matic, so influential in midfield, belted a 30-yard shot against the joint of crossbar and post and, at the other end, Samuel Eto'o hit the same part of the frame with a chance to make it 2-0 just before half-time. Chelsea could also look back at one opportunity when they broke, four on one, from deep inside their own half and Ramires could not beat Joe Hart with the final effort. Hart showed the assurance of old but few other players from Pellegrini's ranks played with any distinction. Yaya Touré did well in the opening half an hour but faded and allowed too much space behind him.</p>
-
-		<p>The sense that everything was not quite right could be gauged by the early show of anger Vincent Kompany directed towards Matija Nastasic after they both went for the same ball. Kompany's war cry was a warning that this was not a night for anyone to lose even a flicker of concentration but that was precisely what happened. Martín Demichelis, deputising for Fernandinho in midfield, was a danger to his own team at times, lacking control and often reckless with his decision-making. The Argentinian, bumped forward from centre-half, is in danger of becoming his team's most vulnerable point.</p>
-		</article>
-
-		<aside class="lean-left portrait">
+<p class="football-clock">69 min:</p>
 <div id="fb-card-container">
-	<h4>Key Player - Eden Hazard</h4>
+	<!--<h4>Key Player - Eden Hazard</h4>-->
 	<img src="http://i.smimg.net/12/34/300x225/eh.jpg"/>
 
 	<ul class="card-stat">
@@ -512,183 +492,30 @@ if (isCapable){
 		<li>65%</li>
 	</ul>
 
+</div><p>City's defence remains in an abysmal state. Hazard, with that glorious change of pace, zigzags between a couple of players in the middle and suddenly he's got a free run at the back four. He sidesteps another defender and then finds Ivanovic on the overlap. His firm cross is pushed out by Hart, straight to Hazard, who should shoot, but instead backheels to no one in particular. City promptly give the ball back to Chelsea, though. Luiz's low cross just evades Eto'o in the middle but finds Willian, whose deflected shots slithers just wide. </p>
+
+<div class="football-goal">
+<p>What a thumper, Hazard slips inside the 18 yard and places a silky smooth side-footer into the bottom right corner of the net. Hart is motionless. </p>
 </div>
-</aside>		
-		<article>
-			<p>Mourinho had left out Oscar but his attacking quartet created all sorts of problems. Eden Hazard, in keeping with his recent form, dazzled on the ball and was probably the pick of the bunch, swapping flanks and taking turns to torment Pablo Zabaleta and Aleksandar Kolarov. Willian and Ramires played with high energy and movement behind Samuel Eto'o.</p>
 
-			<p>The midfield contest was won, ultimately, by Matic and David Luiz and it was strange to hear Pellegrini say his team had deserved "at least" a draw. Pellegrini also felt Hazard was "not crucial", despite all the evidence that left Mourinho acclaiming the Belgian as short of Cristiano Ronaldo and Lionel Messi but now "the best young player in the world". It was Hazard's cut-back, after ghosting past Zabaleta, that led to Eto'o driving his shot against the woodwork and he was also instrumental in the goal, drifting from left to right and neatly playing in Ramires for the first chance. Kompany charged down the shot but the follow-up effort, off Ivanovic's left boot, was a peach, arrowing its way diagonally into the bottom corner. Pellegrini was willing to admit it was a "beautiful" finish.</p>
+<div class="football-goal">
+<p>GOAL (hazard, 67)</p>
+</div>
 
-		</article>
-
-		<aside class="lean-left">
 <div class="border-line advert"></div>
-<h3>Team's positions</h3>
-<table class="football-league-table">
-	<thead>
-		<tr>
-			<th>&nbsp;</th><th>&nbsp;</th><th>P</th><th class="full-detail">W</th><th class="full-detail">D</th><th class="full-detail">L</th><th class="full-detail">F</th><th class="full-detail">A</th><th class="full-detail">W</th><th class="full-detail">D</th><th class="full-detail">L</th><th class="full-detail">F</th><th class="full-detail">A</th><th class="primary-detail">W</th><th class="primary-detail">D</th><th class="primary-detail">L</th><th class="secondary-detail">F</th><th class="secondary-detail">A</th><th>GD</th><th>Pts</th>
-		</tr>
-	</thead>
-	<tr class="selected-team" data-is-link="true" style="background:#B0B0B0">
-		<td>4</td><td><a href="#">Man City</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
-	<tr data-is-link="true">
-		<td>5</td><td><a href="#">Man Utd</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
-	<tr class="selected-team" data-is-link="true" style="background:#B0B0B0">
-		<td>6</td><td><a href="#">Chelsea</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
-	<tr data-is-link="true">
-		<td>7</td><td><a href="#">West Ham</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
-	<tr class="updatedLose" data-is-link="true">
-		<td>8</td><td><a href="#">Arsenal</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
+<p class="football-clock">64 min:</p>
+<p>David Luiz knocks a pass down the right and Ramires lung-busts his way to the ball, winning a corner off Nastasic. </p>
 
-	<tr class="updatedLose" data-is-link="true">
-		<td>9</td><td><a href="#">Everton</a></td><td>38</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="primary-detail">00</td><td class="secondary-detail">00</td><td class="secondary-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td class="full-detail">00</td><td>000</td><td>000</td>	
-	</tr>
-	
-</table>
-<p><a href="#">View full table and data</a></p>
-</aside>
-<!-- end #table -->		
-		<article>
+<p class="football-clock">62 min:</p>
+<p>At the moment, it's hard to see City equalising. Not that they can't or won't, but they can't get into this game at all. They can barely string two or three passes together, Chelsea's intense pressure drawing errors.</p>
 
-			<p>It was a night when Eto'o had his big-game head on and Matic showed why Chelsea had brought him back from Benfica. Willian justified his selection ahead of Oscar and, in defence, Terry demonstrated why Mourinho says he is currently the best centre-half in the league. Álvaro Negredo was not fully fit, to give him his due, but was taken off 11 minutes into the second half, whereas Edin Dzeko rarely troubled the opposition defence. Ivanovic was at his combative best and César Azpilicueta's performance made it a little clearer why Mourinho now prefers him to Ashley Cole.</p>
-
-			<p>David Silva's 73rd-minute free-kick required Cech to make a stretching save and there was another in the final exchanges to deny Stevan Jovetic, Negredo's replacement. Overall though, City did not have anything like their usual cohesion or impetus. Nastasic was grateful for the referee Mike Dean's leniency after pulling down Oscar, a late substitute, and the crowd were flat and jumpy. City had scored 72 times in their previous 18 home games but maybe there has been so much focus on that it has been overlooked that Chelsea have the best defensive statistics in the land. This was the night they supplied the hard evidence.</p>
-		
-			<p>Asked if it had launched an internal security review, Google on Monday reissued a statement given last week from chief legal officer David Drummond, saying the company did not give access to its systems to any government and that it was expanding encryption across more Google services and links.</p>
-
-			<p></p>
-			<p>It was the first time City have not scored on their own ground in 62 games stretching back to November 2010 and absolutely nobody believed Mourinho when he said his team had no chance of winning the league before nominating Arsenal as his favourites. </p>
-
-
-		<div class="border-line-thick"></div>
-		<p class="tags">Tags: <a href="">ManCity</a>,  <a href="">Blackburn</a>,  <a href="">FA Cup</a></p>		<ul>
-			<span class="icon-stack">
-          		<i class="icon-circle icon-stack-base"></i>
-          		<i class="icon-envelope icon-light"></i>
-        	</span>
-
-			<span class="icon-stack">
-          		<i class="icon-circle icon-stack-base"></i>
-          		<i class="icon-twitter icon-light"></i>
-        	</span>
-
-        	<span class="icon-stack">
-          		<i class="icon-circle icon-stack-base"></i>
-          		<i class="icon-facebook icon-light"></i>
-        	</span>
-
-        	<span class="icon-stack">
-          		<i class="icon-circle icon-stack-base"></i>
-          		<i class="icon-google-plus icon-light"></i>
-        	</span>
-		</ul>
-		<div class="border-line"></div>
-	</article>
-		
+</article>	<div class="border-line"></div>
 </div>
 
 
 </body>
-<p></p>
-<div id="wrapper">
-	
-	<div id="container-section">
-		<div class="border-line-thick"></div>
-		<h2 class="container-header">people in football</h2>
-	</div>
-	<div class="gs-wrapper container-moreonthis">
-		
-		<div class="col span_2_of_4">
-			<img src="../img/people/mourihno-r.jpg"/>
-		</div>	
-
-		<div class="col span_1_of_4">
-			<p class="quote"><br><sub>Jose Mourinho</sub><img src="../img/quote.svg"><a href="#">This is not the best league in the world. This is football from the 19th century. </a></p>
-		</div>
-
-		<div class="col span_1_of_4">
-			<img src="../img/video-5x3.svg"/>
-			<div class="media-button-container">
-				<dt class="media-play media-button"> <a href="#"><i class="icon-play"></i></a></dt>
-				<dt><br><h2 class="media-headline-card">Video: Pellegrini's post match interview</h2></dt>
-			<div>
-		</div>	
-
-		
-		
-	</div>
-</div>
-
-		<div class="border-line"></div>
-</div><div class="advert banner-small" style="width:90%; max-width:728px;">
-	<img src="../img/advert-banner.jpg" />
-</div>
-<!-- end .advert --><div id="wrapper">
-	
-	<div id="container-section">
-		<div class="border-line-thick"></div>
-		<h2 class="container-header">popular in football</h2>
-	</div>
-	<div class="gs-wrapper container-popular">
-		
-		<div class="col span_1_of_4">
-		<h4></h4>
-			<h1 class="container-header large">1.<a href=""> Arsenal have no regrets not signing Luis Suárez, says Arsène Wenger</a></h1>
-			<dd>Arsène Wenger says he has no regrets over the failure to sign Liverpool's Luis Suárez, as he prepares to take Arsenal to Anfield for Saturday's lunchtime kick-off</dd>
-		</div>
-
-		<div class="col span_1_of_4">
-			<h2 class="container-header small">2.<a href=""> Football transfer rumours: Nemanja Vidic to Inter?</a></h2>
-			<h2 class="container-header small">3.<a href=""> Michael Laudrup seeks legal advice over Swansea City sacking</a></h2>
-			<h2 class="container-header small">4.<a href=""> David Beckham may tempt superstar mates to Miami for new MLS team</a></h2>
-		</div>
-		
-		<div class="col span_1_of_4">
-		<h2 class="container-header small">5.<a href=""> Real Madrid's Marcelo racially abused by Atlético fans in Copa del Rey</a></h2>
-			<h2 class="container-header small">6.<a href=""> Adam Johnson in line for England recall</a></h2>
-			<h2 class="container-header small">7.<a href=""> Garry Monk takes hard-line approach on restoring Swansea City's fortunes</a></h2>
-		</div>
-
-		<div class="col span_1_of_4">
-			<h2 class="container-header small">8.<a href=""> Footballers playing Subbuteo – in pictures</a></h2>
-			<h2 class="container-header small">9.<a href=""> Carlos Tevez should be at his peak, but is destined for World Cup despair | Jonathan Wilson</a></h2>
-			<h2 class="container-header small">10.<a href=""> Manchester United's Darren Fletcher says he is lucky to be playing again</a></h2>
-		</div>
-		
-		</div>
-		
-		<div id="tabs" class="container-popular-tabs">
-			<ul>
-			    <li><a href="#tabs-1">UK News</a></li>
-			    <li><a href="#tabs-2">The Guardian</a></li>
-			</ul>		  
-			<div id="tabs-1">
-				<h2 class="container-header small">1.<a href=""> Top 10 documentaries</a></h2>
-				<h2 class="container-header small">2.<a href=""> David Cameron makes leaner state a permanent goal</a></h2>
-				<h2 class="container-header small">3.<a href=""> Apple maps: how Google lost when everyone thought it had won</a></h2>
-				<h2 class="container-header small">4.<a href=""> David Dimbleby achieves tattoo ambition at 75</a></h2>
-				<h2 class="container-header small">5.<a href=""> José Mourinho 'in tunnel bust-up' with West Brom defender Jonas Olsson</a></h2>
-			</div>
-
-			<div id="tabs-2">
-				<h2 class="container-header small">1.<a href=""> It's business that really rules us now | George Monbiot</a></h2>
-				<h2 class="container-header small">2.<a href=""> George Clooney knocks Russell Crowe and Leonardo DiCaprio, but loves Brad Pitt</a></h2>
-				<h2 class="container-header small">3.<a href=""> The Hunger Games: Catching Fire – first look review</a></h2>
-				<h2 class="container-header small">4.<a href=""> Alcohol without the hangover? It's closer than you think | David Nutt</a></h2>
-			</div>
-
-		
-	</div>
-</div>
-
-		<div class="border-line"></div>
-</div><div class="advert banner-small" style="width:90%; max-width:728px;">
+<!-- include '../../containers/kit/container-popular-football.kit' -->
+<div class="advert banner-small" style="width:90%; max-width:728px;">
 	<img src="../img/advert-banner.jpg" />
 </div>
 <!-- end .advert -->

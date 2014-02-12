@@ -7,17 +7,18 @@
 @import "comparison";		//iframe setup to look at breakpoints on a single page
 
 @import "adverts";			//Example ads for the placement
+@import "animations";		//Elements of CSS for animation (LIVE blog)
 @import "base";				//Holds all the variable and mixins for the prototypes
-@import "colors";			//Videos and images
+@import "colors";			//All essential and re-occuring color styles
 @import "comments";			// Nicked from Loz's work
-@import "football-stats";	//Tables, players, and general stats
+@import "football-stats";	//Tables, players, and other general stats
 @import "fonts";			//Referencing fonts and the styles associated
 @import "font-awesome";		//Font icons
 @import "global-nav";		//Global and sub navigation
 @import "global-nav-menu";	//The overflow styling of Global Nav
 @import "headerfooter";		//Global header and footer for all wireframes, editions
-//@import "library";			//May delete - could include all mixins
-@import "layouts";			//
+//@import "library";		//May delete - could include all mixins
+@import "layouts";			//Module styles, containers etc..
 @import "links";			//All links including buttons, trail links, trail blocks
 @import "multimedia";		//Videos and images
 @import "profiles";			//This should be limited to user icons, everything else should live under the above sections

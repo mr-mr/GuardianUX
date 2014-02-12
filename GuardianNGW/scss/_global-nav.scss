@@ -170,6 +170,23 @@ input {
 	}
 }
 
+.nav-extras-white{
+	padding:5px;
+	float:left;
+	//@include link-white;
+	li{
+		list-style-type: none;
+		display:inline;
+		margin-right:5px;
+		border-right: 1px solid $link;
+		color:#fff;
+		padding-right:10px;
+	}
+	@media (max-width:$medium){
+		display:none;
+	}
+}
+
 
 nav select {
   display: none;
