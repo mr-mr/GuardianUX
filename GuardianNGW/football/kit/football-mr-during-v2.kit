@@ -4,32 +4,46 @@
 <!-- $navSection = uk-edition-uk -->
 <!-- $editorName = Stuart James -->
 <!-- $editorLocation = London -->
-<!-- $timestamp = Wednesday 05 February 2014 -->
+<!-- $timestamp = Wednesday 05 Feb 2014 -->
+<!-- $galleryTitle = Live pictures -->
 
-<!-- @include '../../inc/template/demo-header.kit' -->
+<!-- @include '../../inc/football/live-ticker.kit' -->
+
+<!-- @include '../../inc/template/header.kit' -->
 <!-- @include '../../inc/navigation/mobile-nav.kit' -->
 <body id="article-background">
 
 <div id="wrapper">
 	
+	<!-- @include '../../inc/advert/advert-banner.kit' -->
+
 	<div class="border-line"></div>
 	<aside>
 		<h4 class="header"><a href="">Football</a></h4>
-		<div class="live-circle">LIVE</div>
+		<div class="live-block" id="searching-ellipsis">LIVE 
+			<span>.</span>
+ 			<span>.</span>
+ 			<span>.</span>
+ 		</div>
+
 	</aside>
 	<div class="clear-fix"></div>
 	<article class="live-score-container">
 		<div class="live-circle-time">1st</div>
-		<h1>Man City 0-0 Chelsea</h1>  
+		<h1>Man City 0-<span class="goal-text">0</span> Chelsea</h1>  
 	</article>
 
-	<a href="" class="showhide-2"><div class="football-stat-expandblock-during"><span class="expandblock-text">All live scores</span> <i class="icon-plus"></i></div></a>
-	<div class="hidden-2"><!-- @include '../../inc/football/football-live-scores-competition.kit' --><a href="">Live score tracker</a><div class="border-line"></div></div>
 	
 	<!-- @include '../../inc/article/panel-left-football.kit' -->
 	<!-- @include '../../inc/article/panel-right-football-during.kit' -->
-	<!-- @include '../../inc/football/live-events.kit'-->
+	<!-- include '../../inc/football/live-events.kit'-->
+
+	<a href="" class="showhide-2"><div class="football-stat-expandblock-during">Live table <i class="icon-plus"></i></div></a>
+	<div class="hidden-2"><!-- @include '../../inc/football/football-table-sidebar.kit' --><a href="">Live score tracker</a></div>
 	
+	<div class="clear-fix"></div>
+	<div class="border-line-thick"></div>
+	<!-- @include '../../inc/football/live-blog.kit'-->
 	<div class="border-line"></div>
 </div>
 
@@ -37,6 +51,6 @@
 </body>
 <!-- include '../../containers/kit/container-popular-football.kit' -->
 <!-- @include '../../inc/advert/advert-banner.kit' -->
-<!-- @include '../../inc/template/demo-footer.kit' -->
+<!-- @include '../../inc/template/footer.kit' -->
 
 <!--Includes of all js files in the footer as well, jquery and any custom ones!-->

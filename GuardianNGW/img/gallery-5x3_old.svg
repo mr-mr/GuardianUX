@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="161px" height="97px"
+	 viewBox="0 0 161 97" enable-background="new 0 0 161 97" xml:space="preserve">
+<title>image-5x3</title>
+<description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+<g id="Page_1_2_" sketch:type="MSPage">
+	<g id="Layer_1_2_" sketch:type="MSLayerGroup">
+		<g id="Page_1_3_" sketch:type="MSShapeGroup">
+			<g id="Rectangle_1_1_">
+				<polygon fill="#848484" points="-0.496,0.5 -0.496,96.5 159.504,96.5 159.504,0.5 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g>
+	<path fill="#CCCCCC" d="M97.721,58.859c0,1.412-1.154,2.558-2.578,2.558H62.358c-1.424,0-2.578-1.146-2.578-2.558V35.472
+		c0-1.411,1.154-2.556,2.578-2.556h32.783c1.424,0,2.578,1.145,2.578,2.556v23.387H97.721z"/>
+</g>
+<g>
+	<g>
+		<defs>
+			<rect id="SVGID_1_" x="66.916" y="35.333" width="23.668" height="23.668"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		<path clip-path="url(#SVGID_2_)" fill="#FFFFFF" d="M89.104,41.995l-3.697-0.006l-2.219-2.959h-8.875l-2.219,2.984l-3.698-0.006
+			l-1.479,1.442v11.095l1.479,1.479h20.708l1.479-1.479V43.451L89.104,41.995z M78.75,52.312c-2.04,0-3.691-1.65-3.691-3.692
+			c0-2.038,1.651-3.689,3.691-3.689c2.038,0,3.691,1.651,3.691,3.689C82.441,50.662,80.788,52.312,78.75,52.312"/>
+	</g>
+</g>
+</svg>

@@ -49,7 +49,7 @@ h1 {
 	@media (min-width:$small){
 		color: $copy; 
 		font-family: $serif; 
-		font-size:(18 /10) * 1em;
+		font-size:2.3em;
 		font-weight:bold;
 		line-height:1.1em;
 		//margin: 30px 0 20px 0;
@@ -163,16 +163,15 @@ strong, th, dt {
 }
 
 .timestamp{
-	width: 150px;
-	text-align: right;
-	padding-top: -5px;
-	margin-left:-135px;
+	//width: 150px;
+	//text-align: right;
+	//padding-top: -5px;
+	//margin-left:-135px;
 
-	@media (max-width:$large){
 		text-align:left;
 		padding-top:0;
 		margin-left:0;
-	}
+
 }
 
 .score-large{
@@ -437,8 +436,8 @@ sub {
 }
 
 .media-headline{
-	color:#fff;
-	background:$link-visited;
+	color:orange;
+	background:$dark-grey;
 	text-align:right;	
 	padding:10px;
 	height:50px;
@@ -455,4 +454,111 @@ sub {
 	}	
 }
 
+.media-headline-card{
+	@extend .media-headline;
+	height:160px;
+	padding-top:20px;
+	margin-top:-18px;
+}
+
+.football-goal{
+	background:$light-grey;
+	border-top:4px solid red;
+	padding:20px;
+	color:#333;
+	margin-top:20px;
+}
+
+.fb-updating-text{
+
+	@media(min-width:$small){
+		margin-top: 20px;
+
+	}
+	
+	@media(min-width:$medium-large){
+		margin-top: 75px;
+
+	}
+
+	@media(min-width:$large){
+		margin-top: 20px;
+
+	}
+
+}
+
+.live-scores{
+	@include clear-fix;
+	//padding:5px;
+	background:#F6CECE;
+	height:30px;
+	margin-top:-10px;
+
+	h4{
+		padding:5px;
+		height:30px;
+		//width:100px;
+		padding-right:10px;
+		color:black;
+		background:red;
+		float:left;
+		margin-top:-1px;
+	}
+}
+
+.live-ticker{
+	white-space:nowrap;
+	overflow:hidden;
+	padding:5px;
+}
+
+.selected-team{
+	background:$dark-grey;
+}
+
+
+/* liScroll styles */
+
+.tickercontainer { /* the outer div with the black border */
+border: 1px solid #000;
+background: #fff; 
+width: 738px; 
+height: 27px; 
+margin: 0; 
+padding: 0;
+overflow: hidden; 
+}
+.tickercontainer .mask { /* that serves as a mask. so you get a sort of padding both left and right */
+position: relative;
+left: 10px;
+top: 8px;
+width: 718px;
+overflow: hidden;
+}
+ul.newsticker { /* that's your list */
+position: relative;
+left: 750px;
+font: bold 10px Verdana;
+list-style-type: none;
+margin: 0;
+padding: 0;
+
+}
+ul.newsticker li {
+float: left; /* important: display inline gives incorrect results when you check for elem's width */
+margin: 0;
+padding: 0;
+background: #fff;
+}
+ul.newsticker a {
+white-space: nowrap;
+padding: 0;
+color: #ff0000;
+font: bold 10px Verdana;
+margin: 0 50px 0 0;
+} 
+ul.newsticker span {
+margin: 0 10px 0 0;
+} 
 

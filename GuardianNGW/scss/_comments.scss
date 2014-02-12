@@ -7,6 +7,7 @@
 // 4.0 type
 // 5.0 layout
 // 6.0 modules
+// 7.0 poll
 // -------------------------------------------------------------------------------------------------------------------------------------------------  
 
 // 1.0 imports
@@ -132,3 +133,60 @@
 	}
 }
 
+
+// 7.0 poll
+// -------------------------------------------------------------------------------------------------------------------------------------------------  
+
+.comment-teaser, .article-comments, .live-blog-stream {
+	.response-to, .comment-tools {
+		.font-size: 12,20;
+		color:$copy-supplemental;
+	}	
+	.comment-details {
+		list-style:none;
+		margin-left:0;
+	}
+	.comment-tools-reply-button {
+		color:$copy;
+		&:hover {
+			color:#fff;
+		}
+	}
+}
+
+.article-comments {
+	.article-comments-close-control {
+		text-align:center;
+		&:hover {
+			color:#fff;
+		}
+	}
+}
+
+.list-poll-options {
+	list-style:none;
+	a {
+		text-align:center;
+		color:#fff;
+		&:hover {
+			color:#fff;
+		}
+	}
+}
+
+.comment-teaser-ctas {
+	list-style:none;
+}
+
+.comment-teaser-ctas-reply {
+	a {
+		color:#fff;
+	}
+}
+
+.comment-teaser-ctas-reply, .comment-teaser-ctas-view {
+	text-align:center;
+	a:hover {
+		color:#fff;
+	}
+}
