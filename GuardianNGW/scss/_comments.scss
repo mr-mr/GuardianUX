@@ -139,7 +139,7 @@
 
 .comment-teaser, .article-comments, .live-blog-stream {
 	.response-to, .comment-tools {
-		.font-size: 12,20;
+		@include font-size (12,20);
 		color:$copy-supplemental;
 	}	
 	.comment-details {
@@ -175,7 +175,7 @@
 }
 
 .comment-teaser-ctas {
-	list-style:none;
+	list-style-type:none;
 }
 
 .comment-teaser-ctas-reply {
@@ -188,5 +188,78 @@
 	text-align:center;
 	a:hover {
 		color:#fff;
+	}
+}
+
+.list-poll-options {
+	position:relative;
+	@include height(100);
+	@include margin(0,0,10,0, 0);
+	background:url('../img/comment-teaser-poll.svg') center center no-repeat;
+	background-size:auto auto;
+	li {
+		position:absolute;
+		list-style-type: none;
+		width:20%;
+		top:50%;
+		@include margin-top(-10);
+		&:first-child {
+			right:55%;
+		}
+		&:last-child {
+			left:55%;
+		}
+	}
+	.button-poll-option {
+		display:block;
+		width:100%;
+		color:#fff;
+		//@include padding(5,5,5,5);
+		padding:2px;
+		background:$link;
+		@include box-sizing;
+		&:hover {
+			background:$link-hover;
+		}
+	}
+	@media (min-width:$medium-large) {
+		li {
+			width:40%;
+		}
+	}
+}
+
+.comment-teaser-ctas {
+	//@include margin(0,0,20,0,0);
+	margin:0 0 20px 0;
+}
+
+.comment-teaser-ctas-reply, .comment-teaser-ctas-view {
+	li{
+		list-style-type: none;
+		display:inline;
+	}
+
+	a {
+		display:block;
+		//@include padding(10,2%,10,2%,1%);
+		padding: 10px 2px 10px 2px;
+		&:hover {
+			background:$link-hover;
+		}
+	}
+}
+
+.comment-teaser-ctas-reply {
+	@include margin-bottom(10);
+	a:link, a:visited {
+		color:#fff;
+		background:$link;
+	}
+}
+
+.comment-teaser-ctas-view {
+	a {
+		background:$light-grey;
 	}
 }
