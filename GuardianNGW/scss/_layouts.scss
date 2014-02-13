@@ -1004,4 +1004,19 @@ body{
 		}
 	}
 
+	.live-scores-clockwatch{
+		@media(min-width:$small){
+		border-top:1px dotted $dark-grey;
+		margin:70px 0 -30px 0;
+		}
+		@media(min-width:$medium){
+			margin:90px 0 -50px 0;
+		}
+		@media(min-width:$large){
+			margin:0;
+			border:none;
+			float:right;
+		}
+	}
+
 
