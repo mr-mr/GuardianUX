@@ -484,17 +484,24 @@ sub {
 .fb-updating-text{
 
 	@media(min-width:$small){
-		margin-top: 20px;
+		border-top:1px solid $grey;
+		margin-top: 80px;
+		padding-top:20px;
+		margin-bottom:-30px;
 
 	}
 	
 	@media(min-width:$medium-large){
 		margin-top: 75px;
+		margin-bottom:-10px;
 
 	}
 
 	@media(min-width:$large){
+		padding:20px 0 20px 0;
 		margin-top: 20px;
+		margin-bottom:20px;
+		border-bottom:1px solid $grey;
 
 	}
 

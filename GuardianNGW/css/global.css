@@ -2249,7 +2249,7 @@ body {
     padding: 0; }
     .advert.banner-small {
       margin: 0 auto;
-      padding: 10px; } }
+      padding: -2px; } }
 @media (min-width: 640px) {
   .advert {
     padding-bottom: 10px;
@@ -9166,13 +9166,20 @@ sub {
 
 @media (min-width: 320px) {
   .fb-updating-text {
-    margin-top: 20px; } }
+    border-top: 1px solid #cccccc;
+    margin-top: 80px;
+    padding-top: 20px;
+    margin-bottom: -30px; } }
 @media (min-width: 960px) {
   .fb-updating-text {
-    margin-top: 75px; } }
+    margin-top: 75px;
+    margin-bottom: -10px; } }
 @media (min-width: 1200px) {
   .fb-updating-text {
-    margin-top: 20px; } }
+    padding: 20px 0 20px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #cccccc; } }
 
 .live-scores {
   background: #F6CECE;
@@ -14313,13 +14320,20 @@ sub {
 
 @media (min-width: 320px) {
   .fb-updating-text {
-    margin-top: 20px; } }
+    border-top: 1px solid #cccccc;
+    margin-top: 80px;
+    padding-top: 20px;
+    margin-bottom: -30px; } }
 @media (min-width: 960px) {
   .fb-updating-text {
-    margin-top: 75px; } }
+    margin-top: 75px;
+    margin-bottom: -10px; } }
 @media (min-width: 1200px) {
   .fb-updating-text {
-    margin-top: 20px; } }
+    padding: 20px 0 20px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #cccccc; } }
 
 .live-scores {
   background: #F6CECE;
