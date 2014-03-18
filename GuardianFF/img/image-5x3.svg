@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="161px" height="97px"
+	 viewBox="0 0 161 97" enable-background="new 0 0 161 97" xml:space="preserve">
+<title>image-5x3</title>
+<description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+<g id="Page_1_1_" sketch:type="MSPage">
+	<g id="Layer_1_1_" sketch:type="MSLayerGroup">
+		<g id="Page_1" sketch:type="MSShapeGroup">
+			<g id="Rectangle_1">
+				<polygon fill="#CCCCCC" points="0.504,0.5 0.504,96.5 160.504,96.5 160.504,0.5 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g>
+	<path fill="#848484" d="M98.471,59.027c0,1.412-1.154,2.557-2.578,2.557H63.108c-1.424,0-2.578-1.145-2.578-2.557V35.638
+		c0-1.411,1.154-2.555,2.578-2.555h32.783c1.424,0,2.578,1.144,2.578,2.555v23.389H98.471z"/>
+	<circle fill="#F1F1F1" cx="68.643" cy="41.504" r="3.486"/>
+	<polygon fill="#F1F1F1" points="65.157,56.771 93.411,56.771 84.221,42.522 75.288,53.918 70.463,48.999 	"/>
+</g>
+</svg>
