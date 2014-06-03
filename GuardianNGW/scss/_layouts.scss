@@ -216,6 +216,15 @@ body{
 		
 	}
 
+	#container-popular-accordion{
+		display:none;
+		margin-top:5px;
+		@media (max-width:$large){
+			display:block;
+		}
+		
+	}
+
 	.container-personal-side{
 
 		@media (min-width:$small){
