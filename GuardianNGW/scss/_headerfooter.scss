@@ -31,15 +31,17 @@
 // --------------------------------------------------------------------------------------------------------------------------------------------
 #global-header{
 	@include background-container;
-	background:$link;
+	//background:$link;
 	//height:100%;
 	width:100%;
 	//max-width:1200px;
 	margin:0 auto;
-	padding-bottom:-10px;
+	padding-bottom:20px;
 	padding-top:$gs-gutter;
 	padding-left:$gs-gutter;
 	padding-right:$gs-gutter;
+
+	border-bottom:2px solid $grey;
 
 	@media (max-width:$medium){
 		//background:$link;

@@ -20,10 +20,10 @@
 
 $img-path: "../img";
 $img-extension : ".svg";
-$guardian-logo-header-blue : "#{$img-path}/guardian-logo-4#{$img-extension}";
-$guardian-logo-header : "#{$img-path}/guardian-logo#{$img-extension}";
+$guardian-logo-header-blue : "#{$img-path}/guardian-logo-2#{$img-extension}";
+$guardian-logo-header : "#{$img-path}/guardian-logo-4#{$img-extension}";
 $section-logo-header : "#{$img-path}/news-logo#{$img-extension}";
-$guardian-logo : "#{$img-path}/guardian-logo#{$img-extension}";
+$guardian-logo : "#{$img-path}/guardian-logo-4#{$img-extension}";
 $ux-logo : "#{$img-path}/g-logo#{$img-extension}";
 $g-only-logo : "#{$img-path}/guardian-logo-2#{$img-extension}";
 
@@ -65,18 +65,19 @@ $img-landscape:"#{$img-path}/image-5x3#{$img-extension}";
 
 	&.header{
 		background: url($guardian-logo-header) no-repeat;
-		background-size:100% auto;
+		background-size:90% auto;
 		width:250px;
 		height:100px;
+		float:right;
 		//margin:-10px 0 10px 0;
 		margin: -15px 0 -28px 0;
 		@media (max-width:$medium){
 			background: url($guardian-logo) no-repeat;
 			background-size:100% auto;
-			float:left;
+			float:right;
 			width:120px;
 			height:53px;
-			margin:5px 0 0 -20px;
+			margin:5px -20px 0 0;
 		}
 	}
 
