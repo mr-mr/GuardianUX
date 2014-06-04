@@ -64,6 +64,24 @@ a {
 	}
 }
 
+.button-more-nav{
+	color:$dark-grey;
+		border:1px solid $grey;
+		background: $link-white;
+		padding:10px;
+		text-decoration: none;
+		z-index:200;
+		display: inline-block;
+		width:80px;
+		text-align:center;
+		//float:right;
+		margin:-12px 0 0;
+
+	a:hover{
+		background: $grey;
+	}
+}
+
 .button-home{
 	//float:left;
 	//margin-top:15px;

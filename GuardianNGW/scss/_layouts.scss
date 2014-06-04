@@ -38,7 +38,6 @@ body{
 	@include background-container;
 	margin:0;
 	font-size:15/20;
-	background:$background;
 	color:$copy;
 	text-rendering:optimizeLegibility;
 	&.work{

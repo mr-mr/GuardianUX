@@ -20,136 +20,30 @@
 
 <header id="global-header">
 	<div class="nav-extras">
-		<li><a href="">UK Edition <i class="icon-angle-down"></i></a></li>
-			<!--<select>
-			  <option value="UK">UK Edition</option>
-			  <option value="US">US Edition</option>
-			  <option value="AU">AU Edition</option>
-			</select>-->
-		<li><a href="">Sign in <i class="icon-user button"></i></a></li>
-		<li><a href=""><i class="icon-search"></i></a></li>
-		<!--<li><form id="global-search"><input type="text" placeholder="Search…"><button type="submit"><i class="icon-search"></i></button></form></li>-->
+		 <li><a href=""><i class="icon-search"></i></a> <input value="Search the Guardian"></input></li>
+    <li><a href="">UK Edition <i class="icon-angle-down"></i></a></li>
+      <!--<select>
+        <option value="UK">UK Edition</option>
+        <option value="US">US Edition</option>
+        <option value="AU">AU Edition</option>
+      </select>-->
+    <li><a href=""><i class="icon-user button"></i> Sign in</a></li>
 	</div>
 	<div class="logo-block header">
 		<a href="../"><div class="global-logo header"></div></a>
 	</div>
-	
-<header class="no-flow-into">
-  <nav id="nav-global">
-    <a href="">Home</a>
-    <a href="">News</a>
-  	<a href="">Comment</a>
-  	<a href="">Sport</a>
-  	<a href="" class="nav-active">Football</a>
-  	<a href="">Tech</a>
-  	<a href="">Culture</a>
-  	<a href="">Life</a>
-  	<a href="">Fashion</a>
-  	<a href="">Economy</a>
-  	<a href="">Money</a>
-  	<a href="">Travel</a>
-  	<a href="">Sci &amp; Environment</a>
-  	<a href="">Education</a>
-  </nav>
-
-  <div id="menu">
-    <a href="#" class="toggle"></a>
-
-    <aside>
-      <nav id="nav-compact">
-        <!-- #global nav items will flow here -->
-      </nav>
-      <em>
-        
-      </em>
-    </aside>
-
-  </div>
-
-  <nav class="subnav">
-		<ol id="globalnav-links" class="subnav">
-			<li><a href="">Tables</a></li>
-			<li class="nav-active"><a href="">Live Scores</a></li>
-			<li><a href="">Fixtures</a></li>
-			<li><a href="">Results</a></li>
-			<li><a href="">Teams</a></li>
-			<li><a href="">Leagues &amp; Competitions</a></li>
-		</ol>
-
-		<select> 
-	    	<option value="" selected="selected">UK</option> 
-	    	<option value="">Home</option> 
-		    <option value="">Europe</option> 
-		    <option value="">Americas</option> 
-		    <option value="">Asia</option> 
-		    <option value="">Australia</option> 
-		    <option value="">Africa</option> 
-		    <option value="">Middle East</option>
-		    <option value="">[Special event]</option>
-  		</select>
-	</nav>
-</header>
-
-<script>
-      var navigation = responsiveNav("#nav-global", {
-        insert: "before"
-      });
-</script>
-
-  <script>
-    var menu   = document.querySelector('#menu'),
-    toggle = document.querySelector('.toggle'),
-    aside = document.querySelector('aside');
-
-toggle.addEventListener('click', function(){
-  aside.classList.toggle('visible')
-})
-
-var property = "flow-into";
-
-// check if any variant exists, prefixed or not
-var isCapable = ['-webkit-','-ms-','-moz-',''].some(function(prefix){
-  return prefix + property in document.body.style 
-})
-
-property = isCapable ? property : 'no-' + property;
-
-document.body.classList.add(property)
-
-// If there is support for flow-into
-if (isCapable){
-
-  // Run after PrefixFree
-  document.addEventListener('DOMContentLoaded',function(){
-    // Get the menu flow
-    var menuFlow = document.webkitGetNamedFlows()['menu']; 
-
-    // This is the core function
-    menuFlow.addEventListener('webkitregionoversetchange', function(e){
-      // There is no EmtpyRegion (-1)
-      if (menuFlow.firstEmptyRegionIndex == -1){
-        menu.classList.add('visible');
-      }else{
-        menu.classList.remove('visible');
-      }
-    });
-
-  });
-
-}
-  </script>	<!-- include '../navigation/_nav-uk-edition-news.kit' -->
-</header><ol class="extras-mobile">
-  <li><a class=""><i class="icon-user"></i></a></li>
-  <li><a class=""><i class="icon-flag icon-white"></i></a></li>
+	<ol class="extras-mobile">
+  <!--<li><a class="menu-showhide"><i class="icon-reorder"></i></a></li>-->
   <li><a class=""><i class="icon-search"></i></a></li>
-  <li><a class="menu-showhide"><i class="icon-reorder"></i></a></li>
+  <li><a href="">UK <i class="icon-angle-down"></i></a></li>
+  <li><a class=""><i class="icon-user"></i></a></li>
 </ol>
 
 <div id="global-nav-mobile" class="menu-hidden">
     <nav class="mobile-menu column">
         <ul class="column-1">
     			<li><a href="">Home</a></li>
-          <li class="nav-active">News</li>
+          <li><a href="">News</a></li>
     			<li><a href="">Comment</a></li>
     			<li><a href="">Sport</a></li>
           <li><a href="">Football</a></li>
@@ -177,7 +71,35 @@ if (isCapable){
         <li class="nav-active"><i class="icon-circle-blank"></i> Mobile</li>
         <li><a href="">Desktop</a></li>
       </ul>
+</div></header>
+
+<div class="advert banner-small" style="width:90%; max-width:728px;">
+	<img src="../img/advert-banner-2.jpg" />
 </div>
+<!-- end .advert --><header id="wrapper">
+ <nav id="navigation-layout">
+    <!--<a href=""><i class="icon-reorder"></i> all sections</a>-->
+    <a href="">home</a>
+    <a href="">UK</a>
+    <a href="">world</a>
+    <a href="">sport</a>
+    <a href="">football</a>
+    <a href="">comment</a>
+    <a href="">culture</a>
+    <a href="">economy</a>
+    <a href="">life</a>
+    <a href="">environment</a>
+    <a href="">tech</a>
+    <a href="">money</a>
+    <a href="">travel</a>
+    <a href="">fashion</a>
+    <!--<a href="">science</a>
+    <a href="">education</a>-->
+    <a href="" class="button-more-nav">all <i class="icon-reorder"></i></a>  
+    <dd style="padding-right:10px;">soulmates</dd>
+    <dd>jobs</dd>
+</nav>
+</header>
 	<nav class="ears-nav">
 		<a href="#" class=""><h4>Economy</h4>
 		<div class="next-story">Exposed: bank's high-pressure sales culture continues<dd></dd></div></a>
@@ -207,10 +129,7 @@ $( ".ears-nav" ).click(function() {
 </script>--><body id="article-background">
 
 <div id="wrapper">
-	<div class="advert" style="width:99%; max-width:928px;">
-	<img src="../img/advert-banner-large-2.jpg" />
-</div>
-<!-- end .advert -->
+
 	<div class="border-line"></div>
 	<aside class="header"><h4><a href="">Business</a></h4></aside>
 	
@@ -230,11 +149,11 @@ $( ".ears-nav" ).click(function() {
 	<dd class="editor-name"><a href="">Jill Treanor </a> in London</dd>
 </div>
 	<div class="border-line-dotted"></div>
-	<p class="article-comment-count panel-time"><i class="icon-time"></i> Monday 4 November 2013 20.40 GMT</p>
+	<p class="article-comment-count panel-time"><i class="icon-time"></i> Wednesday 05 Feb 2014</p>
 	<div class="border-line-dotted"></div>
-	<!--<p class="article-comment-count panel-readtime"><a href=""><i class="icon-bookmark"></i></a>  4 min read</p>
-	<div class="border-line-dotted"></div>-->
-	<!--<p class="article-comment-count panel-comment"><a href="#comments"><i class="icon-comment"></i> 107 comments</a></p>-->
+	<p class="article-comment-count panel-readtime"><a href=""><i class="icon-bookmark"></i></a>  4 min read</p>
+	<div class="border-line-dotted"></div>
+	<p class="article-comment-count panel-comment"><a href="#comments"><i class="icon-comment"></i> 107 comments</a></p>
 	<p class="article-comment-count panel-readtime-mobile"><a href=""><i class="icon-bookmark"></i></a></p>
 	<p class="article-comment-count panel-comment-mobile"><a href="#comments"><i class="icon-comment"></i> 107</a></p>
 	<div class="border-line-thick"></div>
@@ -273,12 +192,14 @@ $( ".ears-nav" ).click(function() {
         	</span>
 		</ul>
 
-	<div class="border-line advert"></div>
-	<p>Advertisement</p>
-		<div class="advert advert-mpu" style="margin-top:10px;">
+
+<div class="border-line advert"></div>
+  <p>Advertisement</p>
+    <div class="advert advert-mpu" style="margin-top:10px;">
 	<img src="../img/advert-mpu.jpg" style="width: 300px; float: left; padding: 0px 15px 10px 5px;" />
 </div>
-<!-- end .advert -->	</aside>	
+<!-- end .advert -->	</aside>
+	
 	<article>
 		<img src="../img/image-5x3.svg"/>
 		<sub><i class="icon-camera"></i> Up to 700,000 bank customers who bought share ISAs and illness or income protection products could be affected. Photograph: Andy Rain/EPA<sub>
@@ -322,7 +243,7 @@ Unions argued that they had campaigned against sales targets. Dominic Hook, Unit
 		
 
 		<div class="border-line-thick"></div>
-		<p>Tags: <a href="">ManCity</a>,  <a href="">Blackburn</a>,  <a href="">FA Cup</a></p>		<ul>
+		<p class="tags">Tags: <a href="">ManCity</a>,  <a href="">Blackburn</a>,  <a href="">FA Cup</a></p>		<ul>
 			<span class="icon-stack">
           		<i class="icon-circle icon-stack-base"></i>
           		<i class="icon-envelope icon-light"></i>
@@ -433,7 +354,7 @@ Unions argued that they had campaigned against sales targets. Dominic Hook, Unit
 		<div class="border-line"></div>
 </div>
 <div class="advert banner-small" style="width:90%; max-width:728px;">
-	<img src="../img/advert-banner.jpg" />
+	<img src="../img/advert-banner-2.jpg" />
 </div>
 <!-- end .advert -->
  <script src="../js/jquery-2.0.2.min.js"></script>
@@ -462,6 +383,8 @@ Unions argued that they had campaigned against sales targets. Dominic Hook, Unit
 
  <script src="../js/responsive-nav.min.js"></script>
  <script src="../js/responsivegridsystem.js"></script>
+
+ <script src="../js/news-ticker.min.js"></script>
 
 
 <footer id="global-footer" class="block">

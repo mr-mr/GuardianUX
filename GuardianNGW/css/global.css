@@ -2204,9 +2204,6 @@ br:last-child {
 .border-vertical-right {
   border-right: 1px dotted #252525; }
 
-body {
-  background: #eeeeee; }
-
 #wrapper-demo {
   width: 1200px;
   height: 100%;
@@ -8318,6 +8315,20 @@ a:visited {
       width: 100%;
       padding: 15px 35px 15px 15px; } }
 
+.button-more-nav {
+  color: #252525;
+  border: 1px solid #cccccc;
+  background: white;
+  padding: 10px;
+  text-decoration: none;
+  z-index: 200;
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  margin: -12px 0 0; }
+  .button-more-nav a:hover {
+    background: #cccccc; }
+
 .button-home a:link, .button-home a:visited {
   color: #252525;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#999999));
@@ -8396,7 +8407,7 @@ a:visited {
 
 .nav-active {
   color: #cccccc;
-  background: #132745;
+  background: #cccccc;
   text-decoration: underline;
   padding: 5px; }
 
@@ -8464,9 +8475,8 @@ input {
 
 .nav-extras {
   padding: 5px;
-  float: right; }
-  .nav-extras a:link, .nav-extras a:visited {
-    color: #fff; }
+  float: left;
+  color: #234a81; }
   .nav-extras li {
     list-style-type: none;
     display: inline;
@@ -8505,7 +8515,7 @@ nav select {
   nav select {
     display: inline-block; } }
 #global-nav-mobile {
-  background: #fff;
+  background: #234a81;
   position: absolute;
   width: 100%;
   z-index: 10; }
@@ -8539,20 +8549,20 @@ nav.message_list {
 
 .extras-mobile {
   display: none;
-  color: #fff;
   width: 100%;
-  text-align: right;
-  margin: -42px 0 20px 0; }
+  text-align: left; }
   @media (max-width: 640px) {
     .extras-mobile {
-      display: block; } }
+      display: block;
+      margin: -10px;
+      padding: 0; } }
   .extras-mobile li {
     display: inline;
     margin-right: 10px;
-    border-right: 1px solid #252525;
-    padding-right: 10px; }
+    border-right: 1px solid #cccccc;
+    padding-right: 5px; }
   .extras-mobile a {
-    color: #fff; }
+    color: #234a81; }
 
 .go-home a:link {
   background: #234a81; }
@@ -8587,6 +8597,106 @@ nav.message_list {
   -moz-box-shadow: 0px 7px 15px rgba(50, 50, 50, 0.35);
   box-shadow: 0px 7px 15px rgba(50, 50, 50, 0.35); }
 
+a:link {
+  color: #234a81;
+  text-decoration: none;
+  font-weight: normal; }
+a:hover {
+  color: #132745;
+  text-decoration: underline; }
+a:visited {
+  color: #2e61a9;
+  text-decoration: none; }
+
+.button a:link, .button a:visited {
+  color: #fff;
+  background: #234a81;
+  padding: 15px 35px 15px 35px;
+  text-decoration: none;
+  z-index: 200;
+  display: inline-block;
+  width: 100%;
+  text-align: center; }
+.button a:hover {
+  background: #132745; }
+.button.center {
+  margin: 0 auto; }
+@media (max-width: 640px) {
+  .button {
+    font-size: 1em; }
+    .button a:link, .button a:visited {
+      width: 100%;
+      padding: 15px 35px 15px 15px; } }
+
+.button-more-nav {
+  color: #252525;
+  border: 1px solid #cccccc;
+  background: white;
+  padding: 10px;
+  text-decoration: none;
+  z-index: 200;
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  margin: -12px 0 0; }
+  .button-more-nav a:hover {
+    background: #cccccc; }
+
+.button-home a:link, .button-home a:visited {
+  color: #252525;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#999999));
+  padding: 10px 30px 10px 30px;
+  text-decoration: none; }
+.button-home a:hover {
+  color: white;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4485f5), to(#0b50c8)); }
+
+.button-share {
+  display: inline;
+  margin: 2px; }
+
+.button-inactive {
+  float: left;
+  margin: 10px 10px 30px 0;
+  color: #999;
+  background: #cccccc;
+  padding: 15px 35px 15px 35px;
+  text-decoration: none; }
+
+.back-to-top-nav a:link, .back-to-top-nav a:visited {
+  padding-right: 5px; }
+
+.return-to-home a:link {
+  width: 100%; }
+
+.button-read-more {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px; }
+  .button-read-more a {
+    left: 0;
+    right: 0; }
+
+#navigation-layout {
+  border: 1px solid #cccccc;
+  padding: 10px;
+  float: left;
+  margin: 0;
+  font-size: 1.1rem;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  line-height: 25px; }
+  #navigation-layout a:link {
+    padding-right: 10px; }
+
+search input {
+  display: block; }
+  @media (max-width: 640px) {
+    search input {
+      display: none; } }
+
 #nav-global {
   height: 3rem;
   flex: 1 1 auto; }
@@ -8594,9 +8704,10 @@ nav.message_list {
 #nav-global a:link, #nav-global a:visited {
   font-size: 18px;
   text-decoration: none;
+  margin-top: 2rem;
   padding: 10px;
   float: left;
-  color: #fff; }
+  color: #234a81; }
 #nav-global a:hover {
   color: white;
   background: #a6a6a6;
@@ -8680,13 +8791,13 @@ nav.message_list {
   font-size: 15/20;
   color: #333333;
   text-rendering: optimizeLegibility;
-  background: #234a81;
   width: 100%;
   margin: 0 auto;
-  padding-bottom: -10px;
+  padding-bottom: 20px;
   padding-top: 20px;
   padding-left: 20px;
-  padding-right: 20px; }
+  padding-right: 20px;
+  border-bottom: 2px solid #cccccc; }
   @media (max-width: 640px) {
     #global-header {
       height: 60px;
@@ -8931,7 +9042,8 @@ p {
 dd {
   color: #a6a6a6;
   padding: 0;
-  margin: 10px 0 0 0; }
+  margin: 10px 0 0 0;
+  display: inline; }
 
 strong, th, dt {
   font-family: "guardian-bold";
@@ -9264,7 +9376,6 @@ body {
   text-rendering: optimizeLegibility;
   margin: 0;
   font-size: 15/20;
-  background: #eeeeee;
   color: #333333;
   text-rendering: optimizeLegibility; }
   body.work {
@@ -10389,6 +10500,20 @@ a:visited {
     .button a:link, .button a:visited {
       width: 100%;
       padding: 15px 35px 15px 15px; } }
+
+.button-more-nav {
+  color: #252525;
+  border: 1px solid #cccccc;
+  background: white;
+  padding: 10px;
+  text-decoration: none;
+  z-index: 200;
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  margin: -12px 0 0; }
+  .button-more-nav a:hover {
+    background: #cccccc; }
 
 .button-home a:link, .button-home a:visited {
   color: #252525;
@@ -12028,7 +12153,7 @@ br:last-child {
   border-right: 1px dotted #252525; }
 
 .global-logo.footer {
-  background: url("../img/guardian-logo.svg") no-repeat;
+  background: url("../img/guardian-logo-4.svg") no-repeat;
   background-size: 100% auto;
   width: 130px;
   height: 53px;
@@ -12044,28 +12169,29 @@ br:last-child {
     .global-logo.footer {
       margin: 0px 50px 0 0; } }
 .global-logo.header {
-  background: url("../img/guardian-logo.svg") no-repeat;
-  background-size: 100% auto;
+  background: url("../img/guardian-logo-4.svg") no-repeat;
+  background-size: 90% auto;
   width: 250px;
   height: 100px;
+  float: right;
   margin: -15px 0 -28px 0; }
   @media (max-width: 640px) {
     .global-logo.header {
-      background: url("../img/guardian-logo.svg") no-repeat;
+      background: url("../img/guardian-logo-4.svg") no-repeat;
       background-size: 100% auto;
-      float: left;
+      float: right;
       width: 120px;
       height: 53px;
-      margin: 5px 0 0 -20px; } }
+      margin: 5px -20px 0 0; } }
 .global-logo.header-right {
-  background: url("../img/guardian-logo-4.svg") no-repeat;
+  background: url("../img/guardian-logo-2.svg") no-repeat;
   background-size: 100% auto;
   width: 360px;
   height: 120px;
   margin: -39px -26px 0 0; }
   @media (max-width: 640px) {
     .global-logo.header-right {
-      background: url("../img/guardian-logo.svg") no-repeat;
+      background: url("../img/guardian-logo-4.svg") no-repeat;
       background-size: 100% auto;
       float: left;
       width: 120px;
@@ -14092,7 +14218,8 @@ p {
 dd {
   color: #a6a6a6;
   padding: 0;
-  margin: 10px 0 0 0; }
+  margin: 10px 0 0 0;
+  display: inline; }
 
 strong, th, dt {
   font-family: "guardian-bold";
@@ -14475,6 +14602,20 @@ a:visited {
       width: 100%;
       padding: 15px 35px 15px 15px; } }
 
+.button-more-nav {
+  color: #252525;
+  border: 1px solid #cccccc;
+  background: white;
+  padding: 10px;
+  text-decoration: none;
+  z-index: 200;
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  margin: -12px 0 0; }
+  .button-more-nav a:hover {
+    background: #cccccc; }
+
 .button-home a:link, .button-home a:visited {
   color: #252525;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#999999));
@@ -14674,6 +14815,20 @@ a:visited {
     .button a:link, .button a:visited {
       width: 100%;
       padding: 15px 35px 15px 15px; } }
+
+.button-more-nav {
+  color: #252525;
+  border: 1px solid #cccccc;
+  background: white;
+  padding: 10px;
+  text-decoration: none;
+  z-index: 200;
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  margin: -12px 0 0; }
+  .button-more-nav a:hover {
+    background: #cccccc; }
 
 .button-home a:link, .button-home a:visited {
   color: #252525;

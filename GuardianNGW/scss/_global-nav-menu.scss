@@ -14,10 +14,10 @@
   a:link, a:visited {
   font-size:18px;
   text-decoration: none;
-  //margin-right: 0.7rem;
+  margin-top: 2rem;
   padding: 10px;
   float: left;
-  color: #fff;
+  color: $link;
   //background:$link-hover;
   }
   a:hover{color:$link-white; background:$semi-grey; padding:10px; text-decoration: none;
