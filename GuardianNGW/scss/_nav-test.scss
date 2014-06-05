@@ -55,6 +55,17 @@
 	}
 }
 
+#navigation-layout-vertical{
+	display:block;
+	width:100px;
+	float:left;
+	li{
+		list-style-type: none;
+		line-height:2em;
+	}
+	//position:fixed;
+}
+
 search input{
 	display:block;
 	@media (max-width:$medium){

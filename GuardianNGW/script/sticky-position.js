@@ -1,5 +1,5 @@
-var stickyOJ = document.querySelector('.c-nav');
-var origOffsetY1 = 1400;
+var stickyOJ = document.querySelector('#navigation-layout-vertical');
+var origOffsetY1 = 220;
 var endnavY = 3900;
 
 function onScroll() {
