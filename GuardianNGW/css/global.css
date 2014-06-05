@@ -9011,15 +9011,18 @@ h4 {
   font-family: "guardian-bold";
   margin: 5,0,5,0; }
 
+h5 {
+  font-size: 18;
+  color: #252525;
+  font-family: "guardian-bold";
+  margin: 5px 0 20px 0; }
+
 ul {
   list-style-type: none;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  float: left; }
+  width: 100%; }
 
 li {
-  list-style-type: square;
+  list-style-type: disc;
   font-size: 0.92857em;
   line-height: 1.6em;
   text-decoration: none;
@@ -14187,15 +14190,18 @@ h4 {
   font-family: "guardian-bold";
   margin: 5,0,5,0; }
 
+h5 {
+  font-size: 18;
+  color: #252525;
+  font-family: "guardian-bold";
+  margin: 5px 0 20px 0; }
+
 ul {
   list-style-type: none;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  float: left; }
+  width: 100%; }
 
 li {
-  list-style-type: square;
+  list-style-type: disc;
   font-size: 0.92857em;
   line-height: 1.6em;
   text-decoration: none;
@@ -14546,30 +14552,34 @@ ul.newsticker span {
 
 .accordion {
   margin-bottom: 20px;
-  width: 100%; }
+  padding: 0; }
 
-.accordion {
-  border-top: 3px solid #e5e5e5; }
-  .accordion h2, .accordion h3 {
-    margin: 20px;
-    font-size: 18px; }
+.accordion h2 {
+  margin: 10px;
+  font-size: 18px; }
 
 .accordion-control {
   display: block;
+  padding-top: 15px;
   padding-bottom: 15px;
-  border-bottom: 1px dotted #e5e5e5; }
+  margin-top: -11px;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px dotted #e5e5e5;
+  -webkit-box-sizing: 10;
+  -moz-box-sizing: 10;
+  box-sizing: 10; }
   .accordion-control i {
     float: right;
     text-decoration: none; }
 
 .accordion-pane {
-  padding-bottom: 10px;
-  height: 100%;
-  padding-right: 20px;
-  margin-left: 20px;
-  border-bottom: 1px solid #e5e5e5; }
+  margin: 30px; }
   .accordion-pane h3 {
-    color: #252525; }
+    color: #252525;
+    font-size: 16px;
+    margin: 0 0 10px 30px; }
+  .accordion-pane li {
+    margin-left: 20px; }
 
 a:link {
   color: #234a81;
