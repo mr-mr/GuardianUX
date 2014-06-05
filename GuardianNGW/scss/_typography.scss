@@ -114,15 +114,24 @@ h4 {
 	//float:left;
 }
 
+h5 {
+	font-size:18;
+	color:$dark-grey;
+	font-family:$serif-bold;
+	margin:5px 0 20px 0;
+	//float:left;
+}
+
+
 ul{
 	list-style-type: none;
 	width:100%;
-	padding:0;
-	margin:0;
-	float:left;
+	//padding:0;
+	//margin:0;
+	//float:left;
 }
 li {
-	list-style-type: square;
+	list-style-type: disc;
 	font-size:(13 / 14) * 1em;
 	line-height:1.6em;
 	text-decoration:none;
@@ -146,7 +155,7 @@ p {
 
 }
 
-dd{
+dd {
 	color:$semi-grey;
 	padding:0;
 	margin:10px 0 0 0;
