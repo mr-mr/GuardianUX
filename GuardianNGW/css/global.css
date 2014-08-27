@@ -8324,8 +8324,7 @@ a:visited {
   z-index: 200;
   display: inline-block;
   width: 80px;
-  text-align: center;
-  margin: -12px 0 0; }
+  text-align: center; }
   .button-more-nav a:hover {
     background: #cccccc; }
 
@@ -8598,6 +8597,38 @@ nav.message_list {
   -moz-box-shadow: 0px 7px 15px rgba(50, 50, 50, 0.35);
   box-shadow: 0px 7px 15px rgba(50, 50, 50, 0.35); }
 
+#nav-mega {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+  #nav-mega div {
+    border-top: 2px solid #cccccc; }
+  #nav-mega ul {
+    padding-left: 0; }
+  #nav-mega li {
+    display: block;
+    margin: 0;
+    padding: 0; }
+
+#overflow-menu {
+  float: right;
+  position: relative; }
+  @media (min-width: 320px) {
+    #overflow-menu {
+      margin: -7rem -11px 0; } }
+  @media (min-width: 506px) {
+    #overflow-menu {
+      margin: -3.9rem -11px 0; } }
+  @media (min-width: 640px) {
+    #overflow-menu {
+      margin: -38px -11px 0; } }
+  @media (min-width: 960px) {
+    #overflow-menu {
+      margin: -2.3rem -11px 0; } }
+  @media (min-width: 1200px) {
+    #overflow-menu {
+      margin: -0.8rem -11px 0; } }
+
 a:link {
   color: #234a81;
   text-decoration: none;
@@ -8638,8 +8669,7 @@ a:visited {
   z-index: 200;
   display: inline-block;
   width: 80px;
-  text-align: center;
-  margin: -12px 0 0; }
+  text-align: center; }
   .button-more-nav a:hover {
     background: #cccccc; }
 
@@ -10521,8 +10551,7 @@ a:visited {
   z-index: 200;
   display: inline-block;
   width: 80px;
-  text-align: center;
-  margin: -12px 0 0; }
+  text-align: center; }
   .button-more-nav a:hover {
     background: #cccccc; }
 
@@ -14630,8 +14659,7 @@ a:visited {
   z-index: 200;
   display: inline-block;
   width: 80px;
-  text-align: center;
-  margin: -12px 0 0; }
+  text-align: center; }
   .button-more-nav a:hover {
     background: #cccccc; }
 
@@ -14845,8 +14873,7 @@ a:visited {
   z-index: 200;
   display: inline-block;
   width: 80px;
-  text-align: center;
-  margin: -12px 0 0; }
+  text-align: center; }
   .button-more-nav a:hover {
     background: #cccccc; }
 

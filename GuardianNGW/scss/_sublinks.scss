@@ -1,0 +1,18 @@
+//------------------------------------------------
+html {
+	font-family:$serif;
+	list-style-type: none;
+	background:$copy;
+	}
+
+body{
+	@include background-container;
+	margin:0;
+	font-size:15/20;
+	color:$copy;
+	text-rendering:optimizeLegibility;
+	&.work{
+		background:$link-white;
+		margin:0 auto;
+	}
+}

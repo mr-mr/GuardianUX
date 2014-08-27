@@ -1,0 +1,507 @@
+// --------------------------------------------------------------------------------------------------------------------------------------------
+// Table of contents
+// --------------------------------------------------
+// 1.0 imports
+// 2.0 mixins
+// 		2.1 general
+//		2.2 links
+//		2.3 position
+//		2.4 width and height
+//		2.5 margin and padding
+//		2.6 fonts
+//		2.7 background and shadows
+//		2.8 borders
+//		2.9 image replacement
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+// 1.Imports
+//-----------------------------
+@import "fonts";
+@import "font-awesome";
+@import "colors";
+@import "breakpoints";
+@import "mq";
+
+
+// 2. variables & mixins
+//-----------------------------
+	
+	// 2.0 backgrounds
+	//-----------------------------
+	//$background-container:$link-white;
+	$margin-paragraph: 10px 0 10px 0;
+
+	@mixin background-container {
+		//top:0;
+		width:100%;
+		margin:0 auto;
+		padding:0;
+		font-size:15/20;
+		color:$copy;
+		text-rendering:optimizeLegibility;
+		//background:$grey;
+	}
+
+	@mixin content-container{
+		min-width:280px;
+		max-width:1200px;
+		//height:100%;
+		background:#fff;
+		position:auto;
+		margin:0 auto;
+		padding:$gs-gutter;
+	}
+
+	@mixin margins_zero {
+		margin:0;
+		padding:0;
+	}
+
+	@mixin full-screen {
+		width:100%;
+		top:0;
+		left:0;
+		position:absolute;
+	}
+
+	@mixin center-block {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+
+	@mixin border-radius($radius) {
+	  -webkit-border-radius: $radius;
+	  border-radius: $radius;
+	  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+	}
+
+// Single side border-radius
+
+@mixin border-top-radius($radius) {
+  -webkit-border-top-right-radius: $radius;
+  border-top-right-radius: $radius;
+   -webkit-border-top-left-radius: $radius;
+   border-top-left-radius: $radius;
+   background-clip: padding-box;
+}
+@mixin border-right-radius($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+     -webkit-border-top-right-radius: $radius;
+     border-top-right-radius: $radius;
+     background-clip: padding-box;
+}
+@mixin border-bottom-radius($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+   -webkit-border-bottom-left-radius: $radius;
+   border-bottom-left-radius: $radius;
+   background-clip: padding-box;
+}
+@mixin border-left-radius($radius) {
+  -webkit-border-bottom-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+     -webkit-border-top-left-radius: $radius;
+     border-top-left-radius: $radius;
+     background-clip: padding-box;
+}
+
+
+	// 2.1 general
+	// --------------------------------------------------
+	@mixin reset() {
+		margin:0;
+		padding:0;
+		border:none;
+	}
+	
+	@mixin bootstrap() {
+		* {
+			@include reset;
+			-webkit-text-size-adjust:100%;
+			-ms-text-size-adjust:100%;
+		}
+
+		html {
+			font-size:62.5%; 
+			font-family:$serif;
+			color:$copy;
+		}
+		
+		accessibility {
+			display:none;
+		}              
+
+		main, header, hgroup, nav, section, article, aside, figure, figcaption, details, summary, footer, legend {
+			display:block;
+		}
+                 
+		img {
+			max-width:100%;
+		}
+	}
+	
+	@mixin clear-fix {
+		&:before, &:after {
+		    content:"";
+		    //display:table;
+		}
+		&:after {
+		    clear:both;
+		}
+	}
+	
+	@mixin remove-clear-fix {
+		&:before, &:after {
+			clear:none;
+		    content:none;
+			display:none;
+		}
+	}
+	
+	br:last-child {
+		clear:both;
+	}
+	
+	@mixin box-sizing($value:border-box) {
+		-webkit-box-sizing:$value;
+		-moz-box-sizing:$value;
+		box-sizing:$value;	
+	}
+	
+	// 2.2 links	
+	// --------------------------------------------------
+	@mixin links($link) {
+		$link-hover:darken($link,10%);
+		$link-visited:lighten($link,10%);
+		a {
+			color:$link;
+			text-decoration:none;
+			&:hover {
+				color:$link-hover;
+			}
+			&:visited {
+				color:$link-visited;
+			}
+		}
+	}
+	
+	@mixin links($link,$link-hover,$link-visited) {
+		a {
+			color:$link;
+			text-decoration:none;
+			&:hover, &:visited:hover {
+				color:$link-hover;
+			}
+			&:visited {
+				color:$link-visited;
+			}
+		}
+	}
+	
+	/*@mixin links(yes,$link) {
+		@link-hover:darken($link,10%);
+		@link-visited:lighten($link,10%);
+		a {
+			color:$link;
+			text-decoration:none;
+			&:hover {
+				color:$link-hover;
+				text-decoration:underline;
+			}
+			&:visited {
+				color:$link-visited;
+			}
+		}
+	}
+	
+	@mixin links(yes,$link,$link-hover,$link-visited) {
+		a {
+			color:$link;
+			text-decoration:none;
+			&:hover {
+				color:$link-hover;
+				text-decoration:underline;
+			}
+			&:visited {
+				color:$link-visited;
+			}
+		}
+	}
+	
+	@mixin links(no,$link) {
+		$link-hover:darken($link,10%);
+		$link-visited:lighten($link,10%);
+		a {
+			color:$link;
+			text-decoration:none;
+			&:hover {
+				color:$link-hover;
+			}
+			&:visited {
+				color:$link-visited;
+			}
+		}
+	}	
+	
+	@mixin links(no,$link,$link-hover,$link-visited) {
+		a {
+			color:$link;
+			text-decoration:none;
+			&:hover {
+				color:$link-hover;
+			}
+			&:visited {
+				color:$link-visited;
+			}
+		}
+	}*/
+
+	// 2.3 position
+	// --------------------------------------------------
+	@mixin top($top) {
+		top:$top * 1px;
+		top:$top * .1rem;
+	}
+
+	@mixin right($value,$context) {
+		$v:($value / $context) * 100%;
+		right:$v;
+	}
+
+	@mixin bottom($bottom) {
+		bottom:$bottom * 1px;
+		bottom:$bottom * .1rem;
+	}
+
+	@mixin left($value,$context) {
+		$v:($value / $context) * 100%;
+		right:$v;
+	}
+
+	// 2.4 width and height
+	// --------------------------------------------------
+	@mixin min-width($width) {
+		min-width:$width * 1px;
+		min-width:$width * .1rem;
+	} 
+
+	@mixin width($width) {
+		width:$width * 1px;
+		width:$width * .1rem;
+	}
+
+	@mixin max-width($width) {
+		max-width:$width * 1px;
+		max-width:$width * .1rem;
+	}
+
+	@mixin min-height($height) {
+		min-height:$height * 1px;
+		min-height:$height * .1rem;
+	} 
+
+	@mixin height($height) {
+		height:$height * 1px;
+		height:$height * .1rem;
+	} 
+
+	@mixin max-height($height) {
+		max-height:$height * 1px;
+		max-height:$height * .1rem;
+	}	
+
+	// 2.5 margin and padding
+	// --------------------------------------------------
+	@mixin margin($value) {
+		$r:$value * 1px;
+		$l:$value * 1px;
+		margin:($value * 1px) $r ($value * 1px) $l;
+		margin:($value * .1rem) $r ($value * .1rem) $l;
+	}
+
+	@mixin margin($top:0,$right:0,$bottom:0,$left:0) {
+		$r:$right * 1px;
+		$l:$left * 1px;
+		margin:($top * 1px) $r ($bottom * 1px) $l;
+		margin:($top * .1rem) $r ($bottom * .1rem) $l;
+	}                    
+
+	@mixin margin($top,$right,$bottom,$left,$context) {
+		$r:($right / $context) * 100%;
+		$l:($left / $context) * 100%;
+		margin:($top * 1px) $r ($bottom * 1px) $l;
+		margin:($top * .1rem) $r ($bottom * .1rem) $l;
+	}    
+
+	@mixin margin-top($top:0) {
+		margin-top:$top * 1px;
+		margin-top:$top * .1rem;	
+	}
+
+	@mixin margin-right($value,$context) {
+		margin-right:($value / $context) * 100%;
+	}
+
+	@mixin margin-bottom($bottom:0) {
+		margin-bottom:$bottom * 1px;
+		margin-bottom:$bottom * .1rem;	
+	}
+
+	@mixin margin-left($value,$context) {
+		margin-left:($value / $context) * 100%;
+	}
+
+	@mixin padding($value) {
+		$r:$value * 1px;
+		$l:$value * 1px;
+		padding:($value * 1px) $r ($value * 1px) $l;
+		padding:($value * .1rem) $r ($value * .1rem) $l;
+	}
+
+	@mixin padding($top:0,$right:0,$bottom:0,$left:0) {
+		$r:$right * 1px;
+		$l:$left * 1px;
+		padding:($top * 1px) $r ($bottom * 1px) $l;
+		padding:($top * .1rem) $r ($bottom * .1rem) $l;
+	}                    
+
+	@mixin padding($top,$right,$bottom,$left,$context) {
+		$r:($right / $context) * 100%;
+		$l:($left / $context) * 100%;
+		padding:($top * 1px) $r ($bottom * 1px) $l;
+		padding:($top * .1rem) $r ($bottom * .1rem) $l;
+	}    
+
+	@mixin padding-top($top:0) {
+		padding-top:$top * 1px;
+		padding-top:$top * .1rem;	
+	}
+
+	@mixin padding-right($value,$context) {
+		padding-right:($value / $context) * 100%;
+	}
+
+	@mixin padding-bottom($bottom:0) {
+		padding-bottom:$bottom * 1px;
+		padding-bottom:$bottom * .1rem;	
+	}
+
+	@mixin padding-left($value,$context) {
+		padding-left:($value / $context) * 100%;
+	}
+
+	// 2.6 fonts
+	// --------------------------------------------------
+	@mixin font-size($size,$leading) {
+		font-size:$size * 1px;
+		font-size:$size * .1rem; 
+		line-height:$leading * 1px;
+		line-height:$leading * .1rem;	
+	}
+
+	@mixin font($size,$leading,$family) {
+		$sp:$size * 1px;
+		$lp:$leading * 1px;
+		$sr:$size * .1rem;
+		$lr:$leading * .1rem;
+		font:$sp $lp $family;
+		font:$sr $lr $family;
+	}
+
+	@mixin font($size,$leading,$weight,$style:normal) {
+		$sp:$size * 1px;
+		$lp:$leading * 1px;
+		$sr:$size * .1rem;
+		$lr:$leading * .1rem;
+		font:$style $weight $sp $lp $family;
+		font:$style $weight $sr $lr $family;
+	}
+
+	@mixin font($size,$leading,$weight,$family,$style:normal) {
+		$sp:$size * 1px;
+		$lp:$leading * 1px;
+		$sr:$size * .1rem;
+		$lr:$leading * .1rem;
+		font:$style $weight $sp $lp $family;
+		font:$style $weight $sr $lr $family;
+	}
+
+	@mixin font-margin($size,$leading) {
+		@include font-size($size,$leading);
+		@include margin-bottom($leading / 2);
+	}
+
+// 3.General
+//-----------------------------
+
+
+#home{
+	@include content-container;
+}
+
+.work-container {
+	//background: lime;
+	margin:0 auto;
+	width:940px;
+}
+
+#article-background{
+	background:$link-white;
+		margin:0 auto;
+}
+
+.border-nav {
+	border: 1px solid $light-grey;
+	width:100%;
+	padding:0;
+	margin:0;
+}
+
+.clear-fix{
+	@include clear-fix;
+}
+
+.border-line{
+	@include clear-fix;
+	border: 1px solid $light-grey;
+	width:100%;
+	//height:10%;
+	margin:20px 0 30px 0;
+	padding:0;
+	float:left;
+	&.read-more{
+		margin:0;
+		border-color:$link;
+	}
+}
+
+.border-line-thick{
+	border: 3px solid $light-grey;
+	width:100%;
+	opacity:0.8;
+	margin:5px 0 5px 0;
+}
+
+.border-line-dotted{
+	border: 1px dotted black;
+	width:100%;
+	opacity:0.2;
+}
+
+.border-vertical-left{
+	border-left: 1px dotted $dark-grey;
+}
+
+.border-vertical-right{
+	border-right: 1px dotted $dark-grey;
+}
+
+
+
+
+
+
+
