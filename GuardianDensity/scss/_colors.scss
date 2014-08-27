@@ -1,0 +1,59 @@
+// Table of contents
+// 1. Imports
+// 2. Titles
+// 3. Images
+// 4. Video
+// 5. Galleries
+
+
+// 1. headers
+// ------------------------------------------------------------------------------------------------------------------------------------------------- 
+$header: #000;
+$header-hover:darken($header, 10%);
+$header-visited:lighten($header, 10%);
+
+// 2. links
+// ------------------------------------------------------------------------------------------------------------------------------------------------- 
+$link: #234a81;
+$link-hover:darken($link,15%);
+$link-darker-still:darken($link,30%);
+$link-visited:lighten($link,10%);
+
+$link-white:#ffffff;
+$link-white-hover:darken($link-white,30%);
+$link-white-visited:darken($link-white,10%);
+
+$link-grey:#f5f5f5;
+$link-grey-hover:darken($link-white,30%);
+
+// 3. Body text
+// ------------------------------------------------------------------------------------------------------------------------------------------------- 
+$copy:#333;
+$copy-supplemental:#666;
+$error:#300;
+	
+// 4. backgrounds
+// ------------------------------------------------------------------------------------------------------------------------------------------------- 
+$background:#eee;
+$highlight:#c00;
+$tab:#edede7;
+$tab-hover:darken($tab,5%);
+$notes:#f9ff9b;
+$notes-border:darken($notes, 35%);
+
+$framework-nav:#4485F5;
+$framework-nav-light:lighten($framework-nav, 30%);
+
+$tooltip:#B1C93B;
+	
+// 5. greys
+// ------------------------------------------------------------------------------------------------------------------------------------------------- 
+$dark-grey:#252525;
+$semi-grey:#a6a6a6;
+$grey:#ccc;
+$mid-grey:#d2d2d2;
+$light-grey:#e5e5e5;
+$code-grey:#f7f7f9;
+
+
+

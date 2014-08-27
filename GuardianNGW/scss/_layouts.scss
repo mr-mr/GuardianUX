@@ -596,11 +596,11 @@ body{
 
 
 	.fixed {
-		float:right;
-		right:50px;
+		//float:right;
+		//right:50px;
 		position: fixed;
 		overflow:display;
-	    top:0;
+	    top:20px;
 	    width: 300px;
 	    z-index:90;
 	    background:#fff;

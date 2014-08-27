@@ -2,6 +2,7 @@
 //$(".hidden").hide();
 
 $(".icon-refresh").click(function(e){
+	alert("loadedA");
 	e.preventDefault();
 	$(".icon-refresh").toggleClass("icon-spin");
 	$(".updating-text").replaceWith( "Updating..." );

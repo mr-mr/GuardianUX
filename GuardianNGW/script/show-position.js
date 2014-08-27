@@ -24,8 +24,8 @@ $("#nav-global-scroll").hide();
 $(document).scroll(function () {
     var y = $(this).scrollTop();
 
-    if (y >= 1300 && currentPosition <= navscrollend && window.innerWidth > 360) {
-        $('#nav-global-scroll').show();
+    if (y >= 300 && currentPosition <= navscrollend && window.innerWidth > 360) {
+        $('#nav-global-scroll').show()();
        // $("#nav-global-scroll").css("margin-top","0");
     } else  {
         $('#nav-global-scroll').hide();
