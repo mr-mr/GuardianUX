@@ -46,7 +46,7 @@
 		min-width:280px;
 		max-width:1200px;
 		//height:100%;
-		background:#fff;
+		//background:#fff;
 		position:auto;
 		margin:0 auto;
 		padding:$gs-gutter;
@@ -479,7 +479,7 @@
 }
 
 .border-line-thick{
-	border: 3px solid $light-grey;
+	border: 1px solid #4bc6df;
 	width:100%;
 	opacity:0.8;
 	margin:5px 0 5px 0;

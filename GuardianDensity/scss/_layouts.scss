@@ -40,6 +40,7 @@ body{
 	margin:0;
 	font-size:15/20;
 	color:$copy;
+	background:$link-grey;
 	text-rendering:optimizeLegibility;
 	&.work{
 		background:$link-white;
@@ -189,6 +190,7 @@ body{
 		//background:$code-grey;
 		//padding-top:30px;
 		z-index:10px;
+		background:$link-grey;
 	}
 
 	.container-popular{
@@ -1035,8 +1037,9 @@ body{
 #rasiak {
 	width:100%;
 	max-width:220px;
-	height:400px;
-	overflow:hidden;
+	height:290px;
+	overflow:scroll;
+	background: #fff;
 	
 	h1{
 		padding:0;
@@ -1047,16 +1050,24 @@ body{
 	}
 
 	ul{
+		float:left;
+		border-top: 1px solid $grey;
+		border-bottom: 1px solid $grey;
 		padding:0;
-		margin:0;
+		margin-top:-5px;
+		background:#fff;
+		z-index:999;
 	}
 
 	li{
 		width:108px;
-		background:$grey;
 		display:inline-table;
 		padding:5px;
 		margin:0;
+	}
+	li:nth-child(n+1):nth-child(odd):nth-child(-n+2) span {
+		border-left: 1px solid $grey;
+		padding-left:5px;
 	}
 }
 

@@ -1,1 +1,21 @@
 //------------------------------------------------
+
+.rasiak-expand-button {
+	
+}
+.rasiak-expand-circle{
+	position:absolute;
+	border:1px solid $dark-grey;
+	border-radius: 50%;
+	width:35px;
+	height:35px;
+	padding:5px;
+	margin: 81px 5px 0;
+}
+
+.rasiak-expand-arrow{
+	background: url('../img/arrow__down.svg') no-repeat center;
+	background-size:80% auto;
+	background-color: #fff;
+	-webkit-transform: rotate(180deg);
+}
