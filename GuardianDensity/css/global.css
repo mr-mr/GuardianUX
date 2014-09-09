@@ -2149,7 +2149,6 @@ br:last-child {
 #home {
   min-width: 280px;
   max-width: 1200px;
-  background: #fff;
   position: auto;
   margin: 0 auto;
   padding: 20px; }
@@ -2188,7 +2187,7 @@ br:last-child {
     border-color: #234a81; }
 
 .border-line-thick {
-  border: 3px solid #e5e5e5;
+  border: 1px solid #4bc6df;
   width: 100%;
   opacity: 0.8;
   margin: 5px 0 5px 0; }
@@ -4840,7 +4839,6 @@ br:last-child {
 #home {
   min-width: 280px;
   max-width: 1200px;
-  background: #fff;
   position: auto;
   margin: 0 auto;
   padding: 20px; }
@@ -4879,7 +4877,7 @@ br:last-child {
     border-color: #234a81; }
 
 .border-line-thick {
-  border: 3px solid #e5e5e5;
+  border: 1px solid #4bc6df;
   width: 100%;
   opacity: 0.8;
   margin: 5px 0 5px 0; }
@@ -6622,7 +6620,6 @@ br:last-child {
 #home {
   min-width: 280px;
   max-width: 1200px;
-  background: #fff;
   position: auto;
   margin: 0 auto;
   padding: 20px; }
@@ -6661,7 +6658,7 @@ br:last-child {
     border-color: #234a81; }
 
 .border-line-thick {
-  border: 3px solid #e5e5e5;
+  border: 1px solid #4bc6df;
   width: 100%;
   opacity: 0.8;
   margin: 5px 0 5px 0; }
@@ -9231,9 +9228,41 @@ sub {
   .article-comment-count {
     font-size: 13px; } }
 
+.rasiak-layout {
+  padding: 5px;
+  width: 100%; }
+
+.rasiak-header {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "guardian-bold";
+  padding: 5px; }
+
+.dos-santos-header {
+  font-size: 24px;
+  line-height: 26px;
+  font-family: "guardian-bold";
+  padding: 5px; }
+
+.rasiak-meta {
+  width: 100%;
+  font-size: 14px;
+  font-family: "guardian-regular";
+  padding: 2px;
+  margin: 5px 5px 10px 0;
+  color: #a6a6a6;
+  float: left; }
+  .rasiak-meta i {
+    padding-right: 5px;
+    padding-left: 5px; }
+  .rasiak-meta i:nth-child(2) {
+    padding-left: 10px; }
+
 .container-header {
   font-size: 20px;
-  font-family: "guardian-bold"; }
+  font-family: "guardian-bold";
+  float: left;
+  width: 140px; }
   .container-header.extralarge {
     font-size: 2.42857em;
     font-family: "guardian-regular";
@@ -9420,6 +9449,7 @@ body {
   margin: 0;
   font-size: 15/20;
   color: #333333;
+  background: whitesmoke;
   text-rendering: optimizeLegibility; }
   body.work {
     background: white;
@@ -9458,7 +9488,6 @@ body {
 #wrapper {
   min-width: 280px;
   max-width: 1200px;
-  background: #fff;
   position: auto;
   margin: 0 auto;
   padding: 20px; }
@@ -9527,7 +9556,8 @@ body {
 	border:1px solid $grey;
 }*/
 #container-section {
-  z-index: 10px; }
+  z-index: 10px;
+  background: whitesmoke; }
 
 .container-popular {
   max-width: 1200px;
@@ -9794,7 +9824,7 @@ aside h4 {
 
 .col {
   float: left;
-  margin: 1% 0 1% 1.6%; }
+  margin: 1% 0 1% 0%; }
   .col:first-child {
     margin-left: 0; }
   @media only screen and (max-width: 506px) {
@@ -10511,24 +10541,51 @@ aside h4 {
     border: none;
     float: right; } }
 
-#rasiak {
-  width: 100%;
-  max-width: 220px;
-  height: 400px;
-  overflow: hidden; }
-  #rasiak h1 {
+.sublinks-general {
+  overflow: hidden;
+  background: #fff; }
+  .sublinks-general h1 {
     padding: 0; }
-  #rasiak img {
-    height: 130px; }
-  #rasiak ul {
+  .sublinks-general ul {
+    float: left;
     padding: 0;
-    margin: 0; }
-  #rasiak li {
-    width: 108px;
-    background: #cccccc;
+    margin-top: -5px;
+    background: #fff;
+    z-index: 999;
+    position: relative; }
+  .sublinks-general li {
+    border-top: 1px solid #cccccc;
     display: inline-table;
+    line-height: 18px;
     padding: 5px;
     margin: 0; }
+  .sublinks-general li:nth-child(3) {
+    border-left: 1px solid #cccccc;
+    padding-left: 5px; }
+  .sublinks-general li:nth-child(5) {
+    border-left: 1px solid #cccccc;
+    padding-left: 5px; }
+
+.rasiak, .rasiak-scroll {
+  width: 100%;
+  max-width: 220px;
+  height: 290px; }
+  .rasiak img, .rasiak-scroll img {
+    height: 130px; }
+  .rasiak li, .rasiak-scroll li {
+    width: 49%; }
+
+.rasiak-scroll {
+  overflow: scroll; }
+
+.dos-santos {
+  width: 100%;
+  max-width: 440px;
+  height: 370px;
+  overflow: hidden;
+  background: #fff; }
+  .dos-santos li {
+    width: 32%; }
 
 a:link {
   color: #234a81;
@@ -12157,7 +12214,6 @@ br:last-child {
 #home {
   min-width: 280px;
   max-width: 1200px;
-  background: #fff;
   position: auto;
   margin: 0 auto;
   padding: 20px; }
@@ -12196,7 +12252,7 @@ br:last-child {
     border-color: #234a81; }
 
 .border-line-thick {
-  border: 3px solid #e5e5e5;
+  border: 1px solid #4bc6df;
   width: 100%;
   opacity: 0.8;
   margin: 5px 0 5px 0; }
@@ -14427,9 +14483,41 @@ sub {
   .article-comment-count {
     font-size: 13px; } }
 
+.rasiak-layout {
+  padding: 5px;
+  width: 100%; }
+
+.rasiak-header {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "guardian-bold";
+  padding: 5px; }
+
+.dos-santos-header {
+  font-size: 24px;
+  line-height: 26px;
+  font-family: "guardian-bold";
+  padding: 5px; }
+
+.rasiak-meta {
+  width: 100%;
+  font-size: 14px;
+  font-family: "guardian-regular";
+  padding: 2px;
+  margin: 5px 5px 10px 0;
+  color: #a6a6a6;
+  float: left; }
+  .rasiak-meta i {
+    padding-right: 5px;
+    padding-left: 5px; }
+  .rasiak-meta i:nth-child(2) {
+    padding-left: 10px; }
+
 .container-header {
   font-size: 20px;
-  font-family: "guardian-bold"; }
+  font-family: "guardian-bold";
+  float: left;
+  width: 140px; }
   .container-header.extralarge {
     font-size: 2.42857em;
     font-family: "guardian-regular";
@@ -14601,6 +14689,27 @@ ul.newsticker a {
 
 ul.newsticker span {
   margin: 0 10px 0 0; }
+
+.rasiak-expand-circle {
+  position: absolute;
+  border: 2px solid #a6a6a6;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  margin: -30px 180px 0;
+  z-index: 999;
+  background-color: #fff; }
+
+.rasiak-expand-arrow {
+  background: url("../img/arrow__up.svg") no-repeat center;
+  background-size: 80% auto;
+  background-color: #fff;
+  position: absolute;
+  z-index: 999; }
+
+.sublinks-arrow-rotate {
+  -webkit-transform: rotate(180deg); }
 
 * {
   -webkit-box-sizing: border-box;
@@ -15140,7 +15249,6 @@ body .ui-tooltip {
 .nav-container {
   min-width: 280px;
   max-width: 1200px;
-  background: #fff;
   position: auto;
   margin: 0 auto;
   padding: 20px;

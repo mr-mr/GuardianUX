@@ -375,9 +375,48 @@ sub {
 	}
 }
 
+.rasiak-layout{
+	padding:5px;
+	width:100%;
+}
+
+.rasiak-header {
+	font-size:16px;
+	line-height: 20px;
+	font-family:$serif-bold;
+	padding:5px;
+}
+
+.dos-santos-header {
+	font-size:24px;
+	line-height: 26px;
+	font-family:$serif-bold;
+	padding:5px;
+}
+
+.rasiak-meta {
+	width:100%;
+	font-size:14px;
+	font-family:$serif;
+	padding:2px;
+	margin: 5px 5px 10px 0;
+	color:$semi-grey;
+	float:left;
+
+	i{
+		padding-right:5px;
+		padding-left:5px;
+	}
+	i:nth-child(2){
+		padding-left:10px;
+	}
+}
+
 .container-header {
 	font-size:20px;
 	font-family:$serif-bold;
+	float:left;
+	width:140px;
 	&.extralarge{
 		font-size:(34 / 14) * 1em;
 		font-family:$serif;

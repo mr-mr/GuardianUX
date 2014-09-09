@@ -1,1 +1,44 @@
 //------------------------------------------------
+
+.rasiak-expand-button {
+	
+}
+.rasiak-expand-circle{
+	position:absolute;
+	border:2px solid $semi-grey;
+	border-radius: 50%;
+	width:35px;
+	height:35px;
+	padding:5px;
+	margin: -30px 180px 0;
+	z-index: 999;
+	background-color: #fff;
+}
+
+.rasiak-expand-arrow{
+	background: url('../img/arrow__up.svg') no-repeat center;
+	background-size:80% auto;
+	background-color: #fff;
+	position:absolute;
+	z-index: 999;
+	
+}
+
+.sublinks-arrow-rotate{
+	-webkit-transform: rotate(180deg);
+}
+
+.add-on {
+	@include display(inline-block, $l-margin:20px);
+}
+
+@mixin display (
+  $disp, 
+  $padding: null, 
+  $r-margin: null,
+  $l-margin: null) {
+    display: $disp;
+    padding: $padding;
+    margin-left: $l-margin;
+    margin-right: $r-margin;
+}
