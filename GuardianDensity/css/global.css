@@ -9238,16 +9238,25 @@ sub {
   font-family: "guardian-bold";
   padding: 5px; }
 
+.dos-santos-header {
+  font-size: 24px;
+  line-height: 26px;
+  font-family: "guardian-bold";
+  padding: 5px; }
+
 .rasiak-meta {
   width: 100%;
   font-size: 14px;
   font-family: "guardian-regular";
   padding: 2px;
-  margin: 10px 0 10px 0;
+  margin: 5px 5px 10px 0;
   color: #a6a6a6;
   float: left; }
   .rasiak-meta i {
-    padding-right: 5px; }
+    padding-right: 5px;
+    padding-left: 5px; }
+  .rasiak-meta i:nth-child(2) {
+    padding-left: 10px; }
 
 .container-header {
   font-size: 20px;
@@ -9815,7 +9824,7 @@ aside h4 {
 
 .col {
   float: left;
-  margin: 1% 0 1% 1.6%; }
+  margin: 1% 0 1% 0%; }
   .col:first-child {
     margin-left: 0; }
   @media only screen and (max-width: 506px) {
@@ -10532,32 +10541,51 @@ aside h4 {
     border: none;
     float: right; } }
 
-#rasiak {
-  width: 100%;
-  max-width: 220px;
-  height: 290px;
-  overflow: scroll;
+.sublinks-general {
+  overflow: hidden;
   background: #fff; }
-  #rasiak h1 {
+  .sublinks-general h1 {
     padding: 0; }
-  #rasiak img {
-    height: 130px; }
-  #rasiak ul {
+  .sublinks-general ul {
     float: left;
-    border-top: 1px solid #cccccc;
-    border-bottom: 1px solid #cccccc;
     padding: 0;
     margin-top: -5px;
     background: #fff;
-    z-index: 999; }
-  #rasiak li {
-    width: 108px;
+    z-index: 999;
+    position: relative; }
+  .sublinks-general li {
+    border-top: 1px solid #cccccc;
     display: inline-table;
+    line-height: 18px;
     padding: 5px;
     margin: 0; }
-  #rasiak li:nth-child(n+1):nth-child(odd):nth-child(-n+2) span {
+  .sublinks-general li:nth-child(3) {
     border-left: 1px solid #cccccc;
     padding-left: 5px; }
+  .sublinks-general li:nth-child(5) {
+    border-left: 1px solid #cccccc;
+    padding-left: 5px; }
+
+.rasiak, .rasiak-scroll {
+  width: 100%;
+  max-width: 220px;
+  height: 290px; }
+  .rasiak img, .rasiak-scroll img {
+    height: 130px; }
+  .rasiak li, .rasiak-scroll li {
+    width: 49%; }
+
+.rasiak-scroll {
+  overflow: scroll; }
+
+.dos-santos {
+  width: 100%;
+  max-width: 440px;
+  height: 370px;
+  overflow: hidden;
+  background: #fff; }
+  .dos-santos li {
+    width: 32%; }
 
 a:link {
   color: #234a81;
@@ -14465,16 +14493,25 @@ sub {
   font-family: "guardian-bold";
   padding: 5px; }
 
+.dos-santos-header {
+  font-size: 24px;
+  line-height: 26px;
+  font-family: "guardian-bold";
+  padding: 5px; }
+
 .rasiak-meta {
   width: 100%;
   font-size: 14px;
   font-family: "guardian-regular";
   padding: 2px;
-  margin: 10px 0 10px 0;
+  margin: 5px 5px 10px 0;
   color: #a6a6a6;
   float: left; }
   .rasiak-meta i {
-    padding-right: 5px; }
+    padding-right: 5px;
+    padding-left: 5px; }
+  .rasiak-meta i:nth-child(2) {
+    padding-left: 10px; }
 
 .container-header {
   font-size: 20px;
@@ -14655,17 +14692,23 @@ ul.newsticker span {
 
 .rasiak-expand-circle {
   position: absolute;
-  border: 1px solid #252525;
+  border: 2px solid #a6a6a6;
   border-radius: 50%;
   width: 35px;
   height: 35px;
   padding: 5px;
-  margin: 81px 5px 0; }
+  margin: -30px 180px 0;
+  z-index: 999;
+  background-color: #fff; }
 
 .rasiak-expand-arrow {
-  background: url("../img/arrow__down.svg") no-repeat center;
+  background: url("../img/arrow__up.svg") no-repeat center;
   background-size: 80% auto;
   background-color: #fff;
+  position: absolute;
+  z-index: 999; }
+
+.sublinks-arrow-rotate {
   -webkit-transform: rotate(180deg); }
 
 * {

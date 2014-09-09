@@ -552,7 +552,7 @@ body{
 		//margin-left:$gs-gutter+10px;
 		//margin-right:$gs-gutter/2;
 
-		margin: 1% 0 1% 1.6%;
+		margin: 1% 0 1% 0%;
 
 		&:first-child { margin-left: 0; }
     	//background: #ccc;
@@ -1034,41 +1034,72 @@ body{
 // 7.0 News blocks
 // -----------------------------------------------------------------------------------------------------------------------------------------
 
-#rasiak {
-	width:100%;
-	max-width:220px;
-	height:290px;
-	overflow:scroll;
+.sublinks-general{
+	overflow:hidden;
 	background: #fff;
-	
+
 	h1{
 		padding:0;
 	}
 
-	img{
-		height:130px;
-	}
-
 	ul{
 		float:left;
-		border-top: 1px solid $grey;
-		border-bottom: 1px solid $grey;
+		
 		padding:0;
 		margin-top:-5px;
 		background:#fff;
 		z-index:999;
+		position:relative;
 	}
-
 	li{
-		width:108px;
+		border-top: 1px solid $grey;
 		display:inline-table;
+		line-height:18px;
 		padding:5px;
 		margin:0;
 	}
-	li:nth-child(n+1):nth-child(odd):nth-child(-n+2) span {
+	li:nth-child(3){
+		border-left: 1px solid $grey;
+		padding-left:5px;
+	}
+	li:nth-child(5){
 		border-left: 1px solid $grey;
 		padding-left:5px;
 	}
 }
 
+.rasiak {
+	width:100%;
+	max-width:220px;
+	height:290px;
+
+	img{
+		height:130px;
+	}
+
+
+	li{
+		width:49%;
+	}
+}
+
+.rasiak-scroll {
+	@extend .rasiak;
+	overflow:scroll;
+}
+.rasiak-sublinks-scroll {
+	
+}
+
+.dos-santos{
+	width:100%;
+	max-width:440px;
+	height:370px;
+	overflow:hidden;
+	background: #fff;
+
+	li{
+		width:32%;
+	}
+}
 
