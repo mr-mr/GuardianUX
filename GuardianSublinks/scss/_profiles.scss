@@ -1,0 +1,385 @@
+// Example sass file to be used a builder
+// Table of contents
+//-----------------------------
+// 1. imports
+// 2. general
+// 3. type
+// 4. images & video
+// 5. layout
+// 6. modules
+// ---------------------------- 
+
+
+// 1.Imports
+//-----------------------------
+
+@import "fonts";
+@import "font-awesome";
+@import "colors";
+@import "breakpoints";
+
+
+// 2. General
+//-----------------------------
+
+
+.comment-date {
+	font-family: $sans-serif; 
+	// background-color: pink;
+	height: auto;
+	margin-top:10px;
+	font-size: 0.9rem;
+	color: $semi-grey;
+}
+
+.profile-container {
+		/*background-color: pink;*/
+		
+	.username-information-wrapper {
+		width: 100%;
+
+		@media (min-width: $medium) {
+			/*background-color: blue;*/
+			width: 60%;
+		}
+				
+		.username-information {
+			width: 80%;
+			padding: 0 10px;
+			float: left;
+			overflow: hidden;
+			/*	background-color: black;*/
+			
+			h1 {
+				/*float: left;*/
+				font-family: $sans-serif; 
+				
+				@media (min-width: $small) {
+				/*	background-color: orange;*/
+				}
+				
+				@media (min-width: $small-medium) {
+ 				/* background-color: yellow;*/
+				}
+				
+				@media (min-width: $medium) {
+				/*	background-color: blue;*/
+				}
+				
+				@media (min-width: $medium-large) {
+				/*		background-color: green;*/
+				}
+				
+				@media (min-width: $large) {
+				/*		background-color: grey;*/
+				}
+			}
+		}
+		
+		
+		.profile-picture {
+
+			float: left;
+			
+			@media (min-width: $small) {
+				width: 20%;
+			}
+			
+			@media (min-width: $small-medium) {
+				width: 18%;
+			}
+			
+			@media (min-width: $medium) {
+				width: 17%;
+			}
+			
+			@media (min-width: $medium-large) {
+				width: 16%;
+			}
+			
+			@media (min-width: $large) {
+				width: 15%;
+			}
+		}
+		
+		.join-date {
+			font-size: 0.8rem;
+		}
+	}
+}
+
+.user-stats {
+	
+	@media (min-width: $small) {
+		clear: both;
+		width: 100%;
+	}
+	
+	@media (min-width: $small-medium) {
+		clear: both;
+		width: 100%;
+	}
+	
+	@media (min-width: $medium) {
+		clear: none;
+	}
+	
+	@media (min-width: $medium-large) {
+		clear: none;
+	
+	}
+	
+	@media (min-width: $large) {
+		clear: none;
+	
+	}
+
+}
+
+/* @group comment body */
+
+.comments-listing {
+	select {
+		display: inline-block;
+		margin-right: 3px; 
+	}	
+	
+	form {
+		display: inline-block;
+	}
+
+	.comment-controls {
+		height: 30px;
+		width: 100%;
+		float: left;
+		margin: 20px 0;
+		clear: both;
+		/*background-color: orange;*/
+	}
+	
+	p {
+		margin: 8px 0;
+	}
+	
+	.comments-list {
+		clear: both;
+		
+	}
+	
+	.comment {
+		/*background-color: #eded68;*/
+		clear: both;
+		border-top: 1px dotted #000000;
+		margin-top: 15px;
+		margin-bottom: 5px;
+	}
+		
+	.comment-body {
+		font-family: $sans-serif; 
+		padding-left: 15px;
+		
+		p {
+			margin: 8px 0;
+			max-width: 550px;
+		}
+	}
+}
+
+
+/* @end */
+
+
+// 3. type
+//-----------------------------
+
+.username-reply {
+	font-family: $sans-serif; 
+	font-size: 0.9rem;
+}
+
+.comment-article-link {
+	padding: 5px 0;
+}
+
+.icon-reply {
+	font-size: 0.9rem;
+	color: gray;
+}
+
+.comment-view-replies-action {
+	font-size: 0.9rem;
+	color: $semi-grey;
+	a {
+
+	}
+}
+
+// 4. images & video
+//-----------------------------
+
+// 5. layout
+//-----------------------------
+
+@media (min-width: $small) {
+		.comments-listing {
+			// background-color: orange;		
+		}
+	}
+	
+	@media (min-width: $small-medium) {
+		.comments-listing {
+ 			// background-color: brown;
+ 		}
+
+ 		.comment-date {
+			// background-color: yellow;
+			text-align: right;
+		}
+	}
+	
+	@media (min-width: $medium) {
+		.comments-listing {
+			// background-color: pink;
+			max-width: 1024px;
+		}
+
+		.comment-meta {
+			float:left;
+			display: inline-block;
+			// background-color: orange;
+			width: 200px;
+			margin-right: 30px;
+		}
+
+		.comment-body {
+			float: left;
+			max-width: 60%;
+		}
+
+		.comment-date {
+			float: right;
+			display: inline-block;
+			// background-color: yellow;
+		}
+
+		.comment-actions {
+			clear:both;
+			// background-color: #b4d455;
+		}
+
+		.comment-details {
+			// background-color: yellow;
+		} 
+	}
+	
+	@media (min-width: $medium-large) {
+		.comments-listing {
+			background-color: green;
+		}
+
+		.comment-meta {
+			float:left;
+			display: inline-block;
+			background-color: orange;
+			width: 200px;
+			margin-right: 30px;
+		}
+
+		.comment-body {
+			float: left;
+			background-color: pink;
+		}
+
+		.comment-date {
+			float: right;
+			display: inline-block;
+			background-color: yellow;
+		}
+
+		.comment-actions {
+			clear:both;
+			background-color: #b4d455;
+		}
+
+		.comment-details {
+			background-color: yellow;
+		} 
+	}
+	
+	@media (min-width: $large) {
+		.comments-listing {
+			background-color: grey;
+		}
+}
+
+
+
+/* @group pagination */
+
+.pagination {
+	height: 10px;
+	margin-bottom: 30px;
+	margin-top: 40px;
+	clear: both;
+	padding-top: 30px;
+}
+
+	ul.pagination {
+		border:0; 
+		margin:0; 
+		padding:0;
+	}
+
+	#pagination-profiles li {
+		border:0; 
+		margin:0; 
+		padding:0;
+		list-style:none;
+	}
+	#pagination-profiles a {
+		border:solid 1px black;
+		margin-right:2px;
+	}
+	#pagination-profiles .previous-off, #pagination-profiles .next-off {
+		color:gray;
+		display:block;
+		float:left;
+		font-weight:bold;
+		padding:3px 4px;
+	}
+
+	#pagination-profiles .next a, #pagination-profiles .previous a {
+		font-weight:bold;
+		border:solid 1px #FFFFFF;
+	} 
+	#pagination-profiles .active{
+		color:black;
+		font-weight:bold;
+		display:block;
+		float:left;
+		padding:4px 6px;
+	}
+	#pagination-profiles a:link, #pagination-profiles a:visited {
+		display:block;
+		float:left;
+		padding:3px 6px;
+		text-decoration:none;
+	}
+	#pagination-profiles a:hover {
+		border:solid 1px #666666;
+	}
+
+.comment-replies { 
+	display: none; 
+}
+
+/* @end */
+
+
+// 5. Modules
+//-----------------------------
+
+
+
+
+

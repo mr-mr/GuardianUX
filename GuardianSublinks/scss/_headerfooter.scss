@@ -1,0 +1,220 @@
+// --------------------------------------------------------------------------------------------------------------------------------------------
+// Table of contents
+// --------------------------------------------------
+// 1.0 imports
+// 2.0 variables
+// 3.0 general
+// 4.0 type
+// 5.0 layout
+// 6.0 modules
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+// 1.0 imports
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+@import "colors";
+@import "breakpoints";
+
+// 2.0 variables & mixins
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+// 3.0 general
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+// 4.0 type
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+// 5.0 layout
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+// 6.0 modules
+// --------------------------------------------------------------------------------------------------------------------------------------------
+#global-header{
+	@include background-container;
+	//background:$link;
+	//height:100%;
+	width:100%;
+	//max-width:1200px;
+	margin:0 auto;
+	padding-bottom:20px;
+	padding-top:$gs-gutter;
+	padding-left:$gs-gutter;
+	padding-right:$gs-gutter;
+
+	border-bottom:2px solid $grey;
+
+	@media (max-width:$medium){
+		//background:$link;
+		height:60px;
+		padding-top:0;
+	}
+}
+
+#global-header-white{
+	@include background-container;
+	background:$light-grey;
+	//height:100%;
+	width:100%;
+	//max-width:1200px;
+	margin:0 auto;
+	padding-bottom:-10px;
+	padding-top:$gs-gutter;
+	padding-left:$gs-gutter;
+	padding-right:$gs-gutter;
+
+	@media (max-width:$medium){
+		background:$link;
+		height:60px;
+		padding-top:0;
+	}
+}
+
+
+#global-footer{
+	@include background-container;
+	background:$link-white;
+	//height:100%;
+}
+
+.logo-block{
+	&.footer{
+	background:$link;
+	height:50px;
+	padding:15px;
+		
+}
+
+	&.header{
+		//ackground:$code-grey;
+		//height:88px;
+		//background:#fff;
+		padding:15px;
+		@include border-bottom-radius(2px);
+
+		}
+	}
+
+.back-to-top{
+	margin:-3px 0 0 30px ;
+
+	@media (min-width:$small){
+			margin:-15px 0 0 0;	
+			float:left;	
+	}
+
+	@media (min-width:$medium){
+			margin:-68px 0 0 30px ;	
+			float:right;	
+	}
+
+}
+
+.footer-links {
+	width:450px;
+	margin: -10px 50px 100px 40px;
+	padding:30px;
+	position:relative;
+	li{list-style-type: none;}
+
+	@media (max-width:$medium-large){
+		margin:0;
+		width:100%;
+		height:140px;
+		padding:15px;
+		background:$link-hover;
+		li a{color:#fff;}
+	}
+
+	@media (max-width:$medium){
+		display:none;
+	}
+}
+
+.footer-links-mobile{
+	display:none;
+	@media (max-width:$medium){
+		display:block;
+		padding:20px 20px 40px 20px;
+		height:230px;
+		ul:first-child{
+			border-right:1px solid $link;
+			padding-right:10px;
+		}
+		ul:nth-child(2){
+			padding-left:20px;
+		}
+
+		li{ 
+		list-style-type:none;
+			a {
+				border-top: 1px solid darken($link, 10%);
+				border-width:100%;
+				padding-top:5px;
+				color:#fff; 
+				width:50%;
+			}
+		}
+		z-index:20;
+		background:$link-hover;
+	}
+}
+
+.footer-links-mobile-bottom{
+	display:none;
+	@media (max-width:$medium){
+		display:block;
+		padding:20px 20px 40px 20px;
+		height:230px;
+		margin-top:10px;
+		border-bottom: 1px solid $semi-grey;
+		background:$light-grey;
+		
+		ul:first-child{
+			border-right:1px solid $grey;
+			padding-right:10px;
+		}
+		ul:nth-child(2){
+			padding-left:20px;
+		}
+
+		li{ 
+		list-style-type:none;
+			a {
+				border-width:100%;
+				padding-top:15px;
+				color:$dark-grey; 
+				width:50%;
+			}
+		}
+	}
+}
+
+.extra-products-mobile{
+	border-top:1px solid $link;
+	padding-top:10px;
+	li{display:inline-block; margin-right:10px;}
+}
+
+.copyright{
+	float:left;
+	font-size:12px;
+	color:$semi-grey;
+	//margin-left:0px;
+	padding:10px;
+	background:$light-grey;
+	width:100%;
+
+}
+
+footer{
+	margin:-50px auto;
+	background:lime;
+	//height:100%;
+	&.block{
+		width:100%;
+		//max-width:1200px;
+	}
+	&.links{
+		padding:10px;
+	}
+}

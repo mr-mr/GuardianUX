@@ -1,0 +1,190 @@
+// ------------------------------------------------------------------------------------------------------------------------------------------------- 
+// Table of contents
+// --------------------------------------------------
+// 1.0 imports
+// 2.0 variables
+// 3.0 general
+// 4.0 type
+// 5.0 layout
+// 6.0 modules
+// -------------------------------------------------------------------------------------------------------------------------------------------------  
+
+// 1.0 imports
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+
+@import "colors";
+@import "links";
+
+// 2.0 variables
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+
+// 3.0 general
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+
+// 4.0 type
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+
+// 5.0 layout
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+
+// 6.0 modules
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+.c {
+	position: relative;
+	max-width: 74em;
+	margin: 0 auto;
+}
+.c-list-container {
+	overflow: hidden;
+	position: relative;
+}
+.c-list {
+	width: 99999em;
+	height:160px;
+	position: relative;
+	left: 0;
+	top:-20%;
+	overflow:hidden;
+	-webkit-transition: left 0.5s ease-out; 
+		-moz-transition: left 0.5s ease-out;  
+		-o-transition: left 0.5s ease-out; 
+	transition: left 0.5s ease-out;
+	
+	@media (max-width:$small-medium){
+			height:100px;
+			top:10px;
+		}
+
+	li{
+		text-decoration:circle;
+		@media (max-width:$small-medium){
+			font-size:0.7em;
+		}
+	}
+}
+
+.c li {
+	float: left;
+	//background:lime;
+	text-decoration: circle;
+}
+.c li a {
+	display: block;
+	text-decoration: none;
+}
+.c img {
+	display: block;
+}
+.c h2 {
+	margin-top: 0;
+}
+.summary {
+	padding: 0.4em;
+}
+.c-nav {
+	clear: both;
+	overflow: hidden;
+	//border-top: 1px solid $light-grey;
+	//border-bottom: 1px solid $light-grey;
+	border:1px solid $grey;
+	margin:30px 0 -20px 0;
+	z-index:20;
+	//width:50%;
+	//float:right;
+	@media (max-width:$medium-large){
+		margin:60px 0 -20px 0;
+		display:none;
+	}
+
+}
+.c-nav a {
+	float: left;
+	width: 33.3333333333333%;
+	padding: 1em;
+	-webkit-transition: opacity 0.5s ease-out; 
+		-moz-transition: opacity 0.5s ease-out;  
+		-o-transition: opacity 0.5s ease-out; 
+	transition: opacity 0.5s ease-out;	
+	&.prev-2{
+		width:50%;
+		//font:$serif-bold;
+		//border-right: 1px dotted $dark-grey;
+	}
+	&.next-2{
+		width:50%;
+		text-align:right;
+		border-left: 1px solid $grey;
+	}
+	&:hover{
+		background:$code-grey;
+		text-decoration: none;
+	}
+
+	@media (max-width:$small-medium){
+		font-size:0.7em;
+	}
+}
+.c-nav a.next {
+	//border-left: 1px solid $grey;
+	text-align: right;
+	float:right;
+	width:33%;
+}
+
+.c-nav a.active {
+	background:$code-grey;
+}
+
+.c-nav a.now {
+	border-left: 1px solid $grey;
+	border-right: 1px solid $grey;
+	text-align: center;
+	background:$code-grey;
+	width:33%;
+}
+
+.c-nav a.inactive {
+	opacity: 0.2;
+
+}
+
+/* Medium */
+@media screen and (min-width: 35em) {
+	.c {
+		padding: 1em 0.5em 0;
+	}
+	.c li {
+		padding: 0 0.5em;
+		text-decoration: none;
+	}
+	body:after { /* Conditional CSS http://adactio.com/journal/5429/ */
+        content: 'medium';
+        display: none;
+		}
+}
+
+/* Large */
+@media screen and (min-width: 56.25em) {
+	body:after { /* Conditional CSS http://adactio.com/journal/5429/ */
+        content: 'large';
+        display: none;
+		}
+}
+
+/*Large with room to spare on either side
+@media screen and (min-width: 82em) {
+	.c-nav a {
+		position: absolute;
+		top: 40%;
+		left: -4em;
+		width: 4em;
+		height: 2em;
+		padding: 0;
+		margin-top: -1em;
+	}
+	.c-nav a.next {
+		left: auto;
+		right: -4em;
+		border: 0;
+	}
+}*/

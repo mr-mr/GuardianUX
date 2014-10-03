@@ -1,0 +1,634 @@
+// --------------------------------------------------------------------------------------------------------------------------------------------
+// Table of contents
+// --------------------------------------------------
+// 1.0 imports
+// 2.0 variables
+// 3.0 general
+// 4.0 type
+// 5.0 layout
+// 6.0 modules
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+// 1.0 imports
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+// 2.0 variables
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+@mixin font-size($sizeValue: 12 ){
+  font-size: $sizeValue + px; //fallback for old browsers
+  font-size: (0.125 * $sizeValue) + rem;
+}
+
+@mixin line-height($heightValue: 14 ){
+	line-height: $heightValue + px; //fallback for old browsers
+	line-height: (0.125 * $heightValue) + rem;
+}
+
+// 3.0 general
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+// 4.0 type
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+h1, h2, h3, h4, li {
+	font-weight:normal;
+}
+.global-logo{
+	font-family: $serif-title;
+	color:#fff;
+	font-weight:normal;
+	font-size:2.6em;
+	margin:-10px 0 10px 0;
+	@media (max-width:$small){
+		font-size:1.1em;
+	}
+}
+
+h1 {
+	@media (min-width:$small){
+		color: $copy; 
+		font-family: $serif; 
+		font-size:1.7em;
+		font-weight:bold;
+		line-height:1.1em;
+		//margin: 30px 0 20px 0;
+	}
+
+	@media (min-width:$medium) {
+		font-size:(24 /10) * 1.5em;
+		line-height:60px;
+	}
+
+	@media (min-width:$large) {
+		font-size:(24 /10) * 1.5em;
+		line-height:60px;
+	}
+}
+
+.football-supp-header{
+	h1{
+		font-size:(24 /10) * 1em;
+		color:$semi-grey;
+	}
+}
+
+.clockwatch{
+	@media(min-width:$small){
+		margin-top:30px;
+	}
+	@media(min-width:$medium){
+		margin-top:110px;
+	}
+	@media(min-width:$large){
+		margin-top:30px;
+	}
+}
+
+
+h2 {
+	color:$copy;
+	font-family: $serif; 
+	font-size:(20 / 14) * 0.6em;
+	margin:10;
+	padding:0;
+	@media (max-width:$small){
+		font-weight:light;
+	}
+}
+
+h3 {
+	@include clear-fix;
+	font-size:(16 / 14) * 1em;
+	font-family:$serif;
+	margin:0;
+	padding:0;
+	//float:left;
+
+}
+
+h4 {
+	//font-size:15;
+	font-family:$serif-bold;
+	margin:5,0,5,0;
+	//float:left;
+}
+
+h5 {
+	font-size:18;
+	color:$dark-grey;
+	font-family:$serif-bold;
+	margin:5px 0 20px 0;
+	//float:left;
+}
+
+
+ul{
+	list-style-type: none;
+	width:100%;
+	//padding:0;
+	//margin:0;
+	//float:left;
+}
+li {
+	list-style-type: disc;
+	font-size:(13 / 14) * 1em;
+	line-height:1.6em;
+	text-decoration:none;
+	color:$dark-grey;
+}
+
+
+p {
+	@include clear-fix;
+	font-size:(18 / 14) * 1em;
+	line-height:1.4em;
+
+	&.editor-name{
+		font-size:(12 / 14) * 1em;
+		line-height:1.4em;
+	}
+	&.no-head{
+		padding:5px;
+		font-size:(16 / 14) * 1em;
+	}
+
+}
+
+dd {
+	color:$semi-grey;
+	padding:0;
+	margin:10px 0 0 0;
+	display:inline;
+    }
+
+strong, th, dt {
+	font-family:$serif-bold;
+	font-weight:normal;
+	padding:0;
+	margin:0;
+
+}
+
+.tags{
+	display:block;
+	font-size:1em;
+	line-height:1.6em;
+	@media(max-width:$large){
+		display:none;
+	}
+}
+
+.small{
+	color:$copy;
+	font-family: $serif; 
+	font-size:(20 / 14) * 0.6em;
+	padding:10px;
+}
+
+.timestamp{
+	//width: 150px;
+	//text-align: right;
+	//padding-top: -5px;
+	//margin-left:-135px;
+
+		text-align:left;
+		padding-top:0;
+		margin-left:0;
+
+}
+
+.score-large{
+	display:block;
+	width:150px;
+	padding:10px;
+	text-align:center;
+
+	@media(min-width:$small){
+		font-size:1.8em;
+	}
+
+	@media(min-width:$medium){
+		font-size:(20 / 14) * 2.8em;
+	}
+}
+
+.live-score{
+	display:inline;
+	//font-size:2em;
+}
+
+.live-score-team{
+	font-size:1.8em;
+}
+
+.live-event-right{
+	margin-right:10%;
+}
+
+.live-event-left{
+	margin-left:10%;
+}
+
+.live-event-time{
+	
+}
+
+// 5.0 layout
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+// 6.0 modules
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+.signoff {
+	font-family:$serif;
+	font-weight:normal;
+	padding:10px;
+	margin:0;
+	color:$grey;
+	text-align:center;
+}
+
+.work-landing {
+	
+	font-family: $serif; 
+	font-size:(24 / 14) * 1em;
+	//font-weight:bold;
+}
+
+.sub {
+	@extend .work-landing;
+	font-size:(24 / 14) * 1em;
+	margin-top:-5px;
+	color:$link;
+}
+
+sub {
+	font-size:(11 / 14) * 1em;
+	margin-top:-15px;
+	color:$semi-grey;
+}
+
+.quote {
+	font-size:(20 / 14) * 1em;
+	font:$serif-bold;
+	color:$semi-grey;
+	font-style:italic;
+	margin:-5px 0 0 0;
+	&.small{
+		@extend .quote;
+		font-size:(14 / 14) * 1em;
+	}
+	&.quote-standout{
+		//float:left;
+		margin-left:0px;
+		display:inline;
+	}
+	img{
+		width:8%;	
+	}
+
+	&.comment-signup{
+		@extend .quote;
+		margin:5% 0 0 0;
+		font-size:(20 / 14) * 1em;
+		img{
+			width:20%;	
+		}
+	}
+}
+
+
+.summary {
+	@extend .work-landing;
+	font-size:(24 / 14) * 1em;
+	color:$semi-grey;
+	font-weight:light;
+	li {
+		list-style-type: none;
+		color:$semi-grey;
+	}
+	li:before {
+        content:"·";
+        color:$semi-grey;
+        font-size:120px;
+        vertical-align:middle;
+        line-height:20px;
+    }
+
+	&.article{
+		//text-align:left;
+		@media (min-width:$small){
+			margin:-15px 0 -10px 0;
+			font-size:14px;
+		}
+
+		@media (min-width:$medium){
+			margin:-25px 0 10px 0;
+			font-size:18px;
+		}
+
+		@media (min-width:$medium-large){
+			margin:-25px 0 20px 0;
+			font-size:18px;
+		}
+	}
+}
+
+.body-copy{
+	@extend .summary;
+	font-size:(10 / 14) * .9em;
+	margin-top:-15px;
+}
+
+.scrolltoview {
+	@extend .work-landing;
+	font-size:(24 / 14) * 1em;
+	color:$link;
+	bottom:0;
+}
+
+.note {
+  //background: #f9ff9b;
+  //padding-left: 5px;
+  border-left: 3px solid $semi-grey;
+  width: 90%;
+  margin:0 0 10px 0; 
+  p{
+  	font-size:14px;
+  	color:$copy;
+  }
+}
+
+.article-comment-count {
+	@media(min-width:$small){
+		font-size:13px;
+	}
+	@media(min-width:$medium){
+		font-size:18px;
+	}
+
+	@media(min-width:$large){
+		font-size:13px;
+	}
+}
+
+.rasiak-layout{
+	padding:5px;
+	width:100%;
+}
+
+.rasiak-header {
+	font-size:16px;
+	line-height: 20px;
+	font-family:$serif-bold;
+	padding:5px;
+}
+
+.dos-santos-header {
+	font-size:24px;
+	line-height: 26px;
+	font-family:$serif-bold;
+	padding:5px;
+}
+
+.rasiak-meta {
+	width:100%;
+	font-size:14px;
+	font-family:$serif;
+	padding:2px;
+	margin: 5px 5px 10px 0;
+	color:$semi-grey;
+	float:left;
+
+	i{
+		padding-right:5px;
+		padding-left:5px;
+	}
+	i:nth-child(2){
+		padding-left:10px;
+	}
+}
+
+.container-header {
+	font-size:20px;
+	font-family:$serif-bold;
+	float:left;
+	width:140px;
+	&.extralarge{
+		font-size:(34 / 14) * 1em;
+		font-family:$serif;
+		line-height: 24px;
+	}
+	&.large{
+		font-size:(24 / 14) * 1em;
+		font-family:$serif;
+		line-height: 24px;
+	}
+	&.medium{
+		font-size:(18 / 14) * 1em;
+		font-family:$serif;
+		line-height: 20px;
+	}
+	&.small{
+		font-size:(16 / 14) * 1em;
+		font-family:$serif;
+		line-height: 20px;
+		//margin:-5px 0 -10px 0;
+	}
+}
+
+.header{
+	font-size:18px;
+}
+
+.theday{
+	
+}
+
+.football-clock{
+	color:red;
+}
+
+.team-headline{
+	background:$code-grey;
+}
+
+.team-fixture-holder{
+	width:100%;
+}
+
+.team-fixture{
+	
+	padding:5px;
+	margin:2px 0 3px 0;
+	text-align:center;
+	display:inline;
+}
+
+.sidebar {
+	background:$light-grey;
+}
+
+.player-name{
+	display:inline;
+	list-style-type:none;
+	padding-left:15px;
+}
+
+.form {
+	width:5px;
+	height:3px;
+	//float:left;
+	//margin-bottom:5px;
+	display:inline-block;
+	&.win{
+		margin-right:2px;
+		background:green;
+	}
+	&.draw{
+		margin-right:2px;
+		background:$grey;
+	}
+	&.lose{
+		margin-right:2px;
+		background:red;
+	}
+}
+
+.media-headline{
+	color:orange;
+	background:$dark-grey;
+	text-align:right;	
+	padding:10px;
+	height:50px;
+	margin:-52px 0 0 0;
+
+	@media(min-width:$small){
+		font-size:14px;
+		width:100%;
+		float:right;
+	}
+
+	@media(min-width:$medium){
+		font-size:1.3em;
+	}	
+}
+
+.media-headline-card{
+	@extend .media-headline;
+	height:160px;
+	padding-top:20px;
+	margin-top:-18px;
+}
+
+.football-goal{
+	background:$light-grey;
+	border-top:4px solid red;
+	padding:20px;
+	color:#333;
+	margin-top:20px;
+}
+
+.fb-updating-text{
+
+	@media(min-width:$small){
+		border-top:1px solid $grey;
+		margin-top: 80px;
+		padding-top:20px;
+		margin-bottom:-30px;
+
+	}
+	
+	@media(min-width:$medium-large){
+		margin-top: 75px;
+		margin-bottom:-10px;
+
+	}
+
+	@media(min-width:$large){
+		padding:20px 0 20px 0;
+		margin-top: 20px;
+		margin-bottom:20px;
+		border-bottom:1px solid $grey;
+
+	}
+
+}
+
+.live-scores{
+	@include clear-fix;
+	//padding:5px;
+	background:#F6CECE;
+	height:30px;
+	margin-top:-10px;
+
+	h4{
+		padding:5px;
+		height:30px;
+		//width:100px;
+		padding-right:10px;
+		color:black;
+		background:red;
+		float:left;
+		margin-top:-1px;
+	}
+}
+
+.live-ticker{
+	white-space:nowrap;
+	overflow:hidden;
+	padding:5px;
+}
+
+.selected-team{
+	background:$dark-grey;
+}
+
+
+/* liScroll styles */
+
+.tickercontainer { /* the outer div with the black border */
+border: 1px solid #000;
+background: #fff; 
+width: 738px; 
+height: 27px; 
+margin: 0; 
+padding: 0;
+overflow: hidden; 
+}
+.tickercontainer .mask { /* that serves as a mask. so you get a sort of padding both left and right */
+position: relative;
+left: 10px;
+top: 8px;
+width: 718px;
+overflow: hidden;
+}
+ul.newsticker { /* that's your list */
+position: relative;
+left: 750px;
+font: bold 10px Verdana;
+list-style-type: none;
+margin: 0;
+padding: 0;
+
+}
+ul.newsticker li {
+float: left; /* important: display inline gives incorrect results when you check for elem's width */
+margin: 0;
+padding: 0;
+background: #fff;
+}
+ul.newsticker a {
+white-space: nowrap;
+padding: 0;
+color: #ff0000;
+font: bold 10px Verdana;
+margin: 0 50px 0 0;
+} 
+ul.newsticker span {
+margin: 0 10px 0 0;
+} 
+

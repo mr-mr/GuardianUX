@@ -1,0 +1,110 @@
+// 1.0 imports
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+@import "colors";
+@import "breakpoints";
+
+
+#nav-global{
+  height: 3rem;
+  flex: 1 1 auto;
+}
+
+#nav-global {
+  a:link, a:visited {
+  font-size:18px;
+  text-decoration: none;
+  margin-top: 2rem;
+  padding: 10px;
+  float: left;
+  color: $link;
+  //background:$link-hover;
+  }
+  a:hover{color:$link-white; background:$semi-grey; padding:10px; text-decoration: none;
+  }
+  
+}
+
+#menu{
+  display: flex;
+  visibility:hidden;
+  justify-content: left;
+  align-items: left;
+  min-width: 4rem;
+  position: relative;
+  background: $semi-grey;
+  float:right;
+  margin-top: -48px;
+}
+
+#menu aside{
+  visibility: hidden; /* toggled by JavaScript */
+  background: $semi-grey;
+  width: 13rem;
+  padding: 14px 10px 10px 10px;
+  position: absolute;
+  top: calc(3rem - 10px);
+  border: none;
+  right: 0;
+  display:block;
+}
+
+.visible{
+  visibility: visible !important;
+}
+
+#menu em{
+  display: block;
+  margin: 1rem 0 0;
+  padding: 1rem 0 0;
+  border-top: 1px solid #E24D4D;
+  color: rgba(252,252,252,0.7);
+  
+}
+
+#menu .toggle{
+  display: block;
+  width: 4rem;
+  height: 2.4rem; 
+  background-image: url(../img/menu-stripe.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* collect all nav links */
+#nav-global a{
+  -webkit-flow-into: menu;
+  a:hover{background:transparent(0);}
+}
+
+/* reflow nav links into original container and overflow into another element */
+#nav-global,
+#nav-compact{
+  -webkit-flow-from: menu;
+}
+
+/* region-styling for overflow region */
+@-webkit-region #nav-compact{
+  #nav-global a{
+    color: white;
+  }
+}
+
+
+.warning{
+  background: #ffc;
+  color: black;
+  padding: 1em;
+  margin: 0 0 0 -1em;
+  display: none;
+}
+
+.no-flow-into .instructions{
+  display: none;
+}
+.no-flow-into .warning{
+  display: block;
+}
+
+
+

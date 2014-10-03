@@ -1,0 +1,352 @@
+// --------------------------------------------------------------------------------------------------------------------------------------------
+// Table of contents
+// --------------------------------------------------
+// 1.0 imports
+// 2.0 variables
+// 3.0 general
+// 4.0 type
+// 5.0 layout
+// 6.0 modules
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+// 1.0 imports
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+@import "colors";
+@import "breakpoints";
+@import "links";
+
+// 2.0 variables + mixins
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+@mixin globalNav{
+	//max-width:1200px;
+	height:32px;
+	left:0;
+	right:0;
+	display:block;
+	padding:0;
+	margin:5px auto;
+	//background:lime;
+
+}
+
+// 3.0 general
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+// 4.0 type
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+// 5.0 layout
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+#globalnav-container {
+	@include globalNav;
+}
+
+#globalnav-links {
+	@include globalNav;
+	font-size:18px;
+	//padding:10px;
+	li{
+		display:inline;
+	}
+	a:link, a:visited {padding:10px;}
+	a:hover{color:$link-white; background:$semi-grey; text-decoration: none;
+	}
+
+}
+
+.subnav{
+	background:$link-hover;
+	height:2.7em;
+	padding-top: 1px;
+	//margin-bottom: 5px;
+	margin-top:-10px;
+	font-size:14px;
+	//float:left;
+	
+	a:link, a:visited {color:#fff; background:$link-hover; padding:10px;}
+	a:hover{color:$link-white; background:$semi-grey; text-decoration: none;
+	}
+}
+
+
+.nav-active {
+	color:$grey;
+	background:$grey;  
+	text-decoration:underline;
+	padding:5px;
+	//margin-top:-5px;
+	//float:left;
+	//border-bottom:4px solid $dark-grey;
+}
+
+.editions {
+	@include globalNav;
+	padding:10px 0 10px 0;
+	//background:lime;
+}
+
+.editions-mobile {
+	li{
+	display:inline;
+	margin-right:10px;
+	}
+	padding:20px;
+	background:$light-grey;
+	border-bottom:5px solid $link;
+	width:100%;
+}
+
+.editions-mobile-footer {
+	display:none;
+	@media (max-width:$medium){
+		@include clear-fix;
+		display:block;
+		li{
+		display:inline;
+		margin-right:10px;
+		}
+		padding:20px;
+		background:$light-grey;
+		border-bottom:1px solid $semi-grey;
+		width:100%;
+		left:0;
+		right:0;
+	}
+}
+
+
+.icons{
+	float:left;
+	margin-top:0px;
+}
+
+input {
+		padding:10px 0 10px 10px;
+		margin:-10px 0 20px 10px;
+		border: 1px solid $grey;
+		width:200px;
+		height:30px;
+		focus: none;
+	}
+
+.icon-search {
+	
+}
+
+#global-search {
+	width:300px;
+	//height:25px;
+	margin:0px 0 -80px 0px;
+	//padding:20px;
+}
+
+#global-search button[type="submit"] {
+	color: #fff;
+	cursor: pointer;
+	background: $link;
+	border: 0;
+	font-size:18px;
+	margin: 14px 0 0 0;
+	padding: 2px 10px 7px 10px;
+}	
+
+.nav-extras{
+	padding:5px;
+	float:left;
+	color:$link;
+	//@include link-white;
+	li{
+		list-style-type: none;
+		display:inline;
+		margin-right:5px;
+		border-right: 1px solid $link;
+		color:#fff;
+		padding-right:10px;
+	}
+	@media (max-width:$medium){
+		display:none;
+	}
+}
+
+.nav-extras-white{
+	padding:5px;
+	float:left;
+	//@include link-white;
+	li{
+		list-style-type: none;
+		display:inline;
+		margin-right:5px;
+		border-right: 1px solid $link;
+		color:#fff;
+		padding-right:10px;
+	}
+	@media (max-width:$medium){
+		display:none;
+	}
+}
+
+
+nav select {
+  display: none;
+  width:100%;
+  height:40px;
+  padding:10px;
+}
+
+@media (max-width:$medium){
+	nav ol, #nav-global, .subnav { display: none; }
+  	nav select { display: inline-block; }
+}
+
+
+// 6.0 modules
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+#global-nav-mobile{
+	background:$link;
+	position:absolute;
+	width:100%;
+	z-index:10;
+	@media (min-width:$small){
+		display:block;
+	}
+	@media (min-width:$medium){
+		display:none;
+	}
+}
+
+.toggle-menu-mobile{
+	display:none;
+	@media (max-width:$medium){
+		display:block;
+	}
+  	background: url('../img/menu-stripe.svg') no-repeat;
+  	background-size:100% auto;
+  	width: 25px;
+  	height: 50px; 
+  	//background-position: center center;
+  	//background-repeat: no-repeat;
+  	//background:$link;
+	float:right;
+	margin:-68px 20px 0 0;
+}
+
+.mobile-menu{
+	width:100%;
+	height:100%;
+	padding:20px;
+	margin-top:-20px;
+}
+
+nav.message_list { position: relative }
+
+.extras-mobile{
+	display:none;
+	width:100%;
+	text-align:left;
+
+	@media (max-width:$medium){
+		display:block;
+		margin:-10px;
+		padding:0;
+	}
+	li{
+		display:inline;
+		margin-right:10px;
+		border-right: 1px solid $grey;
+		padding-right:5px;
+	}
+	a{
+		color:$link;
+	}
+}
+
+.go-home{
+	a:link{
+		background:$link;
+	}
+}
+
+
+#nav-global-scroll{
+  display:block;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  background:#fff;
+  z-index:3000;
+  height: 2.4rem;
+  flex: 1 1 auto;
+}
+
+#nav-global-scroll {
+  a:link, a:visited {
+  font-size:18px;
+  text-decoration: none;
+  //margin-right: 0.7rem;
+  padding: 10px;
+  float: left;
+  //color: $link;
+  }
+  a:hover{color:#fff; background:$semi-grey; padding:10px; text-decoration: none;
+  }
+  
+}
+
+.home-only{
+	background:$link;
+}
+
+.nav-scroll{
+  -webkit-box-shadow: 0px 7px 15px rgba(50, 50, 50, 0.35);
+  -moz-box-shadow:    0px 7px 15px rgba(50, 50, 50, 0.35);
+  box-shadow:         0px 7px 15px rgba(50, 50, 50, 0.35);
+  //border-bottom:10px solid $light-grey;
+
+}
+
+#nav-mega{
+	width:100%;
+	max-width:1200px;
+	margin:0 auto;
+
+	div{
+		border-top:2px solid $grey;
+	}
+	ul{
+		padding-left:0;
+	}
+	li{
+		display:block;
+		margin:0;
+		padding:0;
+	}
+}
+
+#overflow-menu{
+	float:right;
+	position:relative;
+	
+	@media (min-width:$small){
+		margin:-7rem -11px 0; 
+	}
+
+	@media (min-width:$small-medium){
+		margin:-3.9rem -11px 0; 
+	}
+
+	@media (min-width:$medium){
+		margin:-38px -11px 0; 
+	}
+	@media (min-width:$medium-large){
+		margin:-2.3rem -11px 0; 
+	}
+
+	@media (min-width:$large){
+		margin:-0.8rem -11px 0; 
+	}
+}
