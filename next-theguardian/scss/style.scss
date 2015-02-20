@@ -1,0 +1,96 @@
+@import "fonts";
+@import "breakpoints";
+@import "mq";
+@import "colors";
+@import "font-awesome";
+
+#wrapper{
+	margin: 0 auto;
+	width:1200px;
+}
+
+body{
+	top:0;
+	margin:0;
+	background:$link;
+}
+
+h1, h2, h3, h4, li {
+	font-weight:normal;
+	color:#fff;
+}
+
+#title{
+	@media (min-width:$small){}
+	@media (min-width:$medium){}
+	@media (min-width:$large){}
+}
+
+h1 {
+	font-family: $serif; 
+	font-size:(24 /10) * 1.5em;
+	line-height:60px;
+	text-align:center;
+	margin-top:200px;
+}
+
+h2 {
+	font-family: $serif; 
+	font-weight:normal;
+	font-size:1.5em;
+	text-align:center;
+	margin-top: -30px;
+}
+
+#splash-container{
+	margin:150px;
+	padding:2%;
+
+}
+
+dd{
+	position:fixed;
+	right:0;
+}
+
+.splash-image{
+	margin:100px auto;
+	background: url('../img/device_iphone.svg') no-repeat;
+	background-size:100% auto;
+	width:300px;
+	height:800px;
+}
+
+#global-nav{
+	ul{
+		margin-top:20px;
+		padding:0;
+	}
+	li{
+		display:inline-block;
+	}
+}
+
+i{
+	border:1px solid #fff;
+	border-radius:50%;
+	width:12px;
+	height:12px;
+	padding:10px;
+}
+
+.main-nav{
+	width:220px;
+	border-top:1px solid #fefefe;
+	color:#fff;
+}
+
+.social-nav{
+	width:50px;
+	float:right;
+	color:#fff;
+}
+
+.nav-active{
+	border-top:3px solid $semi-grey;
+}
